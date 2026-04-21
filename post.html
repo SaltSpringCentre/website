@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>if(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))window.location.href='m/post.html'+window.location.search;</script>
+<title>Post - Salt Spring Centre of Yoga</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --teal: #3bb8a8; --teal-dark: #2a8a7d; --teal-deep: #1a5c53;
+  --cream: #faf8f4; --cream-warm: #f3ede3; --gold: #c9a84c;
+  --terracotta: #c17838;
+  --white: #fff; --charcoal: #2c2c2c;
+  --text: #3a3a3a; --text-light: #7a7a7a;
+  --shadow: rgba(0,0,0,0.08);
+  --radius: 12px;
+}
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { font-family: 'Archivo Narrow', sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; font-size: 18px; }
+h1, h2, h3, h4 { font-family: 'Cinzel', serif; line-height: 1.2; color: var(--charcoal); margin: 1.4em 0 0.6em; }
+h1 { font-weight: 600; }
+h2 { font-size: 1.5rem; font-weight: 500; }
+h3 { font-size: 1.25rem; font-family: 'Archivo Narrow', sans-serif; font-weight: 600; }
+p { margin: 0 0 1.1em; text-align: justify; text-justify: inter-word; }
+a { color: var(--teal-dark); text-decoration: underline; text-decoration-color: rgba(42,138,125,0.3); transition: 0.2s; }
+a:hover { text-decoration-color: var(--teal-dark); }
+img { max-width: 100%; height: auto; display: block; margin: 1.4em auto; border-radius: 8px; }
+ul, ol { margin: 0 0 1.1em 1.4em; }
+li { margin: 0.3em 0; }
+blockquote { border-left: 3px solid var(--teal); padding: 8px 20px; margin: 1.4em 0; color: var(--text-light); font-style: italic; }
+hr { border: none; border-top: 1px solid rgba(0,0,0,0.08); margin: 2em 0; }
+code { background: rgba(0,0,0,0.05); padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+pre { background: rgba(0,0,0,0.04); padding: 16px; border-radius: 8px; overflow-x: auto; margin: 1.4em 0; }
+
+.sticky-nav { background: rgba(250,248,244,0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); padding: 10px 0; position: sticky; top: 0; z-index: 90; border-bottom: 1px solid rgba(0,0,0,0.06); }
+.sticky-nav-inner { position: relative; padding: 0 32px; height: 68px; display: flex; align-items: center; justify-content: space-between; }
+.sn-logo { height: 52px; }
+.sticky-nav-links { display: flex; gap: 28px; }
+.sticky-nav-links a { color: var(--charcoal); font-family: 'Cinzel', serif; font-size: 0.85rem; letter-spacing: 0.05em; text-decoration: none; }
+.sticky-nav-links a:hover { color: var(--teal-dark); }
+
+.post-wrap { max-width: 760px; margin: 48px auto; padding: 0 32px; }
+.back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--teal-dark); font-size: 0.85rem; text-decoration: none; margin-bottom: 32px; opacity: 0.8; transition: opacity 0.2s; }
+.back-link:hover { opacity: 1; }
+.post-meta { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-light); margin-bottom: 8px; }
+.post-meta .cat { color: var(--teal-dark); font-weight: 600; margin-right: 8px; }
+.post-title { font-family: 'Cinzel', serif; font-size: 2.2rem; font-weight: 600; line-height: 1.2; color: var(--charcoal); margin-bottom: 14px; }
+.post-byline { font-size: 0.85rem; color: var(--text-light); margin-bottom: 36px; padding-bottom: 24px; border-bottom: 1px solid rgba(0,0,0,0.08); }
+.post-body { font-size: 1.02rem; }
+.post-body :first-child { margin-top: 0; }
+.post-tags { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(0,0,0,0.08); font-size: 0.82rem; color: var(--text-light); }
+.post-tags .tag { display: inline-block; background: rgba(0,0,0,0.04); padding: 3px 10px; border-radius: 50px; margin: 4px 4px 4px 0; }
+.loading-msg { text-align: center; padding: 80px 20px; color: var(--text-light); }
+.error-msg { text-align: center; padding: 80px 20px; color: var(--text); }
+
+.site-footer { background: var(--charcoal); color: var(--white); padding: 48px 32px 24px; margin-top: 80px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-inner p { text-align: center; font-size: 0.78rem; opacity: 0.6; margin: 4px 0; }
+.footer-inner a { color: var(--white); opacity: 0.6; }
+
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  .sticky-nav-links { display: none; }
+  .sticky-nav-inner { padding: 0 16px; height: 48px; }
+  .sn-logo { height: 36px; }
+  .post-wrap { margin: 24px auto; padding: 0 16px; }
+  .post-title { font-size: 1.6rem; }
+}
+</style>
+</head>
+<body>
+
+<nav class="sticky-nav">
+  <div class="sticky-nav-inner">
+    <a href="index.html"><img src="logo-full-teal-light.svg" alt="Salt Spring Centre of Yoga" class="sn-logo"></a>
+    <div class="sticky-nav-links">
+      <a href="calendar.html">Calendar</a>
+      <a href="offerings.html">Offerings</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<article class="post-wrap">
+  <a href="blog.html" class="back-link">&larr; Back to all posts</a>
+  <div id="postContent">
+    <div class="loading-msg">Loading post...</div>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>Salt Spring Centre of Yoga &middot; 355 Blackburn Road, Salt Spring Island BC</p>
+    <p>Dharma Sara Satsang Society &bull; Est. 1974</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+function decodeEntities(s) {
+  if (!s) return '';
+  var t = document.createElement('textarea');
+  t.innerHTML = s;
+  return t.value;
+}
+
+function parseFrontmatter(text) {
+  var m = text.match(/^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)$/);
+  if (!m) return { meta: {}, body: text };
+  var meta = {};
+  m[1].split('\n').forEach(function(line) {
+    var idx = line.indexOf(':');
+    if (idx === -1) return;
+    var k = line.slice(0, idx).trim();
+    var v = line.slice(idx + 1).trim();
+    if (v.startsWith('[') && v.endsWith(']')) {
+      try { meta[k] = JSON.parse(v); } catch(e) { meta[k] = []; }
+    } else if (v.startsWith('"') && v.endsWith('"')) {
+      try { meta[k] = JSON.parse(v); } catch(e) { meta[k] = v.slice(1, -1); }
+    } else {
+      meta[k] = v;
+    }
+  });
+  return { meta: meta, body: m[2] };
+}
+
+function renderPost(file, meta, body) {
+  // Resolve relative image paths so they load correctly from /
+  var resolvedBody = body.replace(/(!\[[^\]]*\]\()(images\/)/g, '$1posts/$2')
+                          .replace(/(<img[^>]+src=["'])(images\/)/g, '$1posts/$2');
+  var html = marked.parse(resolvedBody);
+
+  var date = meta.date ? new Date(meta.date.replace(' ', 'T')) : null;
+  var dateStr = date && !isNaN(date) ? date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : (meta.date || '');
+  var cats = (meta.categories || []).map(decodeEntities);
+  var tags = (meta.tags || []).map(decodeEntities);
+  var title = decodeEntities(meta.title || 'Untitled');
+  document.title = title + ' - Salt Spring Centre of Yoga';
+
+  document.getElementById('postContent').innerHTML =
+    '<div class="post-meta">' +
+      cats.map(function(c) { return '<span class="cat">' + c + '</span>'; }).join(' ') +
+    '</div>' +
+    '<h1 class="post-title">' + title + '</h1>' +
+    '<div class="post-byline">' +
+      (dateStr ? dateStr : '') +
+      (meta.author ? ' &middot; by ' + meta.author : '') +
+    '</div>' +
+    '<div class="post-body">' + html + '</div>' +
+    (tags.length ? '<div class="post-tags">Tags: ' + tags.map(function(t) { return '<span class="tag">' + t + '</span>'; }).join('') + '</div>' : '');
+}
+
+function loadPost() {
+  var slug = new URLSearchParams(window.location.search).get('slug');
+  var file = new URLSearchParams(window.location.search).get('file');
+  if (!slug && !file) {
+    document.getElementById('postContent').innerHTML = '<div class="error-msg">No post specified. <a href="blog.html">Browse posts</a></div>';
+    return;
+  }
+
+  var loadFile = function(f) {
+    fetch('posts/' + f)
+      .then(function(r) {
+        if (!r.ok) throw new Error('Post not found');
+        return r.text();
+      })
+      .then(function(text) {
+        var parsed = parseFrontmatter(text);
+        renderPost(f, parsed.meta, parsed.body);
+      })
+      .catch(function(err) {
+        document.getElementById('postContent').innerHTML = '<div class="error-msg">Could not load post. <a href="blog.html">Back to blog</a></div>';
+      });
+  };
+
+  if (file) {
+    loadFile(file);
+  } else {
+    fetch('posts/index.json')
+      .then(function(r) { return r.json(); })
+      .then(function(posts) {
+        var match = posts.find(function(p) { return p.slug === slug; });
+        if (match) loadFile(match.file);
+        else document.getElementById('postContent').innerHTML = '<div class="error-msg">Post not found. <a href="blog.html">Back to blog</a></div>';
+      });
+  }
+}
+loadPost();
+</script>
+</body>
+</html>

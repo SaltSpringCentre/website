@@ -1,0 +1,28 @@
+---
+title: "Shiva Ratri - an all-night vigil of chanting and prayer"
+date: 2011-02-06 19:29:54
+slug: shiva-ratri
+author: "sysadmin_1a1xu9u1"
+categories: ["Announcements", "Events", "Monthly Newsletter"]
+tags: ["celebration", "shiva ratri"]
+---
+
+![Shiva](images/7badbc20_shivaratri.jpg)**Join us at the Centre on March 3rd, 2011 for Shiva Ratri, an all-night vigil of chanting and prayer.** The celebration begins in the morning with the making of 1008 clay lingams, representing sahasrara chakra, the lotus of a thousand petals. An all-night ritual begins at 7pm and is our collective sadhana and offering. In the morning the lingams are taken in a procession to the pond where they are offered into the invigorating purifying waters. We hope you will join us! **All are welcome.** 
+**Approximate Schedule**
+9am-12pm - Lingam Making (One must fast from food for 24 hours prior to making lingams)
+12-7pm - Set Up
+7pm - Kirtan
+11pm - Forgiveness Asanas
+12am - Shivaratri Puja, followed by more Kirtan
+4:30am - Sun Salutations
+5:30am - Mahashivaratri Puja Yajna, followed by procession to the pond to offer Lingams.
+**Cost:** There is no charge, but a donation to cover costs would be appreciated.
+**Lingam Preparation:** If you would like to help with the lingam preparation or would like to offer at one of the Shiva Pujas, please contact Rajani Rock at (250) 537 9537 or [rajanirock@me.com](mailto:rajanirock@me.com). Please note, you will be required to fast for 24 hours.
+**Special room rate:** If you wish to reserve a room at the Centre for the night, there is a **special rate of $25**.
+**Questions?**
+Contact Rajani Rock at (250) 537 9537 or [rajanirock@me.com](mailto:rajanirock@me.com)
+
+### About Shiva and Shiva Ratri
+
+**Shiva, the destroyer, Brahma, the creator and Vishnu,** the preserver, make up the supreme trinity of the Hindu pantheon. Shiva is known as the deity responsible for all forms of destruction. While this can be terrifying when one is attached to the world of form, Shiva, as the god of yogis, is also the destroyer of ego, that illusory entity that identifies with form. In reality, Shiva is the destroyer of all illusion; all that remains is Shiva's true nature, the formless essence out of which all forms arise, but which is itself timeless and unchanging. As satyam, shivam, sundaram or truth, goodness and beauty, Shiva represents the most essential goodness. This is also our true nature.
+Shiva Ratri, the fourteenth day of the lunar fortnight when the moon is waning and the sun is in the sign of Pisces, is the day when devotees of Shiva around the world gather in communal sadhana. This may take many forms including prayer, ritual, kirtan and the austerities of abstaining from food and sleep. These are all aimed at attaining the dispassion and peace that arise with the reduction of egocentric desires and attachments that keep us from knowing our true nature, the essence of Shiva.

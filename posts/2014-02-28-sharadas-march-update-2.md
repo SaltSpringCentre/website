@@ -1,0 +1,21 @@
+---
+title: "Sharada's March Update"
+date: 2014-02-28 22:39:42
+slug: sharadas-march-update-2
+author: "sysadmin_1a1xu9u1"
+categories: ["Monthly Newsletter", "Monthly Update"]
+---
+
+Greetings everyone. In [January’s update](https://saltspringcentre.com/2013/12/sharadas-new-years-greetings-2014/), I wrote about the arrival of spring. Apparently I spoke too soon. Winter’s last hurrah came toward the end of February, with three days of non-stop heavy snow, along with two days of power outage.
+Fortunately the Centre is well-equipped to deal with such surprises: the generator insured that there was water and lights. We all gathered round the wood stove, held an impromptu Bhagavad Gita study group, played scrabble, and did a thousand-piece puzzle of the Tibetan Wheel of Life, donated by Bob (painter Bob, for those who know him). Raven prepared meals and David and Stacey kept pathways clear, and Christine and David built a Ganesh snowman. There was a question about whether Shiva Ratri could go ahead, but then both Blackburn Road and the driveway got plowed, and the snow finally stopped.
+[![feb-snowfall](images/0ecfafe6_feb-snowfall.jpg)](images/0ecfafe6_feb-snowfall.jpg)
+Shiva Ratri was focussed and uplifting, with many people staying through the whole night. The early morning lingam procession made its way to the pond through the snow. The ice, which had been broken the day before in preparation, had to be broken again, and a few brave souls went into the pond with the lingams.. Jai Shiva!
+It’s great to have karma yogis Christine and Tana returning for the coming season. I’d like to introduce the coordinators of the various departments of the Centre: Raven in the kitchen; David in the garden; Christine in housekeeping; Kris in programs and rentals; Claire in registration and office coordination. Tana will serve as needed, mainly in the garden and maintenance departments. We are currently interviewing for the position of maintenance coordinator, and are still accepting applications for [Yoga Service and Study Immersion](https://saltspringcentre.com/yoga-service-and-study/) (YSSI) program coordinator and lead cooks. Click here for information about the [YSS Coordinator position](https://saltspringcentre.com/2014/02/yssi-program-coordinator-needed/). Centre Committee, keeping an eye on the big picture of what goes on at the Centre, includes Paramita, Rajani, Sri Nivas and Sharada.
+Rajani and Sharada are in the midst of interviewing applicants to the YSSI program, and will continue to do so throughout March and into April. If you or someone you know is interested in this program, please point them in the direction of the Centre’s website for details.
+Centre residents have been enjoying the company of a couple of majestic eagles that have been roosting in a tree across the road from the Centre, and soaring over the land. They, followed by the turkey vultures, have cleaned up the remains of the young deer who didn’t make it through the winter - the cycle of birth and death.
+Meanwhile, the human community at the Centre has been enjoying the delicious greens that are still being harvested from the farm - and the nettles that are springing up (even though at this moment they’re covered by snow) - such a treat!
+Recently, Myles, a friend of David’s from Ontario, visited for a couple of days. It was a short visit, but things can happen here in even such a short time! [Here is the thank you note he left for us](https://saltspringcentre.com/2014/02/a-letter-from-myles/).
+Also for your reading pleasure is [Gabriel Vinod Rose’s biographical story](https://saltspringcentre.com/2014/02/our-centre-community-gabriel-vinod-rose/). Gabe was born into the satsang, and Babaji has always been part of his life. In place of our regular Asana of the Month, we offer one of Kalpana Tabachnick’s incredible asana cards, this one being [alligator pose](https://saltspringcentre.com/2014/02/asana-of-the-month-makarasana-alligator-pose/). Another article to read is [Making Space for Peace](https://saltspringcentre.com/2014/02/making-space-for-peace-sutra-33/), with commentary and thoughts about sutra 33 of Patanjali’s yoga sutras, reminding us that we always have the option to choose peace. Pratibha’s Ayurveda contribution will return next month.
+With wishes for peace to all,
+Love,
+Sharada

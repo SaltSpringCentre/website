@@ -1,0 +1,26 @@
+---
+title: "Book Review: 'How Can I Help?\" Stories and Reflections on Service"
+date: 2015-08-30 20:21:48
+slug: book-review-how-can-i-help-stories-and-reflections-on-service
+author: "sysadmin_1a1xu9u1"
+categories: ["Monthly Newsletter"]
+tags: ["book review", "Kenzie Pattillo"]
+---
+
+## How Can I Help book coverWe are all walking each other home.
+
+### 'How Can I Help?' Stories and Reflections on Service by Ram Dass and Paul Gorman
+
+The first phone conversation I had with a beloved friend after her mother died was punctuated by a lot of tears on both sides of the line. She had been her mom's main caregiver during the final few months of her life, and the experience of both caring for and saying goodbye to her mother had been profound and transformative. Amid the tears and heart talk, she mentioned a book that really helped her during this time, and she felt strongly that I should read it. Less than 24 hours later my eyes were drawn to a bright orange book cover on the tiny book shelf at my favourite juice bar as I awaited my 'Ganesha's Greens'. Amidst the raw food and vegan cookbooks sat my friend's book recommendation; 'How Can I Help'- Stories and Reflections on Service by Ram Dass and Paul Gorman. But of course: that's how strong our love is.
+Ram Dass and Gorman begin by establishing a few key principles, and then circle back to them as different aspects of service are explored. Beginning with the premise that we are all helpers, that compassion is our true nature, and that spontaneous expressions of innate generosity arise when we realize our inherent unity, they explore the barriers to that natural compassion. In acknowledging those barriers, they offer ways to overcome them, while providing deeply moving first person accounts that help place these ideas firmly in the world of experience. Those of us who learn better with concrete examples and/or personal narrative will especially benefit from this aspect of the book.
+Ram Dass is a yogi's yogi (he was even taught by Babaji way back when) yet I don't recall the word 'yoga' being mentioned even once in the text, which makes the book more accessible to a wider audience, while still effectively exploring the practice of karma yoga. Wherever a barrier to effective helping is found, cultivating 'The Witness', unjudging awareness, is offered as a remedy. By creating more space to see situations clearly, our compassion for ourselves and others increases, our sense of unity is amplified and the helper and the helped dissolve until there is only helping. But it's not easy and it takes practice!
+The only practice offered in the book is called "opening to pain,” which not only helps us experience firsthand our own reactivity and aversion to suffering, but also offers the foundation stone of the Buddha's teaching: "He saw that if we could break that link between painful conditions and the reactivity of the mind there was hope of liberating ourselves from the continuous experience of suffering. He realized that pain alone is not the enemy; the real enemy is fear and resistance." Illuminating our reactions to suffering is also part of cultivating 'The Witness' and dissolving our sense of separation through true compassion.
+"Through these practices, and our efforts to keep our hearts open in the presence of suffering, we find ourselves more available to whoever we are with. Compassion is increasingly an automatic response. We find a deep quality of love infusing our actions with others. The expression of this love, in turn, becomes increasingly our goal, whatever the circumstances. The more unconditionally we share it, the more helpful it is to all."
+This book is a helpful, practical guide for volunteers, those in the helping professions, activists, and even just friends and families trying to meet each other's needs. But, this book also reminds us that helping is a deep spiritual practice of devotional service.
+"Service gradually becomes an offering, first to those we are with, but eventually to that greater truth or source of being in which we are all joined in love. Helping becomes an act of reverence, worship, gratitude. It is grace merely to have the chance to serve."
+"It is no longer an end in itself. It is a vehicle through which we reach a deeper understanding of life. Each step we take, each moment in which we grow toward a greater understanding of unity, steadily transforms us into instruments of that help which truly heals."
+Every chapter of this book leads us toward a greater capacity to be of service. Certain chapters resonated more with me because of my own experience of helping, yet each chapter led me again back to the realization that true compassion is born of bearing Witness and dissolving any notion of a separate self. Ram Dass and Paul Gorman have served us all well by writing this book. It is truly, truly helpful!
+--
+ 
+**[![KenziePattillo](images/5452f8bb_KenziePattillo-e1422510546378.jpg)](images/5452f8bb_KenziePattillo.jpg)
+Kenzie Pattillo** completed her 200 hour YTT at Salt Spring Centre of Yoga in 2002. She is a householder yogi/mama living in North Vancouver, B.C. and presently teaches yin, hatha and flow yoga in her community. En route to completing her 500 hour YTT designation she has recently begun practicing one on one restorative therapeutics.

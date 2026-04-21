@@ -1,0 +1,24 @@
+---
+title: "Replace Judgement with Compassion"
+date: 2016-11-29 21:19:38
+slug: replace-judgement-with-compassion
+author: "sysadmin_1a1xu9u1"
+categories: ["Inspiration &amp; Spiritual Teachings", "Monthly Newsletter"]
+tags: ["Pratibha Queen"]
+---
+
+[![xk_igfdkhmy-alex-blajan](images/9ae12847_xk_igfdkhmy-alex-blajan.jpg)](images/9ae12847_xk_igfdkhmy-alex-blajan.jpg)Who would have imagined, when hearing this suggestion – replace judgment with compassion - at SSCY last summer, that it would have come in so handy on the day after the American presidential election in November? Now, months later, I don’t recall whether the phrase was read or heard or overheard, but in that moment of hearing, the words hit home, went deep, and I saw the destructive power of judgment and the positive power of compassion.
+Here’s an example: you’re cruising through the supermarket, intent on your errands, and suddenly you hear a young mother yelling at her child. You can hear the frustration in her voice, you can feel the child cringing at the sound. What is your first reaction? Compassion for the child? Judgment for the mother? An alternative is compassion for the entire situation; compassion for the mother as well, for she too is suffering and inflicting her suffering on her child.
+Not to be sexist about it, think of another example: a father angry with his teen-age son, a police-person shooting an unarmed young person, a husband beating his wife. It happens all too often.
+When I heard replace judgment with compassion, what opened up for me was a vision of how judgment divides us, separates and isolates us; compassion surrounds a situation with an openness in which change can occur. Judgment constricts, defines; compassion creates space in which to feel our oneness.
+Of course, there are times when we must make judgments: during an election year, we must review the candidates, the propositions, the referendums and initiatives. We must evaluate which accord with our values, with the direction in which we wish life to flow. We are asked to decide upon which course of action we hope to see our society pursue. We make a judgment whenever we choose which vegetables to buy at the Farmer’s Market, when we ask another person for a date. We make judgments every day of our lives, choosing what is good for us, what is not good for us.
+Babaji advised us over the years to “develop positive qualities.” He taught us, in writing and by his example, the value of practicing “tolerance, patience, compassion, contentment, honesty, love” in our daily life. Patience and discipline were two that especially impressed me, especially as I began to see how lacking they were in my own life! Perhaps you can think of others that you have developed over the years.
+He also taught us from the Bhagavad Gita, the magnificent story of the battlefield of Kurukshretra, on which the forces of good and evil are arrayed, preparing for battle. He suggested that we view these battles between the forces of good and evil as a reflection of the positive and negative qualities that exist within the human mind. “Both the divine and demonic natures are in the mind. The demonic qualities start fading away and the path of liberation becomes clear for one who lives a disciplined life and develops positive qualities. . . . By developing positive qualities, such as truthfulness, nonviolence and compassion, the brilliance of spiritual energy develops in a seeker of the divine principle (God).” (Bhagavad Gita, Chap 16.)
+In our spiritual journey, we are asked to do battle against the forces of evil within the mind, learning to generate positive states of mind. Another quote from Babaji’s commentary on the Gita: “In order to bring perfection within, all aspirants must take responsibility and seek liberation by discovering their own shortcomings in life, and then removing them by developing positive qualities. In the process of attaining liberation, the support of a spiritual teacher, study of scriptures and spiritual beliefs all have their own limited impact. However, in reality, people must lift themselves by their own efforts and tread the spiritual path, shunning all worldly attractions.” (Bhagavad Gita, Ch 6.)
+In a practical sense, we can each watch how quickly the mind leaps to judgment, and in that seeing, we can consider how compassion can be a healing balm not only for ourselves, for also for those around us. May your path unfold in joy!
+-Pratibha Queen
+
+---
+
+[caption id="attachment\_8434" align="alignleft" width="287"][![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen[/caption]
+**Pratibha Queen** is an Ashtanga Yoga instructor and Ayurvedic practitioner who lives in Santa Cruz. She is a member of DSS who attends Salt Spring Centre of Yoga retreats on a regular basis. **All quotes above are from the writings of Baba Hari Dass.**

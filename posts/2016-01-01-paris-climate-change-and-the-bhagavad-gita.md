@@ -1,0 +1,39 @@
+---
+title: "Paris, Climate Change and the Bhagavad Gita"
+date: 2016-01-01 23:30:35
+slug: paris-climate-change-and-the-bhagavad-gita
+author: "sysadmin_1a1xu9u1"
+categories: ["Inspiration &amp; Spiritual Teachings", "Monthly Newsletter"]
+tags: ["Joseph Ramesh Pallant", "Ramesh"]
+---
+
+![Self Portrait at Dawn](images/e41849fa_flickr-cc-jorg-reuter.jpg)When pondering humanity’s role and responsibilities in addressing climate change, we see the issue touches many elements from the teachings of yoga. At the most basic level, our shared atmosphere reminds us that we are all one. Every carbon dioxide molecule we emit travels around the world as part of the air, destabilizing the global climate by increasing the insulating value of the atmosphere. In the same fashion, every molecule of CO2 that we can keep out of atmosphere benefits us all. Though the impacts of climate change may manifest differently in different places - a deeper drought on Salt Spring Island or a harsher monsoon in Haridwar – Earth’s climate is being changed by the actions and inactions of humanity.
+Chapter 3 of the Bhagavad Gita (on Karma Yoga), instructs us to “*Perform your obligatory duty; for action is superior to inaction.*” There are actions, or obligatory duties, prescribed for individuals. They include five duties including duties to yourself, your family, your community, your country and towards the earth. “*Duties toward the earth, such as caring for the soil, water, and plant and animal life. If nature is harmed by pollution in the air, water, and earth the whole universe will be negatively affected.*” When one does not perform obligatory duties, it is a form of inaction, which Lord Krishna says is not desirable for those who are active in the world.
+Clearly, climate action is warranted, if not for contemporary self-evident reasons, then because the Baghavad Gita tells us so. Last month, I joined representatives from the world’s 196 countries in Paris, as they gathered to negotiate a framework for global action on climate change. My climate work developing emissions reductions projects draws its imperative from this international work that places a value on getting carbon dioxide out of the atmosphere. Similar to my experience at the 2005 COP11 in Montreal, and 2009’s COP15 in Copenhagen, this 21st UN Conference of the Parties (COP21), was a beautiful, two week cacophony of inspiration, collaboration and insight as 40,000 people focused on the goal. This time, we got the outcome we needed, in a great success for multilateralism, as all of the countries of the world set aside their differences to settle on the Paris Agreement.
+**Key tenets of action in the Paris Agreement include:**
+
+### Keep temperature rise to 1.5 degrees
+
+The nations of the world agreed to “hold the increase in the global average temperature to well below 2 °C above pre-industrial levels and to pursue efforts to limit the temperature increase to 1.5 °C above pre-industrial levels” in order to give us the best chance of maintaining a stable climate. This is the overarching task of our work on climate change, and provides a clear goal. There is power in this clarity, and in the same way that committing to a yoga practice won’t have us achieve enlightenment all on its own, we’re going to have a much harder time without making such a commitment.
+
+### Intended Nationally Determined Contributions
+
+Ahead of Paris, countries prepared and submitted their own individual mid-term targets for climate action, called Intended Nationally Determined Contributions (INDCs). One could consider these to be “marching orders”, on how far, how fast, and by what routes action will be achieved. By having each nation commit to action rather than accept an externally imposed target, it is easier for a nation to hold itself to account. In a similar fashion, each yoga aspirant must choose for themselves the practices, observances and sacrifices they are willing to make in their current practice, building perseverance and warding off hopelessness at the distance of the end goal.
+
+### Finance for developing countries
+
+The Paris Agreement reiterated the commitment from developed nations to help finance climate mitigation (getting and keeping greenhouse gasses out of the atmosphere), along with adaptation (adapting to the climate change that is already happening) in vulnerable, developing countries. Setting a floor of $100 billion per year in funding, this manifests the duty of action towards community, helping those in need become more resilient to the climate tribulations coming their way.
+
+### Internationally Transferred Mitigation Outcomes (ITMOs)
+
+This concept of an ITMO, launched in Paris, is exciting because it builds a framework for nations to increase their contribution to fighting climate change by collaborating to reduce emissions in other countries around the world. By clarifying the way that mitigation actions are recognized, a bigger tent and more ambitious action can be built, enabling the momentum and collaboration we’ll need to overcome the daunting challenge of climate change. ITMOs are interesting to ponder in the light of yoga, because on one hand, they represent the opposite of karma yoga, selfless service, for by their nature, they allow for the accounting of positive actions. Viewed from a different angle, ITMOs are the essence of Karma yoga, for by helping others (reduce their emissions), we help ourselves (in meeting our emissions reduction goals – and ultimately halting climate change). What a blessing to the climate practitioner, that the nuances of a global climate accord may help us ponder nuances deep within yoga.
+
+### What does it all mean?
+
+When seeking to understand the meaning of COP21, and the international climate change process, it’s critical to recognize that this conference had a very specific purpose – to set an agreed upon, international framework to guide and monitor progress. Paris is not the action. You are the action. The Gita alone does not bring enlightenment, but rather sets the aspirant up with inspiration and direction that one must act upon themselves. It’s the same reality for Paris and climate action. Though much of the commentary on COP21 has surprised me with its negativity, I realize that people were hoping for a silver bullet that would solve this crisis in a flash. The reality is much more grounded in our understanding of the yoga practice. The Paris Agreement sets up a framework for action, but we will only beat climate change through the regular sadhana of climate action on all fronts today, and long into the future.
+So we seek places in life where we may more fully carry out our duties to the earth. Perhaps your highest contribution is in the meditative diligence of reducing your own footprint. Or it may be to teach yoga, build community, and help others achieve peace. In addition, consider where there may be specific actions you can take at work, in your city, or among the community of nations to keep more greenhouse gasses out of the atmosphere. After all, as Lord Krishna instructs Arjuna in the Bhagavad Gita, in response to our duties, action is better than inaction. The whole universe will be *positively* affected.
+
+---
+
+![Joseph in sweater on ferry](images/e41849fa_Joseph-in-sweater-on-ferry.jpg)Active in the carbon market since 2004 and a life-long seeker of environmental solutions, [Joseph Ramesh Pallant](https://saltspringcentre.com/2015/08/our-centre-community-joseph-ramesh-pallant/) is passionate about the role of business in solving climate change. Building pioneering emissions reductions projects, developing strong standards, and helping society understand the role of carbon markets fill his day-to-day.
+image: "Self Portrait at Dawn" by [Jorg Reuter](https://www.flickr.com/photos/stachelig/), flickr creative commons license

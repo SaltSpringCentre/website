@@ -115,7 +115,8 @@ p { text-align: justify; text-justify: inter-word; }
 }
 .post-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
 .post-card:hover .post-img img { transform: scale(1.04); }
-.post-img .placeholder { font-size: 2.5rem; opacity: 0.15; }
+.post-card--text { background: var(--cream-warm); }
+.post-card--text .post-body { padding: 28px 24px; }
 
 .post-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
 
@@ -336,20 +337,20 @@ p { text-align: justify; text-justify: inter-word; }
 <!-- FILTER KEYS -->
 <div class="filter-keys" id="filterKeys">
   <button class="filter-key active" data-cat="all">All Posts</button>
-  <button class="filter-key" data-cat="53">Teachings</button>
-  <button class="filter-key" data-cat="76">Community</button>
-  <button class="filter-key" data-cat="112">Farm</button>
-  <button class="filter-key" data-cat="7">Recipes</button>
-  <button class="filter-key" data-cat="67">Events</button>
-  <button class="filter-key" data-cat="73">Karma Yoga</button>
-  <button class="filter-key" data-cat="60">Retreats</button>
+  <button class="filter-key" data-cat="Monthly Newsletter">Newsletter</button>
+  <button class="filter-key" data-cat="Inspiration &amp; Spiritual Teachings">Teachings</button>
+  <button class="filter-key" data-cat="SSCY Community">Community</button>
+  <button class="filter-key" data-cat="Karma Yoga">Karma Yoga</button>
+  <button class="filter-key" data-cat="Recipes">Recipes</button>
+  <button class="filter-key" data-cat="Retreats">Retreats</button>
+  <button class="filter-key" data-cat="Farm Blog">Farm</button>
 </div>
 
 <!-- SEARCH BAR -->
 <div class="search-bar">
   <div class="search-inner">
     <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" id="searchInput" placeholder="Search 679 posts..." oninput="handleSearch()" autcomplete="off">
+    <input type="text" id="searchInput" placeholder="Search 680 posts..." oninput="handleSearch()" autocomplete="off">
     <button class="search-clear" id="searchClear" onclick="clearSearch()" style="display:none;">&times;</button>
   </div>
 </div>
@@ -358,7 +359,7 @@ p { text-align: justify; text-justify: inter-word; }
 <section class="blog-section">
   <div class="loading" id="loading">
     <div class="loading-spinner"></div>
-    <div>Loading posts from saltspringcentre.com...</div>
+    <div>Loading posts...</div>
   </div>
   <div class="blog-grid" id="blogGrid"></div>
 </section>
@@ -417,107 +418,103 @@ p { text-align: justify; text-justify: inter-word; }
 </footer>
 
 <script>
-var API = 'https://saltspringcentre.com/wp-json/wp/v2';
 var PER_PAGE = 12;
+var allPosts = [];
+var filtered = [];
 var currentPage = 1;
 var totalPages = 1;
-var totalPosts = 0;
 var activeCategory = '';
 var searchQuery = '';
 var searchTimer = null;
-var mediaCache = {};
 
-// Category name map for display
-var CAT_NAMES = {};
-
-// Fetch category names once
-fetch(API + '/categories?per_page=50&_fields=id,name')
-  .then(function(r) { return r.json(); })
-  .then(function(cats) {
-    cats.forEach(function(c) { CAT_NAMES[c.id] = c.name.replace(/&amp;/g, '&'); });
-  });
-
-function fetchPosts() {
-  var grid = document.getElementById('blogGrid');
-  var loading = document.getElementById('loading');
-  var pagination = document.getElementById('pagination');
-
-  grid.innerHTML = '';
-  loading.style.display = '';
-  pagination.style.display = 'none';
-
-  var url = API + '/posts?per_page=' + PER_PAGE + '&page=' + currentPage + '&_fields=id,title,date,excerpt,link,featured_media,categories';
-  if (activeCategory) url += '&categories=' + activeCategory;
-  if (searchQuery) url += '&search=' + encodeURIComponent(searchQuery);
-
-  fetch(url)
-    .then(function(r) {
-      totalPages = parseInt(r.headers.get('X-WP-TotalPages')) || 1;
-      totalPosts = parseInt(r.headers.get('X-WP-Total')) || 0;
-      document.getElementById('postCount').textContent = totalPosts + ' posts since 2010';
-      return r.json();
-    })
-    .then(function(posts) {
-      loading.style.display = 'none';
-
-      // Collect media IDs to fetch
-      var mediaIds = posts.filter(function(p) { return p.featured_media && !mediaCache[p.featured_media]; }).map(function(p) { return p.featured_media; });
-
-      // Fetch featured images in batch
-      var mediaPromise = Promise.resolve();
-      if (mediaIds.length > 0) {
-        mediaPromise = fetch(API + '/media?include=' + mediaIds.join(',') + '&_fields=id,source_url&per_page=' + mediaIds.length)
-          .then(function(r) { return r.json(); })
-          .then(function(media) {
-            media.forEach(function(m) { mediaCache[m.id] = m.source_url; });
-          })
-          .catch(function() {});
-      }
-
-      mediaPromise.then(function() {
-        grid.innerHTML = posts.map(function(p) {
-          var date = new Date(p.date);
-          var dateStr = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-          var imgUrl = mediaCache[p.featured_media] || '';
-          var catNames = (p.categories || []).map(function(id) { return CAT_NAMES[id] || ''; }).filter(Boolean).slice(0, 2).join(', ');
-          var excerpt = p.excerpt.rendered.replace(/<[^>]+>/g, '').substring(0, 200);
-          if (excerpt.length >= 200) excerpt = excerpt.substring(0, excerpt.lastIndexOf(' ')) + '...';
-
-          return '<a href="' + p.link + '" target="_blank" rel="noopener" class="post-card">' +
-            '<div class="post-img">' +
-              (imgUrl ? '<img src="' + imgUrl + '" alt="" loading="lazy">' : '<div class="placeholder">&#x1F9D8;</div>') +
-            '</div>' +
-            '<div class="post-body">' +
-              (catNames ? '<div class="post-cat">' + catNames + '</div>' : '') +
-              '<div class="post-date">' + dateStr + '</div>' +
-              '<div class="post-title">' + p.title.rendered + '</div>' +
-              '<div class="post-excerpt">' + excerpt + '</div>' +
-              '<span class="post-link">Read more</span>' +
-            '</div>' +
-          '</a>';
-        }).join('');
-
-        // Update pagination
-        pagination.style.display = 'flex';
-        document.getElementById('prevBtn').disabled = currentPage <= 1;
-        document.getElementById('nextBtn').disabled = currentPage >= totalPages;
-        document.getElementById('pageInfo').textContent = 'Page ' + currentPage + ' of ' + totalPages;
-      });
-    })
-    .catch(function(err) {
-      loading.innerHTML = '<p>Could not load posts. <a href="https://saltspringcentre.com/blog/" target="_blank">Visit the blog on saltspringcentre.com</a></p>';
-    });
+function decodeEntities(s) {
+  if (!s) return '';
+  var t = document.createElement('textarea');
+  t.innerHTML = s;
+  return t.value;
 }
+
+function applyFilters() {
+  var q = searchQuery.toLowerCase();
+  filtered = allPosts.filter(function(p) {
+    if (activeCategory) {
+      var cats = (p.categories || []).map(decodeEntities);
+      if (cats.indexOf(activeCategory) === -1) return false;
+    }
+    if (q) {
+      var hay = (p.title + ' ' + (p.excerpt || '')).toLowerCase();
+      if (hay.indexOf(q) === -1) return false;
+    }
+    return true;
+  });
+  totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
+  if (currentPage > totalPages) currentPage = totalPages;
+  document.getElementById('postCount').textContent = filtered.length + ' post' + (filtered.length === 1 ? '' : 's');
+}
+
+function renderGrid() {
+  var grid = document.getElementById('blogGrid');
+  var pagination = document.getElementById('pagination');
+  var start = (currentPage - 1) * PER_PAGE;
+  var slice = filtered.slice(start, start + PER_PAGE);
+
+  if (slice.length === 0) {
+    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-light);">No posts match your filters.</div>';
+    pagination.style.display = 'none';
+    return;
+  }
+
+  grid.innerHTML = slice.map(function(p) {
+    var date = new Date(p.date.replace(' ', 'T'));
+    var dateStr = isNaN(date) ? p.date : date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    var cats = (p.categories || []).slice(0, 2).map(decodeEntities).join(', ');
+    var rawExcerpt = decodeEntities(p.excerpt || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+    var excerpt = rawExcerpt.length > 200 ? rawExcerpt.substring(0, 200).replace(/\s+\S*$/, '') + '...' : rawExcerpt;
+    var slug = encodeURIComponent(p.slug);
+
+    var imgSrc = p.featured_image ? 'posts/' + p.featured_image : '';
+    return '<a href="post.html?slug=' + slug + '" class="post-card' + (imgSrc ? '' : ' post-card--text') + '">' +
+      (imgSrc ? '<div class="post-img"><img src="' + imgSrc + '" alt="" loading="lazy"></div>' : '') +
+      '<div class="post-body">' +
+        (cats ? '<div class="post-cat">' + cats + '</div>' : '') +
+        '<div class="post-date">' + dateStr + '</div>' +
+        '<div class="post-title">' + decodeEntities(p.title) + '</div>' +
+        (excerpt ? '<div class="post-excerpt">' + excerpt + '</div>' : '') +
+        '<span class="post-link">Read more</span>' +
+      '</div>' +
+    '</a>';
+  }).join('');
+
+  pagination.style.display = 'flex';
+  document.getElementById('prevBtn').disabled = currentPage <= 1;
+  document.getElementById('nextBtn').disabled = currentPage >= totalPages;
+  document.getElementById('pageInfo').textContent = 'Page ' + currentPage + ' of ' + totalPages;
+}
+
+function refresh() {
+  applyFilters();
+  renderGrid();
+}
+
+fetch('posts/index.json')
+  .then(function(r) { return r.json(); })
+  .then(function(posts) {
+    allPosts = posts;
+    document.getElementById('loading').style.display = 'none';
+    refresh();
+  })
+  .catch(function(err) {
+    document.getElementById('loading').innerHTML = '<p>Could not load posts. (' + err.message + ')</p>';
+  });
 
 function changePage(delta) {
   currentPage += delta;
   if (currentPage < 1) currentPage = 1;
   if (currentPage > totalPages) currentPage = totalPages;
-  fetchPosts();
+  renderGrid();
   window.scrollTo({ top: document.querySelector('.blog-section').offsetTop - 160, behavior: 'smooth' });
 }
 
-// Filter keys
 document.getElementById('filterKeys').addEventListener('click', function(e) {
   var btn = e.target.closest('.filter-key');
   if (!btn) return;
@@ -525,10 +522,9 @@ document.getElementById('filterKeys').addEventListener('click', function(e) {
   btn.classList.add('active');
   activeCategory = btn.dataset.cat === 'all' ? '' : btn.dataset.cat;
   currentPage = 1;
-  fetchPosts();
+  refresh();
 });
 
-// Search
 function handleSearch() {
   var input = document.getElementById('searchInput');
   var clear = document.getElementById('searchClear');
@@ -537,8 +533,8 @@ function handleSearch() {
   searchTimer = setTimeout(function() {
     searchQuery = input.value.trim();
     currentPage = 1;
-    fetchPosts();
-  }, 400);
+    refresh();
+  }, 200);
 }
 
 function clearSearch() {
@@ -547,20 +543,16 @@ function clearSearch() {
   document.getElementById('searchClear').style.display = 'none';
   searchQuery = '';
   currentPage = 1;
-  fetchPosts();
+  refresh();
   input.focus();
 }
 
-// Check for ?search= URL param
 var urlSearch = new URLSearchParams(window.location.search).get('search');
 if (urlSearch) {
   searchQuery = urlSearch;
   document.getElementById('searchInput').value = urlSearch;
   document.getElementById('searchClear').style.display = '';
 }
-
-// Initial load
-fetchPosts();
 
 // Mobile menu close on link click
 document.querySelectorAll('.mobile-menu a').forEach(function(a) {
