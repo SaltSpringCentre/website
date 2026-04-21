@@ -139,13 +139,22 @@ function slugify(s) {
 
 function stripMailchimpChrome(html) {
   let s = html;
-  // Drop conditional comments + head/style/script
   s = s.replace(/<!--\[if[\s\S]*?<!\[endif\]-->/g, '');
   s = s.replace(/<head[\s\S]*?<\/head>/i, '');
   s = s.replace(/<style[\s\S]*?<\/style>/gi, '');
   s = s.replace(/<script[\s\S]*?<\/script>/gi, '');
-  // Truncate at the first unsubscribe / footer marker
-  const tail = s.search(/(unsubscribe|you are receiving this|all rights reserved|view (this email )?in (your )?browser)/i);
+  const markers = [
+    /unsubscribe/i,
+    /you are receiving this/i,
+    /all rights reserved/i,
+    /view in browser/i,
+    /view this email in/i
+  ];
+  let tail = -1;
+  for (const re of markers) {
+    const i = s.search(re);
+    if (i > 0 && (tail === -1 || i < tail)) tail = i;
+  }
   if (tail > 0) {
     const cut = s.lastIndexOf('<table', tail);
     if (cut > 0) s = s.substring(0, cut);
