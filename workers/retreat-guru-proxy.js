@@ -67,7 +67,28 @@ export default {
     const response = await fetch(upstream.toString(), {
       headers: { 'Accept': 'application/json' }
     });
-    const body = await response.text();
+    let body = await response.text();
+
+    // Retreat Guru returns an array even for /programs/<id> single lookups.
+    // Unwrap to a single object so consumers can use `data.id` directly.
+    const isSingleProgram = parts[i + 1] && /^\d+$/.test(parts[i + 1]);
+    if (response.ok && isSingleProgram) {
+      try {
+        const parsed = JSON.parse(body);
+        if (Array.isArray(parsed)) {
+          if (parsed.length === 0) {
+            return new Response(JSON.stringify({ error: 'Program not found' }), {
+              status: 404,
+              headers: {
+                'Content-Type': 'application/json',
+                ...corsHeaders(request)
+              }
+            });
+          }
+          body = JSON.stringify(parsed[0]);
+        }
+      } catch (e) { /* leave body as-is */ }
+    }
 
     return new Response(body, {
       status: response.status,
