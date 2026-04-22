@@ -219,7 +219,7 @@ p { text-align: justify; text-justify: inter-word; }
 <!-- CART BAR -->
 <div class="cart-bar" id="cartBar">
   <div class="cart-bar-info"><span id="cartCount">0</span> items - <span class="cart-bar-total" id="cartTotal">$0.00</span></div>
-  <button class="cart-bar-btn" onclick="window.open('https://square.link/u/PLACEHOLDER_SHOP','_blank')">Checkout</button>
+  <button class="cart-bar-btn" onclick="openCheckout()">Checkout</button>
 </div>
 
 <!-- PRODUCT MODAL -->
@@ -240,37 +240,7 @@ p { text-align: justify; text-justify: inter-word; }
   </div>
 </div>
 
-<!-- DONATE MODAL -->
-<div class="donate-overlay" id="donateOverlay" onclick="if(event.target===this)closeDonate()">
-  <div class="donate-modal">
-    <div class="donate-header">
-      <h3>Make a Donation</h3>
-      <p>Salt Spring Centre of Yoga</p>
-      <button class="donate-close" onclick="closeDonate()">&times;</button>
-    </div>
-    <div class="donate-body">
-      <div class="donate-tiers">
-        <button class="tier" onclick="pickTier(25,this)">$25</button>
-        <button class="tier" onclick="pickTier(50,this)">$50</button>
-        <button class="tier active" onclick="pickTier(108,this)">$108</button>
-        <button class="tier" onclick="pickTier(200,this)">$200</button>
-      </div>
-      <div class="donate-field"><label>Name</label><input type="text" placeholder="Your full name"></div>
-      <div class="donate-field"><label>Email</label><input type="email" placeholder="you@example.com"></div>
-      <div class="donate-field"><label>Direct your gift</label>
-        <select>
-          <option>No Preference</option>
-          <option>Meeting Basic Needs &amp; Preserving Spaces</option>
-          <option>Bringing the Centre into solid financial position</option>
-          <option>Restoring key Centre Offerings</option>
-        </select>
-      </div>
-      <button class="donate-submit" onclick="closeDonate();alert('Thank you! In production this connects to Square.');">Donate via Square</button>
-      <div class="donate-alt">Or Interac E-Transfer to <strong>payment@saltspringcentre.com</strong></div>
-    </div>
-    <div class="donate-foot">This is a prototype. In production, this connects to Square for secure payment.</div>
-  </div>
-</div>
+<!-- DONATE + CHECKOUT modals handled by donate-form.js and checkout-form.js -->
 
 <div class="toast" id="toast"></div>
 
@@ -691,12 +661,8 @@ function closeMenu() {
   document.getElementById('menu').classList.remove('open');
   document.getElementById('ham').classList.remove('open');
 }
-function openDonate() { window.open("https://square.link/u/Oa6tCVaL", "_blank"); }
-function closeDonate() { document.getElementById('donateOverlay').classList.remove('open'); }
-function pickTier(amt, el) {
-  document.querySelectorAll('.tier').forEach(function(t) { t.classList.remove('active'); });
-  el.classList.add('active');
-}
 </script>
+<script src="../checkout-form.js" defer></script>
+<script src="../donate-form.js" defer></script>
 </body>
 </html>
