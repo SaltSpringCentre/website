@@ -1098,7 +1098,6 @@ function setDonateAmount(amt) {
   document.querySelectorAll('.tier-btn').forEach(function(b) { b.classList.remove('active'); });
   event.target.classList.add('active');
 }
-function openDonate() { window.open("https://square.link/u/Oa6tCVaL", "_blank"); }
 function closeDonate() {
   document.getElementById('donateOverlay').classList.remove('open');
 }
@@ -1162,5 +1161,6 @@ function closeMobileMenu() {
 <script src="events-data.js" defer></script>
 <script src="next-event.js" defer></script>
 <script src="subscribe.js" defer></script>
+<script src="donate-form.js" defer></script>
 </body>
 </html>

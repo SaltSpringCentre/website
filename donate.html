@@ -221,12 +221,12 @@ p { text-align: justify; text-justify: inter-word; }
     <h2>Donate</h2>
   </div>
   <div class="donate-tiers reveal d1">
-    <a href="https://square.link/u/Oa6tCVaL" target="_blank" rel="noopener" class="donate-tier">$25</a>
-    <a href="https://square.link/u/Oa6tCVaL" target="_blank" rel="noopener" class="donate-tier">$50</a>
-    <a href="https://square.link/u/Oa6tCVaL" target="_blank" rel="noopener" class="donate-tier">$100</a>
-    <a href="https://square.link/u/Oa6tCVaL" target="_blank" rel="noopener" class="donate-tier">$108</a>
-    <a href="https://square.link/u/Oa6tCVaL" target="_blank" rel="noopener" class="donate-tier">$200</a>
-    <a href="https://square.link/u/Oa6tCVaL" target="_blank" rel="noopener" class="donate-tier">Custom Amount</a>
+    <a href="#" class="donate-tier" onclick="event.preventDefault();openDonate(25);">$25</a>
+    <a href="#" class="donate-tier" onclick="event.preventDefault();openDonate(50);">$50</a>
+    <a href="#" class="donate-tier" onclick="event.preventDefault();openDonate(100);">$100</a>
+    <a href="#" class="donate-tier" onclick="event.preventDefault();openDonate(108);">$108</a>
+    <a href="#" class="donate-tier" onclick="event.preventDefault();openDonate(200);">$200</a>
+    <a href="#" class="donate-tier" onclick="event.preventDefault();openDonate();">Custom Amount</a>
   </div>
 
   <div class="subsection reveal d2">
@@ -349,5 +349,6 @@ document.querySelectorAll('.mobile-menu a').forEach(function(a) {
 </script>
 
 <script src="subscribe.js" defer></script>
+<script src="donate-form.js" defer></script>
 </body>
 </html>

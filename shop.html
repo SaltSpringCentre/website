@@ -1128,51 +1128,7 @@ p { text-align: justify; text-justify: inter-word; }
   </div>
 </div>
 
-<!-- DONATE MODAL -->
-<div class="donate-overlay" id="donateOverlay" onclick="if(event.target===this)closeDonate()">
-  <div class="donate-modal">
-    <div class="donate-modal-header">
-      <h3 id="donateTitle">Make a Donation</h3>
-      <p id="donateSubtitle">Salt Spring Centre of Yoga</p>
-      <button class="donate-modal-close" onclick="closeDonate()">&times;</button>
-    </div>
-    <div class="donate-modal-body">
-      <div class="donate-amount-display">
-        <div class="donate-tiers" id="donateTiers">
-          <button class="tier-btn" onclick="setDonateAmount(25)">$25</button>
-          <button class="tier-btn" onclick="setDonateAmount(50)">$50</button>
-          <button class="tier-btn active" onclick="setDonateAmount(108)">$108</button>
-          <button class="tier-btn" onclick="setDonateAmount(200)">$200</button>
-        </div>
-        <div class="amount-label" id="donateAmountLabel">One-time donation</div>
-      </div>
-      <div class="donate-field">
-        <label>Name</label>
-        <input type="text" id="donateName" placeholder="Your full name">
-      </div>
-      <div class="donate-field">
-        <label>Email</label>
-        <input type="email" id="donateEmail" placeholder="you@example.com">
-      </div>
-      <div class="donate-field">
-        <label>Direct your gift</label>
-        <select id="donateFund">
-          <option>No Preference</option>
-          <option>Meeting Basic Needs &amp; Preserving Spaces</option>
-          <option>Bringing the Centre into solid financial position</option>
-          <option>Restoring key Centre Offerings</option>
-        </select>
-      </div>
-      <button class="donate-submit" id="donateSubmitBtn" onclick="window.open('https://square.link/u/Oa6tCVaL','_blank')">Donate via Square</button>
-      <div class="donate-alt">
-        Or send Interac E-Transfer to <strong>payment@saltspringcentre.com</strong>
-      </div>
-    </div>
-    <div class="donate-modal-footer">
-      This is a prototype. In production, this connects to Square for secure payment.
-    </div>
-  </div>
-</div>
+<!-- DONATE MODAL: handled by donate-form.js (injected on first openDonate call) -->
 
 <!-- PRODUCT DETAIL MODAL -->
 <div class="product-modal-overlay" id="productModalOverlay" onclick="if(event.target===this)closeProductModal()">
@@ -1560,41 +1516,12 @@ document.getElementById('categoryFilters').addEventListener('click', e => {
   renderProducts(e.target.dataset.category);
 });
 
-// ===== DONATE MODAL =====
-function openDonate(productId) {
+// Donate modal + submit handled by donate-form.js (window.openDonate/closeDonate).
+// Shop-specific helpers: route support-category products through the shared modal.
+function openShopDonate(productId) {
   const product = PRODUCTS.find(p => p.id === productId);
-  if (!product) return;
-
-  document.getElementById('donateTitle').textContent = product.title;
-  document.getElementById('donateTiers').style.display = 'none';
-  document.getElementById('donateAmountLabel').textContent = 'Directed gift';
-  document.getElementById('donateSubmitBtn').textContent = 'Donate via Square - $' + product.price.toFixed(2);
-  document.getElementById('donateOverlay').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-
-let currentDonateAmount = 108;
-
-function setDonateAmount(amount) {
-  currentDonateAmount = amount;
-  document.querySelectorAll('.tier-btn').forEach(b => {
-    b.classList.toggle('active', b.textContent === '$' + amount);
-  });
-  document.getElementById('donateSubmitBtn').textContent = 'Donate via Square - $' + amount + '.00';
-}
-
-function openDonateGeneral() {
-  window.open('https://square.link/u/Oa6tCVaL', '_blank');
-}
-
-function closeDonate() {
-  document.getElementById('donateOverlay').classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-function submitDonation() { window.open('https://square.link/u/Oa6tCVaL','_blank');
-  closeDonate();
-  showToast('Thank you for your generosity! (Prototype - would process via Square)');
+  if (!product) { if (window.openDonate) window.openDonate(); return; }
+  if (window.openDonate) window.openDonate(product.price);
 }
 
 // ===== CART FUNCTIONS =====
@@ -1604,7 +1531,7 @@ function addToCart(productId) {
 
   // Support items go to donate modal instead of cart
   if (product.category === 'support') {
-    openDonate(productId);
+    openShopDonate(productId);
     return;
   }
 
@@ -1885,8 +1812,8 @@ renderProducts();
 updateCartUI();
 
 // Auto-open donate if #donate in URL
-if (window.location.hash === '#donate') openDonateGeneral();
-window.addEventListener('hashchange', function() { if (window.location.hash === '#donate') openDonateGeneral(); });
+if (window.location.hash === '#donate' && window.openDonate) openDonate();
+window.addEventListener('hashchange', function() { if (window.location.hash === '#donate' && window.openDonate) openDonate(); });
 
 // Mobile menu close on link click
 document.querySelectorAll('.mobile-menu a').forEach(function(a) {
@@ -1897,5 +1824,6 @@ document.querySelectorAll('.mobile-menu a').forEach(function(a) {
 });
 </script>
 <script src="subscribe.js" defer></script>
+<script src="donate-form.js" defer></script>
 </body>
 </html>
