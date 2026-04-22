@@ -162,20 +162,8 @@ p { text-align: justify; text-justify: inter-word; }
 .product-slim {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 16px 20px;
-}
-
-.product-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--cream-warm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem;
-  flex-shrink: 0;
+  gap: 18px;
+  padding: 22px 26px;
 }
 
 .product-slim-info {
@@ -185,22 +173,23 @@ p { text-align: justify; text-justify: inter-word; }
 
 .product-slim-title {
   font-family: 'Cinzel', serif;
-  font-size: 0.82rem;
+  font-size: 0.98rem;
   font-weight: 600;
   color: var(--charcoal);
   line-height: 1.3;
 }
 
 .product-slim-cat {
-  font-size: 0.62rem;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--teal);
+  margin-bottom: 3px;
 }
 
 .product-slim-price {
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--teal-deep);
   flex-shrink: 0;
@@ -542,8 +531,6 @@ p { text-align: justify; text-justify: inter-word; }
   font-size: 0.9rem;
 }
 
-.cart-empty .empty-icon { font-size: 3rem; margin-bottom: 12px; }
-
 .cart-item {
   display: flex;
   gap: 16px;
@@ -866,7 +853,6 @@ p { text-align: justify; text-justify: inter-word; }
   .products-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .product-card:hover .product-preview { max-height: 0; }
   .product-slim { padding: 12px 14px; gap: 10px; }
-  .product-icon { width: 36px; height: 36px; font-size: 1.1rem; }
   .product-slim-title { font-size: 0.72rem; }
   .product-slim-price { font-size: 0.78rem; }
   .sticky-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; }
@@ -1028,8 +1014,7 @@ p { text-align: justify; text-justify: inter-word; }
   </div>
   <div class="cart-items" id="cartItems">
     <div class="cart-empty">
-      <div class="empty-icon">&#x1F9D8;</div>
-      <p>Your cart is empty</p>
+          <p>Your cart is empty</p>
     </div>
   </div>
   <div class="cart-footer">
@@ -1129,7 +1114,6 @@ const PRODUCTS = [
       venue: 'Satsang Room'
     },
     img: 'images/2026/03/Violin-Concert-April-11-2026-Shriram-Rajagopalan.jpg',
-    icon: '\uD83C\uDFBB'
   },
   {
     id: 101,
@@ -1146,7 +1130,6 @@ const PRODUCTS = [
       venue: 'Salt Spring Centre of Yoga'
     },
     img: 'images/2025/11/SoundBath-SaltSpring.png',
-    icon: '\uD83D\uDD14'
   },
   {
     id: 102,
@@ -1162,7 +1145,6 @@ const PRODUCTS = [
       venue: 'Pond Dome'
     },
     img: 'images/2025/12/11.jpg',
-    icon: '\uD83C\uDFB6'
   },
   {
     id: 103,
@@ -1178,7 +1160,6 @@ const PRODUCTS = [
       venue: 'Satsang Room'
     },
     img: 'images/2025/12/11.jpg',
-    icon: '\uD83C\uDFB5'
   },
 
   // BOOKS & MEDIA
@@ -1189,7 +1170,6 @@ const PRODUCTS = [
     desc: 'The beloved vegetarian cookbook that sold 52,000 copies. Classic sattvic recipes from the Centre\'s kitchen.',
     price: 19.95,
     img: 'images/2017/11/sourdough-1.jpeg',
-    icon: '\uD83D\uDCD7'
   },
   {
     id: 2,
@@ -1198,7 +1178,6 @@ const PRODUCTS = [
     desc: 'Yoga philosophy, Ayurvedic principles, asana practice, and vegetarian recipes combined in one guide.',
     price: 22.95,
     img: 'https://pictures.abebooks.com/isbn/9781553350095-us.jpg',
-    icon: '\uD83D\uDCD6'
   },
   {
     id: 3,
@@ -1207,7 +1186,6 @@ const PRODUCTS = [
     desc: 'Baba Hari Dass\'s foundational guide to the eight limbs of yoga. Published by Sri Ram Publishing.',
     price: 24.95,
     img: 'images/2022/03/Babaji-header.jpg',
-    icon: '\uD83D\uDCDA'
   },
   {
     id: 4,
@@ -1216,7 +1194,6 @@ const PRODUCTS = [
     desc: 'Collected wisdom from Baba Hari Dass\'s chalkboard. Aphorisms on yoga, life, and spiritual practice.',
     price: 18.95,
     img: 'images/2021/11/Babaji-photo-overlay.jpg',
-    icon: '\uD83D\uDCDA'
   },
   {
     id: 5,
@@ -1224,7 +1201,6 @@ const PRODUCTS = [
     title: 'The Yellow Book',
     desc: 'Baba Hari Dass\'s first publication (1974). A collection of aphorisms that launched decades of teaching.',
     price: 16.95,
-    icon: '\uD83D\uDCDA'
   },
   {
     id: 6,
@@ -1233,7 +1209,6 @@ const PRODUCTS = [
     desc: 'Live devotional chanting recorded at the annual community yoga retreat.',
     price: 12.00,
     img: 'images/2022/08/Kirtan.jpg',
-    icon: '\uD83C\uDFB6'
   },
   {
     id: 7,
@@ -1241,7 +1216,6 @@ const PRODUCTS = [
     title: 'Surya Namaskar Mantras',
     desc: 'Sun salutation mantras for your daily practice.',
     price: 8.00,
-    icon: '\uD83C\uDFB5'
   },
 
   // APPAREL & MERCH
@@ -1254,7 +1228,6 @@ const PRODUCTS = [
     badge: 'New',
     badgeClass: 'new',
     img: 'images/2021/11/SSCY-Full-Logo.png',
-    icon: '\uD83D\uDC55'
   },
   {
     id: 11,
@@ -1262,7 +1235,6 @@ const PRODUCTS = [
     title: 'Karma Yoga Hoodie',
     desc: 'Cozy pullover hoodie with "Karma Yoga" print. Ethically produced, printed on demand.',
     price: 54.95,
-    icon: '\uD83E\uDDE5'
   },
   {
     id: 12,
@@ -1270,7 +1242,6 @@ const PRODUCTS = [
     title: 'SSCY Toque',
     desc: 'Warm knit beanie with embroidered lotus. Perfect for Salt Spring Island winters.',
     price: 28.00,
-    icon: '\uD83E\uDDE2'
   },
   {
     id: 13,
@@ -1278,7 +1249,6 @@ const PRODUCTS = [
     title: 'Centre Tote Bag',
     desc: 'Heavy-duty organic canvas tote with lotus logo. Great for farmers market runs.',
     price: 24.95,
-    icon: '\uD83D\uDC5C'
   },
 
   // YOGA & MEDITATION
@@ -1289,7 +1259,6 @@ const PRODUCTS = [
     desc: 'Buckwheat-filled round cushion in Centre teal. Supports proper meditation posture.',
     price: 59.95,
     img: 'images/2022/01/buddha-background.jpg',
-    icon: '\uD83E\uDDD8'
   },
   {
     id: 21,
@@ -1298,7 +1267,6 @@ const PRODUCTS = [
     desc: 'Handcrafted rudraksha seed mala for japa meditation. Traditional 108 beads with guru bead.',
     price: 38.00,
     img: 'images/2022/09/Lotus-photo-jpeg.jpg',
-    icon: '\uD83D\uDCFF'
   },
   {
     id: 22,
@@ -1306,7 +1274,6 @@ const PRODUCTS = [
     title: 'Cork Yoga Block',
     desc: 'Sustainable cork block for support in asana practice. Firm, lightweight, and eco-friendly.',
     price: 22.00,
-    icon: '\uD83E\uDDF1'
   },
   {
     id: 23,
@@ -1314,7 +1281,6 @@ const PRODUCTS = [
     title: 'Neti Pot (Ceramic)',
     desc: 'Traditional ceramic neti pot for nasal cleansing. A staple of Ayurvedic self-care.',
     price: 18.95,
-    icon: '\uD83C\uDFFA'
   },
   // GARDEN & SEEDS
   {
@@ -1326,7 +1292,6 @@ const PRODUCTS = [
     badge: 'New',
     badgeClass: 'new',
     img: 'images/2023/11/Program-House-with-flowers-resized.png',
-    icon: '\uD83C\uDF31'
   },
   {
     id: 31,
@@ -1334,7 +1299,6 @@ const PRODUCTS = [
     title: 'Herb Garden Starter Kit',
     desc: 'Basil, cilantro, dill, and parsley seeds from the Centre\'s kitchen garden. Organic and open-pollinated.',
     price: 14.95,
-    icon: '\uD83C\uDF3F'
   },
   {
     id: 32,
@@ -1343,7 +1307,6 @@ const PRODUCTS = [
     desc: '12 recipe cards featuring classic vegetarian dishes from the Centre\'s 50-year kitchen tradition.',
     price: 16.95,
     img: 'images/2021/10/indian-spices-1.jpg',
-    icon: '\uD83C\uDF72'
   },
 
   // GIFT CERTIFICATES
@@ -1355,7 +1318,6 @@ const PRODUCTS = [
     price: 150.00,
     priceLabel: 'From $150',
     img: 'images/2021/11/programs-retreats.jpg',
-    icon: '\uD83C\uDF81'
   },
   {
     id: 41,
@@ -1365,7 +1327,6 @@ const PRODUCTS = [
     price: 75.00,
     priceLabel: 'From $75',
     img: 'images/2023/01/Registered-RMT-massage-Canva-Pro-stock-photo-2023.jpg',
-    icon: '\uD83D\uDC86'
   },
   {
     id: 42,
@@ -1374,7 +1335,6 @@ const PRODUCTS = [
     desc: 'Gift card for any item in the online store. Delivered by email.',
     price: 50.00,
     priceLabel: 'From $50',
-    icon: '\uD83C\uDF1F'
   },
 
   // SUPPORT THE CENTRE
@@ -1385,7 +1345,6 @@ const PRODUCTS = [
     desc: 'Your sponsorship keeps the organic gardens growing. Includes a thank-you card with garden photos.',
     price: 50.00,
     img: 'images/2021/11/Program-House-Rock-Wall.jpg',
-    icon: '\uD83C\uDF3B'
   },
   {
     id: 51,
@@ -1393,7 +1352,6 @@ const PRODUCTS = [
     title: 'Feed a Karma Yogi',
     desc: 'Cover meals for a karma yoga volunteer for one week. They maintain the Centre in exchange for practice.',
     price: 75.00,
-    icon: '\uD83C\uDF5B'
   },
   {
     id: 52,
@@ -1402,7 +1360,6 @@ const PRODUCTS = [
     desc: 'Become a member of the Dharma Sara Satsang Society. Support the Centre\'s mission year-round.',
     price: 26.25,
     img: 'images/2026/03/3-1.jpg',
-    icon: '\uD83E\uDD1D'
   },
   {
     id: 53,
@@ -1412,7 +1369,6 @@ const PRODUCTS = [
     price: 100.00,
     priceLabel: 'From $100',
     img: 'images/2022/01/buddha-background.jpg',
-    icon: '\uD83C\uDFDB\uFE0F'
   }
 ];
 
@@ -1431,7 +1387,6 @@ function renderProducts(category = 'all') {
         ${p.img ? `<img src="${p.img}" alt="${p.title}" loading="lazy">` : ''}
       </div>
       <div class="product-slim">
-        <div class="product-icon">${p.icon || '\u2728'}</div>
         <div class="product-slim-info">
           <div class="product-slim-cat">${getCategoryLabel(p.category)}</div>
           <div class="product-slim-title">${p.title}</div>
@@ -1601,7 +1556,7 @@ function renderCartItems() {
   const container = document.getElementById('cartItems');
 
   if (cart.length === 0) {
-    container.innerHTML = '<div class="cart-empty"><div class="empty-icon">\uD83E\uDDD8</div><p>Your cart is empty</p></div>';
+    container.innerHTML = '<div class="cart-empty"><p>Your cart is empty</p></div>';
     return;
   }
 
