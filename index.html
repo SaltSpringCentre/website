@@ -410,8 +410,6 @@ p { text-align: justify; text-justify: inter-word; }
 .listen-bar-text { flex: 1; font-family: 'Archivo Narrow', sans-serif; font-size: 0.94rem; font-weight: 500; letter-spacing: 0.03em; color: rgba(255,255,255,0.92); }
 .listen-bar .listen-play { background: var(--gold); color: var(--teal-deep); border: none; padding: 7px 20px; border-radius: 50px; font-family: 'Archivo Narrow', sans-serif; font-weight: 700; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: 0.2s; white-space: nowrap; }
 .listen-bar .listen-play:hover { transform: scale(1.04); background: #f9e089; box-shadow: 0 2px 10px rgba(244,215,107,0.35); }
-.listen-bar .listen-close { background: transparent; border: none; color: rgba(255,255,255,0.55); font-size: 1.5rem; cursor: pointer; padding: 0 4px; line-height: 1; transition: color 0.2s; flex-shrink: 0; }
-.listen-bar .listen-close:hover { color: var(--white); }
 @media (max-width: 720px) { .listen-bar-inner { padding: 10px 16px; gap: 10px; } .listen-bar-text { font-size: 0.82rem; } .listen-bar .listen-play { padding: 6px 14px; font-size: 0.7rem; letter-spacing: 0.06em; } }
 @media (max-width: 480px) { .listen-bar .listen-icon { display: none; } }
 </style>
@@ -420,7 +418,6 @@ p { text-align: justify; text-justify: inter-word; }
     <svg class="listen-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
     <span class="listen-bar-text">Play our music while you browse the site</span>
     <button class="listen-play" type="button" onclick="openSSCYPlayer()"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21"/></svg>Play</button>
-    <button class="listen-close" type="button" aria-label="Dismiss" onclick="closeListenBar()">&times;</button>
   </div>
 </div>
 <script>
@@ -445,19 +442,6 @@ function openSSCYPlayer() {
   var popup = window.open('player.html', 'sscyPlayer', features);
   if (popup) popup.focus();
 }
-function closeListenBar() {
-  var bar = document.getElementById('listenBar');
-  if (bar) bar.classList.add('dismissed');
-  try { sessionStorage.setItem('sscy-listen-bar-dismissed', '1'); } catch (e) {}
-}
-(function () {
-  try {
-    if (sessionStorage.getItem('sscy-listen-bar-dismissed') === '1') {
-      var bar = document.getElementById('listenBar');
-      if (bar) bar.classList.add('dismissed');
-    }
-  } catch (e) {}
-})();
 </script>
 
 <div class="mobile-menu" id="mobileMenu">
