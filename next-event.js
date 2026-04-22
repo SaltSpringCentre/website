@@ -103,6 +103,32 @@ var BANNER_CATEGORIES = {
     if (cta) cta.textContent = ctaLabel;
   }
 
+  // Skip images narrower than this aspect ratio (width / height).
+  // 1.1 means anything at least slightly wider than tall is allowed.
+  var MIN_BANNER_ASPECT = 1.1;
+
+  function probeAspect(src) {
+    return new Promise(function (resolve) {
+      var img = new Image();
+      img.onload = function () {
+        if (!img.naturalHeight) resolve(0);
+        else resolve(img.naturalWidth / img.naturalHeight);
+      };
+      img.onerror = function () { resolve(0); };
+      img.src = src;
+    });
+  }
+
+  function filterLandscape(pool) {
+    return Promise.all(pool.map(function (p) {
+      return probeAspect(p.src).then(function (ar) {
+        return ar >= MIN_BANNER_ASPECT ? p : null;
+      });
+    })).then(function (results) {
+      return results.filter(Boolean);
+    });
+  }
+
   function upgradeBannerImage(imgEl, event, altText) {
     fetch('sscy-photos.json', { cache: 'no-cache' })
       .then(function (r) { return r.ok ? r.json() : null; })
@@ -119,7 +145,7 @@ var BANNER_CATEGORIES = {
           }
         }
 
-        // 1. Explicit override by caption match
+        // 1. Explicit override by caption match (trust the author, no AR filter)
         if (event.bannerImage) {
           for (var j = 0; j < all.length; j++) {
             if (all[j].cap === event.bannerImage) {
@@ -130,32 +156,43 @@ var BANNER_CATEGORIES = {
           }
         }
 
-        // 2. Banner-flagged photos matching event.type (or any)
+        // 2. Banner-flagged photos matching event.type (or any).
+        //    Probe aspect ratios and keep landscape only.
         var flagged = all.filter(function (p) {
           return p.banner === true || p.banner === event.type;
         });
         if (flagged.length) {
-          var pick = flagged[hashStr(event.id || '') % flagged.length];
-          imgEl.setAttribute('src', pick.src);
-          imgEl.setAttribute('alt', pick.cap || altText);
+          filterLandscape(flagged).then(function (viable) {
+            if (!viable.length) fallbackCategoryPool();
+            else {
+              var pick = viable[hashStr(event.id || '') % viable.length];
+              imgEl.setAttribute('src', pick.src);
+              imgEl.setAttribute('alt', pick.cap || altText);
+            }
+          });
           return;
         }
 
-        // 3. Fallback: BANNER_CATEGORIES pool (legacy, used until photos
-        //    get flagged manually). Deterministic pick by event.id hash.
-        var cats = BANNER_CATEGORIES[event.type];
-        if (!cats) return;
-        var catPool = [];
-        for (var k = 0; k < cats.length; k++) {
-          var items = photos[cats[k]] || [];
-          for (var m = 0; m < items.length; m++) {
-            if (items[m] && items[m].src) catPool.push(items[m]);
+        fallbackCategoryPool();
+
+        function fallbackCategoryPool() {
+          var cats = BANNER_CATEGORIES[event.type];
+          if (!cats) return;
+          var catPool = [];
+          for (var k = 0; k < cats.length; k++) {
+            var items = photos[cats[k]] || [];
+            for (var m = 0; m < items.length; m++) {
+              if (items[m] && items[m].src) catPool.push(items[m]);
+            }
           }
+          if (!catPool.length) return;
+          filterLandscape(catPool).then(function (viable) {
+            if (!viable.length) return; // keep event.img fallback
+            var chosen = viable[hashStr(event.id || '') % viable.length];
+            imgEl.setAttribute('src', chosen.src);
+            imgEl.setAttribute('alt', chosen.cap || altText);
+          });
         }
-        if (!catPool.length) return;
-        var chosen = catPool[hashStr(event.id || '') % catPool.length];
-        imgEl.setAttribute('src', chosen.src);
-        imgEl.setAttribute('alt', chosen.cap || altText);
       })
       .catch(function () { /* keep event.img fallback */ });
   }
