@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSCY Admin — Links & Tools</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #111;
+  color: #e8e8e8;
+  padding: 32px 24px 80px;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+.wrap { max-width: 1200px; margin: 0 auto; }
+h1 { font-size: 1.6rem; font-weight: 500; margin-bottom: 6px; color: #fff; }
+.sub { font-size: 0.85rem; color: #888; margin-bottom: 40px; }
+section { margin-bottom: 44px; }
+h2 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #3bb8a8;
+  font-weight: 600;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #2a2a2a;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+}
+a.card {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 16px;
+  background: #1a1a1a;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  color: #e8e8e8;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s, transform 0.08s;
+  position: relative;
+}
+a.card:hover { background: #202020; border-color: #3bb8a8; transform: translateY(-1px); }
+a.card.tbd {
+  opacity: 0.5;
+  background: #161616;
+  border-style: dashed;
+}
+a.card .title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2px;
+}
+a.card .desc {
+  font-size: 0.74rem;
+  color: #888;
+  line-height: 1.4;
+}
+a.card .arrow {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 0.78rem;
+  color: #555;
+}
+a.card:hover .arrow { color: #3bb8a8; }
+footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #222;
+  font-size: 0.75rem;
+  color: #555;
+}
+footer a { color: #888; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>SSCY Admin</h1>
+  <p class="sub">Quick links to everything that runs the site. Not indexed. Bookmark this page.</p>
+
+  <section>
+    <h2>Site Tools</h2>
+    <div class="grid">
+      <a class="card" href="photos.html"><span class="title">Photo Picker</span><span class="desc">Curate banner pool, sort images by category</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="admin-guide.html"><span class="title">Admin Guide</span><span class="desc">How to update site content</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://github.com/SaltSpringCentre/website/blob/main/LAUNCH-CHECKLIST.md" target="_blank" rel="noopener"><span class="title">Launch Checklist</span><span class="desc">Outstanding work before go-live</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://saltspringcentre.github.io/website/" target="_blank" rel="noopener"><span class="title">Live Site (preview)</span><span class="desc">saltspringcentre.github.io/website</span><span class="arrow">&rarr;</span></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Content (Third-Party)</h2>
+    <div class="grid">
+      <a class="card" href="https://saltspringcentre.secure.retreat.guru/wp-admin" target="_blank" rel="noopener"><span class="title">Retreat Guru</span><span class="desc">Programs, registrations, teachers</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://admin.mailchimp.com/" target="_blank" rel="noopener"><span class="title">Mailchimp</span><span class="desc">Audience, campaigns, signup forms</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://secure.acuityscheduling.com/" target="_blank" rel="noopener"><span class="title">Acuity Scheduling</span><span class="desc">Class & treatment bookings</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://squareup.com/dashboard" target="_blank" rel="noopener"><span class="title">Square Dashboard</span><span class="desc">Payments, donations, sales</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://developer.squareup.com/apps" target="_blank" rel="noopener"><span class="title">Square Developer</span><span class="desc">API credentials for Web Payments</span><span class="arrow">&rarr;</span></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Google Workspace</h2>
+    <div class="grid">
+      <a class="card" href="https://calendar.google.com/calendar/u/0/r?cid=c_t567jg3h1u3hgj7fii50ie8k6k%40group.calendar.google.com" target="_blank" rel="noopener"><span class="title">Community Calendar</span><span class="desc">Satsang, Arati, Kirtan events</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://script.google.com/home" target="_blank" rel="noopener"><span class="title">Apps Script Home</span><span class="desc">community-events, contact-relay, schedule-sync</span><span class="arrow">&rarr;</span></a>
+      <a class="card tbd" href="#" target="_blank" rel="noopener"><span class="title">Community Dashboard Sheet</span><span class="desc">TBD: paste Sheet URL here</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://admin.google.com/" target="_blank" rel="noopener"><span class="title">Google Workspace Admin</span><span class="desc">User accounts, email, storage</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://drive.google.com/drive/folders/0ANfvKVBEXjf4Uk9PVA" target="_blank" rel="noopener"><span class="title">Drive: SSCY Folder</span><span class="desc">My Drive / SSCY source files</span><span class="arrow">&rarr;</span></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Hosting &amp; Infrastructure</h2>
+    <div class="grid">
+      <a class="card" href="https://dash.cloudflare.com/" target="_blank" rel="noopener"><span class="title">Cloudflare</span><span class="desc">DNS, Workers, secrets</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://github.com/SaltSpringCentre/website" target="_blank" rel="noopener"><span class="title">GitHub Repo</span><span class="desc">Source code, commits, issues</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://github.com/SaltSpringCentre/website/settings/pages" target="_blank" rel="noopener"><span class="title">GitHub Pages Settings</span><span class="desc">Custom domain, build status</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://account.godaddy.com/" target="_blank" rel="noopener"><span class="title">GoDaddy</span><span class="desc">Domain registration (.com / .ca)</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://app.getflywheel.com/" target="_blank" rel="noopener"><span class="title">Flywheel (old WP)</span><span class="desc">Legacy WordPress host, retire at cutover</span><span class="arrow">&rarr;</span></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cloudflare Workers</h2>
+    <div class="grid">
+      <a class="card" href="https://dash.cloudflare.com/?to=/:account/workers-and-pages" target="_blank" rel="noopener"><span class="title">Workers & Pages</span><span class="desc">All SSCY workers in one place</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://sscy-retreat-guru.executive-2ef.workers.dev/programs" target="_blank" rel="noopener"><span class="title">sscy-retreat-guru</span><span class="desc">Retreat Guru API proxy — test endpoint</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://sscy-mailchimp-sync.executive-2ef.workers.dev/" target="_blank" rel="noopener"><span class="title">sscy-mailchimp-sync</span><span class="desc">Newsletter sync + /subscribe endpoint</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://sscy-acuity.executive-2ef.workers.dev/" target="_blank" rel="noopener"><span class="title">sscy-acuity</span><span class="desc">Deployed but plan-blocked</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://sscy-contact.executive-2ef.workers.dev/" target="_blank" rel="noopener"><span class="title">sscy-contact</span><span class="desc">Contact form relay (needs deploy)</span><span class="arrow">&rarr;</span></a>
+    </div>
+  </section>
+
+  <footer>
+    Missing something or wrong URL? Edit <code>admin.html</code> in the repo — each link is a plain <code>&lt;a class="card"&gt;</code>. Cards marked with a dashed border are TBD placeholders.
+  </footer>
+</div>
+</body>
+</html>
