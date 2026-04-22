@@ -13,6 +13,7 @@
  * Add secrets (Settings > Variables and Secrets):
  *   MAILCHIMP_API_KEY  = your Mailchimp API key
  *   MAILCHIMP_DC       = datacenter prefix (e.g. us12)
+ *   MAILCHIMP_LIST_ID  = audience id for /subscribe endpoint (e.g. e8095b31a4)
  *   GITHUB_TOKEN       = fine-scoped PAT, contents:read+write on the repo
  *   GITHUB_REPO        = "SaltSpringCentre/website"
  *
@@ -20,6 +21,9 @@
  *   Audience > Settings > Webhooks > Create
  *   Callback URL = this worker's URL
  *   Event       = Send (under Campaign Activity)
+ *
+ * Subscribe endpoint:
+ *   POST /subscribe  { email, fname? }  -> adds to audience with pending (double opt-in)
  */
 
 export default {
@@ -28,11 +32,16 @@ export default {
       return new Response(null, { headers: corsHeaders(request) });
     }
 
+    const url = new URL(request.url);
+
+    if (url.pathname === '/subscribe') {
+      return handleSubscribe(request, env);
+    }
+
     let campaignId = null;
     let force = false;
 
     if (request.method === 'GET') {
-      const url = new URL(request.url);
       campaignId = url.searchParams.get('campaign_id');
       force = url.searchParams.get('force') === '1';
       if (!campaignId) {
@@ -69,6 +78,72 @@ export default {
     }
   }
 };
+
+async function handleSubscribe(request, env) {
+  if (request.method !== 'POST') {
+    return jsonResponse({ error: 'POST only' }, 405, request);
+  }
+  if (!env.MAILCHIMP_API_KEY || !env.MAILCHIMP_DC || !env.MAILCHIMP_LIST_ID) {
+    return jsonResponse({ error: 'Mailchimp not configured' }, 500, request);
+  }
+
+  let email = '';
+  let fname = '';
+  try {
+    const ct = request.headers.get('Content-Type') || '';
+    if (ct.includes('application/json')) {
+      const body = await request.json();
+      email = (body.email || '').toString().trim();
+      fname = (body.fname || '').toString().trim();
+    } else {
+      const body = await request.text();
+      const params = new URLSearchParams(body);
+      email = (params.get('email') || '').trim();
+      fname = (params.get('fname') || '').trim();
+    }
+  } catch (e) {
+    return jsonResponse({ error: 'Invalid body' }, 400, request);
+  }
+
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return jsonResponse({ error: 'Please enter a valid email' }, 400, request);
+  }
+
+  const dc = env.MAILCHIMP_DC;
+  const listId = env.MAILCHIMP_LIST_ID;
+  const auth = 'Basic ' + btoa('any:' + env.MAILCHIMP_API_KEY);
+
+  const payload = {
+    email_address: email,
+    status: 'pending'
+  };
+  if (fname) payload.merge_fields = { FNAME: fname };
+
+  const res = await fetch(
+    `https://${dc}.api.mailchimp.com/3.0/lists/${listId}/members`,
+    {
+      method: 'POST',
+      headers: { Authorization: auth, 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }
+  );
+
+  let data = {};
+  try { data = await res.json(); } catch (e) {}
+
+  if (res.ok) {
+    return jsonResponse({ ok: true, status: data.status || 'pending' }, 200, request);
+  }
+
+  if (res.status === 400 && /Member Exists|already a list member/i.test(data.title || data.detail || '')) {
+    return jsonResponse({ ok: true, note: 'already subscribed' }, 200, request);
+  }
+
+  return jsonResponse({
+    error: data.title || 'Mailchimp error',
+    detail: data.detail || ''
+  }, res.status, request);
+}
 
 async function processCampaign(campaignId, env, force) {
   const dc = env.MAILCHIMP_DC;
