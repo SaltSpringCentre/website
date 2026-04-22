@@ -7,15 +7,11 @@ categories: ["Monthly Newsletter"]
 source: mailchimp:92283d4c7d
 ---
 
-*|MC_PREVIEW_TEXT|*
-
 ![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/74a02023-f959-5ae7-cfdb-a1ddc6f23b68.png)
 
 *“Contentment, compassion, and tolerance are the pillars of peace.”*
 
 *~ Baba Hari Dass*
-
-[View this email in your browser. ](*|ARCHIVE|*)
 
 # April 2026 News & Updates
 
