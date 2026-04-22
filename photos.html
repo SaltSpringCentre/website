@@ -371,6 +371,36 @@ var collapsedState = JSON.parse(localStorage.getItem('sscy_photos_collapsed') ||
 var dragItem = null;
 var dragCat = null;
 
+// Merge any categories/photos from the published JSON that aren't already
+// in localStorage. Preserves local edits (captions, banner flags, order)
+// while picking up newly imported images.
+function mergeFromPublished() {
+  return fetch('sscy-photos.json', { cache: 'no-cache' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (remote) {
+      if (!remote) return false;
+      var changed = false;
+      Object.keys(remote).forEach(function (cat) {
+        if (!data[cat]) {
+          data[cat] = remote[cat].slice();
+          changed = true;
+          return;
+        }
+        var existingSrcs = {};
+        data[cat].forEach(function (p) { if (p && p.src) existingSrcs[p.src] = true; });
+        remote[cat].forEach(function (p) {
+          if (p && p.src && !existingSrcs[p.src]) {
+            data[cat].push(p);
+            changed = true;
+          }
+        });
+      });
+      if (changed) save();
+      return changed;
+    })
+    .catch(function () { return false; });
+}
+
 function render() {
   var el = document.getElementById('categories');
   el.innerHTML = '';
@@ -591,6 +621,7 @@ function resetAll() {
 }
 
 render();
+mergeFromPublished().then(function (changed) { if (changed) render(); });
 </script>
 </body>
 </html>
