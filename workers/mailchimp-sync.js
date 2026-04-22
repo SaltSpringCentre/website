@@ -173,8 +173,18 @@ function extractExcerpt(md) {
 }
 
 function extractFeaturedImage(md) {
-  const m = md.match(/!\[[^\]]*\]\(([^)\s]+)\)/);
-  return m ? m[1] : '';
+  // Collect all image URLs in order. Skip the first one if there are 2+,
+  // since Mailchimp newsletters typically open with the brand logo.
+  const matches = [];
+  const re = /!\[[^\]]*\]\(([^)\s]+)\)/g;
+  let m;
+  while ((m = re.exec(md)) !== null) {
+    matches.push(m[1]);
+    if (matches.length > 5) break;
+  }
+  if (matches.length === 0) return '';
+  if (matches.length === 1) return matches[0];
+  return matches[1];
 }
 
 async function updateIndex(entry, env) {
