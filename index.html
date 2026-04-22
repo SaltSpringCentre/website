@@ -74,8 +74,13 @@ p { text-align: justify; text-justify: inter-word; }
 .mfp-content { flex: 1; display: flex; align-items: center; padding: 36px 48px; gap: 32px; }
 .mfp-text { flex: 1; }
 .mfp-series { font-size: 0.92rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: var(--gold); margin-bottom: 12px; display: block; }
-.mfp-title { font-family: 'Cinzel', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 600; color: var(--white); line-height: 1.2; margin-bottom: 12px; }
-.mfp-artists { font-size: 1.3rem; opacity: 0.75; margin-bottom: 20px; font-weight: 400; }
+.mfp-title { font-family: 'Cinzel', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 600; color: var(--white); line-height: 1.2; margin-bottom: 12px; text-wrap: balance; }
+.mfp-artists { font-size: 1.3rem; opacity: 0.75; margin-bottom: 20px; font-weight: 400; text-wrap: pretty; }
+
+/* Reusable: prevents last-line orphans. Use .no-orphans on headings or
+   any element with wrapping text. Falls back silently in older browsers. */
+.no-orphans { text-wrap: balance; }
+.no-orphans-body { text-wrap: pretty; }
 .mfp-details { display: flex; gap: 32px; font-size: 1.05rem; font-weight: 500; opacity: 0.6; letter-spacing: 0.04em; }
 .mfp-cta-wrap { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .mfp-events-link { font-size: 0.88rem; color: rgba(255,255,255,0.6); cursor: pointer; transition: color 0.25s ease; letter-spacing: 0.03em; }
