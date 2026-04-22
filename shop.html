@@ -112,6 +112,33 @@ p { text-align: justify; text-justify: inter-word; }
   backdrop-filter: blur(8px);
 }
 
+/* ===== "Shop opening soon" notice ===== */
+.shop-soon-notice {
+  background: rgba(244,215,107,0.15);
+  border-top: 1px solid rgba(244,215,107,0.4);
+  border-bottom: 1px solid rgba(244,215,107,0.4);
+  padding: 18px 24px;
+}
+.shop-soon-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--teal-deep);
+}
+.shop-soon-inner strong {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 6px;
+}
+.shop-soon-inner a {
+  color: var(--teal-dark);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 /* ===== FILTER KEYS (matches homepage quick-links) ===== */
 .filter-keys { display: grid; grid-template-columns: repeat(8, 1fr); overflow: hidden; position: sticky; top: 89px; z-index: 80; }
 .filter-key { display: flex; align-items: center; justify-content: center; padding: 32px 12px; font-size: 0.88rem; font-weight: 600; font-family: 'Cinzel', serif; color: var(--white); border: none; cursor: pointer; letter-spacing: 0.03em; position: relative; overflow: hidden; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s ease; transform-origin: top center; }
@@ -920,6 +947,14 @@ p { text-align: justify; text-justify: inter-word; }
   </div>
 </section>
 
+<!-- SOON NOTICE -->
+<div class="shop-soon-notice">
+  <div class="shop-soon-inner">
+    <strong>Our online shop is launching soon.</strong>
+    <span>The items below are a preview. To purchase now, email <a href="mailto:info@saltspringcentre.com">info@saltspringcentre.com</a> or call <a href="tel:+12505372326">(250) 537-2326</a>.</span>
+  </div>
+</div>
+
 <!-- FILTER KEYS -->
 <div class="filter-keys" id="categoryFilters">
   <button class="filter-key active" data-category="all">All Products</button>
@@ -1444,12 +1479,18 @@ function openProductModal(id) {
   document.getElementById('pmPrice').textContent = priceText;
 
   var btn = document.getElementById('pmBtn');
-  var btnText = p.category === 'tickets' ? 'Get Tickets' : p.category === 'support' ? 'Donate' : 'Buy Now';
-  btn.textContent = btnText;
   if (p.squareLink) {
+    btn.textContent = p.category === 'tickets' ? 'Get Tickets' : p.category === 'support' ? 'Donate' : 'Buy Now';
     btn.onclick = function() { window.open(p.squareLink, '_blank'); };
-  } else {
+  } else if (p.category === 'support') {
+    btn.textContent = 'Donate';
     btn.onclick = function() { addToCart(id); closeProductModal(); };
+  } else {
+    btn.textContent = 'Contact to Purchase';
+    btn.onclick = function() {
+      closeProductModal();
+      showToast('Email info@saltspringcentre.com or call (250) 537-2326 to purchase.', 6000);
+    };
   }
 
   overlay.classList.add('open');
@@ -1606,11 +1647,11 @@ function handleCheckout() {
 }
 
 // ===== TOAST =====
-function showToast(msg) {
+function showToast(msg, duration) {
   const toast = document.getElementById('toast');
   toast.textContent = msg;
   toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 2500);
+  setTimeout(() => toast.classList.remove('show'), duration || 2500);
 }
 
 // ===== FILTER TO CATEGORY =====
