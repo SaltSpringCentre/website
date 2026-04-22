@@ -5,80 +5,116 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SSCY Admin — Links & Tools</title>
 <meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Archivo+Narrow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+:root {
+  --teal: #3bb8a8;
+  --teal-dark: #2a8a7d;
+  --teal-deep: #1a5c53;
+  --cream: #faf8f4;
+  --cream-warm: #f3ede3;
+  --gold: #c9a84c;
+  --terracotta: #c17838;
+  --white: #fff;
+  --charcoal: #2c2c2c;
+  --text: #3a3a3a;
+  --text-light: #7a7a7a;
+}
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  font-family: system-ui, -apple-system, sans-serif;
-  background: #111;
-  color: #e8e8e8;
-  padding: 32px 24px 80px;
-  line-height: 1.5;
+  font-family: 'Archivo Narrow', -apple-system, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  padding: 40px 24px 80px;
+  line-height: 1.6;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
 }
 .wrap { max-width: 1200px; margin: 0 auto; }
-h1 { font-size: 1.6rem; font-weight: 500; margin-bottom: 6px; color: #fff; }
-.sub { font-size: 0.85rem; color: #888; margin-bottom: 40px; }
-section { margin-bottom: 44px; }
-h2 {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: #3bb8a8;
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 14px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #2a2a2a;
+  color: var(--teal-deep);
+  margin-bottom: 6px;
+}
+.sub { font-size: 0.92rem; color: var(--text-light); margin-bottom: 48px; }
+section { margin-bottom: 48px; }
+h2 {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--teal);
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(26,92,83,0.15);
 }
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 10px;
+  gap: 12px;
 }
 a.card {
   display: flex;
   flex-direction: column;
-  padding: 14px 16px;
-  background: #1a1a1a;
-  border: 1px solid #262626;
-  border-radius: 8px;
-  color: #e8e8e8;
+  padding: 18px 20px;
+  background: var(--white);
+  border: 1px solid rgba(26,92,83,0.1);
+  border-radius: 10px;
+  color: var(--text);
   text-decoration: none;
-  transition: background 0.15s, border-color 0.15s, transform 0.08s;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
   position: relative;
 }
-a.card:hover { background: #202020; border-color: #3bb8a8; transform: translateY(-1px); }
+a.card:hover {
+  background: var(--white);
+  border-color: var(--teal);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26,92,83,0.1);
+}
 a.card.tbd {
-  opacity: 0.5;
-  background: #161616;
+  opacity: 0.55;
+  background: transparent;
   border-style: dashed;
 }
 a.card .title {
-  font-size: 0.92rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.98rem;
   font-weight: 600;
-  color: #fff;
-  margin-bottom: 2px;
+  color: var(--teal-deep);
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
 }
 a.card .desc {
-  font-size: 0.74rem;
-  color: #888;
-  line-height: 1.4;
+  font-size: 0.82rem;
+  color: var(--text-light);
+  line-height: 1.5;
 }
 a.card .arrow {
   position: absolute;
-  top: 14px;
-  right: 14px;
-  font-size: 0.78rem;
-  color: #555;
+  top: 18px;
+  right: 18px;
+  font-size: 0.88rem;
+  color: rgba(26,92,83,0.3);
+  transition: color 0.15s, transform 0.15s;
 }
-a.card:hover .arrow { color: #3bb8a8; }
+a.card:hover .arrow { color: var(--teal); transform: translate(2px, -2px); }
 footer {
-  margin-top: 60px;
-  padding-top: 20px;
-  border-top: 1px solid #222;
-  font-size: 0.75rem;
-  color: #555;
+  margin-top: 70px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(26,92,83,0.1);
+  font-size: 0.82rem;
+  color: var(--text-light);
 }
-footer a { color: #888; }
+footer code {
+  background: var(--cream-warm);
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 0.78rem;
+  color: var(--teal-deep);
+}
 </style>
 </head>
 <body>
@@ -89,8 +125,8 @@ footer a { color: #888; }
   <section>
     <h2>Site Tools</h2>
     <div class="grid">
-      <a class="card" href="photos.html"><span class="title">Photo Picker</span><span class="desc">Curate banner pool, sort images by category</span><span class="arrow">&rarr;</span></a>
-      <a class="card" href="admin-guide.html"><span class="title">Admin Guide</span><span class="desc">How to update site content</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="photos.html" target="_blank" rel="noopener"><span class="title">Photo Picker</span><span class="desc">Curate banner pool, sort images by category</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="admin-guide.html" target="_blank" rel="noopener"><span class="title">Admin Guide</span><span class="desc">How to update site content</span><span class="arrow">&rarr;</span></a>
       <a class="card" href="https://github.com/SaltSpringCentre/website/blob/main/LAUNCH-CHECKLIST.md" target="_blank" rel="noopener"><span class="title">Launch Checklist</span><span class="desc">Outstanding work before go-live</span><span class="arrow">&rarr;</span></a>
       <a class="card" href="https://saltspringcentre.github.io/website/" target="_blank" rel="noopener"><span class="title">Live Site (preview)</span><span class="desc">saltspringcentre.github.io/website</span><span class="arrow">&rarr;</span></a>
     </div>
@@ -132,7 +168,7 @@ footer a { color: #888; }
   <section>
     <h2>Cloudflare Workers</h2>
     <div class="grid">
-      <a class="card" href="https://dash.cloudflare.com/?to=/:account/workers-and-pages" target="_blank" rel="noopener"><span class="title">Workers & Pages</span><span class="desc">All SSCY workers in one place</span><span class="arrow">&rarr;</span></a>
+      <a class="card" href="https://dash.cloudflare.com/?to=/:account/workers-and-pages" target="_blank" rel="noopener"><span class="title">Workers &amp; Pages</span><span class="desc">All SSCY workers in one place</span><span class="arrow">&rarr;</span></a>
       <a class="card" href="https://sscy-retreat-guru.executive-2ef.workers.dev/programs" target="_blank" rel="noopener"><span class="title">sscy-retreat-guru</span><span class="desc">Retreat Guru API proxy — test endpoint</span><span class="arrow">&rarr;</span></a>
       <a class="card" href="https://sscy-mailchimp-sync.executive-2ef.workers.dev/" target="_blank" rel="noopener"><span class="title">sscy-mailchimp-sync</span><span class="desc">Newsletter sync + /subscribe endpoint</span><span class="arrow">&rarr;</span></a>
       <a class="card" href="https://sscy-acuity.executive-2ef.workers.dev/" target="_blank" rel="noopener"><span class="title">sscy-acuity</span><span class="desc">Deployed but plan-blocked</span><span class="arrow">&rarr;</span></a>
@@ -141,7 +177,7 @@ footer a { color: #888; }
   </section>
 
   <footer>
-    Missing something or wrong URL? Edit <code>admin.html</code> in the repo — each link is a plain <code>&lt;a class="card"&gt;</code>. Cards marked with a dashed border are TBD placeholders.
+    Missing something or wrong URL? Edit <code>admin.html</code> in the repo. Each link is a plain <code>&lt;a class="card"&gt;</code>. Cards with a dashed border are TBD placeholders.
   </footer>
 </div>
 </body>
