@@ -25,7 +25,11 @@
       })
       .then(function (res) {
         if (res.ok) {
-          message(form, 'Thank you! Check your email to confirm.');
+          if (res.d && res.d.note === 'already subscribed') {
+            message(form, "You're already subscribed - thank you!");
+          } else {
+            message(form, 'Thank you! Check your email to confirm.');
+          }
         } else {
           var msg = (res.d && (res.d.detail || res.d.error)) || 'Please try again.';
           message(form, msg);
