@@ -1535,7 +1535,7 @@ function openProductModal(id) {
   document.getElementById('pmPrice').textContent = priceText;
 
   var btn = document.getElementById('pmBtn');
-  var btnText = p.category === 'tickets' ? 'Get Tickets' : p.category === 'support' ? 'Donate' : 'Add to Cart';
+  var btnText = p.category === 'tickets' ? 'Add Tickets to Cart' : p.category === 'support' ? 'Donate' : 'Add to Cart';
   btn.textContent = btnText;
   if (p.squareLink) {
     btn.onclick = function() { window.open(p.squareLink, '_blank'); };
