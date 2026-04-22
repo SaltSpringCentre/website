@@ -25,6 +25,25 @@ h2 .count { font-size: 0.7rem; opacity: 0.4; font-weight: 400; }
 .item .caption:hover { color: #ccc; }
 .item .caption:focus { border-color: #3bb8a8; color: #fff; background: #1a1a1a; }
 .item .url { display: none; }
+.ctx-menu {
+  position: fixed;
+  z-index: 9999;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 6px;
+  min-width: 200px;
+  max-height: 70vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+  font-size: 0.82rem;
+}
+.ctx-menu-header { padding: 8px 10px; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #666; border-bottom: 1px solid #2a2a2a; margin-bottom: 4px; }
+.ctx-menu-item { padding: 7px 10px; border-radius: 4px; cursor: pointer; color: #ddd; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.ctx-menu-item:hover { background: #3bb8a8; color: #000; }
+.ctx-menu-item.current { opacity: 0.4; cursor: default; }
+.ctx-menu-item.current:hover { background: transparent; color: #ddd; }
+.ctx-menu-item .ctx-count { font-size: 0.7rem; opacity: 0.5; }
 </style>
 </head>
 <body>
@@ -348,6 +367,7 @@ function render() {
       item.draggable = true;
       item.addEventListener('dragstart', function() { dragItem = img; dragCat = cat; this.classList.add('dragging'); });
       item.addEventListener('dragend', function() { this.classList.remove('dragging'); dragItem = null; });
+      item.addEventListener('contextmenu', function(e) { e.preventDefault(); showContextMenu(e, img, cat); });
       var im = document.createElement('img');
       im.src = img.src;
       im.loading = 'lazy';
@@ -364,6 +384,61 @@ function render() {
     el.appendChild(grid);
   });
 }
+
+function showContextMenu(ev, img, fromCat) {
+  closeContextMenu();
+  var menu = document.createElement('div');
+  menu.className = 'ctx-menu';
+  menu.id = 'ctxMenu';
+  menu.addEventListener('click', function(e) { e.stopPropagation(); });
+
+  var header = document.createElement('div');
+  header.className = 'ctx-menu-header';
+  header.textContent = 'Move to category';
+  menu.appendChild(header);
+
+  Object.keys(data).forEach(function(targetCat) {
+    var row = document.createElement('div');
+    row.className = 'ctx-menu-item' + (targetCat === fromCat ? ' current' : '');
+    var label = document.createElement('span');
+    label.textContent = targetCat + (targetCat === fromCat ? ' (current)' : '');
+    var count = document.createElement('span');
+    count.className = 'ctx-count';
+    count.textContent = data[targetCat].length;
+    row.appendChild(label);
+    row.appendChild(count);
+    if (targetCat !== fromCat) {
+      row.addEventListener('click', function() {
+        data[fromCat] = data[fromCat].filter(function(x) { return x.src !== img.src; });
+        data[targetCat].push(img);
+        save();
+        render();
+        closeContextMenu();
+      });
+    }
+    menu.appendChild(row);
+  });
+
+  document.body.appendChild(menu);
+
+  // Position: prefer at cursor, but stay on screen.
+  var rect = menu.getBoundingClientRect();
+  var x = ev.clientX;
+  var y = ev.clientY;
+  if (x + rect.width > window.innerWidth - 12) x = window.innerWidth - rect.width - 12;
+  if (y + rect.height > window.innerHeight - 12) y = window.innerHeight - rect.height - 12;
+  menu.style.left = Math.max(12, x) + 'px';
+  menu.style.top = Math.max(12, y) + 'px';
+}
+
+function closeContextMenu() {
+  var m = document.getElementById('ctxMenu');
+  if (m) m.remove();
+}
+
+document.addEventListener('click', closeContextMenu);
+document.addEventListener('scroll', closeContextMenu, true);
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeContextMenu(); });
 
 function save() {
   localStorage.setItem('sscy_photos', JSON.stringify(data));
