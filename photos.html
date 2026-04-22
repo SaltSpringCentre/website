@@ -25,6 +25,29 @@ h2 .count { font-size: 0.7rem; opacity: 0.4; font-weight: 400; }
 .item .caption:hover { color: #ccc; }
 .item .caption:focus { border-color: #3bb8a8; color: #fff; background: #1a1a1a; }
 .item .url { display: none; }
+.banner-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 3px 8px;
+  border-radius: 50px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  pointer-events: none;
+  background: #c9a84c;
+  color: #111;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+.banner-badge.concert { background: #3bb8a8; color: #041817; }
+.banner-badge.retreat { background: #c17838; color: #1b0a03; }
+.ctx-menu-divider { height: 1px; background: #2a2a2a; margin: 6px 4px; }
+.ctx-menu-item.banner-opt { display: flex; align-items: center; gap: 8px; }
+.ctx-menu-item.banner-opt .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; border: 1px solid #444; }
+.ctx-menu-item.banner-opt.on .dot { border-color: #111; background: #c9a84c; }
+.ctx-menu-item.banner-opt.on[data-val="concert"] .dot { background: #3bb8a8; }
+.ctx-menu-item.banner-opt.on[data-val="retreat"] .dot { background: #c17838; }
 .ctx-menu {
   position: fixed;
   z-index: 9999;
@@ -372,6 +395,15 @@ function render() {
       im.src = img.src;
       im.loading = 'lazy';
       item.appendChild(im);
+      if (img.banner) {
+        var badge = document.createElement('div');
+        var label;
+        if (img.banner === 'concert') { badge.className = 'banner-badge concert'; label = 'Banner · Concert'; }
+        else if (img.banner === 'retreat') { badge.className = 'banner-badge retreat'; label = 'Banner · Retreat'; }
+        else { badge.className = 'banner-badge'; label = 'Banner'; }
+        badge.textContent = label;
+        item.appendChild(badge);
+      }
       var cap = document.createElement('div');
       cap.className = 'caption';
       cap.contentEditable = true;
@@ -391,6 +423,42 @@ function showContextMenu(ev, img, fromCat) {
   menu.className = 'ctx-menu';
   menu.id = 'ctxMenu';
   menu.addEventListener('click', function(e) { e.stopPropagation(); });
+
+  // Banner flag section
+  var bHead = document.createElement('div');
+  bHead.className = 'ctx-menu-header';
+  bHead.textContent = 'Use as banner';
+  menu.appendChild(bHead);
+
+  [
+    { val: null, label: 'None' },
+    { val: true, label: 'Any event' },
+    { val: 'concert', label: 'Concerts only' },
+    { val: 'retreat', label: 'Retreats only' }
+  ].forEach(function(opt) {
+    var row = document.createElement('div');
+    var current = !!img.banner === !!opt.val && img.banner === opt.val;
+    row.className = 'ctx-menu-item banner-opt' + (current ? ' on' : '');
+    if (opt.val) row.setAttribute('data-val', opt.val === true ? 'any' : opt.val);
+    var dot = document.createElement('span');
+    dot.className = 'dot';
+    var lbl = document.createElement('span');
+    lbl.textContent = opt.label;
+    row.appendChild(dot);
+    row.appendChild(lbl);
+    row.addEventListener('click', function() {
+      if (opt.val === null) delete img.banner;
+      else img.banner = opt.val;
+      save();
+      render();
+      closeContextMenu();
+    });
+    menu.appendChild(row);
+  });
+
+  var divider = document.createElement('div');
+  divider.className = 'ctx-menu-divider';
+  menu.appendChild(divider);
 
   var header = document.createElement('div');
   header.className = 'ctx-menu-header';

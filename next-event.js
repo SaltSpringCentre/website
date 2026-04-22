@@ -104,40 +104,56 @@ var BANNER_CATEGORIES = {
   }
 
   function upgradeBannerImage(imgEl, event, altText) {
-    var cats = BANNER_CATEGORIES[event.type];
-    if (!cats && !event.bannerImage) return;
-
     fetch('sscy-photos.json', { cache: 'no-cache' })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (photos) {
         if (!photos) return;
 
+        // Flatten all photos across all categories into a single list.
+        var all = [];
+        for (var cat in photos) {
+          if (!photos.hasOwnProperty(cat)) continue;
+          var arr = photos[cat] || [];
+          for (var i = 0; i < arr.length; i++) {
+            if (arr[i] && arr[i].src) all.push(arr[i]);
+          }
+        }
+
         // 1. Explicit override by caption match
         if (event.bannerImage) {
-          for (var cat in photos) {
-            if (!photos.hasOwnProperty(cat)) continue;
-            var arr = photos[cat] || [];
-            for (var i = 0; i < arr.length; i++) {
-              if (arr[i] && arr[i].cap === event.bannerImage && arr[i].src) {
-                imgEl.setAttribute('src', arr[i].src);
-                imgEl.setAttribute('alt', arr[i].cap || altText);
-                return;
-              }
+          for (var j = 0; j < all.length; j++) {
+            if (all[j].cap === event.bannerImage) {
+              imgEl.setAttribute('src', all[j].src);
+              imgEl.setAttribute('alt', all[j].cap || altText);
+              return;
             }
           }
         }
 
-        // 2. Category pool, deterministic pick by event.id hash
+        // 2. Banner-flagged photos matching event.type (or any)
+        var flagged = all.filter(function (p) {
+          return p.banner === true || p.banner === event.type;
+        });
+        if (flagged.length) {
+          var pick = flagged[hashStr(event.id || '') % flagged.length];
+          imgEl.setAttribute('src', pick.src);
+          imgEl.setAttribute('alt', pick.cap || altText);
+          return;
+        }
+
+        // 3. Fallback: BANNER_CATEGORIES pool (legacy, used until photos
+        //    get flagged manually). Deterministic pick by event.id hash.
+        var cats = BANNER_CATEGORIES[event.type];
         if (!cats) return;
-        var pool = [];
-        for (var j = 0; j < cats.length; j++) {
-          var items = photos[cats[j]] || [];
-          for (var k = 0; k < items.length; k++) {
-            if (items[k] && items[k].src) pool.push(items[k]);
+        var catPool = [];
+        for (var k = 0; k < cats.length; k++) {
+          var items = photos[cats[k]] || [];
+          for (var m = 0; m < items.length; m++) {
+            if (items[m] && items[m].src) catPool.push(items[m]);
           }
         }
-        if (!pool.length) return;
-        var chosen = pool[hashStr(event.id || '') % pool.length];
+        if (!catPool.length) return;
+        var chosen = catPool[hashStr(event.id || '') % catPool.length];
         imgEl.setAttribute('src', chosen.src);
         imgEl.setAttribute('alt', chosen.cap || altText);
       })
