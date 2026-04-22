@@ -24,7 +24,9 @@ img { max-width: 100%; display: block; }
 p { text-align: justify; text-justify: inter-word; }
 
 /* NAV */
-.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,244,0.97); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid rgba(0,0,0,0.06); display: flex; align-items: center; justify-content: space-between; padding: 0 16px; height: 52px; }
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,244,0.97); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid rgba(0,0,0,0.06); display: flex; align-items: center; justify-content: space-between; padding: 0 16px; height: 52px; transform: translateY(-100%); transition: transform 0.3s ease; }
+.nav.scrolled { transform: translateY(0); }
+.nav.open-menu { transform: translateY(0); }
 .nav-logo img { height: 36px; }
 .hamburger { background: none; border: none; cursor: pointer; padding: 10px; display: flex; flex-direction: column; gap: 5px; }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--charcoal); border-radius: 2px; transition: 0.3s ease; }
@@ -417,6 +419,17 @@ function closeMenu() {
   document.getElementById('menu').classList.remove('open');
   document.getElementById('ham').classList.remove('open');
 }
+
+// Nav is hidden until user scrolls past the hero
+(function() {
+  var nav = document.querySelector('.nav');
+  if (!nav) return;
+  function update() {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
 function openDonate() { window.open("https://square.link/u/Oa6tCVaL", "_blank"); }
 function closeDonate() { document.getElementById('donateOverlay').classList.remove('open'); }
 function pickTier(amt, el) {
