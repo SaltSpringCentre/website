@@ -472,7 +472,10 @@ function renderGrid() {
     var excerpt = rawExcerpt.length > 200 ? rawExcerpt.substring(0, 200).replace(/\s+\S*$/, '') + '...' : rawExcerpt;
     var slug = encodeURIComponent(p.slug);
 
-    var imgSrc = p.featured_image ? 'posts/' + p.featured_image : '';
+    var imgSrc = '';
+    if (p.featured_image) {
+      imgSrc = /^https?:\/\//i.test(p.featured_image) ? p.featured_image : 'posts/' + p.featured_image;
+    }
     return '<a href="post.html?slug=' + slug + '" class="post-card' + (imgSrc ? '' : ' post-card--text') + '">' +
       (imgSrc ? '<div class="post-img"><img src="' + imgSrc + '" alt="" loading="lazy"></div>' : '') +
       '<div class="post-body">' +
