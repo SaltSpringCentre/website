@@ -437,7 +437,11 @@ function closeContextMenu() {
 }
 
 document.addEventListener('click', closeContextMenu);
-document.addEventListener('scroll', closeContextMenu, true);
+document.addEventListener('scroll', function(e) {
+  var m = document.getElementById('ctxMenu');
+  if (m && e.target && m.contains(e.target)) return;
+  closeContextMenu();
+}, true);
 document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeContextMenu(); });
 
 function save() {
