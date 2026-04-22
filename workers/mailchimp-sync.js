@@ -259,11 +259,10 @@ function jsonStr(s) {
 }
 
 function bytesToBase64(bytes) {
+  // Plain loop: no spread, no apply — safe for any size.
   let bin = '';
-  const CHUNK = 0x8000;
-  for (let i = 0; i < bytes.length; i += CHUNK) {
-    const sub = bytes.subarray(i, i + CHUNK);
-    bin += String.fromCharCode.apply(null, sub);
+  for (let i = 0; i < bytes.length; i++) {
+    bin += String.fromCharCode(bytes[i]);
   }
   return btoa(bin);
 }
