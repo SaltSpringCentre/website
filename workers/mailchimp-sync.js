@@ -167,25 +167,33 @@ function slugify(s) {
 
 function stripMailchimpChrome(html) {
   let s = html;
-  s = s.replace(/<!--\[if[\s\S]*?<!\[endif\]-->/g, '');
   s = s.replace(/<head[\s\S]*?<\/head>/i, '');
   s = s.replace(/<style[\s\S]*?<\/style>/gi, '');
   s = s.replace(/<script[\s\S]*?<\/script>/gi, '');
-  const markers = [
-    /unsubscribe/i,
-    /you are receiving this/i,
-    /all rights reserved/i,
-    /view in browser/i,
-    /view this email in/i
+  // Strip all HTML comments (catches MSO conditionals + leftover -->)
+  s = s.replace(/<!--[\s\S]*?-->/g, '');
+  s = s.replace(/-->/g, '');
+
+  // Truncate at the LAST occurrence of footer markers (footer is at bottom)
+  const lower = s.toLowerCase();
+  const footerMarkers = [
+    'you are receiving this',
+    'unsubscribe from this list',
+    'no longer want to receive',
+    'update your preferences',
+    'permission reminder'
   ];
-  let tail = -1;
-  for (const re of markers) {
-    const i = s.search(re);
-    if (i > 0 && (tail === -1 || i < tail)) tail = i;
+  let footerStart = -1;
+  for (const m of footerMarkers) {
+    const i = lower.lastIndexOf(m);
+    if (i > 0 && (footerStart === -1 || i < footerStart)) footerStart = i;
   }
-  if (tail > 0) {
-    const cut = s.lastIndexOf('<table', tail);
+  if (footerStart > 0) {
+    // Walk back to start of containing table or div
+    let cut = s.lastIndexOf('<table', footerStart);
+    if (cut < 0) cut = s.lastIndexOf('<div', footerStart);
     if (cut > 0) s = s.substring(0, cut);
+    else s = s.substring(0, footerStart);
   }
   return s;
 }
