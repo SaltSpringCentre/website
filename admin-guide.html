@@ -201,6 +201,7 @@ p { text-align: justify; text-justify: inter-word; }
   <div class="hero-content">
     <h1>Site Administration Guide</h1>
     <p>How this website works, where to manage content, and who to contact.</p>
+    <p style="margin-top: 14px; font-size: 0.92rem; opacity: 0.85;">Need a quick link to a specific tool? Use the <a href="admin.html" style="color: var(--gold); text-decoration: underline;">admin dashboard</a> instead.</p>
   </div>
 </section>
 
@@ -211,10 +212,12 @@ p { text-align: justify; text-justify: inter-word; }
   <a href="#booking" class="anchor-pill">Booking</a>
   <a href="#acuity" class="anchor-pill">Acuity</a>
   <a href="#payments" class="anchor-pill">Payments</a>
+  <a href="#newsletter" class="anchor-pill">Newsletter</a>
   <a href="#forms" class="anchor-pill">Forms</a>
   <a href="#calendar" class="anchor-pill">Calendar</a>
   <a href="#schedule" class="anchor-pill">Schedule</a>
   <a href="#blog" class="anchor-pill">Blog</a>
+  <a href="#photos" class="anchor-pill">Photos</a>
   <a href="#technical" class="anchor-pill">Technical</a>
 </div>
 
@@ -228,8 +231,8 @@ p { text-align: justify; text-justify: inter-word; }
     <h2>Site Architecture</h2>
   </div>
   <div class="content-block reveal d1">
-    <p>This website is a collection of static HTML pages hosted for free on GitHub Pages. There is no WordPress, no database, no server to maintain.</p>
-    <p>Content is managed through external tools: Google Sheets, Google Calendar, Retreat Guru, and Square. When you update content in those tools, the website updates automatically on the next page load.</p>
+    <p>This website is a collection of static HTML pages hosted for free on GitHub Pages. There is no WordPress, no database, no server to maintain. Five small Cloudflare Workers bridge the site to third-party services (Retreat Guru, Mailchimp, Acuity, Square, contact form relay).</p>
+    <p>Content is managed through external tools (Mailchimp, Google Sheets, Google Calendar, Retreat Guru, Square) plus a couple of in-repo files (<code>events-data.js</code>, <code>posts/*.md</code>, <code>sscy-photos.json</code>). When you update content in any of those places, the website reflects the change on the next page load.</p>
 
     <h3>Pages on the Site</h3>
     <table class="admin-table">
@@ -241,7 +244,9 @@ p { text-align: justify; text-justify: inter-word; }
         <tr><td>Offerings</td><td><code>/offerings.html</code></td><td>All programs, classes, retreats (pulls from Retreat Guru)</td></tr>
         <tr><td>Calendar</td><td><code>/calendar.html</code></td><td>Events, classes, Google Calendar embed, Retreat Guru programs</td></tr>
         <tr><td>Shop</td><td><code>/shop.html</code></td><td>Books, music, apparel, gift certificates</td></tr>
-        <tr><td>Blog</td><td><code>/blog.html</code></td><td>News and articles (pulls from WordPress)</td></tr>
+        <tr><td>Blog</td><td><code>/blog.html</code></td><td>News and articles (local markdown files in <code>/posts/</code>)</td></tr>
+        <tr><td>Admin Links</td><td><code>/admin.html</code></td><td>Quick-access dashboard of every tool linked below</td></tr>
+        <tr><td>Photo Picker</td><td><code>/photos.html</code></td><td>Curate banner pool and image library</td></tr>
         <tr><td>Rentals</td><td><code>/rentals.html</code></td><td>Venue spaces for retreats and workshops</td></tr>
         <tr><td>Contact</td><td><code>/contact.html</code></td><td>Location, phone, contact form</td></tr>
         <tr><td>ACYR</td><td><code>/acyr.html</code></td><td>52nd Annual Community Yoga Retreat landing page</td></tr>
@@ -310,7 +315,7 @@ p { text-align: justify; text-justify: inter-word; }
     <p>The widget appears on the Offerings page and Calendar page. Registration and payments are handled entirely by Retreat Guru.</p>
 
     <div class="link-cards-wrap">
-      <a href="https://saltspringcentre.secure.retreat.guru/admin/" target="_blank" rel="noopener" class="link-card">Retreat Guru Dashboard</a>
+      <a href="https://saltspringcentre.secure.retreat.guru/wp-admin" target="_blank" rel="noopener" class="link-card">Retreat Guru Dashboard</a>
       <a href="https://help.retreat.guru" target="_blank" rel="noopener" class="link-card">Retreat Guru Help Center</a>
     </div>
 
@@ -334,49 +339,30 @@ p { text-align: justify; text-justify: inter-word; }
     <h2>Class &amp; Treatment Booking</h2>
   </div>
   <div class="content-block reveal d1">
-    <div class="status-badge status-placeholder"><span class="status-dot"></span><span class="status-text">Setup Required</span></div>
-    <p>Yoga class registration and wellness treatment bookings are managed through Acuity Scheduling (Squarespace Scheduling). The booking widget is embedded on the Calendar and Wellness pages.</p>
+    <div class="status-badge status-connected"><span class="status-dot"></span><span class="status-text">Iframe fallback in use</span></div>
+    <p>Yoga class registration and wellness treatment bookings are managed through Acuity Scheduling (Squarespace Scheduling). The booking widget is embedded on the Calendar and Wellness pages via an iframe pointing at Acuity's hosted scheduler (slug <code>5618a029</code>).</p>
 
     <div class="link-cards-wrap">
-      <a href="https://app.acuityscheduling.com" target="_blank" rel="noopener" class="link-card">Acuity Admin Dashboard</a>
+      <a href="https://secure.acuityscheduling.com/" target="_blank" rel="noopener" class="link-card">Acuity Admin Dashboard</a>
       <a href="https://support.squarespace.com/hc/en-us/categories/200337877" target="_blank" rel="noopener" class="link-card">Acuity Help Center</a>
     </div>
 
-    <h3>How It Works</h3>
+    <h3>How it works</h3>
     <ul>
-      <li>Yoga classes are set up as <strong>Group</strong> appointment types (multiple people per session, with capacity limits)</li>
-      <li>Wellness treatments are set up as <strong>Individual</strong> appointment types (1-on-1, per practitioner)</li>
-      <li>Each practitioner (Savita, Ehlana) has their own calendar with their own availability</li>
-      <li>The website embeds show only the relevant category (Yoga Classes on calendar.html, Wellness on wellness.html)</li>
-      <li>Clients book and pay online through Square (connected in Acuity)</li>
+      <li>The iframe embed shows whichever category filter is passed in the URL (e.g. <code>?category=Yoga+Classes</code> on calendar.html, <code>?category=Retreats</code> on event pages).</li>
+      <li>Clients book and pay through Acuity's UI (Acuity is connected to Square for processing).</li>
+      <li>Admins manage classes, treatments, appointment types, and pricing inside Acuity.</li>
     </ul>
-
-    <h3>Setup Steps</h3>
-    <ol>
-      <li>Create an Acuity account at acuityscheduling.com (Growing plan, $27/month)</li>
-      <li>Connect your Square account: Integrations &gt; Square &gt; Connect</li>
-      <li>Create appointment type categories: "Yoga Classes" and "Wellness"</li>
-      <li>Add group class types under Yoga Classes (e.g., Vinyasa, Gentle Yoga, Pranayama) with capacity limits</li>
-      <li>Add individual treatment types under Wellness (Swedish Massage, Abhyanga, Shirodhara, Acupuncture, etc.) with pricing</li>
-      <li>Set up practitioner calendars with availability hours</li>
-      <li>Go to Share Your Calendar &gt; Embed Code and copy your owner ID number</li>
-      <li>Send the owner ID to the site developer to replace OWNER_ID in the embed URLs</li>
-    </ol>
 
     <div class="tip-box">
-      <strong>Tip:</strong> Customize colors in Acuity admin (Appearance settings) to match the site: button color #3bb8a8 (teal), background #faf8f4 (cream).
+      <strong>About the API:</strong> there is a deployed <code>sscy-acuity</code> Cloudflare Worker that proxies the Acuity API, intended to render class / treatment lists in SSCY's own style instead of the iframe. It's blocked at the Acuity plan level — their API requires the Powerhouse plan. The iframe fallback works fine, so the upgrade is optional.
     </div>
 
-    <h3>Where It Appears</h3>
+    <h3>Where it appears</h3>
     <ul>
-      <li><strong>calendar.html</strong> &gt; "Book a Yoga Class" section (filtered to Yoga Classes category)</li>
-      <li><strong>wellness.html</strong> &gt; "Book a Treatment" section (filtered to Wellness category)</li>
-    </ul>
-
-    <h3>Cost</h3>
-    <ul>
-      <li>$27/month (Growing plan, includes Square integration and multiple calendars)</li>
-      <li>No additional transaction fees from Acuity (Square's 3.3% + $0.30 applies to payments)</li>
+      <li><strong>calendar.html</strong> &rsaquo; "Book a Yoga Class" section (Acuity iframe).</li>
+      <li><strong>wellness.html</strong> &rsaquo; "Book a Treatment" section (Acuity iframe).</li>
+      <li><strong>event.html</strong> &rsaquo; fallback booking link for local retreats not on Retreat Guru.</li>
     </ul>
   </div>
 </section>
@@ -391,39 +377,67 @@ p { text-align: justify; text-justify: inter-word; }
     <h2>Payments &amp; Donations</h2>
   </div>
   <div class="content-block reveal d1">
-    <div class="status-badge status-placeholder"><span class="status-dot"></span><span class="status-text">Setup Required</span></div>
-    <p>Donations and shop purchases are processed through Square. Square Payment Links let you create a checkout link in the Square Dashboard and paste it into the site. No coding needed to add new products or change prices.</p>
+    <div class="status-badge status-connected"><span class="status-dot"></span><span class="status-text">Live — Sandbox</span></div>
+    <p>Donations and shop purchases are processed on-site using Square's Web Payments SDK. The card form is embedded directly in the page (PCI-safe, tokenized in-browser). A Cloudflare Worker named <code>sscy-square</code> bridges the site to Square's Orders and Payments APIs. Customers never leave saltspringcentre.com.</p>
 
     <div class="link-cards-wrap">
       <a href="https://squareup.com/dashboard" target="_blank" rel="noopener" class="link-card">Square Dashboard</a>
-      <a href="https://squareup.com/dashboard/online-checkout/payment-links" target="_blank" rel="noopener" class="link-card">Create a Payment Link</a>
+      <a href="https://developer.squareup.com/apps" target="_blank" rel="noopener" class="link-card">Square Developer Portal</a>
     </div>
 
-    <h3>Setup Steps</h3>
-    <ol>
-      <li>Log into the existing Square account at squareup.com/dashboard</li>
-      <li>Go to Payments &gt; Payment Links</li>
-      <li>Create a "Donation" link with preset amounts ($25, $50, $108, $200) and custom amount enabled</li>
-      <li>Create individual links for each shop product (books, apparel, gift certificates)</li>
-      <li>Copy each Payment Link URL and send to the site developer to wire into the donate buttons and shop cards</li>
-    </ol>
-
-    <div class="tip-box">
-      <strong>Tip:</strong> Square also offers an "Add button to website" option when creating a Payment Link. This generates a Buy Button embed code you can paste directly into the HTML.
-    </div>
-
-    <h3>Current Status</h3>
+    <h3>Current status</h3>
     <ul>
-      <li>Donate modal shows tiers but the button links to a placeholder URL</li>
-      <li>Shop products display but purchase buttons are placeholders</li>
-      <li>Interac E-Transfer instructions are live (payment@saltspringcentre.com)</li>
+      <li>Checkout + donate flow live in <strong>Sandbox</strong> mode (fake cards only).</li>
+      <li>Tested end-to-end: add to cart → checkout → card form → receipt.</li>
+      <li>Donate modal has tier buttons ($25 / $50 / $108 / $200) plus a custom amount field.</li>
+      <li>Production flip pending: swap 4 secrets on the worker (<code>SQUARE_ACCESS_TOKEN</code>, <code>SQUARE_LOCATION_ID</code>, <code>SQUARE_APP_ID</code>, <code>SQUARE_ENV</code>) from sandbox to production values. No code change needed.</li>
+      <li>Monthly Gift button still uses the legacy Square Checkout Link (subscriptions need separate Square Subscriptions API integration).</li>
     </ul>
+
+    <h3>Add or change a product</h3>
+    <ol>
+      <li>Open <code>shop.html</code> in the repo. Find the <code>PRODUCTS</code> array in the script block.</li>
+      <li>Edit the product entry (title, price, category, img, desc). Prices are in dollars with decimals (e.g. <code>price: 25.00</code>).</li>
+      <li>Commit and push. Site rebuilds automatically.</li>
+    </ol>
 
     <h3>Fees</h3>
     <ul>
-      <li>3.3% + $0.30 per online transaction (Square free plan)</li>
-      <li>No monthly fee</li>
-      <li>All transactions visible in Square Dashboard alongside in-person sales</li>
+      <li>2.9% + $0.30 per online transaction (CAD, Square free plan).</li>
+      <li>No monthly fee.</li>
+      <li>All transactions visible in Square Dashboard alongside in-person sales.</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ============================================ -->
+<!-- 4b. NEWSLETTER -->
+<!-- ============================================ -->
+<section class="admin-section" id="newsletter">
+  <div class="section-header reveal">
+    <span class="label">Mailchimp</span>
+    <h2>Newsletter &amp; Subscribe Form</h2>
+  </div>
+  <div class="content-block reveal d1">
+    <div class="status-badge status-connected"><span class="status-dot"></span><span class="status-text">Live</span></div>
+    <p>Every page's footer has a "Join Our Community" email field. When a visitor submits, the <code>sscy-mailchimp-sync</code> Cloudflare Worker's <code>/subscribe</code> endpoint validates the email and adds it to the SSCY audience with <strong>pending</strong> status (double opt-in). Mailchimp sends the confirmation email; subscriber only counts once they click confirm. If the email is already subscribed, the form shows a friendly "already subscribed" message.</p>
+
+    <div class="link-cards-wrap">
+      <a href="https://admin.mailchimp.com/" target="_blank" rel="noopener" class="link-card">Mailchimp Admin</a>
+    </div>
+
+    <h3>Sending a newsletter</h3>
+    <ol>
+      <li>Design and send the campaign in Mailchimp as usual.</li>
+      <li>The Mailchimp webhook fires on Send and triggers the <code>sscy-mailchimp-sync</code> worker.</li>
+      <li>Worker fetches the campaign HTML, strips Mailchimp chrome, converts to markdown, commits <code>posts/YYYY-MM-DD-slug.md</code> + updates <code>posts/index.json</code>.</li>
+      <li>Post appears on <code>blog.html</code> within ~1 minute of the site rebuilding.</li>
+    </ol>
+
+    <h3>Required audience settings</h3>
+    <ul>
+      <li>Only Email should be marked <strong>required</strong> on the audience. If other fields (Name, Address, etc.) are marked required, the API will reject subscriptions because the footer form only asks for email. The worker auto-fills empty defaults for any required merge fields it finds — but best practice is to keep only Email required.</li>
     </ul>
   </div>
 </section>
@@ -438,30 +452,33 @@ p { text-align: justify; text-justify: inter-word; }
     <h2>Contact &amp; Request Forms</h2>
   </div>
   <div class="content-block reveal d1">
-    <div class="status-badge status-placeholder"><span class="status-dot"></span><span class="status-text">Setup Required</span></div>
-    <p>Contact form and other request forms will use Google Forms. Create a form in Google Drive, copy the embed code or link, and it gets added to the appropriate page.</p>
+    <div class="status-badge status-placeholder"><span class="status-dot"></span><span class="status-text">Needs Deploy</span></div>
+    <p>The contact form (<code>contact.html</code>) is a real form, not a <code>mailto:</code> link. When a visitor submits, the fields are POSTed to a Cloudflare Worker (<code>sscy-contact</code>), which validates + spam-checks + hands off to a Google Apps Script that sends the email from <code>info@saltspringcentre.com</code>. The sender's email is set as the Reply-To so replies from Gmail go directly to the visitor.</p>
 
     <div class="link-cards-wrap">
-      <a href="https://docs.google.com/forms/" target="_blank" rel="noopener" class="link-card">Google Forms</a>
+      <a href="https://script.google.com/home" target="_blank" rel="noopener" class="link-card">Google Apps Script</a>
     </div>
 
-    <h3>Forms Needed</h3>
+    <h3>Current status</h3>
     <ul>
-      <li>Contact / General Inquiry (for contact.html)</li>
-      <li>Accident / Incident Report</li>
-      <li>Schedule Adjustment Request</li>
-      <li>Time Away Request</li>
-      <li>Purchase Order</li>
-      <li>Guest Request forms</li>
-      <li>Other forms listed on the Community Dashboard</li>
+      <li>Form HTML is live on both <code>contact.html</code> and <code>m/contact.html</code>.</li>
+      <li>Worker code is in the repo at <code>workers/contact.js</code> but not deployed yet.</li>
+      <li>Apps Script relay code is at <code>scripts/contact-relay.gs</code> but not deployed yet.</li>
+      <li>Submissions currently fail with a network error until the worker + Apps Script are deployed.</li>
     </ul>
 
-    <h3>Setup Steps</h3>
+    <h3>Deploy steps (one-time)</h3>
     <ol>
-      <li>Create each form in Google Forms</li>
-      <li>Set up email notifications so responses go to the right person</li>
-      <li>Send the form URLs to the site developer to add to the dashboard and contact page</li>
+      <li>Open <code>script.google.com</code> signed in as <code>info@saltspringcentre.com</code> (so GmailApp sends as that account).</li>
+      <li>Create a new Apps Script project and paste the contents of <code>scripts/contact-relay.gs</code>.</li>
+      <li>Deploy → Web app. Execute as: Me. Who has access: Anyone. Copy the <code>/exec</code> URL.</li>
+      <li>In Cloudflare, create a Worker named <code>sscy-contact</code> and paste <code>workers/contact.js</code> from the repo.</li>
+      <li>Add a secret <code>CONTACT_RELAY_URL</code> with the Apps Script URL from step 3.</li>
+      <li>Done. Contact form submissions will start going through.</li>
     </ol>
+
+    <h3>Other request forms</h3>
+    <p>Accident/Incident, Schedule Adjustment, Time Away, Purchase Order, and Guest Request forms referenced from the Community Dashboard still use Google Forms (one link per form in the Sheet).</p>
   </div>
 </section>
 
@@ -526,16 +543,74 @@ p { text-align: justify; text-justify: inter-word; }
 <!-- ============================================ -->
 <section class="admin-section" id="blog">
   <div class="section-header reveal">
-    <span class="label">WordPress</span>
+    <span class="label">Mailchimp + Markdown</span>
     <h2>Blog &amp; News</h2>
   </div>
   <div class="content-block reveal d1">
-    <div class="status-badge status-connected"><span class="status-dot"></span><span class="status-text">Connected</span></div>
-    <p>Blog posts are managed in WordPress. The blog page on this site fetches posts automatically from the WordPress REST API. To publish a new post, log into WordPress and create a post as usual. Posts appear on the site on the next page load.</p>
+    <div class="status-badge status-connected"><span class="status-dot"></span><span class="status-text">Live</span></div>
+    <p>The blog is no longer WordPress. 680 posts were migrated out of Flywheel into local markdown files stored in <code>/posts/</code>. <code>blog.html</code> reads <code>posts/index.json</code> and renders them. New newsletters auto-archive from Mailchimp — when a campaign is sent, a Mailchimp webhook fires the <code>sscy-mailchimp-sync</code> worker, which fetches the campaign HTML, converts it to markdown, and commits a new post to the repo via the GitHub API. The site redeploys on push. No manual steps.</p>
 
-    <div class="tip-box">
-      <p><strong>Note:</strong> Blog posts are fetched via the WordPress REST API. The blog will move to blog.saltspringcentre.com after domain migration.</p>
+    <div class="link-cards-wrap">
+      <a href="https://admin.mailchimp.com/" target="_blank" rel="noopener" class="link-card">Mailchimp</a>
+      <a href="https://github.com/SaltSpringCentre/website/tree/main/posts" target="_blank" rel="noopener" class="link-card">Posts in GitHub</a>
     </div>
+
+    <h3>Publishing a new blog post</h3>
+    <ol>
+      <li>Compose the newsletter in Mailchimp as usual.</li>
+      <li>Send the campaign.</li>
+      <li>Within a few seconds, a new <code>posts/YYYY-MM-DD-title.md</code> file appears in the repo and <code>posts/index.json</code> is updated.</li>
+      <li>GitHub Pages rebuilds (~1 min) and the post is live on <code>blog.html</code>.</li>
+    </ol>
+
+    <h3>Editing an existing post</h3>
+    <ul>
+      <li>Open the markdown file in <code>posts/</code> in the GitHub web editor.</li>
+      <li>Change the frontmatter (title, date, categories) or body text.</li>
+      <li>Commit. Site updates on rebuild.</li>
+    </ul>
+
+    <h3>Image assets</h3>
+    <p>Blog images live in <code>/posts/images/</code> — ~2,500 files compressed to 1200px wide. Original high-res versions are archived in Google Drive at <code>My Drive/SSCY/Blog/images-original/</code>.</p>
+  </div>
+</section>
+
+
+<!-- ============================================ -->
+<!-- 8b. PHOTOS -->
+<!-- ============================================ -->
+<section class="admin-section" id="photos">
+  <div class="section-header reveal">
+    <span class="label">Photo Picker</span>
+    <h2>Image Library &amp; Banner Pool</h2>
+  </div>
+  <div class="content-block reveal d1">
+    <div class="status-badge status-connected"><span class="status-dot"></span><span class="status-text">Live</span></div>
+    <p>All site images (site photos + 2,500 blog images) are catalogued in <code>sscy-photos.json</code>. You manage this library through <code>photos.html</code>: a dark admin-only page with categories, drag-and-drop, inline captions, right-click (or Ctrl+click) menus, and a search bar.</p>
+
+    <div class="link-cards-wrap">
+      <a href="photos.html" target="_blank" rel="noopener" class="link-card">Open Photo Picker</a>
+    </div>
+
+    <h3>Sort a photo into a category</h3>
+    <p>Drag it. Or right-click (Ctrl+click on Mac trackpad) → pick a category from the menu.</p>
+
+    <h3>Flag a photo for the homepage banner</h3>
+    <p>Right-click a photo → "Use as banner" → pick <strong>Any event</strong>, <strong>Concerts only</strong>, or <strong>Retreats only</strong>. A gold / teal / terracotta badge appears on the thumbnail. The homepage banner picks deterministically from the flagged pool matching the next upcoming event's type.</p>
+
+    <h3>Publish your changes</h3>
+    <ol>
+      <li>Click <strong>Export JSON</strong>. Browser downloads <code>sscy-photos.json</code>.</li>
+      <li>Replace the existing <code>sscy-photos.json</code> at the root of the repo with your downloaded file.</li>
+      <li>Commit + push. Banner and gallery pick up the new data on next page load.</li>
+    </ol>
+
+    <h3>Notes</h3>
+    <ul>
+      <li>Your edits auto-save to browser localStorage as you work. They don't go live until you export + commit the JSON.</li>
+      <li>The picker merges the published JSON on load, so you'll always see the latest published library plus your local edits.</li>
+      <li>The 2,499 "Blog Library" items are collapsed by default — expand or use the search bar to browse.</li>
+    </ul>
   </div>
 </section>
 
@@ -552,21 +627,36 @@ p { text-align: justify; text-justify: inter-word; }
 
     <h3>Hosting</h3>
     <ul>
-      <li>Website: GitHub Pages (free)</li>
-      <li>Blog: Flywheel managed WordPress</li>
-      <li>DNS: Cloudflare</li>
-      <li>Domain: saltspringcentre.com, registered at GoDaddy, expires February 2027</li>
+      <li><strong>Website:</strong> GitHub Pages (free) at <code>saltspringcentre.github.io/website/</code>.</li>
+      <li><strong>Workers:</strong> Cloudflare Workers (free plan) in SSCY's own Cloudflare account.</li>
+      <li><strong>DNS:</strong> Still on Jeff's Cloudflare; DNS cutover to SSCY's Cloudflare pending.</li>
+      <li><strong>Domain:</strong> <code>saltspringcentre.com</code>, registered at GoDaddy.</li>
+      <li><strong>Repo:</strong> <code>SaltSpringCentre/website</code> (private).</li>
     </ul>
 
     <h3>Deployment</h3>
-    <p>The website files are in a GitHub repository. Pushing changes to the main branch automatically deploys the site. No build step, no compilation, just HTML files.</p>
+    <p>The website files are in a GitHub repository. Pushing changes to the <code>main</code> branch automatically deploys the site. No build step, no compilation, just HTML files and markdown.</p>
 
     <div class="link-cards-wrap">
-      <a href="https://github.com/pietsuess/clients" target="_blank" rel="noopener" class="link-card">GitHub Repository</a>
+      <a href="https://github.com/SaltSpringCentre/website" target="_blank" rel="noopener" class="link-card">GitHub Repository</a>
       <a href="https://dash.cloudflare.com" target="_blank" rel="noopener" class="link-card">Cloudflare Dashboard</a>
-      <a href="https://dcc.godaddy.com" target="_blank" rel="noopener" class="link-card">GoDaddy Domain</a>
-      <a href="https://getflywheel.com" target="_blank" rel="noopener" class="link-card">Flywheel Hosting</a>
+      <a href="https://account.godaddy.com" target="_blank" rel="noopener" class="link-card">GoDaddy Domain</a>
+      <a href="admin.html" class="link-card">Quick-access Admin Dashboard</a>
     </div>
+
+    <h3>Cloudflare Workers</h3>
+    <table class="admin-table">
+      <thead>
+        <tr><th>Worker</th><th>Purpose</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>sscy-retreat-guru</code></td><td>API proxy for Retreat Guru programs (shown on offerings / calendar / event pages)</td><td>Live</td></tr>
+        <tr><td><code>sscy-mailchimp-sync</code></td><td>Newsletter auto-archive (webhook) + footer <code>/subscribe</code> endpoint</td><td>Live</td></tr>
+        <tr><td><code>sscy-acuity</code></td><td>Acuity API proxy (for class/treatment rich display)</td><td>Deployed but plan-blocked; iframe fallback in use</td></tr>
+        <tr><td><code>sscy-square</code></td><td>Orders + Payments bridge for custom checkout and donate</td><td>Live — Sandbox mode</td></tr>
+        <tr><td><code>sscy-contact</code></td><td>Contact form relay → Google Apps Script → Gmail</td><td>Code in repo, not yet deployed</td></tr>
+      </tbody>
+    </table>
 
     <h3>Key Files</h3>
     <table class="admin-table">
@@ -574,7 +664,15 @@ p { text-align: justify; text-justify: inter-word; }
         <tr><th>File</th><th>Purpose</th></tr>
       </thead>
       <tbody>
-        <tr><td><code>community-dashboard-sync.gs</code></td><td>Apps Script that reads from the Google Sheet</td></tr>
+        <tr><td><code>events-data.js</code></td><td>Hardcoded retreats + concerts (source of truth until all Retreat Guru / Square migrations are complete)</td></tr>
+        <tr><td><code>sscy-photos.json</code></td><td>Photo library + banner pool, edited via <code>photos.html</code> and exported as JSON</td></tr>
+        <tr><td><code>posts/*.md</code></td><td>Blog posts (auto-appended by Mailchimp worker, manually editable)</td></tr>
+        <tr><td><code>posts/index.json</code></td><td>Blog viewer index (auto-updated)</td></tr>
+        <tr><td><code>next-event.js</code></td><td>Populates the "next upcoming event" banner on the homepage</td></tr>
+        <tr><td><code>subscribe.js</code></td><td>Footer newsletter signup handler</td></tr>
+        <tr><td><code>contact-form.js</code></td><td>Contact form submit handler</td></tr>
+        <tr><td><code>donate-form.js</code></td><td>Donate modal + Square Web Payments card form</td></tr>
+        <tr><td><code>community-dashboard-sync.gs</code></td><td>Apps Script that reads from the Community Sheet</td></tr>
         <tr><td><code>schedule-sync.gs</code></td><td>Apps Script for schedule editor sync</td></tr>
         <tr><td><code>babaji-qa.js</code></td><td>Baba Hari Dass Q&amp;A quotes database</td></tr>
       </tbody>
