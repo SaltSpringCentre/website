@@ -216,7 +216,7 @@ async function updateIndex(entry, env) {
 
   const newJson = JSON.stringify(posts, null, 2);
   const utf8 = new TextEncoder().encode(newJson);
-  const base64 = btoa(String.fromCharCode(...utf8));
+  const base64 = bytesToBase64(utf8);
   const putBody = {
     message: `Index: ${entry.title}`,
     content: base64,
@@ -256,6 +256,16 @@ async function resolveWebId(webId, dc, auth) {
 
 function jsonStr(s) {
   return JSON.stringify(s || '');
+}
+
+function bytesToBase64(bytes) {
+  let bin = '';
+  const CHUNK = 0x8000;
+  for (let i = 0; i < bytes.length; i += CHUNK) {
+    const sub = bytes.subarray(i, i + CHUNK);
+    bin += String.fromCharCode.apply(null, sub);
+  }
+  return btoa(bin);
 }
 
 function slugify(s) {
@@ -369,7 +379,7 @@ async function commitFile(path, content, message, env, force) {
   }
 
   const utf8 = new TextEncoder().encode(content);
-  const base64 = btoa(String.fromCharCode(...utf8));
+  const base64 = bytesToBase64(utf8);
   const body = { message, content: base64, branch: 'main' };
   if (existingSha) body.sha = existingSha;
 
