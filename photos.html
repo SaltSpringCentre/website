@@ -12,8 +12,16 @@ h1 { font-size: 1.4rem; margin-bottom: 8px; font-weight: 400; opacity: 0.6; }
 .toolbar button { padding: 8px 16px; background: #333; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.8rem; }
 .toolbar button:hover { background: #444; }
 .save-status { font-size: 0.75rem; opacity: 0.4; }
-h2 { font-size: 1rem; margin: 40px 0 12px; padding: 8px 12px; background: #1a1a1a; border-radius: 8px; font-weight: 500; color: #3bb8a8; display: flex; justify-content: space-between; align-items: center; }
-h2 .count { font-size: 0.7rem; opacity: 0.4; font-weight: 400; }
+h2 { font-size: 1rem; margin: 40px 0 12px; padding: 8px 12px; background: #1a1a1a; border-radius: 8px; font-weight: 500; color: #3bb8a8; display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none; }
+h2:hover { background: #222; }
+h2 .count { font-size: 0.7rem; opacity: 0.4; font-weight: 400; margin-left: 8px; }
+h2 .caret { font-size: 0.7rem; opacity: 0.5; margin-right: 6px; transition: transform 0.15s; display: inline-block; }
+h2.collapsed .caret { transform: rotate(-90deg); }
+.grid.collapsed { display: none; }
+.search-box { flex: 1; max-width: 360px; padding: 8px 12px; background: #1a1a1a; border: 1px solid #333; border-radius: 6px; color: #fff; font-size: 0.85rem; outline: none; }
+.search-box:focus { border-color: #3bb8a8; }
+.item.hidden { display: none; }
+.no-matches { padding: 8px 12px; color: #777; font-size: 0.85rem; font-style: italic; }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px; min-height: 60px; padding: 8px 0; }
 .grid.drag-over { background: rgba(59,184,168,0.1); border-radius: 8px; }
 .item { position: relative; border-radius: 6px; overflow: hidden; background: #222; cursor: grab; transition: opacity 0.2s, transform 0.2s; }
@@ -74,6 +82,7 @@ h2 .count { font-size: 0.7rem; opacity: 0.4; font-weight: 400; }
 <div class="toolbar">
   <button onclick="exportData()">Export JSON</button>
   <button onclick="resetAll()">Reset to Default</button>
+  <input type="search" id="searchBox" class="search-box" placeholder="Filter photos by caption..." oninput="applyFilter()" onkeydown="if(event.key==='Escape'){this.value='';applyFilter();}">
   <span class="save-status" id="saveStatus">Auto-saves to localStorage</span>
 </div>
 
@@ -358,6 +367,7 @@ var DEFAULT_DATA = {
 };
 
 var data = JSON.parse(localStorage.getItem('sscy_photos') || 'null') || JSON.parse(JSON.stringify(DEFAULT_DATA));
+var collapsedState = JSON.parse(localStorage.getItem('sscy_photos_collapsed') || '{"Blog Library":true}');
 var dragItem = null;
 var dragCat = null;
 
@@ -365,11 +375,22 @@ function render() {
   var el = document.getElementById('categories');
   el.innerHTML = '';
   Object.keys(data).forEach(function(cat) {
+    var isCollapsed = !!collapsedState[cat];
     var h = document.createElement('h2');
-    h.innerHTML = cat + ' <span class="count">' + data[cat].length + '</span>';
+    h.dataset.cat = cat;
+    if (isCollapsed) h.classList.add('collapsed');
+    h.innerHTML = '<span><span class="caret">&#9660;</span>' + cat + '</span><span class="count">' + data[cat].length + '</span>';
+    h.addEventListener('click', function() {
+      var wasCollapsed = !!collapsedState[cat];
+      collapsedState[cat] = !wasCollapsed;
+      localStorage.setItem('sscy_photos_collapsed', JSON.stringify(collapsedState));
+      this.classList.toggle('collapsed', !wasCollapsed);
+      var g = this.nextElementSibling;
+      if (g && g.classList.contains('grid')) g.classList.toggle('collapsed', !wasCollapsed);
+    });
     el.appendChild(h);
     var grid = document.createElement('div');
-    grid.className = 'grid';
+    grid.className = 'grid' + (isCollapsed ? ' collapsed' : '');
     grid.dataset.cat = cat;
     grid.addEventListener('dragover', function(e) { e.preventDefault(); this.classList.add('drag-over'); });
     grid.addEventListener('dragleave', function() { this.classList.remove('drag-over'); });
@@ -387,6 +408,8 @@ function render() {
     data[cat].forEach(function(img, idx) {
       var item = document.createElement('div');
       item.className = 'item';
+      item.dataset.cap = (img.cap || '').toLowerCase();
+      item.dataset.src = (img.src || '').toLowerCase();
       item.draggable = true;
       item.addEventListener('dragstart', function() { dragItem = img; dragCat = cat; this.classList.add('dragging'); });
       item.addEventListener('dragend', function() { this.classList.remove('dragging'); dragItem = null; });
@@ -408,12 +431,46 @@ function render() {
       cap.className = 'caption';
       cap.contentEditable = true;
       cap.textContent = img.cap;
-      cap.addEventListener('blur', function() { img.cap = this.textContent; save(); });
+      cap.addEventListener('blur', function() { img.cap = this.textContent; item.dataset.cap = (img.cap || '').toLowerCase(); save(); });
       cap.addEventListener('keydown', function(e) { if (e.key === 'Enter') { e.preventDefault(); this.blur(); } });
       item.appendChild(cap);
       grid.appendChild(item);
     });
     el.appendChild(grid);
+  });
+  if (document.getElementById('searchBox') && document.getElementById('searchBox').value) applyFilter();
+}
+
+function applyFilter() {
+  var q = (document.getElementById('searchBox').value || '').trim().toLowerCase();
+  var grids = document.querySelectorAll('.grid');
+  grids.forEach(function(grid) {
+    var cat = grid.dataset.cat;
+    var header = grid.previousElementSibling;
+    var items = grid.querySelectorAll('.item');
+    if (!q) {
+      // No search: restore per-category collapsed state, unhide items.
+      items.forEach(function(it) { it.classList.remove('hidden'); });
+      var isCollapsed = !!collapsedState[cat];
+      grid.classList.toggle('collapsed', isCollapsed);
+      if (header) header.classList.toggle('collapsed', isCollapsed);
+      if (header) header.style.display = '';
+      return;
+    }
+    var anyVisible = false;
+    items.forEach(function(it) {
+      var match = (it.dataset.cap || '').indexOf(q) !== -1 || (it.dataset.src || '').indexOf(q) !== -1;
+      it.classList.toggle('hidden', !match);
+      if (match) anyVisible = true;
+    });
+    // Any match: auto-expand so results are visible; also show header.
+    if (anyVisible) {
+      grid.classList.remove('collapsed');
+      if (header) { header.classList.remove('collapsed'); header.style.display = ''; }
+    } else {
+      if (header) header.style.display = 'none';
+      grid.classList.add('collapsed');
+    }
   });
 }
 
