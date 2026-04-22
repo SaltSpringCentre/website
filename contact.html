@@ -249,11 +249,31 @@ p { text-align: justify; text-justify: inter-word; }
   </div>
   <div class="contact-form reveal-right">
     <h2>Send a Message</h2>
-    <div style="background:var(--cream-warm);border-radius:12px;padding:32px 28px;margin-bottom:28px;">
-      <p style="font-size:0.95rem;color:var(--text);line-height:1.7;margin-bottom:20px;">Contact form will be connected to Google Forms. In the meantime, please reach out by email.</p>
-      <a href="mailto:info@saltspringcentre.com" style="display:inline-flex;align-items:center;padding:14px 40px;background:var(--teal-dark);color:var(--white);border-radius:50px;font-family:'Archivo Narrow',sans-serif;font-size:1rem;font-weight:600;transition:background 0.25s ease, transform 0.2s ease;text-decoration:none;" onmouseover="this.style.background='#3bb8a8'" onmouseout="this.style.background='#2a8a7d'">Email Us</a>
-      <p style="font-size:0.82rem;color:var(--text-light);margin-top:14px;">info@saltspringcentre.com</p>
-    </div>
+    <form id="contactForm" novalidate onsubmit="return sscyContactSubmit(event, this);">
+      <div class="form-group">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" required maxlength="120" autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" name="email" required maxlength="180" autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label for="cf-subject">Subject</label>
+        <input type="text" id="cf-subject" name="subject" maxlength="200" placeholder="What's this about?">
+      </div>
+      <div class="form-group">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" required minlength="10" maxlength="5000"></textarea>
+      </div>
+      <div style="position:absolute;left:-10000px;" aria-hidden="true">
+        <label for="cf-hp">Leave blank</label>
+        <input type="text" id="cf-hp" name="hp" tabindex="-1" autocomplete="off">
+      </div>
+      <button type="submit" class="form-submit" id="cf-submit">Send Message</button>
+      <div class="form-success" id="cf-success">Thank you. We'll be in touch soon.</div>
+      <div class="form-success" id="cf-error" style="background:rgba(212,110,84,0.1);border-color:#d46e54;color:#a44a36;"></div>
+    </form>
     <div style="text-align:center;margin-top:40px;padding-top:32px;border-top:1px solid rgba(0,0,0,0.06);">
       <p style="font-size:0.88rem;color:var(--text-light);margin-bottom:14px;text-align:center;">Want to support the Centre?</p>
       <a href="#" onclick="event.preventDefault();openDonate();" style="display:inline-block;padding:14px 40px;background:var(--terracotta);color:var(--white);border-radius:50px;font-family:'Archivo Narrow',sans-serif;font-size:1rem;font-weight:600;transition:0.25s;text-decoration:none;">Make a Donation</a>
@@ -463,5 +483,6 @@ function closeMobileMenu() {
 </div>
 
 <script src="subscribe.js" defer></script>
+<script src="contact-form.js" defer></script>
 </body>
 </html>

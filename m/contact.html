@@ -172,21 +172,30 @@ p { text-align: justify; text-justify: inter-word; }
 <!-- CONTACT FORM -->
 <section class="sec sec-alt">
   <h2>Send a Message</h2>
-  <form id="contactForm" onsubmit="handleSubmit(event)">
+  <form id="contactForm" novalidate onsubmit="return sscyContactSubmit(event, this);">
     <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required placeholder="Your name">
+      <label for="cf-name">Name</label>
+      <input type="text" id="cf-name" name="name" required maxlength="120" autocomplete="name" placeholder="Your name">
     </div>
     <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required placeholder="Your email address">
+      <label for="cf-email">Email</label>
+      <input type="email" id="cf-email" name="email" required maxlength="180" autocomplete="email" placeholder="Your email address">
     </div>
     <div class="form-group">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+      <label for="cf-subject">Subject</label>
+      <input type="text" id="cf-subject" name="subject" maxlength="200" placeholder="What's this about?">
     </div>
-    <button type="submit" class="form-submit">Send Message</button>
-    <div class="form-success" id="formSuccess">Thank you for your message. We will be in touch soon.</div>
+    <div class="form-group">
+      <label for="cf-message">Message</label>
+      <textarea id="cf-message" name="message" required minlength="10" maxlength="5000" placeholder="How can we help you?"></textarea>
+    </div>
+    <div style="position:absolute;left:-10000px;" aria-hidden="true">
+      <label for="cf-hp">Leave blank</label>
+      <input type="text" id="cf-hp" name="hp" tabindex="-1" autocomplete="off">
+    </div>
+    <button type="submit" class="form-submit" id="cf-submit">Send Message</button>
+    <div class="form-success" id="cf-success">Thank you. We'll be in touch soon.</div>
+    <div class="form-success" id="cf-error" style="background:rgba(212,110,84,0.1);border-color:#d46e54;color:#a44a36;display:none;"></div>
   </form>
 </section>
 
@@ -307,14 +316,7 @@ function pickTier(amt, el) {
   document.querySelectorAll('.tier').forEach(function(t) { t.classList.remove('active'); });
   el.classList.add('active');
 }
-function handleSubmit(e) {
-  e.preventDefault();
-  var form = document.getElementById('contactForm');
-  var success = document.getElementById('formSuccess');
-  success.style.display = 'block';
-  form.reset();
-  setTimeout(function() { success.style.display = 'none'; }, 5000);
-}
 </script>
+<script src="../contact-form.js" defer></script>
 </body>
 </html>
