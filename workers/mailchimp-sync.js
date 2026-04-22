@@ -111,12 +111,14 @@ async function processCampaign(campaignId, env, force) {
   const path = `posts/${filename}`;
 
   const cleaned = stripMailchimpChrome(content.html || '');
-  const markdown = htmlToMarkdown(cleaned);
+  let markdown = htmlToMarkdown(cleaned);
+  markdown = cleanMailchimpArtifacts(markdown);
 
+  const dateForFm = sendTime.replace('T', ' ').replace(/Z$/, '');
   const fm = [
     '---',
     `title: ${jsonStr(subject)}`,
-    `date: ${sendTime.replace('T', ' ').replace(/Z$/, '')}`,
+    `date: ${dateForFm}`,
     `slug: ${slug}`,
     `author: ${jsonStr(author)}`,
     `categories: ["Monthly Newsletter"]`,
@@ -127,9 +129,110 @@ async function processCampaign(campaignId, env, force) {
     ''
   ].join('\n');
 
-  await commitFile(path, fm, `Newsletter: ${subject}`, env, force);
+  const result = await commitFile(path, fm, `Newsletter: ${subject}`, env, force);
 
-  return { ok: true, filename, subject, sentAt: sendTime };
+  const indexResult = await updateIndex({
+    title: subject,
+    date: dateForFm,
+    slug,
+    file: filename,
+    author,
+    excerpt: extractExcerpt(markdown),
+    featured_image: extractFeaturedImage(markdown)
+  }, env);
+
+  return {
+    ok: true,
+    filename,
+    subject,
+    sentAt: sendTime,
+    ...result,
+    index: indexResult
+  };
+}
+
+function cleanMailchimpArtifacts(md) {
+  md = md.replace(/\*\|[^|]*\|\*/g, '');
+  md = md.replace(/\[[^\]]*view (this )?email[^\]]*\]\([^)]*\)/gi, '');
+  md = md.replace(/\[[^\]]*view in browser[^\]]*\]\([^)]*\)/gi, '');
+  md = md.replace(/\n{3,}/g, '\n\n');
+  return md.trim();
+}
+
+function extractExcerpt(md) {
+  let s = md
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, '')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/[#>*_`]+/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (s.length > 220) {
+    s = s.substring(0, 220).replace(/\s+\S*$/, '') + '...';
+  }
+  return s;
+}
+
+function extractFeaturedImage(md) {
+  const m = md.match(/!\[[^\]]*\]\(([^)\s]+)\)/);
+  return m ? m[1] : '';
+}
+
+async function updateIndex(entry, env) {
+  const indexPath = 'posts/index.json';
+  const url = `https://api.github.com/repos/${env.GITHUB_REPO}/contents/${indexPath}`;
+  const headers = {
+    Authorization: `Bearer ${env.GITHUB_TOKEN}`,
+    'Content-Type': 'application/json',
+    'User-Agent': 'sscy-mailchimp-sync',
+    Accept: 'application/vnd.github.v3+json'
+  };
+  const getRes = await fetch(url, { headers });
+  if (getRes.status !== 200) {
+    return { skipped: 'no index.json' };
+  }
+  const meta = await getRes.json();
+  const decoded = atob(meta.content.replace(/\n/g, ''));
+  let posts;
+  try {
+    posts = JSON.parse(decoded);
+  } catch (e) {
+    return { error: 'index.json parse failed' };
+  }
+  const existingIdx = posts.findIndex((p) => p.slug === entry.slug);
+  const merged = {
+    title: entry.title,
+    date: entry.date,
+    slug: entry.slug,
+    file: entry.file,
+    author: entry.author,
+    categories: ['Monthly Newsletter'],
+    tags: [],
+    excerpt: entry.excerpt
+  };
+  if (entry.featured_image) merged.featured_image = entry.featured_image;
+  if (existingIdx >= 0) posts[existingIdx] = merged;
+  else posts.push(merged);
+  posts.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+
+  const newJson = JSON.stringify(posts, null, 2);
+  const utf8 = new TextEncoder().encode(newJson);
+  const base64 = btoa(String.fromCharCode(...utf8));
+  const putBody = {
+    message: `Index: ${entry.title}`,
+    content: base64,
+    branch: 'main',
+    sha: meta.sha
+  };
+  const putRes = await fetch(url, {
+    method: 'PUT',
+    headers,
+    body: JSON.stringify(putBody)
+  });
+  if (!putRes.ok) {
+    const err = await putRes.text();
+    return { error: `index PUT ${putRes.status}: ${err.substring(0, 120)}` };
+  }
+  return { updated: 'index.json' };
 }
 
 async function resolveWebId(webId, dc, auth) {
