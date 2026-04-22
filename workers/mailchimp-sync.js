@@ -259,8 +259,12 @@ function jsonStr(s) {
 }
 
 function bytesToBase64(bytes) {
-  // Use Node's Buffer (available in Workers via nodejs_compat flag).
-  return Buffer.from(bytes).toString('base64');
+  // Build char array then join (no spread, no Buffer, no apply).
+  const chars = new Array(bytes.length);
+  for (let i = 0; i < bytes.length; i++) {
+    chars[i] = String.fromCharCode(bytes[i]);
+  }
+  return btoa(chars.join(''));
 }
 
 function slugify(s) {
