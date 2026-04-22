@@ -1,6 +1,16 @@
 // ===== SHARED EVENT DATA =====
 // Single source of truth for all hardcoded events.
 // Loaded by calendar.html, m/calendar.html, and event.html.
+//
+// Homepage banner image (see next-event.js):
+//   Optional `bannerImage: '<photo caption>'` field on any event overrides
+//   the banner photo with a specific photo from sscy-photos.json (matches
+//   the `cap` field in the photos data). If omitted, the banner picks
+//   deterministically from the photo pool matching event.type
+//   (concert -> "Music for Peace", retreat -> "ACYR / Annual Retreat" etc.).
+//   Curate the pool by dragging photos into the right category in
+//   photos.html, then Export JSON and overwrite sscy-photos.json at the
+//   repo root.
 
 var EVENTS = [
   // MUSIC FOR PEACE CONCERTS

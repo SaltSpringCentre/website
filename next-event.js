@@ -2,6 +2,20 @@
 // retreat or concert from EVENTS (events-data.js). Weekly classes and
 // community gatherings are not in EVENTS, so they're excluded naturally.
 // If no future event is found, the banner is hidden.
+//
+// Banner image lookup (priority order):
+//   1. Event has bannerImage: '<exact photo caption>' -> use that photo
+//      from sscy-photos.json (matches the `cap` field).
+//   2. Otherwise, pick deterministically (hashed by event.id) from the
+//      photos in sscy-photos.json whose category matches the event.type
+//      per BANNER_CATEGORIES.
+//   3. If sscy-photos.json is missing or no photo matches, fall back to
+//      event.img so the banner never breaks.
+
+var BANNER_CATEGORIES = {
+  concert: ['Music for Peace'],
+  retreat: ['ACYR / Annual Retreat', 'Nature & Nurture Series', 'Classes / Programs']
+};
 
 (function () {
   if (typeof EVENTS === 'undefined' || !Array.isArray(EVENTS)) return;
@@ -64,9 +78,12 @@
     var ctaEl = desktop.querySelector('.mfp-cta');
     if (ctaEl) ctaEl.textContent = ctaLabel;
     var img = desktop.querySelector('.mfp-img');
-    if (img && next.img) {
-      img.setAttribute('src', next.img);
-      img.setAttribute('alt', cleanTitle);
+    if (img) {
+      if (next.img) {
+        img.setAttribute('src', next.img);
+        img.setAttribute('alt', cleanTitle);
+      }
+      upgradeBannerImage(img, next, cleanTitle);
     }
   }
 
@@ -84,6 +101,53 @@
     }
     var cta = mobile.querySelector('.cta');
     if (cta) cta.textContent = ctaLabel;
+  }
+
+  function upgradeBannerImage(imgEl, event, altText) {
+    var cats = BANNER_CATEGORIES[event.type];
+    if (!cats && !event.bannerImage) return;
+
+    fetch('sscy-photos.json', { cache: 'no-cache' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (photos) {
+        if (!photos) return;
+
+        // 1. Explicit override by caption match
+        if (event.bannerImage) {
+          for (var cat in photos) {
+            if (!photos.hasOwnProperty(cat)) continue;
+            var arr = photos[cat] || [];
+            for (var i = 0; i < arr.length; i++) {
+              if (arr[i] && arr[i].cap === event.bannerImage && arr[i].src) {
+                imgEl.setAttribute('src', arr[i].src);
+                imgEl.setAttribute('alt', arr[i].cap || altText);
+                return;
+              }
+            }
+          }
+        }
+
+        // 2. Category pool, deterministic pick by event.id hash
+        if (!cats) return;
+        var pool = [];
+        for (var j = 0; j < cats.length; j++) {
+          var items = photos[cats[j]] || [];
+          for (var k = 0; k < items.length; k++) {
+            if (items[k] && items[k].src) pool.push(items[k]);
+          }
+        }
+        if (!pool.length) return;
+        var chosen = pool[hashStr(event.id || '') % pool.length];
+        imgEl.setAttribute('src', chosen.src);
+        imgEl.setAttribute('alt', chosen.cap || altText);
+      })
+      .catch(function () { /* keep event.img fallback */ });
+  }
+
+  function hashStr(s) {
+    var h = 5381;
+    for (var i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0;
+    return Math.abs(h);
   }
 
   function setText(el, text) {
