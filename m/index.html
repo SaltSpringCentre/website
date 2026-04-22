@@ -170,7 +170,7 @@ p { text-align: justify; text-justify: inter-word; }
 
 <!-- LISTEN BAR: popup Spotify player that persists across navigations -->
 <style>
-.listen-bar { position: fixed; top: 52px; left: 0; right: 0; z-index: 95; background: linear-gradient(90deg, var(--teal-deep) 0%, var(--teal-dark) 100%); color: var(--white); overflow: hidden; max-height: 48px; border-bottom: 1px solid rgba(244,215,107,0.2); }
+.listen-bar { background: linear-gradient(90deg, var(--teal-deep) 0%, var(--teal-dark) 100%); color: var(--white); overflow: hidden; border-bottom: 1px solid rgba(244,215,107,0.2); }
 .listen-bar-inner { padding: 10px 14px; display: flex; align-items: center; justify-content: center; gap: 10px; }
 .listen-bar .listen-icon { color: var(--gold); flex-shrink: 0; }
 .listen-bar-text { flex: 0 0 auto; font-family: 'Archivo Narrow', sans-serif; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.02em; color: rgba(255,255,255,0.92); line-height: 1.2; }
@@ -424,14 +424,14 @@ function pickTier(amt, el) {
   el.classList.add('active');
 }
 function showQA() {
-  if (!window.BABAJI_QA) return;
-  var qa = BABAJI_QA[Math.floor(Math.random() * BABAJI_QA.length)];
+  if (!window.qas || !window.qas.length) return;
+  var qa = qas[Math.floor(Math.random() * qas.length)];
   document.getElementById('qaQ').textContent = qa.q;
   document.getElementById('qaA').textContent = qa.a;
-  document.getElementById('qaD').textContent = qa.date || '';
+  document.getElementById('qaD').textContent = qa.d || qa.date || '';
 }
-if (window.BABAJI_QA) showQA();
-else window.addEventListener('load', function() { if (window.BABAJI_QA) showQA(); });
+if (window.qas) showQA();
+else window.addEventListener('load', function() { if (window.qas) showQA(); });
 </script>
 </body>
 </html>
