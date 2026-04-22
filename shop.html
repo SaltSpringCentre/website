@@ -48,6 +48,12 @@ p { text-align: justify; text-justify: inter-word; }
 .sticky-nav-inner { position: relative; padding: 0 32px; height: 68px; }
 .sticky-nav .sn-logo-wrap { position: absolute; left: 32px; top: 50%; transform: translateY(-50%); opacity: 0; }
 .sticky-nav .sn-logo { height: 52px; }
+.nav-cart-btn { position: absolute; right: 24px; top: 50%; transform: translateY(-50%); background: transparent; border: 1px solid rgba(26,92,83,0.15); border-radius: 50px; padding: 8px 14px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; color: var(--teal-deep); font-family: 'Archivo Narrow', sans-serif; font-size: 0.88rem; font-weight: 600; transition: background 0.15s, border-color 0.15s; z-index: 2; }
+.nav-cart-btn:hover { background: var(--cream-warm); border-color: var(--teal); }
+.nav-cart-btn svg { width: 16px; height: 16px; }
+.nav-cart-count { background: var(--teal); color: var(--white); font-size: 0.68rem; font-weight: 700; min-width: 18px; height: 18px; border-radius: 50px; padding: 0 6px; display: inline-flex; align-items: center; justify-content: center; line-height: 1; }
+.nav-cart-count.hidden { display: none; }
+@media (max-width: 767px) { .nav-cart-btn { right: 60px; padding: 6px 10px; font-size: 0; gap: 4px; } .nav-cart-btn svg { width: 18px; height: 18px; } }
 .sticky-nav-links { position: absolute; top: 50%; display: flex; gap: 4px; transform: translateY(-50%); }
 .sticky-nav-links a { padding: 10px 20px; font-family: 'Archivo Narrow', sans-serif; font-size: 0.92rem; font-weight: 500; color: var(--text-light); text-decoration: none; border-radius: 50px; letter-spacing: 0.03em; transform-style: preserve-3d; transition: color 0.2s ease, background 0.2s ease, box-shadow 0.3s ease; will-change: transform; }
 .sticky-nav-links a:hover { color: var(--teal-dark); }
@@ -656,6 +662,32 @@ p { text-align: justify; text-justify: inter-word; }
 
 .checkout-btn:hover { background: var(--teal-dark); }
 
+/* ===== CHECKOUT MODAL ===== */
+.checkout-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 2100; display: none; align-items: center; justify-content: center; padding: 24px; }
+.checkout-overlay.open { display: flex; }
+.checkout-modal { background: var(--white); border-radius: 14px; max-width: 520px; width: 100%; max-height: 90vh; overflow-y: auto; padding: 28px 28px 24px; position: relative; }
+.checkout-modal h3 { font-family: 'Cinzel', serif; font-size: 1.4rem; color: var(--teal-deep); margin-bottom: 18px; font-weight: 600; }
+.checkout-close { position: absolute; top: 14px; right: 16px; background: transparent; border: none; font-size: 1.6rem; color: var(--text-light); cursor: pointer; line-height: 1; padding: 4px 10px; }
+.checkout-close:hover { color: var(--teal-deep); }
+.checkout-summary { background: var(--cream-warm); border-radius: 8px; padding: 14px 16px; margin-bottom: 18px; font-size: 0.9rem; }
+.checkout-summary .line { display: flex; justify-content: space-between; padding: 4px 0; color: var(--text); }
+.checkout-summary .line.total { margin-top: 8px; padding-top: 10px; border-top: 1px solid rgba(0,0,0,0.1); font-weight: 600; color: var(--teal-deep); font-size: 1rem; }
+.checkout-form label { display: block; margin-bottom: 14px; font-size: 0.82rem; font-weight: 600; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.08em; }
+.checkout-form input[type="text"], .checkout-form input[type="email"] { width: 100%; margin-top: 6px; padding: 12px 14px; border: 1.5px solid rgba(0,0,0,0.1); background: var(--cream); border-radius: 8px; font-family: 'Archivo Narrow', sans-serif; font-size: 0.95rem; color: var(--text); text-transform: none; letter-spacing: 0; }
+.checkout-form input:focus { outline: none; border-color: var(--teal); }
+#card-container { margin-top: 6px; min-height: 90px; padding: 10px 14px; border: 1.5px solid rgba(0,0,0,0.1); background: var(--cream); border-radius: 8px; }
+.checkout-pay { display: block; width: 100%; padding: 14px 22px; background: var(--teal-deep); color: var(--white); border: none; border-radius: 50px; font-family: 'Archivo Narrow', sans-serif; font-size: 0.98rem; font-weight: 600; letter-spacing: 0.04em; cursor: pointer; margin-top: 12px; transition: background 0.2s; }
+.checkout-pay:hover:not(:disabled) { background: var(--teal-dark); }
+.checkout-pay:disabled { opacity: 0.6; cursor: wait; }
+.checkout-error { margin-top: 14px; padding: 10px 14px; background: rgba(212,110,84,0.12); border: 1px solid #d46e54; border-radius: 8px; color: #a44a36; font-size: 0.88rem; display: none; }
+.checkout-error.show { display: block; }
+.checkout-success { display: none; text-align: center; padding: 12px 0; }
+.checkout-success.show { display: block; }
+.checkout-success h4 { font-family: 'Cinzel', serif; font-size: 1.3rem; color: var(--teal-deep); margin-bottom: 10px; font-weight: 600; }
+.checkout-success p { color: var(--text); margin-bottom: 14px; }
+.checkout-success a { display: inline-block; color: var(--teal-dark); text-decoration: underline; margin-bottom: 18px; }
+.checkout-form.hidden, .checkout-summary.hidden { display: none; }
+
 .checkout-note {
   text-align: center;
   font-size: 0.72rem;
@@ -921,6 +953,11 @@ p { text-align: justify; text-justify: inter-word; }
       <a href="rentals.html">Rentals</a>
       <a href="contact.html">Contact</a>
     </div>
+    <button class="nav-cart-btn" type="button" onclick="toggleCart()" aria-label="View cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <span>Cart</span>
+      <span class="nav-cart-count hidden" id="cartCount">0</span>
+    </button>
     <button class="hamburger" id="hamburger" aria-label="Menu" onclick="document.getElementById('mobileMenu').classList.toggle('open');this.classList.toggle('open');">
       <span></span><span></span><span></span>
     </button>
@@ -946,14 +983,6 @@ p { text-align: justify; text-justify: inter-word; }
     <p>Every purchase supports the Salt Spring Centre of Yoga, a 69-acre sanctuary for peace, practice, and community on Salt Spring Island.</p>
   </div>
 </section>
-
-<!-- SOON NOTICE -->
-<div class="shop-soon-notice">
-  <div class="shop-soon-inner">
-    <strong>Our online shop is launching soon.</strong>
-    <span>The items below are a preview. To purchase now, email <a href="mailto:info@saltspringcentre.com">info@saltspringcentre.com</a> or call <a href="tel:+12505372326">(250) 537-2326</a>.</span>
-  </div>
-</div>
 
 <!-- FILTER KEYS -->
 <div class="filter-keys" id="categoryFilters">
@@ -1067,8 +1096,36 @@ p { text-align: justify; text-justify: inter-word; }
       <span>Total</span>
       <span class="total-amount" id="cartTotal">$0.00</span>
     </div>
-    <button class="checkout-btn" onclick="window.open('https://square.link/u/PLACEHOLDER_SHOP','_blank')">Checkout via Square</button>
-    <p class="checkout-note">Square checkout coming soon. For now, email your order to <a href="mailto:info@saltspringcentre.com" style="color:var(--teal-dark);">info@saltspringcentre.com</a> or call 250-537-2326.</p>
+    <button class="checkout-btn" onclick="openCheckout()">Checkout</button>
+    <p class="checkout-note" id="sandboxNote">Test mode: payments run through Square Sandbox. Use card 4111 1111 1111 1111, any future expiry, any CVV.</p>
+  </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div class="checkout-overlay" id="checkoutOverlay">
+  <div class="checkout-modal" role="dialog" aria-labelledby="checkoutTitle">
+    <button class="checkout-close" onclick="closeCheckout()" aria-label="Close">&times;</button>
+    <h3 id="checkoutTitle">Checkout</h3>
+    <div class="checkout-summary" id="checkoutSummary"></div>
+    <div class="checkout-form">
+      <label>Name
+        <input type="text" id="coName" required maxlength="120" autocomplete="name">
+      </label>
+      <label>Email
+        <input type="email" id="coEmail" required maxlength="180" autocomplete="email">
+      </label>
+      <label>Card
+        <div id="card-container"></div>
+      </label>
+      <button type="button" class="checkout-pay" id="coPay" onclick="submitPayment()">Pay <span id="coPayAmount"></span></button>
+      <div class="checkout-error" id="coError"></div>
+    </div>
+    <div class="checkout-success" id="coSuccess">
+      <h4>Thank you!</h4>
+      <p id="coSuccessMsg"></p>
+      <a href="#" target="_blank" rel="noopener" id="coReceiptLink" style="display:none;">View receipt</a>
+      <button type="button" class="checkout-pay" onclick="closeCheckout()">Done</button>
+    </div>
   </div>
 </div>
 
@@ -1479,18 +1536,12 @@ function openProductModal(id) {
   document.getElementById('pmPrice').textContent = priceText;
 
   var btn = document.getElementById('pmBtn');
+  var btnText = p.category === 'tickets' ? 'Get Tickets' : p.category === 'support' ? 'Donate' : 'Add to Cart';
+  btn.textContent = btnText;
   if (p.squareLink) {
-    btn.textContent = p.category === 'tickets' ? 'Get Tickets' : p.category === 'support' ? 'Donate' : 'Buy Now';
     btn.onclick = function() { window.open(p.squareLink, '_blank'); };
-  } else if (p.category === 'support') {
-    btn.textContent = 'Donate';
-    btn.onclick = function() { addToCart(id); closeProductModal(); };
   } else {
-    btn.textContent = 'Contact to Purchase';
-    btn.onclick = function() {
-      closeProductModal();
-      showToast('Email info@saltspringcentre.com or call (250) 537-2326 to purchase.', 6000);
-    };
+    btn.onclick = function() { addToCart(id); closeProductModal(); };
   }
 
   overlay.classList.add('open');
@@ -1644,6 +1695,163 @@ function toggleCart() {
 
 function handleCheckout() {
   showToast('This is a prototype. In production, this would connect to Stripe via WooCommerce.');
+}
+
+// ===== SQUARE CHECKOUT =====
+var SQUARE_WORKER = 'https://sscy-square.executive-2ef.workers.dev';
+var squareConfig = null;
+var squarePayments = null;
+var squareCard = null;
+
+function getCartLineItems() {
+  return cart.map(function(item) {
+    var p = PRODUCTS.find(function(x) { return x.id === item.id; });
+    if (!p) return null;
+    var price = typeof p.price === 'number' && p.price > 0 ? p.price : 0;
+    return { name: p.title, qty: item.qty, unitPriceCents: Math.round(price * 100) };
+  }).filter(Boolean);
+}
+
+function getCartTotalCents() {
+  return getCartLineItems().reduce(function(sum, l) { return sum + l.unitPriceCents * l.qty; }, 0);
+}
+
+function openCheckout() {
+  var lines = getCartLineItems();
+  if (!lines.length) { showToast('Your cart is empty.'); return; }
+  var totalCents = getCartTotalCents();
+  if (totalCents <= 0) { showToast('Cart total is zero.'); return; }
+
+  // Render summary
+  var summary = document.getElementById('checkoutSummary');
+  summary.innerHTML = lines.map(function(l) {
+    return '<div class="line"><span>' + escapeHtml(l.name) + (l.qty > 1 ? ' × ' + l.qty : '') + '</span><span>$' + (l.unitPriceCents * l.qty / 100).toFixed(2) + '</span></div>';
+  }).join('') +
+    '<div class="line total"><span>Total</span><span>$' + (totalCents / 100).toFixed(2) + '</span></div>';
+  document.getElementById('coPayAmount').textContent = '$' + (totalCents / 100).toFixed(2);
+  document.getElementById('coError').classList.remove('show');
+  document.getElementById('coError').textContent = '';
+  document.querySelector('.checkout-form').classList.remove('hidden');
+  document.getElementById('checkoutSummary').classList.remove('hidden');
+  document.getElementById('coSuccess').classList.remove('show');
+
+  document.getElementById('checkoutOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+
+  // Close the cart drawer if open
+  var cartPanel = document.getElementById('cartPanel');
+  if (cartPanel.classList.contains('open')) toggleCart();
+
+  initSquare();
+}
+
+function closeCheckout() {
+  document.getElementById('checkoutOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function escapeHtml(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+async function initSquare() {
+  if (squareCard) return;
+  try {
+    if (!squareConfig) {
+      var cRes = await fetch(SQUARE_WORKER + '/config');
+      squareConfig = await cRes.json();
+      if (!squareConfig.applicationId) throw new Error('Square not configured');
+    }
+    if (!window.Square) {
+      await loadScript(squareConfig.environment === 'production'
+        ? 'https://web.squarecdn.com/v1/square.js'
+        : 'https://sandbox.web.squarecdn.com/v1/square.js');
+    }
+    squarePayments = window.Square.payments(squareConfig.applicationId, squareConfig.locationId);
+    squareCard = await squarePayments.card();
+    await squareCard.attach('#card-container');
+    // Hide sandbox hint if production
+    if (squareConfig.environment === 'production') {
+      var n = document.getElementById('sandboxNote');
+      if (n) n.style.display = 'none';
+    }
+  } catch (e) {
+    showCheckoutError('Could not load payment form. ' + (e && e.message ? e.message : ''));
+  }
+}
+
+function loadScript(src) {
+  return new Promise(function(resolve, reject) {
+    var s = document.createElement('script');
+    s.src = src;
+    s.onload = function() { resolve(); };
+    s.onerror = function() { reject(new Error('Failed to load ' + src)); };
+    document.head.appendChild(s);
+  });
+}
+
+async function submitPayment() {
+  var name = document.getElementById('coName').value.trim();
+  var email = document.getElementById('coEmail').value.trim();
+  if (!name) return showCheckoutError('Please enter your name.');
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return showCheckoutError('Please enter a valid email.');
+  if (!squareCard) return showCheckoutError('Payment form is still loading.');
+
+  var btn = document.getElementById('coPay');
+  btn.disabled = true;
+  btn.textContent = 'Processing...';
+  document.getElementById('coError').classList.remove('show');
+
+  try {
+    var result = await squareCard.tokenize();
+    if (result.status !== 'OK') {
+      var errs = (result.errors || []).map(function(e) { return e.message; }).join(' ');
+      throw new Error(errs || 'Card was not accepted.');
+    }
+    var sourceId = result.token;
+
+    var payRes = await fetch(SQUARE_WORKER + '/create-payment', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        sourceId: sourceId,
+        items: getCartLineItems(),
+        buyer: { name: name, email: email }
+      })
+    });
+    var payData = await payRes.json();
+    if (!payRes.ok || !payData.ok) {
+      throw new Error(payData.detail || payData.error || 'Payment failed');
+    }
+
+    // Success
+    cart = [];
+    saveCart();
+    updateCartUI();
+    renderCartItems();
+    document.querySelector('.checkout-form').classList.add('hidden');
+    document.getElementById('checkoutSummary').classList.add('hidden');
+    document.getElementById('coSuccessMsg').textContent = 'Your payment was received. A receipt has been sent to ' + email + '.';
+    var link = document.getElementById('coReceiptLink');
+    if (payData.receiptUrl) {
+      link.href = payData.receiptUrl;
+      link.style.display = 'inline-block';
+    } else {
+      link.style.display = 'none';
+    }
+    document.getElementById('coSuccess').classList.add('show');
+  } catch (e) {
+    showCheckoutError(e && e.message ? e.message : 'Payment failed.');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Pay $' + (getCartTotalCents() / 100).toFixed(2);
+  }
+}
+
+function showCheckoutError(msg) {
+  var el = document.getElementById('coError');
+  el.textContent = msg;
+  el.classList.add('show');
 }
 
 // ===== TOAST =====
