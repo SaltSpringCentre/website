@@ -74,6 +74,15 @@ async function processCampaign(campaignId, env, force) {
   const dc = env.MAILCHIMP_DC;
   const auth = 'Basic ' + btoa('any:' + env.MAILCHIMP_API_KEY);
 
+  // If purely numeric, treat as Mailchimp's URL web_id and resolve to API id.
+  if (/^\d+$/.test(campaignId)) {
+    const apiId = await resolveWebId(campaignId, dc, auth);
+    if (!apiId) {
+      throw new Error(`No campaign found with web_id ${campaignId}`);
+    }
+    campaignId = apiId;
+  }
+
   const metaRes = await fetch(
     `https://${dc}.api.mailchimp.com/3.0/campaigns/${campaignId}`,
     { headers: { Authorization: auth } }
@@ -121,6 +130,25 @@ async function processCampaign(campaignId, env, force) {
   await commitFile(path, fm, `Newsletter: ${subject}`, env, force);
 
   return { ok: true, filename, subject, sentAt: sendTime };
+}
+
+async function resolveWebId(webId, dc, auth) {
+  // Mailchimp doesn't expose a direct web_id filter; page through campaigns.
+  let offset = 0;
+  const PAGE = 100;
+  for (let i = 0; i < 50; i++) {
+    const url = `https://${dc}.api.mailchimp.com/3.0/campaigns?count=${PAGE}&offset=${offset}&fields=campaigns.id,campaigns.web_id`;
+    const r = await fetch(url, { headers: { Authorization: auth } });
+    if (!r.ok) return null;
+    const data = await r.json();
+    const list = data.campaigns || [];
+    for (const c of list) {
+      if (String(c.web_id) === String(webId)) return c.id;
+    }
+    if (list.length < PAGE) return null;
+    offset += PAGE;
+  }
+  return null;
 }
 
 function jsonStr(s) {
