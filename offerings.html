@@ -709,7 +709,7 @@ a.offering-card, a.offering-card * { cursor: pointer; }
       <div class="footer-newsletter">
         <h4>Join Our Community</h4>
         <p>Stay connected with news, courses, and retreats.</p>
-        <form class="nl-form" onsubmit="event.preventDefault();this.innerHTML='<p style=\'padding:10px;opacity:0.7;\'>Thank you!</p>';">
+        <form class="nl-form" onsubmit="return sscySubscribe(event, this);">
           <input type="email" placeholder="Your email" required aria-label="Email">
           <button type="submit">Subscribe</button>
         </form>
@@ -908,5 +908,6 @@ function closeMobileMenu() {
 })();
 </script>
 
+<script src="subscribe.js" defer></script>
 </body>
 </html>
