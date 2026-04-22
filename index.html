@@ -405,9 +405,9 @@ p { text-align: justify; text-justify: inter-word; }
 <style>
 .listen-bar { background: linear-gradient(90deg, var(--teal-deep) 0%, var(--teal-dark) 100%); color: var(--white); overflow: hidden; max-height: 56px; transition: max-height 0.4s ease, opacity 0.3s ease; border-bottom: 1px solid rgba(244,215,107,0.18); }
 .listen-bar.dismissed { max-height: 0; opacity: 0; border-bottom: 0; }
-.listen-bar-inner { max-width: 1200px; margin: 0 auto; padding: 13px 32px; display: flex; align-items: center; gap: 14px; }
+.listen-bar-inner { max-width: 1200px; margin: 0 auto; padding: 13px 32px; display: flex; align-items: center; justify-content: center; gap: 14px; }
 .listen-bar .listen-icon { color: var(--gold); flex-shrink: 0; }
-.listen-bar-text { flex: 1; font-family: 'Archivo Narrow', sans-serif; font-size: 0.94rem; font-weight: 500; letter-spacing: 0.03em; color: rgba(255,255,255,0.92); }
+.listen-bar-text { flex: 0 0 auto; font-family: 'Archivo Narrow', sans-serif; font-size: 0.94rem; font-weight: 500; letter-spacing: 0.03em; color: rgba(255,255,255,0.92); }
 .listen-bar .listen-play { background: var(--gold); color: var(--teal-deep); border: none; padding: 7px 20px; border-radius: 50px; font-family: 'Archivo Narrow', sans-serif; font-weight: 700; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: 0.2s; white-space: nowrap; }
 .listen-bar .listen-play:hover { transform: scale(1.04); background: #f9e089; box-shadow: 0 2px 10px rgba(244,215,107,0.35); }
 @media (max-width: 720px) { .listen-bar-inner { padding: 10px 16px; gap: 10px; } .listen-bar-text { font-size: 0.82rem; } .listen-bar .listen-play { padding: 6px 14px; font-size: 0.7rem; letter-spacing: 0.06em; } }
