@@ -485,7 +485,7 @@ function openSSCYPlayer() {
   <a href="calendar.html" class="quick-link" style="--i:0">Calendar</a>
   <a href="offerings.html#classes" class="quick-link" style="--i:1">Classes</a>
   <a href="offerings.html#wellness" class="quick-link" style="--i:2">Wellness</a>
-  <a href="shop.html#donate" class="quick-link" style="--i:3">Donate</a>
+  <a href="#" class="quick-link" style="--i:3" onclick="event.preventDefault();openDonate();">Donate</a>
   <a href="offerings.html#ytt" class="quick-link" style="--i:4">Teacher Training</a>
   <a href="offerings.html#karma" class="quick-link" style="--i:5">Karma Yoga</a>
   <a href="community.html" class="quick-link" style="--i:6">Resources</a>
@@ -1091,20 +1091,7 @@ document.querySelectorAll('.mobile-menu a').forEach(function(a) {
   });
 });
 
-// Donate modal
-var donateAmount = 108;
-function setDonateAmount(amt) {
-  donateAmount = amt;
-  document.querySelectorAll('.tier-btn').forEach(function(b) { b.classList.remove('active'); });
-  event.target.classList.add('active');
-}
-function closeDonate() {
-  document.getElementById('donateOverlay').classList.remove('open');
-}
-function submitDonation() {
-  closeDonate();
-  alert('Thank you for your donation of $' + donateAmount + '. In production, this would process via Square.');
-}
+// Donate modal is handled by donate-form.js (window.openDonate, closeDonate).
 function closeMobileMenu() {
   var menu = document.getElementById('mobileMenu');
   var ham = document.getElementById('hamburger');
@@ -1113,50 +1100,7 @@ function closeMobileMenu() {
 }
 </script>
 
-<!-- DONATE MODAL -->
-<div class="donate-overlay" id="donateOverlay" onclick="if(event.target===this)closeDonate()">
-  <div class="donate-modal">
-    <div class="donate-modal-header">
-      <h3>Make a Donation</h3>
-      <p>Salt Spring Centre of Yoga</p>
-      <button class="donate-modal-close" onclick="closeDonate()">&times;</button>
-    </div>
-    <div class="donate-modal-body">
-      <div class="donate-tiers" id="donateTiers">
-        <button class="tier-btn" onclick="setDonateAmount(25)">$25</button>
-        <button class="tier-btn" onclick="setDonateAmount(50)">$50</button>
-        <button class="tier-btn active" onclick="setDonateAmount(108)">$108</button>
-        <button class="tier-btn" onclick="setDonateAmount(200)">$200</button>
-      </div>
-      <div class="donate-amount-label">One-time donation</div>
-      <div class="donate-field">
-        <label>Name</label>
-        <input type="text" placeholder="Your full name">
-      </div>
-      <div class="donate-field">
-        <label>Email</label>
-        <input type="email" placeholder="you@example.com">
-      </div>
-      <div class="donate-field">
-        <label>Direct your gift</label>
-        <select>
-          <option>No Preference</option>
-          <option>Meeting Basic Needs &amp; Preserving Spaces</option>
-          <option>Bringing the Centre into solid financial position</option>
-          <option>Restoring key Centre Offerings</option>
-        </select>
-      </div>
-      <button class="donate-submit" onclick="window.open('https://square.link/u/Oa6tCVaL','_blank')">Donate via Square</button>
-      <p style="font-size:0.78rem;color:var(--text-light);text-align:center;margin-top:10px;">Square payment processing coming soon. For now, please use Interac E-Transfer.</p>
-      <div class="donate-alt">
-        Or send Interac E-Transfer to <strong>payment@saltspringcentre.com</strong>
-      </div>
-    </div>
-    <div class="donate-modal-footer">
-      Charitable registration number: 107951173RR0001
-    </div>
-  </div>
-</div>
+<!-- DONATE MODAL: handled by donate-form.js (injected on first openDonate call) -->
 
 <script src="events-data.js" defer></script>
 <script src="next-event.js" defer></script>

@@ -1208,9 +1208,7 @@ document.querySelectorAll('.mobile-menu a').forEach(function(a) {
 
 // Donate modal
 var donateAmount = 108;
-function setDonateAmount(amt) {
-  donateAmount = amt;
-  document.querySelectorAll('.tier-btn').forEach(function(b) { b.classList.remove('active'); });
+);
   event.target.classList.add('active');
 }
 function closeDonate() {
@@ -1227,50 +1225,7 @@ function closeMobileMenu() {
 }
 </script>
 
-<!-- DONATE MODAL -->
-<div class="donate-overlay" id="donateOverlay" onclick="if(event.target===this)closeDonate()">
-  <div class="donate-modal">
-    <div class="donate-modal-header">
-      <h3>Make a Donation</h3>
-      <p>Salt Spring Centre of Yoga</p>
-      <button class="donate-modal-close" onclick="closeDonate()">&times;</button>
-    </div>
-    <div class="donate-modal-body">
-      <div class="donate-tiers" id="donateTiers">
-        <button class="tier-btn" onclick="setDonateAmount(25)">$25</button>
-        <button class="tier-btn" onclick="setDonateAmount(50)">$50</button>
-        <button class="tier-btn active" onclick="setDonateAmount(108)">$108</button>
-        <button class="tier-btn" onclick="setDonateAmount(200)">$200</button>
-      </div>
-      <div class="donate-amount-label">One-time donation</div>
-      <div class="donate-field">
-        <label>Name</label>
-        <input type="text" placeholder="Your full name">
-      </div>
-      <div class="donate-field">
-        <label>Email</label>
-        <input type="email" placeholder="you@example.com">
-      </div>
-      <div class="donate-field">
-        <label>Direct your gift</label>
-        <select>
-          <option>No Preference</option>
-          <option>Meeting Basic Needs &amp; Preserving Spaces</option>
-          <option>Bringing the Centre into solid financial position</option>
-          <option>Restoring key Centre Offerings</option>
-        </select>
-      </div>
-      <button class="donate-submit" onclick="window.open('https://square.link/u/Oa6tCVaL','_blank')">Donate via Square</button>
-      <div class="donate-alt">
-        Or send Interac E-Transfer to <strong>payment@saltspringcentre.com</strong>
-      </div>
-    </div>
-    <div class="donate-modal-footer">
-      This is a prototype. In production, this connects to Square for secure payment.
-    </div>
-  </div>
-</div>
-
+<!-- DONATE MODAL: handled by donate-form.js -->
 <!-- RETREAT GURU API -->
 <script>
 (function() {

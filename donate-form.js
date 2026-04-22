@@ -31,6 +31,10 @@
       '.donate-modal label{display:block;margin-bottom:14px;font-size:0.8rem;font-weight:600;color:#7a7a7a;text-transform:uppercase;letter-spacing:0.08em;}',
       '.donate-modal input[type="text"],.donate-modal input[type="email"],.donate-modal input[type="number"]{width:100%;margin-top:6px;padding:12px 14px;border:1.5px solid rgba(0,0,0,0.1);background:#faf8f4;border-radius:8px;font-family:"Archivo Narrow",sans-serif;font-size:0.95rem;color:#3a3a3a;text-transform:none;letter-spacing:0;}',
       '.donate-modal input:focus{outline:none;border-color:#3bb8a8;}',
+      '.donate-modal .donate-tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px;margin-bottom:10px;}',
+      '.donate-modal .donate-tier-btn{padding:10px 6px;border:1.5px solid rgba(26,92,83,0.15);background:#faf8f4;border-radius:8px;font-family:"Archivo Narrow",sans-serif;font-size:0.92rem;font-weight:600;color:#1a5c53;cursor:pointer;letter-spacing:0;text-transform:none;transition:background 0.15s,border-color 0.15s;}',
+      '.donate-modal .donate-tier-btn:hover{background:#f3ede3;border-color:#3bb8a8;}',
+      '.donate-modal .donate-tier-btn.active{background:#1a5c53;border-color:#1a5c53;color:#fff;}',
       '.donate-modal .donate-amount-row{display:flex;align-items:center;gap:8px;}',
       '.donate-modal .donate-amount-row .dollar{font-size:1.2rem;color:#7a7a7a;padding-bottom:2px;text-transform:none;letter-spacing:0;}',
       '.donate-modal #donate-card-container{margin-top:6px;min-height:90px;padding:10px 14px;border:1.5px solid rgba(0,0,0,0.1);background:#faf8f4;border-radius:8px;}',
@@ -58,7 +62,15 @@
       '<button type="button" class="donate-close" onclick="closeDonate()" aria-label="Close">&times;</button>',
       '<h3 id="donateTitle">Make a Donation</h3>',
       '<div class="donate-form" id="donateFormWrap">',
-        '<label>Amount<div class="donate-amount-row"><span class="dollar">$</span><input type="number" id="donateAmount" min="1" step="1" inputmode="decimal"></div></label>',
+        '<label>Amount',
+          '<div class="donate-tiers" id="donateTiers">',
+            '<button type="button" class="donate-tier-btn" data-amt="25">$25</button>',
+            '<button type="button" class="donate-tier-btn" data-amt="50">$50</button>',
+            '<button type="button" class="donate-tier-btn" data-amt="108">$108</button>',
+            '<button type="button" class="donate-tier-btn" data-amt="200">$200</button>',
+          '</div>',
+          '<div class="donate-amount-row"><span class="dollar">$</span><input type="number" id="donateAmount" min="1" step="1" inputmode="decimal" placeholder="Other amount"></div>',
+        '</label>',
         '<label>Name<input type="text" id="donateName" required maxlength="120" autocomplete="name"></label>',
         '<label>Email<input type="email" id="donateEmail" required maxlength="180" autocomplete="email"></label>',
         '<label>Card<div id="donate-card-container"></div></label>',
@@ -91,6 +103,13 @@
     if (el) el.textContent = cents ? '$' + (cents / 100).toFixed(2) : '';
   }
 
+  function syncTierActive() {
+    var current = parseFloat(document.getElementById('donateAmount').value);
+    document.querySelectorAll('.donate-tier-btn').forEach(function(b) {
+      b.classList.toggle('active', parseFloat(b.dataset.amt) === current);
+    });
+  }
+
   window.openDonate = function (amount) {
     build();
     document.getElementById('donateFormWrap').classList.remove('hidden');
@@ -99,8 +118,16 @@
     var amtInput = document.getElementById('donateAmount');
     if (amount && !isNaN(amount)) amtInput.value = amount;
     else amtInput.value = '';
-    amtInput.oninput = updatePayLabel;
+    amtInput.oninput = function() { updatePayLabel(); syncTierActive(); };
+    document.querySelectorAll('.donate-tier-btn').forEach(function(b) {
+      b.onclick = function() {
+        amtInput.value = b.dataset.amt;
+        updatePayLabel();
+        syncTierActive();
+      };
+    });
     updatePayLabel();
+    syncTierActive();
     document.getElementById('donateOverlay').classList.add('open');
     document.body.style.overflow = 'hidden';
     initSquare();
