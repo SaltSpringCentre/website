@@ -113,11 +113,15 @@ async function handleSubscribe(request, env) {
   const listId = env.MAILCHIMP_LIST_ID;
   const auth = 'Basic ' + btoa('any:' + env.MAILCHIMP_API_KEY);
 
+  // Fetch audience's required merge fields so we can auto-populate
+  // safe defaults for any field that's required but not supplied.
+  const mergeFields = await buildMergeFields(dc, listId, auth, { FNAME: fname });
+
   const payload = {
     email_address: email,
     status: 'pending'
   };
-  if (fname) payload.merge_fields = { FNAME: fname };
+  if (Object.keys(mergeFields).length) payload.merge_fields = mergeFields;
 
   const res = await fetch(
     `https://${dc}.api.mailchimp.com/3.0/lists/${listId}/members`,
@@ -143,6 +147,61 @@ async function handleSubscribe(request, env) {
     error: data.title || 'Mailchimp error',
     detail: data.detail || ''
   }, res.status, request);
+}
+
+async function buildMergeFields(dc, listId, auth, provided) {
+  const out = {};
+  try {
+    const r = await fetch(
+      `https://${dc}.api.mailchimp.com/3.0/lists/${listId}/merge-fields?count=50`,
+      { headers: { Authorization: auth } }
+    );
+    if (!r.ok) {
+      // If we can't read config, just pass through provided values.
+      for (const [k, v] of Object.entries(provided || {})) {
+        if (v) out[k] = v;
+      }
+      return out;
+    }
+    const data = await r.json();
+    const fields = data.merge_fields || [];
+    for (const f of fields) {
+      const tag = f.tag;
+      const supplied = provided && provided[tag];
+      if (supplied) {
+        out[tag] = supplied;
+      } else if (f.required) {
+        out[tag] = defaultForField(f);
+      }
+    }
+  } catch (e) {
+    for (const [k, v] of Object.entries(provided || {})) {
+      if (v) out[k] = v;
+    }
+  }
+  return out;
+}
+
+function defaultForField(f) {
+  if (f.default_value) return f.default_value;
+  switch ((f.type || '').toLowerCase()) {
+    case 'address':
+      return { addr1: '-', city: '-', state: '-', zip: '-', country: 'CA' };
+    case 'number':
+      return 0;
+    case 'date':
+    case 'birthday':
+      return '01/01';
+    case 'phone':
+    case 'url':
+    case 'imageurl':
+    case 'radio':
+    case 'dropdown':
+    case 'zip':
+    case 'text':
+    default:
+      return '-';
+  }
 }
 
 async function processCampaign(campaignId, env, force) {
