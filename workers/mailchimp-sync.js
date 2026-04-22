@@ -259,12 +259,8 @@ function jsonStr(s) {
 }
 
 function bytesToBase64(bytes) {
-  // Plain loop: no spread, no apply — safe for any size.
-  let bin = '';
-  for (let i = 0; i < bytes.length; i++) {
-    bin += String.fromCharCode(bytes[i]);
-  }
-  return btoa(bin);
+  // Use Node's Buffer (available in Workers via nodejs_compat flag).
+  return Buffer.from(bytes).toString('base64');
 }
 
 function slugify(s) {
