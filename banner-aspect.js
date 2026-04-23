@@ -19,18 +19,16 @@
   // gets demoted to natural rendering. 0.95 lets a 5% vertical crop slide;
   // anything more aggressive than that falls back to natural display.
   var TOLERANCE = 0.95;
+  // Only match true banner patterns — images that ARE the content,
+  // not background images used behind text overlays. Hero/about-hero
+  // images sit absolutely-positioned behind a text column; reshaping
+  // them to natural aspect breaks the overlay composition.
   var SELECTORS = [
     '.section-banner',
     '.mfp-banner img',
     '.event-banner img',
     '.mfp-img',
-    'img.banner',
-    '.hero-img',
-    '.event-hero-img',
-    '.about-hero-img',
-    '.hero > img.bg',
-    '.bleed > img.bg',
-    '.event-hero > img.bg'
+    'img.banner'
   ].join(', ');
 
   var style = document.createElement('style');
@@ -39,13 +37,7 @@
     '.section-banner.banner-natural,',
     '.mfp-banner img.banner-natural,',
     '.event-banner img.banner-natural,',
-    '.mfp-img.banner-natural,',
-    '.hero-img.banner-natural,',
-    '.event-hero-img.banner-natural,',
-    '.about-hero-img.banner-natural,',
-    '.hero > img.bg.banner-natural,',
-    '.bleed > img.bg.banner-natural,',
-    '.event-hero > img.bg.banner-natural {',
+    '.mfp-img.banner-natural {',
     '  max-height: 70vh !important;',
     '  height: auto !important;',
     '  width: 100% !important;',
@@ -54,13 +46,6 @@
     '  display: block !important;',
     '  margin-left: auto !important;',
     '  margin-right: auto !important;',
-    '  position: relative !important;',
-    '  inset: auto !important;',
-    '  top: auto !important;',
-    '  left: auto !important;',
-    '  right: auto !important;',
-    '  bottom: auto !important;',
-    '  transform: none !important;',
     '  border-radius: 12px;',
     '}'
   ].join('\n');
