@@ -6,16 +6,10 @@
 // Banner image lookup (priority order):
 //   1. Event has bannerImage: '<exact photo caption>' -> use that photo
 //      from sscy-photos.json (matches the `cap` field).
-//   2. Otherwise, pick deterministically (hashed by event.id) from the
-//      photos in sscy-photos.json whose category matches the event.type
-//      per BANNER_CATEGORIES.
-//   3. If sscy-photos.json is missing or no photo matches, fall back to
-//      event.img so the banner never breaks.
-
-var BANNER_CATEGORIES = {
-  concert: ['Music for Peace'],
-  retreat: ['ACYR / Annual Retreat', 'Nature & Nurture Series', 'Classes / Programs']
-};
+//   2. Otherwise, if event has bannerPool: '<category name>', pick
+//      deterministically (hashed by event.id) from that category's photos
+//      in sscy-photos.json that are flagged banner: true. Landscape only.
+//   3. If no bannerPool or the pool is empty, fall back to event.img.
 
 (function () {
   if (typeof EVENTS === 'undefined' || !Array.isArray(EVENTS)) return;
@@ -135,64 +129,35 @@ var BANNER_CATEGORIES = {
       .then(function (photos) {
         if (!photos) return;
 
-        // Flatten all photos across all categories into a single list.
-        var all = [];
-        for (var cat in photos) {
-          if (!photos.hasOwnProperty(cat)) continue;
-          var arr = photos[cat] || [];
-          for (var i = 0; i < arr.length; i++) {
-            if (arr[i] && arr[i].src) all.push(arr[i]);
-          }
-        }
-
-        // 1. Explicit override by caption match (trust the author, no AR filter)
+        // 1. Explicit override by caption match (trust the author, no AR filter).
         if (event.bannerImage) {
-          for (var j = 0; j < all.length; j++) {
-            if (all[j].cap === event.bannerImage) {
-              imgEl.setAttribute('src', all[j].src);
-              imgEl.setAttribute('alt', all[j].cap || altText);
-              return;
+          for (var cat in photos) {
+            if (!photos.hasOwnProperty(cat)) continue;
+            var arr = photos[cat] || [];
+            for (var i = 0; i < arr.length; i++) {
+              if (arr[i] && arr[i].cap === event.bannerImage) {
+                imgEl.setAttribute('src', arr[i].src);
+                imgEl.setAttribute('alt', arr[i].cap || altText);
+                return;
+              }
             }
           }
         }
 
-        // 2. Banner-flagged photos matching event.type (or any).
-        //    Probe aspect ratios and keep landscape only.
-        var flagged = all.filter(function (p) {
-          return p.banner === true || p.banner === event.type;
+        // 2. Draw from the event's named banner pool (a photo category).
+        //    Banner-flagged photos only, landscape only, deterministic pick.
+        var poolName = event.bannerPool;
+        if (!poolName) return; // keep event.img fallback
+        var pool = (photos[poolName] || []).filter(function (p) {
+          return p && p.src && p.banner === true;
         });
-        if (flagged.length) {
-          filterLandscape(flagged).then(function (viable) {
-            if (!viable.length) fallbackCategoryPool();
-            else {
-              var pick = viable[hashStr(event.id || '') % viable.length];
-              imgEl.setAttribute('src', pick.src);
-              imgEl.setAttribute('alt', pick.cap || altText);
-            }
-          });
-          return;
-        }
-
-        fallbackCategoryPool();
-
-        function fallbackCategoryPool() {
-          var cats = BANNER_CATEGORIES[event.type];
-          if (!cats) return;
-          var catPool = [];
-          for (var k = 0; k < cats.length; k++) {
-            var items = photos[cats[k]] || [];
-            for (var m = 0; m < items.length; m++) {
-              if (items[m] && items[m].src) catPool.push(items[m]);
-            }
-          }
-          if (!catPool.length) return;
-          filterLandscape(catPool).then(function (viable) {
-            if (!viable.length) return; // keep event.img fallback
-            var chosen = viable[hashStr(event.id || '') % viable.length];
-            imgEl.setAttribute('src', chosen.src);
-            imgEl.setAttribute('alt', chosen.cap || altText);
-          });
-        }
+        if (!pool.length) return; // keep event.img fallback
+        filterLandscape(pool).then(function (viable) {
+          if (!viable.length) return; // keep event.img fallback
+          var pick = viable[hashStr(event.id || '') % viable.length];
+          imgEl.setAttribute('src', pick.src);
+          imgEl.setAttribute('alt', pick.cap || altText);
+        });
       })
       .catch(function () { /* keep event.img fallback */ });
   }

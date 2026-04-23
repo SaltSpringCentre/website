@@ -5,12 +5,13 @@
 // Homepage banner image (see next-event.js):
 //   Optional `bannerImage: '<photo caption>'` field on any event overrides
 //   the banner photo with a specific photo from sscy-photos.json (matches
-//   the `cap` field in the photos data). If omitted, the banner picks
-//   deterministically from the photo pool matching event.type
-//   (concert -> "Music for Peace", retreat -> "ACYR / Annual Retreat" etc.).
-//   Curate the pool by dragging photos into the right category in
-//   photos.html, then Export JSON and overwrite sscy-photos.json at the
-//   repo root.
+//   the `cap` field in the photos data). If omitted and the event has a
+//   `bannerPool: '<category name>'` field, the banner picks
+//   deterministically from banner-flagged photos in that category. If
+//   neither is set (or the pool is empty), falls back to event.img.
+//   Curate pools by flagging photos as "Use as banner: Yes" in photos.html
+//   within the target category, then Export JSON and overwrite
+//   sscy-photos.json at the repo root.
 
 var EVENTS = [
   // MUSIC FOR PEACE CONCERTS
@@ -26,6 +27,7 @@ var EVENTS = [
     price: '$40',
     badge: 'Apr 11',
     img: 'images/2026/03/Violin-Concert-April-11-2026-Shriram-Rajagopalan.jpg',
+    bannerPool: 'Music for Peace',
     featured: true
   },
   {
@@ -39,7 +41,8 @@ var EVENTS = [
     venue: 'Salt Spring Centre of Yoga',
     price: 'Inquire',
     badge: 'Apr 2',
-    img: 'images/2025/01/Blog-Post-picture-horizontal-1200-x-630-1.jpg'
+    img: 'images/2025/01/Blog-Post-picture-horizontal-1200-x-630-1.jpg',
+    bannerPool: 'Classes / Programs'
   },
   {
     id: 'april-retreat-3',
@@ -52,7 +55,8 @@ var EVENTS = [
     venue: 'Salt Spring Centre of Yoga',
     price: 'Inquire',
     badge: 'Apr 16',
-    img: 'images/2024/11/Blog-Post-picture-horizontal-1200-x-630-4.png'
+    img: 'images/2024/11/Blog-Post-picture-horizontal-1200-x-630-4.png',
+    bannerPool: 'Classes / Programs'
   },
   {
     id: 'agni-protocol',
@@ -65,7 +69,8 @@ var EVENTS = [
     venue: 'Salt Spring Centre of Yoga',
     price: 'Inquire',
     badge: 'Apr 23',
-    img: 'images/2025/11/Agni-Protocol.jpg'
+    img: 'images/2025/11/Agni-Protocol.jpg',
+    bannerPool: 'Classes / Programs'
   },
   {
     id: 'sound-bath',
@@ -78,7 +83,8 @@ var EVENTS = [
     venue: 'Salt Spring Centre of Yoga',
     price: 'By Donation',
     badge: 'May 13',
-    img: 'images/2025/11/SoundBath-SaltSpring.png'
+    img: 'images/2025/11/SoundBath-SaltSpring.png',
+    bannerPool: 'Music for Peace'
   },
   {
     id: 'may-retreat-2',
@@ -91,7 +97,8 @@ var EVENTS = [
     venue: 'Salt Spring Centre of Yoga',
     price: 'Inquire',
     badge: 'May 8',
-    img: 'images/2023/11/Program-House-with-flowers-resized.png'
+    img: 'images/2023/11/Program-House-with-flowers-resized.png',
+    bannerPool: 'Classes / Programs'
   },
   {
     id: 'nature-nurture-may',
@@ -104,7 +111,8 @@ var EVENTS = [
     venue: 'Salt Spring Centre of Yoga',
     price: 'Inquire',
     badge: 'May 14',
-    img: 'images/2025/08/519270511_18512460514049610_251173067301957564_n.jpg'
+    img: 'images/2025/08/519270511_18512460514049610_251173067301957564_n.jpg',
+    bannerPool: 'Nature & Nurture Series'
   },
   {
     id: 'june-retreat-3',
@@ -117,7 +125,8 @@ var EVENTS = [
     venue: 'Salt Spring Centre of Yoga',
     price: 'Inquire',
     badge: 'Jun 18',
-    img: 'images/2023/11/Program-House-with-flowers-resized.png'
+    img: 'images/2023/11/Program-House-with-flowers-resized.png',
+    bannerPool: 'Classes / Programs'
   },
   {
     id: 'mfp-akhil',
@@ -130,7 +139,8 @@ var EVENTS = [
     venue: 'Pond Dome',
     price: '$40',
     badge: 'Jun 27',
-    img: 'images/2022/03/Grounding-with-music.jpg'
+    img: 'images/2022/03/Grounding-with-music.jpg',
+    bannerPool: 'Music for Peace'
   },
   {
     id: 'july-retreat-3',
@@ -143,7 +153,8 @@ var EVENTS = [
     venue: 'Salt Spring Centre of Yoga',
     price: 'Inquire',
     badge: 'Jul 16',
-    img: 'images/2023/11/Program-House-with-flowers-resized.png'
+    img: 'images/2023/11/Program-House-with-flowers-resized.png',
+    bannerPool: 'Classes / Programs'
   },
   {
     id: 'mfp-deepak',
@@ -156,7 +167,8 @@ var EVENTS = [
     venue: 'Satsang Room',
     price: '$40',
     badge: 'Aug 1',
-    img: 'images/2022/08/Kirtan.jpg'
+    img: 'images/2022/08/Kirtan.jpg',
+    bannerPool: 'Music for Peace'
   },
   {
     id: 'aug-retreat-2',
@@ -169,7 +181,8 @@ var EVENTS = [
     venue: 'Salt Spring Centre of Yoga',
     price: 'Inquire',
     badge: 'Aug 28',
-    img: 'images/2023/11/Program-House-with-flowers-resized.png'
+    img: 'images/2023/11/Program-House-with-flowers-resized.png',
+    bannerPool: 'Classes / Programs'
   },
   {
     id: 'sep-retreat-2',
@@ -182,7 +195,8 @@ var EVENTS = [
     venue: 'Salt Spring Centre of Yoga',
     price: 'Inquire',
     badge: 'Sep 18',
-    img: 'images/2024/11/FALL-SCHEDULE-5.png'
+    img: 'images/2024/11/FALL-SCHEDULE-5.png',
+    bannerPool: 'Classes / Programs'
   },
   {
     id: 'nature-nurture-oct',
@@ -195,7 +209,8 @@ var EVENTS = [
     venue: 'Salt Spring Centre of Yoga',
     price: 'Inquire',
     badge: 'Oct 2',
-    img: 'images/2025/08/519270511_18512460514049610_251173067301957564_n.jpg'
+    img: 'images/2025/08/519270511_18512460514049610_251173067301957564_n.jpg',
+    bannerPool: 'Nature & Nurture Series'
   },
   {
     id: 'oct-retreat-3',
@@ -208,7 +223,8 @@ var EVENTS = [
     venue: 'Salt Spring Centre of Yoga',
     price: 'Inquire',
     badge: 'Oct 15',
-    img: 'images/2023/11/Program-House-with-flowers-resized.png'
+    img: 'images/2023/11/Program-House-with-flowers-resized.png',
+    bannerPool: 'Classes / Programs'
   },
   {
     id: 'soulful-silence',
@@ -222,6 +238,7 @@ var EVENTS = [
     price: 'Inquire',
     badge: 'Oct 22',
     img: 'images/2025/11/Soulful-Silence-Meditation-Retreat-Farhad-Khan-.jpg',
+    bannerPool: 'Classes / Programs',
     featured: true
   },
   {
@@ -235,7 +252,8 @@ var EVENTS = [
     venue: 'Salt Spring Centre of Yoga',
     price: 'Inquire',
     badge: 'Nov 13',
-    img: 'images/2023/11/Program-House-with-flowers-resized.png'
+    img: 'images/2023/11/Program-House-with-flowers-resized.png',
+    bannerPool: 'Classes / Programs'
   },
   {
     id: 'nov-retreat-3',
@@ -248,7 +266,8 @@ var EVENTS = [
     venue: 'Salt Spring Centre of Yoga',
     price: 'Inquire',
     badge: 'Nov 26',
-    img: 'images/2023/11/Program-House-with-flowers-resized.png'
+    img: 'images/2023/11/Program-House-with-flowers-resized.png',
+    bannerPool: 'Classes / Programs'
   },
   // ===== YEAR-ROUND PROGRAM DESCRIPTIONS =====
   {
@@ -263,6 +282,7 @@ var EVENTS = [
     price: 'Inquire',
     badge: 'Ongoing',
     img: 'images/2021/11/retreat-1.jpg',
+    bannerPool: 'Classes / Programs',
     longDesc: 'Yoga & Wellness Weekends are the Centre\'s most accessible retreat format, running monthly from April through November. Each weekend retreat offers a full immersion in asana, breathwork, meditation, nature walks, and freshly prepared lacto-vegetarian meals. The atmosphere is warm and welcoming, with resident Karma Yogis and visiting teachers guiding the practice. Two-night and three-night options are available.'
   },
   {
@@ -277,6 +297,7 @@ var EVENTS = [
     price: 'Inquire',
     badge: 'Jun 10',
     img: 'images/2021/12/serene.jpg',
+    bannerPool: 'Classes / Programs',
     longDesc: 'Dr. Yogrishi Vishvketu, founder of the Akhanda Yoga tradition, brings decades of teaching from the Himalayan lineage for this seven-day intensive. The focus is on pranayama (breath mastery), meditation, and the subtler limbs of classical yoga. Students will experience daily asana practice, philosophical study, mantra, and extended periods of silent practice. A rare opportunity to study directly with a master teacher in the lineage of Swami Rama.'
   },
   {
@@ -291,6 +312,7 @@ var EVENTS = [
     price: 'Inquire',
     badge: 'Sep 2026',
     img: 'images/2021/10/indian-spices-1.jpg',
+    bannerPool: 'Classes / Programs',
     longDesc: 'This five-day intensive weaves Ayurveda, psychology, somatic medicine, and nonviolent communication into a retreat designed for people ready to examine their patterns and reclaim energy for what matters most. The program includes Ayurvedic consultations and treatments, yoga practice, group process work, and quiet time to integrate. Suitable for those at any stage of the path who feel called to go deeper.'
   },
   {
@@ -305,6 +327,7 @@ var EVENTS = [
     price: 'Inquire',
     badge: 'Jul 2026',
     img: 'images/2021/11/programs-retreats.jpg',
+    bannerPool: 'Classes / Programs',
     longDesc: 'The Yoga Intensive Program is a five-day immersion designed for yoga teachers and serious students who want to deepen their understanding of classical yoga. The program is approved for Yoga Alliance continuing education hours. Expect multiple daily asana sessions, pranayama and meditation practice, philosophical study of the Yoga Sutras, and group discussions. Dive Deep, Rise Strong.',
     relatedPage: 'yoga-intensive.html'
   },
@@ -320,6 +343,7 @@ var EVENTS = [
     price: 'Inquire',
     badge: 'Nov 18',
     img: 'images/2022/03/Forest-Canopy-from-the-ground-1024x683-1.jpg',
+    bannerPool: 'Classes / Programs',
     longDesc: 'Going Deeper is a profound silent retreat format created by Baba Hari Dass. The retreat space features covered windows and minimal light, creating a cave-like atmosphere designed to support deep inner exploration. Led by senior teachers Chetna Tracy Boyd and Gita Tanya Roberts, the retreat includes meditation, gentle yoga, pranayama, and extended periods of silence. An opportunity for experienced practitioners to drop beneath the surface of daily life.'
   },
   {
@@ -334,6 +358,7 @@ var EVENTS = [
     price: 'Registration opens later in 2026',
     badge: 'Aug 2026',
     img: 'images/2022/05/ACYR-Group-Peace.jpg',
+    bannerPool: 'ACYR / Annual Retreat',
     longDesc: 'The Annual Community Yoga Retreat (ACYR) is a 50-year tradition and the Centre\'s flagship event. A family-friendly, multi-day gathering that brings practitioners from across Canada and beyond to practice together on the Centre land. Expect diverse yoga styles, workshops, kirtan, shared meals, and deep community. Children and teens have their own dedicated programming. Registration opens later in 2026.',
     relatedPage: 'acyr.html'
   },
@@ -349,6 +374,7 @@ var EVENTS = [
     price: 'Inquire',
     badge: 'Year-round',
     img: 'images/2025/12/Personal-Retreat-Instagram-May-2022.jpg',
+    bannerPool: 'Classes / Programs',
     longDesc: 'Personal Retreats offer a self-directed alternative to structured programming. Guests set their own rhythm on 69 acres of sacred land, with light self-serve breakfast, two cooked vegetarian meals per day, and a 24/7 tea bar included. You\'ll have access to community yoga classes and ceremonies, the library and lounge, forested walking trails, and a swimming lake. Book through Retreat Guru.',
     bookUrl: 'https://saltspringcentre.secure.retreat.guru'
   }
