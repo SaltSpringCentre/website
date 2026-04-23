@@ -22,7 +22,8 @@
     },
     {
       "src": "images/2025/05/1981-5.jpg",
-      "cap": "Babaji at Program House (1981)"
+      "cap": "Babaji at Program House (1981)",
+      "banner": "retreat"
     },
     {
       "src": "images/2022/03/Baba-Hari-Dass-w-Chalkboard-1970s.jpg",
@@ -253,6 +254,14 @@
     {
       "src": "images/2011/08/ZD.090731.03.013.jpg",
       "cap": "Satsang/kirtan gathering"
+    },
+    {
+      "src": "posts/images/361ae1b0_image-10.jpeg",
+      "cap": "Image 10"
+    },
+    {
+      "src": "posts/images/361ae1b0_image-1.jpeg",
+      "cap": "Image 1"
     }
   ],
   "Staff / Instructors": [
@@ -347,16 +356,8 @@
       "cap": "Garden House exterior 1"
     },
     {
-      "src": "images/2021/11/Garden-House-2.jpg",
-      "cap": "Garden House exterior 2"
-    },
-    {
       "src": "images/2022/12/Garden-House-yoga-space-empty.jpg",
       "cap": "Garden House yoga space"
-    },
-    {
-      "src": "images/2022/03/Pond-Dome.jpg",
-      "cap": "Pond Dome exterior"
     },
     {
       "src": "images/2022/03/pond-dome-2.jpg",
@@ -421,6 +422,30 @@
     {
       "src": "images/2025/05/6.jpg",
       "cap": "Aerial historical view"
+    },
+    {
+      "src": "images/2021/11/Garden-House-2.jpg",
+      "cap": "Garden House exterior 2"
+    },
+    {
+      "src": "images/2022/03/Pond-Dome.jpg",
+      "cap": "Pond Dome exterior"
+    },
+    {
+      "src": "posts/images/25c8a139_House-Final.jpg",
+      "cap": "House Final"
+    },
+    {
+      "src": "posts/images/25c8a139_Copy-of-Blackburn-House-Collage-.jpg",
+      "cap": "Copy Of Blackburn House Collage"
+    },
+    {
+      "src": "posts/images/25c8a139_Anuradha-Pics954-e1759338577230.jpg",
+      "cap": "Anuradha Pics954 E1759338577230"
+    },
+    {
+      "src": "posts/images/25c8a139_House-pic-for-Newsletter.jpg",
+      "cap": "House Pic For Newsletter"
     }
   ],
   "Rooms": [
@@ -505,16 +530,13 @@
       "cap": "Aerial drone 2"
     },
     {
-      "src": "images/2021/12/DSCF0102.jpg",
-      "cap": "Outdoor scenic"
-    },
-    {
       "src": "images/2021/12/serene.jpg",
       "cap": "Serene grounds"
     },
     {
       "src": "images/2021/10/its-all-about-love.jpg",
-      "cap": "It's all about love"
+      "cap": "It's all about love",
+      "banner": "retreat"
     },
     {
       "src": "images/2022/03/Forest-Canopy-from-the-ground-1024x683-1.jpg",
@@ -538,7 +560,12 @@
     },
     {
       "src": "images/2022/09/Lotus-photo-jpeg.jpg",
-      "cap": "Lotus flower"
+      "cap": "Lotus flower",
+      "banner": "retreat"
+    },
+    {
+      "src": "images/2021/12/DSCF0102.jpg",
+      "cap": "Outdoor scenic"
     }
   ],
   "Temples / Sacred": [
@@ -646,7 +673,28 @@
     },
     {
       "src": "images/2025/07/Website-front-page-8.jpg",
-      "cap": "Website front page"
+      "cap": "Website front page",
+      "banner": "retreat"
+    },
+    {
+      "src": "images/2021/11/Garden-House-2.jpg",
+      "cap": "Garden House exterior 2"
+    },
+    {
+      "src": "images/2022/03/Pond-Dome.jpg",
+      "cap": "Pond Dome exterior"
+    },
+    {
+      "src": "images/2021/12/DSCF0102.jpg",
+      "cap": "Outdoor scenic"
+    },
+    {
+      "src": "posts/images/25c8a139_PHOTO-2025-10-22-22-14-50.jpeg",
+      "cap": "PHOTO 2025 10 22 22 14 50"
+    },
+    {
+      "src": "posts/images/3c1fe4d4_46.jpg",
+      "cap": "46"
     }
   ],
   "Asana": [],
@@ -679,6 +727,18 @@
     {
       "src": "images/2025/07/12.png",
       "cap": "Community Yoga Retreat 7"
+    },
+    {
+      "src": "posts/images/318276fd_afr-2010-hanuman-olympics.jpg",
+      "cap": "Afr 2010 Hanuman Olympics"
+    },
+    {
+      "src": "posts/images/37f87802_hanuman-olympics-3.jpg",
+      "cap": "Hanuman Olympics 3"
+    },
+    {
+      "src": "posts/images/37f87802_hanuman-olympics-2.jpg",
+      "cap": "Hanuman Olympics 2"
     }
   ],
   "Nature & Nurture Series": [
@@ -749,6 +809,10 @@
     {
       "src": "images/2025/12/Personal-Retreat-Instagram-May-2022.jpg",
       "cap": "Personal Retreat Instagram"
+    },
+    {
+      "src": "posts/images/26211b27_Blog-Post-Picture-Vertical-900-x-1200-4.jpg",
+      "cap": "Blog Post Picture Vertical 900 X 1200 4"
     }
   ],
   "Food / Kitchen": [
@@ -811,12 +875,21 @@
     {
       "src": "images/2025/02/Blog-Post-picture-horizontal-1200-x-630-6.jpg",
       "cap": "Lemon spring greens"
+    },
+    {
+      "src": "posts/images/26211b27_Blog-Post-Picture-Vertical-900-x-1200-3.jpg",
+      "cap": "Blog Post Picture Vertical 900 X 1200 3"
+    },
+    {
+      "src": "posts/images/26211b27_Blog-Post-Picture-Vertical-900-x-1200-1.jpg",
+      "cap": "Blog Post Picture Vertical 900 X 1200 1"
     }
   ],
   "Music for Peace": [
     {
       "src": "images/2025/12/11.jpg",
-      "cap": "Concert series banner"
+      "cap": "Concert series banner",
+      "banner": "concert"
     },
     {
       "src": "images/2026/01/Sitar-Concert-March-28-2026-Sharanjeet-Singh-Mand-.jpg",
@@ -1791,12 +1864,40 @@
       "cap": "Usha"
     },
     {
+      "src": "posts/images/134488de_girija-1.png",
+      "cap": "Girija 1"
+    },
+    {
+      "src": "posts/images/134488de_girija-10.png",
+      "cap": "Girija 10"
+    },
+    {
+      "src": "posts/images/134488de_girija-5.png",
+      "cap": "Girija 5"
+    },
+    {
+      "src": "posts/images/134488de_girija-6.png",
+      "cap": "Girija 6"
+    },
+    {
+      "src": "posts/images/134488de_girija-ashram-e1589000315475.png",
+      "cap": "Girija Ashram E1589000315475"
+    },
+    {
+      "src": "posts/images/134488de_girijja-2-e1588999854750.png",
+      "cap": "Girijja 2 E1588999854750"
+    },
+    {
       "src": "posts/images/134488de_image1.jpeg",
       "cap": "Image1"
     },
     {
       "src": "posts/images/134488de_image3-rotated.jpeg",
       "cap": "Image3 Rotated"
+    },
+    {
+      "src": "posts/images/134488de_phil.jpg",
+      "cap": "Phil"
     },
     {
       "src": "posts/images/13b3833e_Adrienne-1895-Adrienne-Amy-rotated.jpg",
@@ -2435,10 +2536,6 @@
       "cap": "6. Roshven House Scotland"
     },
     {
-      "src": "posts/images/25c8a139_Anuradha-Pics954-e1759338577230.jpg",
-      "cap": "Anuradha Pics954 E1759338577230"
-    },
-    {
       "src": "posts/images/25c8a139_Beeluxe-Painting-.jpg",
       "cap": "Beeluxe Painting"
     },
@@ -2455,32 +2552,16 @@
       "cap": "Communityee"
     },
     {
-      "src": "posts/images/25c8a139_Copy-of-Blackburn-House-Collage-.jpg",
-      "cap": "Copy Of Blackburn House Collage"
-    },
-    {
       "src": "posts/images/25c8a139_Grouped-Collage-for-Newsletter-.jpg",
       "cap": "Grouped Collage For Newsletter"
-    },
-    {
-      "src": "posts/images/25c8a139_House-Final.jpg",
-      "cap": "House Final"
     },
     {
       "src": "posts/images/25c8a139_House-pic-for-Newsletter-1.jpg",
       "cap": "House Pic For Newsletter 1"
     },
     {
-      "src": "posts/images/25c8a139_House-pic-for-Newsletter.jpg",
-      "cap": "House Pic For Newsletter"
-    },
-    {
       "src": "posts/images/25c8a139_Ishvarya-Dance-Nov-2025-1.jpg",
       "cap": "Ishvarya Dance Nov 2025 1"
-    },
-    {
-      "src": "posts/images/25c8a139_PHOTO-2025-10-22-22-14-50.jpeg",
-      "cap": "PHOTO 2025 10 22 22 14 50"
     },
     {
       "src": "posts/images/26211b27_10.jpg",
@@ -2501,18 +2582,6 @@
     {
       "src": "posts/images/26211b27_Ayurveda-Yoga-Retreat-Newsletter-2024-1920-x-1080-px-5.jpg",
       "cap": "Ayurveda Yoga Retreat Newsletter 2024 1920 X 1080 Px 5"
-    },
-    {
-      "src": "posts/images/26211b27_Blog-Post-Picture-Vertical-900-x-1200-1.jpg",
-      "cap": "Blog Post Picture Vertical 900 X 1200 1"
-    },
-    {
-      "src": "posts/images/26211b27_Blog-Post-Picture-Vertical-900-x-1200-3.jpg",
-      "cap": "Blog Post Picture Vertical 900 X 1200 3"
-    },
-    {
-      "src": "posts/images/26211b27_Blog-Post-Picture-Vertical-900-x-1200-4.jpg",
-      "cap": "Blog Post Picture Vertical 900 X 1200 4"
     },
     {
       "src": "posts/images/26211b27_Blog-Post-Picture-Vertical-900-x-1200.jpg",
@@ -2767,10 +2836,6 @@
       "cap": "Tofu"
     },
     {
-      "src": "posts/images/318276fd_afr-2010-hanuman-olympics.jpg",
-      "cap": "Afr 2010 Hanuman Olympics"
-    },
-    {
       "src": "posts/images/318276fd_afr-2010.jpg",
       "cap": "Afr 2010"
     },
@@ -2857,14 +2922,6 @@
     {
       "src": "posts/images/361ae1b0_Kenzie-Yoga.jpg",
       "cap": "Kenzie Yoga"
-    },
-    {
-      "src": "posts/images/361ae1b0_image-1.jpeg",
-      "cap": "Image 1"
-    },
-    {
-      "src": "posts/images/361ae1b0_image-10.jpeg",
-      "cap": "Image 10"
     },
     {
       "src": "posts/images/361ae1b0_image-11.jpeg",
@@ -3003,14 +3060,6 @@
       "cap": "Spring2016MotherMary"
     },
     {
-      "src": "posts/images/37f87802_hanuman-olympics-2.jpg",
-      "cap": "Hanuman Olympics 2"
-    },
-    {
-      "src": "posts/images/37f87802_hanuman-olympics-3.jpg",
-      "cap": "Hanuman Olympics 3"
-    },
-    {
       "src": "posts/images/38e8972e_14797296_1096952110425984_1670423562_n.jpg",
       "cap": "14797296 1096952110425984 1670423562 N"
     },
@@ -3109,10 +3158,6 @@
     {
       "src": "posts/images/3c1fe4d4_45.jpg",
       "cap": "45"
-    },
-    {
-      "src": "posts/images/3c1fe4d4_46.jpg",
-      "cap": "46"
     },
     {
       "src": "posts/images/3c1fe4d4_47.jpg",
@@ -7411,6 +7456,10 @@
       "cap": "Unnamed"
     },
     {
+      "src": "posts/images/9ce9becf_cleardot.gif",
+      "cap": "Cleardot"
+    },
+    {
       "src": "posts/images/a07a5ace_Apples-2017.jpg",
       "cap": "Apples 2017"
     },
@@ -10957,6 +11006,34 @@
     {
       "src": "posts/images/fb2f24cd_Widen-Our-Circle-1.png",
       "cap": "Widen Our Circle 1"
+    },
+    {
+      "src": "posts/images/25c8a139_Anuradha-Pics954-e1759338577230.jpg",
+      "cap": "Anuradha Pics954 E1759338577230"
+    },
+    {
+      "src": "posts/images/25c8a139_Copy-of-Blackburn-House-Collage-.jpg",
+      "cap": "Copy Of Blackburn House Collage"
+    },
+    {
+      "src": "posts/images/25c8a139_House-Final.jpg",
+      "cap": "House Final"
+    },
+    {
+      "src": "posts/images/25c8a139_House-pic-for-Newsletter.jpg",
+      "cap": "House Pic For Newsletter"
+    },
+    {
+      "src": "posts/images/26211b27_Blog-Post-Picture-Vertical-900-x-1200-1.jpg",
+      "cap": "Blog Post Picture Vertical 900 X 1200 1"
+    },
+    {
+      "src": "posts/images/26211b27_Blog-Post-Picture-Vertical-900-x-1200-3.jpg",
+      "cap": "Blog Post Picture Vertical 900 X 1200 3"
+    },
+    {
+      "src": "posts/images/26211b27_Blog-Post-Picture-Vertical-900-x-1200-4.jpg",
+      "cap": "Blog Post Picture Vertical 900 X 1200 4"
     }
   ]
 }
