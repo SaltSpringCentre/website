@@ -1,15 +1,17 @@
 // Banner aspect-ratio guard. For banner-style images (.section-banner,
-// .mfp-banner img, .event-banner img, .mfp-img, img.banner), if the
-// image's natural aspect ratio is narrower than its rendered slot
-// (meaning object-fit:cover would crop the top and bottom), the image
-// gets a .banner-natural class that renders it at its actual
-// proportions in a modest centered slot instead.
+// .mfp-banner img, .event-banner img, .mfp-img, img.banner,
+// .hero-img, .event-hero-img, .about-hero-img, and .bg inside .hero /
+// .bleed / .event-hero), if the image's natural aspect ratio is narrower
+// than its rendered slot (meaning object-fit:cover would crop the top
+// and bottom), the image gets a .banner-natural class that renders it
+// at its actual proportions in a modest centered slot instead.
 //
 // Compares natural aspect to the slot's actual rendered aspect, so
 // this works correctly at any viewport width. Small tolerance allows
 // a sliver of crop without triggering the natural-size fallback.
 //
-// Also watches for src swaps (next-event.js swaps .mfp-img in place)
+// Also watches for src swaps (next-event.js swaps .mfp-img in place,
+// and event.html / m/event.html swap .event-hero-img / .bg per route)
 // and for banner imgs added after first paint.
 
 (function () {
@@ -17,7 +19,19 @@
   // gets demoted to natural rendering. 0.95 lets a 5% vertical crop slide;
   // anything more aggressive than that falls back to natural display.
   var TOLERANCE = 0.95;
-  var SELECTORS = '.section-banner, .mfp-banner img, .event-banner img, .mfp-img, img.banner';
+  var SELECTORS = [
+    '.section-banner',
+    '.mfp-banner img',
+    '.event-banner img',
+    '.mfp-img',
+    'img.banner',
+    '.hero-img',
+    '.event-hero-img',
+    '.about-hero-img',
+    '.hero > img.bg',
+    '.bleed > img.bg',
+    '.event-hero > img.bg'
+  ].join(', ');
 
   var style = document.createElement('style');
   style.textContent = [
@@ -25,7 +39,13 @@
     '.section-banner.banner-natural,',
     '.mfp-banner img.banner-natural,',
     '.event-banner img.banner-natural,',
-    '.mfp-img.banner-natural {',
+    '.mfp-img.banner-natural,',
+    '.hero-img.banner-natural,',
+    '.event-hero-img.banner-natural,',
+    '.about-hero-img.banner-natural,',
+    '.hero > img.bg.banner-natural,',
+    '.bleed > img.bg.banner-natural,',
+    '.event-hero > img.bg.banner-natural {',
     '  max-height: 70vh !important;',
     '  height: auto !important;',
     '  width: 100% !important;',
@@ -34,6 +54,13 @@
     '  display: block !important;',
     '  margin-left: auto !important;',
     '  margin-right: auto !important;',
+    '  position: relative !important;',
+    '  inset: auto !important;',
+    '  top: auto !important;',
+    '  left: auto !important;',
+    '  right: auto !important;',
+    '  bottom: auto !important;',
+    '  transform: none !important;',
     '  border-radius: 12px;',
     '}'
   ].join('\n');
