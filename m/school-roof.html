@@ -130,7 +130,7 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
     <a href="#" class="donate-tier" onclick="event.preventDefault();openDonate();">Custom Amount</a>
   </div>
   <div class="interac-note">
-    <p>Or send an Interac E-Transfer to <strong>payment@saltspringcentre.com</strong> with 'School Roof' in the memo.</p>
+    <p>Or send an Interac E-Transfer to <strong data-u="payment" data-d="saltspringcentre.com"></strong> with 'School Roof' in the memo.</p>
   </div>
   <div style="margin-top:24px;">
     <p style="text-align:center;">We are ready to restore the roof, and we cannot do it without the support of this community.</p>
@@ -167,6 +167,7 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 </footer>
 
 <script src="../donate-form.js" defer></script>
+<script src="../email-link.js" defer></script>
 <script>
 function closeMenu() { document.getElementById('menu').classList.remove('open'); document.getElementById('ham').classList.remove('open'); }
 </script>

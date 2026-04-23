@@ -375,7 +375,7 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
       '<p class="lead">' + escapeHtml(item.desc) + '</p>' +
       (item.longDesc ? '<p>' + escapeHtml(item.longDesc) + '</p>' : '') +
       durationsHtml +
-      '<p><strong>Phone:</strong> 250-537-6200<br><strong>Email:</strong> <a href="mailto:wellness@saltspringcentre.com">wellness@saltspringcentre.com</a></p>' +
+      '<p><strong>Phone:</strong> 250-537-6200<br><strong>Email:</strong> <a data-u="wellness" data-d="saltspringcentre.com" href="#"></a></p>' +
       '<p><a href="wellness.html">About wellness at the Centre &rarr;</a></p>' +
       '</div>' +
       '<aside class="event-info"><h3>Details</h3>' +
@@ -523,5 +523,6 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
 </script>
 
 <script src="../banner-aspect.js" defer></script>
+<script src="../email-link.js" defer></script>
 </body>
 </html>
