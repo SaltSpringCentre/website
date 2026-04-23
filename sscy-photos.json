@@ -23,7 +23,7 @@
     {
       "src": "images/2025/05/1981-5.jpg",
       "cap": "Babaji at Program House (1981)",
-      "banner": "retreat"
+      "banner": true
     },
     {
       "src": "images/2022/03/Baba-Hari-Dass-w-Chalkboard-1970s.jpg",
@@ -620,7 +620,7 @@
     {
       "src": "images/2021/10/its-all-about-love.jpg",
       "cap": "It's all about love",
-      "banner": "retreat"
+      "banner": true
     },
     {
       "src": "images/2022/03/Forest-Canopy-from-the-ground-1024x683-1.jpg",
@@ -641,7 +641,7 @@
     {
       "src": "images/2022/09/Lotus-photo-jpeg.jpg",
       "cap": "Lotus flower",
-      "banner": "retreat"
+      "banner": true
     },
     {
       "src": "images/2022/10/Forest-walk-school-photo.jpg",
@@ -774,7 +774,7 @@
     {
       "src": "images/2025/07/Website-front-page-8.jpg",
       "cap": "Website front page",
-      "banner": "retreat"
+      "banner": true
     },
     {
       "src": "images/2021/11/Garden-House-2.jpg",
@@ -1075,7 +1075,7 @@
     {
       "src": "images/2025/12/11.jpg",
       "cap": "Concert series banner",
-      "banner": "concert"
+      "banner": true
     },
     {
       "src": "images/2026/01/Sitar-Concert-March-28-2026-Sharanjeet-Singh-Mand-.jpg",
@@ -1122,7 +1122,7 @@
     {
       "src": "images/2025/07/Website-front-page-8.jpg",
       "cap": "Website front page",
-      "banner": "retreat"
+      "banner": true
     }
   ],
   "Blog Posts": [
