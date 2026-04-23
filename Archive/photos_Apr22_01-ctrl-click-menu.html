@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSCY Photo Reference</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: #111; color: #fff; padding: 24px; }
+h1 { font-size: 1.4rem; margin-bottom: 8px; font-weight: 400; opacity: 0.6; }
+.toolbar { margin-bottom: 24px; display: flex; gap: 12px; align-items: center; }
+.toolbar button { padding: 8px 16px; background: #333; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.8rem; }
+.toolbar button:hover { background: #444; }
+.save-status { font-size: 0.75rem; opacity: 0.4; }
+h2 { font-size: 1rem; margin: 40px 0 12px; padding: 8px 12px; background: #1a1a1a; border-radius: 8px; font-weight: 500; color: #3bb8a8; display: flex; justify-content: space-between; align-items: center; }
+h2 .count { font-size: 0.7rem; opacity: 0.4; font-weight: 400; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px; min-height: 60px; padding: 8px 0; }
+.grid.drag-over { background: rgba(59,184,168,0.1); border-radius: 8px; }
+.item { position: relative; border-radius: 6px; overflow: hidden; background: #222; cursor: grab; transition: opacity 0.2s, transform 0.2s; }
+.item:active { cursor: grabbing; }
+.item.dragging { opacity: 0.3; transform: scale(0.95); }
+.item.drag-target { outline: 2px solid #3bb8a8; outline-offset: 2px; }
+.item img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; pointer-events: none; }
+.item .caption { padding: 6px 10px; font-size: 0.7rem; color: #999; cursor: text; min-height: 24px; outline: none; border: 1px solid transparent; border-radius: 3px; transition: 0.2s; }
+.item .caption:hover { color: #ccc; }
+.item .caption:focus { border-color: #3bb8a8; color: #fff; background: #1a1a1a; }
+.item .url { display: none; }
+</style>
+</head>
+<body>
+<h1>SSCY Photo Reference</h1>
+<div class="toolbar">
+  <button onclick="exportData()">Export JSON</button>
+  <button onclick="resetAll()">Reset to Default</button>
+  <span class="save-status" id="saveStatus">Auto-saves to localStorage</span>
+</div>
+
+<div id="categories"></div>
+
+<script>
+var DEFAULT_DATA = {
+  "Babaji": [
+    {src:"images/2022/03/Babaji-header.jpg", cap:"Babaji header portrait"},
+    {src:"images/2021/11/Babaji-photo-overlay.jpg", cap:"Babaji photo overlay"},
+    {src:"images/2013/02/Babaji-rock-wall-298x300.jpg", cap:"Babaji building rock wall (2000)"},
+    {src:"images/2022/03/Honouring-BabaHariDass.jpg", cap:"Honouring Baba Hari Dass"},
+    {src:"images/2022/03/BW-Group-Photo-on-Stairs-1985.jpg", cap:"B&W group on stairs (1985)"},
+    {src:"images/2025/05/1981-5.jpg", cap:"Babaji at Program House (1981)"},
+    {src:"images/2022/03/Baba-Hari-Dass-w-Chalkboard-1970s.jpg", cap:"Babaji with chalkboard (1970s)"},
+    {src:"images/2022/03/our_founder.jpg", cap:"Our Founder"},
+    {src:"images/2023/03/Babaji-teaching-black-and-white.jpg", cap:"Babaji teaching (B&W)"},
+    {src:"images/2014/11/Babaji-meditating.jpg", cap:"Babaji meditating"},
+    {src:"images/2026/02/Babaji-Puja.jpg", cap:"Babaji Puja"},
+    {src:"images/2023/10/Babajis-Aradhuna-2023.jpg", cap:"Babaji's Aradhana 2023"},
+    {src:"images/2024/04/23.png", cap:"Babaji's birthday celebration"},
+    {src:"images/2022/03/Baba-Hari-Dass-Shining-Eyes.jpg", cap:"Baba Hari Dass - Shining Eyes"},
+    {src:"images/2022/03/Baba-Hari-Dass-Shining-Eyes-1.jpg", cap:"Baba Hari Dass - Shining Eyes (alt)"},
+    {src:"images/2022/03/Baba-Hari-Dass-Shining-Eyes-Square.jpg", cap:"Baba Hari Dass - Shining Eyes (square)"}
+  ],
+  "Babaji (from babaharidass.org)": [
+    {src:"https://www.babaharidass.org/babaharidass_files/Bji-Full-on.jpg", cap:"Babaji portrait (full face)"},
+    {src:"https://www.babaharidass.org/babaharidass_files/Bji-with-rock-crew-in-woods.jpg", cap:"Babaji with rock wall crew"},
+    {src:"https://www.babaharidass.org/babaharidass_files/Bji-with-kids-at-Ganga.jpg", cap:"Babaji with children at Ganga"},
+    {src:"https://www.babaharidass.org/babaharidass_files/0301IK3629-Boys-Bji-8x10.jpg", cap:"Babaji with boys (8x10)"},
+    {src:"https://www.babaharidass.org/babaharidass_files/0301IS4319-Bji-Puni-8x10.jpg", cap:"Babaji with Puni (8x10)"},
+    {src:"https://www.babaharidass.org/babaharidass_files/44a2ab8d-f0c6-477a-9cb9-98fcca73baa8.jpg", cap:"Babaji biographical photo"},
+    {src:"https://www.babaharidass.org/babaharidass_files/IMG_2106.JPG", cap:"Babaji documentary 1"},
+    {src:"https://www.babaharidass.org/babaharidass_files/IMG_2107.JPG", cap:"Babaji documentary 2"},
+    {src:"https://www.babaharidass.org/babaharidass_files/087.jpg", cap:"Historical photo"},
+    {src:"https://www.babaharidass.org/babaharidass_files/00000013.jpg", cap:"Historical photo 2"},
+    {src:"https://www.babaharidass.org/babaharidass_files/00009.jpg", cap:"Early America period"},
+    {src:"https://www.babaharidass.org/babaharidass_files/15.07.30_001.jpg", cap:"~July 2015"},
+    {src:"https://www.babaharidass.org/babaharidass_files/a1c5ba19-b1d8-4a18-82c9-967b73b09006.jpg", cap:"Archival photo"},
+    {src:"https://www.babaharidass.org/babaharidass_files/Shraddha-083.jpg", cap:"Shraddha memorial (Oct 2018)"},
+    {src:"https://www.babaharidass.org/babaharidass_files/Shraddha-144.jpg", cap:"Shraddha memorial 2"},
+    {src:"https://www.babaharidass.org/babaharidass_files/Shraddha-092.jpg", cap:"Shraddha memorial 3"},
+    {src:"https://www.babaharidass.org/babaharidass_files/Ashes-Har-Ki-Pauri-01.jpg", cap:"Ashes at Har Ki Pauri 1"},
+    {src:"https://www.babaharidass.org/babaharidass_files/Ashes-Har-Ki-Pauri-05.jpg", cap:"Ashes at Har Ki Pauri 5"},
+    {src:"https://www.babaharidass.org/babaharidass_files/Ashes-Har-Ki-Pauri-10.jpg", cap:"Ashes at Har Ki Pauri 10"},
+    {src:"https://www.babaharidass.org/babaharidass_files/Ashes-Har-Ki-Pauri-15.jpg", cap:"Ashes at Har Ki Pauri 15"},
+    {src:"https://www.babaharidass.org/babaharidass_files/Diwali-India.jpg", cap:"Diwali India"},
+    {src:"https://www.babaharidass.org/babaharidass_files/Diwali-India-2.jpg", cap:"Diwali India 2"},
+    {src:"https://www.babaharidass.org/babaharidass_files/Diwali-India-3.jpg", cap:"Diwali India 3"}
+  ],
+  "People / Community": [
+    {src:"images/2022/05/ACYR-Group-Peace.jpg", cap:"ACYR Group Peace"},
+    {src:"images/2021/12/people-on-lawn-10.jpg", cap:"People on lawn"},
+    {src:"images/2022/03/Grounding-with-music.jpg", cap:"Grounding with music"},
+    {src:"images/2022/03/Tree-Pose-in-Boots-scaled-1.jpg", cap:"Tree pose in boots"},
+    {src:"images/2021/12/Kanako-035.jpg", cap:"Kanako"},
+    {src:"images/2021/12/IMG_7499.jpg", cap:"Community gathering"},
+    {src:"images/2021/12/Copy-of-IMG_7237.jpg", cap:"Bridge in the garden"},
+    {src:"images/2022/05/JPEG-image-8.jpeg", cap:"Activity photo"},
+    {src:"images/2022/10/231677494_2608469562795673_3300096100624501142_n.jpg", cap:"Forest Trail Hanuman"},
+    {src:"images/2021/12/100_4718_6924142843_o-1.jpg", cap:"Main house with flowers"},
+    {src:"images/2021/12/holiday-giving-e1670557431533.jpg", cap:"Holiday giving / winter"},
+    {src:"images/2026/02/Peter-and-the-Pipes-rotated-e1770559140566.jpg", cap:"Peter and the Pipes"},
+    {src:"images/2026/02/Lakshmi-at-Ganga-scaled.jpg", cap:"Lakshmi at Ganga"},
+    {src:"images/2017/11/sourdough-15.jpeg", cap:"Bread workshop participants"},
+    {src:"images/2017/02/Kari-cooking.jpg", cap:"Kari cooking in kitchen"},
+    {src:"images/2023/04/Newsletter-pic-Sept-2019-Courtenay-Bhavani-Sharada.jpeg", cap:"Community gathering"},
+    {src:"images/2023/04/Other-ways-to-help-gratitude-party.jpg", cap:"Gratitude celebration"},
+    {src:"images/2023/04/Other-ways-to-help-community-members.jpg", cap:"Community members"},
+    {src:"images/2023/04/Other-ways-to-help-ACYR-attendees.jpg", cap:"ACYR attendees"},
+    {src:"images/2023/04/Other-ways-to-help-kirtan.jpg", cap:"Kirtan session"},
+    {src:"images/2023/04/Other-ways-to-help-kitchen-volunteers-and-staff.jpg", cap:"Kitchen volunteers"},
+    {src:"images/2023/04/Other-ways-to-help-volunteer-yogis.jpg", cap:"Volunteer yogis"},
+    {src:"images/2023/04/Other-ways-to-help-volunteers-and-staff.jpg", cap:"Volunteers and staff"},
+    {src:"images/2011/08/ZD.090731.03.013.jpg", cap:"Satsang/kirtan gathering"}
+  ],
+  "Staff / Instructors": [
+    {src:"images/2023/06/Anuradhas-birthday-October-2022-resized.jpg", cap:"Anuradha Hannah"},
+    {src:"images/2023/06/Untitled-design.jpg", cap:"Michael LaPlante"},
+    {src:"images/2024/03/Profile-picture-website-1.png", cap:"Christie Roome"},
+    {src:"images/2025/07/Profile-picture-website-4.jpg", cap:"Rowan Algoet"},
+    {src:"images/2025/09/Ranju-headshot-.jpg", cap:"Ranju Raman"},
+    {src:"images/2025/09/Ramesh.jpg", cap:"Ramesh Rusconi"},
+    {src:"images/2025/09/IMG_3715-e1773250657875.jpg", cap:"Paz Q Rainville"},
+    {src:"images/2024/03/Untitled-design-45.png", cap:"Ishwarya Chaitanya"},
+    {src:"images/2024/04/Profile-picture-website-4.png", cap:"Mahavir"},
+    {src:"images/2024/05/Profile-picture-website.png", cap:"Mayana"},
+    {src:"images/2021/12/Yog.jpg", cap:"Yogeshwar Will Humphrey"},
+    {src:"images/2021/10/Tracy-Chetna-Boyd.jpg", cap:"Chetna Tracy Boyd"},
+    {src:"images/2023/07/Suchi.png", cap:"Jennifer (Suchi) Pritchard"},
+    {src:"images/2024/02/Gigi-Vincentine-clinic-photo.jpg", cap:"Gigi (Gopa) Vincentine"},
+    {src:"images/2021/12/Gita-1.jpg", cap:"Gita Tanya Roberts"},
+    {src:"images/2021/12/Kenzie_small.jpg", cap:"Kenzie Pattillo"},
+    {src:"images/2021/10/Natasha-Jyoti-Samson-e1657584037156.jpg", cap:"Natasha Jyoti Samson"},
+    {src:"images/2023/01/2023-Savita-Leah-Young-Wellness-Treatments.jpg", cap:"Savita Leah Young"}
+  ],
+  "House / Buildings": [
+    {src:"images/2023/11/Program-House-with-flowers-resized.png", cap:"Program House with flowers"},
+    {src:"images/2021/11/Program-House-Rock-Wall.jpg", cap:"Program House rock wall"},
+    {src:"images/2022/03/Staff-Housing-at-Dawn-1024x768-1.jpg", cap:"Staff housing at dawn"},
+    {src:"images/2021/11/Garden-House-1.jpg", cap:"Garden House exterior 1"},
+    {src:"images/2021/11/Garden-House-2.jpg", cap:"Garden House exterior 2"},
+    {src:"images/2022/12/Garden-House-yoga-space-empty.jpg", cap:"Garden House yoga space"},
+    {src:"images/2022/03/Pond-Dome.jpg", cap:"Pond Dome exterior"},
+    {src:"images/2022/03/pond-dome-2.jpg", cap:"Pond Dome angle 2"},
+    {src:"images/2022/03/Pond-Dome-indoors.jpg", cap:"Pond Dome interior"},
+    {src:"images/2022/03/Pond-Dome-header-1.jpg", cap:"Pond Dome header"},
+    {src:"images/2021/12/Sauna-at-night.jpg", cap:"Sauna at night"},
+    {src:"images/2021/11/Yurt-header.jpg", cap:"Yurt"},
+    {src:"images/2021/12/Ram-stepps.jpg", cap:"Ram steps"},
+    {src:"images/2021/12/Blackburn-road.jpg", cap:"Blackburn Road entrance"},
+    {src:"images/2021/12/flowers-and-main-house.jpg", cap:"Flowers and main house"},
+    {src:"images/2022/12/IMG_0189-e1672517272528.jpeg", cap:"SSCY entrance sign"},
+    {src:"images/2022/12/dsc02974-e1682616124787.jpg", cap:"Program House from orchard"},
+    {src:"images/2025/05/1981-6.jpg", cap:"Program House (1948)"},
+    {src:"images/2025/05/1981.jpg", cap:"Program House (1981)"},
+    {src:"images/2025/05/1981-3.jpg", cap:"Program House in snow (1981)"},
+    {src:"images/2025/05/1981-2.jpg", cap:"Painting of Program House"},
+    {src:"images/2025/05/Untitled-design-8.jpg", cap:"Program House 1980s"},
+    {src:"images/2025/05/6.jpg", cap:"Aerial historical view"}
+  ],
+  "Rooms": [
+    {src:"images/2022/10/Bed-photo-with-overlay-grey-1.jpg", cap:"Bedroom"},
+    {src:"images/2021/11/Rm-7-Shared-Room.jpg", cap:"Room 7 shared"},
+    {src:"images/2022/12/GH-Lavender-Room-Beds-and-window-resized.jpg", cap:"GH Lavender Room"},
+    {src:"images/2022/12/GH-View-Room-Bed-and-desk-resized.jpg", cap:"GH View Room"},
+    {src:"images/2022/12/PH-Room-6-Bed-and-Window-Resized.jpg", cap:"PH Room 6"},
+    {src:"images/2022/12/PH-Room-7-resized.jpg", cap:"PH Room 7"}
+  ],
+  "Garden / Farm": [
+    {src:"images/2021/12/DawnOverTheGarden-small-1.jpg", cap:"Dawn over the garden"},
+    {src:"images/2022/03/apple-variety-scaled-1.jpg", cap:"Apple varieties"},
+    {src:"images/2022/03/Bumble-Bee-Pollinating-1024x683-1.jpg", cap:"Bumblebee pollinating"},
+    {src:"images/2022/03/Organic-Greens-in-Hoop-House-1024x768-1.jpg", cap:"Organic greens in hoop house"},
+    {src:"images/2022/03/pears-1024x824-1.jpg", cap:"Pears"},
+    {src:"images/2022/05/Farm-truck-with-bounty.jpg", cap:"Farm truck with bounty"},
+    {src:"images/2022/05/harvesting-salad.jpg", cap:"Harvesting salad greens"},
+    {src:"images/2021/12/DSC_3250-bees.jpg", cap:"Bees"},
+    {src:"images/2021/12/Fountain.jpg", cap:"Fountain"},
+    {src:"images/2023/04/Other-ways-to-help-Centre-garden.jpg", cap:"Centre garden"}
+  ],
+  "Property / Nature": [
+    {src:"images/2021/11/sscy_hero.jpg", cap:"Main hero (property overview)"},
+    {src:"images/2021/12/DJI_0071.jpg", cap:"Aerial drone 1"},
+    {src:"images/2021/12/DJI_0078.jpg", cap:"Aerial drone 2"},
+    {src:"images/2021/12/DSCF0102.jpg", cap:"Outdoor scenic"},
+    {src:"images/2021/12/serene.jpg", cap:"Serene grounds"},
+    {src:"images/2021/10/its-all-about-love.jpg", cap:"It's all about love"},
+    {src:"images/2022/03/Forest-Canopy-from-the-ground-1024x683-1.jpg", cap:"Forest canopy looking up"},
+    {src:"images/2022/10/Forest-in-winter.jpg", cap:"Forest in winter"},
+    {src:"images/2022/10/Forest-walk-school-photo.jpg", cap:"Forest walk bridge"},
+    {src:"images/2022/10/Frosty-flower.jpg", cap:"Frosty flower"},
+    {src:"images/2021/12/header-2-1.jpg", cap:"Site header property shot"},
+    {src:"images/2022/09/Lotus-photo-jpeg.jpg", cap:"Lotus flower"}
+  ],
+  "Temples / Sacred": [
+    {src:"images/2022/03/Ganesh.jpg", cap:"Ganesh statue"},
+    {src:"images/2022/03/Hanuman-Shrine.jpg", cap:"Hanuman shrine"},
+    {src:"images/2022/03/Holy-Mother-below-fountain.jpg", cap:"Holy Mother below fountain"},
+    {src:"images/2024/05/IMG_1143.jpg", cap:"Temple / ceremony"},
+    {src:"images/2025/04/PHOTO-2025-04-01-10-14-41.jpg", cap:"Recent ceremony"},
+    {src:"images/2022/01/buddha-background.jpg", cap:"Buddha background"},
+    {src:"images/2023/04/Other-ways-to-help-temples.jpg", cap:"Temple spaces"},
+    {src:"images/2023/04/Other-ways-to-help-ceremony-at-the-Madonna.jpg", cap:"Ceremony at Madonna"},
+    {src:"images/2021/12/image-5.jpeg", cap:"Ganesha on property"}
+  ],
+  "Classes / Programs": [
+    {src:"images/2021/11/programs-retreats.jpg", cap:"Programs & Retreats banner"},
+    {src:"images/2021/11/retreat-1.jpg", cap:"Retreat 1"},
+    {src:"images/2021/11/retreat-2.jpg", cap:"Retreat 2"},
+    {src:"images/2021/11/retreat-3.jpg", cap:"Retreat 3"},
+    {src:"images/2021/11/retreat-4.jpg", cap:"Retreat 4"},
+    {src:"images/2022/11/Online-yoga.jpg", cap:"Online yoga"},
+    {src:"images/2021/12/Student-practice-with-CP-697x1024-1.jpg", cap:"Student practicing with instructor"},
+    {src:"images/2021/12/YTT-200-Graduating-class-2019-hero.jpg", cap:"YTT graduating class 2019"},
+    {src:"images/2021/12/Class-3-1024x610-1.jpg", cap:"Teacher training class"},
+    {src:"images/2021/12/image-6.jpeg", cap:"Two yogis in poses"},
+    {src:"images/2021/12/image-7.jpeg", cap:"YTT in BC setting"},
+    {src:"images/2022/12/DSCF0250.jpg", cap:"Gita and Chetna demo"},
+    {src:"images/2023/04/Other-ways-to-help-Program-in-the-Satsang-Room.jpg", cap:"Program in Satsang Room"},
+    {src:"images/2023/04/Other-ways-to-help-YTT-teachers.jpg", cap:"YTT teachers"},
+    {src:"images/2025/02/46-2.jpg", cap:"Yoga class"},
+    {src:"images/2025/01/8.jpg", cap:"Spring cleanse"},
+    {src:"images/2025/07/Website-front-page-8.jpg", cap:"Website front page"}
+  ],
+  "ACYR / Annual Retreat": [
+    {src:"images/2025/07/1.png", cap:"51st Community Yoga Retreat 1"},
+    {src:"images/2025/07/2.png", cap:"Community Yoga Retreat 2"},
+    {src:"images/2025/07/3.png", cap:"Community Yoga Retreat 3"},
+    {src:"images/2025/07/6.png", cap:"Community Yoga Retreat 4"},
+    {src:"images/2025/07/8.png", cap:"Community Yoga Retreat 5"},
+    {src:"images/2025/07/11.png", cap:"Community Yoga Retreat 6"},
+    {src:"images/2025/07/12.png", cap:"Community Yoga Retreat 7"}
+  ],
+  "Nature & Nurture Series": [
+    {src:"images/2025/12/1.jpg", cap:"N&N 1"},
+    {src:"images/2025/12/2.jpg", cap:"N&N 2"},
+    {src:"images/2025/12/3.jpg", cap:"N&N 3"},
+    {src:"images/2025/12/4.jpg", cap:"N&N 4"},
+    {src:"images/2025/12/5.jpg", cap:"N&N 5"},
+    {src:"images/2025/12/6.jpg", cap:"N&N 6"},
+    {src:"images/2025/12/7.jpg", cap:"N&N 7"},
+    {src:"images/2025/12/8.jpg", cap:"N&N 8"},
+    {src:"images/2025/12/9.jpg", cap:"N&N 9"},
+    {src:"images/2025/12/10.jpg", cap:"N&N 10"},
+    {src:"images/2025/12/11.jpg", cap:"N&N 11"},
+    {src:"images/2025/12/12.jpg", cap:"N&N 12"},
+    {src:"images/2025/12/Nature-and-Nurture-Webpage-9.jpg", cap:"N&N Webpage 9"},
+    {src:"images/2025/12/Nature-and-Nurture-Webpage-10.jpg", cap:"N&N Webpage 10"},
+    {src:"images/2025/12/Nature-and-Nurture-Webpage-12.jpg", cap:"N&N Webpage 12"},
+    {src:"images/2025/12/Nature-and-Nurture-Webpage-15.jpg", cap:"N&N Webpage 15"},
+    {src:"images/2025/12/Personal-Retreat-Instagram-May-2022.jpg", cap:"Personal Retreat Instagram"}
+  ],
+  "Food / Kitchen": [
+    {src:"images/2017/11/sourdough-1.jpeg", cap:"Sourdough loaf"},
+    {src:"images/2017/11/sourdough-4.jpeg", cap:"First loaf"},
+    {src:"images/2021/10/indian-spices-1.jpg", cap:"Indian spices"},
+    {src:"images/2013/10/kicheree.jpg", cap:"Kitchari bowl"},
+    {src:"images/2011/10/apple-crumble.jpg", cap:"Apple crumble"},
+    {src:"images/2011/05/kitcheree4.jpg", cap:"Kitcheree"},
+    {src:"images/2011/02/roasted-roots3.jpg", cap:"Roasted roots"},
+    {src:"images/2017/04/8722829257_51b22d935f_z.jpg", cap:"Dressing for dinner"},
+    {src:"images/2016/10/5414606076_52a3504606_z-copy.jpg", cap:"Ghee / clarified butter"},
+    {src:"images/2011/06/summer-salad.jpg", cap:"Daya's summer salad"},
+    {src:"images/2011/06/tofu.jpg", cap:"Sweet & sour tofu"},
+    {src:"images/2011/04/DSC_4561-1.jpg", cap:"Miso ginger salad"},
+    {src:"images/2011/03/chocolate-pudding1.jpg", cap:"Silken chocolate pudding"},
+    {src:"images/2011/01/tofu-scramble.jpg", cap:"Sid's tofu scramble"},
+    {src:"images/2025/02/Blog-Post-picture-horizontal-1200-x-630-6.jpg", cap:"Lemon spring greens"}
+  ],
+  "Music for Peace": [
+    {src:"images/2025/12/11.jpg", cap:"Concert series banner"},
+    {src:"images/2026/01/Sitar-Concert-March-28-2026-Sharanjeet-Singh-Mand-.jpg", cap:"Sitar Concert poster"},
+    {src:"images/2026/03/Violin-Concert-April-11-2026-Shriram-Rajagopalan.jpg", cap:"Violin Concert poster"},
+    {src:"images/2025/11/SoundBath-SaltSpring.png", cap:"Sound Bath"},
+    {src:"images/2026/02/sitar-and-tabla.jpg", cap:"Sitar and tabla"},
+    {src:"images/2026/03/1.jpg", cap:"Concert gallery 1"},
+    {src:"images/2026/03/2.jpg", cap:"Concert gallery 2"},
+    {src:"images/2026/03/3.jpg", cap:"Concert gallery 3"},
+    {src:"images/2026/03/4.jpg", cap:"Concert gallery 4"}
+  ],
+  "Wellness": [
+    {src:"images/2023/01/Registered-RMT-massage-Canva-Pro-stock-photo-2023.jpg", cap:"Massage therapy"},
+    {src:"images/2025/10/needles-accupuncture.avif", cap:"Acupuncture"},
+    {src:"images/2025/02/1.jpg", cap:"Wellness gallery 1"},
+    {src:"images/2025/02/Where-Nature-2.jpg", cap:"Wellness - Where Nature"},
+    {src:"images/2025/02/4.jpg", cap:"Wellness gallery 2"}
+  ],
+  "Blog Posts": [
+    {src:"images/2026/03/Spring-Cleanse-Retreat-2.jpg", cap:"Spring Cleanse Retreat"},
+    {src:"images/2026/03/3-1.jpg", cap:"Life at the Centre Feb 2026"},
+    {src:"images/2026/02/IMG_5794.jpeg", cap:"Life at Centre Feb blog"},
+    {src:"images/2026/01/IMG_3125-scaled.jpg", cap:"Life at Centre Jan 2026"},
+    {src:"images/2025/12/Shine-Like-The-Sun-.jpg", cap:"Shine Like the Sun"}
+  ],
+  "Unidentified - Sort Me": [
+    {src:"images/2021/12/image-3.jpeg", cap:"? Fall foliage"},
+    {src:"images/2021/12/image-4.jpeg", cap:"? Unknown"},
+    {src:"images/2021/12/image-5.jpeg", cap:"? Ganesha on property"},
+    {src:"images/2021/12/image-6.jpeg", cap:"? Two yogis in poses"},
+    {src:"images/2021/12/image-7.jpeg", cap:"? Yoga in BC setting"},
+    {src:"images/2026/02/IMG_5787.jpeg", cap:"? Feb 2026 batch"},
+    {src:"images/2026/02/IMG_5788.jpeg", cap:"? Feb 2026 batch"},
+    {src:"images/2026/02/IMG_5789.jpeg", cap:"? Feb 2026 batch"},
+    {src:"images/2026/02/IMG_5790.jpeg", cap:"? Feb 2026 batch"},
+    {src:"images/2026/02/IMG_5791.jpeg", cap:"? Feb 2026 batch"},
+    {src:"images/2026/02/IMG_5792.jpeg", cap:"? Feb 2026 batch"},
+    {src:"images/2026/02/IMG_5793.jpeg", cap:"? Feb 2026 batch"},
+    {src:"images/2026/02/IMG_5794.jpeg", cap:"? Feb 2026 batch"},
+    {src:"images/2026/02/IMG_5795.jpeg", cap:"? Feb 2026 batch"},
+    {src:"images/2026/02/IMG_5796.jpeg", cap:"? Feb 2026 batch"},
+    {src:"images/2026/02/IMG_5797.jpeg", cap:"? Feb 2026 batch"},
+    {src:"images/2022/12/dsc02974-e1682616124787.jpg", cap:"? From orchard"},
+    {src:"images/2022/12/DSCF0250.jpg", cap:"? Yoga demo"},
+    {src:"images/2022/12/IMG_0189-e1672517272528.jpeg", cap:"? SSCY entrance sign"},
+    {src:"images/2023/07/3-e1688410439958.jpg", cap:"? Unknown"},
+    {src:"images/2023/03/4-1-e1680209803976.jpg", cap:"? Unknown"},
+    {src:"images/2025/03/10.jpg", cap:"? Mar 2025"},
+    {src:"images/2025/11/websitee.jpg", cap:"? Nov 2025 website"},
+    {src:"images/2025/11/website.jpg", cap:"? Nov 2025 website"}
+  ]
+};
+
+var data = JSON.parse(localStorage.getItem('sscy_photos') || 'null') || JSON.parse(JSON.stringify(DEFAULT_DATA));
+var dragItem = null;
+var dragCat = null;
+
+function render() {
+  var el = document.getElementById('categories');
+  el.innerHTML = '';
+  Object.keys(data).forEach(function(cat) {
+    var h = document.createElement('h2');
+    h.innerHTML = cat + ' <span class="count">' + data[cat].length + '</span>';
+    el.appendChild(h);
+    var grid = document.createElement('div');
+    grid.className = 'grid';
+    grid.dataset.cat = cat;
+    grid.addEventListener('dragover', function(e) { e.preventDefault(); this.classList.add('drag-over'); });
+    grid.addEventListener('dragleave', function() { this.classList.remove('drag-over'); });
+    grid.addEventListener('drop', function(e) {
+      e.preventDefault();
+      this.classList.remove('drag-over');
+      if (!dragItem) return;
+      var toCat = this.dataset.cat;
+      if (dragCat !== toCat) {
+        data[dragCat] = data[dragCat].filter(function(x) { return x.src !== dragItem.src; });
+        data[toCat].push(dragItem);
+      }
+      save(); render();
+    });
+    data[cat].forEach(function(img, idx) {
+      var item = document.createElement('div');
+      item.className = 'item';
+      item.draggable = true;
+      item.addEventListener('dragstart', function() { dragItem = img; dragCat = cat; this.classList.add('dragging'); });
+      item.addEventListener('dragend', function() { this.classList.remove('dragging'); dragItem = null; });
+      var im = document.createElement('img');
+      im.src = img.src;
+      im.loading = 'lazy';
+      item.appendChild(im);
+      var cap = document.createElement('div');
+      cap.className = 'caption';
+      cap.contentEditable = true;
+      cap.textContent = img.cap;
+      cap.addEventListener('blur', function() { img.cap = this.textContent; save(); });
+      cap.addEventListener('keydown', function(e) { if (e.key === 'Enter') { e.preventDefault(); this.blur(); } });
+      item.appendChild(cap);
+      grid.appendChild(item);
+    });
+    el.appendChild(grid);
+  });
+}
+
+function save() {
+  localStorage.setItem('sscy_photos', JSON.stringify(data));
+  document.getElementById('saveStatus').textContent = 'Saved ' + new Date().toLocaleTimeString();
+}
+
+function exportData() {
+  var blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'sscy-photos.json';
+  a.click();
+}
+
+function resetAll() {
+  if (confirm('Reset all changes? This cannot be undone.')) {
+    data = JSON.parse(JSON.stringify(DEFAULT_DATA));
+    localStorage.removeItem('sscy_photos');
+    render();
+  }
+}
+
+render();
+</script>
+</body>
+</html>
