@@ -39,10 +39,7 @@ At the heart of a peaceful life, Babaji placed contentment alongside equality, r
 
 For many of us, one of those wise choices is simply this: to receive care. To stop being the one who holds everything together, just for a little while. To trust that our own nourishment matters. And caring for what is essential, this too is Babaji's teaching.
 
-[
-
-![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/0c8c394f-0d40-5115-c9b1-63f6d995799e.png)
-](https://saltspringcentre.com/the-salt-spring-centre-school-roof-fundraising-campaign/)
+[![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/0c8c394f-0d40-5115-c9b1-63f6d995799e.png)](https://saltspringcentre.com/the-salt-spring-centre-school-roof-fundraising-campaign/)
 
 **💛 [Help Replace the School Roof — Two Ways to Give](https://saltspringcentre.com/the-salt-spring-centre-school-roof-fundraising-campaign/)**
 
@@ -58,10 +55,7 @@ And if you'd like to give while also taking care of yourself: Registered Massage
 
 # Upcoming Retreats and Events
 
-[
-
-![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/e9d9fdae-caf5-a7d5-9080-3c379f7114cd.jpg)
-](https://saltspringcentre.com/yoga-and-wellness-weekend-retreats/)
+[![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/e9d9fdae-caf5-a7d5-9080-3c379f7114cd.jpg)](https://saltspringcentre.com/yoga-and-wellness-weekend-retreats/)
 
 ## Yoga and Wellness Retreat
 
@@ -71,10 +65,7 @@ For a few days, the practice is held, the meals are made, and the land is there 
 
 [Learn more and register. ](https://saltspringcentre.com/yoga-and-wellness-weekend-retreats/)
 
-[
-
-![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/ffca0976-ee38-181d-41dc-084db0552175.jpg)
-](https://saltspringcentre.com/breath/)
+[![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/ffca0976-ee38-181d-41dc-084db0552175.jpg)](https://saltspringcentre.com/breath/)
 
 ## Breathe as a Gateway to Raja Yoga
 
@@ -84,10 +75,7 @@ We are honoured to welcome
 
 Dr. Yogrishi Vishvketu ji and Prakashini Kal ji, who are travelling all the way from India to lead this retreat. Together, they bring the living tradition of Akhanda Yoga a holistic approach rooted in classical Hatha yoga, pranayama, meditation, mantra, and yoga nidra to Salt Spring Island for one transformative week. 👉 [*Learn more and join us *](https://saltspringcentre.com/breath/)
 
-[
-
-![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/75c38b1a-2787-f0f3-5d97-e307b86d78b8.jpg)
-](http://)
+[![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/75c38b1a-2787-f0f3-5d97-e307b86d78b8.jpg)](http://)
 
 ## A New Retreat from Natasha (Jyoti) Samson
 
@@ -99,10 +87,7 @@ Those who have experienced Natasha's I Want More from Life retreat know the grou
 
 👉 [*Learn*](https://saltspringcentre.com/breath/)* *[*more and join us *](https://saltspringcentre.com/breath/)
 
-[
-
-![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/029c757f-f0c3-562e-7d01-51da4c72ca23.png)
-](https://saltspringcentre.com/personal-retreat/)
+[![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/029c757f-f0c3-562e-7d01-51da4c72ca23.png)](https://saltspringcentre.com/personal-retreat/)
 
 ## Personal Retreat
 
@@ -110,10 +95,7 @@ Escape into quiet, nourishment and natural beauty. Personal retreats include yog
 
 🌿 [Book your personal retreat](https://saltspringcentre.com/personal-retreat/)
 
-[
-
-![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/288f8538-3812-da9c-fc30-63667d4d807a.jpg)
-](https://saltspringcentre.com/events/sound-bath-with-farhad-khan/)
+[![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/288f8538-3812-da9c-fc30-63667d4d807a.jpg)](https://saltspringcentre.com/events/sound-bath-with-farhad-khan/)
 
 ## Sound Bath and Kundalini Yoga with Farhad Khan
 
@@ -123,10 +105,7 @@ Before we move into the full warmth of the retreat season, we invite you to join
 
 # Community Update
 
-[
-
-![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/d3f1edcb-3821-9715-2a0d-3400a6c55bd5.jpg)
-](https://saltspringcentre.com/spring-2026-farm-update-a-season-of-seeds-soil-and-community/)
+[![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/d3f1edcb-3821-9715-2a0d-3400a6c55bd5.jpg)](https://saltspringcentre.com/spring-2026-farm-update-a-season-of-seeds-soil-and-community/)
 
 ## A Farm Renaissance at the Centre
 
@@ -134,10 +113,7 @@ Something quietly extraordinary is unfolding on the land this spring. Thousands 
 
 # Join our team
 
-[
-
-![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/f6b15e85-1902-310d-341c-8d8ffdeea39c.png)
-](https://saltspringcentre.com/wp-content/uploads/2026/04/2026-Bookkeeper.pdf)
+[![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/f6b15e85-1902-310d-341c-8d8ffdeea39c.png)](https://saltspringcentre.com/wp-content/uploads/2026/04/2026-Bookkeeper.pdf)
 
 ## Book Keeper
 
@@ -147,10 +123,7 @@ We're offering a meaningful opportunity to serve at the Centre by supporting the
 
 [👉 Learn more and apply](https://saltspringcentre.com/wp-content/uploads/2026/04/2026-Bookkeeper.pdf)
 
-[
-
-![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/2974ea31-ce45-8169-bcce-f69955c41c95.jpg)
-](https://saltspringcentre.com/wp-content/uploads/2025/11/2025-11-07-Kitchen-Coordinator-1.pdf)
+[![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/2974ea31-ce45-8169-bcce-f69955c41c95.jpg)](https://saltspringcentre.com/wp-content/uploads/2025/11/2025-11-07-Kitchen-Coordinator-1.pdf)
 
 ## Kitchen Coordinator
 
@@ -160,10 +133,7 @@ We’re offering a meaningful opportunity to serve at the Centre by supporting m
 
 👉 [Learn more and apply](https://saltspringcentre.com/wp-content/uploads/2025/11/2025-11-07-Kitchen-Coordinator-1.pdf)
 
-[
-
-![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/4bb0def2-34f4-6694-5132-247808745466.jpg)
-](https://saltspringcentre.com/wp-content/uploads/2025/11/2025-11-07-Lead-Cook-1.pdf)
+[![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/4bb0def2-34f4-6694-5132-247808745466.jpg)](https://saltspringcentre.com/wp-content/uploads/2025/11/2025-11-07-Lead-Cook-1.pdf)
 
 ## Lead Cook
 
@@ -173,10 +143,7 @@ We’re offering a meaningful opportunity to serve at the Centre by supporting m
 
 👉 [Learn more and apply](https://saltspringcentre.com/wp-content/uploads/2025/11/2025-11-07-Lead-Cook-1.pdf)
 
-[
-
-![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/286fdbe9-3613-958f-6f81-d3355d3bf585.jpg)
-](https://saltspringcentre.com/get-involved/karma-yoga-volunteer/)
+[![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/286fdbe9-3613-958f-6f81-d3355d3bf585.jpg)](https://saltspringcentre.com/get-involved/karma-yoga-volunteer/)
 
 ## Karma Yoga Volunteers
 
@@ -244,16 +211,8 @@ The Salt Spring Centre of Yoga Team**
 
 [![Website](https://cdn-images.mailchimp.com/icons/social-block-v2/gray-link-48.png)](https://saltspringcentre.com/)
 
-[Website](https://saltspringcentre.com/)
-
 [![Instagram](https://cdn-images.mailchimp.com/icons/social-block-v2/gray-instagram-48.png)](https://www.instagram.com/saltspringcentre/)
-
-[Instagram](https://www.instagram.com/saltspringcentre/)
 
 [![Facebook](https://cdn-images.mailchimp.com/icons/social-block-v2/gray-facebook-48.png)](https://www.facebook.com/saltspringcentreofyoga)
 
-[Facebook](https://www.facebook.com/saltspringcentreofyoga)
-
 [![Email](https://cdn-images.mailchimp.com/icons/social-block-v2/gray-forwardtofriend-48.png)](mailto:info@saltspringcentre.com)
-
-[Email](mailto:info@saltspringcentre.com)

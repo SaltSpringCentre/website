@@ -9,11 +9,7 @@ source: mailchimp:c59976cc6f
 
 ![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/74a02023-f959-5ae7-cfdb-a1ddc6f23b68.png)
 
-[
-
-![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/96ec30a8-19b0-c7db-69b0-4e7fd74ac84a.jpg)
-
-](https://saltspringcentre.com/programs-retreats/going-deeper-silent-retreat/)
+[![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/96ec30a8-19b0-c7db-69b0-4e7fd74ac84a.jpg)](https://saltspringcentre.com/programs-retreats/going-deeper-silent-retreat/)
 
 There is a particular kind of tired that rest doesn't fix.
 
@@ -59,9 +55,7 @@ If you have any questions or need more information, feel free to contact us at i
 
 **The Salt Spring Centre of Yoga Team**
 
-[
-![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/86a556da-01f3-8bb4-da63-8ced7d83e7e1.jpg)
-](https://saltspringcentre.com/programs-retreats/going-deeper-silent-retreat/)
+[![](https://mcusercontent.com/723efab91f9f92d89520cd8d7/images/86a556da-01f3-8bb4-da63-8ced7d83e7e1.jpg)](https://saltspringcentre.com/programs-retreats/going-deeper-silent-retreat/)
 
 ## "Work honestly, meditate every day, meet people without fear and play."
 
@@ -73,16 +67,8 @@ If you have any questions or need more information, feel free to contact us at i
 
 [![Website](https://cdn-images.mailchimp.com/icons/social-block-v2/gray-link-48.png)](https://saltspringcentre.com/)
 
-[Website](https://saltspringcentre.com/)
-
 [![Instagram](https://cdn-images.mailchimp.com/icons/social-block-v2/gray-instagram-48.png)](https://www.instagram.com/saltspringcentre/)
-
-[Instagram](https://www.instagram.com/saltspringcentre/)
 
 [![Facebook](https://cdn-images.mailchimp.com/icons/social-block-v2/gray-facebook-48.png)](https://www.facebook.com/saltspringcentreofyoga)
 
-[Facebook](https://www.facebook.com/saltspringcentreofyoga)
-
 [![Email](https://cdn-images.mailchimp.com/icons/social-block-v2/gray-forwardtofriend-48.png)](mailto:info@saltspringcentre.com)
-
-[Email](mailto:info@saltspringcentre.com)
