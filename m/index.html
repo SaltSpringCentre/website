@@ -18,10 +18,10 @@
 }
 html, body { margin: 0; padding: 0; overflow-x: hidden; }
 body { font-family: 'Archivo Narrow', sans-serif; background: var(--cream); color: var(--text); line-height: 1.6; font-size: 16px; -webkit-font-smoothing: antialiased; }
-h1, h2, h3 { font-family: 'Cinzel', serif; font-weight: 600; line-height: 1.2; color: var(--charcoal); }
+h1, h2, h3 { font-family: 'Cinzel', serif; font-weight: 600; line-height: 1.2; color: var(--charcoal); text-wrap: balance; }
 a { color: var(--teal-dark); text-decoration: none; }
 img { max-width: 100%; display: block; }
-p { text-align: justify; text-justify: inter-word; }
+p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 
 /* NAV - hidden until user scrolls past hero, then slides in */
 .nav { position: fixed; top: -60px; left: 0; right: 0; z-index: 100; background: rgba(250,248,244,0.97); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid rgba(0,0,0,0.06); display: flex; align-items: center; justify-content: space-between; padding: 0 16px; height: 52px; transition: top 0.3s ease; }
@@ -138,25 +138,6 @@ p { text-align: justify; text-justify: inter-word; }
 .social { display: flex; gap: 12px; margin-top: 12px; }
 .social a { color: var(--white); opacity: 0.4; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.1); }
 
-/* DONATE MODAL */
-.donate-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 300; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: 0.3s; padding: 20px; }
-.donate-overlay.open { opacity: 1; pointer-events: auto; }
-.donate-modal { background: var(--white); border-radius: 12px; width: 100%; max-width: 400px; overflow: hidden; }
-.donate-header { background: linear-gradient(135deg, var(--teal-deep), var(--teal-dark)); color: var(--white); padding: 24px; position: relative; }
-.donate-header h3 { font-size: 1.2rem; }
-.donate-header p { font-size: 0.82rem; opacity: 0.8; }
-.donate-close { position: absolute; top: 12px; right: 12px; background: none; border: none; color: var(--white); font-size: 1.4rem; cursor: pointer; }
-.donate-body { padding: 24px; }
-.donate-tiers { display: flex; gap: 8px; justify-content: center; margin-bottom: 16px; }
-.tier { padding: 10px 16px; border: 2px solid rgba(0,0,0,0.1); border-radius: 8px; font-family: 'Cinzel', serif; font-size: 1rem; font-weight: 600; cursor: pointer; background: var(--white); }
-.tier.active { background: var(--teal); color: var(--white); border-color: var(--teal); }
-.donate-field { margin-bottom: 12px; }
-.donate-field label { display: block; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-light); margin-bottom: 4px; }
-.donate-field input, .donate-field select { width: 100%; padding: 10px 12px; border: 1px solid rgba(0,0,0,0.12); border-radius: 8px; font-family: 'Archivo Narrow', sans-serif; font-size: 0.9rem; }
-.donate-submit { width: 100%; padding: 14px; background: var(--terracotta); color: var(--white); border: none; border-radius: 50px; font-family: 'Archivo Narrow', sans-serif; font-size: 1rem; font-weight: 600; cursor: pointer; margin-top: 8px; }
-.donate-alt { text-align: center; font-size: 0.78rem; color: var(--text-light); margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(0,0,0,0.06); }
-.donate-alt strong { color: var(--text); }
-.donate-foot { text-align: center; font-size: 0.68rem; color: var(--text-light); padding: 0 24px 20px; }
 </style>
 </head>
 <body>
@@ -341,41 +322,12 @@ p { text-align: justify; text-justify: inter-word; }
   </div>
 </footer>
 
-<!-- DONATE MODAL -->
-<div class="donate-overlay" id="donateOverlay" onclick="if(event.target===this)closeDonate()">
-  <div class="donate-modal">
-    <div class="donate-header">
-      <h3>Make a Donation</h3>
-      <p>Salt Spring Centre of Yoga</p>
-      <button class="donate-close" onclick="closeDonate()">&times;</button>
-    </div>
-    <div class="donate-body">
-      <div class="donate-tiers">
-        <button class="tier" onclick="pickTier(25,this)">$25</button>
-        <button class="tier" onclick="pickTier(50,this)">$50</button>
-        <button class="tier active" onclick="pickTier(108,this)">$108</button>
-        <button class="tier" onclick="pickTier(200,this)">$200</button>
-      </div>
-      <div class="donate-field"><label>Name</label><input type="text" placeholder="Your full name"></div>
-      <div class="donate-field"><label>Email</label><input type="email" placeholder="you@example.com"></div>
-      <div class="donate-field"><label>Direct your gift</label>
-        <select>
-          <option>No Preference</option>
-          <option>Meeting Basic Needs & Preserving Spaces</option>
-          <option>Bringing the Centre into solid financial position</option>
-          <option>Restoring key Centre Offerings</option>
-        </select>
-      </div>
-      <button class="donate-submit" onclick="closeDonate();alert('Thank you! In production this connects to Square.');">Donate via Square</button>
-      <div class="donate-alt">Or Interac E-Transfer to <strong>payment@saltspringcentre.com</strong></div>
-    </div>
-    <div class="donate-foot">This is a prototype. In production, this connects to Square for secure payment.</div>
-  </div>
-</div>
+<!-- DONATE MODAL: handled by donate-form.js (injected on first openDonate call) -->
 
 <script src="../events-data.js" defer></script>
 <script src="../next-event.js" defer></script>
 <script src="../babaji-qa.js"></script>
+<script src="../donate-form.js" defer></script>
 <script>
 function closeMenu() {
   document.getElementById('menu').classList.remove('open');
@@ -392,12 +344,6 @@ function closeMenu() {
   window.addEventListener('scroll', update, { passive: true });
   update();
 })();
-function openDonate() { window.open("https://square.link/u/Oa6tCVaL", "_blank"); }
-function closeDonate() { document.getElementById('donateOverlay').classList.remove('open'); }
-function pickTier(amt, el) {
-  document.querySelectorAll('.tier').forEach(function(t) { t.classList.remove('active'); });
-  el.classList.add('active');
-}
 function showQA() {
   if (!window.qas || !window.qas.length) return;
   var qa = qas[Math.floor(Math.random() * qas.length)];
