@@ -218,18 +218,6 @@
       "cap": "Shraddha memorial 3"
     },
     {
-      "src": "https://www.babaharidass.org/babaharidass_files/Shraddha-083.jpg",
-      "cap": "Shraddha memorial (Oct 2018)"
-    },
-    {
-      "src": "https://www.babaharidass.org/babaharidass_files/Ashes-Har-Ki-Pauri-01.jpg",
-      "cap": "Ashes at Har Ki Pauri 1"
-    },
-    {
-      "src": "https://www.babaharidass.org/babaharidass_files/Ashes-Har-Ki-Pauri-05.jpg",
-      "cap": "Ashes at Har Ki Pauri 5"
-    },
-    {
       "src": "https://www.babaharidass.org/babaharidass_files/Ashes-Har-Ki-Pauri-10.jpg",
       "cap": "Ashes at Har Ki Pauri 10"
     },
@@ -240,14 +228,6 @@
     {
       "src": "https://www.babaharidass.org/babaharidass_files/Diwali-India.jpg",
       "cap": "Diwali India"
-    },
-    {
-      "src": "https://www.babaharidass.org/babaharidass_files/Diwali-India-2.jpg",
-      "cap": "Diwali India 2"
-    },
-    {
-      "src": "https://www.babaharidass.org/babaharidass_files/Diwali-India-3.jpg",
-      "cap": "Diwali India 3"
     }
   ],
   "People / Community": [
@@ -300,10 +280,6 @@
       "cap": "Peter and the Pipes"
     },
     {
-      "src": "images/2026/02/Lakshmi-at-Ganga-scaled.jpg",
-      "cap": "Lakshmi at Ganga"
-    },
-    {
       "src": "images/2017/11/sourdough-15.jpeg",
       "cap": "Bread workshop participants"
     },
@@ -354,6 +330,10 @@
     {
       "src": "posts/images/361ae1b0_image-1.jpeg",
       "cap": "Image 1"
+    },
+    {
+      "src": "images/2026/02/Lakshmi-at-Ganga-scaled.jpg",
+      "cap": "Lakshmi at Ganga"
     }
   ],
   "Staff / Instructors": [
@@ -546,6 +526,10 @@
     {
       "src": "images/2025/02/Where-Nature-2.jpg",
       "cap": "Wellness - Where Nature"
+    },
+    {
+      "src": "images/2025/02/Where-Nature-2.jpg",
+      "cap": "Wellness - Where Nature"
     }
   ],
   "Rooms": [
@@ -658,6 +642,14 @@
       "src": "images/2022/09/Lotus-photo-jpeg.jpg",
       "cap": "Lotus flower",
       "banner": "retreat"
+    },
+    {
+      "src": "images/2022/10/Forest-walk-school-photo.jpg",
+      "cap": "Forest walk bridge"
+    },
+    {
+      "src": "images/2021/12/DSCF0102.jpg",
+      "cap": "Outdoor scenic"
     }
   ],
   "Temples / Sacred": [
@@ -703,10 +695,6 @@
     }
   ],
   "Classes / Programs": [
-    {
-      "src": "images/2021/11/programs-retreats.jpg",
-      "cap": "Programs & Retreats banner"
-    },
     {
       "src": "images/2021/11/retreat-2.jpg",
       "cap": "Retreat 2"
@@ -754,6 +742,55 @@
     {
       "src": "images/2025/12/10.jpg",
       "cap": "N&N 10"
+    },
+    {
+      "src": "images/2021/11/retreat-1.jpg",
+      "cap": "Retreat 1"
+    },
+    {
+      "src": "images/2021/11/retreat-4.jpg",
+      "cap": "Retreat 4"
+    },
+    {
+      "src": "images/2021/12/Student-practice-with-CP-697x1024-1.jpg",
+      "cap": "Student practicing with instructor"
+    },
+    {
+      "src": "images/2021/12/YTT-200-Graduating-class-2019-hero.jpg",
+      "cap": "YTT graduating class 2019"
+    },
+    {
+      "src": "images/2021/12/Class-3-1024x610-1.jpg",
+      "cap": "Teacher training class"
+    },
+    {
+      "src": "images/2025/02/46-2.jpg",
+      "cap": "Yoga class"
+    },
+    {
+      "src": "images/2025/01/8.jpg",
+      "cap": "Spring cleanse"
+    },
+    {
+      "src": "images/2025/07/Website-front-page-8.jpg",
+      "cap": "Website front page",
+      "banner": "retreat"
+    },
+    {
+      "src": "images/2021/11/Garden-House-2.jpg",
+      "cap": "Garden House exterior 2"
+    },
+    {
+      "src": "posts/images/25c8a139_PHOTO-2025-10-22-22-14-50.jpeg",
+      "cap": "PHOTO 2025 10 22 22 14 50"
+    },
+    {
+      "src": "posts/images/3c1fe4d4_46.jpg",
+      "cap": "46"
+    },
+    {
+      "src": "images/2021/11/programs-retreats.jpg",
+      "cap": "Programs & Retreats banner"
     }
   ],
   "Asana": [
@@ -784,8 +821,30 @@
       "cap": "46"
     }
   ],
-  "Sri Ram": [],
-  "MMC": [],
+  "Sri Ram": [
+    {
+      "src": "https://www.babaharidass.org/babaharidass_files/Ashes-Har-Ki-Pauri-01.jpg",
+      "cap": "Ashes at Har Ki Pauri 1"
+    },
+    {
+      "src": "https://www.babaharidass.org/babaharidass_files/Ashes-Har-Ki-Pauri-05.jpg",
+      "cap": "Ashes at Har Ki Pauri 5"
+    },
+    {
+      "src": "https://www.babaharidass.org/babaharidass_files/Diwali-India-2.jpg",
+      "cap": "Diwali India 2"
+    },
+    {
+      "src": "https://www.babaharidass.org/babaharidass_files/Diwali-India-3.jpg",
+      "cap": "Diwali India 3"
+    }
+  ],
+  "MMC": [
+    {
+      "src": "https://www.babaharidass.org/babaharidass_files/Shraddha-083.jpg",
+      "cap": "Shraddha memorial (Oct 2018)"
+    }
+  ],
   "ACYR / Annual Retreat": [
     {
       "src": "images/2025/07/1.png",
@@ -838,6 +897,10 @@
     {
       "src": "images/2021/11/retreat-1.jpg",
       "cap": "Retreat 1"
+    },
+    {
+      "src": "images/2021/11/retreat-3.jpg",
+      "cap": "Retreat 3"
     }
   ],
   "Nature & Nurture Series": [
@@ -888,6 +951,38 @@
     {
       "src": "images/2022/10/Forest-walk-school-photo.jpg",
       "cap": "Forest walk bridge"
+    },
+    {
+      "src": "images/2025/12/4.jpg",
+      "cap": "N&N 4"
+    },
+    {
+      "src": "images/2025/12/5.jpg",
+      "cap": "N&N 5"
+    },
+    {
+      "src": "images/2025/12/6.jpg",
+      "cap": "N&N 6"
+    },
+    {
+      "src": "images/2025/12/10.jpg",
+      "cap": "N&N 10"
+    },
+    {
+      "src": "images/2025/12/Nature-and-Nurture-Webpage-9.jpg",
+      "cap": "N&N Webpage 9"
+    },
+    {
+      "src": "images/2025/12/Nature-and-Nurture-Webpage-10.jpg",
+      "cap": "N&N Webpage 10"
+    },
+    {
+      "src": "images/2025/12/Personal-Retreat-Instagram-May-2022.jpg",
+      "cap": "Personal Retreat Instagram"
+    },
+    {
+      "src": "posts/images/26211b27_Blog-Post-Picture-Vertical-900-x-1200-4.jpg",
+      "cap": "Blog Post Picture Vertical 900 X 1200 4"
     }
   ],
   "Food / Kitchen": [
@@ -1152,6 +1247,14 @@
     {
       "src": "images/2025/12/Personal-Retreat-Instagram-May-2022.jpg",
       "cap": "Personal Retreat Instagram"
+    },
+    {
+      "src": "images/2025/02/1.jpg",
+      "cap": "Wellness gallery 1"
+    },
+    {
+      "src": "images/2025/02/4.jpg",
+      "cap": "Wellness gallery 2"
     },
     {
       "src": "images/2025/02/1.jpg",
@@ -11158,6 +11261,10 @@
     {
       "src": "posts/images/3c1fe4d4_46.jpg",
       "cap": "46"
+    },
+    {
+      "src": "images/2026/02/Lakshmi-at-Ganga-scaled.jpg",
+      "cap": "Lakshmi at Ganga"
     }
   ]
 }
