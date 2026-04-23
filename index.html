@@ -744,6 +744,7 @@ var heroTopLogo = document.querySelector('.hero-top-logo');
 var navLinks = document.querySelector('.sticky-nav-links');
 var navLogoWrap = document.querySelector('.sn-logo-wrap');
 var navInner = document.querySelector('.sticky-nav-inner');
+var navLinkEls = document.querySelectorAll('.sticky-nav-links a');
 
 // Capture original position before sticky kicks in
 var navPinPoint = stickyNav.offsetTop;
@@ -789,7 +790,6 @@ function checkSticky() {
   if (navLogoWrap) navLogoWrap.style.opacity = Math.min(1, scrollPast * 3);
 }
 // Per-link scroll-driven entrance
-var navLinkEls = document.querySelectorAll('.sticky-nav-links a');
 var linkEntrances = [
   { y: 40, x: -30, rot: -12, scale: 0.6 },  // Calendar: drops in from upper-left, spins
   { y: 60, x: 0,   rot: 8,   scale: 0.5 },  // Shop: rises from below, tilts
