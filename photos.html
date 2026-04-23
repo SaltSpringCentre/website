@@ -48,14 +48,10 @@ h2.collapsed .caret { transform: rotate(-90deg); }
   color: #111;
   box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
-.banner-badge.concert { background: #3bb8a8; color: #041817; }
-.banner-badge.retreat { background: #c17838; color: #1b0a03; }
 .ctx-menu-divider { height: 1px; background: #2a2a2a; margin: 6px 4px; }
 .ctx-menu-item.banner-opt { display: flex; align-items: center; gap: 8px; }
 .ctx-menu-item.banner-opt .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; border: 1px solid #444; }
 .ctx-menu-item.banner-opt.on .dot { border-color: #111; background: #c9a84c; }
-.ctx-menu-item.banner-opt.on[data-val="concert"] .dot { background: #3bb8a8; }
-.ctx-menu-item.banner-opt.on[data-val="retreat"] .dot { background: #c17838; }
 .ctx-menu {
   position: fixed;
   z-index: 9999;
@@ -496,6 +492,16 @@ function mergeFromPublished() {
           }
         });
       });
+      // Normalize banner flags to boolean: any legacy 'concert'/'retreat'
+      // string coerces to true.
+      Object.keys(data).forEach(function (cat) {
+        (data[cat] || []).forEach(function (p) {
+          if (p && p.banner && p.banner !== true) {
+            p.banner = true;
+            changed = true;
+          }
+        });
+      });
       if (changed) save();
       return changed;
     })
@@ -559,11 +565,8 @@ function render() {
       item.appendChild(im);
       if (img.banner) {
         var badge = document.createElement('div');
-        var label;
-        if (img.banner === 'concert') { badge.className = 'banner-badge concert'; label = 'Banner · Concert'; }
-        else if (img.banner === 'retreat') { badge.className = 'banner-badge retreat'; label = 'Banner · Retreat'; }
-        else { badge.className = 'banner-badge'; label = 'Banner'; }
-        badge.textContent = label;
+        badge.className = 'banner-badge';
+        badge.textContent = 'Banner';
         item.appendChild(badge);
       }
       var cap = document.createElement('div');
@@ -627,15 +630,12 @@ function showContextMenu(ev, img, fromCat) {
   menu.appendChild(bHead);
 
   [
-    { val: null, label: 'None' },
-    { val: true, label: 'Any event' },
-    { val: 'concert', label: 'Concerts only' },
-    { val: 'retreat', label: 'Retreats only' }
+    { val: false, label: 'Use as banner: No' },
+    { val: true, label: 'Use as banner: Yes' }
   ].forEach(function(opt) {
     var row = document.createElement('div');
-    var current = !!img.banner === !!opt.val && img.banner === opt.val;
+    var current = !!img.banner === opt.val;
     row.className = 'ctx-menu-item banner-opt' + (current ? ' on' : '');
-    if (opt.val) row.setAttribute('data-val', opt.val === true ? 'any' : opt.val);
     var dot = document.createElement('span');
     dot.className = 'dot';
     var lbl = document.createElement('span');
@@ -643,8 +643,8 @@ function showContextMenu(ev, img, fromCat) {
     row.appendChild(dot);
     row.appendChild(lbl);
     row.addEventListener('click', function() {
-      if (opt.val === null) delete img.banner;
-      else img.banner = opt.val;
+      if (opt.val) img.banner = true;
+      else delete img.banner;
       save();
       render();
       closeContextMenu();
