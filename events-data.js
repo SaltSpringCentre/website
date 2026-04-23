@@ -688,7 +688,7 @@ OFFERINGS.forEach(function(o) { o.url = 'event.html?id=' + o.id; });
 //
 // DEPLOY: see sscy/community-events-api.gs for setup instructions. Once
 // deployed, replace COMMUNITY_EVENTS_API below with the Apps Script web app URL.
-var COMMUNITY_EVENTS_API = 'https://script.google.com/macros/s/COMMUNITY_EVENTS_API_PLACEHOLDER/exec';
+var COMMUNITY_EVENTS_API = 'https://script.google.com/macros/s/AKfycbwudTWAUGihtoYV85kmtjwNM81UxC9nbyWlgF0skmd3p3N8gE2JOE9QB5Seosmomf6J-w/exec';
 
 // Default image fallbacks keyed by title substring — used when Google Calendar
 // events don't have their own image metadata.
