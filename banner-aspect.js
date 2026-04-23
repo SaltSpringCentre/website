@@ -1,15 +1,22 @@
 // Banner aspect-ratio guard. For banner-style images (.section-banner,
 // .mfp-banner img, .event-banner img, .mfp-img, img.banner), if the
-// natural aspect ratio is too portrait to work as a banner, the image
-// gets a .banner-natural class that lets it render at its natural
-// proportions in a modest centered slot instead of being stretched or
-// cropped into a banner rectangle.
+// image's natural aspect ratio is narrower than its rendered slot
+// (meaning object-fit:cover would crop the top and bottom), the image
+// gets a .banner-natural class that renders it at its actual
+// proportions in a modest centered slot instead.
+//
+// Compares natural aspect to the slot's actual rendered aspect, so
+// this works correctly at any viewport width. Small tolerance allows
+// a sliver of crop without triggering the natural-size fallback.
 //
 // Also watches for src swaps (next-event.js swaps .mfp-img in place)
 // and for banner imgs added after first paint.
 
 (function () {
-  var THRESHOLD = 1.3; // width/height; anything narrower reverts to natural
+  // Any image whose natural aspect is narrower than slotAspect * TOLERANCE
+  // gets demoted to natural rendering. 0.95 lets a 5% vertical crop slide;
+  // anything more aggressive than that falls back to natural display.
+  var TOLERANCE = 0.95;
   var SELECTORS = '.section-banner, .mfp-banner img, .event-banner img, .mfp-img, img.banner';
 
   var style = document.createElement('style');
@@ -34,9 +41,23 @@
 
   function check(img) {
     if (!img || !img.naturalHeight) return;
-    var ar = img.naturalWidth / img.naturalHeight;
-    if (ar < THRESHOLD) img.classList.add('banner-natural');
-    else img.classList.remove('banner-natural');
+    var natural = img.naturalWidth / img.naturalHeight;
+
+    // Temporarily clear .banner-natural so we measure the true banner slot,
+    // not the natural-mode slot we may have applied on a prior pass.
+    var wasNatural = img.classList.contains('banner-natural');
+    if (wasNatural) img.classList.remove('banner-natural');
+    var slotWidth = img.clientWidth;
+    var slotHeight = img.clientHeight;
+    if (!slotWidth || !slotHeight) {
+      // Slot hasn't laid out yet; try again on the next frame.
+      if (wasNatural) img.classList.add('banner-natural');
+      requestAnimationFrame(function () { check(img); });
+      return;
+    }
+    var slot = slotWidth / slotHeight;
+
+    if (natural < slot * TOLERANCE) img.classList.add('banner-natural');
   }
 
   function bind(img) {
