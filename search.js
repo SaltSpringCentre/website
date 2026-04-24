@@ -42,6 +42,8 @@
     var excerpt = (entry.excerpt || '').toLowerCase();
     var headings = entry.headings || [];
     var headingTexts = headings.map(function (h) { return (h.text || '').toLowerCase(); });
+    var aliases = entry.aliases || [];
+    var aliasesLower = aliases.map(function (a) { return String(a || '').toLowerCase(); });
 
     var score = 0;
     var matchedHeadingIdx = -1;
@@ -56,12 +58,25 @@
     }
     if (qLower && excerpt.indexOf(qLower) >= 0) score += 15;
 
+    // Alias whole-phrase boost: if the entire query equals an alias, treat
+    // it as a canonical hit (stronger than an in-title substring match).
+    if (qLower) {
+      for (var a = 0; a < aliasesLower.length; a++) {
+        if (aliasesLower[a] === qLower) { score += 30; break; }
+      }
+    }
+
     // Per-token scoring.
     var hitTokens = 0;
     for (var t = 0; t < tokens.length; t++) {
       var tk = tokens[t];
       var hit = false;
       if (title.indexOf(tk) >= 0) { score += 12; hit = true; }
+      // Alias per-token: exact (case-insensitive) match to an alias token
+      // scores like a title hit. This is what makes "YTT" find ytt.html.
+      for (var ai = 0; ai < aliasesLower.length; ai++) {
+        if (aliasesLower[ai] === tk) { score += 12; hit = true; break; }
+      }
       for (var h = 0; h < headingTexts.length; h++) {
         if (headingTexts[h].indexOf(tk) >= 0) {
           score += 6;

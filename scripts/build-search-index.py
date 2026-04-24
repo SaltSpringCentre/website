@@ -38,6 +38,17 @@ EXCLUDE_FILES = {
 
 EXCLUDE_PREFIXES = ("wireframe", "test", "schedule-editor-baked-")
 
+# Shorthand acronyms SSCY uses internally — pages are officially titled with
+# full names ("Yoga Teacher Training") but staff and regulars search for the
+# acronym. These attach as an `aliases` array on the page entry, and search.js
+# scores alias matches like strong title hits.
+PAGE_ALIASES = {
+    "ytt.html": ["YTT", "YTT 200"],
+    "acyr.html": ["ACYR"],
+    "yssi.html": ["YSSI"],
+    "music-for-peace.html": ["MFP"],
+}
+
 
 def slug_from_text(text):
     s = re.sub(r"[^\w\s-]", "", text or "").strip().lower()
@@ -131,13 +142,17 @@ def extract_page(path):
     if len(body_text) > 160:
         excerpt = excerpt.rsplit(" ", 1)[0] + "..."
 
-    return {
+    entry = {
         "kind": "page",
         "page": os.path.basename(path),
         "title": title,
         "headings": p.headings,
         "excerpt": excerpt,
     }
+    aliases = PAGE_ALIASES.get(os.path.basename(path))
+    if aliases:
+        entry["aliases"] = list(aliases)
+    return entry
 
 
 def collect_pages():
