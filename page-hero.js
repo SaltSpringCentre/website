@@ -47,7 +47,7 @@
         imgs.forEach(function (img) {
           var pool = img.getAttribute('data-hero-pool');
           var arr = (data[pool] || []).filter(function (p) {
-            return p.banner === true && p.src;
+            return p.hero === true && p.src;
           });
           if (!arr.length) return;
           Promise.all(arr.map(function (p) {

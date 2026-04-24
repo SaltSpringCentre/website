@@ -3,7 +3,8 @@
     {
       "src": "images/2021/11/Babaji-photo-overlay.jpg",
       "cap": "Babaji photo overlay",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2013/02/Babaji-rock-wall-298x300.jpg",
@@ -20,12 +21,14 @@
     {
       "src": "images/2025/05/1981-5.jpg",
       "cap": "Babaji at Program House (1981)",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2022/03/Baba-Hari-Dass-w-Chalkboard-1970s.jpg",
       "cap": "Babaji with chalkboard (1970s)",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2022/03/our_founder.jpg",
@@ -110,7 +113,8 @@
     {
       "src": "https://www.babaharidass.org/babaharidass_files/15.07.30_001.jpg",
       "cap": "~July 2015",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "https://www.babaharidass.org/babaharidass_files/a1c5ba19-b1d8-4a18-82c9-967b73b09006.jpg",
@@ -171,7 +175,8 @@
     {
       "src": "https://www.babaharidass.org/babaharidass_files/0301IS4319-Bji-Puni-8x10.jpg",
       "cap": "Babaji with Puni (8x10)",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "https://www.babaharidass.org/babaharidass_files/44a2ab8d-f0c6-477a-9cb9-98fcca73baa8.jpg",
@@ -350,12 +355,14 @@
     {
       "src": "images/2022/03/Grounding-with-music.jpg",
       "cap": "Grounding with music",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2022/03/Tree-Pose-in-Boots-scaled-1.jpg",
       "cap": "Tree pose in boots",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2017/11/sourdough-15.jpeg",
@@ -412,7 +419,8 @@
     {
       "src": "images/2021/10/its-all-about-love.jpg",
       "cap": "It's all about love",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2026/02/IMG_5787.jpeg",
@@ -811,7 +819,8 @@
     {
       "src": "images/2022/03/Forest-Canopy-from-the-ground-1024x683-1.jpg",
       "cap": "Forest canopy looking up",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2022/10/Forest-in-winter.jpg",
@@ -828,7 +837,8 @@
     {
       "src": "images/2022/09/Lotus-photo-jpeg.jpg",
       "cap": "Lotus flower",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2022/10/Forest-walk-school-photo.jpg",
@@ -841,7 +851,8 @@
     {
       "src": "images/2022/03/Babaji-header.jpg",
       "cap": "Babaji header portrait",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2022/10/231677494_2608469562795673_3300096100624501142_n.jpg",
@@ -850,7 +861,8 @@
     {
       "src": "images/2022/05/JPEG-image-8.jpeg",
       "cap": "Activity photo",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2021/12/Copy-of-IMG_7237.jpg",
@@ -871,7 +883,8 @@
     {
       "src": "images/2021/12/DawnOverTheGarden-small-1.jpg",
       "cap": "Dawn over the garden",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2025/01/8.jpg",
@@ -1010,7 +1023,8 @@
     {
       "src": "images/2022/03/Ganesh.jpg",
       "cap": "Ganesh statue",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2022/03/Hanuman-Shrine.jpg",
@@ -1035,7 +1049,8 @@
     {
       "src": "images/2023/04/Other-ways-to-help-temples.jpg",
       "cap": "Temple spaces",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2023/04/Other-ways-to-help-ceremony-at-the-Madonna.jpg",
@@ -1048,7 +1063,8 @@
     {
       "src": "images/2025/12/Nature-and-Nurture-Webpage-9.jpg",
       "cap": "N&N Webpage 9",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2025/12/Nature-and-Nurture-Webpage-9.jpg",
@@ -1061,7 +1077,8 @@
     {
       "src": "images/2026/02/IMG_5795.jpeg",
       "cap": "? Feb 2026 batch",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2026/02/IMG_5789.jpeg",
@@ -1086,7 +1103,8 @@
     {
       "src": "posts/images/74707685_Puja-Table.jpg",
       "cap": "Puja Table",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "posts/images/7d094a8a_DivineMotherAltar.jpg",
@@ -1111,7 +1129,8 @@
     {
       "src": "posts/images/9ae12847_Hanuman-temple.jpg",
       "cap": "Hanuman Temple",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "posts/images/993fc18e_IMG_9649.jpeg",
@@ -1158,7 +1177,8 @@
     {
       "src": "images/2022/11/Online-yoga.jpg",
       "cap": "Online yoga",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2021/12/image-6.jpeg",
@@ -1187,12 +1207,14 @@
     {
       "src": "images/2021/12/DSCF0102.jpg",
       "cap": "Outdoor scenic",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2025/12/6.jpg",
       "cap": "Asana",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2021/12/DSCF0102.jpg",
@@ -1201,7 +1223,8 @@
     {
       "src": "images/2025/12/10.jpg",
       "cap": "meditation",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2021/11/retreat-1.jpg",
@@ -1226,7 +1249,8 @@
     {
       "src": "images/2025/07/Website-front-page-8.jpg",
       "cap": "Girl in dark",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2021/11/Garden-House-2.jpg",
@@ -1235,7 +1259,8 @@
     {
       "src": "posts/images/25c8a139_PHOTO-2025-10-22-22-14-50.jpeg",
       "cap": "Asana line",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "posts/images/3c1fe4d4_46.jpg",
@@ -1268,7 +1293,8 @@
     {
       "src": "posts/images/95f03a17_Blog-Post-Picture-Vertical-900-x-1200-3.jpg",
       "cap": "Candle Flame",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "posts/images/95f03a17_Going-Deeper-promo-updated-2024-1920-x-1080-px.jpg",
@@ -1277,12 +1303,14 @@
     {
       "src": "posts/images/95f03a17_Blog-Post-picture-horizontal-1200-x-630-4-1.jpg",
       "cap": "buddha",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "posts/images/9ae12847_xk_igfdkhmy-alex-blajan.jpg",
       "cap": "flower",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "posts/images/05848802_NewsFeb2017-4-annie-spratt.jpg",
@@ -1429,12 +1457,14 @@
     {
       "src": "posts/images/37f87802_hanuman-olympics-2.jpg",
       "cap": "Hanuman Olympics 2",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2021/11/retreat-4.jpg",
       "cap": "Retreat 4",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2021/11/retreat-3.jpg",
@@ -1443,7 +1473,8 @@
     {
       "src": "images/2021/11/retreat-1.jpg",
       "cap": "Retreat tower",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2021/11/retreat-3.jpg",
@@ -1452,7 +1483,8 @@
     {
       "src": "images/2021/11/retreat-4.jpg",
       "cap": "Retreat 4",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "posts/images/76a750f8_ACYR-2022-Forgiveness-Series-Asana-class-with-Supriya-at-the-Madonna-statue-Tadasana-2.jpg",
@@ -1499,7 +1531,8 @@
     {
       "src": "images/2025/12/11.jpg",
       "cap": "N&N 11",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2025/12/12.jpg",
@@ -1508,7 +1541,8 @@
     {
       "src": "images/2025/12/Nature-and-Nurture-Webpage-12.jpg",
       "cap": "N&N Webpage 12",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2025/01/8.jpg",
@@ -1521,12 +1555,14 @@
     {
       "src": "posts/images/67bbcbbe_kawin-harasai-221616.jpg",
       "cap": "Kawin Harasai 221616",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "posts/images/67bbcbbe_Jules-under-the-maple.Apr_.-2017.jpg",
       "cap": "Jules Under The Maple.Apr . 2017",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "posts/images/76a750f8_1.jpg",
@@ -1535,12 +1571,14 @@
     {
       "src": "posts/images/7a976555_walking-alone.jpg",
       "cap": "Walking Alone",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "posts/images/7f234af8_trilium.jpg",
       "cap": "Trilium",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "posts/images/0419d15e_Misty-Mound-Mariel.jpeg",
@@ -1563,7 +1601,8 @@
     {
       "src": "images/2021/10/indian-spices-1.jpg",
       "cap": "Indian spices",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2013/10/kicheree.jpg",
@@ -1584,7 +1623,8 @@
     {
       "src": "images/2017/04/8722829257_51b22d935f_z.jpg",
       "cap": "Dressing for dinner",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2016/10/5414606076_52a3504606_z-copy.jpg",
@@ -1661,7 +1701,8 @@
     {
       "src": "posts/images/7badbc20_roasted-roots2.jpg",
       "cap": "Roasted Roots2",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "posts/images/2361428f_chocolate-pudding1.jpg",
@@ -1688,7 +1729,8 @@
     {
       "src": "images/2025/12/11.jpg",
       "cap": "Concert series banner",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2026/01/Sitar-Concert-March-28-2026-Sharanjeet-Singh-Mand-.jpg",
@@ -1705,12 +1747,14 @@
     {
       "src": "images/2026/02/sitar-and-tabla.jpg",
       "cap": "Sitar and tabla",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2026/03/1.jpg",
       "cap": "Concert gallery 1",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2026/03/2.jpg",
@@ -1733,22 +1777,26 @@
     {
       "src": "images/2023/01/Registered-RMT-massage-Canva-Pro-stock-photo-2023.jpg",
       "cap": "Massage therapy",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2025/10/needles-accupuncture.avif",
       "cap": "Acupuncture",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2025/07/Website-front-page-8.jpg",
       "cap": "Website front page",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "images/2025/12/10.jpg",
       "cap": "N&N 10",
-      "banner": true
+      "banner": true,
+      "hero": true
     },
     {
       "src": "posts/images/099694cf_Olive-oil.jpg",

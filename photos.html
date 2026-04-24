@@ -49,9 +49,10 @@ h2.collapsed .caret { transform: rotate(-90deg); }
   box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 .ctx-menu-divider { height: 1px; background: #2a2a2a; margin: 6px 4px; }
-.ctx-menu-item.banner-opt { display: flex; align-items: center; gap: 8px; }
-.ctx-menu-item.banner-opt .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; border: 1px solid #444; }
+.ctx-menu-item.banner-opt, .ctx-menu-item.hero-opt { display: flex; align-items: center; gap: 8px; }
+.ctx-menu-item.banner-opt .dot, .ctx-menu-item.hero-opt .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; border: 1px solid #444; }
 .ctx-menu-item.banner-opt.on .dot { border-color: #111; background: #c9a84c; }
+.ctx-menu-item.hero-opt.on .dot { border-color: #111; background: #3bb8a8; }
 .ctx-menu {
   position: fixed;
   z-index: 9999;
@@ -623,7 +624,7 @@ function showContextMenu(ev, img, fromCat) {
   menu.id = 'ctxMenu';
   menu.addEventListener('click', function(e) { e.stopPropagation(); });
 
-  // Banner flag section
+  // Banner flag section (homepage event strip, ~2.4 aspect)
   var bHead = document.createElement('div');
   bHead.className = 'ctx-menu-header';
   bHead.textContent = 'Use as banner';
@@ -645,6 +646,39 @@ function showContextMenu(ev, img, fromCat) {
     row.addEventListener('click', function() {
       if (opt.val) img.banner = true;
       else delete img.banner;
+      save();
+      render();
+      closeContextMenu();
+    });
+    menu.appendChild(row);
+  });
+
+  var heroDivider = document.createElement('div');
+  heroDivider.className = 'ctx-menu-divider';
+  menu.appendChild(heroDivider);
+
+  // Hero flag section (full-page subpage hero, ~1.5-2 aspect, subject upper-third)
+  var hHead = document.createElement('div');
+  hHead.className = 'ctx-menu-header';
+  hHead.textContent = 'Use as hero';
+  menu.appendChild(hHead);
+
+  [
+    { val: false, label: 'Use as hero: No' },
+    { val: true, label: 'Use as hero: Yes' }
+  ].forEach(function(opt) {
+    var row = document.createElement('div');
+    var current = !!img.hero === opt.val;
+    row.className = 'ctx-menu-item hero-opt' + (current ? ' on' : '');
+    var dot = document.createElement('span');
+    dot.className = 'dot';
+    var lbl = document.createElement('span');
+    lbl.textContent = opt.label;
+    row.appendChild(dot);
+    row.appendChild(lbl);
+    row.addEventListener('click', function() {
+      if (opt.val) img.hero = true;
+      else delete img.hero;
       save();
       render();
       closeContextMenu();
