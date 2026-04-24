@@ -133,7 +133,7 @@ def extract_page(path):
 
     return {
         "kind": "page",
-        "page": "/" + os.path.basename(path),
+        "page": os.path.basename(path),
         "title": title,
         "headings": p.headings,
         "excerpt": excerpt,
@@ -174,7 +174,7 @@ def collect_posts():
             continue
         out.append({
             "kind": "post",
-            "page": "/post.html?slug=" + slug,
+            "page": "post.html?slug=" + slug,
             "title": p.get("title", ""),
             "headings": [],
             "excerpt": (p.get("excerpt") or "")[:200],
