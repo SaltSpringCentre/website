@@ -12,7 +12,7 @@
 (function () {
   'use strict';
 
-  var BREAKPOINT = 768;
+  var BREAKPOINT = 1024;
 
   function inject() {
     if (window.innerWidth < BREAKPOINT) return; // mobile skipped per requirements
@@ -26,8 +26,8 @@
       var st = document.createElement('style');
       st.id = 'sn-search-style';
       st.textContent = [
-        '.sn-search { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);',
-        '  width: clamp(220px, 28vw, 360px); opacity: 0; pointer-events: none;',
+        '.sn-search { position: absolute; left: 108px; top: 50%; transform: translateY(-50%);',
+        '  width: clamp(160px, 18vw, 240px); opacity: 0; pointer-events: none;',
         '  transition: opacity 0.35s ease; z-index: 5; }',
         '.sticky-nav.pinned .sn-search,',
         '.sn-search.always-on { opacity: 1; pointer-events: auto; }',

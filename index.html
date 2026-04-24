@@ -760,8 +760,9 @@ function checkSticky() {
   stickyNav.classList.toggle('pinned', pinned);
   if (heroTopLogo) heroTopLogo.classList.toggle('hidden', pinned);
 
-  // Calculate how far past the pin point we've scrolled (0 to 1 over 200px)
-  var scrollPast = Math.max(0, Math.min(1, (window.scrollY - navPinPoint) / 200));
+  // Calculate how far past the pin point we've scrolled (0 to 1 over 60px so
+  // the squish completes before the keys row enters view).
+  var scrollPast = Math.max(0, Math.min(1, (window.scrollY - navPinPoint) / 60));
 
   // Slide links: center to right, and compress gap
   var innerWidth = navInner.offsetWidth;
