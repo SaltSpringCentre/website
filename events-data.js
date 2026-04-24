@@ -28,6 +28,7 @@ var EVENTS = [
     badge: 'Apr 11',
     img: 'images/2026/03/Violin-Concert-April-11-2026-Shriram-Rajagopalan.jpg',
     bannerPool: 'Music for Peace',
+    bookUrl: 'https://saltspringcentre.secure.retreat.guru/program/music-for-peace-an-evening-of-carnatic-violin-with-shriram-rajagopalan/',
     featured: true
   },
   {
@@ -42,7 +43,8 @@ var EVENTS = [
     price: 'Inquire',
     badge: 'Apr 2',
     img: 'images/2025/01/Blog-Post-picture-horizontal-1200-x-630-1.jpg',
-    bannerPool: 'Classes / Programs'
+    bannerPool: 'Classes / Programs',
+    bookUrl: 'https://saltspringcentre.secure.retreat.guru?program-bulk-reg=1250&hash=3dfa3508a5418797cc376596809f4688'
   },
   {
     id: 'april-retreat-3',
@@ -112,7 +114,8 @@ var EVENTS = [
     price: 'Inquire',
     badge: 'May 14',
     img: 'images/2025/08/519270511_18512460514049610_251173067301957564_n.jpg',
-    bannerPool: 'Nature & Nurture Series'
+    bannerPool: 'Nature & Nurture Series',
+    bookUrl: 'https://saltspringcentre.secure.retreat.guru?program-bulk-reg=1264&hash=8fcf328712ae8dedaf2ab2a2bba8e356'
   },
   {
     id: 'june-retreat-3',
@@ -168,7 +171,8 @@ var EVENTS = [
     price: '$40',
     badge: 'Aug 1',
     img: 'images/2022/08/Kirtan.jpg',
-    bannerPool: 'Music for Peace'
+    bannerPool: 'Music for Peace',
+    bookUrl: 'https://saltspringcentre.secure.retreat.guru/program/music-for-peace-deepak-ram/'
   },
   {
     id: 'aug-retreat-2',
@@ -210,7 +214,8 @@ var EVENTS = [
     price: 'Inquire',
     badge: 'Oct 2',
     img: 'images/2025/08/519270511_18512460514049610_251173067301957564_n.jpg',
-    bannerPool: 'Nature & Nurture Series'
+    bannerPool: 'Nature & Nurture Series',
+    bookUrl: 'https://saltspringcentre.secure.retreat.guru?program-bulk-reg=1273&hash=55b4ce2443ebea073bcad40d7279b844'
   },
   {
     id: 'oct-retreat-3',
@@ -344,7 +349,8 @@ var EVENTS = [
     badge: 'Nov 18',
     img: 'images/2022/03/Forest-Canopy-from-the-ground-1024x683-1.jpg',
     bannerPool: 'Classes / Programs',
-    longDesc: 'Going Deeper is a profound silent retreat format created by Baba Hari Dass. The retreat space features covered windows and minimal light, creating a cave-like atmosphere designed to support deep inner exploration. Led by senior teachers Chetna Tracy Boyd and Gita Tanya Roberts, the retreat includes meditation, gentle yoga, pranayama, and extended periods of silence. An opportunity for experienced practitioners to drop beneath the surface of daily life.'
+    longDesc: 'Going Deeper is a profound silent retreat format created by Baba Hari Dass. The retreat space features covered windows and minimal light, creating a cave-like atmosphere designed to support deep inner exploration. Led by senior teachers Chetna Tracy Boyd and Gita Tanya Roberts, the retreat includes meditation, gentle yoga, pranayama, and extended periods of silence. An opportunity for experienced practitioners to drop beneath the surface of daily life.',
+    bookUrl: 'https://saltspringcentre.secure.retreat.guru?program-bulk-reg=1260&hash=72886b42648c73e9159c709882d3eee8'
   },
   {
     id: 'annual-community-retreat',
