@@ -11,7 +11,7 @@
 
   // Bump INDEX_VERSION whenever search-index.json schema or scoring changes
   // so existing browser caches fetch the fresh file.
-  var INDEX_VERSION = '2';
+  var INDEX_VERSION = '3';
   var INDEX_URL = 'search-index.json?v=' + INDEX_VERSION;
   var MAX_RESULTS = 8;
   var indexPromise = null;
