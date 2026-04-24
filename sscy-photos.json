@@ -1,12 +1,9 @@
 {
   "Babaji": [
     {
-      "src": "images/2022/03/Babaji-header.jpg",
-      "cap": "Babaji header portrait"
-    },
-    {
       "src": "images/2021/11/Babaji-photo-overlay.jpg",
-      "cap": "Babaji photo overlay"
+      "cap": "Babaji photo overlay",
+      "banner": true
     },
     {
       "src": "images/2013/02/Babaji-rock-wall-298x300.jpg",
@@ -27,7 +24,8 @@
     },
     {
       "src": "images/2022/03/Baba-Hari-Dass-w-Chalkboard-1970s.jpg",
-      "cap": "Babaji with chalkboard (1970s)"
+      "cap": "Babaji with chalkboard (1970s)",
+      "banner": true
     },
     {
       "src": "images/2022/03/our_founder.jpg",
@@ -111,7 +109,8 @@
     },
     {
       "src": "https://www.babaharidass.org/babaharidass_files/15.07.30_001.jpg",
-      "cap": "~July 2015"
+      "cap": "~July 2015",
+      "banner": true
     },
     {
       "src": "https://www.babaharidass.org/babaharidass_files/a1c5ba19-b1d8-4a18-82c9-967b73b09006.jpg",
@@ -171,7 +170,8 @@
     },
     {
       "src": "https://www.babaharidass.org/babaharidass_files/0301IS4319-Bji-Puni-8x10.jpg",
-      "cap": "Babaji with Puni (8x10)"
+      "cap": "Babaji with Puni (8x10)",
+      "banner": true
     },
     {
       "src": "https://www.babaharidass.org/babaharidass_files/44a2ab8d-f0c6-477a-9cb9-98fcca73baa8.jpg",
@@ -241,43 +241,13 @@
     },
     {
       "src": "images/2022/03/Grounding-with-music.jpg",
-      "cap": "Grounding with music"
+      "cap": "Grounding with music",
+      "banner": true
     },
     {
       "src": "images/2022/03/Tree-Pose-in-Boots-scaled-1.jpg",
-      "cap": "Tree pose in boots"
-    },
-    {
-      "src": "images/2021/12/Kanako-035.jpg",
-      "cap": "Kanako"
-    },
-    {
-      "src": "images/2021/12/IMG_7499.jpg",
-      "cap": "Community gathering"
-    },
-    {
-      "src": "images/2021/12/Copy-of-IMG_7237.jpg",
-      "cap": "Bridge in the garden"
-    },
-    {
-      "src": "images/2022/05/JPEG-image-8.jpeg",
-      "cap": "Activity photo"
-    },
-    {
-      "src": "images/2022/10/231677494_2608469562795673_3300096100624501142_n.jpg",
-      "cap": "Forest Trail Hanuman"
-    },
-    {
-      "src": "images/2021/12/100_4718_6924142843_o-1.jpg",
-      "cap": "Main house with flowers"
-    },
-    {
-      "src": "images/2021/12/holiday-giving-e1670557431533.jpg",
-      "cap": "Holiday giving / winter"
-    },
-    {
-      "src": "images/2026/02/Peter-and-the-Pipes-rotated-e1770559140566.jpg",
-      "cap": "Peter and the Pipes"
+      "cap": "Tree pose in boots",
+      "banner": true
     },
     {
       "src": "images/2017/11/sourdough-15.jpeg",
@@ -332,8 +302,13 @@
       "cap": "Image 1"
     },
     {
-      "src": "images/2026/02/Lakshmi-at-Ganga-scaled.jpg",
-      "cap": "Lakshmi at Ganga"
+      "src": "images/2021/10/its-all-about-love.jpg",
+      "cap": "It's all about love",
+      "banner": true
+    },
+    {
+      "src": "images/2026/02/IMG_5787.jpeg",
+      "cap": "? Feb 2026 batch"
     }
   ],
   "Staff / Instructors": [
@@ -530,6 +505,22 @@
     {
       "src": "images/2025/02/Where-Nature-2.jpg",
       "cap": "Wellness - Where Nature"
+    },
+    {
+      "src": "images/2025/12/Nature-and-Nurture-Webpage-15.jpg",
+      "cap": "Location Map"
+    },
+    {
+      "src": "images/2025/11/website.jpg",
+      "cap": "? Nov 2025 website"
+    },
+    {
+      "src": "images/2023/03/4-1-e1680209803976.jpg",
+      "cap": "? Unknown"
+    },
+    {
+      "src": "images/2022/12/dsc02974-e1682616124787.jpg",
+      "cap": "? From orchard"
     }
   ],
   "Rooms": [
@@ -559,10 +550,6 @@
     }
   ],
   "Garden / Farm": [
-    {
-      "src": "images/2021/12/DawnOverTheGarden-small-1.jpg",
-      "cap": "Dawn over the garden"
-    },
     {
       "src": "images/2022/03/apple-variety-scaled-1.jpg",
       "cap": "Apple varieties"
@@ -598,6 +585,10 @@
     {
       "src": "images/2023/04/Other-ways-to-help-Centre-garden.jpg",
       "cap": "Centre garden"
+    },
+    {
+      "src": "images/2021/12/100_4718_6924142843_o-1.jpg",
+      "cap": "Main house with flowers"
     }
   ],
   "Property / Nature": [
@@ -618,13 +609,9 @@
       "cap": "Serene grounds"
     },
     {
-      "src": "images/2021/10/its-all-about-love.jpg",
-      "cap": "It's all about love",
-      "banner": true
-    },
-    {
       "src": "images/2022/03/Forest-Canopy-from-the-ground-1024x683-1.jpg",
-      "cap": "Forest canopy looking up"
+      "cap": "Forest canopy looking up",
+      "banner": true
     },
     {
       "src": "images/2022/10/Forest-in-winter.jpg",
@@ -650,6 +637,45 @@
     {
       "src": "images/2021/12/DSCF0102.jpg",
       "cap": "Outdoor scenic"
+    },
+    {
+      "src": "images/2022/03/Babaji-header.jpg",
+      "cap": "Babaji header portrait",
+      "banner": true
+    },
+    {
+      "src": "images/2022/10/231677494_2608469562795673_3300096100624501142_n.jpg",
+      "cap": "Forest Trail Hanuman"
+    },
+    {
+      "src": "images/2022/05/JPEG-image-8.jpeg",
+      "cap": "Activity photo",
+      "banner": true
+    },
+    {
+      "src": "images/2021/12/Copy-of-IMG_7237.jpg",
+      "cap": "Bridge in the garden"
+    },
+    {
+      "src": "images/2021/12/holiday-giving-e1670557431533.jpg",
+      "cap": "Holiday giving / winter"
+    },
+    {
+      "src": "images/2021/12/Kanako-035.jpg",
+      "cap": "Kanako"
+    },
+    {
+      "src": "images/2021/12/IMG_7499.jpg",
+      "cap": "Community gathering"
+    },
+    {
+      "src": "images/2021/12/DawnOverTheGarden-small-1.jpg",
+      "cap": "Dawn over the garden",
+      "banner": true
+    },
+    {
+      "src": "images/2025/01/8.jpg",
+      "cap": "Spring cleanse"
     }
   ],
   "Temples / Sacred": [
@@ -691,7 +717,28 @@
     },
     {
       "src": "images/2025/12/Nature-and-Nurture-Webpage-9.jpg",
+      "cap": "N&N Webpage 9",
+      "banner": true
+    },
+    {
+      "src": "images/2025/12/Nature-and-Nurture-Webpage-9.jpg",
       "cap": "N&N Webpage 9"
+    },
+    {
+      "src": "images/2021/12/image-5.jpeg",
+      "cap": "? Ganesha on property"
+    },
+    {
+      "src": "images/2026/02/IMG_5795.jpeg",
+      "cap": "? Feb 2026 batch"
+    },
+    {
+      "src": "images/2026/02/IMG_5789.jpeg",
+      "cap": "? Feb 2026 batch"
+    },
+    {
+      "src": "images/2026/02/IMG_5788.jpeg",
+      "cap": "? Feb 2026 batch"
     }
   ],
   "Classes / Programs": [
@@ -729,11 +776,13 @@
     },
     {
       "src": "images/2021/12/DSCF0102.jpg",
-      "cap": "Outdoor scenic"
+      "cap": "Outdoor scenic",
+      "banner": true
     },
     {
       "src": "images/2025/12/6.jpg",
-      "cap": "N&N 6"
+      "cap": "N&N 6",
+      "banner": true
     },
     {
       "src": "images/2021/12/DSCF0102.jpg",
@@ -741,15 +790,12 @@
     },
     {
       "src": "images/2025/12/10.jpg",
-      "cap": "N&N 10"
+      "cap": "N&N 10",
+      "banner": true
     },
     {
       "src": "images/2021/11/retreat-1.jpg",
       "cap": "Retreat 1"
-    },
-    {
-      "src": "images/2021/11/retreat-4.jpg",
-      "cap": "Retreat 4"
     },
     {
       "src": "images/2021/12/Student-practice-with-CP-697x1024-1.jpg",
@@ -768,10 +814,6 @@
       "cap": "Yoga class"
     },
     {
-      "src": "images/2025/01/8.jpg",
-      "cap": "Spring cleanse"
-    },
-    {
       "src": "images/2025/07/Website-front-page-8.jpg",
       "cap": "Website front page",
       "banner": true
@@ -782,7 +824,8 @@
     },
     {
       "src": "posts/images/25c8a139_PHOTO-2025-10-22-22-14-50.jpeg",
-      "cap": "PHOTO 2025 10 22 22 14 50"
+      "cap": "PHOTO 2025 10 22 22 14 50",
+      "banner": true
     },
     {
       "src": "posts/images/3c1fe4d4_46.jpg",
@@ -791,6 +834,18 @@
     {
       "src": "images/2021/11/programs-retreats.jpg",
       "cap": "Programs & Retreats banner"
+    },
+    {
+      "src": "images/2025/12/6.jpg",
+      "cap": "N&N 6"
+    },
+    {
+      "src": "images/2023/07/3-e1688410439958.jpg",
+      "cap": "? Unknown"
+    },
+    {
+      "src": "images/2025/11/websitee.jpg",
+      "cap": "? Nov 2025 website"
     }
   ],
   "Asana": [
@@ -819,6 +874,10 @@
     {
       "src": "posts/images/3c1fe4d4_46.jpg",
       "cap": "46"
+    },
+    {
+      "src": "images/2022/12/DSCF0250.jpg",
+      "cap": "? Yoga demo"
     }
   ],
   "Sri Ram": [
@@ -884,7 +943,8 @@
     },
     {
       "src": "posts/images/37f87802_hanuman-olympics-2.jpg",
-      "cap": "Hanuman Olympics 2"
+      "cap": "Hanuman Olympics 2",
+      "banner": true
     },
     {
       "src": "images/2021/11/retreat-4.jpg",
@@ -896,11 +956,17 @@
     },
     {
       "src": "images/2021/11/retreat-1.jpg",
-      "cap": "Retreat 1"
+      "cap": "Retreat 1",
+      "banner": true
     },
     {
       "src": "images/2021/11/retreat-3.jpg",
       "cap": "Retreat 3"
+    },
+    {
+      "src": "images/2021/11/retreat-4.jpg",
+      "cap": "Retreat 4",
+      "banner": true
     }
   ],
   "Nature & Nurture Series": [
@@ -941,48 +1007,12 @@
       "cap": "N&N Webpage 12"
     },
     {
-      "src": "images/2025/12/Nature-and-Nurture-Webpage-15.jpg",
-      "cap": "Location Map"
-    },
-    {
       "src": "images/2025/01/8.jpg",
       "cap": "Spring cleanse"
     },
     {
       "src": "images/2022/10/Forest-walk-school-photo.jpg",
       "cap": "Forest walk bridge"
-    },
-    {
-      "src": "images/2025/12/4.jpg",
-      "cap": "N&N 4"
-    },
-    {
-      "src": "images/2025/12/5.jpg",
-      "cap": "N&N 5"
-    },
-    {
-      "src": "images/2025/12/6.jpg",
-      "cap": "N&N 6"
-    },
-    {
-      "src": "images/2025/12/10.jpg",
-      "cap": "N&N 10"
-    },
-    {
-      "src": "images/2025/12/Nature-and-Nurture-Webpage-9.jpg",
-      "cap": "N&N Webpage 9"
-    },
-    {
-      "src": "images/2025/12/Nature-and-Nurture-Webpage-10.jpg",
-      "cap": "N&N Webpage 10"
-    },
-    {
-      "src": "images/2025/12/Personal-Retreat-Instagram-May-2022.jpg",
-      "cap": "Personal Retreat Instagram"
-    },
-    {
-      "src": "posts/images/26211b27_Blog-Post-Picture-Vertical-900-x-1200-4.jpg",
-      "cap": "Blog Post Picture Vertical 900 X 1200 4"
     }
   ],
   "Food / Kitchen": [
@@ -1069,6 +1099,26 @@
     {
       "src": "posts/images/26211b27_Blog-Post-Picture-Vertical-900-x-1200-4.jpg",
       "cap": "Blog Post Picture Vertical 900 X 1200 4"
+    },
+    {
+      "src": "images/2025/12/5.jpg",
+      "cap": "N&N 5"
+    },
+    {
+      "src": "images/2025/12/4.jpg",
+      "cap": "N&N 4"
+    },
+    {
+      "src": "posts/images/26211b27_Blog-Post-Picture-Vertical-900-x-1200-4.jpg",
+      "cap": "Blog Post Picture Vertical 900 X 1200 4"
+    },
+    {
+      "src": "images/2025/12/Nature-and-Nurture-Webpage-10.jpg",
+      "cap": "N&N Webpage 10"
+    },
+    {
+      "src": "images/2025/03/10.jpg",
+      "cap": "? Mar 2025"
     }
   ],
   "Music for Peace": [
@@ -1091,11 +1141,13 @@
     },
     {
       "src": "images/2026/02/sitar-and-tabla.jpg",
-      "cap": "Sitar and tabla"
+      "cap": "Sitar and tabla",
+      "banner": true
     },
     {
       "src": "images/2026/03/1.jpg",
-      "cap": "Concert gallery 1"
+      "cap": "Concert gallery 1",
+      "banner": true
     },
     {
       "src": "images/2026/03/2.jpg",
@@ -1123,6 +1175,11 @@
       "src": "images/2025/07/Website-front-page-8.jpg",
       "cap": "Website front page",
       "banner": true
+    },
+    {
+      "src": "images/2025/12/10.jpg",
+      "cap": "N&N 10",
+      "banner": true
     }
   ],
   "Blog Posts": [
@@ -1145,6 +1202,10 @@
     {
       "src": "images/2025/12/Shine-Like-The-Sun-.jpg",
       "cap": "Shine Like the Sun"
+    },
+    {
+      "src": "images/2026/02/Peter-and-the-Pipes-rotated-e1770559140566.jpg",
+      "cap": "Peter and the Pipes"
     }
   ],
   "Unidentified - Sort Me": [
@@ -1157,28 +1218,12 @@
       "cap": "? Unknown"
     },
     {
-      "src": "images/2021/12/image-5.jpeg",
-      "cap": "? Ganesha on property"
-    },
-    {
       "src": "images/2021/12/image-6.jpeg",
       "cap": "? Two yogis in poses"
     },
     {
       "src": "images/2021/12/image-7.jpeg",
       "cap": "? Yoga in BC setting"
-    },
-    {
-      "src": "images/2026/02/IMG_5787.jpeg",
-      "cap": "? Feb 2026 batch"
-    },
-    {
-      "src": "images/2026/02/IMG_5788.jpeg",
-      "cap": "? Feb 2026 batch"
-    },
-    {
-      "src": "images/2026/02/IMG_5789.jpeg",
-      "cap": "? Feb 2026 batch"
     },
     {
       "src": "images/2026/02/IMG_5790.jpeg",
@@ -1201,10 +1246,6 @@
       "cap": "? Feb 2026 batch"
     },
     {
-      "src": "images/2026/02/IMG_5795.jpeg",
-      "cap": "? Feb 2026 batch"
-    },
-    {
       "src": "images/2026/02/IMG_5796.jpeg",
       "cap": "? Feb 2026 batch"
     },
@@ -1213,36 +1254,8 @@
       "cap": "? Feb 2026 batch"
     },
     {
-      "src": "images/2022/12/dsc02974-e1682616124787.jpg",
-      "cap": "? From orchard"
-    },
-    {
-      "src": "images/2022/12/DSCF0250.jpg",
-      "cap": "? Yoga demo"
-    },
-    {
       "src": "images/2022/12/IMG_0189-e1672517272528.jpeg",
       "cap": "? SSCY entrance sign"
-    },
-    {
-      "src": "images/2023/07/3-e1688410439958.jpg",
-      "cap": "? Unknown"
-    },
-    {
-      "src": "images/2023/03/4-1-e1680209803976.jpg",
-      "cap": "? Unknown"
-    },
-    {
-      "src": "images/2025/03/10.jpg",
-      "cap": "? Mar 2025"
-    },
-    {
-      "src": "images/2025/11/websitee.jpg",
-      "cap": "? Nov 2025 website"
-    },
-    {
-      "src": "images/2025/11/website.jpg",
-      "cap": "? Nov 2025 website"
     },
     {
       "src": "images/2025/12/Personal-Retreat-Instagram-May-2022.jpg",
@@ -1263,6 +1276,10 @@
     {
       "src": "images/2025/02/4.jpg",
       "cap": "Wellness gallery 2"
+    },
+    {
+      "src": "images/2025/12/Personal-Retreat-Instagram-May-2022.jpg",
+      "cap": "Personal Retreat Instagram"
     }
   ],
   "Blog Library": [
@@ -11261,6 +11278,10 @@
     {
       "src": "posts/images/3c1fe4d4_46.jpg",
       "cap": "46"
+    },
+    {
+      "src": "images/2026/02/Lakshmi-at-Ganga-scaled.jpg",
+      "cap": "Lakshmi at Ganga"
     },
     {
       "src": "images/2026/02/Lakshmi-at-Ganga-scaled.jpg",
