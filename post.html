@@ -184,7 +184,12 @@ function loadPost() {
     fetch('posts/index.json')
       .then(function(r) { return r.json(); })
       .then(function(posts) {
-        var match = posts.find(function(p) { return p.slug === slug; });
+        var match = posts.find(function(p) {
+          if (p.slug === slug) return true;
+          try { if (decodeURIComponent(p.slug) === slug) return true; } catch (e) {}
+          try { if (p.slug === encodeURIComponent(slug)) return true; } catch (e) {}
+          return false;
+        });
         if (match) loadFile(match.file);
         else document.getElementById('postContent').innerHTML = '<div class="error-msg">Post not found. <a href="blog.html">Back to blog</a></div>';
       });
