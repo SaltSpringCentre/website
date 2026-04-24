@@ -321,9 +321,10 @@ p { text-align: justify; text-justify: inter-word; }
       bookHref = 'shop.html';
       bookLabel = 'Get Tickets in the Shop';
     } else {
-      // Retreats not on Retreat Guru route through Acuity
-      bookHref = 'https://app.acuityscheduling.com/schedule/5618a029/?category=Retreats';
-      bookLabel = 'Book This Retreat';
+      // Retreats without a specific bookUrl: send to Retreat Guru programs list
+      // (Acuity has no Retreats category; it falls through to wellness).
+      bookHref = 'https://saltspringcentre.secure.retreat.guru/program/';
+      bookLabel = 'Book on Retreat Guru';
     }
 
     var html = '<section class="event-hero">' +
