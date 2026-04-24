@@ -14,11 +14,11 @@ categories: ["Monthly Newsletter", "Monthly Update"]
 —Hafiz
 Hello everyone,
 Winter at the Centre has been fairly quiet, but life is beginning to pick up speed. February surprised us—as it does every year (so why are we surprised?)—with winter’s last hurrah in the form of snow (now melting). Meanwhile, the trees are budding and the daffodils are ready to burst into bloom.
-[caption id="attachment\_16657" align="aligncenter" width="600"][![](images/40b09bb7_Farm-buds.jpg)](images/40b09bb7_Farm-buds.jpg) Spring is on its way![/caption]
-[caption id="attachment\_16663" align="aligncenter" width="640"][![](images/40b09bb7_Sharada-swan.jpg)](images/40b09bb7_Sharada-swan.jpg) Sharada, the swan and the snow[/caption]
+[![](images/40b09bb7_Farm-buds.jpg)](images/40b09bb7_Farm-buds.jpg) Spring is on its way!
+[![](images/40b09bb7_Sharada-swan.jpg)](images/40b09bb7_Sharada-swan.jpg) Sharada, the swan and the snow
 In the program house, we’re cozy around the wood stove, and our wonderful kitchen team continues to feed us delicious, nourishing meals.
-[caption id="attachment\_16662" align="aligncenter" width="640"][![](images/40b09bb7_Racquel-in-the-office.jpg)](images/40b09bb7_Racquel-in-the-office.jpg) Racquel in the office[/caption]
-[caption id="attachment\_16661" align="aligncenter" width="640"][![](images/40b09bb7_KYs-Mariel-Muriel.jpg)](images/40b09bb7_KYs-Mariel-Muriel.jpg) Mariel and Muriel[/caption]
+[![](images/40b09bb7_Racquel-in-the-office.jpg)](images/40b09bb7_Racquel-in-the-office.jpg) Racquel in the office
+[![](images/40b09bb7_KYs-Mariel-Muriel.jpg)](images/40b09bb7_KYs-Mariel-Muriel.jpg) Mariel and Muriel
 **Shiva Ratri** was rich and focussed. Although somewhat smaller than last year, it was beautiful—and because this winter was warmer than last year, it wasn’t necessary to break the ice on the pond to walk into the pond with the offerings. Hara Hara Hara Mahadev!
 Wednesday evening **kirtan** and Sunday afternoon **satsang** continue. Anyone coming for satsang is welcome to arrive earlier (2:00 pm) for **Yoga Sutra study in the library**, led by Yogeshwar. Also, **full moon yajnas** take place every month. All these events are listed on the [calendar on our website](https://saltspringcentre.com/calendar/). Note also that satsang happens in Vancouver and Victoria as well (details below).
 All indications are that this is going to be a very busy year at the Centre, with lots of programs, rentals and personal retreat guests. As mentioned in a previous newsletter, we are beginning a new **[Residential Karma Yoga Program](https://saltspringcentre.com/karma-yoga-program/)** in April. Check it out!

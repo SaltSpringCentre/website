@@ -70,7 +70,7 @@ This festive soup is from Dan Jason’s “The Whole Organic Food Book”. A sub
 
 May your appetite be hearty, your pantry full to overflowing, and your heart attuned to sharing the abundance of this life.
 - Pratibha
-[caption id="attachment\_8434" align="alignleft" width="287"][![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen[/caption]
+[![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen
 **Pratibha Queen** is a yoga instructor and Ayurvedic practitioner, who attends Salt Spring Center of Yoga retreats on a regular basis. Feel free to email with any questions that arise as you engage in health practices to support your yoga practice: pratibha.que[at]gmail[dot]com.
 --
 Soup photo by [Joana Mendes](https://www.flickr.com/photos/joana_mendes/).

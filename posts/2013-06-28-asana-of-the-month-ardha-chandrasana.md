@@ -9,7 +9,7 @@ tags: ["Asana of the month"]
 
 ### Ardha Chandrasana (are-dah chan-DRAHS-anna) - Half Moon Pose Ardha = half; Chandra = shining (translated as "moon")
 
-[caption id="attachment\_7561" align="alignnone" width="576"][![Ashok in Ardha Chandrasana against a wall](images/1ef93726_Ashok-Asana.jpg)](images/1ef93726_Ashok-Asana.jpg) Ashok in Ardha Chandrasana against a wall[/caption]
+[![Ashok in Ardha Chandrasana against a wall](images/1ef93726_Ashok-Asana.jpg)](images/1ef93726_Ashok-Asana.jpg) Ashok in Ardha Chandrasana against a wall
 I like to add this pose in the middle of a sun salutation or on its own followed by downward dog (adho mukha svanasana) and cobra pose (bhujangasana). Include this standing pose in a morning practice as a reminder of life's abundance and ones own physical reawakening from winter season.
 **Benefits include**
 Balance, core, leg and buttock strength, stretches the spine, chest groin and hamstrings. Improves digestion.

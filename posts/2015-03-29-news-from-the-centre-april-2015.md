@@ -14,13 +14,13 @@ Although eastern Canada is still snowed in, it is officially spring. With apolog
 ### Program Season begins
 
 This month marks the beginning of our program season. The first [Yoga Getaway](https://saltspringcentre.com/retreats-programs/yogagetaways/) of the year toward the end of April is fully booked, but there are more coming, so check our [online schedule](https://saltspringcentre.com/calendar/).
-[caption id="attachment\_11311" align="aligncenter" width="574"][![Christine and Mark singing; Evening arati at the Hanuman temple](images/d3b3f475_KY-singing-arati.jpg)](images/d3b3f475_KY-singing-arati.jpg) Christine and Mark singing; Evening arati at the Hanuman temple[/caption]
+[![Christine and Mark singing; Evening arati at the Hanuman temple](images/d3b3f475_KY-singing-arati.jpg)](images/d3b3f475_KY-singing-arati.jpg) Christine and Mark singing; Evening arati at the Hanuman temple
 Ongoing events include Sunday satsang, Wednesday evening kirtan and daily chanting of the Hanuman Chalisa.
 
 ### New Beginnings
 
 April is a month of new beginnings in our community. Several people who were here last year are returning and new additions will arrive in the not too distant future, joining those of us who have been here through the winter season. Also we are delighted that Amaresh, with his years of experience and knowledge, is now coming to the Centre regularly to help in maintenance.
-[caption id="attachment\_11308" align="aligncenter" width="575"][![Karma  Yogis Tana and Tanner](images/d3b3f475_KYsTana-Tanner.jpg)](images/d3b3f475_KYsTana-Tanner.jpg) Karma Yogis Tana and Tanner[/caption]
+[![Karma  Yogis Tana and Tanner](images/d3b3f475_KYsTana-Tanner.jpg)](images/d3b3f475_KYsTana-Tanner.jpg) Karma Yogis Tana and Tanner
 
 ### Annual General Meeting 2015
 

@@ -17,7 +17,7 @@ Natasha (Jyoti) Samson’s November [Ayurveda and Yoga “I Want More from Life
 
 “In Ayurveda, there are two ways to manage excess energy – put it where it needs to go or ground it. In other words, channel and express, or pacify. With this retreat, I want to help people put it where it needs to go.”
 
-[caption id="attachment\_29373" align="alignnone" width="500"]![Natasha teaching breathwork](images/355ad9cc_Natasha-teaching-breathwork.jpg) *Natasha (Jyoti) Samson teaching Pranayama on her Youtube channel*[/caption]
+![Natasha teaching breathwork](images/355ad9cc_Natasha-teaching-breathwork.jpg) *Natasha (Jyoti) Samson teaching Pranayama on her Youtube channel*
 
 Over the past few years, Natasha has seen a number of clients who know they could be happier – who suspect there is more to life than they are currently experiencing – but who need a bit of guidance or inspiration to make those changes.
 
@@ -35,7 +35,7 @@ And while Natasha is happy to help people feel motivated, she notes that people 
 
 “There are so many people out there right now thinking, ‘There’s got to be more to life than this. I know I can be happier than this. I know that I can be healthier than this.’ Those are the people who will benefit most from this retreat.”
 
-[caption id="attachment\_29375" align="alignnone" width="357"]![Natasha and Chetna](images/355ad9cc_Natasha-and-Chetna-e1664402180968.jpg) *Feeling the bliss after teaching at the Salt Spring Centre of Yoga's 200 hour Yoga Teacher Training*[/caption]
+![Natasha and Chetna](images/355ad9cc_Natasha-and-Chetna-e1664402180968.jpg) *Feeling the bliss after teaching at the Salt Spring Centre of Yoga's 200 hour Yoga Teacher Training*
 
 She also recognizes that many people have already been trying different modalities – such as yoga or therapy or energy work – but they are still struggling to find a system that works for them.
 

@@ -9,9 +9,9 @@ tags: ["Kenzie Pattillo"]
 
 Greetings Friends.
 The Solstice has come and gone. Summer is fully upon us with its outward spiral of heat, light and life force. July may be whirling away, but we remain firmly tethered by our sadhana, as we circle around the Centre.
-[caption id="attachment\_13802" align="aligncenter" width="600"][![floral harvest](images/aba9cb0d_SSCY-July-Floral-Harvest.jpg)](images/aba9cb0d_SSCY-July-Floral-Harvest.jpg) Our land provides us with so many delicious things![/caption]
+[![floral harvest](images/aba9cb0d_SSCY-July-Floral-Harvest.jpg)](images/aba9cb0d_SSCY-July-Floral-Harvest.jpg) Our land provides us with so many delicious things!
 We welcomed our Yoga Service and Study Immersion (YSSI) participants into the community in June. We hosted five different programs and many private retreat guests, which offered myriad opportunities for the YSSI and KYs (residential karma yogis) to grow together in community through hard work. Sofi, our new kitchen lead, has joined us for the summer as well and we are still looking to fill the Programs Assistant [position](https://saltspringcentre.com/job…/opportunities-how-to-apply/) for the busy months ahead.
-[caption id="attachment\_13794" align="aligncenter" width="600"][![Harley in a cherry tree](images/aba9cb0d_JulyUpdate3.jpg)](images/aba9cb0d_JulyUpdate3.jpg) Harley in a cherry tree.[/caption]
+[![Harley in a cherry tree](images/aba9cb0d_JulyUpdate3.jpg)](images/aba9cb0d_JulyUpdate3.jpg) Harley in a cherry tree.
 We have begun holding Wednesday morning work parties to ensure that we are coming together to work on bigger to do list items. We are hoping to fix the fence line, as the deer are munching our kale and strawberries, and earlier in the month we cleared brush and prepped the firewood to dry for winter. We are working honestly, but we also play! The volleyball net continues to be well used, with usual games held at 5 p.m. daily when the weather cooperates.
 The weather has been co-operating! Milo continues to steward the land with reverence. He shares with us these words from the Farm:
 
@@ -23,9 +23,9 @@ The weather has been co-operating! Milo continues to steward the land with rever
 
 *Lots of harvesting on the horizon and fun to be had. Come play.*
 
-[caption id="attachment\_13795" align="aligncenter" width="600"][![Our board member and KY Julie Higginson blessed us with some of her bees!](images/aba9cb0d_JulyUpdate2.jpg)](images/aba9cb0d_JulyUpdate2.jpg) Our board member and KY Julie Higginson blessed us with some of her bees![/caption]
+[![Our board member and KY Julie Higginson blessed us with some of her bees!](images/aba9cb0d_JulyUpdate2.jpg)](images/aba9cb0d_JulyUpdate2.jpg) Our board member and KY Julie Higginson blessed us with some of her bees!
  
-[caption id="attachment\_13796" align="aligncenter" width="600"][![Carpenter Chris built the bees a top-bar hive.](images/aba9cb0d_JulyUpdate1.jpg)](images/aba9cb0d_JulyUpdate1.jpg) Carpenter Chris built the bees a top-bar hive.[/caption]
+[![Carpenter Chris built the bees a top-bar hive.](images/aba9cb0d_JulyUpdate1.jpg)](images/aba9cb0d_JulyUpdate1.jpg) Carpenter Chris built the bees a top-bar hive.
 Looking forward, July is full speed ahead with our 200 hour [Yoga Teacher Training](https://saltspringcentre.com/yoga-teacher-training/) beginning July 3rd. As the first half of the training wraps up mid-month, we will pause to celebrate Guru Purnima on July 19th, beginning at 8.30am in the Pond Dome. For those unfamiliar with this ancient Vedic ceremony (yajna), it is an opportunity to honour Babaji and all spiritual teachers, rededicating ourselves to all that the teachings inspire within us, to attain real peace.
 
 *Guru is your own Self which is projected onto a person who is more knowledgeable and capable of teaching. In the beginning an aspirant seeks support from outside, which is given by the teacher. But when the aspirant begins meditating honestly, his or her own Self is revealed as the Guru. Then the aspirant starts turning inward and finds the path, which is shown by the voice of the heart.*

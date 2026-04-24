@@ -7,7 +7,7 @@ categories: ["Monthly Newsletter", "Yoga Teacher Training", "YTT Grad"]
 tags: ["YTT Grad"]
 ---
 
-[caption id="attachment\_7919" align="alignright" width="250"][![YTT Grad, Bryan Hill](images/83d149b8_Bryan-Hill.jpg)](images/83d149b8_Bryan-Hill.jpg) YTT Grad, Bryan Hill[/caption]
+[![YTT Grad, Bryan Hill](images/83d149b8_Bryan-Hill.jpg)](images/83d149b8_Bryan-Hill.jpg) YTT Grad, Bryan Hill
 **What motivated you to begin practicing yoga? How did yoga come to be a part of your life?**
 I was supporting someone I loved to find a way to heal. He didn't care to return to the class but I just kept coming back. I think I really liked the way the class asked me to slow down, to let go of the hurry that I thought city life demanded.
 **What attracted you to the SSCY YTT program?**

@@ -6,7 +6,7 @@ author: "sysadmin_1a1xu9u1"
 categories: ["Monthly Newsletter", "Monthly Update"]
 ---
 
-[caption id="attachment\_13465" align="aligncenter" width="590"][![Mary in the garden](images/367a2d7c_Spring2016MotherMary.jpg)](images/367a2d7c_Spring2016MotherMary.jpg) Mary in the garden[/caption]
+[![Mary in the garden](images/367a2d7c_Spring2016MotherMary.jpg)](images/367a2d7c_Spring2016MotherMary.jpg) Mary in the garden
 > Yes – the springtimes needed you. Often a star was waiting for you to notice it.
 > A wave rolled toward you out of the distant past,
 > or as you walked under an open window, a violin yielded itself to your hearing.
@@ -16,7 +16,7 @@ categories: ["Monthly Newsletter", "Monthly Update"]
 Greetings friends.
 Every year spring comes round and feels like a miracle. By now spring’s seemingly (miraculous!) newfound fecundity might even be wearing off on you but it’s truly only just beginning. As April turns to May, here at the Centre our community, like our gardens and grounds, continue to grow and grow and grow!
 Milo shares with us again this month the happenings of the garden:
-[caption id="attachment\_13451" align="aligncenter" width="590"][![Scenes from the Spring garden. For more, click the image to visit Milo's Instagram account. ](images/367a2d7c_GardenSpring2016.jpg)](https://www.instagram.com/rainwalkdesign/) Scenes from the Spring garden. For more, click the image to visit Milo's Instagram account.[/caption]
+[![Scenes from the Spring garden. For more, click the image to visit Milo's Instagram account. ](images/367a2d7c_GardenSpring2016.jpg)](https://www.instagram.com/rainwalkdesign/) Scenes from the Spring garden. For more, click the image to visit Milo's Instagram account.
 > *"We're in a full sprint here as spring sings of summer and a sunny week allows our tractor to finally break ground.*
 > *The water-wise earthworks alluded to last month have shaped up nicely in the crop fields and our beds are now ready to harvest rainwater!*
 > *Donated seeds from Dan Jason fill the beds, pushing our "Power of the Pulses" project into action as peas and broad beans burst to life above damaged soils.*
@@ -30,7 +30,7 @@ Coming up on May 7th, Dharma Sara Satsang Society will be holding its Annual Gen
 The Salt Spring Centre School will be performing ‘[Time Lord](http://saltspringcentreschool.ca/time-lord-sscs-annual-whole-school-play/)’, directed by Kate Richer, teacher of the grade 4-5-6 class at the Centre School. This annual whole school play will be held at Mahon Hall May 27-29th.
 Our community grows significantly larger at the end of May when the [Yoga Service, Study Immersion](https://saltspringcentre.com/yoga-service-and-study/) (YSSI) begins. This twelve week residential program is just about full, so if you or someone you know is ready to dive deep into an authentic yoga lifestyle please get in touch soon.
 We are still accepting applications for our [200 hour Yoga Teacher Training](https://saltspringcentre.com/yoga-teacher-training) as well. This one month residential program takes place over two weeks in July and August. Our YTT is entering its 14th year and is taught by an outstanding faculty of 20 experienced teachers. For both aspiring yoga teachers and experienced yogis wishing to deepen their practice, this training offers a solid foundation in Classical Ashtanga yoga and Hatha yoga.
-[caption id="attachment\_13452" align="aligncenter" width="590"][![First gathering on 'The Mound'](images/367a2d7c_Spring2016-Mound.jpg)](https://www.instagram.com/saltspringcentre/) First gathering on 'The Mound' (Click the image to visit us on Instagram!)[/caption]
+[![First gathering on 'The Mound'](images/367a2d7c_Spring2016-Mound.jpg)](https://www.instagram.com/saltspringcentre/) First gathering on 'The Mound' (Click the image to visit us on Instagram!)
 Spring has finally allowed our first community check-in on ‘The Mound’. This cherished gathering spot at the heart of the Centre offers its own peaceful quality to our communions - both divine and seemingly mundane. Here are a few pictures from this first of many gatherings of hearts and minds on ‘The Mound’.
 Most full time residential karma yogis attended a first aid course and a fire safety course this month which are both annual occurrences. These courses offer important knowledge as we are a rural community with limited ambulances and fire services.
 Kitty, our new assistant garden coordinator, and her dog Mawa, have arrived! While writing this, we await the arrival of Chris Skleryk, our new Maintenance assistant as well. We have lots of beautification and renovations projects in line for him already!

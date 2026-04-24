@@ -7,7 +7,7 @@ categories: ["Inspiration &amp; Spiritual Teachings", "Karma Yoga", "Monthly New
 ---
 
 In answer to the prompts: *What work are you doing at the Centre? What are you working on within yourself?* and *What inspires you?*, here are a few reflections contributed by some of our karma yogis.
-[caption id="attachment\_9765" align="alignnone" width="550"][![Raven-Kris](images/c7154460_Raven-Kris.jpg)](images/c7154460_Raven-Kris.jpg) Raven Hume & Kris Cox[/caption]
+[![Raven-Kris](images/c7154460_Raven-Kris.jpg)](images/c7154460_Raven-Kris.jpg) Raven Hume & Kris Cox
 
 ## Raven
 
@@ -21,7 +21,7 @@ I coordinate the various programs we hold over the season, the rental groups tha
 I’m working on developing positive qualities - which sounds simple but is actually pretty challenging. I’m trying to let go of my own expectations of perfection, I’m working on the ability to let things go, and I’m trying to ask, “What is the kindest thing to do” (rather than what’s “right”) whenever I can.
 **What are you inspired by?**
 I am inspired by the love that people have in their hearts, and seeing people doing what brings them joy.
-[caption id="attachment\_9808" align="alignnone" width="550"][![Jeff Fisher & Tana Dalman](images/c7154460_Jeff-Tana.jpg)](images/c7154460_Jeff-Tana.jpg) Jeff Fisher & Tana Dalman[/caption]
+[![Jeff Fisher & Tana Dalman](images/c7154460_Jeff-Tana.jpg)](images/c7154460_Jeff-Tana.jpg) Jeff Fisher & Tana Dalman
 
 ## Jeff
 

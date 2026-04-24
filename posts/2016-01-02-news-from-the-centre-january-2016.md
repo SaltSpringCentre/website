@@ -8,8 +8,8 @@ categories: ["Monthly Newsletter", "Monthly Update"]
 
 Happy 2016, everyone - another new beginning, another opportunity to re-dedicate our lives to what matters most. So many major world events have happened in this past year, life continues to unfold, and here we are.
 Currently many people in our satsang family, including most of the Centre resident community, are at Mount Madonna Centre, our sister centre in California, to bring in the new year at the Annual New Year’s Retreat. On the third of January, the Centre office will reopen. Meanwhile, life is relatively quiet here. Winter solstice has passed, and slowly the days will lengthen and the light will return.
-[caption id="attachment\_12666" align="aligncenter" width="575"]![Cars packed, heading to the ferry on the way to Mount Madonna. Top row: Brendan, Kyle, Brandon, Raven, Blair. Bottom row: Marianne, Cailin, Tana](images/e41849fa_HeadingToMountMadonna.jpg) Cars packed, heading to the ferry on the way to Mount Madonna.  
- Top row: Brendan, Kyle, Brandon, Raven, Blair. Bottom row: Marianne, Cailin, Tana[/caption]
+![Cars packed, heading to the ferry on the way to Mount Madonna. Top row: Brendan, Kyle, Brandon, Raven, Blair. Bottom row: Marianne, Cailin, Tana](images/e41849fa_HeadingToMountMadonna.jpg) Cars packed, heading to the ferry on the way to Mount Madonna.  
+ Top row: Brendan, Kyle, Brandon, Raven, Blair. Bottom row: Marianne, Cailin, Tana
 Please keep checking our website for upcoming events and postings because it won’t be long before the Centre is in full swing and programs will resume. Satsang continues throughout the winter, so come sing with us!
 
 ### Donations for Sri Ram Ashram

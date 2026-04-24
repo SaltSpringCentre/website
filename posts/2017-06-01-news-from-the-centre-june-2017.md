@@ -7,7 +7,7 @@ categories: ["Monthly Newsletter", "Monthly Update"]
 ---
 
 Hello everyone, and happy summer to you. As I write this the sun is shining and the day is bright; the sky is very blue and the grass is very green. Everything is growing.
-[caption id="attachment\_14962" align="aligncenter" width="706"]![](images/a54c2c34_Swan-Lilacs.jpg) The swan by the front fountain (lilacs blooming in the background)[/caption]
+![](images/a54c2c34_Swan-Lilacs.jpg) The swan by the front fountain (lilacs blooming in the background)
 There is lots of exciting news to share in this time of growth.
 Mark Classen (aka Omprakash), the president of Dharma Sara Satsang Society, on behalf of the DS Board, is happy to share some exciting news with all of you.
 ![](images/a54c2c34_SSCY-Blog-decorative-divider.png)*In mid-April of this year, the Board of Dharma Sara Satsang Society formed a committee to find a new Centre Manager. We posted the position online, contacted satsang friends and eventually received about 25 applications. We found that it was difficult to find the diverse skills necessary to fulfill this demanding role. Eventually we chose two candidates with wonderful complementary skills and envisioned that they would work as a management team to guide the Centre in its operations. These two individuals were offered positions as co-managers and will be joining us during the month of June.*
@@ -15,25 +15,25 @@ Mark Classen (aka Omprakash), the president of Dharma Sara Satsang Society, on b
 *We are looking forward to their arrival at the Centre and a long and fruitful collaboration.*
 ![](images/a54c2c34_SSCY-Blog-decorative-divider.png)
 In addition, here is some news from the Dharma Sara Satsang Society’s AGM earlier in May. Following reports from all Dharma Sara departments, an election was held for the DS Board. We’re pleased to introduce this year’s Board members: president: Mark Classen; treasurer: Bhavani Chlopan, Amy Cousins, Natasha Samson, Meera Bennett, and Ben Poulton. Kirti White and Sean Crabtree are serving as board interns.
-[caption id="attachment\_14957" align="aligncenter" width="707"]![](images/a54c2c34_DivineMother1.jpg) Divine Mother kirtan[/caption]
+![](images/a54c2c34_DivineMother1.jpg) Divine Mother kirtan
 Here are some photos from the past month that didn’t make it into last month’s update, plus a few current ones. Divine Mother kirtan was held on Mother’s Day. In the garden on mother’s day, 500 strawberry plants were planted. There’s also been lots of grass mowing and raking.
-[caption id="attachment\_14958" align="aligncenter" width="707"]![](images/a54c2c34_Raking.jpg) Adam raking in the morning sun[/caption]
+![](images/a54c2c34_Raking.jpg) Adam raking in the morning sun
 This month is Father’s Day. Happy Father’s Day to all the dads! I hope all the dads are being cared for and loved. One dad spent a couple of weeks here with his not-quite-4 year old daughter - Sean (aka Shyam) and Penny. Penny won everyone’s hearts, and even ended up with a job in the office, involving paper and a stamp pad, working at her very own desk. She was very happy to have a real job!
-[caption id="attachment\_14959" align="aligncenter" width="620"]![](images/a54c2c34_Pennys-office.jpg) Penny at work in her office[/caption]
+![](images/a54c2c34_Pennys-office.jpg) Penny at work in her office
 Melinda and Laurel (known mostly as Lolo) arrived later. What a treat to have a couple of sweet little girls in the community for a while!
-[caption id="attachment\_14960" align="aligncenter" width="705"]![](images/a54c2c34_Penny-Laurel.jpg) Penny and Laurel having breakfast on the back deck[/caption]
+![](images/a54c2c34_Penny-Laurel.jpg) Penny and Laurel having breakfast on the back deck
 
 # Wonderful Community
 
 There is a wonderful community at the Centre, everyone bringing special gifts. Kaori, one of the lead cooks in the kitchen, led a sushi making party a couple of weeks ago - such fun!
-[caption id="attachment\_14961" align="aligncenter" width="710"]![](images/a54c2c34_Sushi-party.jpg) Community sushi making party[/caption]
+![](images/a54c2c34_Sushi-party.jpg) Community sushi making party
 Tyler of the maintenance department has completed the installation of several new windows in the program house, along with beautiful new trim. The new windows let in a lot of light, and Tyler himself brings light to whatever he does. The housekeeping team, led by Crystal (and soon to be joined by John) works quietly away in the background keeping everything orderly and beautiful. Others working in housekeeping include Tammy and Jess.
 There’s a new IT team working together (Jesse, Sean, Harreson) to streamline computer systems in the office. Jesse is currently developing a customized registration program for ACYR as phase one.
 Racquel is the newest member of the office team, being supported by Jules and Bri as they begin their transition out of the office and onto the farm.
 The kitchen team - Angelo, Svenja, Ian and Kaori (and others part time) - continue to keep us well fed and nourished with top quality, delicious meals. More and more is coming from the farm each day.
 The farm team, headed up by Milo, includes Adam, Shambhavi, Jules, Bri, and recently joined by Martin.
-[caption id="attachment\_14963" align="aligncenter" width="620"]![](images/a54c2c34_Basilsprouts.jpg) Getting ready to be planted![/caption]
-[caption id="attachment\_14964" align="aligncenter" width="620"]![](images/a54c2c34_Farmers.jpg) The tomato planting team[/caption]
+![](images/a54c2c34_Basilsprouts.jpg) Getting ready to be planted!
+![](images/a54c2c34_Farmers.jpg) The tomato planting team
 Here’s Milo’s monthly farm update.
 > *Well someone hit the ON switch for Summer!*
 >  *The farm is swooning as we pick up our pace and sunscreen our face.*

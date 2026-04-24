@@ -52,4 +52,4 @@ Register now:<https://saltspringcentre.secure.retreat.guru/program/nature-and-nu
 
 Written by Christie Roome
 
-[vcex\_divider color="#dddddd" width="100%" height="1px" margin\_top="20" margin\_bottom="20"]
+

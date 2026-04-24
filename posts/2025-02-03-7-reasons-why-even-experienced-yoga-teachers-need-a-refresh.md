@@ -40,6 +40,6 @@ If you’re seeking a truly authentic refresh, the [Yoga Intensive Program](http
 **Bonus Point:** For those registered with the Yoga Alliance, the program is also eligible for [YACEP (Yoga Alliance Continuing Education Provider)](https://yogaalliance.org/yacep-overview/) hours, making it a meaningful investment in your personal and professional growth.
 Learning doesn’t stop at certification; it’s a lifelong journey that enriches not only your life but also the lives of your students.
 We hope you will join us and continue your Yoga journey on the sacred land of the Salt Spring Centre of Yoga!
-[vcex\_divider color="#dddddd" width="100%" height="1px" margin\_top="20" margin\_bottom="20"]
+
 
 #### **[By Chetna Tracy Boyd](https://saltspringcentre.com/sscy_team/chetna-tracy-boyd/)[Tracy (Chetna) Boyd](https://saltspringcentre.com/sscy_team/chetna-tracy-boyd/)***E-RYT 500; C-IAYT, YTT 200*

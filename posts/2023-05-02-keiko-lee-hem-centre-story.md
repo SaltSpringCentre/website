@@ -20,21 +20,21 @@ It’s interesting that “doing yoga” didn’t show up in that list. Certainl
 
 ---
 
-[caption id="attachment\_30816" align="alignleft" width="500"]![Centre and flowers](images/a6ace04d_Keiko-flowers-at-the-Centre-at-dusk.jpg) The dahlias that year![/caption]
-[caption id="attachment\_30813" align="alignleft" width="225"]![Salads in the dining room](images/a6ace04d_Keiko-dinner.jpg) Beautiful food with flowers on top![/caption]
+![Centre and flowers](images/a6ace04d_Keiko-flowers-at-the-Centre-at-dusk.jpg) The dahlias that year!
+![Salads in the dining room](images/a6ace04d_Keiko-dinner.jpg) Beautiful food with flowers on top!
  
  
-[caption id="attachment\_30815" align="alignleft" width="504"]![Keiko in the flower garden](images/a6ace04d_Keiko-flower-garden.jpg) Picking flowers for making flower arrangements[/caption]
-[caption id="attachment\_30821" align="alignleft" width="263"]![Keiko - Dinner in the Satsang Room](images/a6ace04d_Keiko-mealtime-at-the-Centre.jpg) Pausing to feel gratitude and pour collective love into the meal before digging in. Om![/caption]
+![Keiko in the flower garden](images/a6ace04d_Keiko-flower-garden.jpg) Picking flowers for making flower arrangements
+![Keiko - Dinner in the Satsang Room](images/a6ace04d_Keiko-mealtime-at-the-Centre.jpg) Pausing to feel gratitude and pour collective love into the meal before digging in. Om!
  
  
  
  
  
-[caption id="attachment\_30820" align="alignleft" width="400"]![Dinner in the Satsang room](images/a6ace04d_Keiko-meal-in-the-Satsang-room.jpg) Dinner in the Satsang room[/caption]
-[caption id="attachment\_30817" align="alignleft" width="400"]![Keiko in a Centre cabin. A visit from Smokey](images/a6ace04d_Keiko-in-cabin-with-cat.jpg) A visit from Smokey the resident cat[/caption]
-[caption id="attachment\_30814" align="alignleft" width="400"]![Keiko - elders photo](images/a6ace04d_Keiko-elders-photo.jpg) Elders and friends - Kalyani, Sharada, Lakshmi, Shankar and Indica[/caption]
-[caption id="attachment\_30818" align="alignleft" width="400"]![Keiko in the Centre kitchen](images/a6ace04d_Keiko-in-the-Centre-kitchen.jpg) Mixing up large batches of muffins for guests[/caption]
+![Dinner in the Satsang room](images/a6ace04d_Keiko-meal-in-the-Satsang-room.jpg) Dinner in the Satsang room
+![Keiko in a Centre cabin. A visit from Smokey](images/a6ace04d_Keiko-in-cabin-with-cat.jpg) A visit from Smokey the resident cat
+![Keiko - elders photo](images/a6ace04d_Keiko-elders-photo.jpg) Elders and friends - Kalyani, Sharada, Lakshmi, Shankar and Indica
+![Keiko in the Centre kitchen](images/a6ace04d_Keiko-in-the-Centre-kitchen.jpg) Mixing up large batches of muffins for guests
 
 ---
 
@@ -49,7 +49,7 @@ What my photo collection doesn’t show is the internal turmoil I experienced. I
 My month-long engagement at the Centre became 8 months, as I became one of the over-winter yogis, staying cozy in the Sage house with sweet KY roomies, Vidya and Jonah.
 The length of my stay meant there was time to work on a more in depth project that put my skills in marketing and graphic design to good use in a wonderfully fulfilling way, thoroughly auditing the Centre’s existing visual presence on the property, in the community and online. From there I refined their existing brand and expanded it to be warm, inviting and – most satisfyingly – cohesive. I then designed a full collection of posters, signs, guest binders, brochures, booklets, email newsletter and more, which were all rolled out to my great satisfaction and pride.
 In 2009 I was still a fairly new graphic designer, so looking back I’m amazed at the confidence the Centre leaders and management placed in me to guide their visual presence to the extent that I did. I am so thankful to Shankar, Indica, Danie and Margaret, my office family.
-[caption id="attachment\_30811" align="alignnone" width="499"]![Keiko's designs for Centre brochures](images/a6ace04d_Keiko-Centre-brochures.jpg) Some of the promotional material I designed for the Centre (2009)[/caption]
+![Keiko's designs for Centre brochures](images/a6ace04d_Keiko-Centre-brochures.jpg) Some of the promotional material I designed for the Centre (2009)
 
 ---
 
@@ -62,7 +62,7 @@ Now in my 40’s, I have been channeling energy into my own personal passions �
 
 ---
 
-[caption id="attachment\_30819" align="alignleft" width="980"]![Keiko's story - Lanterns](images/a6ace04d_Keiko-lanterns-on-beach.jpg) Displaying the lanterns we made for the local lantern festival, an initiative I led through Earth and Gleaners Society’s Nelson chapter (2023) ​​[/caption]
+![Keiko's story - Lanterns](images/a6ace04d_Keiko-lanterns-on-beach.jpg) Displaying the lanterns we made for the local lantern festival, an initiative I led through Earth and Gleaners Society’s Nelson chapter (2023) ​​
 
 ---
 
@@ -70,10 +70,10 @@ And I’m still a graphic designer, running an independent design studio, Keiko 
 
 ---
 
-[caption id="attachment\_30826" align="alignleft" width="400"]![Keiko's story - greenhouse](images/a6ace04d_Keikos-story-greenhouse.jpg) Our late summer garden in her glory (2022)[/caption]
-[caption id="attachment\_30825" align="alignleft" width="401"]![Keiko in garden](images/a6ace04d_Keiko-in-flowers.jpg) Harvesting some broccoli for dinner (2022)[/caption]
-[caption id="attachment\_30824" align="alignleft" width="500"]![Keiko - video screenshot](images/a6ace04d_Keiko-screenshot-of-gardening.jpg) Video still from a [cooking video](https://www.youtube.com/playlist?list=PLh6oOIQgnwnuYuiLoLEUj9u0tewL8Uiwe) I created for our local food bank’s food skills program (2022)[/caption]
-[caption id="attachment\_30822" align="alignleft" width="240"]![Keiko - harvesting onions](images/a6ace04d_Keiko-onions.jpg) Harvesting onions with pride, a kitchen staple (2022)[/caption]
+![Keiko's story - greenhouse](images/a6ace04d_Keikos-story-greenhouse.jpg) Our late summer garden in her glory (2022)
+![Keiko in garden](images/a6ace04d_Keiko-in-flowers.jpg) Harvesting some broccoli for dinner (2022)
+![Keiko - video screenshot](images/a6ace04d_Keiko-screenshot-of-gardening.jpg) Video still from a [cooking video](https://www.youtube.com/playlist?list=PLh6oOIQgnwnuYuiLoLEUj9u0tewL8Uiwe) I created for our local food bank’s food skills program (2022)
+![Keiko - harvesting onions](images/a6ace04d_Keiko-onions.jpg) Harvesting onions with pride, a kitchen staple (2022)
 
 ---
 

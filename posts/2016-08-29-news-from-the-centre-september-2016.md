@@ -6,22 +6,22 @@ author: "sysadmin_1a1xu9u1"
 categories: ["Monthly Newsletter", "Monthly Update"]
 ---
 
-[caption id="attachment\_13981" align="aligncenter" width="600"][![Ganesh with rainbows (photo by Gawain Jones)](images/141695f0_ganesh-with-rainbows.jpg)](images/141695f0_ganesh-with-rainbows.jpg) Ganesh with rainbows (photo by Gawain Jones)[/caption]
+[![Ganesh with rainbows (photo by Gawain Jones)](images/141695f0_ganesh-with-rainbows.jpg)](images/141695f0_ganesh-with-rainbows.jpg) Ganesh with rainbows (photo by Gawain Jones)
 Hello everyone,
 What a full wonder-filled summer! So much happens at the Centre in the summer months: the Yoga Service and Study program, Yoga Teacher training and the Annual Community Yoga Retreat - and many, many wonderful, inspiring people.
-[caption id="attachment\_13983" align="aligncenter" width="600"][![Summer community](images/141695f0_summer-community-2016.jpg)](images/141695f0_summer-community-2016.jpg) Our wonderful summer community[/caption]
+[![Summer community](images/141695f0_summer-community-2016.jpg)](images/141695f0_summer-community-2016.jpg) Our wonderful summer community
 This year’s retreat reminded me of retreats of years ago, largely because there were so many children. It was like a throwback to the days when those of us who are now the elders came to retreats with our kids - and now those kids come with their little ones. The kids’ program and special kid-friendly dinners adds support to the sense of community.
-[caption id="attachment\_13987" align="aligncenter" width="600"][![ACYR-Meal-Circle](images/141695f0_ACYR-Meal-Circle.jpg)](images/141695f0_ACYR-Meal-Circle.jpg) ACYR meal circle (photo by Ella Cooper)[/caption]
-[caption id="attachment\_13974" align="aligncenter" width="600"][![Little monkeys](images/141695f0_2016_ACYR_ramayanalittle-monkeys-onstage-1340.jpeg)](images/141695f0_2016_ACYR_ramayanalittle-monkeys-onstage-1340.jpeg) Little monkeys (photo by Rebecca Dadson)[/caption]
+[![ACYR-Meal-Circle](images/141695f0_ACYR-Meal-Circle.jpg)](images/141695f0_ACYR-Meal-Circle.jpg) ACYR meal circle (photo by Ella Cooper)
+[![Little monkeys](images/141695f0_2016_ACYR_ramayanalittle-monkeys-onstage-1340.jpeg)](images/141695f0_2016_ACYR_ramayanalittle-monkeys-onstage-1340.jpeg) Little monkeys (photo by Rebecca Dadson)
 Several of the kids got to take part in the now-annual Ramayana, as little monkeys. There were so many inspiring classes and programs offered! In addition to the sadhana and asana classes, there was fabulous kirtan, dancing with Imaginelle, Hanuman Olympics, and the 3rd annual Ramayana production (a video of which will be posted on the Centre’s website shortly). Take note: the reference to Ram’s Golden Fava Bean is a reference to the huge abundance of fava beans from the farm that appeared in many of the meals.
-[caption id="attachment\_13975" align="aligncenter" width="600"][![Kirtan on the mound (photo by Gawain Jones)](images/141695f0_2016_ACYR_kirtan-on-the-mound-Raven-harmonium-1103.jpeg)](images/141695f0_2016_ACYR_kirtan-on-the-mound-Raven-harmonium-1103.jpeg) Kirtan on the mound (photo by Rebecca Dadson)[/caption]
+[![Kirtan on the mound (photo by Gawain Jones)](images/141695f0_2016_ACYR_kirtan-on-the-mound-Raven-harmonium-1103.jpeg)](images/141695f0_2016_ACYR_kirtan-on-the-mound-Raven-harmonium-1103.jpeg) Kirtan on the mound (photo by Rebecca Dadson)
 
 # Milo's Garden Update
 
 Here’s Milo’s monthly report on what’s happening in the garden.
-[caption id="attachment\_13985" align="aligncenter" width="600"][![curving rows of fava beans](images/141695f0_rows-of-fava-beans.jpg)](images/141695f0_rows-of-fava-beans.jpg) Curving rows (upon rows) of fava beans (photo by Gawain Jones)[/caption]
-[caption id="attachment\_13978" align="aligncenter" width="600"][![Summer abundance](images/141695f0_Garden-Summer-2016.jpg)](images/141695f0_Garden-Summer-2016.jpg) Summer abundance[/caption]
-[caption id="attachment\_13982" align="aligncenter" width="600"][![Working on the farm](images/141695f0_working-on-the-farm-2016.jpg)](images/141695f0_working-on-the-farm-2016.jpg) Working on the farm[/caption]
+[![curving rows of fava beans](images/141695f0_rows-of-fava-beans.jpg)](images/141695f0_rows-of-fava-beans.jpg) Curving rows (upon rows) of fava beans (photo by Gawain Jones)
+[![Summer abundance](images/141695f0_Garden-Summer-2016.jpg)](images/141695f0_Garden-Summer-2016.jpg) Summer abundance
+[![Working on the farm](images/141695f0_working-on-the-farm-2016.jpg)](images/141695f0_working-on-the-farm-2016.jpg) Working on the farm
 Harvest dance is in full swing this month as we do our darndest to keep up with tomatoes, bush beans, zucchini and the ever relentless cucumbers.
 ...Keep your ears perked for pickling and processing parties on the horizon.
 The apples are falling freely and a rumour has been circulating amongst the mighty maples that Fall is near...
@@ -32,7 +32,7 @@ Abundance abounds. See you next time round.
 # Congratulations to the new teachers!
 
 A group of 24 students graduated from this year’s YTT graduated in mid August, taught and supported by an amazing group of experienced teachers who practice what they teach. Congratulations to the new teachers!
-[caption id="attachment\_13986" align="aligncenter" width="600"][![Congratulations to this year's group of YTT Graduates!](images/141695f0_YTT-Grads-2016.jpg)](images/141695f0_YTT-Grads-2016.jpg) Congratulations to this year's group of YTT Graduates![/caption]
+[![Congratulations to this year's group of YTT Graduates!](images/141695f0_YTT-Grads-2016.jpg)](images/141695f0_YTT-Grads-2016.jpg) Congratulations to this year's group of YTT Graduates!
 
 # Comings and goings at the Centre
 

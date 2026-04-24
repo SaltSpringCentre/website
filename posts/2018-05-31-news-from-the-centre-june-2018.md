@@ -8,28 +8,28 @@ categories: ["Monthly Newsletter", "Monthly Update"]
 
 Hello everyone,
 Although summer doesn’t officially begin till June 21 - summer solstice, the longest day of the year - it’s been feeling like summer for quite a while. Very few people eat indoors on these warm, sunny days, light-filled days. We hope this isn’t the beginning of a long, very dry summer, but meanwhile we’re loving it.
-[caption id="attachment\_17105" align="aligncenter" width="640"][![](images/f866f3c5_P1020984.jpg)](images/f866f3c5_P1020984.jpg) Adam, Crystal, Mariel, Sorriso[/caption]
-[caption id="attachment\_17106" align="aligncenter" width="640"][![](images/f866f3c5_P1020978-1.jpg)](images/f866f3c5_P1020978-1.jpg) Marta and Dan on the farm[/caption]
+[![](images/f866f3c5_P1020984.jpg)](images/f866f3c5_P1020984.jpg) Adam, Crystal, Mariel, Sorriso
+[![](images/f866f3c5_P1020978-1.jpg)](images/f866f3c5_P1020978-1.jpg) Marta and Dan on the farm
 We welcome a new group of karma yogis to the June-September session of the Residential Karma Yoga Program, adding to the ever-changing face of the centre community. At the same time, some have left and others will be leaving. Milo and Jules (and, of course, Avo) have moved off-land, and Sorriso will be moving off-land soon. Marta has moved back to Calgary (not too far for occasional visits) and Kaori will be flying back to Japan. Japan is a lot further away. Come back when you can, Kaori!
 Dan, co-coordinator of the farm, is taking over the monthly farm update from Milo, and here is his June update:
 
 ## Dan's Farm Update
 
 It's hard to believe how quickly we've moved into the heart of the growing season here at the yoga centre. We've been harvesting dozens of pounds of greens and radishes weekly throughout May for our kitchen and for weekend guests. Meanwhile, the first round of lettuce and spinach that we planted in the hoophouse has already been replaced by cherry tomatoes and basil.
-[caption id="attachment\_17107" align="aligncenter" width="640"][![](images/f866f3c5_20180524_193545-e1527707116713.jpg)](images/f866f3c5_20180524_193545-e1527707014308.jpg) This is rice, to be transplanted into the rice paddies in June.[/caption]
+[![](images/f866f3c5_20180524_193545-e1527707116713.jpg)](images/f866f3c5_20180524_193545-e1527707014308.jpg) This is rice, to be transplanted into the rice paddies in June.
 The hoophouse is also the temporary home of 3 varieties of rice that Milo seeded. It is the hottest spot on the land right now and ideal for the very warm temperatures that rice requires during its initial germination and vegetative stages. The next phase of the rice-growing pilot project will occur in early June when these seedlings will be moved into the rice paddy to be transplanted. If all goes well, the Centre's kitchen could be cooking with locally grown rice for the first time in its history. Here's hoping for a little more rain before summer to help keep our rice paddy flooded. And some late-breaking news—by the time this newsletter gets circulated, we will have completed the season's first harvest of snow peas.
-[caption id="attachment\_17108" align="aligncenter" width="576"][![](images/f866f3c5_20180524_171133-e1527707028469.jpg)](images/f866f3c5_20180524_171133-e1527707191698.jpg) snow peas![/caption]
+[![](images/f866f3c5_20180524_171133-e1527707028469.jpg)](images/f866f3c5_20180524_171133-e1527707191698.jpg) snow peas!
 In gratitude,
 Daniel Naccarato
 
 ## Dharma Sara AGM
 
-[caption id="attachment\_17119" align="aligncenter" width="640"][![](images/f866f3c5_DS-Board-2018.jpg)](images/f866f3c5_DS-Board-2018.jpg) Board members - Om PK, Bhavani, Meera, Sid and Sean[/caption]
+[![](images/f866f3c5_DS-Board-2018.jpg)](images/f866f3c5_DS-Board-2018.jpg) Board members - Om PK, Bhavani, Meera, Sid and Sean
 On the weekend of May 11-13, we held Dharma Sara Satsang Society’s AGM weekend, filled with sadhana and asana classes, work parties, delicious meals, and of course the meeting itself. There were numerous reports about all areas at the centre as well as Vancouver and Victoria, and of course the election to the Board of Directors: Mark Classen as president, Sid Filkow as treasurer, Meera Bennett, Bhavani Chlopan and Sean Crabtree as members at large. In addition there will be three board interns: Regina Pfeifer, Eduardo Sousa, and Bruce Hayes.
 
 ## Divine Mother!
 
-[caption id="attachment\_17111" align="aligncenter" width="570"][![](images/f866f3c5_DivineMother2.jpg)](images/f866f3c5_DivineMother2.jpg) Celebrating the Divine Mother[/caption]
+[![](images/f866f3c5_DivineMother2.jpg)](images/f866f3c5_DivineMother2.jpg) Celebrating the Divine Mother
 [![](images/f866f3c5_DivineMother1.jpg)](images/f866f3c5_DivineMother1.jpg) The AGM weekend was followed by a heartwarming Mothers’ Day celebration, honouring the divine feminine, at our annual Divine Mother Celebration. There were about 80 people singing the praises of the Mother, in all her forms.
 
 ## Coming Up

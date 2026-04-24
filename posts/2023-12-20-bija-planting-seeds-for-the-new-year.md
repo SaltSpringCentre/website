@@ -23,7 +23,7 @@ We spoke with Farah about her plans for this year's [BIJA retreat](https://farah
 
 ![Farah Nazarali](images/8046524c_farah-meditation-e1670278392908.jpeg)
 
-#### [vcex\_spacing size="20px"]
+#### 
 
 ### Q&A with Farah Nazarali
 
@@ -37,7 +37,7 @@ What is unique about this [**Retreat**](https://farahnazarali.com/bija-online-yo
 
 A typical day looks like this: a morning yoga video, in the afternoon, an optional podcast, journalling, or a workshop, and ending the day with either a Yoga for Sleep class, Yoga Nidra, or a Yin Yoga class 
 
-[vcex\_spacing size="30px"]
+
 
 #### ***How does an online retreat work?***
 
@@ -47,7 +47,7 @@ Since I am no stranger to "Zoom fatigue", I created an on-line retreat that requ
 
 The retreat also includes a golden mylk mix as well as delicious daily recipes? Food is such an integral part of the retreat experience and with a meal kit, students have the opportunity to cook a delicious, nourishing meal for themselves.
 
-[vcex\_spacing size="30px"]
+
 
 #### ***You mention that everything we do and say impacts our subconscious. How can yoga help with negative patterns we wish to change?***
 
@@ -57,7 +57,7 @@ As Baba Hari Dass, says, “If you work on your yoga, your yoga will work on you
 
 Yoga is more than physical postures, it is a holistic system of awakening consciousness. When consciousness awakens, we can shift our perception, change long-standing behaviours that don’t serve us and most importantly, we awaken to love and Divine Grace. Our lives become more purposeful and oriented towards serving others and in being in “right relationship” with Mother Nature.
 
-[vcex\_spacing size="30px"]
+
 
 #### ***You are very generously donating the proceeds of this retreat to the Salt Spring Centre of Yoga. Can you tell us about what prompted this beautiful gift***
 
@@ -67,7 +67,7 @@ All wisdom traditions know that the secret to living abundantly is sharing and g
 
 My karmic experiments over the years have proven over and over again that sharing and generosity are the best ways to ensure prosperity for all. Clinging and grasping to our money and possessions is rooted in scarcity. One of the Gurus from my Lineage says, “the goddess Lakshmi doesn’t like to be captured”. The true purpose of prosperity is sharing and the dharma of wealth is to provide for others.
 
-[vcex\_spacing size="30px"]
+
 
 #### ***What are some things that retreat participants can expect to take away from this experience?***
 
@@ -77,7 +77,7 @@ In yoga, ethical living is not an ideology or dogma, it is offered as a science 
 
 [br]
 
-[vcex\_divider\_dots color="#64979c" margin\_top="10" margin\_bottom="10"]
+
 
 [br]
 
@@ -91,9 +91,9 @@ To register, visit [**https://farahnazarali.com/bija-online-yoga-retreat/**](htt
 
 [br]
 
-[vcex\_divider\_dots color="#64979c" margin\_top="10" margin\_bottom="10"]
 
-[vcex\_spacing size="30px"]
+
+
 
 ### About Your Host
 
@@ -101,4 +101,4 @@ Farah is an inspirational yoga teacher, podcast host, and advocate of yogic prac
 
 Learn more about Farah at: [**www.farahnazarali.com**](http://www.farahnazarali.com/)
 
-[embed]https://www.youtube.com/watch?v=Bx0IBCbqdQc[/embed]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Bx0IBCbqdQc" frameborder="0" allowfullscreen></iframe>

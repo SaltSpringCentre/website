@@ -30,7 +30,7 @@ Wishing all a happy, healthy and peaceful year ahead.
 Jai Babaji!! Jai Satsang!!
 Anuradha
 
-[vcex\_divider\_dots color="#63979D" margin\_top="10" margin\_bottom="10"]
+
 
 #### Mahesh ♡ In our heart always
 
@@ -66,4 +66,4 @@ Eternal, and together now!!  
 
 OMMMMMMMMM Shantih Shantih Shantih!!
 
-[vcex\_divider\_dots color="#63979D" margin\_top="10" margin\_bottom="10"]
+

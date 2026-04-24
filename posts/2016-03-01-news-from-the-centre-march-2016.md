@@ -9,9 +9,9 @@ tags: ["Sharada's update"]
 
 Hello everyone,
 Spring! It’s March, the month that marks the official beginning of spring and the change back to daylight saving time. It is also the time of daffodils, nettles, budding trees, spring planting, Easter, and spring break for schools.
-[caption id="attachment\_13227" align="aligncenter" width="575"]![Nettles. A sure sign of spring!](images/e0c8b89f_Nettles.jpg) Nettles. A sure sign of spring![/caption]
-[caption id="attachment\_13228" align="aligncenter" width="575"]![OmPK, Julie, Rajani, Paramita](images/e0c8b89f_IMG_20160207_130755.jpg) OmPK, Julie, Rajani, Paramita[/caption]
-[caption id="attachment\_13229" align="aligncenter" width="574"]![Rajani, Natasha and Blair](images/e0c8b89f_KYs-March2016.jpg) Rajani, Natasha and Blair[/caption]
+![Nettles. A sure sign of spring!](images/e0c8b89f_Nettles.jpg) Nettles. A sure sign of spring!
+![OmPK, Julie, Rajani, Paramita](images/e0c8b89f_IMG_20160207_130755.jpg) OmPK, Julie, Rajani, Paramita
+![Rajani, Natasha and Blair](images/e0c8b89f_KYs-March2016.jpg) Rajani, Natasha and Blair
 
 ## New and Upcoming Programs
 

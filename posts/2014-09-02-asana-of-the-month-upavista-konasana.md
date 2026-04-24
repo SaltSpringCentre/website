@@ -9,7 +9,7 @@ tags: ["Peter Ashok Baragon"]
 
 ### Upavista Konasana Wide Angle Seated Forward Fold
 
-[caption id="attachment\_10310" align="alignnone" width="550"]![Upavista Konasana](images/a54db7a9_Upavista-Konasana2.jpg) Upavista Konasana[/caption]
+![Upavista Konasana](images/a54db7a9_Upavista-Konasana2.jpg) Upavista Konasana
 I love forward bends! We know forward folds relax and calm the mind and body, and this pose is no exception.
 This asana creates the openness to really let go and decompress from a stressful day. A nice restorative variation is to assume the pose against a wall, think of it's as a "Wide-Legged Viparita Karani."
 **Benefits**
@@ -31,7 +31,7 @@ Cobra/Bhujangasana
 **Props help deepening the pose with ease**
 [![Upavista Konasana1](images/a54db7a9_Upavista-Konasana1.jpg)](images/a54db7a9_Upavista-Konasana1.jpg)
 [![Upavista Konasana3](images/a54db7a9_Upavista-Konasana3.jpg)](images/a54db7a9_Upavista-Konasana3.jpg)
-[caption id="attachment\_10308" align="alignnone" width="640"][![Upavista Konasana with props](images/a54db7a9_Upavista-Konasana4.jpg)](images/a54db7a9_Upavista-Konasana4.jpg) Upavista Konasana with props[/caption]
+[![Upavista Konasana with props](images/a54db7a9_Upavista-Konasana4.jpg)](images/a54db7a9_Upavista-Konasana4.jpg) Upavista Konasana with props
 If you can't bend forward without rounding your back, use a chair to rest your arms on to, gradually getting lower with other props like a bolster, blocks.
 If your knees don't straighten, and slight bend forward at the hips is awkward for you, then try placing a rolled towel or yoga mat under your knees.
 Using the breath is important in getting in and out of the pose... follow each breath, notice the body and your sensations. Enjoy!

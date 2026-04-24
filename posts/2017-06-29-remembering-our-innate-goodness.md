@@ -6,7 +6,7 @@ author: "sysadmin_1a1xu9u1"
 categories: ["Inspiration &amp; Spiritual Teachings", "Monthly Newsletter"]
 ---
 
-[caption id="attachment\_7576" align="aligncenter" width="640"]![](images/81ed3841_Babaji.jpg) Baba Hari Dass[/caption]
+![](images/81ed3841_Babaji.jpg) Baba Hari Dass
 We came into this world pure. If you spend time with any newborn baby, you can see they live only in the present moment. A baby may cry when she has physical discomfort - hunger, wet diaper, etc - but she makes no judgements about the world, such as, “Bad mommy. Why isn’t she here yet?” There are no stories.
 By the time children are two and a half, their sense of individual ego (the sense of being the centre of the universe) has made its presence known. That’s when words like “no!” and “mine!” start showing up. These sweet children have begun to see themselves as separate from others, with a worldview that has shifted to: I want what I want (now!) and I don’t want that!
 It happens to all of us. Over time, the accumulated layers of experience cover our innate purity and goodness. That purity still exists, but we lose sight of it and start thinking that our individual thoughts and stories are who we are.

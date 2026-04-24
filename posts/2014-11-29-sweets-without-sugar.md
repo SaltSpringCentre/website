@@ -91,7 +91,7 @@ Vanilla to taste
 **Directions:**
 Process together almonds, flax, coconut into a course meal. Add the rest of ingredients. Press the mixture into a 9” by 13” pan (or 8” by 8” if you want it thicker). Refrigerate to firm the mixture. (Optional: Melt some dark chocolate, smooth over top and chill once again.) Cut into bars and enjoy!
 Please remember that even with natural sweets, the guiding principle is moderation. Have enough to satisfy and share the rest with others! And make sure the other five tastes receive their rightful place in your balanced diet. Bon appétit!
-[caption id="attachment\_8434" align="alignleft" width="287"][![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen[/caption]
+[![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen
 **Pratibha Queen** is a yoga instructor and Ayurvedic practitioner, who attends Salt Spring Center of Yoga retreats on a regular basis. Feel free to email with any questions that arise as you engage in health practices to support your yoga practice: pratibha.que[at]gmail[dot]com.
 --
 Cocoa powder image by [Jayca](https://www.flickr.com/photos/cart_wheels/7749611568)

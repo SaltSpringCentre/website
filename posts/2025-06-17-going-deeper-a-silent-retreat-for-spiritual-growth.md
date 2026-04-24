@@ -45,7 +45,7 @@ That said, Going Deeper is a very accessible silent retreat, and less demanding 
 ### Learn more and join us
 
 Would you like to learn more about the **Going Deeper Silent Retreat**? 👉 [Click here to explore further and join us](https://saltspringcentre.com/programs-retreats/going-deeper-silent-retreat/) from November 19-23, 2025, for this transformative journey into stillness and spiritual growth.
-[vcex\_divider color="#dddddd" width="100%" height="1px" margin\_top="20" margin\_bottom="20"]
+
 
 #### Yogeshwar Will HumphreyBy Yogeshwar Will Humphrey
 

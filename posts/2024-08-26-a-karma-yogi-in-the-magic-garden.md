@@ -23,7 +23,7 @@ tags: ["community", "farm", "karma yoga"]
 
 *Daniela*
 
-[vcex\_divider color="#dddddd" width="100%" height="1px" margin\_top="20" margin\_bottom="20"]
+
 
 *![](images/6d422248_Profile-picture-website-1.jpg)*Daniela has been a Karma Yogi at the Salt Spring Centre of Yoga primarily working on the farm since April 2024. When she’s not volunteering, Daniela is usually making music with her meditation band [Days of Lavender](https://www.daysoflavender.com/), doing back country camping, or biking around Vancouver where she works as a community builder and organizational coach.
 

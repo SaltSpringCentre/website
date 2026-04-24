@@ -7,7 +7,7 @@ categories: ["Inspiration &amp; Spiritual Teachings", "Monthly Newsletter"]
 tags: ["Cristina Goia"]
 ---
 
-[caption id="attachment\_9514" align="alignnone" width="655"][![Regeneration](images/3ecf6378_regeneration1.jpg)](images/3ecf6378_regeneration1.jpg) Regeneration by Christina Goia[/caption]
+[![Regeneration](images/3ecf6378_regeneration1.jpg)](images/3ecf6378_regeneration1.jpg) Regeneration by Christina Goia
 The forest trail at the SS Centre of Yoga has always been a magical place for me. Many of us, the karma yogis, enjoyed it often when I was there, in 2010.
 At the time I had a fascination with this one particular tree and looked for it each time on the trail. It has a powerful root, growing from what seemed to have been a "previous incarnation", in fact a first-growth one. It was "speaking to me" really, only not in words.
 When time allowed it, I used drawing to study the tree and slowly distill its message: "Aspirations cut short can have a second chance. Regeneration and growth are the natural way."
@@ -18,4 +18,4 @@ The magic of the forest continues to work on me, the old serving as fertile grou
 
 ### About the Artist, Cristina Goia
 
-[caption id="attachment\_9513" align="alignleft" width="214"][![The Artist, Cristina Goia](images/3ecf6378_CristinaGoia.jpg)](images/3ecf6378_CristinaGoia.jpg) The Artist, Cristina Goia[/caption]Originally from Eastern Europe, Cristina was working as a statistician in Toronto when the imperative need to draw changed her life. She studied drawing at the Academy of Realist Art in Toronto, oil painting on her own and more recently under the guidance of Cary Ennis on Salt Spring Island. She came to the Salt Spring Centre of Yoga in 2010, to experience karma yoga, living closer to nature and life in community. She continues to live on Salt Spring Island, where she paints, draws or at least looks for eligible subjects most of the time. [www.cristinagoia.com](http://cristinagoia.com/)
+[![The Artist, Cristina Goia](images/3ecf6378_CristinaGoia.jpg)](images/3ecf6378_CristinaGoia.jpg) The Artist, Cristina GoiaOriginally from Eastern Europe, Cristina was working as a statistician in Toronto when the imperative need to draw changed her life. She studied drawing at the Academy of Realist Art in Toronto, oil painting on her own and more recently under the guidance of Cary Ennis on Salt Spring Island. She came to the Salt Spring Centre of Yoga in 2010, to experience karma yoga, living closer to nature and life in community. She continues to live on Salt Spring Island, where she paints, draws or at least looks for eligible subjects most of the time. [www.cristinagoia.com](http://cristinagoia.com/)

@@ -7,7 +7,7 @@ categories: ["Inspiration &amp; Spiritual Teachings", "Karma Yoga", "Monthly New
 tags: ["Babaji", "teachings"]
 ---
 
-[caption id="attachment\_7576" align="alignright" width="300"][![Baba Hari Dass](images/81ed3841_Babaji.jpg)](images/81ed3841_Babaji.jpg) Baba Hari Dass[/caption]
+[![Baba Hari Dass](images/81ed3841_Babaji.jpg)](images/81ed3841_Babaji.jpg) Baba Hari Dass
 As mentioned in this month’s Centre update, the subject of community is in the air. In the many years since Dharma Sara Satsang Society began forming as a community, we have learned a lot about what makes a community work and what doesn’t - often the hard way - and we continue learning. As the elders grow older and ponder questions of succession, we welcome continuing dialogue.
 Those of us who’ve been around for many years - and who “grew up” with Babaji, having been in our twenties and thirties in those early years - had a different experience from those who have arrived since, yet the foundation is the same. Recent arrivals still hold the aim of karma yoga, selfless service. The goal for the elders is to keep the foundation strong while listening with open hearts and embracing the ideals and ideas others bring. Babaji’s oft-quoted teaching -Work honestly, meditate every day, meet people without fear and play - continues to guide us.
 Here are a few things Babaji has said about community:

@@ -14,10 +14,10 @@ categories: ["Monthly Newsletter", "Monthly Update"]
 
 Hello everyone,
 Summer at the centre is a busy time, with a growing residential community and programs in full swing. What have community members been doing? Here’s a brief update.
-[caption id="attachment\_17206" align="aligncenter" width="600"]![](images/6d653af7_summer-flowers.jpg) summer blooms![/caption]
-[caption id="attachment\_17202" align="aligncenter" width="600"]![](images/6d653af7_KY-Birthday.jpg) Celebrating Jesse's birthday at the beach![/caption]
-[caption id="attachment\_17201" align="aligncenter" width="600"]![](images/6d653af7_cherries.jpg) Fresh picked cherries![/caption]
-[caption id="attachment\_17203" align="aligncenter" width="600"]![](images/6d653af7_KY-Dan-Mariel-Muriel.jpg) Dan, Mariel and Muriel lunching on the back deck[/caption]
+![](images/6d653af7_summer-flowers.jpg) summer blooms!
+![](images/6d653af7_KY-Birthday.jpg) Celebrating Jesse's birthday at the beach!
+![](images/6d653af7_cherries.jpg) Fresh picked cherries!
+![](images/6d653af7_KY-Dan-Mariel-Muriel.jpg) Dan, Mariel and Muriel lunching on the back deck
 
 ## Goings & comings
 
@@ -38,8 +38,8 @@ In preparing for ACYR, we’ve discovered that some of our yoga props (bolsters,
 
 ## News from farm
 
-[caption id="attachment\_17209" align="aligncenter" width="600"]![](images/6d653af7_sunflowers.jpg) sunflowers standing tall![/caption]
-[caption id="attachment\_17205" align="aligncenter" width="600"]![](images/6d653af7_rice.jpg) Rice growing - its a pretty big deal![/caption]
+![](images/6d653af7_sunflowers.jpg) sunflowers standing tall!
+![](images/6d653af7_rice.jpg) Rice growing - its a pretty big deal!
 The farm is in major production mode. The greens are amazing, and there’s more coming. Here’s Dan’s farm update.
 > After a cool and grey start to the month, our hot crops—tomatoes, cucumbers, squash and eggplant—are at last getting the sunshine they need to begin flourishing in the greenhouses. Our cherry tomato varieties are starting to flower, and I’ve even spotted the first few tiny fruit appearing on the vines. We’ve planted nine different tomato varieties in all, and the pruning parade has begun on three of them.
 > The farm team has doubled in the past couple of weeks thanks to the arrival of a new round of karma yogis who are proving just as eager and capable as my original crew. We continue to haul in dozens of pounds of salad greens, snow peas and beets every week, but the highlight of our last few harvests has been the bounty of cherries we’ve been collecting from the orchard. Although the robins and waxwings have started flocking to the trees in recent days, there seem to be enough cherries to go around.

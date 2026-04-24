@@ -7,7 +7,7 @@ categories: ["Inspiration &amp; Spiritual Teachings", "Monthly Newsletter"]
 tags: ["Babaji", "teachings"]
 ---
 
-[caption id="attachment\_7580" align="alignright" width="356"][![Babaji](images/81ed3841_Babaji5.jpg)](images/81ed3841_Babaji5.jpg) Babaji[/caption]
+[![Babaji](images/81ed3841_Babaji5.jpg)](images/81ed3841_Babaji5.jpg) Babaji
 Babaji has written, “Accepting the present is happiness.” Although we may understand this on some level, some of the time, very often we want things to be different from how they are right now. If it’s unpleasant, we want it to stop or go away; if it’s pleasant, we want more of it or we hold on tight for fear of losing it.
 Recently I came across a wonderful story shared by Tara Brach, an American Buddhist teacher and author of the book, “Radical Acceptance”, that illustrates beautifully how we create difficulties for ourselves by not accepting situations as they are.
 This story took place a number of decades ago when the English had colonized India and decided to build a golf course in Calcutta. Apart from the fact that the English didn’t belong in India to begin with, the golf course was not a particularly good idea. The biggest challenge was that the area was populated by monkeys.

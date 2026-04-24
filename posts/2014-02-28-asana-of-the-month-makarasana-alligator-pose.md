@@ -9,6 +9,6 @@ categories: ["Asana", "Monthly Newsletter"]
 ### Makarasana (Alligator Pose)
 
 This pose makes the spine flexible, strengthening the digestive system, abdomen, backside and legs.
-[caption id="attachment\_9392" align="alignnone" width="600"][![Alligator-Pose-Omkard](images/0ecfafe6_Alligator-Pose-Omkard.jpg)](images/0ecfafe6_Alligator-Pose-Omkard.jpg) Recently, Harv has embraced a new lifestyle - yoga to calm his mind, and a diet of non-gmo, zero trans fat, locally grown, organic vegetarians.[/caption]
+[![Alligator-Pose-Omkard](images/0ecfafe6_Alligator-Pose-Omkard.jpg)](images/0ecfafe6_Alligator-Pose-Omkard.jpg) Recently, Harv has embraced a new lifestyle - yoga to calm his mind, and a diet of non-gmo, zero trans fat, locally grown, organic vegetarians.
 
 Alligator Pose card by Andrea Kalpana Tabachnick, YTT coordinator, senior teacher and artist.

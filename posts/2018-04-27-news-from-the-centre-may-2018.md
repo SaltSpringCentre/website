@@ -9,10 +9,10 @@ categories: ["Announcements"]
 > "Love everyone, including yourself. That is real sadhana."~ Baba Hari Dass
 
 Hello everyone, Warmer weather has returned! After a mostly rainy April, everyone is happy to see the sun again.
-[caption id="attachment\_16857" align="aligncenter" width="640"]![The creek is flowing nicely!](images/5b43df60_view-from-Francines-tent.jpg) The creek is flowing nicely![/caption]
+![The creek is flowing nicely!](images/5b43df60_view-from-Francines-tent.jpg) The creek is flowing nicely!
 The Residential Karma Yoga program is well underway. The first session began on April 1 and ends on June 10. There is still room in the next session that runs from [June 13 to August 24](https://saltspringcentre.com/karma-yoga-parogram/).
-[caption id="attachment\_16897" align="aligncenter" width="640"]![Lakshmi and Racquel](images/5b43df60_P1020956.jpg) Lakshmi and Racquel enjoying the sun[/caption]
-[caption id="attachment\_16858" align="aligncenter" width="640"]![Time to eat outside again!](images/5b43df60_FullSizeRender.jpg) Time to eat outside again![/caption]
+![Lakshmi and Racquel](images/5b43df60_P1020956.jpg) Lakshmi and Racquel enjoying the sun
+![Time to eat outside again!](images/5b43df60_FullSizeRender.jpg) Time to eat outside again!
 Those in the program are enjoying it fully: from work assignments to classes, from the delicious meals to being part of the community. [>>> Learn More](https://saltspringcentre.com/karma-yoga-program/)
 Programs and Rentals are in full swing, with most weekends booked, etc. Planning is currently underway for this summer’s ACYR, the 44th consecutive, annual community yoga retreat, with many, many classes offered plus a program for children.  More information will be posted on the website soon, with details about this year’s schedule and pricing.
 Also coming up this summer is our 200 hour Yoga Teacher Training. This YTT is unlike many others in that it is taught by a faculty of about 20 experienced teachers, and is an immersive residential program. It runs over two sessions, July and August , allowing for time to absorb and integrate the teachings between sessions.

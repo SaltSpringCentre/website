@@ -8,9 +8,9 @@ categories: ["Monthly Newsletter", "Monthly Update"]
 
 Hello everyone,
 Although there are still some chilly early mornings, spring is in full bloom on Salt Spring, with trees and flowers blossoming.
-[caption id="attachment\_13321" align="aligncenter" width="590"][![Springtime at the Centre](images/e0c8b89f_Spring-Mound-House.jpg)](images/e0c8b89f_Spring-Mound-House.jpg) Springtime at the Centre[/caption]
+[![Springtime at the Centre](images/e0c8b89f_Spring-Mound-House.jpg)](images/e0c8b89f_Spring-Mound-House.jpg) Springtime at the Centre
 Our residential community is also blooming. Some people who have arrived over the past few months include Shawn (programs), Amy (YSSI), Jules (office), Bri (operations), Harley (maintenance), Milo (garden), with Kitty arriving shortly to join Milo in the garden.
-[caption id="attachment\_13324" align="aligncenter" width="590"][![Lettuce plants in the greenhouse.](images/e0c8b89f_SpringSaladGreenhouse.jpg)](images/e0c8b89f_SpringSaladGreenhouse.jpg) Lettuce plants in the greenhouse.[/caption]
+[![Lettuce plants in the greenhouse.](images/e0c8b89f_SpringSaladGreenhouse.jpg)](images/e0c8b89f_SpringSaladGreenhouse.jpg) Lettuce plants in the greenhouse.
 Here’s a lovely farm update provided by Milo:
 > Spring is peeking out from the frost curtain and our freshly pruned orchard is budding with life.
 > The greenhouse is packed to the gills with eager seedlings, and construction has begun on a monster worm bin that will be processing all of our kitchen scraps.
@@ -18,7 +18,7 @@ Here’s a lovely farm update provided by Milo:
 > A beautiful tractor has joined the family here at the Centre, inspiring wonderfully drastic shifts in our crop field layout towards the natural contours of the land, allowing us to pacify rainwater into a tool for fertility and away from its erosive potential.
 > Woohoo!
 
-[caption id="attachment\_13323" align="aligncenter" width="590"][![off to work - David, Milo, SN, Raven](images/e0c8b89f_KYsGoingToWork.jpg)](images/e0c8b89f_KYsGoingToWork.jpg) Off to work - David, Milo, SN, Raven[/caption]
+[![off to work - David, Milo, SN, Raven](images/e0c8b89f_KYsGoingToWork.jpg)](images/e0c8b89f_KYsGoingToWork.jpg) Off to work - David, Milo, SN, Raven
 Soon we will be bidding farewell to David and to Tana, who will be heading off on new adventures. David has played a very important role on the farm over the past few years, coordinating planting, weeding, harvesting, and all the other work that goes into growing food - not to mention all the other things he’s done here, from cooking meals and washing dishes to snowshoeing paths when the snow was deep a couple of winters ago - a kind-hearted and hard working man! Tana has also been here for a few years, coordinating landscaping (mowing, pruning, keeping everything beautiful) along with many other tasks - cooking, doing dishes (dishes being the universal constant), cleaning, pouring her heart into whatever she does - and singing! We wish both of them well and send them off with love - and hope it won’t be too long before we see them again.
 
 ## New Look for our e-Newsletter
@@ -32,7 +32,7 @@ We now have a second kirtan album! - Shiva Kirtan, recorded at last summer’s A
 
 ## A Wonderful Ayurveda Cleanse Weekend
 
-[caption id="attachment\_13320" align="aligncenter" width="590"][![ Dr. Manjiri Nadkarni in the kitchen](images/e0c8b89f_AyurvedaCleanseWeekend.jpg)](images/e0c8b89f_AyurvedaCleanseWeekend.jpg) Dr. Manjiri Nadkarni in the kitchen[/caption]
+[![ Dr. Manjiri Nadkarni in the kitchen](images/e0c8b89f_AyurvedaCleanseWeekend.jpg)](images/e0c8b89f_AyurvedaCleanseWeekend.jpg) Dr. Manjiri Nadkarni in the kitchen
 We began our program season last month with the Ayurveda Cleanse weekend, an excellent program led by Dr. Manjiri Nadkarni - with so much immediately applicable information! Everyone who attended was inspired - and we also got to enjoy delicious Ayurvedic meals. We are planning to bring Manjiri back for another workshop soon with more Ayurveda programs following. Watch for it on our website.
 
 ## Now Accepting Applications

@@ -7,7 +7,7 @@ categories: ["Inspiration &amp; Spiritual Teachings", "Monthly Newsletter"]
 tags: ["article", "Dalai Lama", "self-discovery", "teachings"]
 ---
 
-[caption id="attachment\_5296" align="alignright" width="268"][![](images/e0d4dbaf_dalai-lama-article.jpg)](images/e0d4dbaf_dalai-lama-article.jpg) Tenzin Gyatso, the 14th Dalai Lama[/caption]
+[![](images/e0d4dbaf_dalai-lama-article.jpg)](images/e0d4dbaf_dalai-lama-article.jpg) Tenzin Gyatso, the 14th Dalai Lama
 By TENZIN GYATSO
 WHEN I was a boy in Tibet, I felt that my own Buddhist religion must be the best — and that other faiths were somehow inferior. Now I see how naïve I was, and how dangerous the extremes of religious intolerance can be today.
 Though intolerance may be as old as religion itself, we still see vigorous signs of its virulence. In Europe, there are intense debates about newcomers wearing veils or wanting to erect minarets and episodes of violence against Muslim immigrants. Radical atheists issue blanket condemnations of those who hold to religious beliefs. In the Middle East, the flames of war are fanned by hatred of those who adhere to a different faith.

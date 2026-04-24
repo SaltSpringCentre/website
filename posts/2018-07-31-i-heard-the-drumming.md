@@ -42,7 +42,7 @@ roller blades, ice skates
 two feet
 & I walk
 inside the deepest parts reveal what we have always known
-[caption id="attachment\_17331" align="aligncenter" width="600"][![](images/a7dad9c5_angelo-bambino-angelo.jpg)](images/a7dad9c5_angelo-bambino-angelo.jpg) bambino angelo[/caption]
+[![](images/a7dad9c5_angelo-bambino-angelo.jpg)](images/a7dad9c5_angelo-bambino-angelo.jpg) bambino angelo
 & so it was for me, as a child, a deep knowing
 for such a young human still close to the other world
 in which I came
@@ -137,7 +137,7 @@ the becoming
 the need to prove, achieve, acquire
 the need to prove something
 beyond the pure beauty of this true self
-[caption id="attachment\_17333" align="aligncenter" width="616"][![](images/a7dad9c5_angelo-in-awe-of-mama-ocean-big-sur-california-.jpg)](images/a7dad9c5_angelo-in-awe-of-mama-ocean-big-sur-california-.jpg) in awe of mama ocean big sur california[/caption]
+[![](images/a7dad9c5_angelo-in-awe-of-mama-ocean-big-sur-california-.jpg)](images/a7dad9c5_angelo-in-awe-of-mama-ocean-big-sur-california-.jpg) in awe of mama ocean big sur california
 pure awareness lost in a sea of noise
 & the horizon, that far off place
 out there held some promise
@@ -259,7 +259,7 @@ to engage in what Masanobu Fukuoka speaks:
 “the ultimate goal of farming is not the cultivation of crops,
 but the cultivation & perfection of the human being.”
 Amen brother!
-[caption id="attachment\_17332" align="aligncenter" width="600"][![](images/a7dad9c5_angelo-beautiful-family-in-nasik-india-2011.jpg)](images/a7dad9c5_angelo-beautiful-family-in-nasik-india-2011.jpg) beautiful family in nasik india 2011[/caption]
+[![](images/a7dad9c5_angelo-beautiful-family-in-nasik-india-2011.jpg)](images/a7dad9c5_angelo-beautiful-family-in-nasik-india-2011.jpg) beautiful family in nasik india 2011
 I
 traveled
 served
@@ -277,7 +277,7 @@ by foot
 then
 & then
 Joshua Tree
-[caption id="attachment\_17334" align="aligncenter" width="600"][![](images/a7dad9c5_angelo-joshua-tree-2012.jpg)](images/a7dad9c5_angelo-joshua-tree-2012.jpg) joshua tree[/caption]
+[![](images/a7dad9c5_angelo-joshua-tree-2012.jpg)](images/a7dad9c5_angelo-joshua-tree-2012.jpg) joshua tree
 it was there in stripped down
 pure vast desert land I met White Feather
 & he whispered in my ear
@@ -332,7 +332,7 @@ a fountain
 a pond, a lake, a maple tree, a circle of smiling souls
 a drum, a flute & her voice calling me in
 as human man spirit yogi farmer cook poet lover friend brother mentor…..
-[caption id="attachment\_17335" align="aligncenter" width="600"][![](images/a7dad9c5_angelo-ramayana-2016.jpg)](images/a7dad9c5_angelo-ramayana-2016.jpg) ramayana 2016[/caption]
+[![](images/a7dad9c5_angelo-ramayana-2016.jpg)](images/a7dad9c5_angelo-ramayana-2016.jpg) ramayana 2016
 & all the other roles taken on and shed
 only to take on and shed again
 RS, RS, RS
@@ -352,7 +352,7 @@ I know
 & so I go
 back in
 to that place that I never left
-[caption id="attachment\_17336" align="aligncenter" width="600"][![](images/a7dad9c5_angelo-sscy-winter-cabin-2017.jpg)](images/a7dad9c5_angelo-sscy-winter-cabin-2017.jpg) sscy winter cabin 2017[/caption]
+[![](images/a7dad9c5_angelo-sscy-winter-cabin-2017.jpg)](images/a7dad9c5_angelo-sscy-winter-cabin-2017.jpg) sscy winter cabin 2017
 & so came the dive into
 Yoga Teacher Training
 Deeper teachings
@@ -362,7 +362,7 @@ full of teachings
 lessons
 never ending
 always beginning
-[caption id="attachment\_17337" align="aligncenter" width="600"][![](images/a7dad9c5_angelo-YTT2017.jpg)](images/a7dad9c5_angelo-YTT2017.jpg) YTT 2017[/caption]
+[![](images/a7dad9c5_angelo-YTT2017.jpg)](images/a7dad9c5_angelo-YTT2017.jpg) YTT 2017
 serve the food
 Let go
 Be kind

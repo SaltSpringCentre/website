@@ -6,10 +6,10 @@ author: "sysadmin_1a1xu9u1"
 categories: ["Monthly Newsletter", "Monthly Update"]
 ---
 
-[caption id="attachment\_14735" align="aligncenter" width="640"][![](images/b02f246e_SSCY-MistyMoring.jpg)](images/b02f246e_SSCY-MistyMoring.jpg) A misty morning at the Centre[/caption]
+[![](images/b02f246e_SSCY-MistyMoring.jpg)](images/b02f246e_SSCY-MistyMoring.jpg) A misty morning at the Centre
 Hello everyone and happy spring. The snow finally all melted sometime in early March - or maybe it was mid- March - and spring began - nettles, blossoms, new growth. The days are long and much warmer than they were a month ago.
 The Centre’s program season began in March with the first Yoga Getaway of the year, with Anila and Brant teaching the yoga classes. It was wonderful to welcome guests back to the Centre. [Yoga Getaways](https://saltspringcentre.com/retreats-programs/yogagetaways/) continue through the program season, the next one being April 28 - 30. Our resident community is still small, but little by little more people will be joining us.
-[caption id="attachment\_14737" align="aligncenter" width="480"][![](images/b02f246e_Jesse-and-Bri.jpg)](images/b02f246e_Jesse-and-Bri.jpg) Jesse and Bri[/caption]
+[![](images/b02f246e_Jesse-and-Bri.jpg)](images/b02f246e_Jesse-and-Bri.jpg) Jesse and Bri
 Registration for our [200 hour Yoga Teacher Training](https://saltspringcentre.com/yoga-teacher-training/) is still open. This residential YTT program in the heart of Salt Spring Island is rooted in the teachings of Classical Ashtanga Yoga and Hatha Yoga.
 I invite you to read more about this wonderful program [here](https://saltspringcentre.com/yoga-teacher-training/). There is also a Facebook page called [Yoga Teacher Training at the Salt Spring Centre](https://www.facebook.com/saltspringcentreYTT/).
 The [Salt Spring Centre School](http://saltspringcentreschool.ca/) teachers and students have now returned after spring break. It’s so uplifting to hear the kids’ voices again! They will soon begin rehearsals for this year’s whole school play, held every year in May. Early registrations for next year’s school year indicate that the classes will be quite full next year.

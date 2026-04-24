@@ -9,17 +9,17 @@ tags: ["Sharada's update"]
 
 Hello everyone,
 I hope you are all enjoying these last few days of summer. Lovely as all the sunshine is, we’re looking forward to a bit of rain. In fact, as I write this just before the end of August, the rains have arrived! We may get tired of it after a while, but right now it’s a blessing.
-[caption id="attachment\_12057" align="aligncenter" width="575"][![the maple tree on the mound](images/08bce744_MapleTree-2015-1024x768.jpg)](images/08bce744_MapleTree-2015.jpg) the maple tree on the mound[/caption]
-[caption id="attachment\_12058" align="aligncenter" width="575"][![marigolds in the garden](images/08bce744_SSCY-garden2015-1024x768.jpg)](images/08bce744_SSCY-garden2015.jpg) marigolds in the garden[/caption]
-[caption id="attachment\_12056" align="aligncenter" width="575"][![at the pond](images/08bce744_The-Pond-2015-1024x768.jpg)](images/08bce744_The-Pond-2015.jpg) at the pond[/caption]
+[![the maple tree on the mound](images/08bce744_MapleTree-2015-1024x768.jpg)](images/08bce744_MapleTree-2015.jpg) the maple tree on the mound
+[![marigolds in the garden](images/08bce744_SSCY-garden2015-1024x768.jpg)](images/08bce744_SSCY-garden2015.jpg) marigolds in the garden
+[![at the pond](images/08bce744_The-Pond-2015-1024x768.jpg)](images/08bce744_The-Pond-2015.jpg) at the pond
 It has been a very busy summer at the Centre, filled with many wonderful people and events. We are pleased to introduce a new group of recently graduated yoga teachers.
-[caption id="attachment\_12059" align="aligncenter" width="575"][![YTT grads 2015](images/08bce744_YTT-grads-2015-1024x1024.jpg)](images/08bce744_YTT-grads-2015.jpg) YTT grads 2015[/caption]
+[![YTT grads 2015](images/08bce744_YTT-grads-2015-1024x1024.jpg)](images/08bce744_YTT-grads-2015.jpg) YTT grads 2015
 One morning just before the last day, students and teachers alike were surprised by the sudden appearance of prop circles in the satsang room - yes, prop circles, not crop circles. There was lots of speculation about how that might have happened - forest gnomes perhaps? We did eventually discover the creative genius behind the sudden appearance, but I’m not giving away the secret.
-[caption id="attachment\_12078" align="aligncenter" width="575"][![Prop circles!](images/08bce744_prop-circles.jpg)](images/08bce744_prop-circles.jpg) Prop circles![/caption]
+[![Prop circles!](images/08bce744_prop-circles.jpg)](images/08bce744_prop-circles.jpg) Prop circles!
 Following YTT the movie, “Awake”, the story of Paramahansa Yogananda’s life, was shown at the Centre. Many people came, and the satsang room was packed! The movie came to us as a gift from two of our wonderful karma yogis, Tony and Donna. As the evening began, Tony played the harmonium and sang a Yogananda song, followed by Raven doing arati to Ganesh. Then came the movie, complete with popcorn.
 At this writing, near the end of August, several karma yogis are about to move on to their next adventures. What a creative and loving group of people! Happily a few are staying on through the fall.
-[caption id="attachment\_12055" align="aligncenter" width="575"][![karma yogis](images/08bce744_KYs-2015.jpg)](images/08bce744_KYs-2015.jpg) Hamsa, Madelaine, Marianne, Alannah, Brandon cuddling on the back deck[/caption]
-[caption id="attachment\_12080" align="aligncenter" width="575"][![Karma Yogis](images/08bce744_KYs-mealprep-2015.jpg)](images/08bce744_KYs-mealprep-2015.jpg) Meal prep: Raven, Matt, Myriam, Tana[/caption]
+[![karma yogis](images/08bce744_KYs-2015.jpg)](images/08bce744_KYs-2015.jpg) Hamsa, Madelaine, Marianne, Alannah, Brandon cuddling on the back deck
+[![Karma Yogis](images/08bce744_KYs-mealprep-2015.jpg)](images/08bce744_KYs-mealprep-2015.jpg) Meal prep: Raven, Matt, Myriam, Tana
 
 ## Upcoming Yoga Workshops
 

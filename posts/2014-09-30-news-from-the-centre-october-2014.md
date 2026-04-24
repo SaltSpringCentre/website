@@ -8,9 +8,9 @@ tags: ["Sharada's update"]
 ---
 
 Hello everyone,
-[caption id="attachment\_10460" align="alignnone" width="575"]![Fall's long shadows on the fountain](images/a54db7a9_Fountain-inthefall.jpg) Autumn's long shadows on the fountain[/caption]
+![Fall's long shadows on the fountain](images/a54db7a9_Fountain-inthefall.jpg) Autumn's long shadows on the fountain
 Autumn, the “season of mists and mellow fruitfulness” (from ‘Ode to Autumn’ by John Keats) has arrived in its gentle beauty. This is the month of Canadian Thanksgiving, a time for all of us to join in gratitude for what we have been given: the guidance of our teacher, Baba Hari Dass, the gift of this community of yogis, the sharing of our many forms of spiritual practice, the abundance of organic food. We continue to feast on zucchini and other squash, tomatoes, cucumbers, peppers, eggplant, carrots, beets, chard and other greens, apples and pears. To top this off, the trees along the driveway have again produced an abundance of walnuts.
-[caption id="attachment\_10458" align="alignnone" width="575"]![Fresh, organic produce](images/a54db7a9_Fresh-veggies.jpg) Fresh, organic produce[/caption]
+![Fresh, organic produce](images/a54db7a9_Fresh-veggies.jpg) Fresh, organic produce
 
 ### Farewell to Kris!
 
@@ -22,7 +22,7 @@ Congratulations to Mamata Kreisler and Kris Gomez on their recent wedding. Mamat
 
 ### Rosh Hashanah at the Centre School
 
-[caption id="attachment\_10457" align="alignnone" width="575"]![Lining up for apples and honey in celebration of Rosh Hashanah](images/a54db7a9_RoshHashanah2014.jpg) Lining up for apples and honey in celebration of Rosh Hashanah[/caption]
+![Lining up for apples and honey in celebration of Rosh Hashanah](images/a54db7a9_RoshHashanah2014.jpg) Lining up for apples and honey in celebration of Rosh Hashanah
 In late September Sharada again had the pleasure of celebrating Rosh Hashanah, the Jewish New Year with the children at the Salt Spring Centre School. It is a time to review our lives, our habits, and recommit to living by our values and developing positive qualities. And it’s a time to dip apples in honey and wish each other a sweet year.
 Also in late September, the community here had an opportunity to do a day-long First Aid workshop. Everyone who participated in the full program received a First Aid and CPR certificate.
 

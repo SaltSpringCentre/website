@@ -30,4 +30,4 @@ About the Artist
 Ishwarya Chaitanya is a professional Bharatanatyam artist whose journey in this ancient South Indian dance tradition spans continents and decades. She began her training with Guru Sri Jai Govinda in Vancouver, BC, completing her Arangetram under his guidance in 2001. Ishwarya went on to refine her artistry under Guru B. Bhanumati and Guru Sheela Chandrasekhar in Bangalore, performing extensively across India with their renowned troupe, Bharatanjali.
 Her academic and artistic dedication continued with a Master’s degree in Bharatanatyam from Sastra University, where she studied under the legendary Dr. Padma Subrahmanyam. Ishwarya is also a student of Smt. Lalgudi Rajalakshmi in Carnatic vocal music, bringing a rich depth of rhythm and expression to her performances.
 
-[vcex\_divider color="#dddddd" width="100%" height="1px" margin\_top="20" margin\_bottom="20"]
+

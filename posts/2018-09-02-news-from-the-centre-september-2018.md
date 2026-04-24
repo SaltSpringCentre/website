@@ -12,17 +12,17 @@ categories: ["Monthly Newsletter", "Monthly Update"]
 Hello everyone,
 Welcome to fall!. Summer was very hot and dry on Salt Spring, and in much of BC (and many other places). Because of the many wildfires, smoky skies set in later in August, making breathing more difficult for many. For once, I welcome the cooler weather of the autumn season. Meanwhile, here are some summer season updates.
 A new group of YTT grads are now off to begin teaching yoga classes or deepening their own practice of these profound teachings, following the reminders they heard frequently: Regular Sadhana and Teach to Learn.
-[caption id="attachment\_17502" align="aligncenter" width="640"][![](images/d105fe69_YTT-Grads-2018.jpeg)](images/d105fe69_YTT-Grads-2018.jpeg) 2018 YTT grads & teachers! (absent in this photo: Satya and Anand)[/caption]
+[![](images/d105fe69_YTT-Grads-2018.jpeg)](images/d105fe69_YTT-Grads-2018.jpeg) 2018 YTT grads & teachers! (absent in this photo: Satya and Anand)
 
 ## The Annual Community Retreat was superb!
 
 There were about 200 adults and lots of kids! In addition to the many yoga classes (asanas, pranayama & meditation, satsang, Yoga Sutra class with Divakar ,Latte Da and Hanuman Olympics, there were some special events. Here are some highlights: Stories of Babaji with a panel of his long-time students - both elders and second generation, Ramayana (as usual, brilliantly pulled together by Anand and Piet in 9 days!), rock crew project - repairing the leaks in the mountain fountain, a Monday morning yajna with Bhavani and Yogeshwar leading it as pujaris.
-[caption id="attachment\_17503" align="aligncenter" width="600"][![](images/d105fe69_acyr-group.jpg)](images/d105fe69_acyr-group.jpg) ACYR meal circle[/caption]
-[caption id="attachment\_17513" align="aligncenter" width="600"][![](images/d105fe69_ACYR-Jai-Ramsharan.jpg)](images/d105fe69_ACYR-Jai-Ramsharan.jpg) Jai and his dad, Ramsharan repairing the leak in the fountain during ACYR[/caption]
-[caption id="attachment\_17510" align="aligncenter" width="600"][![](images/d105fe69_Ramayana-little-monkeys-2018.jpg)](images/d105fe69_Ramayana-little-monkeys-2018.jpg) Little monkeys[/caption]
-[caption id="attachment\_17512" align="aligncenter" width="600"][![](images/d105fe69_Ramayana-Ram-Sita-2018.jpg)](images/d105fe69_Ramayana-Ram-Sita-2018.jpg) Ram & Sita 2018[/caption]
-[caption id="attachment\_17508" align="aligncenter" width="600"][![](images/d105fe69_Ramayana-final-bow-2018.jpg)](images/d105fe69_Ramayana-final-bow-2018.jpg) Final bow of Ramayana production[/caption]
-[caption id="attachment\_17514" align="aligncenter" width="600"][![](images/d105fe69_kids-at-Hanuman-Olympics.jpg)](images/d105fe69_kids-at-Hanuman-Olympics.jpg) Kids at Hanuman Olympics[/caption]
+[![](images/d105fe69_acyr-group.jpg)](images/d105fe69_acyr-group.jpg) ACYR meal circle
+[![](images/d105fe69_ACYR-Jai-Ramsharan.jpg)](images/d105fe69_ACYR-Jai-Ramsharan.jpg) Jai and his dad, Ramsharan repairing the leak in the fountain during ACYR
+[![](images/d105fe69_Ramayana-little-monkeys-2018.jpg)](images/d105fe69_Ramayana-little-monkeys-2018.jpg) Little monkeys
+[![](images/d105fe69_Ramayana-Ram-Sita-2018.jpg)](images/d105fe69_Ramayana-Ram-Sita-2018.jpg) Ram & Sita 2018
+[![](images/d105fe69_Ramayana-final-bow-2018.jpg)](images/d105fe69_Ramayana-final-bow-2018.jpg) Final bow of Ramayana production
+[![](images/d105fe69_kids-at-Hanuman-Olympics.jpg)](images/d105fe69_kids-at-Hanuman-Olympics.jpg) Kids at Hanuman Olympics
 
 ## Goings & Comings
 
@@ -31,9 +31,9 @@ The farm has been very productive this year.
 
 ## Here’s Dan’s farm update:
 
-> [caption id="attachment\_17515" align="aligncenter" width="600"][![](images/d105fe69_Apples-ready-to-harvest.jpg)](images/d105fe69_Apples-ready-to-harvest.jpg) Apples ready to harvest[/caption]
-> [caption id="attachment\_17516" align="aligncenter" width="600"][![](images/d105fe69_Blackberries-everywhere.jpg)](images/d105fe69_Blackberries-everywhere.jpg) Blackberries everywhere[/caption]
-> [caption id="attachment\_17517" align="aligncenter" width="600"][![](images/d105fe69_Delicata-Squash-ready-to-harvest.jpg)](images/d105fe69_Delicata-Squash-ready-to-harvest.jpg) Delicata squash ready to harvest[/caption]
+> [![](images/d105fe69_Apples-ready-to-harvest.jpg)](images/d105fe69_Apples-ready-to-harvest.jpg) Apples ready to harvest
+> [![](images/d105fe69_Blackberries-everywhere.jpg)](images/d105fe69_Blackberries-everywhere.jpg) Blackberries everywhere
+> [![](images/d105fe69_Delicata-Squash-ready-to-harvest.jpg)](images/d105fe69_Delicata-Squash-ready-to-harvest.jpg) Delicata squash ready to harvest
 > The summer keeps rolling along here on the farm, although much of the field work in August has occurred under smoky skies and a blood-red sun as a result of the numerous wildfires burning across the mainland of BC and Vancouver Island. While the reduced sunlight has slowed crop production a little bit at times, we’re continuing to harvest about a dozen cucumbers a day and several pounds of cherry tomatoes for salads and salsas, much to the delight of the yoga teacher trainees at the centre.
 > A recent mulch-a-thon in our winter squash fields has started to bear fruit, as we’re beginning to harvest our first few delicate squash of the season and are hoping to see many more in the coming weeks. After weeks of regular harvests of green onions, we’ve just started picking the first leeks from our fields after a characteristically long growing season. The leeks were one of the first crops we seeded back in February.
 > And the fruit bounty continues, as the end of our productive blueberry season seamlessly morphed into blackberry season, and the farm team has been bearing the telltale cuts and scrapes of treading through the brambles. By month’s end, we may also be gathering our bushels to harvest apples from our orchard. And it’s looking like a bumper crop this year, so it looks like the SSCY Preservation Society will soon re-emerge.

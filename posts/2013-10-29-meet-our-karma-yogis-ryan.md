@@ -7,7 +7,7 @@ categories: ["Karma Yoga", "Monthly Newsletter"]
 tags: ["Meet our Karma Yogis"]
 ---
 
-[caption id="attachment\_8432" align="alignright" width="336"][![Karma Yogi Ryan](images/54371ecf_KY-Ryan-e1383077418106.jpg)](images/54371ecf_KY-Ryan-e1383077418106.jpg) Karma Yogi Ryan[/caption]
+[![Karma Yogi Ryan](images/54371ecf_KY-Ryan-e1383077418106.jpg)](images/54371ecf_KY-Ryan-e1383077418106.jpg) Karma Yogi Ryan
 I first heard about the Centre about six or so years ago, initially from a fellow karma yogi at Yashodhara Ashram. I checked the Centre’s website frequently, but the timing never worked out. I was doing forest fire fighting, which filled spring and summer. The best time for me was winter, but the Centre wasn’t open then.
 I had been travelling for a year and a half, seeking out communities in Asia. Coming back to Canada, I still had the intention of coming to this community. I finally arrived at the Centre in the KYSS program on August 27, 2012 and enjoyed six weeks of permanent sun. I immediately fell in love with the island and knew I wanted to stay. After the Centre’s program season ended, I did a work exchange for a really nice family on the island, knowing I’d been accepted to come back to the Centre for the full 2013 season.
 I’ve been working as assistant maintenance manager and landscaper. I enjoyed the variety of the work - trails, campground, flower beds. The temple committee has now tackled the terraces in the garden, beautifying them.

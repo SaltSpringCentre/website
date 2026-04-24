@@ -7,7 +7,7 @@ categories: ["Activities", "Inspiration &amp; Spiritual Teachings", "Monthly New
 tags: ["asana", "Asana of the month"]
 ---
 
-[caption id="attachment\_6737" align="alignnone" width="640"]![Balakasana](images/eb57b10b_AOM-childs-pose-neil-2.jpg) Balakasana[/caption]
+![Balakasana](images/eb57b10b_AOM-childs-pose-neil-2.jpg) Balakasana
 The pose I commonly find myself in is Child’s Pose (Balakasana) and the many variations of having my knees pulled in close to my chest.
 Physically it does many things; however, I notice these qualities:
 
@@ -17,7 +17,7 @@ Physically it does many things; however, I notice these qualities:
 - It also brings more awareness to the breath as the lung capacity is reduced, offering a much quieter and softer breath.
 
 Quite often Child’s Pose is the second posture I offer in a Yin Yoga class, right after Savasana. I find it to be a great starting point to the class as it offers the time to relax, slow down from the busyness of life, look inward and set some intentions.
-[caption id="attachment\_6736" align="alignnone" width="576"]![AOM-childs-pose-neil-1](images/eb57b10b_AOM-childs-pose-neil-1.jpg) Balakasana, arms extended, palms up[/caption]
+![AOM-childs-pose-neil-1](images/eb57b10b_AOM-childs-pose-neil-1.jpg) Balakasana, arms extended, palms up
 **Progressing Through the Posture**There are a few stages I like to progress through with Child’s Pose:
 
 1. Initially, knees are on the floor, toes extended, torso curled over the tops of the thighs with the arms relaxed by the sides of the legs, and if possible, the forehead lightly resting on the floor.
@@ -25,7 +25,7 @@ Quite often Child’s Pose is the second posture I offer in a Yin Yoga class, ri
 3. Walk the fingers away, extending the arms as far as feels comfortable, and notice, perhaps, a difference in the quality of the breath.
 4. Bring the hands together with palms facing up with the pinky fingers touching. At this point there is a beautiful quality to the posture, with hands forward and open to the sky, as if making an offering to the divine. And, as many of you know, in the giving there is the receiving with hands open to catch the abundance.
 
-[caption id="attachment\_6738" align="alignnone" width="480"]![Balakasana](images/eb57b10b_AOM-childs-pose-neil-3.jpg) Balakasana[/caption]
+![Balakasana](images/eb57b10b_AOM-childs-pose-neil-3.jpg) Balakasana
 **Modifications**Here are some modifications for those who have challenges with their:
 
 - **knees:** Place a bolster under the buttocks on top of the calves

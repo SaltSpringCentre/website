@@ -52,7 +52,7 @@ To antidote pitta, we choose both cooling and reducing methods. First, here are 
 Squeeze the lime juice (use fresh, if possible). Strain the pulp; add maple syrup or sweetener of your choice. Serve with a smile!
 And the best antidote of all . . . bring sweetness to your heart, and share it with a smile!
 Peace, ~pratibha
-[caption id="attachment\_8434" align="alignleft" width="287"][![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen[/caption]
+[![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen
 **Pratibha Queen** is a yoga instructor and Ayurvedic practitioner, who attends Salt Spring Center of Yoga retreats on a regular basis. Feel free to email with any questions that arise as you engage in health practices to support your yoga practice: pratibha.que[at]gmail[dot]com.
 --
 Green juice image by [Wild Tofu](https://www.flickr.com/photos/wildtofu/).

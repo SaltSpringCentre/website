@@ -6,7 +6,7 @@ author: "sysadmin_1a1xu9u1"
 categories: ["Announcements", "Monthly Newsletter"]
 ---
 
-[caption id="attachment\_3915" align="aligncenter" width="576" caption="Winterscape at the Centre, November 2010"]![](images/0d7b281a_156969_466496927799_94876812799_5807058_871456_n.jpg)[/caption]
+![](images/0d7b281a_156969_466496927799_94876812799_5807058_871456_n.jpg)
 
 Greetings:
 

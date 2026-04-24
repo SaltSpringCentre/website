@@ -9,7 +9,7 @@ tags: ["asana", "Asana of the month", "Peter Ashok Baragon"]
 
 ### Viparita Karani (legs-up-the-wall pose) **Viparita = inverted, reversed; Karani = doing, making**
 
-[caption id="attachment\_6366" align="alignnone" width="600"]![Viparita Karani](images/013324ab_Asana-February2.jpg) Viparita Karani[/caption]
+![Viparita Karani](images/013324ab_Asana-February2.jpg) Viparita Karani
 Viparita Karani is a wonderful yoga posture and a favourite of mine, one that I share with students any time of the year. This asana is particularly refreshing in the long dark months of winter. It is a nice inversion alternative  to savasana pose and it’s calming for the mind and gently stretches the back  of the legs, neck, and low back.
 
 #### Benefits of  Viparita Karani

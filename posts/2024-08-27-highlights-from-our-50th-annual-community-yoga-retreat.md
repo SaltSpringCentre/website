@@ -59,9 +59,9 @@ For those who couldn’t attend, know you were in our hearts. We missed you and 
 Jai Babaji! Jai Satsang! 💖 🙏
 
 *Italicized phrases are feedback from participants, reflecting their experiences during the retreat.*
-[vcex\_divider color="#dddddd" width="100%" height="1px" margin\_top="20" margin\_bottom="20"]
+
 
 **"I love you whether you know it or not. You asked about our relationship. It's a relationship of guru and disciple in which all relationships merge. You will know me through sadhana. You can't understand me by seeing my physical body. How the body acts, plays, shows pleasure and pain, it's an illusion. If I have to know you, then I have to see inside you and not your physical body. My only aim is to bring people in sadhana. For me sadhana is not only asana, pranayama, and meditation. Sadhana includes developing positive qualities, building right conduct, closeness with parents, friends, and society, right livelihood, ect."**
 **- Baba Hari Dass**
 
-[vcex\_divider color="#dddddd" width="100%" height="1px" margin\_top="20" margin\_bottom="20"]![](images/7af8e01b_Photo-montage-community-life-at-the-Centre.jpg) ![](images/7af8e01b_40.jpg)
+![](images/7af8e01b_Photo-montage-community-life-at-the-Centre.jpg) ![](images/7af8e01b_40.jpg)

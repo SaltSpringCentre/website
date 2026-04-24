@@ -54,6 +54,6 @@ Whether you’re seeking physical wellbeing, mental clarity, or spiritual enhanc
 Let this be your invitation to refine, to return, and to reconnect.
 [Click here to start your journey](https://saltspringcentre.com/programs-retreats/yoga-intensive-program/). 🌿
 
-[vcex\_divider color="#dddddd" width="100%" height="1px" margin\_top="20" margin\_bottom="20"]
+
 
 #### **[By Chetna Tracy Boyd](https://saltspringcentre.com/sscy_team/chetna-tracy-boyd/)[Tracy (Chetna) Boyd](https://saltspringcentre.com/sscy_team/chetna-tracy-boyd/)***E-RYT 500; C-IAYT, YTT 200*

@@ -27,5 +27,5 @@ A few other tips for improving digestion include:
 
 All this talk about food is making me hungry! Must be time for breakfast. Bon appétit!
 - Pratibha
-[caption id="attachment\_7961" align="alignleft" width="206"][![Pratibha at her 70th birthday celebration](images/83d149b8_Pratibha.jpeg)](images/83d149b8_Pratibha.jpeg) Pratibha at her 70th birthday celebration[/caption]
+[![Pratibha at her 70th birthday celebration](images/83d149b8_Pratibha.jpeg)](images/83d149b8_Pratibha.jpeg) Pratibha at her 70th birthday celebration
 **Pratibha Queen** is a yoga instructor and Ayurvedic practitioner, who attends Salt Spring Center of Yoga retreats on a regular basis. Feel free to email with any questions that arise as you engage in health practices to support your yoga practice: pratibha.que@gmail.com.

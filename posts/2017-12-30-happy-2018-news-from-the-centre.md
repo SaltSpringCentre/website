@@ -10,9 +10,9 @@ Hello everyone, and happy new year,
 While we have much to be grateful for, we know these are challenging times for many people all over the world. As we watch the news it’s easy to be pulled into disturbing stories and react to them. We want to stay informed and engaged, yet to keep our balance and sanity, we need to remember our aim. Babaji says: *Be humble and seek for divine grace. Don’t get agitated by things you don’t like, don’t get attached to things you like. Sit in peace within and without. This peace is the divine light. Keep a calm mind and contemplate the divine light.*
 The Centre’s residential community will begin to grow again this month as karma yogis who have been travelling return to the Centre. Welcome back to winter to those who have been visiting warmer places.
 Since you will receive this email at the beginning of January, our New Year celebration will already have happened. At this writing, though, we’re looking forward to bringing in the New Year with prayer and kirtan. We continue to send our gratitude and love to Babaji, and we also send our love and healing prayers to to Keiko, our fabulous graphic designer, whose mum recently passed away.
-[caption id="attachment\_15676" align="aligncenter" width="480"][![](images/8299a7be_lettuce.hoophouse-e1514613115962.jpg)](images/8299a7be_lettuce.hoophouse.jpg) Lettuces in our winter hoop-house![/caption]
-[caption id="attachment\_15677" align="aligncenter" width="640"][![](images/8299a7be_Winter-2107-1.jpg)](images/8299a7be_Winter-2107-1.jpg) A corner of the farm in the winter[/caption]
-[caption id="attachment\_15678" align="aligncenter" width="640"][![](images/8299a7be_Winter-2107-2.jpg)](images/8299a7be_Winter-2107-2.jpg) Last day of school before the holidays[/caption]
+[![](images/8299a7be_lettuce.hoophouse-e1514613115962.jpg)](images/8299a7be_lettuce.hoophouse.jpg) Lettuces in our winter hoop-house!
+[![](images/8299a7be_Winter-2107-1.jpg)](images/8299a7be_Winter-2107-1.jpg) A corner of the farm in the winter
+[![](images/8299a7be_Winter-2107-2.jpg)](images/8299a7be_Winter-2107-2.jpg) Last day of school before the holidays
 Although the weather is cold (and currently snowy), we are still enjoying food from the garden. The winter squash is sweet, the greens (even lettuce!) growing in the greenhouse (aka hoop-house) are delicious, and the canning and preserving done during harvest time add to the deliciousness of our meals. The inspired bread bakers in the community have kept the bread basket full.
 
 # On the horizon…

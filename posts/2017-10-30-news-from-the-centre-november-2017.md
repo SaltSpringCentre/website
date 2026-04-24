@@ -16,19 +16,19 @@ While we’re on the subject of the garden, here’s...
 > What a gift those soaking rains have been! Our irrigation has been tucked away in preparation for hard frosts to come and the fields are harvested of their bounty. The Food Forest was planted in a fantastic flurry by a group of wonderful volunteers. Trees and shrubs stretched across nearly two acres are settling in for the winter and will be off to a flying start come Spring. I hope ya’ll like raspberries! Lots of time spent on the tractor these days as I finish up a few tiny ponds for critter habitat and water retention as well as a series of paddies for rice trials and small grain production!
 > Our minds and hearts now look forward rainy days and a cozy winter of rest and contemplation. (Come on by for a cup of tea.) So many lessons learned this year. Thank you all for the support and smiles; it’s been a wonderful ride. Onward.
 
-[caption id="attachment\_15526" align="aligncenter" width="620"][![](images/a07a5ace_Work-Party3-Oct-25.jpg)](images/a07a5ace_Work-Party3-Oct-25.jpg) Seth and Martin - work party cleanup[/caption]
-[caption id="attachment\_15521" align="aligncenter" width="620"][![](images/a07a5ace_Milo-Yog-apples.jpg)](images/a07a5ace_Milo-Yog-apples.jpg) Milo and Yogeshwar bringing in the apples[/caption]
-[caption id="attachment\_15525" align="aligncenter" width="620"][![](images/a07a5ace_sunflowers.jpg)](images/a07a5ace_sunflowers.jpg) Sunflower seed heads[/caption]
-[caption id="attachment\_15523" align="aligncenter" width="620"][![](images/a07a5ace_squash.jpg)](images/a07a5ace_squash.jpg) Squash galore[/caption]
+[![](images/a07a5ace_Work-Party3-Oct-25.jpg)](images/a07a5ace_Work-Party3-Oct-25.jpg) Seth and Martin - work party cleanup
+[![](images/a07a5ace_Milo-Yog-apples.jpg)](images/a07a5ace_Milo-Yog-apples.jpg) Milo and Yogeshwar bringing in the apples
+[![](images/a07a5ace_sunflowers.jpg)](images/a07a5ace_sunflowers.jpg) Sunflower seed heads
+[![](images/a07a5ace_squash.jpg)](images/a07a5ace_squash.jpg) Squash galore
  
 Much of the farm abundance has been transformed into treats for the winter by the ‘processing team’. Here are a few of their yummy creations to date: applesauce, pear sauce, apple and pear butter and jam, salsa verde (made from green tomatoes), green ketchup (really!), and hot sauce.
-[caption id="attachment\_15522" align="aligncenter" width="640"]![](images/a07a5ace_SalsaVerde-2017.jpg) Salsa verde and green ketchup![/caption]
+![](images/a07a5ace_SalsaVerde-2017.jpg) Salsa verde and green ketchup!
 We had a wonderful Diwali celebration in the yurt a couple of weeks ago. Diwali is the celebration of the return of Rama and Sita to Ayodhya. Rama (universal consciousness) and Sita (individual consciousness) are reunited at the end of the Ramayana performances that we’ve done over the years, with the help of Hanuman, the embodiment of devotion and selfless service. Together, they return to the kingdom of Ayodhya where the people in the city light their way with candles. In Salt Spring’s version, we place tea lights in paper boats and float them in large bowls of water. We used to do it outside, but after getting rained out a number of times, we decided it would be lovely to be in a warm and cosy space.
-[caption id="attachment\_15527" align="aligncenter" width="480"][![](images/a07a5ace_IMG_0182-e1509425368135.jpg)](images/a07a5ace_IMG_0182-e1509425368135.jpg) Diwali celebrations[/caption]
+[![](images/a07a5ace_IMG_0182-e1509425368135.jpg)](images/a07a5ace_IMG_0182-e1509425368135.jpg) Diwali celebrations
 As always, kirtan continues on Wednesday evening as does satsang every Sunday afternoon. Sunday evening has become yoga sutra study time, with Yogeshwar teaching this weekly class. If you happen to be on the island you’re welcome to attend any or all of them. There are also ongoing classes for the karma yogis at the Centre. In recent weeks, Usha led a class about the history of the land and Dan Jason taught a class about seed saving and food security. Om PK led us in an Ed Camp, an opportunity to share and brainstorm ideas, and we also spent an afternoon making prayer flags.
-[caption id="attachment\_15528" align="aligncenter" width="640"][![](images/a07a5ace_P1020774.jpg)](images/a07a5ace_P1020774.jpg) Our prayer flags[/caption]
+[![](images/a07a5ace_P1020774.jpg)](images/a07a5ace_P1020774.jpg) Our prayer flags
 In the midst of all this fun, cooking, cleaning and outdoor work continues.
-[caption id="attachment\_15529" align="aligncenter" width="620"][![](images/a07a5ace_IMG_3040-e1509425742902.jpg)](images/a07a5ace_IMG_3040.jpg) Racquel, Olga, Kaori under the mighty maple on the mound[/caption]
+[![](images/a07a5ace_IMG_3040-e1509425742902.jpg)](images/a07a5ace_IMG_3040.jpg) Racquel, Olga, Kaori under the mighty maple on the mound
 
 # New Opportunity: Maintenance Coordinator
 

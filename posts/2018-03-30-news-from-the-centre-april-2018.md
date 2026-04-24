@@ -12,11 +12,11 @@ Make it easy. Make it play.
 Make it a prayer.*
 
 Hello everyone, and happy spring. (If you live in the southern hemisphere, happy autumn.) At the Centre, the annual cycle of life has brought us flowers and budding trees, along with warmer weather - not tropical, but warmer than it was.
-[caption id="attachment\_16795" align="alignnone" width="600"][![](images/0419d15e_Salt-Spring-Centre-creek-e1522383757441.jpg)](images/0419d15e_Salt-Spring-Centre-creek-e1522383757441.jpg) - Spring creek along the trail -[/caption]
-[caption id="attachment\_16793" align="alignnone" width="600"][![](images/0419d15e_Misty-Mound-Mariel.jpeg)](images/0419d15e_Misty-Mound-Mariel.jpeg) - Muriel on the mound one misty morning -[/caption]
+[![](images/0419d15e_Salt-Spring-Centre-creek-e1522383757441.jpg)](images/0419d15e_Salt-Spring-Centre-creek-e1522383757441.jpg) - Spring creek along the trail -
+[![](images/0419d15e_Misty-Mound-Mariel.jpeg)](images/0419d15e_Misty-Mound-Mariel.jpeg) - Muriel on the mound one misty morning -
 The Centre School kids are glad to be working with Milo again now that spring is here. Here are some photos of kids watering seeds they’ve just planted, and learning how to tell which tree in the orchard is an apple, pear or cherry tree.
-[caption id="attachment\_16794" align="alignnone" width="600"][![](images/0419d15e_Milo-Centre-School-kids2.jpg)](images/0419d15e_Milo-Centre-School-kids2.jpg) - Watering freshly planted seeds -[/caption]
-[caption id="attachment\_16792" align="alignnone" width="600"][![](images/0419d15e_Milo-Centre-School-kids.jpg)](images/0419d15e_Milo-Centre-School-kids.jpg) - Learning how to identify trees in the orchard -[/caption]
+[![](images/0419d15e_Milo-Centre-School-kids2.jpg)](images/0419d15e_Milo-Centre-School-kids2.jpg) - Watering freshly planted seeds -
+[![](images/0419d15e_Milo-Centre-School-kids.jpg)](images/0419d15e_Milo-Centre-School-kids.jpg) - Learning how to identify trees in the orchard -
 
 ## Here is Milo’s farm update:
 
@@ -24,8 +24,8 @@ The Centre School kids are glad to be working with Milo again now that spring is
 > I’m also happy to report that we have a fresh farmer by the name of Dan who has joined us to co-coordinate the farm happenings this year! Our hoop-houses are nearly full and we’ll be munching away happily on fresh veg by the end of the month.
 > That’s all for now. Happy planting everyone!
 
-[caption id="attachment\_16790" align="alignnone" width="600"][![](images/0419d15e_SharadaGirijaKaoriMarta.jpg)](images/0419d15e_SharadaGirijaKaoriMarta.jpg) - Sharada, Girija, Kaori & Marta -[/caption]
-[caption id="attachment\_16791" align="alignnone" width="600"][![](images/0419d15e_Dan-Jason-herb-walk.jpg)](images/0419d15e_Dan-Jason-herb-walk.jpg) - Herb walk with Dan Jason -[/caption]
+[![](images/0419d15e_SharadaGirijaKaoriMarta.jpg)](images/0419d15e_SharadaGirijaKaoriMarta.jpg) - Sharada, Girija, Kaori & Marta -
+[![](images/0419d15e_Dan-Jason-herb-walk.jpg)](images/0419d15e_Dan-Jason-herb-walk.jpg) - Herb walk with Dan Jason -
 Sorriso is another addition to the karma yogi team, heading up the maintenance department. More karma yogis are joining us today (April 1) for the [Residential Karma Yoga Program](https://saltspringcentre.com/programs-retreats/karma-yoga-program/). During the past few months the resident staff at the Centre took part in the first run of this program. In recent weeks Girija Edward taught classes on Ayurveda, Dan Jason led us on an herb walk through the garden and the trail, and David Macdonald introduced us to beekeeping.
 
 ## Returning Karma Yogis

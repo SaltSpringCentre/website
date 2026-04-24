@@ -7,7 +7,7 @@ categories: ["Karma Yoga", "Monthly Newsletter"]
 tags: ["Meet our Karma Yogis"]
 ---
 
-[caption id="attachment\_7945" align="alignright" width="287"][![Jutta and Skootch, Summer 2013](images/83d149b8_KY-Jutta.jpg)](images/83d149b8_KY-Jutta.jpg) Jutta and Scooch, Summer 2013[/caption]
+[![Jutta and Skootch, Summer 2013](images/83d149b8_KY-Jutta.jpg)](images/83d149b8_KY-Jutta.jpg) Jutta and Scooch, Summer 2013
 I woke up one morning; it was cold and snowing outside and I just knew that it was time.
 I wanted to change something, wanted to find something. It wasn't because I didn't like my job or the way I was living. I just knew there was more to explore. I wanted to deepen my yoga practice, and I wanted karma yoga to help me find home, to find my Self.
 I thought of going to Bali - or Nepal, Thailand, South America, India or the US. I had thought of going to Canada before, but not in a serious way. That changed during a conversation with a friend. Then I simply googled karma yoga and Canada. The Salt Spring Centre of Yoga came up right away. I was enchanted. I didn't have any past experience living in a community and I didn't have any expectations.

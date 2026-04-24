@@ -34,11 +34,11 @@ With love, peace, and gratitude,
 Anuradha Hannah, Community Director, Salt Spring Centre of Yoga
 Clare Cullen, President, Dharma Sara Satsang Society
  
-[vcex\_button url="https://saltspringcentre.com/get-involved/donate/#1680642954487-b509dbef-676b" title="Visit Site" style="flat" align="left" color="teal" size="small" target="self" rel="none"]Make a one-time donation[/vcex\_button]
+[Make a one-time donation](https://saltspringcentre.com/get-involved/donate/#1680642954487-b509dbef-676b)
  
-[vcex\_button url="https://saltspringcentre.com/get-involved/donate/#1680642954525-406771f2-be9b" title="Visit Site" style="flat" align="left" color="teal" size="small" target="self" rel="none"]Make a monthly donation[/vcex\_button]
+[Make a monthly donation](https://saltspringcentre.com/get-involved/donate/#1680642954525-406771f2-be9b)
  
-[vcex\_button url="https://saltspringcentre.com/get-involved/donate/#1700525375150-d17db6e0-64b2" title="Visit Site" style="flat" align="left" color="teal" size="small" target="self" rel="none"]Gift a donation[/vcex\_button]
+[Gift a donation](https://saltspringcentre.com/get-involved/donate/#1700525375150-d17db6e0-64b2)
 
 ---
 

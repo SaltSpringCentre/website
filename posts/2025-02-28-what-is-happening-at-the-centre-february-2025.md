@@ -10,26 +10,26 @@ categories: ["Karma Yoga", "Monthly Newsletter", "SSCY Community"]
 
 ![](images/3c1fe4d4_50.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/3c1fe4d4_Photo-Collage-September.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/3c1fe4d4_52.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/3c1fe4d4_Photo-Collage-September-1.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/3c1fe4d4_Photo-Collage-September-2.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/3c1fe4d4_Photo-Collage-September-3.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/3c1fe4d4_Photo-Collage-September-4.jpg)

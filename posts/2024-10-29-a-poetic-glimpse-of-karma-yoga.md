@@ -15,7 +15,7 @@ tags: ["community", "farm", "karma yoga"]
 
 *In this warm community, love and care.*
 
-[ticon icon="heart" color="000" size="16px" margin\_right="" margin\_left="" margin\_top="" margin\_bottom="" link=""]
+
 
 *On the farm, hands in the ground,*
 
@@ -25,7 +25,7 @@ tags: ["community", "farm", "karma yoga"]
 
 *Seeds of joy, growing everywhere.*
 
-[ticon icon="heart" color="000" size="16px" margin\_right="" margin\_left="" margin\_top="" margin\_bottom="" link=""]
+
 
 *Deer roam softly around the place,*
 
@@ -35,7 +35,7 @@ tags: ["community", "farm", "karma yoga"]
 
 *A glimpse of Prince the cat, wandering around the rainbow patch.*
 
-[ticon icon="heart" color="000" size="16px" margin\_right="" margin\_left="" margin\_top="" margin\_bottom="" link=""]
+
 
 *The main building holds tales of those who came,*
 
@@ -45,7 +45,7 @@ tags: ["community", "farm", "karma yoga"]
 
 *Time to gather for a meal, a moment so dear.*
 
-[ticon icon="heart" color="000" size="16px" margin\_right="" margin\_left="" margin\_top="" margin\_bottom="" link=""]
+
 
 *Different smells fill the kitchen air,*
 
@@ -55,7 +55,7 @@ tags: ["community", "farm", "karma yoga"]
 
 *Together we serve, in harmony.*
 
-[ticon icon="heart" color="000" size="16px" margin\_right="" margin\_left="" margin\_top="" margin\_bottom="" link=""]
+
 
 *Who knew such simple things could be*
 
@@ -65,7 +65,7 @@ tags: ["community", "farm", "karma yoga"]
 
 #### 
 
-[vcex\_divider color="#dddddd" width="100%" height="1px" margin\_top="20" margin\_bottom="20"]
+
 
 *![](images/95f03a17_Profile-picture-website-1.jpg)*
 

@@ -8,21 +8,21 @@ categories: ["Monthly Newsletter", "Monthly Update"]
 
 Hello everyone,
 Spring officially begins later this month. Meanwhile, these photos give you a snapshot of our snowy-rainy February and the wet not-quite-spring at the Centre.
-[caption id="attachment\_14658" align="aligncenter" width="640"]![](images/061e9d52_SpringStream-2017.jpg) Spring stream[/caption]
-[caption id="attachment\_14659" align="aligncenter" width="800"]![](images/061e9d52_Tractor.jpg) Milo by the tractor, February 2017. We had lots of snow! There's still some, but it's melting quickly and now it's very wet![/caption]
+![](images/061e9d52_SpringStream-2017.jpg) Spring stream
+![](images/061e9d52_Tractor.jpg) Milo by the tractor, February 2017. We had lots of snow! There's still some, but it's melting quickly and now it's very wet!
 Here’s what’s been going on behind the scenes at the Centre. Along with ongoing daily tasks and Wednesday work parties, a lot is being accomplished.
-[caption id="attachment\_14666" align="aligncenter" width="682"][![](images/061e9d52_KYs-working-2017.jpg)](images/061e9d52_KYs-working-2017.jpg) Jesse and Will painting the upstairs hallway; Tyler installing trim[/caption]
-[caption id="attachment\_14661" align="aligncenter" width="682"][![](images/061e9d52_KYs-Lunching.jpg)](images/061e9d52_KYs-Lunching.jpg) Milo, Bri and Udaya at lunchtime[/caption]
+[![](images/061e9d52_KYs-working-2017.jpg)](images/061e9d52_KYs-working-2017.jpg) Jesse and Will painting the upstairs hallway; Tyler installing trim
+[![](images/061e9d52_KYs-Lunching.jpg)](images/061e9d52_KYs-Lunching.jpg) Milo, Bri and Udaya at lunchtime
 Milo continues to work with the students of the [Salt Spring Centre School](http://saltspringcentreschool.ca/) every Thursday. Here they are in the propagation greenhouse, getting ready for planting.
-[caption id="attachment\_14649" align="aligncenter" width="640"]![](images/061e9d52_Milo_Students.jpg) Kate's class in the greenhouse with Milo[/caption]
+![](images/061e9d52_Milo_Students.jpg) Kate's class in the greenhouse with Milo
 Now that the weather is warming up and the snow is gone (for the moment), more people are emerging from their winter hideaways and joining us for kirtan and satsang. If you’re interested in joining our online Bhagavad Gita study group - Tuesday evenings at 7 pm - please contact me (sharada@saltspringcentre.com) and give me your email address. Monthly full moon yajnas also continue, the next one being on Thursday, March 9 at 7:00 pm.
 
 # Night of Shiva
 
 Shivaratri, the Night of Shiva, an all-night vigil of chanting and prayer, was powerful and uplifting, ending with the submersion of offerings into the pond at dawn. This year the pond was covered with a thick layer of ice, presenting a bit of a challenge. A hole had been cut in the ice to allow the offerings to be made, but the offerers had to stand on the ice to watch.
-[caption id="attachment\_14663" align="aligncenter" width="720"][![](images/061e9d52_ShivaRatri-Altar-2017.jpg)](images/061e9d52_ShivaRatri-Altar-2017.jpg) The altar[/caption]
-[caption id="attachment\_14662" align="aligncenter" width="720"][![](images/061e9d52_ShivaRatri-2017-Kirtan.jpg)](images/061e9d52_ShivaRatri-2017-Kirtan.jpg) Kirtan[/caption]
-[caption id="attachment\_14664" align="aligncenter" width="720"][![](images/061e9d52_ShivaRatri-Lingams.jpg)](images/061e9d52_ShivaRatri-Lingams.jpg) Carrying the lingams to the pond[/caption]
+[![](images/061e9d52_ShivaRatri-Altar-2017.jpg)](images/061e9d52_ShivaRatri-Altar-2017.jpg) The altar
+[![](images/061e9d52_ShivaRatri-2017-Kirtan.jpg)](images/061e9d52_ShivaRatri-2017-Kirtan.jpg) Kirtan
+[![](images/061e9d52_ShivaRatri-Lingams.jpg)](images/061e9d52_ShivaRatri-Lingams.jpg) Carrying the lingams to the pond
 
 # Join us this season!
 

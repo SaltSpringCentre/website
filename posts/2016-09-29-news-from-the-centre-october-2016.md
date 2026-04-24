@@ -13,17 +13,17 @@ categories: ["Monthly Newsletter", "Monthly Update"]
 ### *~ Rainer Maria Rilke*
 
 Autumn greetings, everyone. This is a time of rich abundance and chilly nights, and a time of transition. The residential community at the Centre is beginning its annual dance of dwindling to winter community size. Although there is a never ending list of projects, they tend toward preparations for the upcoming cooler months. The farm has produced abundantly this year, leading to many harvesting parties. Apples and pears have been picked and are being dried, made into sauce and crumbles; peas, beans and flax have been harvested and dried, and a huge number of walnuts have been harvested from the trees along the driveway. We continue to be served amazing meals made of freshly harvested produce directly from the garden.
-[caption id="attachment\_14119" align="alignnone" width="600"][![Harvesting flax](images/6f47850c_harvesting-flax-2016.jpg)](images/6f47850c_harvesting-flax-2016.jpg) Harvesting flax[/caption]
+[![Harvesting flax](images/6f47850c_harvesting-flax-2016.jpg)](images/6f47850c_harvesting-flax-2016.jpg) Harvesting flax
 On the same theme, here is...
 
 # Milo’s monthly farm update
 
 The Centre School is back in session and the sounds of play and laughter echo warmly across the land again. The weekly exploration of our farm with the kids is full of questions and qualms around the apples, pears and most recently walnuts and the delicate cracking or smashing of them.
-[caption id="attachment\_14115" align="alignnone" width="600"][![School kids on the farm with Milo](images/6f47850c_School-kids-on-the-farm.jpg)](images/6f47850c_School-kids-on-the-farm.jpg) Milo with the school kids on the farm[/caption]
-[caption id="attachment\_14114" align="alignnone" width="600"][![School kids in the garden](images/6f47850c_school-kids-in-the-garden.jpg)](images/6f47850c_school-kids-in-the-garden.jpg) School kids in the garden[/caption]
+[![School kids on the farm with Milo](images/6f47850c_School-kids-on-the-farm.jpg)](images/6f47850c_School-kids-on-the-farm.jpg) Milo with the school kids on the farm
+[![School kids in the garden](images/6f47850c_school-kids-in-the-garden.jpg)](images/6f47850c_school-kids-in-the-garden.jpg) School kids in the garden
 Speaking of walnuts... Some of you may have witnessed our residential tree climbers channeling their inner monkey and "swaggling" our trees along the driveway last week to encourage nut fall. Gratefully no trees or climbers were harmed in this endeavour and we are feeling quite pleased with our nutty bounty.
-[caption id="attachment\_14118" align="alignnone" width="600"][![Walnut harvest and crew](images/6f47850c_Walnut-Harvest-2016.jpg)](images/6f47850c_Walnut-Harvest-2016.jpg) Walnut harvest and crew[/caption]
-[caption id="attachment\_14117" align="alignnone" width="600"][![Carnel sorting the walnut bounty](images/6f47850c_walnuts-Carnel.jpg)](images/6f47850c_walnuts-Carnel.jpg) Carnel sorting the walnut bounty[/caption]
+[![Walnut harvest and crew](images/6f47850c_Walnut-Harvest-2016.jpg)](images/6f47850c_Walnut-Harvest-2016.jpg) Walnut harvest and crew
+[![Carnel sorting the walnut bounty](images/6f47850c_walnuts-Carnel.jpg)](images/6f47850c_walnuts-Carnel.jpg) Carnel sorting the walnut bounty
 As the rains return, we are rounding up the final dry beans and watching all kinds of winter squash explode onto the scene and into our pantry. Seeds from neighbouring trees (chestnuts, hazelnuts, hawthorne, walnuts) are being gathered and planted for emergence next spring, along with hopes for the reliable and sustainable source of nourishment that these magical trees provide.
 Happy and cozy fall days to you and yours.
 

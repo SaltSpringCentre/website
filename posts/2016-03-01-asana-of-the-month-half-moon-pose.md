@@ -10,7 +10,7 @@ tags: ["Preet"]
 ## Ardha Chandrasana Ardha: means half, Chandra: means moon
 
 Ardha Chandrasana (Half Moon) pose helps improve balance and strength. It works on stretching the hamstring muscles as well as the front of the thighs, and it increases opening of the hip joints.
-[caption id="attachment\_13171" align="aligncenter" width="575"]![half moon pose](images/8a048b2c_step-3-from-triangle.jpg) Preet demonstrates Half Moon Pose[/caption]
+![half moon pose](images/8a048b2c_step-3-from-triangle.jpg) Preet demonstrates Half Moon Pose
 
 ### THE POSE
 
@@ -19,14 +19,14 @@ Half Moon is usually sequenced somewhere in the middle of a standing pose series
 ### Moving from Extended Triangle
 
 - From Extended Triangle on the right side, bend the right knee, until you are able to place your right fingertips on the mat, just to the right side of the toes. Keep your left arm extended.
-  [caption id="attachment\_13169" align="aligncenter" width="575"]![Transitioning from triangle pose](images/8a048b2c_step-1-from-triangle.jpg) Transitioning from triangle pose[/caption]
+  ![Transitioning from triangle pose](images/8a048b2c_step-1-from-triangle.jpg) Transitioning from triangle pose
 - Establish the pose through the position of the front foot (right foot), ensuring that your right foot does not pull inward. Keeping your foot firmly planted in this position and keeping an external rotation in the thighs will provide stability in your hips.
 - Once the fingertips of the right hand reach the mat, exhale and straighten your right leg while lifting your left leg, so it is horizontal to the floor.
-  [caption id="attachment\_13170" align="aligncenter" width="575"]![moving from triangle to half moon pose](images/8a048b2c_step-2-from-triangle.jpg) moving from triangle to half moon pose[/caption]
+  ![moving from triangle to half moon pose](images/8a048b2c_step-2-from-triangle.jpg) moving from triangle to half moon pose
 - Inhaling, slowly rotate your upper torso to the left, drawing the left shoulder back, keeping a lifted feeling in your heart. Feel the energetic connection between both extended arms.
 - Keep the lifted leg (left leg) active and energized; it will provide you with increased stability in this pose. Be mindful to not lock the standing knee (right knee).
 - Hold the pose for 5 breaths or longer.
-  [caption id="attachment\_13171" align="aligncenter" width="575"]![half moon pose](images/8a048b2c_step-3-from-triangle.jpg) Half Moon Pose[/caption]
+  ![half moon pose](images/8a048b2c_step-3-from-triangle.jpg) Half Moon Pose
 - Come out of the pose by stretching back with the top leg (left leg), as you bend the right knees. Allow the left leg to come to the mat back to where it started.
 - You can move into extended triangle again, by straightening the front leg. Hold for a breath, then come up.
 - When you feel complete, practice the pose on the other side.

@@ -7,7 +7,7 @@ categories: ["Ayurveda, Yoga &amp; You", "Monthly Newsletter"]
 tags: ["ayurveda", "Ayurveda Yoga and You", "Pratibha Queen"]
 ---
 
-[caption id="attachment\_8720" align="alignright" width="254"][![Doshas and the five elements](images/56918fbd_dosha-and-five-elements.jpg)](images/56918fbd_dosha-and-five-elements.jpg) Doshas and the five elements[/caption]
+[![Doshas and the five elements](images/56918fbd_dosha-and-five-elements.jpg)](images/56918fbd_dosha-and-five-elements.jpg) Doshas and the five elements
 **What's my (Ayurvedic Body-Mind) Type?**
 Ayurveda teaches that each of us is born with a unique body-mind type that stays with us throughout our entire life. This “prakruti” type describes the ratio of the doshas (vata, pitta, kapha - the bio-energetic qualities) that make up our “nature-born constitution.” Prakruti describes not only our physical body type, but also our mental and emotional tendencies and some of our typical energy levels and work habits.
 As we all experience, life is an ever-changing tapestry that we weave, combining our nature-born tendencies with the experiences that we create and encounter in life. Ayurveda suggests that our life experiences interact with our prakruti to create the never-ending ebb and flow we experience each day. To sustain a positive level of health throughout a long and fruitful life, Ayurveda suggests that we learn to maintain the balance of the doshas in the same ratio with which we are born.
@@ -34,5 +34,5 @@ This is only one quiz among many. If you are interested in exploring this topic 
 Next month we’ll consider dietary guidelines for your particular “prakruti.” In the meantime, if you have specific questions, feel free to send me an email: pratibha.que@gmail.com.
 Peace,
 Pratibha
-[caption id="attachment\_8434" align="alignleft" width="287"][![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen[/caption]
+[![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen
 **Pratibha Queen** is a yoga instructor and Ayurvedic practitioner, who attends Salt Spring Center of Yoga retreats on a regular basis. Feel free to email with any questions that arise as you engage in health practices to support your yoga practice: pratibha.que@gmail.com.

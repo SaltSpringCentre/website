@@ -8,5 +8,5 @@ categories: ["Monthly Newsletter"]
 
 Want to stay in touch with the Salt Spring Centre of Yoga?
 Stay connected with us. The Salt Spring Centre sends out a monthly newsletter with information about our upcoming programs, our community, announcements and interesting articles. Occasionally we send out other important announcements.
-[gravityform id="15" title="true" description="true"]
+
 You can unsubscribe at any time.

@@ -9,7 +9,7 @@ tags: ["Asana of the month"]
 
 ### Vriksasana (Tree Pose)
 
-[caption id="attachment\_7209" align="alignnone" width="385"][![Preet in Vrikasana](images/8c10f69a_Preet1.jpg)](images/8c10f69a_Preet1.jpg) Preet in Vriksasana[/caption]
+[![Preet in Vrikasana](images/8c10f69a_Preet1.jpg)](images/8c10f69a_Preet1.jpg) Preet in Vriksasana
 Vriksa means tree and asana means pose. Vriksasana, tree pose, builds balance and strength and is suitable for all levels.
 Practicing Vriksasana helps ground me, especially when I am feeling overly busy and disconnected. The pose reminds me of the importance of finding ‘balance’ in my daily life. Like the tree, connecting to the earth, while also striving and reaching for the sky. I think about the opposing forces of rootedness working with an uplifting quality: a delicate balance between the two.
 **Preparation**
@@ -51,7 +51,7 @@ Bring awareness to your feet:
 - take a moment and close your eyes and feel the effects of the pose. Notice any differences from one side of your body to the other. Notice the sensation of your feet connecting with the ground.
 - When you feel complete, begin again, this time lifting the opposite foot from the ground.
 
-[caption id="attachment\_7210" align="alignnone" width="385"][![Vriksasana, arms extended ](images/8c10f69a_Preet2.jpg)](images/8c10f69a_Preet2.jpg) Vriksasana, arms extended[/caption]
+[![Vriksasana, arms extended ](images/8c10f69a_Preet2.jpg)](images/8c10f69a_Preet2.jpg) Vriksasana, arms extended
 **Modifications**
 1. If you are a beginner, you can consider the following:
 
@@ -65,7 +65,7 @@ Bring awareness to your feet:
 - Close your eyes – notice how this challenges your balance even more
 
 **About the Instructor**
-[caption id="attachment\_7208" align="alignright" width="248"][![Preet Heer](images/8c10f69a_Preet-Heer.jpg)](images/8c10f69a_Preet-Heer.jpg) Preet Heer[/caption]
+[![Preet Heer](images/8c10f69a_Preet-Heer.jpg)](images/8c10f69a_Preet-Heer.jpg) Preet Heer
 Preet Heer works as an Urban Planner for the City of Surrey, and also teaches yoga part time from her home studio in White Rock. She did her yoga teacher training at the Salt Spring Centre, and has taught at some of the Yoga Getaway Weekends.
 She finds yoga a perfect complement to her busy life. Preet focuses her teaching on the aspect of bringing present moment awareness into each asana, integrating mindfulness with the physical practice. Yoga has been part of her life since she was 9 years old.
 *“Trees are poems that the earth writes upon the sky.”* –Kahlil Gibran

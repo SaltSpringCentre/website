@@ -30,7 +30,7 @@ Today was the hottest day of the year so far on the island, giving new meaning t
 **Saturday**
 I completed my pranayama practicum early this morning. Many yogis went into town today for the world famous Ganges market. A feast for the eyes, with produce displayed like art and stalls brimming with jewelry, pottery, glasswork, woodwork, soaps, weaving, baking, cheeses, chocolate, and the ubiquitous tie-dyed clothing. Everything at the market is local and handmade or raised.
 After supper, we celebrated the completion of teacher training with a talent show and yoga dance-rave. After a lot of laughs, a few tears, soda pop (!) and chips (!!) - organic, of course - I fell into bed after midnight, exhausted and exhilarated.
-[caption id="attachment\_6213" align="alignright" width="264"]![Laura Harris](images/013324ab_YTT-Laura-Harris2.jpg) Laura Harris[/caption]
+![Laura Harris](images/013324ab_YTT-Laura-Harris2.jpg) Laura Harris
 **Sunday**
 Graduation ceremony (more tears and laughter), many good bye hugs, one final organic, vegetarian, fabulous meal, prepared with love by the karma yogis, and it’s over. After 200-hrs of training and 4 weeks of immersion in the ashram and yogic lifestyle, I return home to put my learning to practice. Baba Hari Dass wrote a note to each of us: “You go home with the knowledge of yoga. Now the question is what to do with it. 1. Practice it. 2. Share it with others. 3. Teach to learn because learning never ends.”
 Read [**Part 1**](https://saltspringcentre.com/meet-our-ytt-grads-laura-harris/) of Laura's YTT experience.

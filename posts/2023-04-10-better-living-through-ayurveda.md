@@ -13,7 +13,7 @@ One of the reasons why these methods might only provide fleeting relief is that 
 Knowing your constitution is the first step to using Ayurveda as your one-stop shop for your happier, healthy life journey.
 If you have never had the opportunity to consult an ayurvedic practitioner, you might find filling out an Ayurveda constitution questionnaire a great place to start.
 Ayurveda Health Counsellor and Centre YTT instructor [Natasha (Jyoti) Samson](https://saltspringcentre.com/sscy_team/natasha-jyoti-samson-ayurveda-and-yoga/), offers a free Constitution Questionnaire that anyone can take in just a few minutes.
-[vcex\_button url="https://saltspringcentre.com/wp-content/uploads/2023/03/Constitution\_Questionnaire.pdf" title="Take the free Nourish Ayurveda & Yoga Constitution Questionnaire" style="flat" align="left" color="teal" size="medium" target="blank" rel="none"]Take the free Questionnaire (PDF)[/vcex\_button]
+[Take the free Questionnaire (PDF)](https://saltspringcentre.com/wp-content/uploads/2023/03/Constitution_Questionnaire.pdf)
  
 
 ---
@@ -25,15 +25,15 @@ Jyoti offers a number of online resources for balancing your body and mind, depe
 
 #### Kapha Dosha
 
-[embed]https://youtu.be/34cTvGFQ-Hw[/embed]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/34cTvGFQ-Hw" frameborder="0" allowfullscreen></iframe>
 
 #### Pitta Dosha
 
-[embed]https://youtu.be/P7JQlQoZTmk[/embed]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P7JQlQoZTmk" frameborder="0" allowfullscreen></iframe>
 
 #### Vata Dosha
 
-[embed]https://youtu.be/BnBC4SurHZM[/embed]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BnBC4SurHZM" frameborder="0" allowfullscreen></iframe>
 
 ### Learn More
 

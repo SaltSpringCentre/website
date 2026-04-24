@@ -7,7 +7,7 @@ categories: ["Ayurveda, Yoga &amp; You", "Monthly Newsletter", "Recipes"]
 tags: ["ayurveda", "Ayurveda Yoga and You", "Pratibha Queen"]
 ---
 
-[caption id="attachment\_8456" align="alignnone" width="420"][![A delicious and healthy bowl of kicheree](images/54371ecf_kicheree.jpg)](images/54371ecf_kicheree.jpg) Kitchari is a nourishing main dish[/caption]
+[![A delicious and healthy bowl of kicheree](images/54371ecf_kicheree.jpg)](images/54371ecf_kicheree.jpg) Kitchari is a nourishing main dish
 From hummus to minestrone, from chili con carne to kitchari, beans (known as dal in Indian cuisine) provide a delicious source of high quality nourishment. And during the colder winter months, our bodies require some high-octane fuel. As a staple food crop for humans throughout the world, beans have long been a rich source of protein, iron, and B vitamins. The cultivation of beans also nourishes the soil in which they grow. In Indian cuisine, dozens of varieties of dal are used.
 **Ease their Digestion**Their concentrated nutrition means they can be difficult for some of us to digest. To avoid the flatulence for which they’re famous, here are a few hints:
 
@@ -50,6 +50,6 @@ Finely chopped cilantro
 More inspiring recipes are available in *The Salt Spring Experience: Recipes for Body, Mind and Spirit*. Amadea Morningstar’s Ayurvedic cookbooks also include some delicious bean dishes.
 Wishing you happy, healthy and holy.
 – Pratibha
-[caption id="attachment\_8434" align="alignleft" width="287"][![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen[/caption]
+[![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen
 **Pratibha Queen** is a yoga instructor and Ayurvedic practitioner, who attends Salt Spring Center of Yoga retreats on a regular basis. Feel free to email with any questions that arise as you engage in health practices to support your yoga practice: pratibha.que@gmail.com.
 *(Photo of kitchari from [Taste Book](http://www.tastebook.com/recipes/2237332-Savory-Kicheree))*

@@ -28,6 +28,6 @@ I’m curious to know if you will try it.
 
 ---
 
-[caption id="attachment\_11315" align="aligncenter" width="575"][![Chandra playing a game with Babaji on New Year's Day](images/d3b3f475_Chandra-Babaji.jpg)](images/d3b3f475_Chandra-Babaji.jpg) Chandra playing a game with Babaji on New Year's Day[/caption]
+[![Chandra playing a game with Babaji on New Year's Day](images/d3b3f475_Chandra-Babaji.jpg)](images/d3b3f475_Chandra-Babaji.jpg) Chandra playing a game with Babaji on New Year's Day
 **Chandra Pamela Rose** is a long-time devotee of Babaji’s and student of yoga. She is a member of the Panchayat and a board member. She serves as the education administrator of the YTT program at SSCY and is on the teaching faculty. Chandra has taught classes at MMC and has a strong connection with Sri Ram Ashram.
 "Standing on the edge of a cliff" image by [Abhishek Maji](https://www.flickr.com/photos/abhishek047/) (creative commons attribution license)

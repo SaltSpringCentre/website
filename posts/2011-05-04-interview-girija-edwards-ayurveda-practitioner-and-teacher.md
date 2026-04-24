@@ -7,7 +7,7 @@ categories: ["Inspiration &amp; Spiritual Teachings", "Retreats"]
 tags: ["ayurveda", "girija", "interview"]
 ---
 
-[caption id="attachment\_2541" align="alignright" width="225" caption="Girija in South India"][![](images/a2128994_Girija-Edwards.jpg)](images/a2128994_Girija-Edwards.jpg)[/caption]
+[![](images/a2128994_Girija-Edwards.jpg)](images/a2128994_Girija-Edwards.jpg)
 Ayurveda is the science of life and longevity. The word “Ayurveda” comes from a combination of two Sanskrit words: “ayus” (life) and “veda” (knowledge of). This May, long time Ayurveda practitioner and teacher, Girija Edwards, will lead workshop participants in an engaging and empowering exploration of the principles of Ayurveda.
 Here Girija shares a bit about her practice and how it has impacted her life, as well as an Ayurvedic tip that can be easily integrated into your life.
 **Q: How long have you been practicing the principles of Ayurveda?**

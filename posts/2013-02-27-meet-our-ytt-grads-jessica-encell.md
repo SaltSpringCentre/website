@@ -7,7 +7,7 @@ categories: ["Inspiration &amp; Spiritual Teachings", "Monthly Newsletter", "Yog
 tags: ["YTT", "YTT Grad"]
 ---
 
-[caption id="attachment\_6545" align="alignright" width="297"]![YTT 2012 Graduate, Jessica Encell](images/d0b2dc50_YTT-Jessica.jpg) YTT 2012 Graduate, Jessica Encell[/caption]
+![YTT 2012 Graduate, Jessica Encell](images/d0b2dc50_YTT-Jessica.jpg) YTT 2012 Graduate, Jessica Encell
 Hello!
 My name is Jessica and I am a 22 year old graduate of the Summer 2012 YTT at the amazing Salt Spring Centre of Yoga.
 **Where do you live? What do you do in your life apart from yoga?**

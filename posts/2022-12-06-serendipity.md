@@ -9,7 +9,7 @@ tags: ["testimonial", "yoga retreat"]
 
 In November, the Salt Spring Centre of Yoga hosted the Ayurveda & Yoga "I Want More from Life" Retreat with Natasha (Jyoti) Samson.
 One of the retreat attendees, Shelley Robinson, was kind enough to share her musings about her experience following the retreat.
-[vcex\_divider\_dots color="#64979c" margin\_top="10" margin\_bottom="10"]
+
  
 ![](images/76a750f8_Shelley-Robinson.jpg)
 

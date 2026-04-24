@@ -23,17 +23,17 @@ Thanks to [Rebecca Dadson](http://www.rebeccadadson.com/) for these beautiful ph
 ## Solar Eclipse on the Mound
 
 Later in August, we were treated to a spectacular celestial event - the solar eclipse. While Salt Spring Island was not on the “path of totality”, it was still pretty exciting. The sky didn’t go black, but the light dimmed and the temperature dipped; it was chilly until the light and warmth of the sun returned. Meanwhile, we saw images of the crescent sun as the moon passed between sun and earth. Here are some photos of that event as we gathered on the mound.
-[caption id="attachment\_15301" align="alignnone" width="620"][![](images/debb963f_eclipse-on-the-stone-steps.jpg)](images/debb963f_eclipse-on-the-stone-steps.jpg) eclipse on the stone steps[/caption]
-[caption id="attachment\_15302" align="alignnone" width="720"][![](images/debb963f_Jules-showing-Laurel-.jpg)](images/debb963f_Jules-showing-Laurel-.jpg) Jules showing eclipse images under the tree to Laurel[/caption]
+[![](images/debb963f_eclipse-on-the-stone-steps.jpg)](images/debb963f_eclipse-on-the-stone-steps.jpg) eclipse on the stone steps
+[![](images/debb963f_Jules-showing-Laurel-.jpg)](images/debb963f_Jules-showing-Laurel-.jpg) Jules showing eclipse images under the tree to Laurel
 
 ## Yoga Teacher Training
 
 August was also the month in which a group of new yoga teachers graduated from the Centre’s YTT program.
-[caption id="attachment\_15305" align="alignnone" width="1080"][![](images/debb963f_YTT-grads.jpg)](images/debb963f_YTT-grads.jpg) 2017 YTT grads and teachers[/caption]
+[![](images/debb963f_YTT-grads.jpg)](images/debb963f_YTT-grads.jpg) 2017 YTT grads and teachers
 Congratulations to all the graduates, and thank you to all the students and teachers who, together, create this wonderful opportunity, and to the fabulous group of karma yogis who keep everything running smoothly. On the last night of YTT the whole community of students, teachers and karma yogis came together for an amazing talent show followed by a dance in the pond dome.
-[caption id="attachment\_15299" align="alignnone" width="628"][![](images/debb963f_YTT-Talent-a.jpg)](images/debb963f_YTT-Talent-a.jpg) Divakar, the MC as always; Jules[/caption]
-[caption id="attachment\_15298" align="alignnone" width="701"][![](images/debb963f_YTT-Talent-b.jpg)](images/debb963f_YTT-Talent-b.jpg) Svenja and Tyler; Amy[/caption]
-[caption id="attachment\_15300" align="alignnone" width="620"][![](images/debb963f_YTT-hoodies.jpg)](images/debb963f_YTT-hoodies.jpg) YTT students and Sharada in their Salt Spring Centre of Yoga hoodies[/caption]
+[![](images/debb963f_YTT-Talent-a.jpg)](images/debb963f_YTT-Talent-a.jpg) Divakar, the MC as always; Jules
+[![](images/debb963f_YTT-Talent-b.jpg)](images/debb963f_YTT-Talent-b.jpg) Svenja and Tyler; Amy
+[![](images/debb963f_YTT-hoodies.jpg)](images/debb963f_YTT-hoodies.jpg) YTT students and Sharada in their Salt Spring Centre of Yoga hoodies
 
 # Centre Activity
 
@@ -45,7 +45,7 @@ As always, Sunday satsang continues from 3:30 to around 5:30 each week. Communit
 
 The farm is abundant, with a big harvest season coming up as the apples and pears ripen in readiness for picking. Please be in touch if you’re interested in helping with the harvest and processing fruit for the winter.
 [![](images/debb963f_SSCY-Harvest-17.jpg)](images/debb963f_SSCY-Harvest-17.jpg)
-[caption id="attachment\_15304" align="alignnone" width="489"][![](images/debb963f_SSCY-Pole-Pounding.jpg)](images/debb963f_SSCY-Pole-Pounding.jpg) Santosh and Jess pounding T-posts[/caption]
+[![](images/debb963f_SSCY-Pole-Pounding.jpg)](images/debb963f_SSCY-Pole-Pounding.jpg) Santosh and Jess pounding T-posts
 Here is Milo’s monthly farm update.
 > We’re quick on our feet this week as the new fence approaches completion! The bulk of the Food Forest within will be planted out this fall and the rest come spring.
 > As I’m sure you’re all aware it’s harvest season! We’re stepping up our preservation game this year and building a large solar dehydrator for the abundant apples and pears poised to rain down on us. Stay tuned.

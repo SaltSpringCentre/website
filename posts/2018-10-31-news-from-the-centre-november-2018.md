@@ -32,7 +32,7 @@ One of our satsang brothers, **Will Pegg**, passed away recently. If you are in 
 
 ## Volunteer support
 
-[caption id="attachment\_17800" align="aligncenter" width="640"][![](images/a89e0922_KarmaYogis-2018.jpg)](images/a89e0922_KarmaYogis-2018.jpg) Grateful for our karma yogis[/caption]
+[![](images/a89e0922_KarmaYogis-2018.jpg)](images/a89e0922_KarmaYogis-2018.jpg) Grateful for our karma yogis
 November is the last month of our 2018 program season. Our residential community has begun its annual winter shrinking, and we welcome volunteer support, particularly in the kitchen and housekeeping, during program times. Please contact the office if you are interested and available.
 
 ## To read….

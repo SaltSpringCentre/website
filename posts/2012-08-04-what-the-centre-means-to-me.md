@@ -7,7 +7,7 @@ categories: ["Inspiration &amp; Spiritual Teachings", "Retreats"]
 tags: ["community retreat", "family retreat", "interview"]
 ---
 
-[caption id="attachment\_5325" align="alignnone" width="650"][![](images/f490e36d_AFR-Latte-Da-2009.jpg)](images/f490e36d_AFR-Latte-Da-2009.jpg) Enthusiastic guests at the Annual Community Retreat, 2009[/caption]
+[![](images/f490e36d_AFR-Latte-Da-2009.jpg)](images/f490e36d_AFR-Latte-Da-2009.jpg) Enthusiastic guests at the Annual Community Retreat, 2009
 
 Just before the beginning of the Annual Community Yoga Retreat (our 38th consecutive summer yoga retreat) I asked some of the early arrivals what the annual retreat on Salt Spring means to them. Here are some of their answers:
 **Piet Shakar Suess - born on Salt Spring, living in Los Angeles**

@@ -18,7 +18,7 @@ categories: ["Karma Yoga", "Monthly Newsletter", "SSCY Community"]
 
 ![](images/54affa4a_august-2.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ### Behind the scenes  📸
 
@@ -26,26 +26,26 @@ April was a month of devotion, celebration, and service. From Ram Navami, Babaji
 
 ### 
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/54affa4a_august-3.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/54affa4a_august-4.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/54affa4a_august-5.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/54affa4a_august-6.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/54affa4a_august-7.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 Jai Babaji, Jai Satsang! 💖
 OM, Peace, Peace, Peace 🕉️ 🙏 🌿

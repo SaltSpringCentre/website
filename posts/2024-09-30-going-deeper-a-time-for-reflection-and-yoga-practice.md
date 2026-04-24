@@ -39,7 +39,7 @@ In this spirit, Baba Hari Dass has given a collection of practices that embrace 
 If you feel drawn to deepen your spiritual practice and connect more fully with your inner self, we welcome you to join us from **next November** for the **Going Deeper Silent retreat**. Through the practice of āsanas (postures), prāṇāyāma (breathwork), chanting, and meditation, you will be supported in moving away from outward distractions and reconnecting with the peace that resides within.
  It is a wonderful first silent retreat for those who have some solid experience with the practices of yoga and seated meditation and would like to explore them in a more immersive retreat environment. 
 [👉 Learn more about the Going Deeper retreat.](https://saltspringcentre.com/programs-retreats/going-deeper-silent-retreat/)
-[vcex\_divider color="#dddddd" width="100%" height="1px" margin\_top="20" margin\_bottom="20"]
+
 
 #### Yogeshwar Will HumphreyBy Yogeshwar
 

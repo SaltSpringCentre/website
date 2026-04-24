@@ -9,7 +9,7 @@ tags: ["Health Notes"]
 
 As the summer season begins to merge into fall (cooler nights, shorter days, crops drying out), it’s time to consider a seasonal rebalancing program. The change of season is a traditional time in Ayurveda for a few days of resetting the bio-program for the coming change.
 During the summer, with its long days of warm (even hot) weather, pitta dosha (the heat factor) accumulates in the body. When this excess is not released, it can cause flare-ups and heat-related disorders in the drier airs of fall. If we take a few days to rebalance the system with a modified diet, a cleansing routine and added quiet times, we can ensure that the body is ready for the seasonal changes to come.
-[caption id="attachment\_3053" align="alignright" width="200"][![community dinner](images/7a976555_MG_7399.jpg)](images/7a976555_MG_7399.jpg) Base your daily diet solely on kitchari[/caption]
+[![community dinner](images/7a976555_MG_7399.jpg)](images/7a976555_MG_7399.jpg) Base your daily diet solely on kitchari
 Below are some suggestions for a seasonal cleanse that you can do in the privacy of your own home. Try for 3-4 days if you can arrange it; even 1-2 days on this regimen will allow your system a well-deserved rest after summer’s labors (or the excesses of vacation)!
 
 1. Drink 2-3 glasses of warm water as soon after rising as possible. This helps the urinary system flush accumulated toxins and aids in elimination. Blood cleanser herbs (such as burdock and dandelion roots) can be taken during the day.
@@ -21,5 +21,5 @@ Below are some suggestions for a seasonal cleanse that you can do in the privacy
 7. About ½ hour before bed, mix ½ - 1 teaspoon of triphala in warm water, let stand for a few minutes and drink quickly. Triphala is a combination of three fruits, which acts as a tonic for the intestines, as well as an aid to elimination. If you find the stool too soft or loose next morning, cut back a bit on the amount for your next dose.
 
 Focusing on a cleansing routine for a few days can help restore your mental and physical balance, bringing clarity to the mind and joy to the heart. Try it all, or only the parts that fit for you. And may your days be happy, healthy, and holy!
-[caption id="attachment\_7961" align="alignleft" width="206"][![Pratibha at her 70th birthday celebration](images/83d149b8_Pratibha.jpeg)](images/83d149b8_Pratibha.jpeg) Pratibha at her 70th birthday celebration[/caption]
+[![Pratibha at her 70th birthday celebration](images/83d149b8_Pratibha.jpeg)](images/83d149b8_Pratibha.jpeg) Pratibha at her 70th birthday celebration
 Pratibha Queen is a yoga instructor and Ayurvedic practitioner, who attends Salt Spring Center of Yoga retreats on a regular basis. Feel free to email with any questions that arise as you engage in health practices to support your yoga practice: pratibha.que@gmail.com.

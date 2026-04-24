@@ -9,7 +9,7 @@ tags: ["Pratibha Queen"]
 
 ### As part of our ongoing conversation about the future direction of the Centre, here are some reflections from one of our far-flung members about managing transitions at the Pacific Cultural Center in Santa Cruz.
 
-[caption id="attachment\_14732" align="aligncenter" width="620"][![](images/b02f246e_program-house.jpg)](images/b02f246e_program-house.jpg) The Salt Spring Centre of Yoga[/caption]
+[![](images/b02f246e_program-house.jpg)](images/b02f246e_program-house.jpg) The Salt Spring Centre of Yoga
 Salt Spring Centre, like Mt. Madonna Center and Sri Ram Ashram, plays an essential role as a beacon of light in a darkening world. These centers help keep our spiritual faith and our hopes for the future alive as we traverse the struggles of daily life: social crises, financial issues, health concerns, career and relationship challenges. We desperately need these places of peace and pilgrimage to remind us of the immense potential of not only the human spirit, but of the spirit of nature and the mysterious force that unifies and supports our human journey. These centers are vital in offering the teachings and the space for humans to work on their self development.
 An essential component of Babaji’s teachings is to "Live a Virtuous Life". To support the practice of this path requires the supportive community (satsang) to accomplish the work as well as to remind us of our intention. SSCY is a blessing as it contributes to the continuance and maintenance of such a sacred space where one is supported in living a virtuous life! With a supportive community dedicated to service as karma yoga, the Centre can continue as a place of summer pilgrimage where we gather to share the deep bonds that have grown up among the spiritual family at Salt Spring Centre. Many of us visit from 2 to 6 weeks, long enough to absorb, soak up, as well as contribute to the life at the Centre.
 
@@ -38,5 +38,5 @@ Looking to the future, these beacons of light require tending if they are to con
 
 ---
 
-[caption id="attachment\_8434" align="alignleft" width="287"][![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen[/caption]
+[![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen
 **Pratibha Queen** is an Ashtanga Yoga instructor and Ayurvedic practitioner who lives in Santa Cruz. She is a member of DSS who attends Salt Spring Centre of Yoga retreats on a regular basis. **All quotes above are from the writings of Baba Hari Dass.**

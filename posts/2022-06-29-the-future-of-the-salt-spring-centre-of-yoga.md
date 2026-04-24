@@ -7,18 +7,18 @@ categories: ["Announcements", "DSSS Board", "Fundraising"]
 tags: ["board", "donations", "dsss", "Fundraising"]
 ---
 
-[vcex\_spacing size="30px"]
+
 
 For an update on the Salt Spring Centre of Yoga's status in 2023, visit: 
 
 - "[Message from the DSSS President](https://saltspringcentre.com/message-from-the-dsss-president/)" (Dec. 8, 2022)
 - "[2023 Centre Operations Plan Summary](https://saltspringcentre.com/2023-centre-operations-plan-summary/)" (Jan. 31, 2023)
 
-[vcex\_spacing size="30px"]
+
 
 ---
 
-[vcex\_spacing size="30px"]
+
 
 *Originally published on June 29, 2022*
 

@@ -7,7 +7,7 @@ categories: ["Ayurveda, Yoga &amp; You", "Monthly Newsletter"]
 tags: ["ayurveda", "Ayurveda Yoga and You", "Pratibha Queen"]
 ---
 
-[caption id="attachment\_8720" align="alignright" width="254"][![Doshas and the five elements](images/56918fbd_dosha-and-five-elements.jpg)](images/56918fbd_dosha-and-five-elements.jpg) Doshas and the five elements[/caption]
+[![Doshas and the five elements](images/56918fbd_dosha-and-five-elements.jpg)](images/56918fbd_dosha-and-five-elements.jpg) Doshas and the five elements
 “Eat what you can digest” was Babaji’s basic prescription, when he was asked like, “Babaji, how do I know what to eat?” Sounds simple, eh? “Eat what you can digest!” And yet, the next question comes easily, “How do I know what I can digest?”
 Two basic principles are involved in answering this question:
 
@@ -54,5 +54,5 @@ Ayurveda teachings emphasize human nutrition and digestion, believing that the s
 It’s also important to remember that the doshas are in a constant state of fluctuation within us. Everything we do, say, even think, affects this always moving balance. So our attentive mindfulness to food - meal preparation, the act of eating, digestion and elimination - can help lead us on along the path of vitality, longevity, and (hopefully) enlightenment!
 Peace,
 Pratibha
-[caption id="attachment\_8434" align="alignleft" width="287"][![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen[/caption]
+[![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen
 **Pratibha Queen** is a yoga instructor and Ayurvedic practitioner, who attends Salt Spring Center of Yoga retreats on a regular basis. Feel free to email with any questions that arise as you engage in health practices to support your yoga practice: pratibha.que@gmail.com.

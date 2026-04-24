@@ -7,7 +7,7 @@ categories: ["Inspiration &amp; Spiritual Teachings", "Monthly Newsletter"]
 tags: ["Babaji", "teachings"]
 ---
 
-[caption id="attachment\_7344" align="alignnone" width="493"][![Babaji at 90](images/1ef93726_Babji-90.jpeg)](images/1ef93726_Babji-90.jpeg) Babaji at 90[/caption]
+[![Babaji at 90](images/1ef93726_Babji-90.jpeg)](images/1ef93726_Babji-90.jpeg) Babaji at 90
 Having just returned from Mount Madonna Center - the Salt Spring Centre’s big sister centre - to celebrate Babaji’s 90th birthday and to connect with many, many brothers and sisters in our satsang family, I am struck by the precious gift of having met a master yogi and been taught, inspired and supported by Baba Hari Dass.
 I know that not all readers of this newsletter have met Babaji, and may not understand the idea of devotion to a guru. When asked about it, Babaji wrote:
 > The aim of life is to live in peace. A guru or spiritual teacher teaches how to attain that peace. The teacher and student relationship is based on faith and trust. A guru who is not trusted by the student is not his or her guru in reality. A guru doesn’t teach much except how to live in the world with truthfulness, with nonviolence, and with selfless service to others. The guru either presents these teachings in words of through the way they live their life.

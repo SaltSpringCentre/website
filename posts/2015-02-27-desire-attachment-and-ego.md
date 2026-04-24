@@ -49,5 +49,5 @@ When we carry the memory of our experience and crave for more of it, or not to l
 
 ---
 
-[caption id="attachment\_8434" align="alignleft" width="287"]![Pratibha Queen](images/54371ecf_Prathiba.jpg) Pratibha Queen[/caption]
+![Pratibha Queen](images/54371ecf_Prathiba.jpg) Pratibha Queen
 **Pratibha Queen** has been a student of Baba Hari Dass since 1976. She took yoga teacher training at Mount Madonna Center in 1981, and has been teaching asana, pranayama and meditation for many years. She is also a student of Ayurveda, and is currently offering a series of classes at the Pacific Cultural Center called “Ayurveda, Yoga and You” and writes [articles about Ayurveda](https://saltspringcentre.com/tag/ayurveda/) for the Salt Spring Centre's newsletter.

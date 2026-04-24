@@ -7,7 +7,7 @@ categories: ["Inspiration &amp; Spiritual Teachings", "Monthly Newsletter"]
 tags: ["Babaji", "teachings"]
 ---
 
-[caption id="attachment\_5841" align="alignright" width="308"][![](images/92349d4a_babaji.jpg)](images/92349d4a_babaji.jpg) Babaji, 1975[/caption]
+[![](images/92349d4a_babaji.jpg)](images/92349d4a_babaji.jpg) Babaji, 1975
 **What would it take for you to be happy? What do you think you need?** 
 Living in this culture, it’s very easy to get caught in thinking, “I need...” or “if only I had..., then I’d be content”. We get the message every day that we should be thinner, smarter, more attractive, have a better job, be in a better relationship, be cool, be better parents and still be cool. We should be kinder, more generous, less anxious - and on and on. No matter what we have, it’s not quite enough. These thoughts are based on the premise that there’s something fundamentally wrong with us and we need things, something outside ourselves, to make us whole. It is a false premise; we are fundamentally whole, complete, pure. We are not who we think we are.
 In *Everyday Peace, Letters for Life* Babaji writes: *It is useless to think, “Who was I?” and “Who will I be?” The most important thing is “Who am I?” If we dwell on our past, which we can’t change, or if we dwell on the future, which is indefinite and unknown, then we can’t work in the present. If the present is passing in peace, it will make a peaceful past and sow a seed of peace to grow in the future. The present is the most important thing in life.*

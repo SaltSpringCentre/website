@@ -29,7 +29,7 @@ We are savouring the beautiful sunny fall days, that the fountains are still abl
 At the end of September, we hosted "I want more from life", a 4-day transformational retreat, generous offering from Jyoti. Participants could dive deeper into yoga and ayurveda wisdom to understand themselves on a deeper level.  
 ![](images/95f03a17_11.jpg)
 ![](images/95f03a17_12.jpg)
-[vcex\_divider\_dots color="#64979c" margin\_top="10" margin\_bottom="10"]
+
 
 *In our hearts always ♡*![](images/95f03a17_Photo-Collage-September-4.jpg)
 
@@ -38,7 +38,7 @@ At the end of September, we hosted "I want more from life", a 4-day transformati
 *Celeste Aradhana Mallet Jason, our long time Satsang sister, gifted teacher, and lifetime student of Babaji, passed away Sept 9th following her very courageous journey living with cancer. She was instrumental in bringing students to the Centre in earlier years and dedicated time and wisdom to presenting on the YTT (Yoga Teacher Training) faculty, both here and at Mount Madonna center, Babaji's centre in California. Aradhana is the spiritual name from Babaji for Celeste. It means to worship, to praise. She brought this sacred energy into every space she created, wherever she was and is.*
 *She is so well loved, respected and admired by the local Island and Centre communities. Her love of community and her mission to share Yoga practices with everyone, every body, inspired her to create a hub for people with a town centre; the latest, being the beautiful Ganges Yoga Studio, which she ran as the founder, director, and lead teacher with her team there. We followed Babaji's ritual practice for supporting the soul's transition from being embodied to moving to the spirit realm by Tarpanam, prayers, mantras, and offerings for the first 12 days and then the Shraddha on the 13th day to truly be together and support and honour the wonderful being she is. Now transformed to spirit love and light, still working on our behalf, no doubt. She leaves such a great legacy of yoga studies and practices, inspiration, and a role model for our lives.*
 ![](images/95f03a17_Photo-Collage-September-1.jpg)
-[vcex\_divider\_dots color="#64979c" margin\_top="10" margin\_bottom="10"]
+
 ![](images/95f03a17_Blog-Post-Picture-Vertical-900-x-1200-1.jpg)
 Thank you to Babaji for all the gifts he gives us as we continue to be blessed and inspired by his teachings and Grace.  
 Thank you to the Board, Kristin and office team, the Operational Team, the Karma Yogis and staff and teachers, all who are working so devotedly to create support and create the best possibilities.

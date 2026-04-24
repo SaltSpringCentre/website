@@ -7,7 +7,7 @@ categories: ["Inspiration &amp; Spiritual Teachings", "Monthly Newsletter"]
 tags: ["Babaji", "teachings"]
 ---
 
-[caption id="attachment\_7576" align="alignnone" width="576"][![Baba Hari Dass](images/81ed3841_Babaji.jpg)](images/81ed3841_Babaji.jpg) Baba Hari Dass[/caption]
+[![Baba Hari Dass](images/81ed3841_Babaji.jpg)](images/81ed3841_Babaji.jpg) Baba Hari Dass
 Over the course of many years Babaji has often responded to students’ anxious questions with the recommendation to do regular sadhana, later shortened on his chalkboard to RS.
 Sadhana, or spiritual practice, comes in many forms. Many people have a committed asana practice, and that is one expression of sadhana, as is the practice of karma yoga or developing positive qualities.
 Generally, when Babaji uses the term 'regular sadhana', he is referring to the daily time that one sets aside for a meditation practice, a time each morning that is designated to withdrawing the mind from its preoccupation with the outer world, holding the intention of being still within .

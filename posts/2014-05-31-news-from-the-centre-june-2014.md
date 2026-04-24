@@ -8,22 +8,22 @@ categories: ["Announcements", "Monthly Newsletter", "Monthly Update"]
 
 Hello everyone,
 May was a busy month here, and June is looking busier yet. Thanks to our regular resident community and off-land community members, we are ready for the summer season, including YSSI (Yoga Service and Study Immersion) which will be beginning very soon (or will have just begun when this newsletter is posted) and YTT which begins in a month.
-[caption id="attachment\_9778" align="alignnone" width="550"][![AppleBlossoms-Spring2014](images/c7154460_AppleBlossoms-Spring2014-e1401564567113.jpg)](images/c7154460_AppleBlossoms-Spring2014-e1401564567113.jpg) Apple blossoms in the orchard[/caption]
-[caption id="attachment\_9779" align="alignnone" width="550"][![ViewOfTheHouse-Spring2014-2](images/c7154460_ViewOfTheHouse-Spring2014-2-e1401564582477.jpg)](images/c7154460_ViewOfTheHouse-Spring2014-2-e1401564582477.jpg) Sun setting at the Centre[/caption]
+[![AppleBlossoms-Spring2014](images/c7154460_AppleBlossoms-Spring2014-e1401564567113.jpg)](images/c7154460_AppleBlossoms-Spring2014-e1401564567113.jpg) Apple blossoms in the orchard
+[![ViewOfTheHouse-Spring2014-2](images/c7154460_ViewOfTheHouse-Spring2014-2-e1401564582477.jpg)](images/c7154460_ViewOfTheHouse-Spring2014-2-e1401564582477.jpg) Sun setting at the Centre
 I’d like to welcome all the folks joining us for the YSSI program. There will be 8 new people working in the kitchen, 4 in housekeeping, 3 in maintenance & landscaping, 2 in the garden and 1 in the office.
 
 ## Uplifting AGM 2014
 
 Dharma Sara Satsang Society held its AGM in May. Although annual general meetings sometimes have a reputation of being long and rather dry, this one was uplifting. We began the day with a work party in the morning, with people helping in the kitchen, housekeeping and garden and  cutting firewood for next winter - in the rain!
-[caption id="attachment\_9777" align="alignnone" width="550"][![Johanna in the garden & Ronan, youngest karma yogi at the work party](images/c7154460_GardeingAGM-2014.jpg)](images/c7154460_GardeingAGM-2014.jpg) Johanna in the garden & Ronan, youngest karma yogi at the work party[/caption]
-[caption id="attachment\_9775" align="alignnone" width="550"]![WorkParty-Spring2014](images/c7154460_WorkParty-Spring2014.jpg) Raven, Ben, David in the garden[/caption]
-[caption id="attachment\_9776" align="alignnone" width="550"][![Sid and Rajani in the kitchen](images/c7154460_Cooking-AGM2014.jpg)](images/c7154460_Cooking-AGM2014.jpg) Sid working on his "Wild Tofu Surprise"; Rajani and Kalpana in the kitchen[/caption]
+[![Johanna in the garden & Ronan, youngest karma yogi at the work party](images/c7154460_GardeingAGM-2014.jpg)](images/c7154460_GardeingAGM-2014.jpg) Johanna in the garden & Ronan, youngest karma yogi at the work party
+![WorkParty-Spring2014](images/c7154460_WorkParty-Spring2014.jpg) Raven, Ben, David in the garden
+[![Sid and Rajani in the kitchen](images/c7154460_Cooking-AGM2014.jpg)](images/c7154460_Cooking-AGM2014.jpg) Sid working on his "Wild Tofu Surprise"; Rajani and Kalpana in the kitchen
 After a fabulous lunch made by Sid, Kalpana and Rajani (Sid’s Wild Tofu Surprise), we gathered for the meeting and election of the DS Board.
 
 ## New Board Members!
 
 We have three new board members this year, two of them under the age of 40! The Board members are Lakshmi, Om Prakash, Chandra, Divakar, Rajesh (Jeramiah) and Saraswati.
-[caption id="attachment\_9770" align="alignnone" width="550"][![DSBoard-Spring2014](images/c7154460_DSBoard-Spring2014.jpg)](images/c7154460_DSBoard-Spring2014.jpg) New Dharma Sara Board: Lakshmi, Chandra, Divakar, Rajesh. Front row: Om PK, Saraswati[/caption]
+[![DSBoard-Spring2014](images/c7154460_DSBoard-Spring2014.jpg)](images/c7154460_DSBoard-Spring2014.jpg) New Dharma Sara Board: Lakshmi, Chandra, Divakar, Rajesh. Front row: Om PK, Saraswati
 
 ## ACYR Registration is Open!
 

@@ -125,7 +125,7 @@ You are worth it.
 I love you and support you.
 Many blessings on your journey. 
 Natasha (Jyoti)
-[vcex\_divider color="#dddddd" width="100%" height="1px" margin\_top="20" margin\_bottom="20"]
+
 
 #### **Natasha Jyoti SamsonNatasha (Jyoti) Samson,  CYA-RYT 200, AHC, P.Eng.Ayurveda & Yoga Educator**
 

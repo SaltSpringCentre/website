@@ -7,7 +7,7 @@ categories: ["Inspiration &amp; Spiritual Teachings", "Karma Yoga", "Monthly New
 tags: ["Babaji", "teachings"]
 ---
 
-[caption id="attachment\_6540" align="alignright" width="298"]![Babaji working on a rock wall project in the spirit of Karma Yoga, 2000](images/d0b2dc50_Babaji-rock-wall.jpg) Babaji working on a rock wall project, 2000[/caption]
+![Babaji working on a rock wall project in the spirit of Karma Yoga, 2000](images/d0b2dc50_Babaji-rock-wall.jpg) Babaji working on a rock wall project, 2000
 The Salt Spring Centre of Yoga is rooted in the practice of karma yoga, the practice of selfless service, or at least holding the intention of the practice of selfless service. Until we’re no longer identified with our own individual stories - our bodies, our thoughts, our relationships and our ‘things’ - we are not fully practicing selflessness. Yet if our intention is to be of service, we’ve begun the practice.
 In his essay *Selfless Service, the Spirit of Karma Yoga* Babaji writes:
 

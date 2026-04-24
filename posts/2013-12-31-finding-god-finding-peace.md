@@ -6,7 +6,7 @@ author: "sysadmin_1a1xu9u1"
 categories: ["Inspiration &amp; Spiritual Teachings", "Monthly Newsletter"]
 ---
 
-[caption id="attachment\_8803" align="alignright" width="307"][![Babaji](images/112bbd09_Babaji-2013.jpg)](images/112bbd09_Babaji-2013.jpg) Babaji[/caption]
+[![Babaji](images/112bbd09_Babaji-2013.jpg)](images/112bbd09_Babaji-2013.jpg) Babaji
 The beginning of a new year is a time to reflect on how the past year has gone and to resolve to make some changes in the one that’s just beginning. Generally our resolutions have to do with losing weight, starting an exercise program (again) or committing to some path of action. The new year can also be a reminder to ‘come back to where you once belonged’ (Beatles, circa 1967), asking the big questions: Why am I here? What is my purpose in life? Who am I?
 In the Sufi master Rumi’s ‘Table Talk’; (quoted in ‘The Tibetan Book of Living and Dying) there is the following passage:
 

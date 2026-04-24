@@ -8,7 +8,7 @@ categories: ["Ayurveda", "SSCY Community"]
 
 Natasha (Jyoti) Samson recently travelled to India where she spent time Sri Ram Ashram, visited sites where Babaji lived and practiced, and took part in an intensive 21-day panchakarma detox at [Vaidyagrama Ayurveda](https://www.vaidyagrama.com/).
 She sat down with us to talk about her trip and the wisdom she will be sharing at her upcoming [Ayurveda and Yoga Retreat](https://saltspringcentre.com/programs-retreats/ayurveda-and-yoga-retreats/).
-[embed]https://www.youtube.com/watch?v=J6Jp9rpUYbw[/embed]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J6Jp9rpUYbw" frameborder="0" allowfullscreen></iframe>
 
 ---
 

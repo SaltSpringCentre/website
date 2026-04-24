@@ -10,43 +10,43 @@ categories: ["Announcements", "Karma Yoga", "Monthly Newsletter"]
 
 Our recent Yoga Study & Service Immersion Program brought together a beautiful group of dedicated people who embraced daily practice, selfless service, and community life at the Centre. From serving in the garden and kitchen to deep study and heartfelt connection, their presence uplifted us all.
 The closing ceremony was a joyful celebration of their journey, rooted in yoga, community, and transformation. We’re so grateful for all they brought to this spiritual home.
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 ![](images/799ef0ab_70.jpg)
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 ![](images/799ef0ab_71.jpg)
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 ![](images/799ef0ab_72.jpg)
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ### Podluck Blackburn Pod
 
 In conjunction with the Neighbours Feeding Neighbours initiative on the Island, we hosted a "Podluck" this month with residents residing in the Blackburn Pod. This gathering had intentions of addressing local food security, emergency preparedness, and at its core: coming together and connecting as neighbours.
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ### 
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ### Behind the scenes  📸
 
 Over the past month, life at the Centre has been rich with quiet dedication and meaningful rhythm. Behind the scenes, community members have been tending the land, harvesting from the farm, preparing nourishing meals, and holding space for daily practices and rituals.
 The kitchen has been alive with the scent of fresh, garden-grown ingredients. The farm crew worked with heart and hands in the soil. All of this energy came together to welcome guests for our recent Yoga & Wellness Weekend Retreat, a few peaceful days of reconnection and rest.
 ![](images/799ef0ab_73.jpg)
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 ![](images/799ef0ab_74.jpg)
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 ![](images/799ef0ab_77.jpg)
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 ![](images/799ef0ab_76.jpg)
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 ![](images/799ef0ab_75.jpg)
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 ![](images/799ef0ab_78.jpg)
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 ![](images/799ef0ab_79-1.jpg)
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 ![](images/799ef0ab_Photo-Collage-September-6.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 Jai Babaji, Jai Satsang! 💖
 OM, Peace, Peace, Peace 🕉️ 🙏 🌿

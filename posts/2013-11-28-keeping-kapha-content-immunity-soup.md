@@ -38,7 +38,7 @@ Astragalus root, a Chinese herb with powerful immune-enhancing properties, adds 
 Plenty of fun physical activity also helps keeps kapha content. Be sure to include ice skating, skiing, laughing and dancing as part of your wintertime routine as well!
 May all be happy, healthy and holy!
 - Pratibha (pratibha.que@gmail.com)
-[caption id="attachment\_8434" align="alignleft" width="287"][![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen[/caption]
+[![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen
 **Pratibha Queen** is a yoga instructor and Ayurvedic practitioner, who attends Salt Spring Center of Yoga retreats on a regular basis. Feel free to email with any questions that arise as you engage in health practices to support your yoga practice: pratibha.que@gmail.com.
  
 [[Dosha image source](http://www.momasana.com/?p=1044)]

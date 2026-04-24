@@ -9,8 +9,8 @@ tags: ["Sharada's monthly update"]
 
 Greetings everyone,
 February sped by, but brought with it harbingers of spring: the return of the frogs, daffodils and other spring blossoms, and lots of nettles which we have been enjoying at our meals. David is preparing the soil in preparation for the new growing season in the garden.
-[caption id="attachment\_11185" align="alignnone" width="575"]![SSCY-March2015](images/5d99914b_SSCY-March2015.jpg) David working under the big blue sky; the daffodils are here![/caption]
-[caption id="attachment\_11186" align="aligncenter" width="575"]![SpringNettles](images/5d99914b_SpringNettles.jpg) Harvesting nettles in the forest[/caption]
+![SSCY-March2015](images/5d99914b_SSCY-March2015.jpg) David working under the big blue sky; the daffodils are here!
+![SpringNettles](images/5d99914b_SpringNettles.jpg) Harvesting nettles in the forest
 
 ### Shiva Ratri 2015
 

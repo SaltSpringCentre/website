@@ -34,7 +34,7 @@ Solstice was celebrated in the Satsang room with the community and on zoom. Usha
 ### Weekly Offerings
 
 Classes continued through until Christmas and started again in January. We’ve seen an increase in in-person attendance at Satsang and we continue to be together with those on Zoom. It’s wonderful to hear and feel the power of kirtan together, sitting in silent meditation, chanting the healing mantra, and feeling Babaji’s continuous Grace for us all!! It’s a highlight of the week. We are excited about 2023, wishing you all a Happy, Healthy New Year!!
-[caption id="attachment\_30052" align="aligncenter" width="253"]![](images/fb2f24cd_Lunar-Year-from-Tiger-to-Rabbit.jpg) Credit: [Huang Xiaoxiao](https://m.weibo.cn/detail/4861000500644295)[/caption]
+![](images/fb2f24cd_Lunar-Year-from-Tiger-to-Rabbit.jpg) Credit: [Huang Xiaoxiao](https://m.weibo.cn/detail/4861000500644295)
 
 ### Community Life
 

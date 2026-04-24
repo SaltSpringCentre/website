@@ -22,7 +22,7 @@ Ayurveda teaches us that our mind is the most powerful of healing tool that’s 
 
 The act of remembering to bring light and goodness into our lives actually activates the healing process within our body-mind complex. The power of intention, directed toward positivity, will in itself bring light into our life. And keep in mind that in just a few weeks, the process reverses . . . the days will begin to lengthen, as we slowly move in the direction of springtime. All part of the great wheel of life! Peace to all beings.
 - Pratibha
-[caption id="attachment\_8434" align="alignleft" width="287"][![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen[/caption]
+[![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen
 **Pratibha Queen** is a yoga instructor and Ayurvedic practitioner, who attends Salt Spring Center of Yoga retreats on a regular basis. Feel free to email with any questions that arise as you engage in health practices to support your yoga practice: pratibha.que[at]gmail[dot]com.
 --
 Candle photo by [Miki Yoshihito](https://www.flickr.com/photos/mujitra/8276780771) via Flickr Creative Commons.

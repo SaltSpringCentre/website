@@ -6,7 +6,7 @@ author: "sysadmin_1a1xu9u1"
 categories: ["Inspiration &amp; Spiritual Teachings", "Monthly Newsletter"]
 ---
 
-[caption id="attachment\_9518" align="alignright" width="341"][![Babaji70s](images/3ecf6378_Babaji70s.jpg)](images/3ecf6378_Babaji70s.jpg) Babaji in the 1970's[/caption]
+[![Babaji70s](images/3ecf6378_Babaji70s.jpg)](images/3ecf6378_Babaji70s.jpg) Babaji in the 1970's
 In 1975 a few people in our satsang undertook to publish a spiritual journal called "Dharma Sara: a Journal of Yoga Sadhana.” Although the intention was that it be the first of a series, it turned out to be the only one (though other publications followed).
 Babaji taught us classical Ashtanga Yoga, the eight-limbed path that is inclusive of all other yogas. Its various aspects lend themselves to people of every temperament. Because the intention in publishing this journal was that it be an expression of spiritual universality, articles and stories from all spiritual paths were included.
 Included in that issue was this popular Hasidic fable:

@@ -9,7 +9,7 @@ tags: ["Peter Ashok Baragon"]
 
 ### Extended Triangle Pose: Utthita Trikonasana (A standing pose/lateral bend)
 
-[caption id="attachment\_10011" align="alignnone" width="550"][![Peter demonstrating Utthita Trikonasana](images/e490b19e_Peter-UtthitaTrikonasana1.jpg)](images/e490b19e_Peter-UtthitaTrikonasana1.jpg) Peter demonstrating Utthita Trikonasana[/caption]
+[![Peter demonstrating Utthita Trikonasana](images/e490b19e_Peter-UtthitaTrikonasana1.jpg)](images/e490b19e_Peter-UtthitaTrikonasana1.jpg) Peter demonstrating Utthita Trikonasana
 It's the feeling of wringing out the back and spinal muscles while creating space for breath in the corners of the torso, that keeps this pose a staple in my practice.
 I remember enjoying this pose in a yoga class years ago, when my back muscles felt tight and knotted from weight training and swimming. Triangle pose for me was a soothing and relieving posture to the tension in my back and spinal column.
 When this pose is performed with care and attention to one's own ability and physical restrictions in the hips and shoulders, it can be the most rejuvenating posture to find.
@@ -34,7 +34,7 @@ Before you begin, recognize the areas in your body that are tight and less flexi
 • Relieves backaches and neck tension.
 • Tones the respiratory, urinary/genital systems and spinal nerves.
 • Stimulates the digestive and circulatory systems.
-[caption id="attachment\_10010" align="alignnone" width="550"][![Using a chair for a supported modification](images/e490b19e_Peter-UtthitaTrikonasana2.jpg)](images/e490b19e_Peter-UtthitaTrikonasana2.jpg) Using a chair for support in the pose[/caption]
+[![Using a chair for a supported modification](images/e490b19e_Peter-UtthitaTrikonasana2.jpg)](images/e490b19e_Peter-UtthitaTrikonasana2.jpg) Using a chair for support in the pose
 **Modifications:**
 • *Keep legs closer together if you’re tight in the hips and lower back.*
  *• Stand with your back to a wall, using the wall to support and guide the lateral bend.*

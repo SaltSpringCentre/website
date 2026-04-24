@@ -8,7 +8,7 @@ categories: ["Asana", "Monthly Newsletter"]
 
 ### Virabhadrasana 2 (veer-ah-bah-DRAHS-anna) - Warrior 2
 
-[caption id="attachment\_8675" align="alignnone" width="550"][![Priya demonstrates Virabhadasana 2](images/56918fbd_Priya-Warrior1.jpg)](images/56918fbd_Priya-Warrior1.jpg) Priya demonstrates Virabhadasana 2[/caption]
+[![Priya demonstrates Virabhadasana 2](images/56918fbd_Priya-Warrior1.jpg)](images/56918fbd_Priya-Warrior1.jpg) Priya demonstrates Virabhadasana 2
 Steady and strong, with strength and stamina. Virabhadrasana 2 can teach us a lot about the dynamics of bringing wisdom into the actions of our everyday lives. It is a powerful pose, no doubt, but as you explore the pose's alignment and inner attitude, the heart of the peaceful warrior begins to reveal itself offering confidence to face your fears, courage to move forward and compassion to embrace one another.
 **Benefits**
 Virabhadrasana 2 strengthens the legs, ankles, knees, arms, shoulders and aims to increase elasticity in the back and groins. Overall circulation in the body is developed, mental focus plus stamina is gained and the 3 doshas - kapha, vata and pitta (\* Ayurvedic science that aligns the mind-body- spirit\*) are brought back into balance.
@@ -37,13 +37,13 @@ Virabhadrasana 2 tones udana, prana, apana and samana vayu. The Five Vayus (udan
 
 **Modifications**
 Allowing the hands to rest at the hips, shorten your stance, or your gaze can remain in the direction the chest is facing.
-[caption id="attachment\_8682" align="alignnone" width="550"][![Modifications of the pose](images/56918fbd_Priya-Warrior-Modifications1.jpg)](images/56918fbd_Priya-Warrior-Modifications1.jpg) Modifications of the pose[/caption]
+[![Modifications of the pose](images/56918fbd_Priya-Warrior-Modifications1.jpg)](images/56918fbd_Priya-Warrior-Modifications1.jpg) Modifications of the pose
 You may also initiate the posture from a kneeling position, or utilize props.
-[caption id="attachment\_8681" align="alignnone" width="550"][![From a kneeling position](images/56918fbd_Priya-Warrior6.jpg)](images/56918fbd_Priya-Warrior6.jpg) From a kneeling position[/caption]
+[![From a kneeling position](images/56918fbd_Priya-Warrior6.jpg)](images/56918fbd_Priya-Warrior6.jpg) From a kneeling position
 
 **Chair:** a) rest your arms on. b) sit on
 
-[caption id="attachment\_8683" align="alignnone" width="549"][![Using a chair as a prop ](images/56918fbd_Priya-Warrior-Modifications2.jpg)](images/56918fbd_Priya-Warrior-Modifications2.jpg) Using a chair as a prop[/caption]
+[![Using a chair as a prop ](images/56918fbd_Priya-Warrior-Modifications2.jpg)](images/56918fbd_Priya-Warrior-Modifications2.jpg) Using a chair as a prop
 
 **Wall:** a) place the body against. b) back foot pressing into wall.
 

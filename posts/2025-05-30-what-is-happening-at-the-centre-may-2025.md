@@ -23,36 +23,36 @@ This very special forest was protected from being disturbed at Babaji’s direct
 
 ###
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ### Behind the scenes  📸
 
 May was a beautiful month here at the Centre, full of meaningful moments. We had our regular yoga classes and yoga rituals, and the farm stand opened with the first goodies from the garden (always such a treat!). A lot of love went into making handmade gifts for Elders attending the Q’ushin’tul Gathering. There’s been lots of karma yoga happening, preparing meals straight from the garden, tending the land, caring for the buildings, and keeping things flowing with heart. Our Yoga & Wellness Retreat brought a lovely group together for a weekend of rest and connection. All in all, May was full of quiet joy, shared service, and moments that reminded us why this place feels so special.
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/7a4a69e9_60.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/7a4a69e9_61.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/7a4a69e9_Photo-Collage-September-3.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/7a4a69e9_63.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/7a4a69e9_64.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 
 ![](images/7a4a69e9_65.jpg)
 
-[vcex\_divider color="#ffffff" width="100%" height="1px" margin\_top="10" margin\_bottom="10"]
+
 Jai Babaji, Jai Satsang! 💖
 OM, Peace, Peace, Peace 🕉️ 🙏 🌿

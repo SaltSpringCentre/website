@@ -7,7 +7,7 @@ categories: ["Inspiration &amp; Spiritual Teachings", "Monthly Newsletter", "Yog
 tags: ["Kenzie Pattillo", "YTT Grad"]
 ---
 
-[caption id="attachment\_6898" align="alignright" width="384"][![Kenzie-Pattillo1](images/0ca60ca6_Kenzie-Pattillo1.jpg)](images/0ca60ca6_Kenzie-Pattillo1.jpg) YTT Grad, Kenzie Pattillo[/caption]
+[![Kenzie-Pattillo1](images/0ca60ca6_Kenzie-Pattillo1.jpg)](images/0ca60ca6_Kenzie-Pattillo1.jpg) YTT Grad, Kenzie Pattillo
 **Where do you live? What do you do in your life apart from yoga?**
 I have been living in North Vancouver for the last seven years but will always call Nova Scotia my home. I am a full-time mama to two divine little boy beings who are presently 4 and 5. I deeply appreciate attending life drawing classes and hiking into the North Shore Mountains in my spare time.
 **What motivated you to begin practicing yoga? How did yoga come to be a part of your life?**

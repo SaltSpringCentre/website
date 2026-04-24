@@ -8,19 +8,19 @@ categories: ["Monthly Newsletter", "Monthly Update"]
 
 Hello everyone,
 Happy May! The air is perfumed with the aroma of blossoms and life is blooming. The campground is open and there are signs that warmer weather - and sunshine - are on the way. Community life is growing. Here are some photos of Easter brunch and the appearance of the Easter Turtle (because we don’t have a bunny costume!).
-[caption id="attachment\_14860" align="aligncenter" width="620"][![](images/67bbcbbe_Jules-under-the-maple.Apr_.-2017.jpg)](images/67bbcbbe_Jules-under-the-maple.Apr_.-2017.jpg) Jules under the maple tree.[/caption]
-[caption id="attachment\_14859" align="aligncenter" width="620"][![](images/67bbcbbe_Easter-brunch-2017.jpg)](images/67bbcbbe_Easter-brunch-2017.jpg) Enjoying Easter brunch (Ben, Bri, Tyler, Carnel)[/caption]
-[caption id="attachment\_14865" align="aligncenter" width="620"][![](images/67bbcbbe_Avo-keeping-watch-Apr.-2017.jpg)](images/67bbcbbe_Avo-keeping-watch-Apr.-2017.jpg) Avo doing his job - keeping watch while resting among the flowers[/caption]
-[caption id="attachment\_14864" align="aligncenter" width="620"][![](images/67bbcbbe_group-photo-April-2017.jpg)](images/67bbcbbe_group-photo-April-2017.jpg) Jules, Ben, Kaori, Bri, Lakshmi, Carnel (the Easter Turtle), Tyler[/caption]
+[![](images/67bbcbbe_Jules-under-the-maple.Apr_.-2017.jpg)](images/67bbcbbe_Jules-under-the-maple.Apr_.-2017.jpg) Jules under the maple tree.
+[![](images/67bbcbbe_Easter-brunch-2017.jpg)](images/67bbcbbe_Easter-brunch-2017.jpg) Enjoying Easter brunch (Ben, Bri, Tyler, Carnel)
+[![](images/67bbcbbe_Avo-keeping-watch-Apr.-2017.jpg)](images/67bbcbbe_Avo-keeping-watch-Apr.-2017.jpg) Avo doing his job - keeping watch while resting among the flowers
+[![](images/67bbcbbe_group-photo-April-2017.jpg)](images/67bbcbbe_group-photo-April-2017.jpg) Jules, Ben, Kaori, Bri, Lakshmi, Carnel (the Easter Turtle), Tyler
 The farm is definitely a happening place. Here is Milo’s latest update about what’s happening on the land.
 
 ## Milo's Farm Update
 
-[caption id="attachment\_14861" align="aligncenter" width="620"][![](images/67bbcbbe_IMG_1067-e1493574097267.jpg)](images/67bbcbbe_IMG_1067-e1493574097267.jpg) School kids in the greenhouse with Milo - mixing compost tea[/caption]
+[![](images/67bbcbbe_IMG_1067-e1493574097267.jpg)](images/67bbcbbe_IMG_1067-e1493574097267.jpg) School kids in the greenhouse with Milo - mixing compost tea
 Ok! Our hoop houses are nearly full and we're days away from first harvests. Greens to start, roots and peas soon to follow. Such a fantastic time of the year, hey? Grateful for the wild greens of spring and our stubborn wintered leeks for holding us through this slow, steady Spring.
-[caption id="attachment\_14863" align="aligncenter" width="620"][![](images/67bbcbbe_Avo-on-watch..jpg)](images/67bbcbbe_Avo-on-watch..jpg) Avo on watch.[/caption]
+[![](images/67bbcbbe_Avo-on-watch..jpg)](images/67bbcbbe_Avo-on-watch..jpg) Avo on watch.
 A large fence installation is on the horizon including significant repairs to our current garden fence, which didn't fare our winter well. In the meantime Avo dog has been keeping a vigilant watch on our borders, intercepting and deterring all plant-nibbling beasts.
-[caption id="attachment\_14862" align="aligncenter" width="620"][![](images/67bbcbbe_Compost-tea-bubbling-away..jpg)](images/67bbcbbe_Compost-tea-bubbling-away..jpg) Compost tea bubbling away.[/caption]
+[![](images/67bbcbbe_Compost-tea-bubbling-away..jpg)](images/67bbcbbe_Compost-tea-bubbling-away..jpg) Compost tea bubbling away.
 Our Food Forest destined cuttings are rooting well. It looks like we'll be building up quite the nursery indeed! To keep all these potted plants entertained and satiated I have been brewing up weekly batches of my wicked compost tea. To brew, generous helpings of soil are collected from our worm bins, native forests and of course... compost piles. After a few more magic ingredients the lot of it is aerated into action for 36hrs. Billions of beneficial bacteria and fungi are introduced upon application. Yum.
 Come on by for a sunny rainy windy spring day walkabout!
 

@@ -7,7 +7,7 @@ categories: ["Karma Yoga", "Monthly Newsletter"]
 tags: ["Mark Dadson", "Meet our Karma Yogis"]
 ---
 
-[caption id="attachment\_11164" align="alignright" width="350"][![Karma Yogi Mark](images/5d99914b_KY-MarkDadson.jpg)](images/5d99914b_KY-MarkDadson.jpg) Karma Yogi Mark[/caption]
+[![Karma Yogi Mark](images/5d99914b_KY-MarkDadson.jpg)](images/5d99914b_KY-MarkDadson.jpg) Karma Yogi Mark
 I first came to the Centre in the mid 80s for a weekend yoga workshop. My friend and I left the program for an evening to see Valdy in Fulford. We got chastised for leaving, but it was worth it. More recently I heard about this place from my roommate, Johanna. I came here about a year ago on a bike trip in the winter and stayed with Daniel and Cristina whom I met through Johanna. That’s when I found out about the maintenance opening and I was interviewed for the position.
 I had been working in Vancouver as a long-distance truck driver, driving from Vancouver to Alberta and back. The job appealed to me because it enabled me to work five days a week and have more time for yoga. But driving long distances can be lonely work, and that’s certainly one of the things that drew me here.
 I enjoy working with my hands; even as a child I made go karts out of golf caddies. I collected a lot of tools over the years, which languished in a storage trailer for a long time, and I finally brought them here. I yearned to work with my hands in a meaningful way which to me meant community. I enjoy problem solving, working with recycled materials, solving challenges that arise.

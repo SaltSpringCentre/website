@@ -9,7 +9,7 @@ tags: ["Asana of the month"]
 
 ### Utkatasana, chair or powerful pose
 
-[caption id="attachment\_7923" align="alignnone" width="548"][![Bryan demonstrates utkatasana](images/83d149b8_Bryan-Hill-utkatasana.jpg)](images/83d149b8_Bryan-Hill-utkatasana.jpg) Bryan demonstrates utkatasana[/caption]
+[![Bryan demonstrates utkatasana](images/83d149b8_Bryan-Hill-utkatasana.jpg)](images/83d149b8_Bryan-Hill-utkatasana.jpg) Bryan demonstrates utkatasana
 I am always drawn to bring utkatasana into my classes - so much so that some of my students once gave me a thank you card with a stick figure in chair and plank pose (my other favorite posture). This posture is great for bringing more energy to a class. Flowing in and out of chair is very stimulating and strengthening. I find it an excellent way to prepare students for more challenging postures, such as eagle and revolved chair, that stem from utkatasana. I tend to introduce it early in the standing sequences of a class and use it like punctuation between flows that involve a single side of the body.
 **Benefits**
 Chair pose works the whole body. There is an opening effect through the shoulders. The legs are strengthened from the ankle right to the hip. The abdominals and back are challenged to maintain correct alignment and simultaneously tone the internal organs. This posture also stimulates circulation and digestion.

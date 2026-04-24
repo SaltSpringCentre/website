@@ -56,7 +56,7 @@ Spring encourages change. As such, we embrace the return of the light as natures
 
 If you're ready to fully embrace seasonal renewal, join us for the **Spring Cleanse Retreat** at the Salt Spring Centre of Yoga, next spring. Discover cleansing practices, nourishing Ayurvedic meals, and rejuvenating yoga to help you transition into spring with balance and vitality.
 [**👉 Learn more**](https://saltspringcentre.com/programs-retreats/spring-cleanse-retreat/)
-[vcex\_divider color="#dddddd" width="100%" height="1px" margin\_top="20" margin\_bottom="20"]
+
 
 #### [Savita Leah Young - Wellness Treatments](https://saltspringcentre.com/sscy_team/savita-leah-young/2023-savita-leah-young-wellness-treatments/)[By Savita Leah Young](https://saltspringcentre.com/sscy_team/savita-leah-young/)
 

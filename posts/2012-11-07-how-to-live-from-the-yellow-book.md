@@ -7,7 +7,7 @@ categories: ["Inspiration &amp; Spiritual Teachings", "Monthly Newsletter"]
 tags: ["teachings"]
 ---
 
-[caption id="attachment\_5841" align="alignright" width="308"][![](images/92349d4a_babaji.jpg)](images/92349d4a_babaji.jpg) Babaji, 1975[/caption]
+[![](images/92349d4a_babaji.jpg)](images/92349d4a_babaji.jpg) Babaji, 1975
 When someone asked Babaji a question about the right way to live, he said, *by lessening our demand, adding that demand increases desires and desires make demand, which creates dissatisfaction. Dissatisfaction makes pain. I don’t say cut your demands altogether. There are some essential demands to live in this world, like food, clothing, place to live, friends, etc. A carpenter can’t work without his tools.*
 *Nobody wants to live in pain, and to live in peace we need four important things: 1)**equality, 2)**contentment, 3)**right thinking and 4)**good association.*
 **Equality** means *to keep the mind in balance while getting sensual pleasure or pain* - or we could say, remaining equipoised in any situation, no matter what happens. It also means *to deal with others equally without having any selfish motive, recognizing that we all are one though in different shapes and forms like a potter makes different kinds of pots but the clay is the same.* The intention is to remain unattached while living in society.

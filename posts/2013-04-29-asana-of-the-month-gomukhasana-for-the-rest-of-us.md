@@ -9,7 +9,7 @@ tags: ["Asana of the month", "YTT Grad"]
 
 ### Gomukhasana (cow’s head pose) (go-moo-KAHS-anna) go = cow (Sanskrit "go" is a distant relative of the English word "cow") mukha = face
 
-[caption id="attachment\_6906" align="alignnone" width="560"][![Full Gomukhasana pose (front view and back view)](images/0ca60ca6_Kenzie-Pattillo2.jpg)](images/0ca60ca6_Kenzie-Pattillo2.jpg) Full Gomukhasana pose (front view and back view)[/caption]
+[![Full Gomukhasana pose (front view and back view)](images/0ca60ca6_Kenzie-Pattillo2.jpg)](images/0ca60ca6_Kenzie-Pattillo2.jpg) Full Gomukhasana pose (front view and back view)
 First off, I must admit that this is my least favourite yoga asana. Up until now, I have mostly managed to avoid practicing it and teaching it, but I often find myself in a yoga class saying things like, ‘Your greatest gift in yoga is finding a pose you can’t stand to be in. This is the pose for you!’ So, when asked to write an Asana of the Month piece for Offerings, Gomukhasana instantly came to mind.
 I have short muscular limbs, a long torso, and naturally inwardly rotated thighs. This pose seems to stretch every tight muscle I have, all at once, which apparently includes ankles, hips and thighs, armpits and triceps, and chest. My fullest expression looks nothing like the images I've seen of this pose being demonstrated in books and online.
 The traditional version of this pose is seemingly quite straightforward to execute.
@@ -19,7 +19,7 @@ The traditional version of this pose is seemingly quite straightforward to execu
 
 **Gomukhasana for the rest of us**
 For many of us, this full expression of Gomukhasana is not physically possible at present, or at least for any length of time. Here are some gentler variations of Gomukhasana for the rest of us!
-[caption id="attachment\_6907" align="alignnone" width="616"][![Gomukhasana modifications](images/0ca60ca6_Kenzie-Pattillo3.jpg)](images/0ca60ca6_Kenzie-Pattillo3.jpg) Gomukhasana modifications[/caption]
+[![Gomukhasana modifications](images/0ca60ca6_Kenzie-Pattillo3.jpg)](images/0ca60ca6_Kenzie-Pattillo3.jpg) Gomukhasana modifications
 
 - Elevate the hips on a block or bolster to tilt the pelvis forward and allow for an upright neutral spine.
 - Allow the right leg to remain straight, bend the left knee over the right knee, and bring the left heel towards the outside of the right hip.
@@ -42,6 +42,6 @@ Once you've found your appropriate expression of this pose, inhale and lengthen 
 Regardless of what your pose looks like on the outside, the true yoga is what is happening on the inside. Close your eyes and allow the breath to be slow and full. In the (cow's) face of strong sensations the mind will tend to wander away; bring it back to the breath. Watch with utmost attention the breadth and width of the sensations. Explore whether there is a temperature, color or emotion attached to them. Observe how the sensations shift and flow with the breath.
 **Coming out of the posture**
 Release from this pose slowly! First release the arms, roll the shoulders and shake out the arms and hands. Place the hands on the floor behind you and lean into them to slowly release the legs and then give them a shake as well. Bend the knees to 90 degrees, place the soles of the feet on the edges of the mat, and ‘windshield wiper’ the knees - first to the left, and then to the right - as many times as is needed. Come to stillness. Ask the body where it needs to go next. Be intuitive. Breathe.
-[caption id="attachment\_6898" align="alignright" width="225"][![YTT grad, Kenzie Patillo](images/0ca60ca6_Kenzie-Pattillo1.jpg)](images/0ca60ca6_Kenzie-Pattillo1.jpg) YTT grad, Kenzie Patillo[/caption]
+[![YTT grad, Kenzie Patillo](images/0ca60ca6_Kenzie-Pattillo1.jpg)](images/0ca60ca6_Kenzie-Pattillo1.jpg) YTT grad, Kenzie Patillo
 **About the instructor**
 Kenzie Pattillo is a householder yogi living in North Vancouver BC. She completed her Yoga Teacher Training at SSCY in 2002 and currently teaches Gentle Hatha and Yin Yoga. (You can find out more about Kenzie by reading our [YTT Grad Feature on her](https://saltspringcentre.com/2013/04/meet-our-ytt-grads-kenzie-pattillo/).)

@@ -47,7 +47,7 @@ I love this pose, it's like the best early morning stretch any time of the day! 
 
  **Modifications**
 For an increased stretch to your groin, perform this pose with the lower arm in front of the bent-knee thigh. As your fingertips or hand connect with the floor or block, bring the back of your right shoulder against the inner knee so that your shoulder can firmly press into the knee.
-[caption id="attachment\_9488" align="alignnone" width="606"][![chetna-ext-side-angle-2](images/3ecf6378_chetna-ext-side-angle-2.jpg)](images/3ecf6378_chetna-ext-side-angle-2.jpg) Modify by placing a block under your hand as a guide[/caption]
+[![chetna-ext-side-angle-2](images/3ecf6378_chetna-ext-side-angle-2.jpg)](images/3ecf6378_chetna-ext-side-angle-2.jpg) Modify by placing a block under your hand as a guide
 For Beginners - Instead of placing the hand on the floor, rest your forearm on the top of your bent-knee thigh. Avoid resting on the thigh and collapsing into the right shoulder. Encourage the length to move between right shoulder and neck and to lightly lift the upper body weight away from the bent-knee thigh. Beginners may also place a block under the hand as a guide.
 **About the Instructor**
 [![chetna-head-shot-1a](images/3ecf6378_chetna-head-shot-1a.jpg)](images/3ecf6378_chetna-head-shot-1a.jpg)Chetna has been studying yoga and its many aspects since 1999. She began teaching in 2003 and is a graduate of the Salt Spring Centre of Yoga (SSCY), where she was certified in Classical Ashtanga (8 limb) and Hatha Yoga Systems. She is currently completing an internship in Yoga Therapy through Integrated Yoga Therapy and has received her Professional Yoga Therapist certification (500 hour level). Chetna is registered with the Yoga Alliance as an E-RYT500.

@@ -24,12 +24,12 @@ The farm is abundant, and we are enjoying spectacular meals from the farm harves
 
 # Community Days
 
-[caption id="attachment\_15382" align="aligncenter" width="640"][![](images/1bb3e30d_KYs-Kaori-Hope-Rebecca.jpg)](images/1bb3e30d_KYs-Kaori-Hope-Rebecca.jpg) Kaori, Hope, Rebecca at work in the kitchen[/caption]
+[![](images/1bb3e30d_KYs-Kaori-Hope-Rebecca.jpg)](images/1bb3e30d_KYs-Kaori-Hope-Rebecca.jpg) Kaori, Hope, Rebecca at work in the kitchen
 Wednesdays continue to be community days of connecting and working together. As we know, when everyone is on board, a lot gets done! Babaji was the model for that many years ago, and it’s still going strong.
 
 # Centre School News
 
-[caption id="attachment\_15378" align="aligncenter" width="620"][![](images/1bb3e30d_SSCS-fall-fair-copy.jpg)](images/1bb3e30d_SSCS-fall-fair-copy.jpg) Highlights of the Centre School's Fall Fair[/caption]
+[![](images/1bb3e30d_SSCS-fall-fair-copy.jpg)](images/1bb3e30d_SSCS-fall-fair-copy.jpg) Highlights of the Centre School's Fall Fair
 There’s lots of activity at the Salt Spring Centre School as well. Following Salt Spring Island’s well-known Fall Fair in September, the Centre School does its own Fall Fair, with many of the same categories as the big fair, including the famed zucchini races. Here are a few photos of this year’s School Fall Fair.
 
 # Meet Marquis

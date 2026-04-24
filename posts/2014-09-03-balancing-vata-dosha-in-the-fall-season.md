@@ -33,7 +33,7 @@ The fall season is an especially good time to practice self-massage with sesame 
 Yoga practices to maintain our vata balance in autumn include nadi shodhana (alternate nostril breath) and ujjayi (victorious breath). Be sure to include them in your morning practice. A focus on balancing poses such tree pose, gomukasana and squats is helpful for vata, as are forward bends (standing or seated). Shavasana and other restorative poses are also essential for stabilizing our vata nature at the change of season.
 Maintaining our own healthy balance using these basic techniques of Ayurveda and yoga is a birthright that’s been long denied by our modern western medical system. Bringing these simple suggestions into our life can become part of our 24/7 spiritual practice that honors the divine nature dwelling within each of us. It requires intention, attention, and remembrance, as well as desire for a long and healthy life. As we walk this path of yoga and Ayurveda, we manifest these positive qualities for ourselves and for others. May all beings walk the path of peace.
 -Pratibha
-[caption id="attachment\_8434" align="alignleft" width="287"][![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen[/caption]
+[![Pratibha Queen](images/54371ecf_Prathiba.jpg)](images/54371ecf_Prathiba.jpg) Pratibha Queen
 **Pratibha Queen** is a yoga instructor and Ayurvedic practitioner, who attends Salt Spring Center of Yoga retreats on a regular basis. Feel free to email with any questions that arise as you engage in health practices to support your yoga practice: pratibha.que[at]gmail[dot]com.
 --
 Fall leaves photo by [Karen Roe](https://www.flickr.com/photos/karen_roe/)

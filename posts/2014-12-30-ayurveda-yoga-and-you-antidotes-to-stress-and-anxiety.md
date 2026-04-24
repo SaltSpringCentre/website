@@ -7,7 +7,7 @@ categories: ["Ayurveda, Yoga &amp; You", "Monthly Newsletter"]
 tags: ["ayurveda", "Ayurveda Yoga and You", "Pratibha Queen"]
 ---
 
-[caption id="attachment\_10714" align="alignright" width="325"][![chamomile-tea-flickrcc-chiots-run](images/3d4f24a2_chamomile-tea-flickrcc-chiots-run.jpg)](images/3d4f24a2_chamomile-tea-flickrcc-chiots-run.jpg) A cup of chamomile tea can help to relieve stress[/caption]
+[![chamomile-tea-flickrcc-chiots-run](images/3d4f24a2_chamomile-tea-flickrcc-chiots-run.jpg)](images/3d4f24a2_chamomile-tea-flickrcc-chiots-run.jpg) A cup of chamomile tea can help to relieve stress
 
 We’ve all heard that stress has a wearing effect on the nerves, the emotions, and even on the strength of our immune response. Relationship challenges, job insecurity, climate change, or simply waiting in line at the airport can trigger a stress response, sending debilitating hormones racing through our system. From a medical perspective, stress can trigger anything from allergies and asthma to headaches and indigestion.
 

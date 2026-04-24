@@ -8,11 +8,11 @@ categories: ["Monthly Newsletter", "Monthly Update"]
 
 [![](images/dd68d260_SSCY-forest.jpg)](images/dd68d260_SSCY-forest.jpg)Hello everyone, 
 December is here: the time of winter solstice, Christmas, Chanukah, and other seasonal celebrations of light; and, here in the Pacific Northwest, rain - lots of rain (except for one day of snow in early November that was gone the next day). That’s what makes this part of the world so green. November was a busy month, but December at the Centre is a quieter time. Our resident community is small, with a number of people taking this time to visit family or to travel.
-[caption id="attachment\_15611" align="aligncenter" width="640"][![](images/dd68d260_P1020821.jpg)](images/dd68d260_P1020821.jpg) lunch around the wood stove - Marta, Jessica, Sharada, Hope, Ellie, Racquel, Larry[/caption]
-[caption id="attachment\_15610" align="aligncenter" width="480"][![](images/dd68d260_P1020818-e1511936811840.jpg)](images/dd68d260_P1020818-e1511936811840.jpg) Marta and Jessica[/caption]
-[caption id="attachment\_15613" align="aligncenter" width="640"][![](images/dd68d260_P1020832.jpg)](images/dd68d260_P1020832.jpg) Om PK on the tractor[/caption]
-[caption id="attachment\_15614" align="aligncenter" width="480"][![](images/dd68d260_P1020838-e1511936747713.jpg)](images/dd68d260_P1020838-e1511936747713.jpg) Shyam and Yogeshwar filling potholes[/caption]
-[caption id="attachment\_15615" align="aligncenter" width="480"][![](images/dd68d260_P1020842-e1511936785314.jpg)](images/dd68d260_P1020842-e1511936785314.jpg) Larry pounding the gravel[/caption]
+[![](images/dd68d260_P1020821.jpg)](images/dd68d260_P1020821.jpg) lunch around the wood stove - Marta, Jessica, Sharada, Hope, Ellie, Racquel, Larry
+[![](images/dd68d260_P1020818-e1511936811840.jpg)](images/dd68d260_P1020818-e1511936811840.jpg) Marta and Jessica
+[![](images/dd68d260_P1020832.jpg)](images/dd68d260_P1020832.jpg) Om PK on the tractor
+[![](images/dd68d260_P1020838-e1511936747713.jpg)](images/dd68d260_P1020838-e1511936747713.jpg) Shyam and Yogeshwar filling potholes
+[![](images/dd68d260_P1020842-e1511936785314.jpg)](images/dd68d260_P1020842-e1511936785314.jpg) Larry pounding the gravel
 Satsang, kirtan and full moon yajnas continue throughout the winter. You can see what else is happening on our [website](https://saltspringcentre.com/), our [Facebook page](https://www.facebook.com/saltspringcentreofyoga) and [Instagram](https://www.instagram.com/saltspringcentre/). And here’s a note from the IT team:
 
 # New Look in 2018
@@ -28,7 +28,7 @@ We are still looking for a maintenance coordinator, so if someone you know is in
 # Centre School Celebrations
 
  
-[caption id="attachment\_15629" align="aligncenter" width="855"][![](images/dd68d260_Advent-Celebration-2017.jpg)](images/dd68d260_Advent-Celebration-2017.jpg) Moments from the Celebration of Light (photos by Jan Mangan)[/caption]
+[![](images/dd68d260_Advent-Celebration-2017.jpg)](images/dd68d260_Advent-Celebration-2017.jpg) Moments from the Celebration of Light (photos by Jan Mangan)
 [![](images/dd68d260_Winterfest-2017.jpg)](images/dd68d260_Winterfest-2017.jpg)Toward the end of November the [Salt Spring Centre School](http://saltspringcentreschool.ca/) again hosted its annual Celebration of Light (aka Advent). Usha led school families, folks from the Centre and the wider Salt Spring community in songs of light as the children walked the spiral of cedar boughs and stars to light their candles, a reminder to keep the light in our hearts burning in this dark time of year.
 On December 2, the school will be hosting [Winterfest](https://www.facebook.com/SaltSpringCentreSchool/photos/gm.1169411589868969/914172218730780/?type=3&theater) at the Centre. This is a family event for the Salt Spring community, with craft tables for the children in the satsang room and a concession with delicious vegetarian lunch options and sweet goodies for sale in the dining room. If you’re on the island, and especially if you have kids, do come by.
 

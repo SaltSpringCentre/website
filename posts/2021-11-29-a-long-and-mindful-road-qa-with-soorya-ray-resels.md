@@ -96,4 +96,4 @@ Since Covid, she leads daily online meditations and online chanting twice a mont
 
 ### For information about the Salt Spring Centre of Yoga’s YTT program, visit:
 
-[vcex\_button url="https://saltspringcentre.com/programs-retreats/trainings/yoga-teacher-training/" title="Visit Site" style="flat" align="left" color="#64979c" size="small" target="self" rel="none"]Yoga Teacher Training[/vcex\_button]
+[Yoga Teacher Training](https://saltspringcentre.com/programs-retreats/trainings/yoga-teacher-training/)

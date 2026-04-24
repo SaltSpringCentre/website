@@ -9,7 +9,7 @@ tags: ["Sharada's monthly update"]
 
 Hello everyone,
 I recall writing last year at this time that spring had arrived, only to note the following month that winter had returned, complete with a heavy snow storm. So far, spring seems to be in the air, but who knows? Right now, spring bulbs have begun to sprout and the robins are back in abundance. We shall see what comes next.
-[caption id="attachment\_10974" align="aligncenter" width="575"][![SunOverGarden-Marianne](images/5452f8bb_SunOverGarden-Marianne.jpg)](images/5452f8bb_SunOverGarden-Marianne.jpg) Morning sun streaming over the garden[/caption]
+[![SunOverGarden-Marianne](images/5452f8bb_SunOverGarden-Marianne.jpg)](images/5452f8bb_SunOverGarden-Marianne.jpg) Morning sun streaming over the garden
 
 ### Celebrate Shiva Ratri with us
 
@@ -27,7 +27,7 @@ Kenzie has shared another insightful and inspiring book review, **[How We Live O
 
 ### Lots to Learn at the Centre School
 
-[caption id="attachment\_10970" align="aligncenter" width="575"]![Who has an easier time getting food? A tadpole collecting algae or a frog catching bugs?](images/5452f8bb_SSCS-TadpoleExperiment.jpg) Who has an easier time getting food? A tadpole collecting algae or a frog catching bugs?[/caption]
+![Who has an easier time getting food? A tadpole collecting algae or a frog catching bugs?](images/5452f8bb_SSCS-TadpoleExperiment.jpg) Who has an easier time getting food? A tadpole collecting algae or a frog catching bugs?
 The Centre School has been very busy. The students have just completed their annual reading month, leading up to the Battle of the Books. Coming up is 100’s day (the 100th day of school), with children bringing 100 objects of all kinds, followed by the annual Lunar New Year celebration. The ongoing theme of the school year has been study of life in the wetlands, (water in general) with a focus on the endangered red-legged frog, which thrives in the wetlands of the Salt Spring Nature Reserve next to the Centre’s property. When I dropped into the school a couple of weeks ago I found two of the classes totally absorbed in a study of permeability, which all the kids understood. During the time I sat in on the class, I learned a lot!
 May we all continue learning and growing.
 Love,

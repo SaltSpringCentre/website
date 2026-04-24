@@ -52,7 +52,7 @@ When Will found out he said, "I always knew we would go together."
 So the next day I made my way into Victoria where a host of us were gathering at Louise's. We sang Kirtan and did ceremony, and Will spoke of things close to his heart. He implored me a couple of times to speak about the stanzas and sentiments in the above Gita verses, and after drinking the cocktail that would end his life, he went out chewing over their meaning and speaking about what Babaji said about them.
 His body/mind went to a coma state and the room fell into a meditation for a little while. Afterwards, several of us would report having visions of Will joining Babaji during his time. One vision had Babaji waiting for him, and then them walking off together.
 Babaji is grace made manifest, and I'm so grateful to be so moved by it. I have since realized that it was Will's faith in Babaji that managed to hold together the relationship of service that I had with him in the last several months of his life. It was though Babaji said, "I have a mission for you", plunked me in Victoria, and arranged for the diverse channels of energy so that it could work.
-[caption id="attachment\_17851" align="aligncenter" width="687"][![](images/ddedf3e3_Will-Pegg-5.jpg)](images/ddedf3e3_Will-Pegg-5.jpg) This drawing is by Jenny Jaeckel[/caption]
+[![](images/ddedf3e3_Will-Pegg-5.jpg)](images/ddedf3e3_Will-Pegg-5.jpg) This drawing is by Jenny Jaeckel
 I'm ever grateful for Will's love and friendship, and also for his demonstration of what it looks and feels like to be a sincere devotee of Babaji's until the last breath. We are all better off for his courage and efforts.
 Jai Will!
 Jai Gurudev!

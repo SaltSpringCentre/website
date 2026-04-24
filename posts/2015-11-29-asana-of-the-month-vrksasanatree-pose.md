@@ -15,9 +15,9 @@ Vrksasana is a balancing pose that requires focus and concentration. If you have
 • stabilizes core muscles
 • calms the mind
 Wow! So, which tree do you feel like today? Are you steady and strong like an oak tree? Are you a grounded willow tree with swaying branches in the wind? Just take 5 minutes out of your day and feel the qualities and benefits of being in tree pose.
-[caption id="attachment\_12508" align="aligncenter" width="575"][![Tree Pose with open tree arms](images/88453768_Andrea-TreePose1.jpg)](images/88453768_Andrea-TreePose1.jpg) Tree Pose with open tree arms[/caption]
-[caption id="attachment\_12506" align="aligncenter" width="575"][![Tree Pose with boxfold arms](images/88453768_Andrea-TreePose3.jpg)](images/88453768_Andrea-TreePose3.jpg) Tree Pose with boxfold arms[/caption]
-[caption id="attachment\_12504" align="aligncenter" width="575"][![Tree Pose with reverse prayer arms](images/88453768_Andrea-TreePose2.jpg)](images/88453768_Andrea-TreePose2.jpg) Tree Pose with reverse prayer arms[/caption]
+[![Tree Pose with open tree arms](images/88453768_Andrea-TreePose1.jpg)](images/88453768_Andrea-TreePose1.jpg) Tree Pose with open tree arms
+[![Tree Pose with boxfold arms](images/88453768_Andrea-TreePose3.jpg)](images/88453768_Andrea-TreePose3.jpg) Tree Pose with boxfold arms
+[![Tree Pose with reverse prayer arms](images/88453768_Andrea-TreePose2.jpg)](images/88453768_Andrea-TreePose2.jpg) Tree Pose with reverse prayer arms
 **Simple Steps for Vrksasana:**
 1. Start in tadasana and root your feet to the earth spreading your toes. Feel the triangle of support from your big toe metatarsal to your outside foot metatarsal & to your heel. Imagine this strong triangle support.
 2. Shift your weight onto your left leg & bend your right knee placing your foot at the top of your inner thigh. Your right foot is pointing down & your right knee is turned out to the side.

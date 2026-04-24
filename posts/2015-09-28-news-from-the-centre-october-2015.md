@@ -9,15 +9,15 @@ tags: ["Sharada's update"]
 
 Hello everyone,
 Autumn has definitely arrived. The weather is cooler and wetter, and the residential community has begun its seasonal shrinking, although we still have several wonderful karma yogis here.
-[caption id="attachment\_12202" align="aligncenter" width="575"][![Front row: Piet, Madelaine, Sharada, Hamsa, Marianne, Julie; back row: Christine, David, Lakshmi, Mark](images/52e77384_SSCY-KYS-Oct2015-1024x768.jpg)](images/52e77384_SSCY-KYS-Oct2015.jpg) Front row: Piet, Madelaine, Sharada, Hamsa, Marianne, Julie; back row: Christine, David, Lakshmi, Mark[/caption]
-[caption id="attachment\_12186" align="aligncenter" width="575"][![Our wonderful karma yogis. Clockwise from top left: Alannah; Madelaine and Dee; Melissa and Diana; Diana, Sharada, Melissa and Kyle in the back](images/52e77384_KYs-Oct-2015.jpg)](images/52e77384_KYs-Oct-2015.jpg) Our wonderful karma yogis. Clockwise from top left: Alannah; Madelaine and Dee; Melissa and Diana; Diana, Sharada, Melissa and Kyle in the back[/caption]
+[![Front row: Piet, Madelaine, Sharada, Hamsa, Marianne, Julie; back row: Christine, David, Lakshmi, Mark](images/52e77384_SSCY-KYS-Oct2015-1024x768.jpg)](images/52e77384_SSCY-KYS-Oct2015.jpg) Front row: Piet, Madelaine, Sharada, Hamsa, Marianne, Julie; back row: Christine, David, Lakshmi, Mark
+[![Our wonderful karma yogis. Clockwise from top left: Alannah; Madelaine and Dee; Melissa and Diana; Diana, Sharada, Melissa and Kyle in the back](images/52e77384_KYs-Oct-2015.jpg)](images/52e77384_KYs-Oct-2015.jpg) Our wonderful karma yogis. Clockwise from top left: Alannah; Madelaine and Dee; Melissa and Diana; Diana, Sharada, Melissa and Kyle in the back
 This is the season of abundance, as you can see from this photo.
-[caption id="attachment\_12176" align="aligncenter" width="575"][![September harvest with David, Ray, Diana and Kyle](images/52e77384_2015Harvest.jpg)](images/52e77384_2015Harvest.jpg) September harvest with David, Ray, Diana and Kyle[/caption]
+[![September harvest with David, Ray, Diana and Kyle](images/52e77384_2015Harvest.jpg)](images/52e77384_2015Harvest.jpg) September harvest with David, Ray, Diana and Kyle
 We look forward to celebrating Thanksgiving with our island satsang family as we do each year celebrating the bounty of the season and our connection with each other. Happy Canadian Thanksgiving to you all, including our American friends who will celebrate Thanksgiving next month.
 
 ### Changes at the Centre
 
-[caption id="attachment\_12182" align="alignright" width="300"][![Piet Seuss, our acting Centre Director](images/52e77384_Piet-sept-2015.jpg)](images/52e77384_Piet-sept-2015.jpg) Piet Suess, our Interim Centre Manager[/caption]
+[![Piet Seuss, our acting Centre Director](images/52e77384_Piet-sept-2015.jpg)](images/52e77384_Piet-sept-2015.jpg) Piet Suess, our Interim Centre Manager
 There have been some administrative changes at the Centre of late. Sally Adnams Jones, our Centre Director, has chosen to leave this role for personal reasons. I’m happy to say that she intends to stay connected with the Centre. We are grateful for her contributions to the Centre during her time here, and look forward to seeing her when she’s able to come and visit.
 Fortunately, Piet Suess was willing to step up into a leadership position. He is now serving as Interim Centre Manager. Given his long association with the Centre (from the age of 2!) and his experience as ACYR coordinator for the past two years, he is very familiar both with the foundation of the Centre and the community. He brings his skills, his heart, and his creativity to the role.
 There have been some changes on the [Dharma Sara Board](https://saltspringcentre.com/about/dharma-sara-board-members/) as well. Saraswati has stepped down as a member of the Board, and the two open positions have been filled by Jules Higginson and Natasha Samson. Jules has served on the DS Board in previous years and Natasha has been a DS Board intern for the past year. Fortunately, Saraswati is still very much connected to the Centre and will continue to be around whenever she can.
@@ -32,7 +32,7 @@ There are two more [Yoga Getaways](https://saltspringcentre.com/retreats-program
 
 ### Centre School back in session
 
-[caption id="attachment\_12175" align="aligncenter" width="575"][![Rosh Hashanah celebration with the Centre School. Tossing bread crumbs (bad habits) into the pond.](images/52e77384_CentreSchool-RoshHashanah-2015.jpg)](images/52e77384_CentreSchool-RoshHashanah-2015.jpg) Rosh Hashanah celebration with the Centre School. Tossing bread crumbs (bad habits) into the pond.[/caption]
+[![Rosh Hashanah celebration with the Centre School. Tossing bread crumbs (bad habits) into the pond.](images/52e77384_CentreSchool-RoshHashanah-2015.jpg)](images/52e77384_CentreSchool-RoshHashanah-2015.jpg) Rosh Hashanah celebration with the Centre School. Tossing bread crumbs (bad habits) into the pond.
 The Centre School has been back in session for a month. A couple of weeks ago, Sharada celebrated Rosh Hashanah ( Jewish New Year) with the Centre School children, an annual tradition since the school began. The Centre School celebrates holidays from many cultures and traditions.
 
 ### In this Month's Newsletter

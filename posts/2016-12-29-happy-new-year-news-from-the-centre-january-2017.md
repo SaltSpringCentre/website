@@ -12,10 +12,10 @@ The Centre began 2017 in a spirit of devotion, with arati, kirtan, and meditatio
 [![](images/74707685_Puja-Table.jpg)](images/74707685_Puja-Table.jpg)
 December has been a snowy month at the Centre. Before school ended for the winter holiday, the slope behind the school was a favourite place for tobogganing. Snow is a big hit with kids.
 [![](images/74707685_SSCY-Snow-Trees.jpg)](images/74707685_SSCY-Snow-Trees.jpg)
-[caption id="attachment\_14491" align="aligncenter" width="673"][![](images/74707685_Mayana-Amy-snow.jpg)](images/74707685_Mayana-Amy-snow.jpg) Mayana and Amy (her mom) doing asanas in the snow[/caption]
+[![](images/74707685_Mayana-Amy-snow.jpg)](images/74707685_Mayana-Amy-snow.jpg) Mayana and Amy (her mom) doing asanas in the snow
 [![](images/74707685_school-snow-3.jpg)](images/74707685_school-snow-3.jpg)
 During this quiet time of year, projects that can’t be done during program season are being undertaken. As I write this, the kitchen is getting thoroughly cleaned and painted, with new windows being installed. Various upgrades, including more painting, are on the list.
-[caption id="attachment\_14505" align="aligncenter" width="600"]![](images/74707685_KitchenUpgrades.jpg) Space, Rajani and Tyler working on kitchen cleanup and upgrades[/caption]
+![](images/74707685_KitchenUpgrades.jpg) Space, Rajani and Tyler working on kitchen cleanup and upgrades
 
 # This Month's Newsletter Offerings
 

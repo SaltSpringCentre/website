@@ -6,8 +6,8 @@ author: "sysadmin_1a1xu9u1"
 categories: ["Events"]
 ---
 
-[caption id="attachment\_3087" align="alignright" width="160" caption="Amitabhan"][![](images/7a976555_amitabhan.jpg)](images/7a976555_amitabhan.jpg)[/caption]
-[caption id="attachment\_3088" align="alignright" width="160" caption="Prema Akasha"][![](images/7a976555_prema-akasha.jpg)](images/7a976555_prema-akasha.jpg)[/caption]
+[![](images/7a976555_amitabhan.jpg)](images/7a976555_amitabhan.jpg)
+[![](images/7a976555_prema-akasha.jpg)](images/7a976555_prema-akasha.jpg)
 **When:** August 17, 2011, 7:30pm
 **Where:** The Salt Spring Centre of Yoga, satsang room
 **Tickets at the door:** $15

@@ -8,7 +8,7 @@ categories: ["Asana", "Monthly Newsletter"]
 
 ### Salamba Sarvangasana/Shoulderstand Pose
 
-[caption id="attachment\_8960" align="aligncenter" width="414"][![Feb-Asana3](images/24e11ca4_Feb-Asana3.jpg)](images/24e11ca4_Feb-Asana3.jpg) Full Sarvangaasana[/caption]
+[![Feb-Asana3](images/24e11ca4_Feb-Asana3.jpg)](images/24e11ca4_Feb-Asana3.jpg) Full Sarvangaasana
 This asana feels amazing! You can actually feel your body changing inside as you invert. It is as if your cells start to sense that the world looks and feels different when upside down. Everything gets quiet and your breathing becomes more prominent as you respond to the balancing feeling in the body. How does your world feel when you change your view of it?
 Sarvangaasana is sometimes called the Queen or mother of Asanas. The literal translation of salamba sarvangaasana is “good-for-all-of-you-pose.”
 **Benefits**
@@ -23,7 +23,7 @@ So, why not practice this tridoshic pose today and tomorrow and daily. Try it an
 **Preparation for Sarvangasana**
 It is a good idea to prepare for shoulderstand by practicing standing poses followed by downward-facing dog and some simple backbends. If going upside down is new for you, first try viparita karani mudra/reverse posture mudra.
 **Simple Steps to Enter Sarvangasasana**
-[caption id="attachment\_8963" align="alignnone" width="566"][![From tuck pose to full pose](images/24e11ca4_Feb-Asana6.jpg)](images/24e11ca4_Feb-Asana6.jpg) Bring your knees to your forehead and hands to your mid-back before transitioning to the full pose[/caption]
+[![From tuck pose to full pose](images/24e11ca4_Feb-Asana6.jpg)](images/24e11ca4_Feb-Asana6.jpg) Bring your knees to your forehead and hands to your mid-back before transitioning to the full pose
 bring your knees to your forehead and hands to your mid-back
 
 1. Lie flat on your back with arms at your sides and palms facing down. Bend your knees and your arms pushing your upper arms into the mat as you bring your knees to your forehead and hands to your mid-back (fingers point upwards towards the feet). Rest here for a breath or two. Roll your shoulders under a little here.
@@ -31,7 +31,7 @@ bring your knees to your forehead and hands to your mid-back
 3. Breathe naturally as you appreciate your beautiful feet.
 
 **Transition to Halasana/Plough Pose & Back to Sarvangasana**
-[caption id="attachment\_8961" align="alignnone" width="640"][![Transition to Halasana / Plough pose](images/24e11ca4_Feb-Asana4.jpg)](images/24e11ca4_Feb-Asana4.jpg) Transition to Halasana / Plough pose[/caption]
+[![Transition to Halasana / Plough pose](images/24e11ca4_Feb-Asana4.jpg)](images/24e11ca4_Feb-Asana4.jpg) Transition to Halasana / Plough pose
 
 1. Stretch up with the right foot, exhale slowly and lower leg to the ground. Allow the left leg to follow.
 2. Readjust your feet so that you are on your toes. Keep legs straight.
@@ -40,7 +40,7 @@ bring your knees to your forehead and hands to your mid-back
 5. Repeat with the left leg, and exhale slowly stretching leg up and then down to the ground. Find your pose here. Yummy!!!
 
 **Transition to Karna Pidasana/Ear to Knee Pose**
-[caption id="attachment\_8962" align="alignnone" width="640"][![Ear to knee pose](images/24e11ca4_Feb-Asana5.jpg)](images/24e11ca4_Feb-Asana5.jpg) Karna Pidasana/Ear to Knee Pose[/caption]
+[![Ear to knee pose](images/24e11ca4_Feb-Asana5.jpg)](images/24e11ca4_Feb-Asana5.jpg) Karna Pidasana/Ear to Knee Pose
 
 1. From halasana exhale slowly and gently bend your knees. Breathe here.
 2. Maybe your knees will hug your ears and you can tune in to your blood circulating inside your head as all other sounds disappear.

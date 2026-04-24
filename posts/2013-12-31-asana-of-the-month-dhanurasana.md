@@ -8,7 +8,7 @@ categories: ["Asana", "Monthly Newsletter"]
 
 ### Dhanurasana - Bow Pose as taught by **Jenny Shanti Collver**
 
-[caption id="attachment\_8805" align="alignnone" width="576"][![Dhan](images/112bbd09_Jenny-Collver-yoga1.jpg)](images/112bbd09_Jenny-Collver-yoga1.jpg) Dhanurasana pose[/caption]
+[![Dhan](images/112bbd09_Jenny-Collver-yoga1.jpg)](images/112bbd09_Jenny-Collver-yoga1.jpg) Dhanurasana pose
 Dhanurasana is a back bend which requires flexibility in the shoulders and thighs.
 **Benefits**Bow Pose energizes the body and counteracts the effects of too much sitting. Stretching the front of the body increases blood flow to the digestive tract, enhancing the efficiency of the liver, intestines and stomach. Contracting the back of the body stimulates the kidneys and adrenals.
 **Logos (shape, essence)**
@@ -29,7 +29,7 @@ The pose arches the body backwards into the shape of a bow as the arms reach bac
 **After the Pose**
 Roll to the back, bend the knees into the chest and gently roll side to side, massaging the lower back.
 **Modifications**
-[caption id="attachment\_8804" align="alignnone" width="576"][![Modify with a strap](images/112bbd09_Jenny-Collver-yoga2.jpg)](images/112bbd09_Jenny-Collver-yoga2.jpg) Modify with a strap[/caption]
+[![Modify with a strap](images/112bbd09_Jenny-Collver-yoga2.jpg)](images/112bbd09_Jenny-Collver-yoga2.jpg) Modify with a strap
 
 1. If the shoulders or quadriceps are tight or the knees are sore, try half bow. Lie on your belly and extend the legs back and both arms forward. Bend the right leg, flex the right foot and reach the right arm back to grasp the ankle. Inhale and lift the right shoulder and the head, moving the right heel away from the buttock. Keep the left arm and leg extended, pressing them into the floor. Hold each side for 3 breath cycles.
 2. Try a diagonal bow pose by holding the right ankle with the left hand, then holding the left ankle with the right hand.
@@ -39,7 +39,7 @@ Roll to the back, bend the knees into the chest and gently roll side to side, ma
 **Cautions**
 Don't practice bow pose in the last two trimesters of pregnancy. Also, this pose might be uncomfortable for nursing mothers. Get advice from your doctor if you have diagnosed disc disease or spondylolyis.
 **About Jenny Shanti Collver**
-[caption id="attachment\_8806" align="alignright" width="256"][![Jenny-Collver](images/112bbd09_Jenny-Collver.jpg)](images/112bbd09_Jenny-Collver.jpg) Instructor, Jenny Shanti Collver[/caption]
+[![Jenny-Collver](images/112bbd09_Jenny-Collver.jpg)](images/112bbd09_Jenny-Collver.jpg) Instructor, Jenny Shanti Collver
 Jenny Shanti Collver has been practicing Yoga since 1973 in Vancouver. She worked at the Salt Spring Centre School as Usha's assistant from l987 to 2002. She obtained her 200 hour RYT at the Salt Spring Centre of Yoga in 2007 and taught yoga for a few years at the Ganges Yoga Studio. She studied Restorative Yoga with Judith Lasater in 2007, and is certified to teach as a Relax and Renew trainer. Jenny worked with Cathy Valentine in 2012, completing her 500 RYT in the Traditional Yoga Apprenticeship in practice and teacher training.
 For the last few years, Jenny has been teaching yogis from the Salt Spring community, karma yogis and yogis on personal retreat at the Salt Spring Centre of Yoga. The study of Yoga asana and the aging yogi is Jenny's most recent study.
 She lives on a small farm on Salt Spring Island, where she raised her two daughters, Arianne and Melaina. For many years she has raised angora goats (whose hair she dyes, spins and weaves), donkeys, dogs and cats.

@@ -6,7 +6,7 @@ author: "sysadmin_1a1xu9u1"
 categories: ["Inspiration &amp; Spiritual Teachings", "Karma Yoga", "Monthly Newsletter", "SSCY Community"]
 ---
 
-[caption id="attachment\_12653" align="aligncenter" width="575"]![some of our winter resident community](images/e41849fa_CommunityMembers.jpg) Some of our winter resident community[/caption]
+![some of our winter resident community](images/e41849fa_CommunityMembers.jpg) Some of our winter resident community
 The opportunity to live in a spiritual community is a great blessing. It is also an opportunity to learn about yourself, what is important to you, and how to live with other people. Many years ago, when Dharma Sara Satsang Society purchased this land that came to be known as the Salt Spring Centre of Yoga, Babaji instructed us to create a place where people could come and experience peace.
 *Human beings are tribal by nature. They know for their survival they have to be supported by each other, so like-minded people get together and make their own tribe. The tribe creates rules and a community is formed.*
 I recently interviewed several of the Centre’s current winter community karma yogis, asking these questions:
