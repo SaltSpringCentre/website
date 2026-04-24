@@ -28,7 +28,6 @@ var EVENTS = [
     badge: 'Apr 11',
     img: 'images/2026/03/Violin-Concert-April-11-2026-Shriram-Rajagopalan.jpg',
     bannerPool: 'Music for Peace',
-    bookUrl: 'https://saltspringcentre.secure.retreat.guru/program/music-for-peace-an-evening-of-carnatic-violin-with-shriram-rajagopalan/',
     featured: true
   },
   {
@@ -172,7 +171,6 @@ var EVENTS = [
     badge: 'Aug 1',
     img: 'images/2022/08/Kirtan.jpg',
     bannerPool: 'Music for Peace',
-    bookUrl: 'https://saltspringcentre.secure.retreat.guru/program/music-for-peace-deepak-ram/'
   },
   {
     id: 'aug-retreat-2',
