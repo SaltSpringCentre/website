@@ -184,8 +184,250 @@ def collect_posts():
     return out
 
 
+# ===== events-data.js parsing =====
+# Pulls entries out of four top-level arrays (EVENTS, CLASSES_DATA,
+# COMMUNITY_DATA, TREATMENTS_DATA) by scanning the file as plain text.
+# This is intentionally quote-and-brace aware so we don't have to run JS.
+
+EVENT_ARRAY_NAMES = ("EVENTS", "CLASSES_DATA", "COMMUNITY_DATA", "TREATMENTS_DATA")
+
+
+def _find_array_body(text, array_name):
+    """Return the substring between the opening `[` and its matching `]`
+    for `var <array_name> = [ ... ]`, or None if not found.
+
+    Scans quote-aware (single, double, template backticks) and ignores
+    line/block comments so brackets inside strings don't confuse us.
+    """
+    m = re.search(r"\bvar\s+" + re.escape(array_name) + r"\s*=\s*\[", text)
+    if not m:
+        return None
+    start = m.end()  # first char inside the outer `[`
+    depth = 1
+    i = start
+    n = len(text)
+    while i < n:
+        c = text[i]
+        # line comment
+        if c == "/" and i + 1 < n and text[i + 1] == "/":
+            nl = text.find("\n", i + 2)
+            if nl == -1:
+                return None
+            i = nl + 1
+            continue
+        # block comment
+        if c == "/" and i + 1 < n and text[i + 1] == "*":
+            end = text.find("*/", i + 2)
+            if end == -1:
+                return None
+            i = end + 2
+            continue
+        # string literal
+        if c in ("'", '"', "`"):
+            quote = c
+            j = i + 1
+            while j < n:
+                cj = text[j]
+                if cj == "\\" and j + 1 < n:
+                    j += 2
+                    continue
+                if cj == quote:
+                    j += 1
+                    break
+                j += 1
+            i = j
+            continue
+        if c == "[":
+            depth += 1
+        elif c == "]":
+            depth -= 1
+            if depth == 0:
+                return text[start:i]
+        i += 1
+    return None
+
+
+def _split_top_level_objects(body):
+    """Yield each top-level `{...}` substring from an array body. Brace /
+    bracket depth is tracked; strings and comments are skipped."""
+    n = len(body)
+    i = 0
+    while i < n:
+        # Skip whitespace, commas, and comments between top-level objects.
+        c = body[i]
+        if c.isspace() or c == ",":
+            i += 1
+            continue
+        if c == "/" and i + 1 < n and body[i + 1] == "/":
+            nl = body.find("\n", i + 2)
+            if nl == -1:
+                return
+            i = nl + 1
+            continue
+        if c == "/" and i + 1 < n and body[i + 1] == "*":
+            end = body.find("*/", i + 2)
+            if end == -1:
+                return
+            i = end + 2
+            continue
+        if c != "{":
+            # Unexpected — skip forward to next brace to stay resilient.
+            nb = body.find("{", i)
+            if nb == -1:
+                return
+            i = nb
+            continue
+        # Walk one balanced `{...}` object.
+        depth = 0
+        start = i
+        while i < n:
+            ch = body[i]
+            if ch == "/" and i + 1 < n and body[i + 1] == "/":
+                nl = body.find("\n", i + 2)
+                if nl == -1:
+                    return
+                i = nl + 1
+                continue
+            if ch == "/" and i + 1 < n and body[i + 1] == "*":
+                end = body.find("*/", i + 2)
+                if end == -1:
+                    return
+                i = end + 2
+                continue
+            if ch in ("'", '"', "`"):
+                quote = ch
+                j = i + 1
+                while j < n:
+                    cj = body[j]
+                    if cj == "\\" and j + 1 < n:
+                        j += 2
+                        continue
+                    if cj == quote:
+                        j += 1
+                        break
+                    j += 1
+                i = j
+                continue
+            if ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    yield body[start : i + 1]
+                    i += 1
+                    break
+            i += 1
+
+
+def _extract_js_string(obj_body, key):
+    """Return the decoded value of `key: 'string'` or `key: "string"` at
+    any depth within a JS object body, or None. Handles `\\'`, `\\"`, and
+    common escapes; ignores the shape of values that aren't strings."""
+    # Match: key (bare or quoted), colon, opening quote, body (with
+    # escaped chars), matching closing quote.
+    pattern = (
+        r"(?:^|[,{\s])\s*(?:'"
+        + re.escape(key)
+        + r"'|\""
+        + re.escape(key)
+        + r"\"|"
+        + re.escape(key)
+        + r")\s*:\s*"
+        r"(?P<q>['\"])(?P<val>(?:\\.|(?!(?P=q)).)*)(?P=q)"
+    )
+    m = re.search(pattern, obj_body, re.DOTALL)
+    if not m:
+        return None
+    raw = m.group("val")
+    # Decode the common JS escapes we actually see: \' \" \\ \n \t \r \/
+    # and unicode \uXXXX. Anything else we leave as-is.
+    def _unesc(s):
+        out = []
+        i = 0
+        while i < len(s):
+            ch = s[i]
+            if ch == "\\" and i + 1 < len(s):
+                nxt = s[i + 1]
+                if nxt in ("'", '"', "\\", "/"):
+                    out.append(nxt)
+                    i += 2
+                    continue
+                if nxt == "n":
+                    out.append("\n")
+                    i += 2
+                    continue
+                if nxt == "t":
+                    out.append("\t")
+                    i += 2
+                    continue
+                if nxt == "r":
+                    out.append("\r")
+                    i += 2
+                    continue
+                if nxt == "u" and i + 5 < len(s):
+                    try:
+                        out.append(chr(int(s[i + 2 : i + 6], 16)))
+                        i += 6
+                        continue
+                    except ValueError:
+                        pass
+                # Unknown escape — drop the backslash, keep the char.
+                out.append(nxt)
+                i += 2
+                continue
+            out.append(ch)
+            i += 1
+        return "".join(out)
+
+    return _unesc(raw)
+
+
+def _make_excerpt(text, limit=160):
+    if not text:
+        return ""
+    t = re.sub(r"\s+", " ", text).strip()
+    if len(t) <= limit:
+        return t
+    cut = t[:limit]
+    # Word-boundary truncation.
+    sp = cut.rfind(" ")
+    if sp > 0:
+        cut = cut[:sp]
+    return cut + "..."
+
+
+def collect_events():
+    path = os.path.join(ROOT, "events-data.js")
+    if not os.path.isfile(path):
+        return []
+    with open(path, "r", encoding="utf-8") as f:
+        text = f.read()
+
+    out = []
+    for arr_name in EVENT_ARRAY_NAMES:
+        body = _find_array_body(text, arr_name)
+        if body is None:
+            continue
+        for obj in _split_top_level_objects(body):
+            ident = _extract_js_string(obj, "id")
+            title = _extract_js_string(obj, "title")
+            if not ident or not title:
+                continue
+            long_desc = _extract_js_string(obj, "longDesc")
+            short_desc = _extract_js_string(obj, "desc")
+            excerpt = _make_excerpt(long_desc or short_desc or "")
+            out.append({
+                "kind": "event",
+                "page": "event.html?id=" + ident,
+                "title": title,
+                "headings": [],
+                "excerpt": excerpt,
+            })
+    return out
+
+
 def main():
-    entries = collect_pages() + collect_posts()
+    entries = collect_pages() + collect_posts() + collect_events()
     out_path = os.path.join(ROOT, "search-index.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(entries, f, ensure_ascii=False, separators=(",", ":"))

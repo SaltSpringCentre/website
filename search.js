@@ -79,6 +79,12 @@
     // Slight boost for short titles that match well (more likely the canonical page).
     if (score > 0 && title.length < 40) score += 2;
 
+    // Kind-based weighting: prioritise pages/programs over blog posts.
+    var kindMult = 1;
+    if (entry.kind === 'page' || entry.kind === 'event') kindMult = 2.5;
+    else if (entry.kind === 'post') kindMult = 0.4;
+    score = score * kindMult;
+
     return { score: score, headingIdx: matchedHeadingIdx };
   }
 
