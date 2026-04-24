@@ -283,7 +283,9 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
 
   // ===== RENDER: class =====
   function renderClass(item) {
-    var bookHref = 'https://app.acuityscheduling.com/schedule/5618a029/?category=Yoga%20Classes';
+    var bookHref = item.bookUrl || 'contact.html';
+    var bookLabel = item.bookUrl ? 'Book Class' : 'Contact to Book';
+    var bookTarget = item.bookUrl ? ' target="_blank" rel="noopener"' : '';
     var html = '<section class="event-hero">' +
       '<img class="bg" src="' + escapeHtml(fixImg(item.img)) + '" alt="' + escapeHtml(item.title) + '">' +
       '<div class="event-hero-overlay"></div>' +
@@ -306,7 +308,7 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
         (item.location ? '<div class="info-row"><span class="info-label">Location</span><span class="info-value">' + escapeHtml(item.location) + '</span></div>' : '') +
         (item.level ? '<div class="info-row"><span class="info-label">Level</span><span class="info-value">' + escapeHtml(item.level) + '</span></div>' : '') +
         '<div class="info-row"><span class="info-label">Price</span><span class="info-value price">' + item.price + '</span></div>' +
-        '<a href="' + bookHref + '" target="_blank" rel="noopener" class="btn">Book Class</a>' +
+        '<a href="' + escapeHtml(bookHref) + '"' + bookTarget + ' class="btn">' + bookLabel + '</a>' +
         '<a href="calendar.html" class="btn btn-outline">View Calendar</a>' +
       '</aside></section>';
     html += renderRelated(item, 'class');
@@ -315,7 +317,9 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
 
   // ===== RENDER: community =====
   function renderCommunity(item) {
-    var bookHref = 'https://app.acuityscheduling.com/schedule/5618a029/?category=Community';
+    var bookHref = item.bookUrl || 'contact.html';
+    var bookLabel = item.bookUrl ? 'Register' : 'Contact to Register';
+    var bookTarget = item.bookUrl ? ' target="_blank" rel="noopener"' : '';
     var html = '<section class="event-hero">' +
       '<img class="bg" src="' + escapeHtml(fixImg(item.img)) + '" alt="' + escapeHtml(item.title) + '">' +
       '<div class="event-hero-overlay"></div>' +
@@ -337,7 +341,7 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
         (item.format ? '<div class="info-row"><span class="info-label">Format</span><span class="info-value">' + escapeHtml(item.format) + '</span></div>' : '') +
         (item.location ? '<div class="info-row"><span class="info-label">Location</span><span class="info-value">' + escapeHtml(item.location) + '</span></div>' : '') +
         '<div class="info-row"><span class="info-label">Price</span><span class="info-value price">' + escapeHtml(item.price) + '</span></div>' +
-        '<a href="' + bookHref + '" target="_blank" rel="noopener" class="btn">Register</a>' +
+        '<a href="' + escapeHtml(bookHref) + '"' + bookTarget + ' class="btn">' + bookLabel + '</a>' +
         '<a href="calendar.html" class="btn btn-outline">View Calendar</a>' +
       '</aside></section>';
     html += renderRelated(item, 'community');
@@ -346,8 +350,9 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
 
   // ===== RENDER: treatment =====
   function renderTreatment(item) {
-    var bookHref = item.bookUrl || 'https://app.acuityscheduling.com/schedule/5618a029/?category=Wellness';
-    var bookLabel = 'Book Treatment';
+    var bookHref = item.bookUrl || 'contact.html';
+    var bookLabel = item.bookUrl ? 'Book Treatment' : 'Contact to Book';
+    var bookTarget = item.bookUrl ? ' target="_blank" rel="noopener"' : '';
 
     var durationsHtml = '';
     if (item.durations && item.durations.length) {
@@ -382,7 +387,7 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
         (item.practitioner ? '<div class="info-row"><span class="info-label">Practitioner</span><span class="info-value">' + escapeHtml(item.practitioner) + '</span></div>' : '') +
         '<div class="info-row"><span class="info-label">Duration</span><span class="info-value">' + escapeHtml(firstDuration.time) + '</span></div>' +
         '<div class="info-row"><span class="info-label">From</span><span class="info-value price">' + escapeHtml(firstDuration.price) + '</span></div>' +
-        '<a href="' + escapeHtml(bookHref) + '" target="_blank" rel="noopener" class="btn">' + bookLabel + '</a>' +
+        '<a href="' + escapeHtml(bookHref) + '"' + bookTarget + ' class="btn">' + bookLabel + '</a>' +
         '<a href="wellness.html" class="btn btn-outline">All Treatments</a>' +
       '</aside></section>';
     html += renderRelated(item, 'treatment');
