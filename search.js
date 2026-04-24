@@ -9,13 +9,16 @@
 (function () {
   'use strict';
 
-  var INDEX_URL = 'search-index.json';
+  // Bump INDEX_VERSION whenever search-index.json schema or scoring changes
+  // so existing browser caches fetch the fresh file.
+  var INDEX_VERSION = '2';
+  var INDEX_URL = 'search-index.json?v=' + INDEX_VERSION;
   var MAX_RESULTS = 8;
   var indexPromise = null;
 
   function loadIndex() {
     if (indexPromise) return indexPromise;
-    indexPromise = fetch(INDEX_URL, { cache: 'force-cache' })
+    indexPromise = fetch(INDEX_URL)
       .then(function (r) { return r.ok ? r.json() : []; })
       .catch(function () { return []; });
     return indexPromise;
