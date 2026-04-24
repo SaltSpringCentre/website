@@ -87,7 +87,7 @@ p { text-align: justify; text-justify: inter-word; }
 .filter-key:active { transform: translateY(2px) scaleY(0.95); filter: brightness(0.9); box-shadow: none; }
 
 /* DASHBOARD SECTIONS */
-.dash-section { padding: 80px 32px; }
+.dash-section { padding: 80px 32px; scroll-margin-top: 120px; }
 .dash-section:nth-child(odd) { background: var(--cream); }
 .dash-section:nth-child(even) { background: var(--white); }
 .dash-header { text-align: center; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto; }
@@ -781,6 +781,16 @@ function loadDynamicContent() {
 }
 
 loadDynamicContent();
+
+// Re-scroll to hash target after images/layout settle (fixes cross-page anchor drift)
+window.addEventListener('load', function() {
+  if (window.location.hash) {
+    var el = document.querySelector(window.location.hash);
+    if (el) {
+      setTimeout(function() { el.scrollIntoView({ behavior: 'auto', block: 'start' }); }, 50);
+    }
+  }
+});
 </script>
 <script src="subscribe.js" defer></script>
 </body>

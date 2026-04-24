@@ -60,7 +60,7 @@ p { text-align: justify; text-justify: inter-word; }
 .section-banner { width: 100%; max-height: 45vh; object-fit: cover; object-position: center top; border-radius: 12px; margin-bottom: 32px; }
 
 /* OFFERING SECTIONS */
-.offering-section { padding: 80px 32px; }
+.offering-section { padding: 80px 32px; scroll-margin-top: 120px; }
 .offering-section:nth-child(even) { background: var(--white); }
 .offering-header { text-align: center; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto; }
 .offering-header .label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; color: var(--teal); margin-bottom: 14px; display: block; }
@@ -555,6 +555,16 @@ document.querySelectorAll('.mobile-menu a').forEach(function(a) {
     document.getElementById('mobileMenu').classList.remove('open');
     document.getElementById('hamburger').classList.remove('open');
   });
+});
+
+// Re-scroll to hash target after images/layout settle (fixes cross-page anchor drift)
+window.addEventListener('load', function() {
+  if (window.location.hash) {
+    var el = document.querySelector(window.location.hash);
+    if (el) {
+      setTimeout(function() { el.scrollIntoView({ behavior: 'auto', block: 'start' }); }, 50);
+    }
+  }
 });
 </script>
 
