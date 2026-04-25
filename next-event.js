@@ -8,7 +8,8 @@
 //      from sscy-photos.json (matches the `cap` field).
 //   2. Otherwise, if event has bannerPool: '<category name>', pick
 //      deterministically (hashed by event.id) from that category's photos
-//      in sscy-photos.json that are flagged banner: true. Landscape only.
+//      in sscy-photos.json whose aspect is 'wide'. Legacy banner: true is
+//      treated as implicit 'wide' if aspect is unset.
 //   3. If no bannerPool or the pool is empty, fall back to event.img.
 
 (function () {
@@ -145,11 +146,14 @@
         }
 
         // 2. Draw from the event's named banner pool (a photo category).
-        //    Banner-flagged photos only, landscape only, deterministic pick.
+        //    aspect:'wide' photos only, deterministic pick. Legacy fallback:
+        //    treat banner:true as implicit 'wide' when aspect is unset.
         var poolName = event.bannerPool;
         if (!poolName) return; // keep event.img fallback
         var pool = (photos[poolName] || []).filter(function (p) {
-          return p && p.src && p.banner === true;
+          if (!p || !p.src) return false;
+          if (p.aspect === 'wide') return true;
+          return !p.aspect && p.banner === true;
         });
         if (!pool.length) return; // keep event.img fallback
         filterLandscape(pool).then(function (viable) {

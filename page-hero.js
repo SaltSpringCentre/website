@@ -1,7 +1,9 @@
 // Page hero picker. Looks for img[data-hero-pool="<Category>"] and swaps
 // src with a deterministic pick from sscy-photos.json — filtered to
-// banner:true and landscape-aspect (width/height >= 1.3). If fetch fails
-// or no viable images exist, the hardcoded src is left untouched.
+// aspect:'landscape' and landscape-aspect (width/height >= 1.3). Legacy
+// fallback: treat hero:true as implicit 'landscape' when aspect is unset.
+// If fetch fails or no viable images exist, the hardcoded src is left
+// untouched.
 //
 // Works from site root and from /m/ subpages; resolves sscy-photos.json
 // relative to the script's own URL via document.currentScript.
@@ -47,7 +49,9 @@
         imgs.forEach(function (img) {
           var pool = img.getAttribute('data-hero-pool');
           var arr = (data[pool] || []).filter(function (p) {
-            return p.hero === true && p.src;
+            if (!p || !p.src) return false;
+            if (p.aspect === 'landscape') return true;
+            return !p.aspect && p.hero === true;
           });
           if (!arr.length) return;
           Promise.all(arr.map(function (p) {

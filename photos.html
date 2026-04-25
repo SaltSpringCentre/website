@@ -33,7 +33,7 @@ h2.collapsed .caret { transform: rotate(-90deg); }
 .item .caption:hover { color: #ccc; }
 .item .caption:focus { border-color: #3bb8a8; color: #fff; background: #1a1a1a; }
 .item .url { display: none; }
-.banner-badge {
+.aspect-badge {
   position: absolute;
   top: 6px;
   right: 6px;
@@ -44,15 +44,29 @@ h2.collapsed .caret { transform: rotate(-90deg); }
   text-transform: uppercase;
   letter-spacing: 0.06em;
   pointer-events: none;
-  background: #c9a84c;
   color: #111;
   box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
+.aspect-badge.wide      { background: #c9a84c; }
+.aspect-badge.landscape { background: #3bb8a8; }
+.aspect-badge.square    { background: #9aa7c9; }
+.aspect-badge.portrait  { background: #c98a8a; }
+.item .ratio-label {
+  font-size: 0.65rem;
+  color: #666;
+  padding: 0 10px 4px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
 .ctx-menu-divider { height: 1px; background: #2a2a2a; margin: 6px 4px; }
-.ctx-menu-item.banner-opt, .ctx-menu-item.hero-opt { display: flex; align-items: center; gap: 8px; }
-.ctx-menu-item.banner-opt .dot, .ctx-menu-item.hero-opt .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; border: 1px solid #444; }
-.ctx-menu-item.banner-opt.on .dot { border-color: #111; background: #c9a84c; }
-.ctx-menu-item.hero-opt.on .dot { border-color: #111; background: #3bb8a8; }
+.ctx-menu-item.aspect-opt { display: flex; align-items: center; gap: 8px; }
+.ctx-menu-item.aspect-opt .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; border: 1px solid #444; }
+.ctx-menu-item.aspect-opt.on .dot { border-color: #111; }
+.ctx-menu-item.aspect-opt.on[data-aspect="none"]      .dot { background: #555; }
+.ctx-menu-item.aspect-opt.on[data-aspect="wide"]      .dot { background: #c9a84c; }
+.ctx-menu-item.aspect-opt.on[data-aspect="landscape"] .dot { background: #3bb8a8; }
+.ctx-menu-item.aspect-opt.on[data-aspect="square"]    .dot { background: #9aa7c9; }
+.ctx-menu-item.aspect-opt.on[data-aspect="portrait"]  .dot { background: #c98a8a; }
 .ctx-menu {
   position: fixed;
   z-index: 9999;
@@ -469,9 +483,58 @@ var collapsedState = JSON.parse(localStorage.getItem('sscy_photos_collapsed') ||
 var dragItem = null;
 var dragCat = null;
 
+// Aspect ratio bucket rules. Match the consumer code:
+//   wide      ratio >= 2.0   (homepage event strip, MFP banner)
+//   landscape 1.3..2.0       (subpage hero)
+//   square    0.8..1.3       (scroll strips, retreat thumbs)
+//   portrait  ratio < 0.8    (offering cards on index)
+function bucketForRatio(ratio) {
+  if (!ratio || !isFinite(ratio) || ratio <= 0) return null;
+  if (ratio >= 2.0) return 'wide';
+  if (ratio >= 1.3) return 'landscape';
+  if (ratio >= 0.8) return 'square';
+  return 'portrait';
+}
+
+// Probe an image's natural aspect ratio (width / height). Resolves to 0 if
+// the image fails to load. Used both for the per-thumb ratio label and for
+// migrating legacy banner/hero flags to the new aspect bucket.
+function probeAspect(src) {
+  return new Promise(function (resolve) {
+    var im = new Image();
+    im.onload = function () {
+      if (!im.naturalHeight) resolve(0);
+      else resolve(im.naturalWidth / im.naturalHeight);
+    };
+    im.onerror = function () { resolve(0); };
+    im.src = src;
+  });
+}
+
+// Format an aspect ratio for the picker: decimal form for landscape/wide
+// (>= 1.5, e.g. "2.35:1"), simple ratio-ish for everything else (e.g.
+// "3:4" or "1:1"). Approximate to the nearest small fraction for narrow
+// shapes so the label is readable rather than mathematically exact.
+function formatRatio(ratio) {
+  if (!ratio || !isFinite(ratio) || ratio <= 0) return '';
+  if (ratio >= 1.5) return ratio.toFixed(2) + ':1';
+  // For square-ish and portrait, pick a clean small ratio.
+  // Search small denominators for the closest match.
+  var best = { d: 1, n: Math.round(ratio), err: Infinity };
+  for (var d = 1; d <= 12; d++) {
+    var n = Math.round(ratio * d);
+    if (n < 1) continue;
+    var err = Math.abs(ratio - n / d);
+    if (err < best.err) best = { d: d, n: n, err: err };
+  }
+  return best.n + ':' + best.d;
+}
+
 // Merge any categories/photos from the published JSON that aren't already
-// in localStorage. Preserves local edits (captions, banner flags, order)
-// while picking up newly imported images.
+// in localStorage. Preserves local edits (captions, aspect, order) while
+// picking up newly imported images. Also migrates any legacy banner/hero
+// boolean flags to the new `aspect` category by measuring the actual
+// image's natural width/height.
 function mergeFromPublished() {
   return fetch('sscy-photos.json', { cache: 'no-cache' })
     .then(function (r) { return r.ok ? r.json() : null; })
@@ -493,18 +556,37 @@ function mergeFromPublished() {
           }
         });
       });
-      // Normalize banner flags to boolean: any legacy 'concert'/'retreat'
-      // string coerces to true.
+      // Migrate legacy banner/hero booleans to `aspect` based on the
+      // measured image ratio. Each photo is probed; once we know its
+      // natural dimensions we drop into the right bucket and delete the
+      // old fields.
+      var migrationPromises = [];
       Object.keys(data).forEach(function (cat) {
         (data[cat] || []).forEach(function (p) {
-          if (p && p.banner && p.banner !== true) {
-            p.banner = true;
+          if (!p) return;
+          var hasLegacy = (p.banner === true || p.hero === true ||
+            (p.banner && p.banner !== true));
+          if (!hasLegacy) return;
+          if (!p.src) {
+            // No image to probe — drop the legacy flags as-is.
+            delete p.banner;
+            delete p.hero;
             changed = true;
+            return;
           }
+          migrationPromises.push(probeAspect(p.src).then(function (ratio) {
+            var bucket = bucketForRatio(ratio);
+            if (bucket && !p.aspect) p.aspect = bucket;
+            delete p.banner;
+            delete p.hero;
+            changed = true;
+          }));
         });
       });
-      if (changed) save();
-      return changed;
+      return Promise.all(migrationPromises).then(function () {
+        if (changed) save();
+        return changed;
+      });
     })
     .catch(function () { return false; });
 }
@@ -564,10 +646,10 @@ function render() {
       im.src = img.src;
       im.loading = 'lazy';
       item.appendChild(im);
-      if (img.banner) {
+      if (img.aspect && img.aspect !== 'none') {
         var badge = document.createElement('div');
-        badge.className = 'banner-badge';
-        badge.textContent = 'Banner';
+        badge.className = 'aspect-badge ' + img.aspect;
+        badge.textContent = img.aspect;
         item.appendChild(badge);
       }
       var cap = document.createElement('div');
@@ -577,6 +659,18 @@ function render() {
       cap.addEventListener('blur', function() { img.cap = this.textContent; item.dataset.cap = (img.cap || '').toLowerCase(); save(); });
       cap.addEventListener('keydown', function(e) { if (e.key === 'Enter') { e.preventDefault(); this.blur(); } });
       item.appendChild(cap);
+      var ratioEl = document.createElement('div');
+      ratioEl.className = 'ratio-label';
+      ratioEl.textContent = '';
+      item.appendChild(ratioEl);
+      // Measure aspect once the thumbnail loads and surface as a small
+      // text label. Naturals only — keeps this in sync with the bucket
+      // rules used by the consumer code.
+      im.addEventListener('load', function () {
+        if (!im.naturalHeight) return;
+        var ratio = im.naturalWidth / im.naturalHeight;
+        ratioEl.textContent = formatRatio(ratio);
+      });
       grid.appendChild(item);
     });
     el.appendChild(grid);
@@ -624,61 +718,39 @@ function showContextMenu(ev, img, fromCat) {
   menu.id = 'ctxMenu';
   menu.addEventListener('click', function(e) { e.stopPropagation(); });
 
-  // Banner flag section (homepage event strip, ~2.4 aspect)
-  var bHead = document.createElement('div');
-  bHead.className = 'ctx-menu-header';
-  bHead.textContent = 'Use as banner';
-  menu.appendChild(bHead);
+  // Aspect category picker. Single source of truth for which auto-picker
+  // (homepage strip, subpage hero, scroll strip, offering card) is allowed
+  // to draw this image. None excludes the photo from all auto-pickers.
+  var aHead = document.createElement('div');
+  aHead.className = 'ctx-menu-header';
+  aHead.textContent = 'Aspect category';
+  menu.appendChild(aHead);
 
-  [
-    { val: false, label: 'Use as banner: No' },
-    { val: true, label: 'Use as banner: Yes' }
-  ].forEach(function(opt) {
+  var ASPECT_OPTS = [
+    { val: 'none',      label: 'None' },
+    { val: 'wide',      label: 'Wide (≥2.0 — homepage event strip)' },
+    { val: 'landscape', label: 'Landscape (1.3–2.0 — subpage hero)' },
+    { val: 'square',    label: 'Square (0.8–1.3 — scroll strip)' },
+    { val: 'portrait',  label: 'Portrait (<0.8 — offering cards)' }
+  ];
+  ASPECT_OPTS.forEach(function (opt) {
     var row = document.createElement('div');
-    var current = !!img.banner === opt.val;
-    row.className = 'ctx-menu-item banner-opt' + (current ? ' on' : '');
+    var currentAspect = img.aspect || 'none';
+    var on = currentAspect === opt.val;
+    row.className = 'ctx-menu-item aspect-opt' + (on ? ' on' : '');
+    row.dataset.aspect = opt.val;
     var dot = document.createElement('span');
     dot.className = 'dot';
     var lbl = document.createElement('span');
     lbl.textContent = opt.label;
     row.appendChild(dot);
     row.appendChild(lbl);
-    row.addEventListener('click', function() {
-      if (opt.val) img.banner = true;
-      else delete img.banner;
-      save();
-      render();
-      closeContextMenu();
-    });
-    menu.appendChild(row);
-  });
-
-  var heroDivider = document.createElement('div');
-  heroDivider.className = 'ctx-menu-divider';
-  menu.appendChild(heroDivider);
-
-  // Hero flag section (full-page subpage hero, ~1.5-2 aspect, subject upper-third)
-  var hHead = document.createElement('div');
-  hHead.className = 'ctx-menu-header';
-  hHead.textContent = 'Use as hero';
-  menu.appendChild(hHead);
-
-  [
-    { val: false, label: 'Use as hero: No' },
-    { val: true, label: 'Use as hero: Yes' }
-  ].forEach(function(opt) {
-    var row = document.createElement('div');
-    var current = !!img.hero === opt.val;
-    row.className = 'ctx-menu-item hero-opt' + (current ? ' on' : '');
-    var dot = document.createElement('span');
-    dot.className = 'dot';
-    var lbl = document.createElement('span');
-    lbl.textContent = opt.label;
-    row.appendChild(dot);
-    row.appendChild(lbl);
-    row.addEventListener('click', function() {
-      if (opt.val) img.hero = true;
-      else delete img.hero;
+    row.addEventListener('click', function () {
+      if (opt.val === 'none') delete img.aspect;
+      else img.aspect = opt.val;
+      // Clear any straggling legacy flags on this entry.
+      delete img.banner;
+      delete img.hero;
       save();
       render();
       closeContextMenu();
