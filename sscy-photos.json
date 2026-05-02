@@ -61,7 +61,8 @@
     },
     {
       "src": "images/2022/03/Baba-Hari-Dass-Shining-Eyes-Square.jpg",
-      "cap": "Baba Hari Dass - Shining Eyes (square)"
+      "cap": "Baba Hari Dass - Shining Eyes (square)",
+      "aspect": "square"
     },
     {
       "src": "https://www.babaharidass.org/babaharidass_files/Bji-Full-on.jpg",
@@ -109,7 +110,8 @@
     },
     {
       "src": "https://www.babaharidass.org/babaharidass_files/15.07.30_001.jpg",
-      "cap": "~July 2015"
+      "cap": "~July 2015",
+      "aspect": "portrait"
     },
     {
       "src": "https://www.babaharidass.org/babaharidass_files/a1c5ba19-b1d8-4a18-82c9-967b73b09006.jpg",
@@ -169,7 +171,8 @@
     },
     {
       "src": "https://www.babaharidass.org/babaharidass_files/0301IS4319-Bji-Puni-8x10.jpg",
-      "cap": "Babaji with Puni (8x10)"
+      "cap": "Babaji with Puni (8x10)",
+      "aspect": "square"
     },
     {
       "src": "https://www.babaharidass.org/babaharidass_files/44a2ab8d-f0c6-477a-9cb9-98fcca73baa8.jpg",
@@ -334,6 +337,10 @@
     {
       "src": "posts/images/24d2293a_BabaHariDass.jpg",
       "cap": "BabaHariDass"
+    },
+    {
+      "src": "posts/images/93e1d5ca_Babaji-Shraddha-19-5-e1569876351691.jpg",
+      "cap": "Babaji Shraddha 19 5 E1569876351691"
     }
   ],
   "People / Community": [
@@ -397,7 +404,8 @@
     },
     {
       "src": "images/2011/08/ZD.090731.03.013.jpg",
-      "cap": "Satsang/kirtan gathering"
+      "cap": "Satsang/kirtan gathering",
+      "aspect": "landscape"
     },
     {
       "src": "posts/images/361ae1b0_image-10.jpeg",
@@ -415,10 +423,6 @@
     {
       "src": "images/2026/02/IMG_5787.jpeg",
       "cap": "? Feb 2026 batch"
-    },
-    {
-      "src": "posts/images/67bbcbbe_mahesh_0187.jpg",
-      "cap": "Mahesh 0187"
     },
     {
       "src": "posts/images/67bbcbbe_group-photo-April-2017.jpg",
@@ -439,10 +443,6 @@
     {
       "src": "posts/images/7a4a69e9_Blog-Post-picture-horizontal-1200-x-630-3.jpg",
       "cap": "Blog Post Picture Horizontal 1200 X 630 3"
-    },
-    {
-      "src": "posts/images/93e1d5ca_Babaji-Shraddha-19-5-e1569876351691.jpg",
-      "cap": "Babaji Shraddha 19 5 E1569876351691"
     }
   ],
   "Staff / Instructors": [
@@ -522,7 +522,8 @@
   "House / Buildings": [
     {
       "src": "images/2023/11/Program-House-with-flowers-resized.png",
-      "cap": "Program House with flowers"
+      "cap": "Program House with flowers",
+      "aspect": "landscape"
     },
     {
       "src": "images/2021/11/Program-House-Rock-Wall.jpg",
@@ -530,7 +531,8 @@
     },
     {
       "src": "images/2022/03/Staff-Housing-at-Dawn-1024x768-1.jpg",
-      "cap": "Staff housing at dawn"
+      "cap": "Staff housing at dawn",
+      "aspect": "landscape"
     },
     {
       "src": "images/2021/11/Garden-House-1.jpg",
@@ -578,7 +580,8 @@
     },
     {
       "src": "images/2022/12/dsc02974-e1682616124787.jpg",
-      "cap": "Program House from orchard"
+      "cap": "Program House from orchard",
+      "aspect": "landscape"
     },
     {
       "src": "images/2025/05/1981-6.jpg",
@@ -758,7 +761,8 @@
     },
     {
       "src": "posts/images/a32c23cd_Lavender.jpg",
-      "cap": "Lavender"
+      "cap": "Lavender",
+      "aspect": "square"
     },
     {
       "src": "posts/images/0ca60ca6_2013.04-green-house1.jpg",
@@ -770,7 +774,8 @@
     },
     {
       "src": "posts/images/112efaa0_Western_Swallowtail.jpg",
-      "cap": "Western Swallowtail"
+      "cap": "Western Swallowtail",
+      "aspect": "square"
     },
     {
       "src": "posts/images/134488de_Photo12.jpg",
@@ -821,7 +826,8 @@
     },
     {
       "src": "images/2021/12/header-2-1.jpg",
-      "cap": "Site header property shot"
+      "cap": "Site header property shot",
+      "aspect": "wide"
     },
     {
       "src": "images/2022/09/Lotus-photo-jpeg.jpg",
@@ -889,7 +895,8 @@
     },
     {
       "src": "posts/images/7a976555_DSC_4706.jpg",
-      "cap": "DSC 4706"
+      "cap": "DSC 4706",
+      "aspect": "square"
     },
     {
       "src": "posts/images/81ed3841_fountain.jpg",
@@ -905,7 +912,8 @@
     },
     {
       "src": "posts/images/a32c23cd_Centre-from-Above.jpg",
-      "cap": "Centre From Above"
+      "cap": "Centre From Above",
+      "aspect": "square"
     },
     {
       "src": "posts/images/a32c23cd_Trees2.jpg",
@@ -933,11 +941,13 @@
     },
     {
       "src": "posts/images/134488de_P1030545.jpg",
-      "cap": "P1030545"
+      "cap": "P1030545",
+      "aspect": "square"
     },
     {
       "src": "posts/images/13b3833e_IMG_20191129_080950_HDR.jpg",
-      "cap": "IMG 20191129 080950 HDR"
+      "cap": "IMG 20191129 080950 HDR",
+      "aspect": "square"
     },
     {
       "src": "posts/images/13b3833e_Frosty-.jpg",
@@ -969,7 +979,8 @@
     },
     {
       "src": "posts/images/24d2293a_SSCY-News-Nov19-4-1.jpg",
-      "cap": "SSCY News Nov19 4 1"
+      "cap": "SSCY News Nov19 4 1",
+      "aspect": "square"
     },
     {
       "src": "posts/images/24d2293a_SSCY-News-Nov19-2-1.jpg",
@@ -997,7 +1008,8 @@
     },
     {
       "src": "posts/images/2a042822_FALL-SCHEDULE-5.jpg",
-      "cap": "FALL SCHEDULE 5"
+      "cap": "FALL SCHEDULE 5",
+      "aspect": "square"
     },
     {
       "src": "posts/images/361ae1b0_image-9.jpeg",
@@ -1041,7 +1053,8 @@
     },
     {
       "src": "images/2021/12/image-5.jpeg",
-      "cap": "Ganesha on property"
+      "cap": "Ganesha on property",
+      "aspect": "portrait"
     },
     {
       "src": "images/2025/12/Nature-and-Nurture-Webpage-9.jpg",
@@ -1141,7 +1154,8 @@
     },
     {
       "src": "posts/images/367a2d7c_Spring2016MotherMary.jpg",
-      "cap": "Spring2016MotherMary"
+      "cap": "Spring2016MotherMary",
+      "aspect": "square"
     },
     {
       "src": "posts/images/38e8972e_Fountain-fall.jpg",
@@ -1156,7 +1170,7 @@
     {
       "src": "images/2022/11/Online-yoga.jpg",
       "cap": "Online yoga",
-      "aspect": "wide"
+      "aspect": "landscape"
     },
     {
       "src": "images/2021/12/image-6.jpeg",
@@ -1219,7 +1233,8 @@
     },
     {
       "src": "images/2025/02/46-2.jpg",
-      "cap": "House from flowers"
+      "cap": "House from flowers",
+      "aspect": "square"
     },
     {
       "src": "images/2025/07/Website-front-page-8.jpg",
@@ -1304,87 +1319,13 @@
     },
     {
       "src": "posts/images/134488de_Meditation.jpg",
-      "cap": "Meditation"
+      "cap": "Meditation",
+      "aspect": "wide"
     },
     {
       "src": "posts/images/13b3833e_IMG_20191130_144757_HDR.jpg",
-      "cap": "IMG 20191130 144757 HDR"
-    }
-  ],
-  "Asana": [
-    {
-      "src": "posts/images/25c8a139_PHOTO-2025-10-22-22-14-50.jpeg",
-      "cap": "PHOTO 2025 10 22 22 14 50"
-    },
-    {
-      "src": "images/2021/11/Garden-House-2.jpg",
-      "cap": "Garden House exterior 2"
-    },
-    {
-      "src": "posts/images/6ba8fc5e_Lucie-Palmer_lucie-yoga-anuohana-warrior-post.jpg",
-      "cap": "Lucie Palmer Lucie Yoga Anuohana Warrior Post"
-    },
-    {
-      "src": "posts/images/1bb3e30d_Lindsay5.jpg",
-      "cap": "Lindsay5"
-    },
-    {
-      "src": "posts/images/1bb3e30d_Lindsay4.jpg",
-      "cap": "Lindsay4"
-    }
-  ],
-  "YTT": [
-    {
-      "src": "images/2021/12/Student-practice-with-CP-697x1024-1.jpg",
-      "cap": "Student practicing with instructor"
-    },
-    {
-      "src": "images/2021/12/YTT-200-Graduating-class-2019-hero.jpg",
-      "cap": "YTT graduating class 2019"
-    },
-    {
-      "src": "images/2021/12/Class-3-1024x610-1.jpg",
-      "cap": "Teacher training class"
-    },
-    {
-      "src": "posts/images/3c1fe4d4_46.jpg",
-      "cap": "46"
-    },
-    {
-      "src": "images/2022/12/DSCF0250.jpg",
-      "cap": "? Yoga demo"
-    }
-  ],
-  "Sri Ram": [
-    {
-      "src": "https://www.babaharidass.org/babaharidass_files/Ashes-Har-Ki-Pauri-01.jpg",
-      "cap": "Ashes at Har Ki Pauri 1"
-    },
-    {
-      "src": "https://www.babaharidass.org/babaharidass_files/Ashes-Har-Ki-Pauri-05.jpg",
-      "cap": "Ashes at Har Ki Pauri 5"
-    },
-    {
-      "src": "https://www.babaharidass.org/babaharidass_files/Diwali-India-2.jpg",
-      "cap": "Diwali India 2"
-    },
-    {
-      "src": "https://www.babaharidass.org/babaharidass_files/Diwali-India-3.jpg",
-      "cap": "Diwali India 3"
-    },
-    {
-      "src": "posts/images/112efaa0_Courtney-13.jpg",
-      "cap": "Courtney 13"
-    }
-  ],
-  "MMC": [
-    {
-      "src": "https://www.babaharidass.org/babaharidass_files/Shraddha-083.jpg",
-      "cap": "Shraddha memorial (Oct 2018)"
-    },
-    {
-      "src": "posts/images/04e74bec_OrchardHouse-our-classroom.jpg",
-      "cap": "OrchardHouse Our Classroom"
+      "cap": "IMG 20191130 144757 HDR",
+      "aspect": "square"
     }
   ],
   "ACYR / Annual Retreat": [
@@ -1467,6 +1408,10 @@
     {
       "src": "posts/images/13b3833e_Adrienne-ACYR-Jyoti-Adrienne-2019.jpg",
       "cap": "Adrienne ACYR Jyoti Adrienne 2019"
+    },
+    {
+      "src": "posts/images/67bbcbbe_mahesh_0187.jpg",
+      "cap": "Mahesh 0187"
     }
   ],
   "Nature & Nurture Series": [
@@ -11305,6 +11250,82 @@
     {
       "src": "images/2026/02/Lakshmi-at-Ganga-scaled.jpg",
       "cap": "Lakshmi at Ganga"
+    }
+  ],
+  "Asana": [
+    {
+      "src": "posts/images/25c8a139_PHOTO-2025-10-22-22-14-50.jpeg",
+      "cap": "PHOTO 2025 10 22 22 14 50"
+    },
+    {
+      "src": "images/2021/11/Garden-House-2.jpg",
+      "cap": "Garden House exterior 2"
+    },
+    {
+      "src": "posts/images/6ba8fc5e_Lucie-Palmer_lucie-yoga-anuohana-warrior-post.jpg",
+      "cap": "Lucie Palmer Lucie Yoga Anuohana Warrior Post"
+    },
+    {
+      "src": "posts/images/1bb3e30d_Lindsay5.jpg",
+      "cap": "Lindsay5"
+    },
+    {
+      "src": "posts/images/1bb3e30d_Lindsay4.jpg",
+      "cap": "Lindsay4"
+    }
+  ],
+  "YTT": [
+    {
+      "src": "images/2021/12/Student-practice-with-CP-697x1024-1.jpg",
+      "cap": "Student practicing with instructor"
+    },
+    {
+      "src": "images/2021/12/YTT-200-Graduating-class-2019-hero.jpg",
+      "cap": "YTT graduating class 2019"
+    },
+    {
+      "src": "images/2021/12/Class-3-1024x610-1.jpg",
+      "cap": "Teacher training class"
+    },
+    {
+      "src": "posts/images/3c1fe4d4_46.jpg",
+      "cap": "46"
+    },
+    {
+      "src": "images/2022/12/DSCF0250.jpg",
+      "cap": "? Yoga demo"
+    }
+  ],
+  "Sri Ram": [
+    {
+      "src": "https://www.babaharidass.org/babaharidass_files/Ashes-Har-Ki-Pauri-01.jpg",
+      "cap": "Ashes at Har Ki Pauri 1"
+    },
+    {
+      "src": "https://www.babaharidass.org/babaharidass_files/Ashes-Har-Ki-Pauri-05.jpg",
+      "cap": "Ashes at Har Ki Pauri 5"
+    },
+    {
+      "src": "https://www.babaharidass.org/babaharidass_files/Diwali-India-2.jpg",
+      "cap": "Diwali India 2"
+    },
+    {
+      "src": "https://www.babaharidass.org/babaharidass_files/Diwali-India-3.jpg",
+      "cap": "Diwali India 3"
+    },
+    {
+      "src": "posts/images/112efaa0_Courtney-13.jpg",
+      "cap": "Courtney 13"
+    }
+  ],
+  "MMC": [
+    {
+      "src": "https://www.babaharidass.org/babaharidass_files/Shraddha-083.jpg",
+      "cap": "Shraddha memorial (Oct 2018)"
+    },
+    {
+      "src": "posts/images/04e74bec_OrchardHouse-our-classroom.jpg",
+      "cap": "OrchardHouse Our Classroom"
     }
   ],
   "Duplicates": []
