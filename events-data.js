@@ -525,6 +525,22 @@ var CLASSES_DATA = [
     desc: 'Early Sunday morning practice for experienced students. A dedicated time for deepening personal sadhana within a supportive group container.',
     longDesc: "Sadhana for Continuing Practitioners is an early Sunday morning container for students with an established personal practice. The session combines pranayama and seated meditation in silence, supported by the presence of a committed group. Open to experienced practitioners familiar with the Centre's tradition.",
     img: 'images/2021/12/DawnOverTheGarden-small-1.jpg'
+  },
+  {
+    id: 'class-kirtan',
+    type: 'class',
+    title: 'Kirtan Class',
+    teacher: 'TBA',
+    schedule: 'Thursday, 7:00 - 8:30 PM',
+    days: ['Thursday'],
+    time: '7:00 - 8:30 PM',
+    price: 'By donation',
+    format: 'In-person',
+    location: 'Satsang Room',
+    level: 'All levels',
+    desc: 'Devotional chanting class. Learn traditional kirtan melodies and the practice of bhakti yoga in a guided group setting.',
+    longDesc: 'Kirtan is the practice of singing sacred names and mantras in call-and-response. This Thursday class is open to anyone interested in learning the songs, the melodies, and the spirit of bhakti yoga. No musical experience required.',
+    img: 'images/2022/08/Kirtan.jpg'
   }
 ];
 
