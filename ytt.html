@@ -5,7 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>if(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))window.location.href='m/ytt.html';</script>
 <title>Yoga Teacher Training | Salt Spring Centre of Yoga</title>
-<meta name="description" content="200-hour residential yoga teacher training immersion in classical yoga on Salt Spring Island. Certified program at the Salt Spring Centre of Yoga.">
+<meta name="description" content="Now taking registrations for the 2027 Yoga Teacher Training at the Salt Spring Centre of Yoga. Direct lineage to the Yoga Sutras through Baba Hari Dass.">
+<!-- OpenGraph + Twitter (og-default.jpg is a placeholder; create 1200x630 PNG and update if needed) -->
+<meta property="og:title" content="Yoga Teacher Training | Salt Spring Centre of Yoga">
+<meta property="og:description" content="Now taking registrations for the 2027 Yoga Teacher Training at the Salt Spring Centre of Yoga. Direct lineage to the Yoga Sutras through Baba Hari Dass.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saltspringcentre.com/ytt.html">
+<meta property="og:image" content="https://saltspringcentre.com/images/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yoga Teacher Training | Salt Spring Centre of Yoga">
+<meta name="twitter:description" content="Now taking registrations for the 2027 Yoga Teacher Training at the Salt Spring Centre of Yoga. Direct lineage to the Yoga Sutras through Baba Hari Dass.">
+<meta name="twitter:image" content="https://saltspringcentre.com/images/og-default.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
@@ -169,9 +179,12 @@ p { text-align: justify; text-justify: inter-word; }
   .cta-section { padding: 48px 16px; }
   .cta-links { flex-direction: column; gap: 12px; }
 }
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 9999; padding: 12px 18px; background: var(--teal-dark); color: var(--white); font-weight: 600; border-radius: 0 0 6px 0; text-decoration: none; }
+.skip-link:focus { left: 0; outline: 3px solid var(--gold); outline-offset: 2px; }
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- NAV -->
 <nav class="sticky-nav">
@@ -203,7 +216,7 @@ p { text-align: justify; text-justify: inter-word; }
 </div>
 
 <!-- HERO -->
-<section class="hero">
+<section id="main" class="hero">
   <img src="images/2021/12/YTT-200-Graduating-class-2019-hero.jpg" alt="YTT 200 Graduating class at the Salt Spring Centre of Yoga" class="hero-img" id="heroImg" data-hero-pool="YTT">
   <div class="hero-overlay"></div>
   <div class="hero-content">
@@ -264,6 +277,7 @@ p { text-align: justify; text-justify: inter-word; }
         <a href="offerings.html#wellness">Wellness</a>
         <a href="offerings.html#satsang">Satsang</a>
         <a href="policies.html">Terms</a>
+        <a href="policies.html#privacy">Privacy Policy</a>
         <a href="policies.html">Cancellation Policy</a>
       </div>
     </nav>

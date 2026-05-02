@@ -6,6 +6,16 @@
 <script>if(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))window.location.href='m/offerings.html';</script>
 <title>Offerings | Salt Spring Centre of Yoga</title>
 <meta name="description" content="Retreats, yoga teacher training, wellness treatments, karma yoga, classes, satsang, kirtan, concerts, and daily life at the Salt Spring Centre of Yoga.">
+<!-- OpenGraph + Twitter (og-default.jpg is a placeholder; create 1200x630 PNG and update if needed) -->
+<meta property="og:title" content="Offerings | Salt Spring Centre of Yoga">
+<meta property="og:description" content="Retreats, yoga teacher training, wellness treatments, karma yoga, classes, satsang, kirtan, concerts, and daily life at the Salt Spring Centre of Yoga.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saltspringcentre.com/offerings.html">
+<meta property="og:image" content="https://saltspringcentre.com/images/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Offerings | Salt Spring Centre of Yoga">
+<meta name="twitter:description" content="Retreats, yoga teacher training, wellness treatments, karma yoga, classes, satsang, kirtan, concerts, and daily life at the Salt Spring Centre of Yoga.">
+<meta name="twitter:image" content="https://saltspringcentre.com/images/og-default.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
@@ -216,9 +226,12 @@ a.offering-card, a.offering-card * { cursor: pointer; }
 .donate-alt { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(0,0,0,0.08); font-size: 0.8rem; color: var(--text-light); text-align: center; }
 .donate-alt strong { color: var(--text); }
 .donate-modal-footer { padding: 0 32px 24px; text-align: center; font-size: 0.72rem; color: var(--text-light); }
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 9999; padding: 12px 18px; background: var(--teal-dark); color: var(--white); font-weight: 600; border-radius: 0 0 6px 0; text-decoration: none; }
+.skip-link:focus { left: 0; outline: 3px solid var(--gold); outline-offset: 2px; }
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- NAV -->
 <nav class="sticky-nav">
@@ -250,7 +263,7 @@ a.offering-card, a.offering-card * { cursor: pointer; }
 </div>
 
 <!-- HERO -->
-<section class="hero">
+<section id="main" class="hero">
   <img src="images/2023/05/Program-House-at-dusk-dahlias-Keikos-photo-website-header.jpg" alt="Program House at dusk with dahlias" class="hero-img" id="heroImg">
   <div class="hero-overlay"></div>
   <div class="hero-content">
@@ -729,6 +742,7 @@ a.offering-card, a.offering-card * { cursor: pointer; }
         <a href="offerings.html#wellness">Wellness</a>
         <a href="offerings.html#satsang">Satsang</a>
         <a href="policies.html">Terms</a>
+        <a href="policies.html#privacy">Privacy Policy</a>
         <a href="policies.html">Cancellation Policy</a>
       </div>
     </nav>

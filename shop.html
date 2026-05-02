@@ -5,7 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>if(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))window.location.href='m/shop.html';</script>
 <title>Salt Spring Centre of Yoga - Shop</title>
-<meta name="description" content="Support the Salt Spring Centre of Yoga. Concert tickets, retreat bookings, and Centre merchandise from our 69-acre sanctuary on Salt Spring Island.">
+<meta name="description" content="Concert tickets, retreat bookings, and merchandise from the Salt Spring Centre of Yoga shop.">
+<!-- OpenGraph + Twitter (og-default.jpg is a placeholder; create 1200x630 PNG and update if needed) -->
+<meta property="og:title" content="Salt Spring Centre of Yoga - Shop">
+<meta property="og:description" content="Concert tickets, retreat bookings, and merchandise from the Salt Spring Centre of Yoga shop.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saltspringcentre.com/shop.html">
+<meta property="og:image" content="https://saltspringcentre.com/images/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Salt Spring Centre of Yoga - Shop">
+<meta name="twitter:description" content="Concert tickets, retreat bookings, and merchandise from the Salt Spring Centre of Yoga shop.">
+<meta name="twitter:image" content="https://saltspringcentre.com/images/og-default.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
@@ -936,9 +946,12 @@ p { text-align: justify; text-justify: inter-word; }
   .filter-key { padding: 6px 4px; font-size: 0.55rem; }
   .products-section { padding: 32px 16px 48px; }
 }
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 9999; padding: 12px 18px; background: var(--teal-dark); color: var(--white); font-weight: 600; border-radius: 0 0 6px 0; text-decoration: none; }
+.skip-link:focus { left: 0; outline: 3px solid var(--gold); outline-offset: 2px; }
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- STICKY NAV (matching homepage) -->
 <nav class="sticky-nav" id="stickyNav">
@@ -975,7 +988,7 @@ p { text-align: justify; text-justify: inter-word; }
 </div>
 
 <!-- HERO -->
-<section class="hero">
+<section id="main" class="hero">
   <div class="hero-content">
     <div class="hero-badge">Est. 1981 &bull; Salt Spring Island, BC</div>
     <h1 style="margin-top:20px">Support Our Sanctuary</h1>
@@ -1061,6 +1074,7 @@ p { text-align: justify; text-justify: inter-word; }
         <a href="offerings.html#wellness">Wellness</a>
         <a href="offerings.html#satsang">Satsang</a>
         <a href="policies.html">Terms</a>
+        <a href="policies.html#privacy">Privacy Policy</a>
         <a href="policies.html">Cancellation Policy</a>
       </div>
     </nav>
@@ -1171,7 +1185,8 @@ function stripHtml(s) { return decodeHtml(String(s || '').replace(/<[^>]*>/g, ''
 // ----- Source A: concerts from events-data.js -----
 function buildConcertProducts() {
   if (typeof EVENTS === 'undefined' || !Array.isArray(EVENTS)) return [];
-  return EVENTS.filter(function(e) { return e && e.type === 'concert'; }).map(function(e) {
+  var todayStr = (function(){ var d=new Date(); d.setHours(0,0,0,0); var y=d.getFullYear(); var m=String(d.getMonth()+1).padStart(2,'0'); var dd=String(d.getDate()).padStart(2,'0'); return y+'-'+m+'-'+dd; })();
+  return EVENTS.filter(function(e) { return e && e.type === 'concert' && (!e.date || e.date >= todayStr); }).map(function(e) {
     var priceStr = String(e.price == null ? '' : e.price);
     var priceNum = parseFloat(priceStr.replace(/[^\d.]/g, '')) || 0;
     var priceLabel = /^\$?\d/.test(priceStr.trim()) ? null : priceStr;

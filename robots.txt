@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Sitemap: https://saltspringcentre.com/sitemap.xml
+Disallow: /Archive/
+Disallow: /admin.html
+Disallow: /admin-guide.html
+Disallow: /photos.html
+Disallow: /52ACYR.html
+Disallow: /wireframe-

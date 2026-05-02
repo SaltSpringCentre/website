@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Farm | Salt Spring Centre of Yoga</title>
 <meta name="description" content="41 years of regenerative farming on 69 acres of protected Agricultural Land Reserve on Salt Spring Island. Organic produce for the Centre and community.">
+<!-- OpenGraph + Twitter (og-default.jpg is a placeholder; create 1200x630 PNG and update if needed) -->
+<meta property="og:title" content="The Farm | Salt Spring Centre of Yoga">
+<meta property="og:description" content="41 years of regenerative farming on 69 acres of protected Agricultural Land Reserve on Salt Spring Island. Organic produce for the Centre and community.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saltspringcentre.com/m/farm.html">
+<meta property="og:image" content="https://saltspringcentre.com/images/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Farm | Salt Spring Centre of Yoga">
+<meta name="twitter:description" content="41 years of regenerative farming on 69 acres of protected Agricultural Land Reserve on Salt Spring Island. Organic produce for the Centre and community.">
+<meta name="twitter:image" content="https://saltspringcentre.com/images/og-default.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <script>if(window.innerWidth>768)window.location.href='../farm.html';</script>
@@ -94,9 +104,12 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 .footer-bottom p { font-size: 0.62rem; opacity: 0.3; text-align: center; }
 .social { display: flex; gap: 12px; margin-top: 12px; }
 .social a { color: var(--white); opacity: 0.4; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.1); }
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 9999; padding: 12px 18px; background: var(--teal-dark); color: var(--white); font-weight: 600; border-radius: 0 0 6px 0; text-decoration: none; }
+.skip-link:focus { left: 0; outline: 3px solid var(--gold); outline-offset: 2px; }
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- NAV -->
 <nav class="nav">
@@ -119,7 +132,7 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 </div>
 
 <!-- HERO -->
-<section class="hero">
+<section id="main" class="hero">
   <img class="bg" src="../images/2022/05/harvesting-salad.jpg" alt="Harvesting salad greens at the Salt Spring Centre of Yoga farm" data-hero-pool="Garden / Farm">
   <div class="hero-overlay"></div>
   <div class="hero-content">
@@ -204,6 +217,7 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
     <a href="rentals.html">Rentals</a>
     <a href="blog.html">Blog</a>
     <a href="contact.html">Contact</a>
+    <a href="policies.html#privacy">Privacy</a>
   </div>
   <div class="footer-bottom">
     <p>We gratefully acknowledge that we are on traditional unceded territory of the Hul'qumi'num Treaty Group and Saanich First Nations.</p>

@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>if(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))window.location.href='m/admin-guide.html';</script>
 <title>Site Administration Guide | Salt Spring Centre of Yoga</title>
+<!-- OpenGraph + Twitter (og-default.jpg is a placeholder; create 1200x630 PNG and update if needed) -->
+<meta property="og:title" content="Site Administration Guide | Salt Spring Centre of Yoga">
+<meta property="og:description" content="Site Administration Guide | Salt Spring Centre of Yoga">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saltspringcentre.com/admin-guide.html">
+<meta property="og:image" content="https://saltspringcentre.com/images/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Site Administration Guide | Salt Spring Centre of Yoga">
+<meta name="twitter:description" content="Site Administration Guide | Salt Spring Centre of Yoga">
+<meta name="twitter:image" content="https://saltspringcentre.com/images/og-default.jpg">
+
 <meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -163,9 +174,12 @@ p { text-align: justify; text-justify: inter-word; }
   .admin-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .link-card { display: flex; font-size: 0.82rem; padding: 12px 20px; }
 }
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 9999; padding: 12px 18px; background: var(--teal-dark); color: var(--white); font-weight: 600; border-radius: 0 0 6px 0; text-decoration: none; }
+.skip-link:focus { left: 0; outline: 3px solid var(--gold); outline-offset: 2px; }
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- NAV -->
 <nav class="sticky-nav">
@@ -197,7 +211,7 @@ p { text-align: justify; text-justify: inter-word; }
 </div>
 
 <!-- HERO -->
-<section class="hero">
+<section id="main" class="hero">
   <div class="hero-content">
     <h1>Site Administration Guide</h1>
     <p>How this website works, where to manage content, and who to contact.</p>
@@ -457,8 +471,8 @@ p { text-align: justify; text-justify: inter-word; }
     <h2>Contact &amp; Request Forms</h2>
   </div>
   <div class="content-block reveal d1">
-    <div class="status-badge status-placeholder"><span class="status-dot"></span><span class="status-text">Needs Deploy</span></div>
-    <p>The contact form (<code>contact.html</code>) is a real form, not a <code>mailto:</code> link. When a visitor submits, the fields are POSTed to a Cloudflare Worker (<code>sscy-contact</code>), which validates + spam-checks + hands off to a Google Apps Script that sends the email from <code>info@saltspringcentre.com</code>. The sender's email is set as the Reply-To so replies from Gmail go directly to the visitor.</p>
+    <div class="status-badge status-connected"><span class="status-dot"></span><span class="status-text">Live</span></div>
+    <p>Contact form is live via the sscy-contact Cloudflare worker (no further setup required). The form on <code>contact.html</code> POSTs to the worker, which validates + spam-checks + hands off to a Google Apps Script that sends from <code>info@saltspringcentre.com</code> with the sender's email as Reply-To.</p>
 
     <div class="link-cards-wrap">
       <a href="https://script.google.com/home" target="_blank" rel="noopener" class="link-card">Google Apps Script</a>
@@ -467,9 +481,9 @@ p { text-align: justify; text-justify: inter-word; }
     <h3>Current status</h3>
     <ul>
       <li>Form HTML is live on both <code>contact.html</code> and <code>m/contact.html</code>.</li>
-      <li>Worker code is in the repo at <code>workers/contact.js</code> but not deployed yet.</li>
-      <li>Apps Script relay code is at <code>scripts/contact-relay.gs</code> but not deployed yet.</li>
-      <li>Submissions currently fail with a network error until the worker + Apps Script are deployed.</li>
+      <li>Worker is deployed at <code>sscy-contact.executive-2ef.workers.dev</code>.</li>
+      <li>Apps Script relay is deployed and sending from <code>info@saltspringcentre.com</code>.</li>
+      <li>Submissions are flowing end-to-end; no further setup required.</li>
     </ul>
 
     <h3>Deploy steps (one-time)</h3>
@@ -726,6 +740,7 @@ p { text-align: justify; text-justify: inter-word; }
         <a href="offerings.html#wellness">Wellness</a>
         <a href="offerings.html#satsang">Satsang</a>
         <a href="policies.html">Terms</a>
+        <a href="policies.html#privacy">Privacy Policy</a>
         <a href="policies.html">Cancellation Policy</a>
       </div>
     </nav>

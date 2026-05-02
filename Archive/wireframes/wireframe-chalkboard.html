@@ -4,6 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wireframe: The Chalkboard</title>
+<!-- OpenGraph + Twitter (og-default.jpg is a placeholder; create 1200x630 PNG and update if needed) -->
+<meta property="og:title" content="Wireframe: The Chalkboard">
+<meta property="og:description" content="Wireframe: The Chalkboard">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saltspringcentre.com/wireframe-chalkboard.html">
+<meta property="og:image" content="https://saltspringcentre.com/images/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wireframe: The Chalkboard">
+<meta name="twitter:description" content="Wireframe: The Chalkboard">
+<meta name="twitter:image" content="https://saltspringcentre.com/images/og-default.jpg">
+
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap');
@@ -114,9 +125,12 @@ body { background: #2a2a2a; color: #e8e0d0; font-family: system-ui; overflow: hi
 
 .history-dot:hover { background: rgba(255,255,255,0.5); transform: scale(1.5); }
 .history-dot.active { background: rgba(255,255,255,0.6); }
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 9999; padding: 12px 18px; background: var(--teal-dark); color: var(--white); font-weight: 600; border-radius: 0 0 6px 0; text-decoration: none; }
+.skip-link:focus { left: 0; outline: 3px solid var(--gold); outline-offset: 2px; }
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <div class="chalk-surface" id="surface">
   <div class="prompt">ask anything</div>

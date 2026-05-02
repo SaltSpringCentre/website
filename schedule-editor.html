@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACYR Schedule Editor</title>
+<!-- OpenGraph + Twitter (og-default.jpg is a placeholder; create 1200x630 PNG and update if needed) -->
+<meta property="og:title" content="ACYR Schedule Editor">
+<meta property="og:description" content="ACYR Schedule Editor">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saltspringcentre.com/schedule-editor.html">
+<meta property="og:image" content="https://saltspringcentre.com/images/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ACYR Schedule Editor">
+<meta name="twitter:description" content="ACYR Schedule Editor">
+<meta name="twitter:image" content="https://saltspringcentre.com/images/og-default.jpg">
+
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Archivo+Narrow:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <style>
@@ -264,9 +275,12 @@
             background:#17A698; color:#fff; font-size:0.75rem; cursor:pointer; font-family:inherit;
         }
         .name-box button:hover { background:#1fc4b3; }
-    </style>
+    .skip-link { position: absolute; left: -9999px; top: 0; z-index: 9999; padding: 12px 18px; background: var(--teal-dark); color: var(--white); font-weight: 600; border-radius: 0 0 6px 0; text-decoration: none; }
+.skip-link:focus { left: 0; outline: 3px solid var(--gold); outline-offset: 2px; }
+</style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 <div class="toolbar">
     <div class="tb-group">
         <button class="tb-btn" onclick="undo()" data-tip="Undo your last change (Ctrl+Z)">Undo</button>

@@ -6,6 +6,16 @@
 <script>if(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))window.location.href='m/calendar.html';</script>
 <title>Salt Spring Centre of Yoga - Calendar</title>
 <meta name="description" content="Upcoming retreats, yoga classes, concerts, and community gatherings at the Salt Spring Centre of Yoga on Salt Spring Island, BC.">
+<!-- OpenGraph + Twitter (og-default.jpg is a placeholder; create 1200x630 PNG and update if needed) -->
+<meta property="og:title" content="Salt Spring Centre of Yoga - Calendar">
+<meta property="og:description" content="Upcoming retreats, yoga classes, concerts, and community gatherings at the Salt Spring Centre of Yoga on Salt Spring Island, BC.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saltspringcentre.com/calendar.html">
+<meta property="og:image" content="https://saltspringcentre.com/images/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Salt Spring Centre of Yoga - Calendar">
+<meta name="twitter:description" content="Upcoming retreats, yoga classes, concerts, and community gatherings at the Salt Spring Centre of Yoga on Salt Spring Island, BC.">
+<meta name="twitter:image" content="https://saltspringcentre.com/images/og-default.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
@@ -504,9 +514,12 @@ p { text-align: justify; text-justify: inter-word; }
 .donate-alt { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(0,0,0,0.08); font-size: 0.8rem; color: var(--text-light); text-align: center; }
 .donate-alt strong { color: var(--text); }
 .donate-modal-footer { padding: 0 32px 24px; text-align: center; font-size: 0.72rem; color: var(--text-light); }
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 9999; padding: 12px 18px; background: var(--teal-dark); color: var(--white); font-weight: 600; border-radius: 0 0 6px 0; text-decoration: none; }
+.skip-link:focus { left: 0; outline: 3px solid var(--gold); outline-offset: 2px; }
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- STICKY NAV (matching homepage) -->
 <nav class="sticky-nav" id="stickyNav">
@@ -540,7 +553,7 @@ p { text-align: justify; text-justify: inter-word; }
 </div>
 
 <!-- HERO -->
-<section class="hero">
+<section id="main" class="hero">
   <div class="hero-content">
     <div class="hero-badge">69-acre Sanctuary &bull; Salt Spring Island, BC</div>
     <h1 style="margin-top:20px">Events &amp; Calendar</h1>
@@ -620,11 +633,8 @@ p { text-align: justify; text-justify: inter-word; }
     <p>Reserve your spot online. All levels welcome.</p>
   </div>
   <div style="max-width:900px;margin:0 auto;">
-    <!-- ACUITY EMBED: Replace OWNER_ID with your Acuity owner ID -->
-    <!-- To get your owner ID: Acuity admin > Share Your Calendar > Embed Code > copy the owner number from the URL -->
     <iframe src="https://app.acuityscheduling.com/schedule/5618a029/?category=Yoga%20Classes" title="Book Yoga Class" width="100%" height="800" frameBorder="0" style="border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.08);"></iframe>
     <script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
-    <p style="text-align:center;font-size:0.82rem;color:var(--text-light);margin-top:16px;">Acuity Scheduling integration coming soon. <a data-u="info" data-d="saltspringcentre.com" href="#" style="color:var(--teal-dark);">Email us</a> to register for a class.</p>
   </div>
 </section>
 
@@ -696,6 +706,7 @@ p { text-align: justify; text-justify: inter-word; }
         <a href="offerings.html#wellness">Wellness</a>
         <a href="offerings.html#satsang">Satsang</a>
         <a href="policies.html">Terms</a>
+        <a href="policies.html#privacy">Privacy Policy</a>
         <a href="policies.html">Cancellation Policy</a>
       </div>
     </nav>
