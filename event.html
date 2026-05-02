@@ -263,6 +263,108 @@ p { text-align: justify; text-justify: inter-word; }
     d.innerHTML = s;
     return d.textContent || d.innerText || '';
   }
+  // ===== JSON-LD STRUCTURED DATA =====
+  // Inject Schema.org Event/Course markup so search engines can index our offerings.
+  function injectJsonLd(data) {
+    if (!data) return;
+    // Remove any prior injected block (in case of re-render).
+    var prior = document.getElementById('sscy-jsonld');
+    if (prior) prior.remove();
+    var s = document.createElement('script');
+    s.type = 'application/ld+json';
+    s.id = 'sscy-jsonld';
+    s.textContent = JSON.stringify(data);
+    document.head.appendChild(s);
+  }
+  function absUrl(path) {
+    if (!path) return '';
+    if (/^https?:\/\//i.test(path)) return path;
+    return 'https://saltspringcentre.com/' + String(path).replace(/^\//, '');
+  }
+  function priceNumber(p) {
+    if (!p) return null;
+    var m = String(p).match(/(\d[\d,]*\.?\d*)/);
+    return m ? m[1].replace(/,/g, '') : null;
+  }
+  var SSCY_ORG = {
+    '@type': 'Organization',
+    name: 'Salt Spring Centre of Yoga',
+    url: 'https://saltspringcentre.com'
+  };
+  function ldForEvent(item) {
+    var ld = {
+      '@context': 'https://schema.org',
+      '@type': 'Event',
+      name: stripTags(decodeEntities(item.title || '')),
+      description: stripTags(decodeEntities(item.desc || '')),
+      location: {
+        '@type': 'Place',
+        name: item.venue || 'Salt Spring Centre of Yoga',
+        address: 'Salt Spring Island, BC, Canada'
+      },
+      organizer: SSCY_ORG
+    };
+    if (item.date) ld.startDate = item.date;
+    if (item.img) ld.image = absUrl(item.img);
+    var offerUrl = item.bookUrl || (item.type === 'concert' ? 'https://saltspringcentre.com/shop.html' : 'https://saltspringcentre.com/event.html?id=' + item.id);
+    var offer = {
+      '@type': 'Offer',
+      url: offerUrl,
+      priceCurrency: 'CAD',
+      availability: 'https://schema.org/InStock'
+    };
+    var pn = priceNumber(item.price);
+    if (pn) offer.price = pn;
+    ld.offers = offer;
+    return ld;
+  }
+  function ldForClass(item) {
+    var ld = {
+      '@context': 'https://schema.org',
+      '@type': 'Course',
+      name: stripTags(decodeEntities(item.title || '')),
+      description: stripTags(decodeEntities(item.desc || '')),
+      provider: SSCY_ORG
+    };
+    if (item.img) ld.image = absUrl(item.img);
+    if (item.teacher) ld.instructor = { '@type': 'Person', name: item.teacher };
+    if (item.level) ld.educationalLevel = item.level;
+    return ld;
+  }
+  function ldForRG(p, isConcert) {
+    var ld = {
+      '@context': 'https://schema.org',
+      '@type': 'Event',
+      name: stripTags(decodeEntities(p.name || '')),
+      description: stripTags(decodeEntities(p.excerpt || p.content || '')).slice(0, 500),
+      location: {
+        '@type': 'Place',
+        name: p.location || 'Salt Spring Centre of Yoga',
+        address: p.address || 'Salt Spring Island, BC, Canada'
+      },
+      organizer: SSCY_ORG
+    };
+    if (p.start_date) ld.startDate = p.start_date;
+    if (p.end_date) ld.endDate = p.end_date;
+    var heroImg = '';
+    if (p.images && p.images.length) heroImg = (typeof p.images[0] === 'object' ? p.images[0].url : p.images[0]) || '';
+    if (heroImg) ld.image = absUrl(heroImg);
+    var bookLink = p.remote_registration_link || p.program_link || 'https://saltspringcentre.secure.retreat.guru/program/';
+    var offer = {
+      '@type': 'Offer',
+      url: bookLink,
+      priceCurrency: 'CAD',
+      availability: p.program_registration_status === 'open' ? 'https://schema.org/InStock' : 'https://schema.org/LimitedAvailability'
+    };
+    if (p.pricing_options) {
+      var keys = Object.keys(p.pricing_options);
+      var prices = keys.map(function(k) { return p.pricing_options[k].price; }).filter(function(x) { return x; });
+      if (prices.length) offer.price = Math.min.apply(null, prices).toFixed(0);
+    }
+    ld.offers = offer;
+    return ld;
+  }
+
   function formatDateRange(start, end) {
     if (!start) return '';
     var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -295,10 +397,13 @@ p { text-align: justify; text-justify: inter-word; }
     // Dispatch by type
     if (item.type === 'concert' || item.type === 'retreat') {
       main.innerHTML = renderEvent(item);
+      injectJsonLd(ldForEvent(item));
     } else if (item.type === 'class') {
       main.innerHTML = renderClass(item);
+      injectJsonLd(ldForClass(item));
     } else if (item.type === 'community') {
       main.innerHTML = renderCommunity(item);
+      injectJsonLd(ldForEvent(item));
     } else if (item.type === 'treatment') {
       main.innerHTML = renderTreatment(item);
     }
@@ -634,6 +739,7 @@ p { text-align: justify; text-justify: inter-word; }
     '</aside></div></section>';
 
     main.innerHTML = html;
+    injectJsonLd(ldForRG(p, isConcert));
   }
 })();
 </script>
