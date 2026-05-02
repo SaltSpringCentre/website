@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>if(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))window.location.href='m/shop.html';</script>
 <title>Salt Spring Centre of Yoga - Shop</title>
-<meta name="description" content="Support the Salt Spring Centre of Yoga. Books, music, apparel, yoga supplies, gift certificates, and more from our 69-acre sanctuary on Salt Spring Island.">
+<meta name="description" content="Support the Salt Spring Centre of Yoga. Concert tickets, retreat bookings, and Centre merchandise from our 69-acre sanctuary on Salt Spring Island.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
@@ -985,14 +985,9 @@ p { text-align: justify; text-justify: inter-word; }
 
 <!-- FILTER KEYS -->
 <div class="filter-keys" id="categoryFilters">
-  <button class="filter-key active" data-category="all">All Products</button>
-  <button class="filter-key" data-category="tickets">Events</button>
-  <button class="filter-key" data-category="books">Books & Media</button>
-  <button class="filter-key" data-category="apparel">Apparel</button>
-  <button class="filter-key" data-category="yoga">Yoga</button>
-  <button class="filter-key" data-category="garden">Garden</button>
-  <button class="filter-key" data-category="gifts">Gifts</button>
-  <button class="filter-key" data-category="support">Support</button>
+  <button class="filter-key active" data-category="all">All</button>
+  <button class="filter-key" data-category="tickets">Music for Peace</button>
+  <button class="filter-key" data-category="retreats">Retreats</button>
 </div>
 
 <!-- PRODUCTS -->
@@ -1150,284 +1145,144 @@ p { text-align: justify; text-justify: inter-word; }
 
 <div class="toast" id="toast"></div>
 
+<script src="events-data.js"></script>
 <script>
-// ===== PRODUCT DATA =====
-// To connect a product to Square: add squareLink: 'https://square.link/u/XXXXX' to any product below.
-// Products with a squareLink will open Square Checkout directly. Others use the cart.
-const PRODUCTS = [
-  // TICKETS & EVENTS -- MUSIC FOR PEACE SERIES
-  {
-    id: 100,
-    category: 'tickets',
-    title: 'Music for Peace: Carnatic Violin & Mridangam',
-    desc: 'An evening of South Indian classical music with Shriram Rajagopalan (violin) and Keerthy Raghavan (mridangam). Intricate melodic structures and rhythmic complexity in a contemplative setting. Limited seating.',
-    price: 40.00,
-    badge: 'Apr 11',
-    badgeClass: 'new',
-    featured: true,
-    event: {
-      date: 'Saturday, April 11, 2026',
-      time: '7:00 pm \u2013 9:00 pm',
-      venue: 'Satsang Room'
-    },
-    img: 'images/2026/03/Violin-Concert-April-11-2026-Shriram-Rajagopalan.jpg',
-  },
-  {
-    id: 101,
-    category: 'tickets',
-    title: 'Sound Bath + Meditation with Farhad Khan',
-    desc: 'Crystal bowls, gongs, and chimes for stress release, enhanced concentration, and chakra balancing. Over two decades of healing practice.',
-    price: 0,
-    priceLabel: 'By Donation',
-    badge: 'May 13',
-    badgeClass: 'new',
-    event: {
-      date: 'Tuesday, May 13, 2026',
-      time: '7:30 pm \u2013 8:30 pm',
-      venue: 'Salt Spring Centre of Yoga'
-    },
-    img: 'images/2025/11/SoundBath-SaltSpring.png',
-  },
-  {
-    id: 102,
-    category: 'tickets',
-    title: 'Music for Peace: Akhil Jobanputra & Tihai Ensemble',
-    desc: 'Hindustani classical concert featuring CBC\'s "30 under 30" vocalist Akhil Jobanputra with Mohan Bhide (harmonium) and Hriday Buddhdev (tabla). Expansive ragas and spontaneous improvisation.',
-    price: 40.00,
-    badge: 'Jun 27',
-    badgeClass: 'new',
-    event: {
-      date: 'Saturday, June 27, 2026',
-      time: 'Doors 6:30 pm, Concert 7:00 pm \u2013 9:00 pm',
-      venue: 'Pond Dome'
-    },
-    img: 'images/2025/12/11.jpg',
-  },
-  {
-    id: 103,
-    category: 'tickets',
-    title: 'Music for Peace: Deepak Ram \u2013 Bansuri Flute',
-    desc: 'Internationally celebrated bansuri master Deepak Ram performs Indian classical music on the bamboo flute. Deeply expressive and meditative sound.',
-    price: 40.00,
-    badge: 'Aug 1',
-    badgeClass: 'new',
-    event: {
-      date: 'Saturday, August 1, 2026',
-      time: 'Doors 6:30 pm, Concert 7:00 pm \u2013 9:00 pm',
-      venue: 'Satsang Room'
-    },
-    img: 'images/2025/12/11.jpg',
-  },
+// ===== PRODUCT DATA (live, built at runtime from 3 sources) =====
+// Source A: Concerts from events-data.js (already loaded above as window.EVENTS)
+// Source B: Retreats from sscy-retreat-guru worker (/programs)
+// Source C: Merchandise from sscy-square worker (/catalog) - empty until populated
+let PRODUCTS = [];
 
-  // BOOKS & MEDIA
-  {
-    id: 1,
-    category: 'books',
-    title: 'Salt Spring Island Cooking',
-    desc: 'The beloved vegetarian cookbook that sold 52,000 copies. Classic sattvic recipes from the Centre\'s kitchen.',
-    price: 19.95,
-    img: 'images/2017/11/sourdough-1.jpeg',
-  },
-  {
-    id: 2,
-    category: 'books',
-    title: 'The Salt Spring Experience',
-    desc: 'Yoga philosophy, Ayurvedic principles, asana practice, and vegetarian recipes combined in one guide.',
-    price: 22.95,
-    img: 'https://pictures.abebooks.com/isbn/9781553350095-us.jpg',
-  },
-  {
-    id: 3,
-    category: 'books',
-    title: 'Ashtanga Yoga Primer',
-    desc: 'Baba Hari Dass\'s foundational guide to the eight limbs of yoga. Published by Sri Ram Publishing.',
-    price: 24.95,
-    img: 'images/2022/03/Babaji-header.jpg',
-  },
-  {
-    id: 4,
-    category: 'books',
-    title: 'Silence Speaks',
-    desc: 'Collected wisdom from Baba Hari Dass\'s chalkboard. Aphorisms on yoga, life, and spiritual practice.',
-    price: 18.95,
-    img: 'images/2021/11/Babaji-photo-overlay.jpg',
-  },
-  {
-    id: 5,
-    category: 'books',
-    title: 'The Yellow Book',
-    desc: 'Baba Hari Dass\'s first publication (1974). A collection of aphorisms that launched decades of teaching.',
-    price: 16.95,
-  },
-  {
-    id: 6,
-    category: 'books',
-    title: '41st Annual Retreat Kirtan',
-    desc: 'Live devotional chanting recorded at the annual community yoga retreat.',
-    price: 12.00,
-    img: 'images/2022/08/Kirtan.jpg',
-  },
-  {
-    id: 7,
-    category: 'books',
-    title: 'Surya Namaskar Mantras',
-    desc: 'Sun salutation mantras for your daily practice.',
-    price: 8.00,
-  },
+const RG_WORKER = 'https://sscy-retreat-guru.executive-2ef.workers.dev';
+const SQUARE_CATALOG_WORKER = 'https://sscy-square.executive-2ef.workers.dev';
+const MONTH_ABBR = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const MONTH_FULL = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
-  // APPAREL & MERCH
-  {
-    id: 10,
-    category: 'apparel',
-    title: 'Centre Logo T-Shirt',
-    desc: 'Soft organic cotton tee with the classic lotus calligraphy logo. Available in natural, sage, and ocean.',
-    price: 34.95,
-    badge: 'New',
-    badgeClass: 'new',
-    img: 'images/2021/11/SSCY-Full-Logo.png',
-  },
-  {
-    id: 11,
-    category: 'apparel',
-    title: 'Karma Yoga Hoodie',
-    desc: 'Cozy pullover hoodie with "Karma Yoga" print. Ethically produced, printed on demand.',
-    price: 54.95,
-  },
-  {
-    id: 12,
-    category: 'apparel',
-    title: 'SSCY Toque',
-    desc: 'Warm knit beanie with embroidered lotus. Perfect for Salt Spring Island winters.',
-    price: 28.00,
-  },
-  {
-    id: 13,
-    category: 'apparel',
-    title: 'Centre Tote Bag',
-    desc: 'Heavy-duty organic canvas tote with lotus logo. Great for farmers market runs.',
-    price: 24.95,
-  },
+function decodeHtml(s) {
+  return String(s || '')
+    .replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>')
+    .replace(/&#039;/g,"'").replace(/&#8217;/g,"'").replace(/&#8216;/g,"'")
+    .replace(/&#8220;/g,'"').replace(/&#8221;/g,'"')
+    .replace(/&hellip;/g,'…').replace(/&ndash;/g,'–').replace(/&mdash;/g,'—')
+    .replace(/&quot;/g,'"').replace(/&nbsp;/g,' ');
+}
+function stripHtml(s) { return decodeHtml(String(s || '').replace(/<[^>]*>/g, '')).trim(); }
 
-  // YOGA & MEDITATION
-  {
-    id: 20,
-    category: 'yoga',
-    title: 'Meditation Cushion (Zafu)',
-    desc: 'Buckwheat-filled round cushion in Centre teal. Supports proper meditation posture.',
-    price: 59.95,
-    img: 'images/2022/01/buddha-background.jpg',
-  },
-  {
-    id: 21,
-    category: 'yoga',
-    title: 'Mala Beads (108)',
-    desc: 'Handcrafted rudraksha seed mala for japa meditation. Traditional 108 beads with guru bead.',
-    price: 38.00,
-    img: 'images/2022/09/Lotus-photo-jpeg.jpg',
-  },
-  {
-    id: 22,
-    category: 'yoga',
-    title: 'Cork Yoga Block',
-    desc: 'Sustainable cork block for support in asana practice. Firm, lightweight, and eco-friendly.',
-    price: 22.00,
-  },
-  {
-    id: 23,
-    category: 'yoga',
-    title: 'Neti Pot (Ceramic)',
-    desc: 'Traditional ceramic neti pot for nasal cleansing. A staple of Ayurvedic self-care.',
-    price: 18.95,
-  },
-  // GARDEN & SEEDS
-  {
-    id: 30,
-    category: 'garden',
-    title: 'Kitchen Garden Seed Collection',
-    desc: 'Curated set of 8 seed varieties grown in the Centre\'s organic gardens. Includes planting guide.',
-    price: 24.95,
-    badge: 'New',
-    badgeClass: 'new',
-    img: 'images/2023/11/Program-House-with-flowers-resized.png',
-  },
-  {
-    id: 31,
-    category: 'garden',
-    title: 'Herb Garden Starter Kit',
-    desc: 'Basil, cilantro, dill, and parsley seeds from the Centre\'s kitchen garden. Organic and open-pollinated.',
-    price: 14.95,
-  },
-  {
-    id: 32,
-    category: 'garden',
-    title: 'Recipe Card Set',
-    desc: '12 recipe cards featuring classic vegetarian dishes from the Centre\'s 50-year kitchen tradition.',
-    price: 16.95,
-    img: 'images/2021/10/indian-spices-1.jpg',
-  },
+// ----- Source A: concerts from events-data.js -----
+function buildConcertProducts() {
+  if (typeof EVENTS === 'undefined' || !Array.isArray(EVENTS)) return [];
+  return EVENTS.filter(function(e) { return e && e.type === 'concert'; }).map(function(e) {
+    var priceStr = String(e.price == null ? '' : e.price);
+    var priceNum = parseFloat(priceStr.replace(/[^\d.]/g, '')) || 0;
+    var priceLabel = /^\$?\d/.test(priceStr.trim()) ? null : priceStr;
+    return {
+      id: 'concert-' + e.id,
+      category: 'tickets',
+      title: e.title,
+      desc: e.desc,
+      price: priceNum,
+      priceLabel: priceLabel,
+      badge: e.badge,
+      badgeClass: 'new',
+      featured: !!e.featured,
+      event: { date: e.dateLabel, time: e.time, venue: e.venue },
+      img: e.img,
+      eventId: e.id
+    };
+  });
+}
 
-  // GIFT CERTIFICATES
-  {
-    id: 40,
-    category: 'gifts',
-    title: 'Retreat Gift Certificate',
-    desc: 'Give the gift of a retreat at the Centre. Redeemable for any program or personal retreat.',
-    price: 150.00,
-    priceLabel: 'From $150',
-    img: 'images/2021/11/programs-retreats.jpg',
-  },
-  {
-    id: 41,
-    category: 'gifts',
-    title: 'Wellness Gift Certificate',
-    desc: 'Redeemable for massage, Ayurveda consultation, or acupuncture at the Centre.',
-    price: 75.00,
-    priceLabel: 'From $75',
-    img: 'images/2023/01/Registered-RMT-massage-Canva-Pro-stock-photo-2023.jpg',
-  },
-  {
-    id: 42,
-    category: 'gifts',
-    title: 'Shop Gift Card',
-    desc: 'Gift card for any item in the online store. Delivered by email.',
-    price: 50.00,
-    priceLabel: 'From $50',
-  },
-
-  // SUPPORT THE CENTRE
-  {
-    id: 50,
-    category: 'support',
-    title: 'Sponsor a Garden Bed',
-    desc: 'Your sponsorship keeps the organic gardens growing. Includes a thank-you card with garden photos.',
-    price: 50.00,
-    img: 'images/2021/11/Program-House-Rock-Wall.jpg',
-  },
-  {
-    id: 51,
-    category: 'support',
-    title: 'Feed a Karma Yogi',
-    desc: 'Cover meals for a karma yoga volunteer for one week. They maintain the Centre in exchange for practice.',
-    price: 75.00,
-  },
-  {
-    id: 52,
-    category: 'support',
-    title: 'Annual Membership',
-    desc: 'Become a member of the Dharma Sara Satsang Society. Support the Centre\'s mission year-round.',
-    price: 26.25,
-    img: 'images/2026/03/3-1.jpg',
-  },
-  {
-    id: 53,
-    category: 'support',
-    title: 'Temple Maintenance Fund',
-    desc: 'Help preserve the Centre\'s sacred spaces. Contributions support ongoing temple and shrine care.',
-    price: 100.00,
-    priceLabel: 'From $100',
-    img: 'images/2022/01/buddha-background.jpg',
+// ----- Source B: retreats from sscy-retreat-guru worker -----
+function rgImage(p) {
+  if (p.image_url) return p.image_url;
+  if (p.featured_image) return p.featured_image;
+  if (p.images && typeof p.images === 'object') {
+    if (p.images.medium && p.images.medium.url) return p.images.medium.url;
+    if (p.images.large && p.images.large.url) return p.images.large.url;
+    if (p.images.thumbnail && p.images.thumbnail.url) return p.images.thumbnail.url;
   }
-];
+  return null;
+}
+function formatRGDateRange(start, end) {
+  if (!start) return '';
+  var s = new Date(start + 'T12:00:00');
+  if (isNaN(s.getTime())) return '';
+  var out = MONTH_FULL[s.getMonth()] + ' ' + s.getDate();
+  if (end) {
+    var en = new Date(end + 'T12:00:00');
+    if (!isNaN(en.getTime()) && en.getTime() !== s.getTime()) {
+      out += ' – ' + (en.getMonth() === s.getMonth() ? en.getDate() : MONTH_FULL[en.getMonth()] + ' ' + en.getDate());
+    }
+  }
+  return out + ', ' + s.getFullYear();
+}
+function rgDuration(start, end) {
+  if (!start || !end) return '';
+  var s = new Date(start + 'T12:00:00'), e = new Date(end + 'T12:00:00');
+  if (isNaN(s) || isNaN(e)) return '';
+  var nights = Math.max(0, Math.round((e - s) / 86400000));
+  if (!nights) return '';
+  return nights + (nights === 1 ? ' night' : ' nights');
+}
+async function fetchRetreatProducts() {
+  try {
+    var today = new Date().toISOString().split('T')[0];
+    var url = RG_WORKER + '/programs?public=1&min_date=' + today + '&limit=0&include=teachers';
+    var res = await fetch(url);
+    if (!res.ok) return [];
+    var programs = await res.json();
+    if (!Array.isArray(programs)) return [];
+    return programs.filter(function(p) { return p && p.remote_registration_link; }).map(function(p) {
+      var name = decodeHtml(p.name || '');
+      var shortDesc = stripHtml(p.short_description || p.excerpt || p.content || '').slice(0, 200);
+      var s = p.start_date ? new Date(p.start_date + 'T12:00:00') : null;
+      var monthBadge = s && !isNaN(s) ? (MONTH_ABBR[s.getMonth()] + ' ' + s.getDate()) : '';
+      return {
+        id: 'retreat-' + p.id,
+        category: 'retreats',
+        title: name,
+        desc: shortDesc,
+        price: 0,
+        priceLabel: 'Book on Retreat Guru',
+        badge: monthBadge,
+        badgeClass: 'new',
+        event: {
+          date: formatRGDateRange(p.start_date, p.end_date),
+          time: rgDuration(p.start_date, p.end_date),
+          venue: 'Salt Spring Centre of Yoga'
+        },
+        img: rgImage(p),
+        squareLink: p.remote_registration_link
+      };
+    });
+  } catch (err) {
+    return [];
+  }
+}
+
+// ----- Source C: merchandise from sscy-square worker /catalog -----
+async function fetchSquareCatalogProducts() {
+  try {
+    var res = await fetch(SQUARE_CATALOG_WORKER + '/catalog');
+    if (!res.ok) return [];
+    var data = await res.json();
+    var items = (data && Array.isArray(data.items)) ? data.items : [];
+    return items.filter(function(it) { return it && it.available !== false; }).map(function(it) {
+      var cents = typeof it.priceCents === 'number' ? it.priceCents : 0;
+      return {
+        id: 'sq-' + it.id,
+        category: it.category || 'other',
+        title: it.title,
+        desc: it.desc,
+        price: cents / 100,
+        img: it.imageUrl || null
+      };
+    });
+  } catch (err) {
+    return [];
+  }
+}
+
 
 // ===== CART STATE =====
 let cart = JSON.parse(localStorage.getItem('sscy_cart') || '[]');
@@ -1435,13 +1290,22 @@ let cart = JSON.parse(localStorage.getItem('sscy_cart') || '[]');
 // ===== RENDER PRODUCTS =====
 function renderProducts(category = 'all') {
   const grid = document.getElementById('productsGrid');
+  if (!grid) return;
   const filtered = category === 'all' ? PRODUCTS : PRODUCTS.filter(p => p.category === category);
 
-  grid.innerHTML = filtered.map(p => `
-    <div class="product-card" onclick="openProductModal(${p.id})" data-category="${p.category}">
+  if (!filtered.length) {
+    grid.innerHTML = '<div class="product-preview-placeholder" style="grid-column:1/-1;padding:48px;text-align:center;">Nothing here yet. Check back soon.</div>';
+    return;
+  }
+
+  grid.innerHTML = filtered.map(p => {
+    const idAttr = String(p.id).replace(/"/g, '&quot;');
+    const titleAttr = String(p.title || '').replace(/"/g, '&quot;');
+    return `
+    <div class="product-card" data-id="${idAttr}" data-category="${p.category}" onclick="openProductModal(this.dataset.id)">
       ${p.badge ? `<span class="product-badge ${p.badgeClass || ''}">${p.badge}</span>` : ''}
       <div class="product-preview">
-        ${p.img ? `<img src="${p.img}" alt="${p.title}" loading="lazy">` : `<div class="product-preview-placeholder">${getCategoryLabel(p.category)}</div>`}
+        ${p.img ? `<img src="${p.img}" alt="${titleAttr}" loading="lazy">` : `<div class="product-preview-placeholder">${getCategoryLabel(p.category)}</div>`}
       </div>
       <div class="product-slim">
         <div class="product-slim-info">
@@ -1450,21 +1314,50 @@ function renderProducts(category = 'all') {
         </div>
         <div class="product-slim-price">${p.priceLabel ? p.priceLabel : p.price > 0 ? '$' + p.price.toFixed(2) : 'By Donation'}</div>
       </div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
+}
+
+// Render a loading placeholder while async sources are pending
+function renderLoadingPlaceholder() {
+  const grid = document.getElementById('productsGrid');
+  if (!grid) return;
+  grid.innerHTML = '<div class="product-preview-placeholder" style="grid-column:1/-1;padding:48px;text-align:center;opacity:0.6;">Loading offerings…</div>';
 }
 
 function getCategoryLabel(cat) {
   const labels = {
     tickets: 'Music for Peace',
-    books: 'Books & Media',
-    apparel: 'Apparel & Merch',
-    yoga: 'Yoga & Meditation',
-    garden: 'Garden & Seeds',
-    gifts: 'Gift Certificates',
-    support: 'Support the Centre'
+    retreats: 'Retreats'
   };
-  return labels[cat] || cat;
+  return labels[cat] || (cat ? cat.charAt(0).toUpperCase() + cat.slice(1) : '');
+}
+
+// Hide filter buttons whose category has zero products; ensure 'All' is always shown.
+function refreshCategoryFilters() {
+  const wrap = document.getElementById('categoryFilters');
+  if (!wrap) return;
+  const presentCats = {};
+  PRODUCTS.forEach(function(p) { if (p && p.category) presentCats[p.category] = true; });
+
+  // Existing buttons
+  wrap.querySelectorAll('.filter-key').forEach(function(btn) {
+    const cat = btn.dataset.category;
+    if (cat === 'all') { btn.style.display = ''; return; }
+    btn.style.display = presentCats[cat] ? '' : 'none';
+  });
+
+  // Add buttons for any category we have products in but no button yet (e.g. Square catalog returns "books")
+  Object.keys(presentCats).forEach(function(cat) {
+    if (cat === 'all') return;
+    if (!wrap.querySelector('.filter-key[data-category="' + cat + '"]')) {
+      const btn = document.createElement('button');
+      btn.className = 'filter-key';
+      btn.dataset.category = cat;
+      btn.textContent = getCategoryLabel(cat);
+      wrap.appendChild(btn);
+    }
+  });
 }
 
 // ===== PRODUCT DETAIL MODAL =====
@@ -1480,8 +1373,12 @@ function openProductModal(id) {
   document.getElementById('pmDesc').textContent = p.desc;
 
   var eventEl = document.getElementById('pmEvent');
-  if (p.event) {
-    eventEl.innerHTML = '<span class="event-detail"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>' + p.event.date + '</span><span class="event-detail"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>' + p.event.time + '</span><span class="event-detail"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>' + p.event.venue + '</span>';
+  if (p.event && (p.event.date || p.event.time || p.event.venue)) {
+    var parts = [];
+    if (p.event.date) parts.push('<span class="event-detail"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>' + p.event.date + '</span>');
+    if (p.event.time) parts.push('<span class="event-detail"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>' + p.event.time + '</span>');
+    if (p.event.venue) parts.push('<span class="event-detail"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>' + p.event.venue + '</span>');
+    eventEl.innerHTML = parts.join('');
     eventEl.style.display = '';
   } else {
     eventEl.style.display = 'none';
@@ -1491,10 +1388,16 @@ function openProductModal(id) {
   document.getElementById('pmPrice').textContent = priceText;
 
   var btn = document.getElementById('pmBtn');
-  var btnText = p.category === 'tickets' ? 'Add Tickets to Cart' : p.category === 'support' ? 'Donate' : 'Add to Cart';
+  var btnText;
+  if (p.category === 'retreats') btnText = 'Book on Retreat Guru';
+  else if (p.category === 'tickets') btnText = (p.price > 0 ? 'Add Tickets to Cart' : 'Donate');
+  else btnText = 'Add to Cart';
   btn.textContent = btnText;
   if (p.squareLink) {
-    btn.onclick = function() { window.open(p.squareLink, '_blank'); };
+    btn.onclick = function() { window.open(p.squareLink, '_blank', 'noopener'); };
+  } else if (p.category === 'tickets' && p.price === 0) {
+    // By-donation concert: route through donate modal
+    btn.onclick = function() { closeProductModal(); if (window.openDonate) window.openDonate(); };
   } else {
     btn.onclick = function() { addToCart(id); closeProductModal(); };
   }
@@ -1517,23 +1420,17 @@ document.getElementById('categoryFilters').addEventListener('click', e => {
 });
 
 // Donate modal + submit handled by donate-form.js (window.openDonate/closeDonate).
-// Shop-specific helpers: route support-category products through the shared modal.
-function openShopDonate(productId) {
-  const product = PRODUCTS.find(p => p.id === productId);
-  if (!product) { if (window.openDonate) window.openDonate(); return; }
-  if (window.openDonate) window.openDonate(product.price);
-}
 
 // ===== CART FUNCTIONS =====
 function addToCart(productId) {
   const product = PRODUCTS.find(p => p.id === productId);
   if (!product) return;
 
-  // Support items go to donate modal instead of cart
-  if (product.category === 'support') {
-    openShopDonate(productId);
-    return;
-  }
+  // External-checkout items (e.g. retreats with squareLink to Retreat Guru) never enter the cart
+  if (product.squareLink) { window.open(product.squareLink, '_blank', 'noopener'); return; }
+
+  // Zero-price items can't be carted
+  if (!(product.price > 0)) return;
 
   const existing = cart.find(item => item.id === productId);
   if (existing) {
@@ -1591,6 +1488,7 @@ function renderCartItems() {
   container.innerHTML = cart.map(item => {
     const product = PRODUCTS.find(p => p.id === item.id);
     if (!product) return '';
+    const idJs = JSON.stringify(item.id);
     return `
       <div class="cart-item">
         <div class="cart-item-info">
@@ -1598,9 +1496,9 @@ function renderCartItems() {
           <div class="cart-item-price">$${(product.price * item.qty).toFixed(2)}</div>
         </div>
         <div class="cart-item-qty">
-          <button class="qty-btn" onclick="updateQty(${item.id}, -1)">&minus;</button>
+          <button class="qty-btn" onclick="updateQty(${idJs}, -1)">&minus;</button>
           <span>${item.qty}</span>
-          <button class="qty-btn" onclick="updateQty(${item.id}, 1)">+</button>
+          <button class="qty-btn" onclick="updateQty(${idJs}, 1)">+</button>
         </div>
       </div>
     `;
@@ -1617,10 +1515,6 @@ function toggleCart() {
   document.body.style.overflow = isOpen ? '' : 'hidden';
 
   if (!isOpen) renderCartItems();
-}
-
-function handleCheckout() {
-  showToast('This is a prototype. In production, this would connect to Stripe via WooCommerce.');
 }
 
 // ===== SQUARE CHECKOUT =====
@@ -1807,8 +1701,40 @@ window.addEventListener('scroll', function() {
   }
 });
 
+// ===== DATA LOAD ORCHESTRATION =====
+function appendProducts(newItems) {
+  if (!newItems || !newItems.length) return;
+  // De-duplicate on id
+  var existingIds = {};
+  PRODUCTS.forEach(function(p) { existingIds[p.id] = true; });
+  newItems.forEach(function(p) {
+    if (p && p.id != null && !existingIds[p.id]) { PRODUCTS.push(p); existingIds[p.id] = true; }
+  });
+  // Re-render with currently active filter
+  var activeBtn = document.querySelector('.filter-key.active');
+  var activeCat = activeBtn ? activeBtn.dataset.category : 'all';
+  refreshCategoryFilters();
+  renderProducts(activeCat);
+}
+
+function loadAllSources() {
+  // Source A: concerts (sync)
+  appendProducts(buildConcertProducts());
+
+  // Source B: retreats (async)
+  fetchRetreatProducts().then(appendProducts);
+
+  // Source C: square catalog (async)
+  fetchSquareCatalogProducts().then(appendProducts);
+}
+
 // ===== INIT =====
-renderProducts();
+renderLoadingPlaceholder();
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', loadAllSources);
+} else {
+  loadAllSources();
+}
 updateCartUI();
 
 // Auto-open donate if #donate in URL
