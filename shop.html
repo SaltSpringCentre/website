@@ -1001,6 +1001,11 @@ p { text-align: justify; text-justify: inter-word; }
   <button class="filter-key active" data-category="all">All</button>
   <button class="filter-key" data-category="tickets">Music for Peace</button>
   <button class="filter-key" data-category="retreats">Retreats</button>
+  <button class="filter-key" data-category="wellness">Wellness</button>
+  <button class="filter-key" data-category="classes">Classes</button>
+  <button class="filter-key" data-category="membership">Membership</button>
+  <button class="filter-key" data-category="books">Books</button>
+  <button class="filter-key" data-category="other">Other</button>
 </div>
 
 <!-- PRODUCTS -->
@@ -1161,10 +1166,12 @@ p { text-align: justify; text-justify: inter-word; }
 
 <script src="events-data.js"></script>
 <script>
-// ===== PRODUCT DATA (live, built at runtime from 3 sources) =====
+// ===== PRODUCT DATA (live, built at runtime from 5 sources) =====
 // Source A: Concerts from events-data.js (already loaded above as window.EVENTS)
 // Source B: Retreats from sscy-retreat-guru worker (/programs)
 // Source C: Merchandise from sscy-square worker (/catalog) - empty until populated
+// Source D: Wellness treatments from events-data.js (window.TREATMENTS_DATA)
+// Source E: Weekly classes from events-data.js (window.CLASSES_DATA)
 let PRODUCTS = [];
 
 const RG_WORKER = 'https://sscy-retreat-guru.executive-2ef.workers.dev';
@@ -1275,6 +1282,57 @@ async function fetchRetreatProducts() {
   }
 }
 
+// Pull the first numeric run from a price string. '$118 - $134' → 118.
+function firstNumericPrice(s) {
+  var m = String(s == null ? '' : s).match(/\d+(?:\.\d+)?/);
+  return m ? parseFloat(m[0]) : 0;
+}
+
+// ----- Source D: wellness treatments from events-data.js -----
+function buildTreatmentProducts() {
+  if (typeof TREATMENTS_DATA === 'undefined' || !Array.isArray(TREATMENTS_DATA)) return [];
+  return TREATMENTS_DATA.map(function(t) {
+    var firstDur = t.durations && t.durations[0] ? t.durations[0] : null;
+    var priceLabel = firstDur ? firstDur.price : 'Inquire';
+    var priceNum = /inquire/i.test(priceLabel) ? 0 : firstNumericPrice(priceLabel);
+    return {
+      id: 'treatment-' + t.id,
+      category: 'wellness',
+      title: t.title,
+      desc: t.desc,
+      price: priceNum,
+      priceLabel: priceLabel,
+      badge: 'Wellness',
+      badgeClass: 'new',
+      img: t.img,
+      eventId: t.id,
+      squareLink: t.bookUrl || ('event.html?id=' + t.id)
+    };
+  });
+}
+
+// ----- Source E: weekly classes from events-data.js -----
+function buildClassProducts() {
+  if (typeof CLASSES_DATA === 'undefined' || !Array.isArray(CLASSES_DATA)) return [];
+  return CLASSES_DATA.map(function(c) {
+    var raw = String(c.price == null ? '' : c.price);
+    var priceNum = /free|donation|inquire/i.test(raw) ? 0 : firstNumericPrice(raw);
+    return {
+      id: 'class-' + c.id,
+      category: 'classes',
+      title: c.title,
+      desc: c.desc,
+      price: priceNum,
+      priceLabel: c.price,
+      badge: c.days && c.days.length ? c.days[0].slice(0,3) : null,
+      badgeClass: 'new',
+      img: c.img,
+      eventId: c.id,
+      squareLink: 'event.html?id=' + c.id
+    };
+  });
+}
+
 // ----- Source C: merchandise from sscy-square worker /catalog -----
 async function fetchSquareCatalogProducts() {
   try {
@@ -1343,34 +1401,25 @@ function renderLoadingPlaceholder() {
 function getCategoryLabel(cat) {
   const labels = {
     tickets: 'Music for Peace',
-    retreats: 'Retreats'
+    retreats: 'Retreats',
+    wellness: 'Wellness',
+    classes: 'Classes',
+    membership: 'Membership',
+    books: 'Books',
+    other: 'Other'
   };
   return labels[cat] || (cat ? cat.charAt(0).toUpperCase() + cat.slice(1) : '');
 }
 
-// Hide filter buttons whose category has zero products; ensure 'All' is always shown.
+// Keep all 8 hardcoded keys visible at all times. Square catalog categories
+// outside the base set fall through to 'other' (mapped at product-build time).
 function refreshCategoryFilters() {
   const wrap = document.getElementById('categoryFilters');
   if (!wrap) return;
-  const presentCats = {};
-  PRODUCTS.forEach(function(p) { if (p && p.category) presentCats[p.category] = true; });
-
-  // Existing buttons
-  wrap.querySelectorAll('.filter-key').forEach(function(btn) {
-    const cat = btn.dataset.category;
-    if (cat === 'all') { btn.style.display = ''; return; }
-    btn.style.display = presentCats[cat] ? '' : 'none';
-  });
-
-  // Add buttons for any category we have products in but no button yet (e.g. Square catalog returns "books")
-  Object.keys(presentCats).forEach(function(cat) {
-    if (cat === 'all') return;
-    if (!wrap.querySelector('.filter-key[data-category="' + cat + '"]')) {
-      const btn = document.createElement('button');
-      btn.className = 'filter-key';
-      btn.dataset.category = cat;
-      btn.textContent = getCategoryLabel(cat);
-      wrap.appendChild(btn);
+  const baseCats = {tickets:1, retreats:1, wellness:1, classes:1, membership:1, books:1, other:1};
+  PRODUCTS.forEach(function(p) {
+    if (p && p.category && !baseCats[p.category] && p.category !== 'all') {
+      p.category = 'other';
     }
   });
 }
@@ -1733,11 +1782,18 @@ function appendProducts(newItems) {
 }
 
 function loadAllSources() {
+  // Order: concerts → retreats → wellness → classes → square
   // Source A: concerts (sync)
   appendProducts(buildConcertProducts());
 
   // Source B: retreats (async)
   fetchRetreatProducts().then(appendProducts);
+
+  // Source D: wellness treatments (sync)
+  appendProducts(buildTreatmentProducts());
+
+  // Source E: weekly classes (sync)
+  appendProducts(buildClassProducts());
 
   // Source C: square catalog (async)
   fetchSquareCatalogProducts().then(appendProducts);
