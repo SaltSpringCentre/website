@@ -295,14 +295,18 @@ async function handleCatalog(request, env) {
       imageUrl = imagesById[d.image_ids[0]] || null;
     }
 
-    // Display category: walk all of the item's category tags, skip the gating
-    // "Website Shop" tag, and use the first remaining one. Falls back to
-    // 'other' if Website Shop is the only category.
+    // Display category: walk the item's category tags. Skip the gating
+    // "Website Shop" tag. Prefer the first tag whose name matches one of the
+    // shop's known frontend buckets (books, apparel, membership, etc.).
+    // Falls back to 'other'.
+    const SHOP_BUCKETS = new Set(['books', 'apparel', 'membership', 'wellness', 'classes', 'retreats', 'tickets', 'other']);
     let category = 'other';
     for (const cid of itemCategoryIds) {
       if (shopCategoryIds.has(cid)) continue;
       const name = categoriesById[cid];
-      if (name) { category = normalizeCategory(name); break; }
+      if (!name) continue;
+      const norm = normalizeCategory(name);
+      if (SHOP_BUCKETS.has(norm)) { category = norm; break; }
     }
 
     let available = true;
