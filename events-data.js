@@ -530,7 +530,7 @@ var CLASSES_DATA = [
     id: 'class-kirtan',
     type: 'class',
     title: 'Kirtan Class',
-    teacher: 'TBA',
+    teacher: 'Mayana Williamson',
     schedule: 'Thursday, 7:00 - 8:30 PM',
     days: ['Thursday'],
     time: '7:00 - 8:30 PM',
