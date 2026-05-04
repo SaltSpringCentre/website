@@ -148,6 +148,7 @@ def extract_page(path):
         "title": title,
         "headings": p.headings,
         "excerpt": excerpt,
+        "body": body_text,
     }
     aliases = PAGE_ALIASES.get(os.path.basename(path))
     if aliases:
@@ -456,15 +457,17 @@ def collect_events():
             title = _extract_js_string(obj, "title")
             if not ident or not title:
                 continue
-            long_desc = _extract_js_string(obj, "longDesc")
-            short_desc = _extract_js_string(obj, "desc")
-            excerpt = _make_excerpt(long_desc or short_desc or "")
+            long_desc = _extract_js_string(obj, "longDesc") or ""
+            short_desc = _extract_js_string(obj, "desc") or ""
+            full_text = re.sub(r"\s+", " ", (long_desc + " " + short_desc).strip())
+            excerpt = _make_excerpt(long_desc or short_desc)
             out.append({
                 "kind": "event",
                 "page": "event.html?id=" + ident,
                 "title": title,
                 "headings": [],
                 "excerpt": excerpt,
+                "body": full_text,
             })
     return out
 
