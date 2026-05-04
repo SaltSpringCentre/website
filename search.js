@@ -11,7 +11,7 @@
 
   // Bump INDEX_VERSION whenever search-index.json schema or scoring changes
   // so existing browser caches fetch the fresh file.
-  var INDEX_VERSION = '3';
+  var INDEX_VERSION = '4';
   var INDEX_URL = 'search-index.json?v=' + INDEX_VERSION;
   var MAX_RESULTS = 8;
   var indexPromise = null;
@@ -43,6 +43,7 @@
   function scoreEntry(entry, qLower, tokens) {
     var title = (entry.title || '').toLowerCase();
     var excerpt = (entry.excerpt || '').toLowerCase();
+    var body = (entry.body || '').toLowerCase();
     var headings = entry.headings || [];
     var headingTexts = headings.map(function (h) { return (h.text || '').toLowerCase(); });
     var aliases = entry.aliases || [];
@@ -60,6 +61,7 @@
       }
     }
     if (qLower && excerpt.indexOf(qLower) >= 0) score += 15;
+    if (qLower && body.indexOf(qLower) >= 0) score += 8;
 
     // Alias whole-phrase boost: if the entire query equals an alias, treat
     // it as a canonical hit (stronger than an in-title substring match).
@@ -88,6 +90,7 @@
         }
       }
       if (excerpt.indexOf(tk) >= 0) { score += 3; hit = true; }
+      if (body.indexOf(tk) >= 0) { score += 2; hit = true; }
       if (hit) hitTokens++;
     }
 

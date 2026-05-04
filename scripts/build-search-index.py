@@ -173,6 +173,32 @@ def collect_pages():
     return entries
 
 
+def _post_body_text(slug):
+    """Read the post's .md file, strip frontmatter and markdown syntax,
+    return plain text. Used as searchable body so search matches any word
+    in the post, not just the first 200 chars of the cached excerpt."""
+    posts_dir = os.path.join(ROOT, "posts")
+    if not os.path.isdir(posts_dir):
+        return ""
+    target_suffix = "-" + slug + ".md"
+    for name in os.listdir(posts_dir):
+        if name.endswith(target_suffix) or name == slug + ".md":
+            with open(os.path.join(posts_dir, name), "r", encoding="utf-8") as f:
+                src = f.read()
+            if src.startswith("---"):
+                end = src.find("\n---", 3)
+                if end != -1:
+                    src = src[end + 4:]
+            src = re.sub(r"!\[([^\]]*)\]\([^)]+\)", r"\1", src)
+            src = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", src)
+            src = re.sub(r"^#+\s*", "", src, flags=re.MULTILINE)
+            src = re.sub(r"\*\*?([^*]+)\*\*?", r"\1", src)
+            src = re.sub(r"`([^`]+)`", r"\1", src)
+            src = re.sub(r"\s+", " ", src).strip()
+            return src
+    return ""
+
+
 def collect_posts():
     posts_index = os.path.join(ROOT, "posts", "index.json")
     if not os.path.isfile(posts_index):
@@ -187,12 +213,14 @@ def collect_posts():
         slug = p.get("slug") or ""
         if not slug:
             continue
+        body_text = _post_body_text(slug)
         out.append({
             "kind": "post",
             "page": "post.html?slug=" + slug,
             "title": p.get("title", ""),
             "headings": [],
-            "excerpt": (p.get("excerpt") or "")[:200],
+            "excerpt": (p.get("excerpt") or "")[:300],
+            "body": body_text,
             "date": p.get("date", ""),
             "categories": p.get("categories", []),
         })
