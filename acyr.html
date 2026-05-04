@@ -191,6 +191,9 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 .rhythm-pill:nth-child(4) .dot { background: var(--acyr-blue); }
 .rhythm-pill:nth-child(5) .dot { background: var(--acyr-teal); }
 .schedule-teaser .schedule-note { max-width: 580px; margin: 0 auto; font-size: 0.95rem; color: var(--text-light); line-height: 1.7; text-align: center; }
+.schedule-frame { max-width: 1400px; margin: 32px auto; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.12); background: var(--white); }
+.schedule-frame iframe { display: block; width: 100%; height: 1000px; border: 0; }
+@media (max-width: 768px) { .schedule-frame iframe { height: 720px; } }
 
 /* REGISTRATION CTA */
 .register-section { text-align: center; padding: 110px 32px; background: linear-gradient(160deg, var(--acyr-teal), var(--acyr-blue)); color: var(--white); position: relative; overflow: hidden; }
@@ -370,10 +373,8 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
     <p class="hero-sub">Salt Spring Island, British Columbia</p>
     <div class="hero-ctas">
       <a id="heroRegisterBtn" href="contact.html" class="btn btn-primary">Notify Me When Registration Opens</a>
-      <a href="#about" class="btn btn-outline-light">Learn More</a>
     </div>
   </div>
-  <div class="hero-scroll-cue">Scroll</div>
 </section>
 
 
@@ -522,18 +523,21 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 </section>
 
 
-<!-- SCHEDULE TEASER -->
+<!-- SCHEDULE -->
 <section class="schedule-teaser">
-  <span class="label">A Day at the Retreat</span>
-  <h2>The Daily Rhythm</h2>
+  <span class="label">Five Days, Five Venues</span>
+  <h2>The 52nd ACYR Schedule</h2>
   <div class="schedule-rhythm reveal">
     <span class="rhythm-pill"><span class="dot"></span>Morning sadhana</span>
-    <span class="rhythm-pill"><span class="dot"></span>Three yoga sessions</span>
-    <span class="rhythm-pill"><span class="dot"></span>Workshops</span>
+    <span class="rhythm-pill"><span class="dot"></span>Three asana sessions</span>
+    <span class="rhythm-pill"><span class="dot"></span>Workshops &amp; satsang</span>
     <span class="rhythm-pill"><span class="dot"></span>Evening kirtan</span>
-    <span class="rhythm-pill"><span class="dot"></span>Nightly satsang</span>
+    <span class="rhythm-pill"><span class="dot"></span>Kids &amp; teens programming</span>
   </div>
-  <p class="schedule-note reveal">Detailed schedule released closer to the event. Sign up below to be notified the moment it goes live.</p>
+  <div class="schedule-frame reveal">
+    <iframe src="schedule-editor-baked-2026-04-02.html?view=1" title="52nd ACYR Schedule" loading="lazy"></iframe>
+  </div>
+  <p class="schedule-note reveal">Schedule subject to refinement closer to the event.</p>
 </section>
 
 

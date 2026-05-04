@@ -120,6 +120,8 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 .rhythm-pill:nth-child(3) .dot { background: var(--terracotta); }
 .rhythm-pill:nth-child(4) .dot { background: var(--acyr-blue); }
 .schedule-teaser .note { font-size: 0.85rem; color: var(--text-light); line-height: 1.6; text-align: center; }
+.schedule-frame { margin: 20px -8px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.1); background: var(--white); }
+.schedule-frame iframe { display: block; width: 100%; height: 700px; border: 0; }
 
 /* SHIRTS */
 .shirts { padding: 48px 20px; background: var(--white); }
@@ -188,7 +190,6 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
     <p class="hero-sub">Salt Spring Island, BC</p>
     <div class="hero-ctas">
       <a id="heroRegisterBtn" href="contact.html" class="btn btn-primary">Notify Me</a>
-      <a href="#about" class="btn btn-outline">Learn More</a>
     </div>
   </div>
 </section>
@@ -284,18 +285,21 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
   <p>Multi-generational by design. Grandparents, parents, kids, and teens each have their own programming, and plenty of shared moments in between. Children's camp runs in parallel with adult sessions. Come as you are.</p>
 </section>
 
-<!-- SCHEDULE TEASER -->
+<!-- SCHEDULE -->
 <section class="schedule-teaser">
-  <span class="label">A Day at the Retreat</span>
-  <h2>The Daily Rhythm</h2>
+  <span class="label">Five Days, Five Venues</span>
+  <h2>The 52nd ACYR Schedule</h2>
   <div class="rhythm-list">
     <span class="rhythm-pill"><span class="dot"></span>Morning sadhana</span>
-    <span class="rhythm-pill"><span class="dot"></span>Three yoga sessions</span>
-    <span class="rhythm-pill"><span class="dot"></span>Workshops</span>
+    <span class="rhythm-pill"><span class="dot"></span>Three asana sessions</span>
+    <span class="rhythm-pill"><span class="dot"></span>Workshops &amp; satsang</span>
     <span class="rhythm-pill"><span class="dot"></span>Evening kirtan</span>
-    <span class="rhythm-pill"><span class="dot"></span>Nightly satsang</span>
+    <span class="rhythm-pill"><span class="dot"></span>Kids &amp; teens programming</span>
   </div>
-  <p class="note">Detailed schedule released closer to the event. Sign up below to be notified the moment it goes live.</p>
+  <div class="schedule-frame">
+    <iframe src="../schedule-editor-baked-2026-04-02.html?view=1" title="52nd ACYR Schedule" loading="lazy"></iframe>
+  </div>
+  <p class="note">Schedule subject to refinement closer to the event.</p>
 </section>
 
 <!-- QUOTE 2 -->
