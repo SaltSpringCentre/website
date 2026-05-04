@@ -254,15 +254,34 @@ async function handleCatalog(request, env) {
     return String(name || '').toLowerCase().replace(/[\s_]+/g, '-');
   };
 
+  // Items must be tagged with this Square category to appear on the website
+  // shop. Lets POS-only inventory (Jai Store, Latte Da, ACYR meals, etc.)
+  // stay invisible to the website regardless of "Available online" toggles.
+  const SHOP_CATEGORY_NAME = 'website shop';
+  const shopCategoryIds = new Set();
+  for (const cid in categoriesById) {
+    if (categoriesById[cid].toLowerCase().trim() === SHOP_CATEGORY_NAME) {
+      shopCategoryIds.add(cid);
+    }
+  }
+
   const out = [];
   for (const obj of items) {
     if (!presentAtLocation(obj)) continue;
     const d = obj.item_data || {};
 
-    // Only show items the seller has marked for the online store. Square sets
-    // ecom_visibility to 'VISIBLE' when "Available online" is toggled on; POS
-    // and back-of-house items stay at 'UNINDEXED' / 'UNAVAILABLE' / 'HIDDEN'.
-    if (d.ecom_visibility !== 'VISIBLE') continue;
+    // Filter: must be tagged with the "Website Shop" category (legacy
+    // category_id OR newer categories[] array).
+    const itemCategoryIds = new Set();
+    if (d.category_id) itemCategoryIds.add(d.category_id);
+    if (Array.isArray(d.categories)) {
+      d.categories.forEach(c => c && c.id && itemCategoryIds.add(c.id));
+    }
+    let inShop = false;
+    for (const cid of itemCategoryIds) {
+      if (shopCategoryIds.has(cid)) { inShop = true; break; }
+    }
+    if (!inShop) continue;
 
     const variations = Array.isArray(d.variations) ? d.variations : [];
     const firstVar = variations[0];
@@ -276,14 +295,15 @@ async function handleCatalog(request, env) {
       imageUrl = imagesById[d.image_ids[0]] || null;
     }
 
-    // Category: prefer legacy category_id, fall back to first entry of newer
-    // categories[] array.
-    let categoryId = d.category_id || null;
-    if (!categoryId && Array.isArray(d.categories) && d.categories.length && d.categories[0].id) {
-      categoryId = d.categories[0].id;
+    // Display category: walk all of the item's category tags, skip the gating
+    // "Website Shop" tag, and use the first remaining one. Falls back to
+    // 'other' if Website Shop is the only category.
+    let category = 'other';
+    for (const cid of itemCategoryIds) {
+      if (shopCategoryIds.has(cid)) continue;
+      const name = categoriesById[cid];
+      if (name) { category = normalizeCategory(name); break; }
     }
-    const categoryName = categoryId && categoriesById[categoryId];
-    const category = categoryName ? normalizeCategory(categoryName) : 'other';
 
     let available = true;
     if (obj.is_deleted === true) available = false;
