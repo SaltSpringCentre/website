@@ -5,23 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>if(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))window.location.href='m/acyr.html';</script>
 <title>52nd Annual Community Yoga Retreat | Salt Spring Centre of Yoga</title>
-<meta name="description" content="Join the 52nd Annual Community Yoga Retreat, July 30 to August 2, 2026. Four days of yoga, kirtan, workshops, vegetarian meals, and community on Salt Spring Island.">
-<!-- OpenGraph + Twitter (og-default.jpg is a placeholder; create 1200x630 PNG and update if needed) -->
+<meta name="description" content="The 52nd Annual Community Yoga Retreat. August 2026 on Salt Spring Island. Fifty years of yoga, kirtan, workshops, vegetarian meals, kids and teens programming, and community.">
+<!-- OpenGraph + Twitter -->
 <meta property="og:title" content="52nd Annual Community Yoga Retreat | Salt Spring Centre of Yoga">
-<meta property="og:description" content="Join the 52nd Annual Community Yoga Retreat, July 30 to August 2, 2026. Four days of yoga, kirtan, workshops, vegetarian meals, and community on Salt Spring Island.">
+<meta property="og:description" content="The 52nd Annual Community Yoga Retreat. August 2026 on Salt Spring Island. Fifty years of yoga, kirtan, workshops, vegetarian meals, kids and teens programming, and community.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://saltspringcentre.com/acyr.html">
 <meta property="og:image" content="https://saltspringcentre.com/images/og-default.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="52nd Annual Community Yoga Retreat | Salt Spring Centre of Yoga">
-<meta name="twitter:description" content="Join the 52nd Annual Community Yoga Retreat, July 30 to August 2, 2026. Four days of yoga, kirtan, workshops, vegetarian meals, and community on Salt Spring Island.">
+<meta name="twitter:description" content="The 52nd Annual Community Yoga Retreat. August 2026 on Salt Spring Island. Fifty years of yoga, kirtan, workshops, vegetarian meals, kids and teens programming, and community.">
 <meta name="twitter:image" content="https://saltspringcentre.com/images/og-default.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Event",
   "name": "52nd Annual Community Yoga Retreat",
-  "description": "Join the 52nd Annual Community Yoga Retreat, July 30 to August 2, 2026. Four days of yoga, kirtan, workshops, vegetarian meals, and community on Salt Spring Island.",
+  "description": "The 52nd Annual Community Yoga Retreat. August 2026 on Salt Spring Island. Fifty years of yoga, kirtan, workshops, vegetarian meals, kids and teens programming, and community.",
   "startDate": "2026-07-30",
   "endDate": "2026-08-02",
   "eventStatus": "https://schema.org/EventScheduled",
@@ -65,13 +65,13 @@
   --acyr-blue: #007298; --acyr-ltblue: #a6f0ff;
 }
 html { scroll-behavior: smooth; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .reveal, .reveal-left, .reveal-right { opacity: 1 !important; transform: none !important; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .reveal, .reveal-left, .reveal-right { opacity: 1 !important; transform: none !important; } .hero-photo { transition: none !important; } }
 body { font-family: 'Archivo Narrow', sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; overflow-x: hidden; font-size: 24px; }
-h1, h2 { font-family: 'Cinzel', serif; font-weight: 600; line-height: 1.2; color: var(--charcoal); }
-h3 { font-family: 'Archivo Narrow', sans-serif; font-weight: 600; line-height: 1.3; }
+h1, h2 { font-family: 'Cinzel', serif; font-weight: 600; line-height: 1.2; color: var(--charcoal); text-wrap: balance; }
+h3 { font-family: 'Archivo Narrow', sans-serif; font-weight: 600; line-height: 1.3; text-wrap: balance; }
 a { color: var(--teal-dark); text-decoration: none; }
 img { max-width: 100%; display: block; }
-p { text-align: justify; text-justify: inter-word; }
+p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 
 /* STICKY NAV */
 .sticky-nav { background: rgba(250,248,244,0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); padding: 10px 0; position: sticky; top: 0; z-index: 90; border-bottom: 1px solid rgba(0,0,0,0.06); }
@@ -82,36 +82,51 @@ p { text-align: justify; text-justify: inter-word; }
 .sticky-nav-links a { padding: 10px 20px; font-family: 'Archivo Narrow', sans-serif; font-size: 0.92rem; font-weight: 500; color: var(--text-light); text-decoration: none; border-radius: 50px; letter-spacing: 0.03em; transition: color 0.2s ease, background 0.2s ease; }
 .sticky-nav-links a:hover { color: var(--teal-dark); background: var(--cream-warm); }
 
-/* HERO */
+/* HERO with rotating photo stack */
 .hero { min-height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; background: linear-gradient(160deg, var(--acyr-teal) 0%, var(--acyr-blue) 100%); }
-.hero-img { position: absolute; top: -15%; left: 0; width: 100%; height: 130%; object-fit: cover; will-change: transform; opacity: 0.35; }
-.hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,56,80,0.5) 0%, rgba(56,145,138,0.4) 100%); }
-.hero-content { position: relative; z-index: 2; text-align: center; color: var(--white); max-width: 700px; padding: 0 32px; opacity: 0; transform: scale(0.96); transition: all 1.4s cubic-bezier(0.16, 1, 0.3, 1); }
+.hero-photos { position: absolute; inset: 0; }
+.hero-photo { position: absolute; top: -10%; left: 0; width: 100%; height: 120%; object-fit: cover; opacity: 0; transition: opacity 1.6s ease-in-out; will-change: opacity, transform; }
+.hero-photo.active { opacity: 0.38; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,56,80,0.55) 0%, rgba(56,145,138,0.45) 60%, rgba(0,56,80,0.65) 100%); pointer-events: none; }
+.hero-content { position: relative; z-index: 2; text-align: center; color: var(--white); max-width: 720px; padding: 0 32px; opacity: 0; transform: scale(0.96); transition: all 1.4s cubic-bezier(0.16, 1, 0.3, 1); }
 .hero-content.visible { opacity: 1; transform: scale(1); }
-.hero-logo-52 { width: clamp(280px, 42vw, 480px); margin: 0 auto 32px; filter: drop-shadow(0 4px 24px rgba(0,0,0,0.3)); }
+.hero-eyebrow { display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--acyr-ltblue); margin-bottom: 18px; padding: 6px 16px; border: 1px solid rgba(166,240,255,0.45); border-radius: 50px; background: rgba(0,56,80,0.25); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.hero-logo-52 { width: clamp(280px, 42vw, 480px); margin: 0 auto 28px; filter: drop-shadow(0 4px 24px rgba(0,0,0,0.35)); }
 .hero-content h1 { display: none; }
-.hero-content .hero-date { font-size: 1.2rem; color: rgba(255,255,255,0.9); letter-spacing: 0.06em; margin-bottom: 32px; font-weight: 400; text-align: center; }
+.hero-content .hero-date { font-size: 1.15rem; color: rgba(255,255,255,0.92); letter-spacing: 0.08em; margin-bottom: 10px; font-weight: 500; text-align: center; text-transform: uppercase; }
+.hero-content .hero-sub { font-size: 0.92rem; color: rgba(255,255,255,0.7); margin-bottom: 32px; letter-spacing: 0.04em; text-align: center; font-style: italic; }
 .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.hero-scroll-cue { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.5); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; z-index: 2; animation: floatCue 2.4s ease-in-out infinite; }
+@keyframes floatCue { 0%, 100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, 6px); } }
 
 /* BUTTONS */
 .btn { display: inline-flex; align-items: center; padding: 14px 36px; border-radius: 50px; font-family: 'Archivo Narrow', sans-serif; font-size: 0.95rem; font-weight: 600; text-decoration: none; transition: 0.25s ease; cursor: pointer; border: none; letter-spacing: 0.04em; }
 .btn-primary { background: var(--terracotta); color: var(--white); }
 .btn-primary:hover { background: #a8632e; color: var(--white); }
-.btn-outline-light { background: transparent; color: var(--white); border: 1.5px solid rgba(255,255,255,0.4); }
+.btn-outline-light { background: transparent; color: var(--white); border: 1.5px solid rgba(255,255,255,0.45); }
 .btn-outline-light:hover { background: rgba(255,255,255,0.15); color: var(--white); }
 .btn-teal { background: var(--acyr-teal); color: var(--white); }
 .btn-teal:hover { background: var(--teal-dark); color: var(--white); }
 
 /* TEXT SECTION */
-.text-section { max-width: 640px; margin: 0 auto; padding: 96px 32px; position: relative; }
+.text-section { max-width: 720px; margin: 0 auto; padding: 96px 32px; position: relative; }
 .text-section h2 { font-size: 2.6rem; margin-bottom: 24px; color: var(--teal-deep); }
 .text-section .label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; color: var(--teal); margin-bottom: 14px; display: block; }
 .text-section p { font-size: 1.05rem; color: var(--text); line-height: 1.85; margin-bottom: 1.3em; }
 
+/* HISTORY BLOCK with decorative accent */
+.history-section { position: relative; background: linear-gradient(180deg, var(--cream) 0%, var(--cream-warm) 100%); padding: 120px 32px; overflow: hidden; }
+.history-section::before { content: ''; position: absolute; top: -120px; right: -160px; width: 480px; height: 480px; border-radius: 50%; background: radial-gradient(circle, rgba(56,145,138,0.08), transparent 70%); pointer-events: none; }
+.history-section::after { content: ''; position: absolute; bottom: -120px; left: -160px; width: 480px; height: 480px; border-radius: 50%; background: radial-gradient(circle, rgba(201,168,76,0.08), transparent 70%); pointer-events: none; }
+.history-inner { max-width: 760px; margin: 0 auto; position: relative; z-index: 1; text-align: center; }
+.history-inner .label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.22em; color: var(--terracotta); margin-bottom: 18px; display: block; }
+.history-inner h2 { font-size: clamp(2.2rem, 4.5vw, 3.4rem); color: var(--teal-deep); margin-bottom: 28px; }
+.history-inner p { font-size: 1.08rem; color: var(--text); line-height: 1.9; margin-bottom: 1.2em; text-align: center; max-width: 640px; margin-left: auto; margin-right: auto; }
+
 /* FLOATING QUOTE */
-.float-quote { text-align: center; padding: 72px 32px; background: var(--cream-warm); position: relative; overflow: hidden; }
-.float-quote::before { content: '\201C'; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-family: 'Cinzel', serif; font-size: 12rem; color: var(--teal); opacity: 0.06; line-height: 1; pointer-events: none; }
-.float-quote blockquote { font-family: 'Cinzel', serif; font-size: clamp(1.3rem, 3vw, 1.8rem); color: var(--teal-deep); max-width: 580px; margin: 0 auto 16px; line-height: 1.5; font-weight: 500; position: relative; text-align: center; }
+.float-quote { text-align: center; padding: 96px 32px; background: var(--cream-warm); position: relative; overflow: hidden; }
+.float-quote::before { content: '\201C'; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-family: 'Cinzel', serif; font-size: 14rem; color: var(--teal); opacity: 0.06; line-height: 1; pointer-events: none; }
+.float-quote blockquote { font-family: 'Cinzel', serif; font-size: clamp(1.3rem, 3vw, 1.85rem); color: var(--teal-deep); max-width: 620px; margin: 0 auto 16px; line-height: 1.5; font-weight: 500; position: relative; text-align: center; text-wrap: balance; }
 .float-quote cite { font-size: 0.82rem; color: var(--text-light); font-style: normal; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; }
 
 /* PARALLAX FRAME */
@@ -119,13 +134,18 @@ p { text-align: justify; text-justify: inter-word; }
 .parallax-frame img { position: absolute; top: -15%; left: 0; width: 100%; height: 130%; object-fit: cover; will-change: transform; }
 .parallax-frame.short { height: 50vh; }
 
-/* SCROLL STRIP */
-.scroll-strip { overflow-x: auto; overflow-y: hidden; display: flex; gap: 4px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; cursor: grab; padding: 4px 0; }
-.scroll-strip:active { cursor: grabbing; }
-.scroll-strip img { height: 40vh; min-width: 40vh; object-fit: cover; scroll-snap-align: start; flex-shrink: 0; border-radius: 0; transition: transform 0.4s ease; }
-.scroll-strip img:hover { transform: scale(1.02); }
-.scroll-strip::-webkit-scrollbar { height: 4px; }
-.scroll-strip::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 4px; }
+/* PHOTO GALLERY (asymmetric grid) */
+.gallery-section { padding: 110px 32px; background: var(--white); }
+.gallery-section h2 { text-align: center; font-size: 2.4rem; color: var(--teal-deep); margin-bottom: 14px; }
+.gallery-section .section-sub { text-align: center; font-size: 1rem; color: var(--text-light); max-width: 520px; margin: 0 auto 56px; line-height: 1.7; }
+.gallery-grid { display: grid; grid-template-columns: repeat(6, 1fr); grid-auto-rows: 200px; gap: 12px; max-width: 1200px; margin: 0 auto; }
+.gallery-item { overflow: hidden; border-radius: 12px; background: var(--cream-warm); position: relative; transition: transform 0.4s ease, box-shadow 0.4s ease; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.gallery-item:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0,0,0,0.12); }
+.gallery-item:hover img { transform: scale(1.06); }
+.gallery-item.tall { grid-row: span 2; grid-column: span 2; }
+.gallery-item.wide { grid-column: span 3; }
+.gallery-item.standard { grid-column: span 2; }
 
 /* SPLIT SECTION */
 .split { display: grid; grid-template-columns: 1fr 1fr; min-height: 75vh; }
@@ -134,58 +154,65 @@ p { text-align: justify; text-justify: inter-word; }
 .split-img { position: relative; overflow: hidden; }
 .split-img img { position: absolute; top: -10%; left: 0; width: 100%; height: 120%; object-fit: cover; will-change: transform; }
 .split-text { display: flex; align-items: center; padding: 72px 64px; }
-.split-text-inner { max-width: 420px; }
+.split-text-inner { max-width: 460px; }
 .split-text h2 { font-size: 2.2rem; margin-bottom: 20px; color: var(--teal-deep); }
 .split-text .label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; color: var(--teal); margin-bottom: 14px; display: block; }
 .split-text p { font-size: 1.02rem; line-height: 1.85; margin-bottom: 1em; }
 
 /* STATS */
-.stats-bar { display: flex; justify-content: center; gap: 72px; padding: 64px 24px; background: var(--teal-deep); color: var(--white); }
-.stat-item { text-align: center; }
+.stats-bar { display: flex; justify-content: center; gap: 72px; padding: 64px 24px; background: var(--teal-deep); color: var(--white); position: relative; overflow: hidden; }
+.stats-bar::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 20% 50%, rgba(201,168,76,0.08), transparent 50%); pointer-events: none; }
+.stat-item { text-align: center; position: relative; z-index: 1; }
 .stat-num { font-family: 'Cinzel', serif; font-size: 3.4rem; font-weight: 600; color: var(--gold); line-height: 1; }
-.stat-lbl { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; opacity: 0.5; margin-top: 6px; }
+.stat-lbl { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; opacity: 0.55; margin-top: 8px; }
 
-/* FEATURE CARDS */
-.features-section { padding: 100px 24px; background: var(--white); }
-.features-section h2 { text-align: center; font-size: 2.4rem; color: var(--teal-deep); margin-bottom: 16px; }
-.features-section .section-sub { text-align: center; font-size: 1.05rem; color: var(--text-light); max-width: 560px; margin: 0 auto 56px; line-height: 1.7; }
-.features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
-.feature-card { background: var(--cream); border-radius: 16px; padding: 36px; position: relative; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; }
-.feature-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,0,0,0.08); }
-.feature-card h3 { font-family: 'Cinzel', serif; font-size: 1.05rem; font-weight: 600; color: var(--charcoal); margin-bottom: 10px; }
-.feature-card p { font-size: 0.92rem; color: var(--text-light); line-height: 1.7; text-align: left; }
+/* INCLUDED SECTION (six cards) */
+.included-section { padding: 110px 32px; background: var(--cream); position: relative; }
+.included-section h2 { text-align: center; font-size: 2.4rem; color: var(--teal-deep); margin-bottom: 14px; }
+.included-section .section-sub { text-align: center; font-size: 1rem; color: var(--text-light); max-width: 540px; margin: 0 auto 56px; line-height: 1.7; }
+.included-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1080px; margin: 0 auto; }
+.included-card { background: var(--white); border-radius: 18px; padding: 36px 28px; transition: transform 0.35s ease, box-shadow 0.35s ease; border: 1px solid rgba(0,0,0,0.04); position: relative; overflow: hidden; }
+.included-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--acyr-teal), var(--acyr-blue)); transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease; }
+.included-card:hover { transform: translateY(-5px); box-shadow: 0 14px 38px rgba(0,0,0,0.08); }
+.included-card:hover::before { transform: scaleX(1); }
+.included-icon { width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(135deg, var(--acyr-green), var(--acyr-ltblue)); display: flex; align-items: center; justify-content: center; margin-bottom: 18px; color: var(--teal-deep); }
+.included-card h3 { font-family: 'Cinzel', serif; font-size: 1.05rem; font-weight: 600; color: var(--charcoal); margin-bottom: 10px; }
+.included-card p { font-size: 0.95rem; color: var(--text-light); line-height: 1.7; text-align: left; }
 
-/* INCLUDED SECTION */
-.included-section { padding: 100px 24px; }
-.included-section h2 { text-align: center; font-size: 2.4rem; color: var(--teal-deep); margin-bottom: 56px; }
-.included-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 1000px; margin: 0 auto; }
-.included-item { text-align: center; padding: 32px 16px; }
-.included-item h3 { font-family: 'Cinzel', serif; font-size: 0.88rem; font-weight: 600; color: var(--charcoal); margin-bottom: 8px; }
-.included-item p { font-size: 0.85rem; color: var(--text-light); line-height: 1.6; text-align: center; }
+/* SCHEDULE TEASER */
+.schedule-teaser { padding: 96px 32px; background: linear-gradient(180deg, var(--cream-warm), var(--cream)); text-align: center; position: relative; }
+.schedule-teaser .label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.22em; color: var(--terracotta); display: block; margin-bottom: 16px; }
+.schedule-teaser h2 { font-size: clamp(1.9rem, 3.6vw, 2.6rem); color: var(--teal-deep); margin-bottom: 28px; max-width: 720px; margin-left: auto; margin-right: auto; }
+.schedule-rhythm { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 20px; max-width: 920px; margin: 0 auto 32px; }
+.rhythm-pill { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: var(--white); border: 1px solid rgba(0,0,0,0.06); border-radius: 50px; font-size: 0.88rem; color: var(--text); letter-spacing: 0.03em; }
+.rhythm-pill .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--acyr-teal); }
+.rhythm-pill:nth-child(2) .dot { background: var(--gold); }
+.rhythm-pill:nth-child(3) .dot { background: var(--terracotta); }
+.rhythm-pill:nth-child(4) .dot { background: var(--acyr-blue); }
+.rhythm-pill:nth-child(5) .dot { background: var(--acyr-teal); }
+.schedule-teaser .schedule-note { max-width: 580px; margin: 0 auto; font-size: 0.95rem; color: var(--text-light); line-height: 1.7; text-align: center; }
 
 /* REGISTRATION CTA */
-.register-section { text-align: center; padding: 100px 24px; background: linear-gradient(160deg, var(--acyr-teal), var(--acyr-blue)); color: var(--white); position: relative; overflow: hidden; }
+.register-section { text-align: center; padding: 110px 32px; background: linear-gradient(160deg, var(--acyr-teal), var(--acyr-blue)); color: var(--white); position: relative; overflow: hidden; }
 .register-section::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; border-radius: 50%; background: rgba(255,255,255,0.04); pointer-events: none; }
-.register-section h2 { font-size: 2.6rem; color: var(--white); margin-bottom: 16px; }
-.register-section p { max-width: 520px; margin: 0 auto 16px; opacity: 0.8; font-size: 1.05rem; line-height: 1.8; text-align: center; }
-.register-section .reg-note { font-size: 0.88rem; opacity: 0.6; margin-bottom: 32px; }
+.register-section::after { content: ''; position: absolute; bottom: -40%; left: -15%; width: 500px; height: 500px; border-radius: 50%; background: rgba(166,240,255,0.05); pointer-events: none; }
+.register-inner { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
+.register-section h2 { font-size: clamp(2.1rem, 4vw, 2.8rem); color: var(--white); margin-bottom: 18px; }
+.register-section p { max-width: 540px; margin: 0 auto 14px; opacity: 0.88; font-size: 1.05rem; line-height: 1.8; text-align: center; }
+.register-section .reg-note { font-size: 0.88rem; opacity: 0.65; margin-bottom: 36px; letter-spacing: 0.04em; }
 .register-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
-/* SCHEDULE LINK */
+/* SCHEDULE LINK BANNER */
 .schedule-banner { display: flex; align-items: center; justify-content: center; gap: 20px; padding: 40px 32px; background: var(--charcoal); color: var(--white); cursor: pointer; text-decoration: none; transition: background 0.3s ease; }
 .schedule-banner:hover { background: #383838; color: var(--white); }
 .schedule-banner h3 { font-family: 'Cinzel', serif; font-size: 1.2rem; font-weight: 500; color: var(--gold); }
 .schedule-banner span { font-size: 0.88rem; opacity: 0.6; }
 
-/* LOGO SHOWCASE */
-.logo-showcase { padding: 64px 24px; text-align: center; background: var(--white); }
-.logo-showcase img { max-width: 320px; margin: 0 auto; }
-
 /* SHIRTS SECTION */
-.shirts-section { padding: 100px 24px; background: var(--white); }
+.shirts-section { padding: 110px 32px; background: var(--white); }
 .shirts-section h2 { text-align: center; font-size: 2.4rem; color: var(--teal-deep); margin-bottom: 12px; }
-.shirts-section .section-sub { text-align: center; font-size: 1.05rem; color: var(--text-light); max-width: 480px; margin: 0 auto 48px; line-height: 1.7; }
-.shirts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 960px; margin: 0 auto; }
+.shirts-section .section-sub { text-align: center; font-size: 1rem; color: var(--text-light); max-width: 480px; margin: 0 auto 48px; line-height: 1.7; }
+.shirts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1000px; margin: 0 auto; }
 .shirt-card { border-radius: 16px; overflow: hidden; background: var(--cream); transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .shirt-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(0,0,0,0.08); }
 .shirt-card img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
@@ -196,7 +223,7 @@ p { text-align: justify; text-justify: inter-word; }
 .reveal-left { opacity: 0; transform: translateX(-50px); transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
 .reveal-right { opacity: 0; transform: translateX(50px); transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
 .reveal.in-view, .reveal-left.in-view, .reveal-right.in-view { opacity: 1; transform: none; }
-.d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; } .d3 { transition-delay: 0.3s; } .d4 { transition-delay: 0.4s; }
+.d1 { transition-delay: 0.08s; } .d2 { transition-delay: 0.16s; } .d3 { transition-delay: 0.24s; } .d4 { transition-delay: 0.32s; } .d5 { transition-delay: 0.4s; } .d6 { transition-delay: 0.48s; }
 
 /* FOOTER */
 .site-footer { background: var(--charcoal); color: var(--white); padding: 56px 24px 24px; }
@@ -236,6 +263,12 @@ p { text-align: justify; text-justify: inter-word; }
 .mobile-menu a:hover { color: var(--teal); }
 
 /* RESPONSIVE */
+@media (max-width: 1100px) {
+  .gallery-grid { grid-template-columns: repeat(4, 1fr); }
+  .gallery-item.wide { grid-column: span 2; }
+  .gallery-item.tall { grid-column: span 2; }
+  .gallery-item.standard { grid-column: span 2; }
+}
 @media (max-width: 900px) {
   .split { grid-template-columns: 1fr; min-height: auto; }
   .split.reverse .split-img { order: 0; }
@@ -243,12 +276,13 @@ p { text-align: justify; text-justify: inter-word; }
   .split-img { position: relative; height: 50vh; }
   .split-img img { position: absolute; top: 0; height: 100%; }
   .split-text { padding: 56px 28px; }
-  .features-grid { grid-template-columns: 1fr; max-width: 480px; }
   .included-grid { grid-template-columns: repeat(2, 1fr); }
   .shirts-grid { grid-template-columns: repeat(2, 1fr); }
   .stats-bar { gap: 36px; flex-wrap: wrap; padding: 44px 24px; }
   .footer-top { grid-template-columns: 1fr; gap: 32px; }
   .parallax-frame { height: 50vh; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
+  .gallery-item.wide, .gallery-item.tall, .gallery-item.standard { grid-column: span 2; grid-row: span 1; }
 }
 @media (max-width: 768px) {
   body { font-size: 16px; overflow-x: hidden; }
@@ -261,25 +295,26 @@ p { text-align: justify; text-justify: inter-word; }
   .hamburger { display: block; background: none; border: none; cursor: pointer; padding: 12px; margin-left: auto; margin-right: 4px; }
   .mobile-menu { top: 49px; z-index: 199; }
   .hero { height: 100vh; height: 100dvh; padding-top: 49px; }
-  .hero-img { top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; transform: none !important; }
+  .hero-photo { top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; transform: none !important; }
   .hero-content { opacity: 1 !important; transform: none !important; }
   .hero-logo-52 { width: clamp(240px, 70vw, 360px); }
   .hero-content h1 { font-size: 1.4rem; }
-  .text-section { padding: 48px 16px; }
-  .text-section h2 { font-size: 1.5rem; }
+  .text-section { padding: 56px 16px; }
+  .text-section h2 { font-size: 1.6rem; }
+  .history-section { padding: 64px 16px; }
   .split-text h2 { font-size: 1.5rem; }
   .split-text { padding: 40px 16px; }
   .split-text-inner { max-width: 100%; }
-  .float-quote { padding: 48px 16px; }
+  .float-quote { padding: 56px 16px; }
   .float-quote blockquote { font-size: 1.1rem; }
   .stats-bar { padding: 32px 16px; }
   .stat-num { font-size: 2rem; }
-  .features-section { padding: 64px 16px; }
+  .gallery-section { padding: 64px 16px; }
+  .gallery-grid { grid-auto-rows: 140px; }
   .included-section { padding: 64px 16px; }
-  .included-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .schedule-teaser { padding: 56px 16px; }
   .register-section { padding: 64px 16px; }
   .register-section h2 { font-size: 1.8rem; }
-  .scroll-strip img { height: 25vh; min-width: 25vh; }
   .footer-inner { padding: 0; }
   .schedule-banner { flex-direction: column; gap: 8px; padding: 28px 16px; }
 }
@@ -319,19 +354,26 @@ p { text-align: justify; text-justify: inter-word; }
 </div>
 
 
-<!-- HERO -->
+<!-- HERO with rotating photo stack and 52ACYR wordmark overlay -->
 <section id="main" class="hero">
-  <img src="acyr-images/hero.jpg" alt="Salt Spring Centre of Yoga" class="hero-img" id="heroImg" data-hero-pool="ACYR / Annual Retreat">
+  <div class="hero-photos" id="heroPhotos">
+    <img class="hero-photo active" src="images/2021/11/retreat-1.jpg" alt="Annual Community Yoga Retreat" loading="eager">
+    <img class="hero-photo" src="images/2021/11/retreat-4.jpg" alt="Yoga gathering on the Centre land" loading="lazy">
+    <img class="hero-photo" src="posts/images/76a750f8_ACYR-2022-Forgiveness-Series-Asana-class-with-Supriya-at-the-Madonna-statue-Tadasana-2.jpg" alt="Asana class at the Centre" loading="lazy">
+    <img class="hero-photo" src="posts/images/37f87802_hanuman-olympics-2.jpg" alt="Community celebration at the retreat" loading="lazy">
+  </div>
   <div class="hero-overlay"></div>
   <div class="hero-content" id="heroText">
-    <img src="52ACYR-assets/Hand_and_Sprout_Tshirt2_web.png" alt="52nd Annual Community Yoga Retreat" class="hero-logo-52">
-    <h1>Annual Community Yoga Retreat</h1>
-    <p class="hero-date">July 30 &ndash; August 2, 2026 &bull; Salt Spring Island, BC</p>
+    <span class="hero-eyebrow">52nd Edition</span>
+    <img src="52ACYR-assets/52_Hand-Sprout_Logo-02.png" alt="52nd Annual Community Yoga Retreat" class="hero-logo-52">
+    <p class="hero-date">August 2026</p>
+    <p class="hero-sub">Salt Spring Island, British Columbia</p>
     <div class="hero-ctas">
-      <a href="acyr.html" class="btn btn-primary" target="_blank">Register Now</a>
+      <a id="heroRegisterBtn" href="contact.html" class="btn btn-primary">Notify Me When Registration Opens</a>
       <a href="#about" class="btn btn-outline-light">Learn More</a>
     </div>
   </div>
+  <div class="hero-scroll-cue">Scroll</div>
 </section>
 
 
@@ -342,73 +384,117 @@ p { text-align: justify; text-justify: inter-word; }
     <div class="stat-lbl">Years Running</div>
   </div>
   <div class="stat-item">
-    <div class="stat-num" data-target="5">0</div>
-    <div class="stat-lbl">Day Retreat</div>
+    <div class="stat-num">10+</div>
+    <div class="stat-lbl">Yoga Styles</div>
   </div>
   <div class="stat-item">
-    <div class="stat-num">50+</div>
-    <div class="stat-lbl">Classes &amp; Workshops</div>
+    <div class="stat-num">3</div>
+    <div class="stat-lbl">Generations</div>
   </div>
   <div class="stat-item">
-    <div class="stat-num">69</div>
+    <div class="stat-num" data-target="69">0</div>
     <div class="stat-lbl">Acres of Sanctuary</div>
   </div>
 </div>
 
 
-<!-- ABOUT -->
-<section class="text-section reveal" id="about">
-  <span class="label">Discover the Magic</span>
-  <h2>A Tradition of Connection</h2>
-  <p>For over fifty years, the Annual Community Yoga Retreat has brought together practitioners, families, and seekers from around the world. Immerse yourself in the warmth of community, deepen your yoga practice, and reconnect with your inner peace at the Salt Spring Centre of Yoga.</p>
-  <p>Rooted in the teachings of Baba Hari Dass, the retreat offers an authentic yoga experience that includes asana, pranayama, meditation, philosophy, kirtan, and sacred ceremony. Whether you are a lifelong practitioner or stepping onto the mat for the first time, the ACYR welcomes you home.</p>
+<!-- HISTORY BLOCK -->
+<section class="history-section" id="about">
+  <div class="history-inner reveal">
+    <span class="label">Our Living Tradition</span>
+    <h2>50+ Years. One Community.</h2>
+    <p>Every summer for more than half a century, the Annual Community Yoga Retreat has called practitioners home to the Centre. What began as a small gathering of seekers in the 1970s has grown into a multi-generational reunion: grandparents who first came as students, now sharing kirtan with grandchildren who run barefoot across the same fields.</p>
+    <p>Rooted in the teachings of Baba Hari Dass and the spirit of <em>seva</em>, the ACYR is a living, breathing tradition. Diverse yoga styles, sacred music, shared vegetarian meals, dedicated programming for children and teens, and the quiet companionship of 69 acres of forest, garden, and ocean. The Centre's flagship event, and for many, the heart of the year.</p>
+  </div>
 </section>
 
 
-<!-- PHOTO STRIP -->
-<div class="scroll-strip">
-  <img src="acyr-images/1.jpg" alt="Community yoga practice">
-  <img src="acyr-images/2.jpg" alt="Retreat activities">
-  <img src="acyr-images/3.jpg" alt="Yoga classes">
-  <img src="acyr-images/6.jpg" alt="Kirtan gathering">
-  <img src="acyr-images/8.jpg" alt="Workshop session">
-  <img src="acyr-images/11.jpg" alt="Community meals">
-  <img src="acyr-images/12.jpg" alt="Nature walks">
-</div>
+<!-- PHOTO GALLERY -->
+<section class="gallery-section">
+  <h2 class="reveal">Moments From the Land</h2>
+  <p class="section-sub reveal">Glimpses from past gatherings.</p>
+  <div class="gallery-grid">
+    <div class="gallery-item tall reveal d1"><img src="images/2021/11/retreat-1.jpg" alt="Retreat tower at the Centre" loading="lazy"></div>
+    <div class="gallery-item wide reveal d2"><img src="images/2021/11/retreat-4.jpg" alt="Community gathering" loading="lazy"></div>
+    <div class="gallery-item standard reveal d3"><img src="posts/images/37f87802_hanuman-olympics-2.jpg" alt="Hanuman Olympics" loading="lazy"></div>
+    <div class="gallery-item standard reveal d4"><img src="posts/images/13b3833e_Adrienne-ACYR-Jyoti-Adrienne-2019.jpg" alt="ACYR with Jyoti and Adrienne, 2019" loading="lazy"></div>
+    <div class="gallery-item wide reveal d5"><img src="posts/images/76a750f8_ACYR-2022-Forgiveness-Series-Asana-class-with-Supriya-at-the-Madonna-statue-Tadasana-2.jpg" alt="Asana class at the Madonna statue" loading="lazy"></div>
+    <div class="gallery-item standard reveal d6"><img src="posts/images/83d149b8_satsang-pond-dome.jpg" alt="Satsang at the pond dome" loading="lazy"></div>
+    <div class="gallery-item standard reveal d1"><img src="posts/images/318276fd_afr-2010-hanuman-olympics.jpg" alt="Hanuman Olympics, 2010" loading="lazy"></div>
+    <div class="gallery-item standard reveal d2"><img src="images/2025/07/2.png" alt="51st Community Yoga Retreat" loading="lazy"></div>
+  </div>
+</section>
 
 
-<!-- QUOTE -->
+<!-- QUOTE 1 -->
 <div class="float-quote reveal">
-  <blockquote>Work honestly, meditate every day, meet people without fear, and play.</blockquote>
+  <blockquote>The whole world is one family.</blockquote>
   <cite>Baba Hari Dass</cite>
 </div>
 
 
-<!-- SPLIT: WHY ATTEND -->
+<!-- WHAT'S INCLUDED (six cards) -->
+<section class="included-section">
+  <h2 class="reveal">What You'll Find Here</h2>
+  <p class="section-sub reveal">Six threads woven into every retreat.</p>
+  <div class="included-grid">
+    <div class="included-card reveal d1">
+      <div class="included-icon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c0 4 4 6 4 10s-4 6-4 10c0-4-4-6-4-10s4-6 4-10z"/></svg>
+      </div>
+      <h3>Diverse Yoga Styles</h3>
+      <p>Hatha, gentle, restorative, vinyasa, yin, chair, and more. Classes for every body and every level, from sunrise practice through evening wind-down.</p>
+    </div>
+    <div class="included-card reveal d2">
+      <div class="included-icon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      </div>
+      <h3>Kirtan &amp; Sacred Music</h3>
+      <p>Evenings of call-and-response chanting, harmonium, and tabla. The kind of singing that loosens the chest and lifts a whole hall together.</p>
+    </div>
+    <div class="included-card reveal d3">
+      <div class="included-icon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      </div>
+      <h3>Workshops &amp; Teachings</h3>
+      <p>Philosophy, pranayama, sacred ceremony, creative expression, and conversations with senior teachers in the Baba Hari Dass lineage.</p>
+    </div>
+    <div class="included-card reveal d4">
+      <div class="included-icon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <h3>Children &amp; Teens Programming</h3>
+      <p>Dedicated kids' camp and teen programming run in parallel with adult sessions. Crafts, games, story time, nature walks, and age-appropriate yoga.</p>
+    </div>
+    <div class="included-card reveal d5">
+      <div class="included-icon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18M5 11V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3"/><path d="M5 11v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4v-6"/><path d="M8 6V3m8 3V3"/></svg>
+      </div>
+      <h3>Communal Vegetarian Meals</h3>
+      <p>Three nourishing meals a day prepared by the Centre's kitchen, much of it grown in the gardens just outside the dining hall.</p>
+    </div>
+    <div class="included-card reveal d6">
+      <div class="included-icon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8"/><path d="M5 10c0 4 3 7 7 7s7-3 7-7"/><path d="M3 22c4-2 14-2 18 0"/><path d="M9 7c1-2 5-2 6 0"/></svg>
+      </div>
+      <h3>69 Acres of Sacred Land</h3>
+      <p>Forested trails, gardens, the Madonna grove, the swimming pond, and ocean vistas. Space to wander, sit, and be quiet between sessions.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SPLIT: DEEPEN -->
 <section class="split">
   <div class="split-img">
-    <img src="acyr-images/3.jpg" alt="Yoga practice at the Salt Spring Centre">
+    <img src="posts/images/76a750f8_ACYR-2022-Forgiveness-Series-Asana-class-with-Supriya-at-the-Madonna-statue-Tadasana-2.jpg" alt="Yoga practice at the Salt Spring Centre" id="splitImg1">
   </div>
   <div class="split-text">
     <div class="split-text-inner reveal-right">
       <span class="label">Authentic Yoga Lineage</span>
       <h2>Deepen Your Practice</h2>
-      <p>The retreat draws on a rich lineage of classical yoga, with teachings rooted in the tradition of Baba Hari Dass. Expect kirtan, sacred ceremonies, pranayama, philosophy, meditation, and asana classes led by experienced teachers.</p>
-      <p>From sunrise meditation to evening kirtan, every moment is an opportunity to grow and connect.</p>
-    </div>
-  </div>
-</section>
-
-<section class="split reverse">
-  <div class="split-img">
-    <img src="acyr-images/6.jpg" alt="Family activities at the retreat">
-  </div>
-  <div class="split-text">
-    <div class="split-text-inner reveal-left">
-      <span class="label">Fun for Everyone</span>
-      <h2>Family Friendly</h2>
-      <p>Classes are offered for all skill levels, from gentle yoga to advanced practice. The retreat is a welcoming space for families, with dedicated children's programming and activities for all ages.</p>
-      <p>Come as you are. Everyone is welcome.</p>
+      <p>The retreat draws on a rich lineage of classical yoga, with teachings rooted in the tradition of Baba Hari Dass. Expect kirtan, sacred ceremony, pranayama, philosophy, meditation, and asana led by experienced teachers.</p>
+      <p>From sunrise sadhana to evening kirtan, every moment is an invitation to grow and connect.</p>
     </div>
   </div>
 </section>
@@ -416,101 +502,76 @@ p { text-align: justify; text-justify: inter-word; }
 
 <!-- PARALLAX BREAK -->
 <div class="parallax-frame short">
-  <img src="acyr-images/parallax.jpg" alt="Salt Spring Island" id="parallaxImg">
+  <img src="images/2021/11/retreat-4.jpg" alt="Salt Spring Island" id="parallaxImg">
 </div>
 
 
-<!-- FEATURES: WHY ATTEND -->
-<section class="features-section">
-  <h2 class="reveal">Why Attend?</h2>
-  <p class="section-sub reveal">Four reasons people return year after year</p>
-  <div class="features-grid">
-    <div class="feature-card reveal d1">
-      <h3>A Tradition of Connection</h3>
-      <p>Fifty-two years of bringing together practitioners, seekers, and families in a spirit of shared growth and celebration.</p>
-    </div>
-    <div class="feature-card reveal d2">
-      <h3>Authentic Yoga Lineage</h3>
-      <p>Teachings rooted in the tradition of Baba Hari Dass: kirtan, ceremonies, philosophy, pranayama, meditation, and asana.</p>
-    </div>
-    <div class="feature-card reveal d3">
-      <h3>Kirtan &amp; Community</h3>
-      <p>Soulful music, community gatherings, and evening celebrations that nourish the spirit and forge lasting friendships.</p>
-    </div>
-    <div class="feature-card reveal d4">
-      <h3>Serene Natural Setting</h3>
-      <p>Sixty-nine acres of forests, gardens, and ocean vistas on Salt Spring Island, one of BC's most beautiful Gulf Islands.</p>
+<!-- SPLIT: FAMILY -->
+<section class="split reverse">
+  <div class="split-img">
+    <img src="posts/images/37f87802_hanuman-olympics-2.jpg" alt="Family activities at the retreat" id="splitImg2">
+  </div>
+  <div class="split-text">
+    <div class="split-text-inner reveal-left">
+      <span class="label">All Ages, All Levels</span>
+      <h2>A Family Reunion</h2>
+      <p>Multi-generational by design. Grandparents, parents, kids, and teens each have their own programming, and plenty of shared moments in between. Children's camp runs in parallel with adult sessions, with crafts, games, story time, and age-appropriate yoga.</p>
+      <p>Come as you are. Everyone is welcome.</p>
     </div>
   </div>
 </section>
 
 
-<!-- WHAT'S INCLUDED -->
-<section class="included-section">
-  <h2 class="reveal">What's Included</h2>
-  <div class="included-grid">
-    <div class="included-item reveal d1">
-      <h3>Yoga Sessions</h3>
-      <p>Diverse classes for all skill levels, adults and children alike</p>
-    </div>
-    <div class="included-item reveal d2">
-      <h3>Workshops</h3>
-      <p>Inspirational sessions on wellness, philosophy, and creative expression</p>
-    </div>
-    <div class="included-item reveal d3">
-      <h3>Kirtan &amp; Gatherings</h3>
-      <p>Soulful music, sacred ceremony, and community celebration</p>
-    </div>
-    <div class="included-item reveal d4">
-      <h3>Vegetarian Meals</h3>
-      <p>Freshly prepared, nourishing food from the Centre's own gardens</p>
-    </div>
+<!-- SCHEDULE TEASER -->
+<section class="schedule-teaser">
+  <span class="label">A Day at the Retreat</span>
+  <h2>The Daily Rhythm</h2>
+  <div class="schedule-rhythm reveal">
+    <span class="rhythm-pill"><span class="dot"></span>Morning sadhana</span>
+    <span class="rhythm-pill"><span class="dot"></span>Three yoga sessions</span>
+    <span class="rhythm-pill"><span class="dot"></span>Workshops</span>
+    <span class="rhythm-pill"><span class="dot"></span>Evening kirtan</span>
+    <span class="rhythm-pill"><span class="dot"></span>Nightly satsang</span>
   </div>
+  <p class="schedule-note reveal">Detailed schedule released closer to the event. Sign up below to be notified the moment it goes live.</p>
 </section>
 
 
 <!-- QUOTE 2 -->
 <div class="float-quote reveal">
-  <blockquote>The whole universe is one family.</blockquote>
-  <cite>Vasudhaiva Kutumbakam</cite>
+  <blockquote>Work honestly, meditate every day, meet people without fear, and play.</blockquote>
+  <cite>Baba Hari Dass</cite>
 </div>
-
-
-<!-- SCHEDULE LINK -->
-<a href="schedule-editor-baked-2026-04-02.html?view" class="schedule-banner">
-  <h3>View the Full Retreat Schedule</h3>
-  <span>Classes, workshops, kirtan, meals, and more</span>
-</a>
 
 
 <!-- SHIRTS -->
 <section class="shirts-section">
   <h2 class="reveal">Retreat Apparel</h2>
-  <p class="section-sub reveal">Commemorate the 52nd ACYR</p>
+  <p class="section-sub reveal">Commemorate the 52nd ACYR.</p>
   <div class="shirts-grid">
     <div class="shirt-card reveal d1">
-      <img src="acyr-images/shirts/MensBlue_Tee.jpg" alt="Men's Blue Tee">
-      <div class="shirt-label">Men's Tee &mdash; Blue</div>
+      <img src="acyr-images/shirts/MensBlue_Tee.jpg" alt="Men's Blue Tee" loading="lazy">
+      <div class="shirt-label">Men's Tee, Blue</div>
     </div>
     <div class="shirt-card reveal d2">
-      <img src="acyr-images/shirts/MensBlue_tank.jpg" alt="Men's Blue Tank">
-      <div class="shirt-label">Men's Tank &mdash; Blue</div>
+      <img src="acyr-images/shirts/MensBlue_tank.jpg" alt="Men's Blue Tank" loading="lazy">
+      <div class="shirt-label">Men's Tank, Blue</div>
     </div>
     <div class="shirt-card reveal d3">
-      <img src="acyr-images/shirts/WomensBlue_Tank.jpg" alt="Women's Blue Tank">
-      <div class="shirt-label">Women's Tank &mdash; Blue</div>
+      <img src="acyr-images/shirts/WomensBlue_Tank.jpg" alt="Women's Blue Tank" loading="lazy">
+      <div class="shirt-label">Women's Tank, Blue</div>
     </div>
     <div class="shirt-card reveal d1">
-      <img src="acyr-images/shirts/MensGreen_Tee.jpg" alt="Men's Green Tee">
-      <div class="shirt-label">Men's Tee &mdash; Green</div>
+      <img src="acyr-images/shirts/MensGreen_Tee.jpg" alt="Men's Green Tee" loading="lazy">
+      <div class="shirt-label">Men's Tee, Green</div>
     </div>
     <div class="shirt-card reveal d2">
-      <img src="acyr-images/shirts/MensGreen_tank.jpg" alt="Men's Green Tank">
-      <div class="shirt-label">Men's Tank &mdash; Green</div>
+      <img src="acyr-images/shirts/MensGreen_tank.jpg" alt="Men's Green Tank" loading="lazy">
+      <div class="shirt-label">Men's Tank, Green</div>
     </div>
     <div class="shirt-card reveal d3">
-      <img src="acyr-images/shirts/WomensGreen_Tank.jpg" alt="Women's Green Tank">
-      <div class="shirt-label">Women's Tank &mdash; Green</div>
+      <img src="acyr-images/shirts/WomensGreen_Tank.jpg" alt="Women's Green Tank" loading="lazy">
+      <div class="shirt-label">Women's Tank, Green</div>
     </div>
   </div>
 </section>
@@ -518,12 +579,14 @@ p { text-align: justify; text-justify: inter-word; }
 
 <!-- REGISTER CTA -->
 <section class="register-section">
-  <h2 class="reveal">Join Us This Summer</h2>
-  <p class="reveal">Registration for the 2026 retreat has not opened yet. Sign up for our newsletter to be the first to know when spots become available.</p>
-  <p class="reg-note reveal">Thursday, July 30 &ndash; Sunday, August 2, 2026</p>
-  <div class="register-ctas reveal">
-    <a href="acyr.html" class="btn btn-primary" target="_blank">Register Now</a>
-    <a href="contact.html" class="btn btn-outline-light">Get in Touch</a>
+  <div class="register-inner">
+    <h2 class="reveal">Register for the 52nd ACYR</h2>
+    <p class="reveal">Registration opens later in 2026. Add yourself to the early-notification list and we'll reach out the moment doors open.</p>
+    <p class="reg-note reveal">August 2026, Salt Spring Island</p>
+    <div class="register-ctas reveal">
+      <a id="primaryRegisterBtn" href="contact.html" class="btn btn-primary">Notify Me When Registration Opens</a>
+      <a href="contact.html" class="btn btn-outline-light">Get in Touch</a>
+    </div>
   </div>
 </section>
 
@@ -570,15 +633,49 @@ p { text-align: justify; text-justify: inter-word; }
     </nav>
     <div class="footer-bottom">
       <p>We gratefully acknowledge that we are on traditional unceded territory of the Hul'qumi'num Treaty Group and Saanich First Nations.</p>
-      <p>Dharma Sara Satsang Society &bull; Est. 1974</p>
+      <p>Dharma Sara Satsang Society. Est. 1974</p>
     </div>
   </div>
 </footer>
 
 
+<script src="events-data.js"></script>
 <script>
+// Wire register CTA dynamically from events-data.js (fall back to contact.html).
+(function() {
+  try {
+    if (typeof EVENTS !== 'undefined' && Array.isArray(EVENTS)) {
+      var ev = EVENTS.find(function(e) { return e.id === 'annual-community-retreat'; });
+      if (ev && ev.bookUrl) {
+        var btns = document.querySelectorAll('#heroRegisterBtn, #primaryRegisterBtn');
+        btns.forEach(function(b) {
+          b.href = ev.bookUrl;
+          b.target = '_blank';
+          b.rel = 'noopener';
+          b.textContent = 'Register Now';
+        });
+      }
+    }
+  } catch (e) {}
+})();
+
 // Hero entrance
-setTimeout(function() { document.getElementById('heroText').classList.add('visible'); }, 600);
+setTimeout(function() {
+  var t = document.getElementById('heroText');
+  if (t) t.classList.add('visible');
+}, 500);
+
+// Hero photo rotation
+(function() {
+  var photos = document.querySelectorAll('.hero-photo');
+  if (photos.length < 2) return;
+  var idx = 0;
+  setInterval(function() {
+    photos[idx].classList.remove('active');
+    idx = (idx + 1) % photos.length;
+    photos[idx].classList.add('active');
+  }, 5500);
+})();
 
 // Scroll reveals
 var reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
@@ -589,16 +686,24 @@ reveals.forEach(function(el) { observer.observe(el); });
 
 // Parallax (desktop only)
 if (window.innerWidth > 768) {
-  var heroImg = document.getElementById('heroImg');
+  var heroPhotos = document.querySelectorAll('.hero-photo');
   var parallaxImg = document.getElementById('parallaxImg');
+  var splitImg1 = document.getElementById('splitImg1');
+  var splitImg2 = document.getElementById('splitImg2');
   window.addEventListener('scroll', function() {
     var s = window.scrollY;
-    if (heroImg) heroImg.style.transform = 'translateY(' + (s * 0.3) + 'px)';
+    heroPhotos.forEach(function(img) { img.style.transform = 'translateY(' + (s * 0.28) + 'px)'; });
     if (parallaxImg) {
       var rect = parallaxImg.parentElement.getBoundingClientRect();
       var offset = (rect.top + rect.height / 2 - window.innerHeight / 2) * 0.15;
       parallaxImg.style.transform = 'translateY(' + offset + 'px)';
     }
+    [splitImg1, splitImg2].forEach(function(img) {
+      if (!img) return;
+      var r = img.parentElement.getBoundingClientRect();
+      var off = (r.top + r.height / 2 - window.innerHeight / 2) * 0.08;
+      img.style.transform = 'translateY(' + off + 'px)';
+    });
   }, { passive: true });
 }
 
@@ -611,7 +716,7 @@ if (statsBar) {
       counted = true;
       document.querySelectorAll('.stat-num[data-target]').forEach(function(el) {
         var target = parseInt(el.getAttribute('data-target'));
-        var step = Math.ceil(target / 40);
+        var step = Math.max(1, Math.ceil(target / 40));
         var current = 0;
         var interval = setInterval(function() {
           current += step;
@@ -623,15 +728,6 @@ if (statsBar) {
   }, { threshold: 0.3 });
   statsObs.observe(statsBar);
 }
-
-// Drag scroll for photo strip
-document.querySelectorAll('.scroll-strip').forEach(function(strip) {
-  var isDown = false, startX, scrollLeft;
-  strip.addEventListener('mousedown', function(e) { isDown = true; startX = e.pageX - strip.offsetLeft; scrollLeft = strip.scrollLeft; });
-  strip.addEventListener('mouseleave', function() { isDown = false; });
-  strip.addEventListener('mouseup', function() { isDown = false; });
-  strip.addEventListener('mousemove', function(e) { if (!isDown) return; e.preventDefault(); strip.scrollLeft = scrollLeft - (e.pageX - strip.offsetLeft - startX) * 1.5; });
-});
 </script>
 
 <script src="subscribe.js" defer></script>
