@@ -259,6 +259,11 @@ async function handleCatalog(request, env) {
     if (!presentAtLocation(obj)) continue;
     const d = obj.item_data || {};
 
+    // Only show items the seller has marked for the online store. Square sets
+    // ecom_visibility to 'VISIBLE' when "Available online" is toggled on; POS
+    // and back-of-house items stay at 'UNINDEXED' / 'UNAVAILABLE' / 'HIDDEN'.
+    if (d.ecom_visibility !== 'VISIBLE') continue;
+
     const variations = Array.isArray(d.variations) ? d.variations : [];
     const firstVar = variations[0];
     const vd = (firstVar && firstVar.item_variation_data) || {};
