@@ -577,12 +577,25 @@ function appendProducts(newItems) {
   renderProducts(activeCat);
 }
 
+// Hardcoded membership until a real Square item replaces it.
+function buildMembershipProducts() {
+  return [{
+    id: 'membership-annual',
+    category: 'membership',
+    title: 'Annual Membership',
+    desc: "Become a member of the Dharma Sara Satsang Society. Support the Centre's mission year-round and stay connected with news and members-only updates.",
+    price: 26.25,
+    img: '../images/2026/03/3-1.jpg',
+  }];
+}
+
 function loadAllSources() {
-  // Order: concerts → retreats → wellness → classes → square
+  // Order: concerts → retreats → wellness → classes → membership → square
   appendProducts(buildConcertProducts());
   fetchRetreatProducts().then(appendProducts);
   appendProducts(buildTreatmentProducts());
   appendProducts(buildClassProducts());
+  appendProducts(buildMembershipProducts());
   fetchSquareCatalogProducts().then(appendProducts);
 }
 
