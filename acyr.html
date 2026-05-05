@@ -92,7 +92,7 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 .hero-content.visible { opacity: 1; transform: scale(1); }
 .hero-eyebrow { display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--acyr-ltblue); margin-bottom: 18px; padding: 6px 16px; border: 1px solid rgba(166,240,255,0.45); border-radius: 50px; background: rgba(0,56,80,0.25); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
 .hero-logo-52 { width: clamp(280px, 42vw, 480px); margin: 0 auto 28px; filter: drop-shadow(0 4px 24px rgba(0,0,0,0.35)); }
-.hero-content h1 { display: none; }
+.hero-content h1 { margin: 0; padding: 0; font-size: inherit; font-weight: inherit; line-height: 0; }
 .hero-content .hero-date { font-size: 1.15rem; color: rgba(255,255,255,0.92); letter-spacing: 0.08em; margin-bottom: 10px; font-weight: 500; text-align: center; text-transform: uppercase; }
 .hero-content .hero-sub { font-size: 0.92rem; color: rgba(255,255,255,0.7); margin-bottom: 32px; letter-spacing: 0.04em; text-align: center; font-style: italic; }
 .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
@@ -368,7 +368,7 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
   <div class="hero-overlay"></div>
   <div class="hero-content" id="heroText">
     <span class="hero-eyebrow">52nd Edition</span>
-    <img src="52ACYR-assets/52_Hand-Sprout_Logo-02.png" alt="52nd Annual Community Yoga Retreat" class="hero-logo-52">
+    <h1><img src="52ACYR-assets/52_Hand-Sprout_Logo-02.png" alt="52nd Annual Community Yoga Retreat" class="hero-logo-52"></h1>
     <p class="hero-date">August 2026</p>
     <p class="hero-sub">Salt Spring Island, British Columbia</p>
     <div class="hero-ctas">
