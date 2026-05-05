@@ -2,7 +2,13 @@
   var WORKER = 'https://sscy-mailchimp-sync.executive-2ef.workers.dev/subscribe';
 
   function message(form, text) {
-    form.innerHTML = '<p style="padding:10px;opacity:0.7;font-size:0.85rem;">' + text + '</p>';
+    while (form.firstChild) form.removeChild(form.firstChild);
+    var p = document.createElement('p');
+    p.style.padding = '10px';
+    p.style.opacity = '0.7';
+    p.style.fontSize = '0.85rem';
+    p.textContent = text;
+    form.appendChild(p);
   }
 
   window.sscySubscribe = function (ev, form) {
