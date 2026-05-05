@@ -191,9 +191,39 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 .rhythm-pill:nth-child(4) .dot { background: var(--acyr-blue); }
 .rhythm-pill:nth-child(5) .dot { background: var(--acyr-teal); }
 .schedule-teaser .schedule-note { max-width: 580px; margin: 0 auto; font-size: 0.95rem; color: var(--text-light); line-height: 1.7; text-align: center; }
-.schedule-frame { max-width: 1400px; margin: 32px auto; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.12); background: var(--white); }
-.schedule-frame iframe { display: block; width: 100%; height: 1000px; border: 0; }
-@media (max-width: 768px) { .schedule-frame iframe { height: 720px; } }
+.schedule-frame { max-width: 1400px; margin: 32px auto; border-radius: 18px; overflow: visible; box-shadow: 0 8px 32px rgba(0,0,0,0.12); background: var(--white); }
+
+/* INLINE ACYR SCHEDULE (snapshot of schedule-editor-baked-2026-04-02.html?view=1) */
+.acyr-schedule-inline { --slot-h: 24px; --legend-w: 80px; --gutter-w: 24px; --first-gutter-w: 36px; font-family: 'Archivo Narrow', Arial, sans-serif; color: #333; line-height: 1.4; overflow-x: auto; overflow-y: visible; -webkit-overflow-scrolling: touch; border-radius: 18px; }
+.acyr-schedule-inline * { box-sizing: border-box; }
+.acyr-schedule-inline .sched { min-width: 980px; border: 1px solid #aaa; background: #fff; display: flex; flex-direction: column; }
+.acyr-schedule-inline .title-banner { background: linear-gradient(135deg,#17A698,#1fc4b3); padding: 6px 20px; text-align: center; }
+.acyr-schedule-inline .title-text { font-family: 'Cinzel', serif; font-weight: 700; font-size: 1.4rem; color: #fff; letter-spacing: 3px; text-transform: uppercase; }
+.acyr-schedule-inline .bottom-bar { padding: 16px; text-align: center; background: #17A698; }
+.acyr-schedule-inline .headers { display: flex; }
+.acyr-schedule-inline .hdr { display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 700; font-size: 0.75rem; padding: 6px 4px; color: #fff; }
+.acyr-schedule-inline .hdr-legend { width: var(--legend-w); background: #333; font-size: 0.5rem; text-transform: uppercase; letter-spacing: 0.08em; line-height: 1.2; }
+.acyr-schedule-inline .hdr-gutter { width: var(--gutter-w); background: #F4D352; font-size: 0.72rem; font-weight: 700; color: #5a4a00; }
+.acyr-schedule-inline .hdr-day { flex: 1; background: #e86530; font-family: 'Archivo Narrow', sans-serif; font-size: 0.92rem; font-weight: 700; }
+.acyr-schedule-inline .grid-body { display: flex; }
+.acyr-schedule-inline .legend { width: var(--legend-w); border-right: 1px solid #ddd; display: flex; flex-direction: column; }
+.acyr-schedule-inline .leg-item { display: flex; align-items: center; justify-content: center; text-align: center; padding: 4px 8px; font-weight: 700; flex: 1; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,0.3); border-bottom: 1px solid rgba(255,255,255,0.15); font-size: 0.62rem; }
+.acyr-schedule-inline .gutter { width: var(--gutter-w); background: #F4D352; display: flex; flex-direction: column; border-left: 1px solid #e0c040; border-right: 1px solid #e0c040; position: relative; z-index: 3; }
+.acyr-schedule-inline .gut-slot { height: var(--slot-h); display: flex; align-items: center; justify-content: center; font-size: 0.66rem; font-weight: 400; border-bottom: 1px solid rgba(0,0,0,0.06); color: #5a4a00; }
+.acyr-schedule-inline .gut-slot.hour { border-bottom-color: rgba(0,0,0,0.12); font-size: 0.72rem; font-weight: 700; }
+.acyr-schedule-inline .day-col { flex: 1; position: relative; min-height: calc(var(--slot-h) * 34); }
+.acyr-schedule-inline .sline { position: absolute; left: 0; right: 0; height: 1px; background: #e8e8e8; pointer-events: none; }
+.acyr-schedule-inline .sline.hour { background: #ccc; }
+.acyr-schedule-inline .ev { position: absolute; border-radius: 0; padding: 0 3px; overflow: hidden; font-size: 0.58rem; line-height: 1.15; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border: none; z-index: 2; font-weight: 700; }
+.acyr-schedule-inline .ev.lt .ev-t, .acyr-schedule-inline .ev.lt .ev-s { color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,0.2); }
+.acyr-schedule-inline .ev.dk .ev-t, .acyr-schedule-inline .ev.dk .ev-s { color: #333; }
+.acyr-schedule-inline .ev-t { font-weight: 700; }
+.acyr-schedule-inline .ev-s { font-size: 0.5rem; opacity: 0.75; }
+.acyr-schedule-inline .ev-span-label { position: absolute; z-index: 3; pointer-events: none; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 0.58rem; line-height: 1.15; font-weight: 700; color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,0.25); }
+.acyr-schedule-inline .rec-block { position: absolute; z-index: 2; display: flex; align-items: center; gap: 4px; padding: 2px 5px; background: #fff; border: 1px solid #bbb; left: 25%; right: 25%; }
+.acyr-schedule-inline .rec-circle { width: 18px; height: 18px; border-radius: 50%; border: 2px solid #7B2D5F; display: flex; align-items: center; justify-content: center; font-size: 0.5rem; font-weight: 700; color: #7B2D5F; flex-shrink: 0; background: #fff; }
+.acyr-schedule-inline .rec-text { font-weight: 700; font-size: 0.52rem; color: #333; line-height: 1.2; flex: 1; text-align: center; }
+@media (max-width: 768px) { .acyr-schedule-inline { --slot-h: 18px; --legend-w: 60px; --gutter-w: 18px; --first-gutter-w: 28px; } .acyr-schedule-inline .title-text { font-size: 1rem; letter-spacing: 1.5px; } .acyr-schedule-inline .leg-item { font-size: 0.5rem; padding: 2px 4px; } .acyr-schedule-inline .gut-slot { font-size: 0.55rem; } .acyr-schedule-inline .gut-slot.hour { font-size: 0.6rem; } }
 
 /* REGISTRATION CTA */
 .register-section { text-align: center; padding: 110px 32px; background: linear-gradient(160deg, var(--acyr-teal), var(--acyr-blue)); color: var(--white); position: relative; overflow: hidden; }
@@ -414,16 +444,43 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 <section class="gallery-section">
   <h2 class="reveal">Moments From the Land</h2>
   <p class="section-sub reveal">Glimpses from past gatherings.</p>
-  <div class="gallery-grid">
+  <div class="gallery-grid" data-lightbox>
     <div class="gallery-item tall reveal d1"><img src="images/2021/11/retreat-1.jpg" alt="Retreat tower at the Centre" loading="lazy"></div>
-    <div class="gallery-item wide reveal d2"><img src="images/2021/11/retreat-4.jpg" alt="Community gathering" loading="lazy"></div>
+    <div class="gallery-item wide reveal d2"><img src="images/2021/11/retreat-4.jpg" alt="Community gathering on the land" loading="lazy"></div>
     <div class="gallery-item standard reveal d3"><img src="posts/images/37f87802_hanuman-olympics-2.jpg" alt="Hanuman Olympics" loading="lazy"></div>
     <div class="gallery-item standard reveal d4"><img src="posts/images/13b3833e_Adrienne-ACYR-Jyoti-Adrienne-2019.jpg" alt="ACYR with Jyoti and Adrienne, 2019" loading="lazy"></div>
     <div class="gallery-item wide reveal d5"><img src="posts/images/76a750f8_ACYR-2022-Forgiveness-Series-Asana-class-with-Supriya-at-the-Madonna-statue-Tadasana-2.jpg" alt="Asana class at the Madonna statue" loading="lazy"></div>
     <div class="gallery-item standard reveal d6"><img src="posts/images/83d149b8_satsang-pond-dome.jpg" alt="Satsang at the pond dome" loading="lazy"></div>
     <div class="gallery-item standard reveal d1"><img src="posts/images/318276fd_afr-2010-hanuman-olympics.jpg" alt="Hanuman Olympics, 2010" loading="lazy"></div>
     <div class="gallery-item standard reveal d2"><img src="images/2025/07/2.png" alt="51st Community Yoga Retreat" loading="lazy"></div>
+    <div class="gallery-item tall reveal d3"><img src="acyr-images/hero.jpg" alt="ACYR gathering on the lawn" loading="lazy"></div>
+    <div class="gallery-item standard reveal d4"><img src="posts/images/37f87802_hanuman-olympics-3.jpg" alt="Hanuman Olympics moments" loading="lazy"></div>
+    <div class="gallery-item wide reveal d5"><img src="images/2025/07/3.png" alt="51st Community Yoga Retreat moment" loading="lazy"></div>
+    <div class="gallery-item standard reveal d6"><img src="images/2025/07/8.png" alt="Community Yoga Retreat" loading="lazy"></div>
+    <div class="gallery-item standard reveal d1"><img src="images/2025/07/11.png" alt="Community Yoga Retreat" loading="lazy"></div>
+    <div class="gallery-item standard reveal d2"><img src="images/2022/05/ACYR-Group-Peace.jpg" alt="ACYR group peace photo" loading="lazy"></div>
+    <div class="gallery-item wide reveal d3"><img src="posts/images/a0fa0e95_Blog-Post-picture-horizontal-1200-x-630-11.jpg" alt="ACYR community moment" loading="lazy"></div>
+    <div class="gallery-item standard reveal d4"><img src="posts/images/67bbcbbe_mahesh_0187.jpg" alt="Mahesh at the retreat" loading="lazy"></div>
   </div>
+</section>
+
+
+<!-- SCHEDULE (moved to follow gallery) -->
+<section class="schedule-teaser">
+  <span class="label">Five Days, Five Venues</span>
+  <h2>The 52nd ACYR Schedule</h2>
+  <div class="schedule-rhythm reveal">
+    <span class="rhythm-pill"><span class="dot"></span>Morning sadhana</span>
+    <span class="rhythm-pill"><span class="dot"></span>Three asana sessions</span>
+    <span class="rhythm-pill"><span class="dot"></span>Workshops &amp; satsang</span>
+    <span class="rhythm-pill"><span class="dot"></span>Evening kirtan</span>
+    <span class="rhythm-pill"><span class="dot"></span>Kids &amp; teens programming</span>
+  </div>
+  <div class="schedule-frame reveal">
+    <!-- snapshot of schedule-editor-baked-2026-04-02.html?view=1 — re-export when the schedule changes -->
+    <div class="acyr-schedule-inline" id="acyrScheduleInline"></div>
+  </div>
+  <p class="schedule-note reveal">Schedule subject to refinement closer to the event.</p>
 </section>
 
 
@@ -520,24 +577,6 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
       <p>Come as you are. Everyone is welcome.</p>
     </div>
   </div>
-</section>
-
-
-<!-- SCHEDULE -->
-<section class="schedule-teaser">
-  <span class="label">Five Days, Five Venues</span>
-  <h2>The 52nd ACYR Schedule</h2>
-  <div class="schedule-rhythm reveal">
-    <span class="rhythm-pill"><span class="dot"></span>Morning sadhana</span>
-    <span class="rhythm-pill"><span class="dot"></span>Three asana sessions</span>
-    <span class="rhythm-pill"><span class="dot"></span>Workshops &amp; satsang</span>
-    <span class="rhythm-pill"><span class="dot"></span>Evening kirtan</span>
-    <span class="rhythm-pill"><span class="dot"></span>Kids &amp; teens programming</span>
-  </div>
-  <div class="schedule-frame reveal">
-    <iframe src="schedule-editor-baked-2026-04-02.html?view=1" title="52nd ACYR Schedule" loading="lazy"></iframe>
-  </div>
-  <p class="schedule-note reveal">Schedule subject to refinement closer to the event.</p>
 </section>
 
 
@@ -734,6 +773,153 @@ if (statsBar) {
 }
 </script>
 
+<!-- ACYR schedule renderer (snapshot of schedule-editor-baked-2026-04-02.html?view=1 logic) -->
+<script>
+(function(){
+  if(!document.getElementById('acyrScheduleInline')) return;
+  var STATE = {"config":{"title":"52 ANNUAL COMMUNITY YOGA RETREAT - 2026","year":2026,"startHour":5,"endHour":22,"days":[{"label":"Thursday","date":"Aug 1"},{"label":"Friday","date":"Aug 2"},{"label":"Saturday","date":"Aug 3"},{"label":"Sunday","date":"Aug 4"},{"label":"Monday","date":"Aug 5"}],"reception":[{"dayIndex":0,"text":"2pm - 6pm"},{"dayIndex":1,"text":"9am - 6pm"},{"dayIndex":2,"text":"9am - 1:30pm\n5pm - 6:30pm"},{"dayIndex":3,"text":"9am - 1pm<br>5pm - 8:30pm"},{"dayIndex":4,"text":"9am - 11am"}]},"venues":[{"id":"meal","name":"Meal Circle","color":"#F9B233"},{"id":"hanuman","name":"Hanuman Temples","color":"#E8652F"},{"id":"volley","name":"Volley ball court","color":"#E53935"},{"id":"satsang","name":"Satsang Room","color":"#7d1246"},{"id":"yurt","name":"Yurt","color":"#ff9494"},{"id":"garden","name":"Garden House","color":"#E91E63"},{"id":"latte","name":"Latte Da!","color":"#0052A3"},{"id":"pond","name":"Pond Dome","color":"#00BCD4"},{"id":"dining","name":"Dining Room","color":"#17A698"},{"id":"mound","name":"Mound","color":"#2D7A2D"},{"id":"school","name":"School","color":"#008B8B"}],"events":[{"id":"t1","dayIndex":0,"startSlot":7,"spanSlots":4,"venueId":"hanuman","title":"Opening Prayers\n& Invocation"},{"id":"t2","dayIndex":0,"startSlot":13,"spanSlots":3,"venueId":"meal","title":"Brunch"},{"id":"t3","dayIndex":0,"startSlot":20,"spanSlots":1,"venueId":"meal","title":"Tea / Snack"},{"id":"t4","dayIndex":0,"startSlot":21,"spanSlots":3,"venueId":"mound","title":"Kids Program"},{"id":"t6","dayIndex":0,"startSlot":22,"spanSlots":2,"venueId":"satsang","title":"Asana Classes"},{"id":"t7","dayIndex":0,"startSlot":27,"spanSlots":3,"venueId":"meal","title":"Dinner"},{"id":"t8","dayIndex":0,"startSlot":29,"spanSlots":1,"venueId":"mound","title":"Jai Store"},{"id":"t9","dayIndex":0,"startSlot":30,"spanSlots":3,"venueId":"satsang","title":"Opening Celebration:\nWelcome &\nKirtan"},{"id":"t10","dayIndex":0,"startSlot":29,"spanSlots":2,"venueId":"latte","title":"Latte Da\nCafé","subtitle":""},{"id":"t11","dayIndex":0,"startSlot":30,"spanSlots":2,"venueId":"mound","title":"Capture\nthe Flag"},{"id":"f1","dayIndex":2,"startSlot":2,"spanSlots":1,"venueId":"mound","title":"Pad Kirtan","colOrder":0,"subtitle":""},{"id":"f2","dayIndex":1,"startSlot":3,"spanSlots":1,"venueId":"hanuman","title":"Arati","colOrder":2},{"id":"f3","dayIndex":1,"startSlot":4,"spanSlots":1,"venueId":"satsang","title":"Shat Karma"},{"id":"f4","dayIndex":1,"startSlot":5,"spanSlots":3,"venueId":"satsang","title":"Pranayama\nMeditation"},{"id":"f5","dayIndex":1,"startSlot":5,"spanSlots":3,"venueId":"latte","title":"Latte Da\nCafé","subtitle":""},{"id":"f6","dayIndex":1,"startSlot":5,"spanSlots":8,"venueId":"mound","title":"Kids\nProgram","colOrder":8},{"id":"f7","dayIndex":1,"startSlot":9,"spanSlots":4,"venueId":"satsang","title":"Asana Classes"},{"id":"f8","dayIndex":1,"startSlot":13,"spanSlots":3,"venueId":"meal","title":"Brunch"},{"id":"f9","dayIndex":1,"startSlot":14,"spanSlots":2,"venueId":"latte","title":"Latte Da\nCafé","subtitle":""},{"id":"f10","dayIndex":1,"startSlot":14,"spanSlots":3,"venueId":"mound","title":"Jai Store\n& reading"},{"id":"f11","dayIndex":1,"startSlot":17,"spanSlots":3,"venueId":"satsang","title":"Yoga Sutra\nDiscussion"},{"id":"f12","dayIndex":1,"startSlot":20,"spanSlots":1,"venueId":"meal","title":"Tea / Snack"},{"id":"f13","dayIndex":1,"startSlot":21,"spanSlots":2,"venueId":"mound","title":"Kids Program"},{"id":"f14","dayIndex":1,"startSlot":22,"spanSlots":3,"venueId":"satsang","title":"Asana Classes"},{"id":"f15","dayIndex":1,"startSlot":25,"spanSlots":2,"venueId":"hanuman","title":"Arati"},{"id":"f16","dayIndex":1,"startSlot":27,"spanSlots":2,"venueId":"meal","title":"Dinner"},{"id":"f17","dayIndex":1,"startSlot":28,"spanSlots":1,"venueId":"mound","title":"Jai Store"},{"id":"f18","dayIndex":1,"startSlot":29,"spanSlots":2,"venueId":"latte","title":"Latte Da\nCafé","subtitle":""},{"id":"f19","dayIndex":1,"startSlot":30,"spanSlots":2,"venueId":"mound","title":"Capture\nthe Flag"},{"id":"f20","dayIndex":1,"startSlot":30,"spanSlots":2,"venueId":"satsang","title":"DJ Night\n& Dance"},{"id":"s2","dayIndex":2,"startSlot":3,"spanSlots":1,"venueId":"hanuman","title":"Arati"},{"id":"s3","dayIndex":2,"startSlot":4,"spanSlots":1,"venueId":"satsang","title":"Shat Karma"},{"id":"s4","dayIndex":2,"startSlot":5,"spanSlots":3,"venueId":"satsang","title":"Pranayama\nMeditation"},{"id":"s5","dayIndex":2,"startSlot":5,"spanSlots":3,"venueId":"latte","title":"Latte Da\nCafé","subtitle":""},{"id":"s6","dayIndex":2,"startSlot":5,"spanSlots":8,"venueId":"mound","title":"Kids\nProgram","colOrder":8},{"id":"s7","dayIndex":2,"startSlot":9,"spanSlots":4,"venueId":"satsang","title":"Asana Classes"},{"id":"s8","dayIndex":2,"startSlot":13,"spanSlots":3,"venueId":"meal","title":"Brunch"},{"id":"s9","dayIndex":2,"startSlot":14,"spanSlots":2,"venueId":"latte","title":"Latte Da\nCafé","subtitle":""},{"id":"s10","dayIndex":2,"startSlot":14,"spanSlots":3,"venueId":"mound","title":"Jai Store\n& reading"},{"id":"s11","dayIndex":2,"startSlot":17,"spanSlots":3,"venueId":"satsang","title":"Gita\nDiscussion"},{"id":"s12","dayIndex":2,"startSlot":20,"spanSlots":1,"venueId":"meal","title":"Tea / Snack"},{"id":"s13","dayIndex":2,"startSlot":21,"spanSlots":2,"venueId":"mound","title":"Kids Program"},{"id":"s14","dayIndex":2,"startSlot":22,"spanSlots":3,"venueId":"satsang","title":"Asana Classes"},{"id":"s15","dayIndex":2,"startSlot":25,"spanSlots":2,"venueId":"hanuman","title":"Arati"},{"id":"s16","dayIndex":2,"startSlot":27,"spanSlots":2,"venueId":"meal","title":"Dinner"},{"id":"s17","dayIndex":2,"startSlot":28,"spanSlots":1,"venueId":"mound","title":"Jai Store"},{"id":"s20","dayIndex":3,"startSlot":30,"spanSlots":2,"venueId":"satsang","title":"Stories\n& Ramayana","colOrder":0},{"id":"su1","dayIndex":3,"startSlot":2,"spanSlots":1,"venueId":"mound","title":"Pad Kirtan","subtitle":""},{"id":"su2","dayIndex":3,"startSlot":3,"spanSlots":1,"venueId":"hanuman","title":"Arati"},{"id":"su3","dayIndex":3,"startSlot":4,"spanSlots":1,"venueId":"satsang","title":"Shat Karma"},{"id":"su4","dayIndex":3,"startSlot":5,"spanSlots":3,"venueId":"satsang","title":"Pranayama\nMeditation"},{"id":"su5","dayIndex":3,"startSlot":5,"spanSlots":3,"venueId":"latte","title":"Latte Da\nCafé","subtitle":""},{"id":"su8","dayIndex":3,"startSlot":13,"spanSlots":3,"venueId":"meal","title":"Brunch"},{"id":"su9","dayIndex":3,"startSlot":14,"spanSlots":1,"venueId":"mound","title":"Jai Store"},{"id":"su10","dayIndex":3,"startSlot":14,"spanSlots":2,"venueId":"latte","title":"Latte Da\nCafé","subtitle":""},{"id":"su11","dayIndex":3,"startSlot":16,"spanSlots":3,"venueId":"satsang","title":"Satsang"},{"id":"su12","dayIndex":3,"startSlot":20,"spanSlots":1,"venueId":"meal","title":"Tea / Snack","subtitle":""},{"id":"su13","dayIndex":3,"startSlot":22,"spanSlots":2,"venueId":"hanuman","title":"Hanuman\nOlympics","colOrder":6},{"id":"su14","dayIndex":3,"startSlot":21,"spanSlots":1,"venueId":"latte","title":"Latte Da Café","subtitle":"","colOrder":7},{"id":"su15","dayIndex":3,"startSlot":22,"spanSlots":3,"venueId":"satsang","title":"Asana\nClasses"},{"id":"su16","dayIndex":3,"startSlot":24,"spanSlots":2,"venueId":"mound","title":"Group Photo"},{"id":"su17","dayIndex":3,"startSlot":25,"spanSlots":2,"venueId":"hanuman","title":"Arati"},{"id":"su18","dayIndex":3,"startSlot":27,"spanSlots":2,"venueId":"meal","title":"Dinner"},{"id":"su19","dayIndex":3,"startSlot":28,"spanSlots":1,"venueId":"mound","title":"Jai Store"},{"id":"su22","dayIndex":2,"startSlot":30,"spanSlots":2,"venueId":"pond","title":"Concert","colOrder":5,"subtitle":""},{"id":"m1","dayIndex":4,"startSlot":2,"spanSlots":1,"venueId":"mound","title":"Pad Kirtan","subtitle":""},{"id":"m2","dayIndex":4,"startSlot":3,"spanSlots":1,"venueId":"hanuman","title":"Arati"},{"id":"m3","dayIndex":4,"startSlot":4,"spanSlots":1,"venueId":"satsang","title":"Shat Karma"},{"id":"m4","dayIndex":4,"startSlot":5,"spanSlots":3,"venueId":"satsang","title":"Pranayama\nMeditation"},{"id":"m5","dayIndex":4,"startSlot":5,"spanSlots":3,"venueId":"latte","title":"Latte Da\nCafé","subtitle":""},{"id":"m6","dayIndex":4,"startSlot":5,"spanSlots":3,"venueId":"mound","title":"Kids\nProgram"},{"id":"m7","dayIndex":4,"startSlot":10,"spanSlots":3,"venueId":"hanuman","title":"Yajña"},{"id":"m8","dayIndex":4,"startSlot":9,"spanSlots":4,"venueId":"satsang","title":"Asana"},{"id":"m9","dayIndex":4,"startSlot":13,"spanSlots":3,"venueId":"meal","title":"Brunch"},{"id":"m10","dayIndex":4,"startSlot":16,"spanSlots":3,"venueId":"satsang","title":"Closing\nCelebration","colOrder":4},{"id":"m11","dayIndex":4,"startSlot":14,"spanSlots":2,"venueId":"mound","title":"Jai Store"},{"id":"m12","dayIndex":4,"startSlot":14,"spanSlots":4,"venueId":"latte","title":"Latte\nDa\nCafé"},{"id":"m13","dayIndex":4,"startSlot":20,"spanSlots":1,"venueId":"meal","title":"Tea / Snack","subtitle":""},{"id":"m15","dayIndex":4,"startSlot":22,"spanSlots":3,"venueId":"satsang","title":"Asana\nClasses"},{"id":"m16","dayIndex":4,"startSlot":25,"spanSlots":2,"venueId":"hanuman","title":"Arati"},{"id":"m17","dayIndex":4,"startSlot":27,"spanSlots":2,"venueId":"meal","title":"Dinner"},{"id":"m18","dayIndex":4,"startSlot":28,"spanSlots":1,"venueId":"mound","title":"Jai Store"},{"id":"m20","dayIndex":4,"startSlot":30,"spanSlots":2,"venueId":"school","title":"Latte Da\nTalent Show"},{"id":"e1774937273242","dayIndex":1,"startSlot":9,"spanSlots":4,"venueId":"garden","title":"Asana Classes","subtitle":"","colOrder":1},{"id":"e1774937341059","dayIndex":1,"startSlot":9,"spanSlots":4,"venueId":"yurt","title":"Asana Classes","subtitle":"","colOrder":1},{"id":"e1774937363110xewz","dayIndex":2,"startSlot":9,"spanSlots":4,"venueId":"yurt","title":"Asana Classes","subtitle":"","colOrder":1},{"id":"e1774937363111gxoa","dayIndex":2,"startSlot":9,"spanSlots":4,"venueId":"garden","title":"Asana Classes","subtitle":"","colOrder":1},{"id":"e1774937397993zp1n","dayIndex":3,"startSlot":5,"spanSlots":8,"venueId":"mound","title":"Kids\nProgram","colOrder":8},{"id":"e1774937397993wz5m","dayIndex":3,"startSlot":9,"spanSlots":4,"venueId":"garden","title":"Asana Classes","subtitle":"","colOrder":1},{"id":"e1774937397993nzub","dayIndex":3,"startSlot":9,"spanSlots":4,"venueId":"yurt","title":"Asana Classes","subtitle":"","colOrder":1},{"id":"e1774937397993dnio","dayIndex":3,"startSlot":9,"spanSlots":4,"venueId":"satsang","title":"Asana Classes"},{"id":"e1774937462877","dayIndex":1,"startSlot":2,"spanSlots":1,"venueId":"mound","title":"Pad Kirtan","subtitle":"","colOrder":2},{"id":"e1774938232485bzkd","dayIndex":2,"startSlot":29,"spanSlots":2,"venueId":"latte","title":"Latte Da\nCafé","subtitle":""},{"id":"e1774938241985ik08","dayIndex":3,"startSlot":29,"spanSlots":2,"venueId":"latte","title":"Latte Da\nCafé","subtitle":""},{"id":"e17749382419850wsn","dayIndex":3,"startSlot":30,"spanSlots":2,"venueId":"mound","title":"Capture\nthe Flag"},{"id":"e1774938283569","dayIndex":2,"startSlot":30,"spanSlots":2,"venueId":"pond","title":"Concert","colOrder":5,"subtitle":""}]};
+
+  function brightness(hex){var r=parseInt(hex.substr(1,2),16),g=parseInt(hex.substr(3,2),16),b=parseInt(hex.substr(5,2),16);return (r*299+g*587+b*114)/1000;}
+  function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');}
+
+  function assignColumns(dayEvents){
+    if(!dayEvents.length) return [];
+    var evts = dayEvents.map(function(e){return {evt:e,col:0,totalCols:1};});
+    evts.sort(function(a,b){return (a.evt.colOrder||0)-(b.evt.colOrder||0)||a.evt.startSlot-b.evt.startSlot||(a.evt.id<b.evt.id?-1:1);});
+    evts.forEach(function(item,i){
+      var e=item.evt, eEnd=e.startSlot+e.spanSlots, c=0;
+      while(true){
+        var conflict=false;
+        for(var j=0;j<i;j++){
+          if(evts[j].col!==c) continue;
+          var o=evts[j].evt;
+          if(e.startSlot<o.startSlot+o.spanSlots && o.startSlot<eEnd){conflict=true;break;}
+        }
+        if(!conflict) break;
+        c++;
+      }
+      item.col=c;
+    });
+    evts.forEach(function(item){
+      var e=item.evt, eEnd=e.startSlot+e.spanSlots, maxC=1;
+      for(var s=e.startSlot;s<eEnd;s++){
+        var count=0;
+        evts.forEach(function(other){var o=other.evt;if(s>=o.startSlot && s<o.startSlot+o.spanSlots) count++;});
+        if(count>maxC) maxC=count;
+      }
+      item.totalCols=maxC;
+    });
+    evts.forEach(function(item){
+      var e=item.evt, eEnd=e.startSlot+e.spanSlots, tc=item.totalCols;
+      item.leftPct=(item.col/tc)*100;
+      var rightEdge=100;
+      for(var s=e.startSlot;s<eEnd;s++){
+        evts.forEach(function(other){
+          if(other===item) return;
+          var o=other.evt;
+          if(s>=o.startSlot && s<o.startSlot+o.spanSlots && other.col>item.col){
+            var nLeft=(other.col/other.totalCols)*100;
+            if(nLeft<rightEdge) rightEdge=nLeft;
+          }
+        });
+      }
+      item.widthPct=rightEdge-item.leftPct;
+    });
+    return evts;
+  }
+
+  function render(root){
+    var cfg=STATE.config, nd=cfg.days.length, ns=(cfg.endHour-cfg.startHour)*2;
+    var SH = parseInt(getComputedStyle(root).getPropertyValue('--slot-h'))||24;
+    var h='';
+    h+='<div class="sched">';
+    h+='<div class="title-banner"><div class="title-text">'+esc(cfg.title)+'</div></div>';
+    h+='<div class="headers">';
+    h+='<div class="hdr hdr-legend">Colour<br>Legend</div>';
+    h+='<div class="hdr hdr-gutter" style="width:var(--first-gutter-w)">TIME</div>';
+    for(var d=0;d<nd;d++){
+      h+='<div class="hdr hdr-day">'+esc(cfg.days[d].label)+' '+esc(cfg.days[d].date)+'</div>';
+      if(d<nd-1) h+='<div class="hdr hdr-gutter"></div>';
+    }
+    h+='<div class="hdr hdr-gutter"></div>';
+    h+='</div>';
+    h+='<div class="grid-body">';
+    h+='<div class="legend">';
+    STATE.venues.forEach(function(v){h+='<div class="leg-item" style="background:'+v.color+'">'+esc(v.name)+'</div>';});
+    h+='</div>';
+    function gutter(first){
+      var s='<div class="gutter"'+(first?' style="width:var(--first-gutter-w)"':'')+'>';
+      for(var i=0;i<ns;i++){
+        var hr=cfg.startHour+Math.floor(i/2), mn=(i%2)*30, isH=mn===0, lb='';
+        if(first){
+          if(isH){if(hr===12)lb='NOON';else if(hr<12)lb=hr+':00';else lb=(hr-12)+':00';}else lb=':30';
+        } else {
+          if(isH){if(hr===12)lb='12';else if(hr<12)lb=''+hr;else lb=''+(hr-12);}else lb='30';
+        }
+        s+='<div class="gut-slot'+(isH?' hour':'')+'">'+lb+'</div>';
+      }
+      s+='</div>';
+      return s;
+    }
+    h+=gutter(true);
+    for(var d=0;d<nd;d++){
+      h+='<div class="day-col" style="background:repeating-linear-gradient(to bottom,#e6f5f0 0px,#e6f5f0 '+(SH*2)+'px,#f0faf7 '+(SH*2)+'px,#f0faf7 '+(SH*4)+'px)">';
+      for(var s=1;s<ns;s++){h+='<div class="sline'+(s%2===0?' hour':'')+'" style="top:'+(s*SH)+'px"></div>';}
+      var devs=STATE.events.filter(function(e){return e.dayIndex===d;});
+      var laid=assignColumns(devs);
+      var spanGroups={};
+      laid.forEach(function(item){
+        var evt=item.evt;
+        var key=(evt.title||'').replace(/\s+/g,' ').trim()+'|'+evt.startSlot+'|'+evt.spanSlots;
+        item._k=key;
+        (spanGroups[key]=spanGroups[key]||[]).push(item);
+      });
+      laid.forEach(function(item){
+        var evt=item.evt, v=STATE.venues.find(function(x){return x.id===evt.venueId;});
+        var c=v?v.color:'#999';
+        var isSpanned=spanGroups[item._k] && spanGroups[item._k].length>1;
+        var cls=brightness(c)>160?'dk':'lt';
+        var top=evt.startSlot*SH, ht=evt.spanSlots*SH;
+        h+='<div class="ev '+cls+'" style="top:'+top+'px;height:'+ht+'px;left:'+item.leftPct+'%;width:'+item.widthPct+'%;background:'+c+';border-right:1px solid rgba(255,255,255,0.15)">';
+        if(!isSpanned){
+          h+='<div class="ev-t">'+esc(evt.title)+'</div>';
+          if(evt.subtitle) h+='<div class="ev-s">'+esc(evt.subtitle)+'</div>';
+        }
+        h+='</div>';
+      });
+      var done={};
+      Object.keys(spanGroups).forEach(function(key){
+        var grp=spanGroups[key];
+        if(grp.length<2 || done[key]) return;
+        done[key]=true;
+        var minCol=Infinity, maxCol=0, totalCols=grp[0].totalCols;
+        grp.forEach(function(item){if(item.col<minCol) minCol=item.col; if(item.col>maxCol) maxCol=item.col;});
+        var evt=grp[0].evt;
+        var top=evt.startSlot*SH, ht=evt.spanSlots*SH;
+        var lp=(minCol/totalCols)*100, wp=((maxCol-minCol+1)/totalCols)*100;
+        h+='<div class="ev-span-label" style="top:'+top+'px;height:'+ht+'px;left:'+lp+'%;width:'+wp+'%"><div class="ev-t">'+esc(evt.title)+'</div></div>';
+      });
+      var rec=cfg.reception.find(function(r){return r.dayIndex===d;});
+      if(rec){
+        var recTop=(ns-1)*SH, recH=SH*2;
+        h+='<div class="rec-block" style="top:'+recTop+'px;height:'+recH+'px"><div class="rec-circle">R</div><div class="rec-text">Reception<br>'+rec.text.replace(/\n/g,', ')+'</div></div>';
+      }
+      h+='</div>';
+      if(d<nd-1) h+=gutter(false);
+    }
+    h+=gutter(false);
+    h+='</div>';
+    h+='<div class="bottom-bar">&nbsp;</div>';
+    h+='</div>';
+    root.innerHTML=h;
+  }
+
+  var root = document.getElementById('acyrScheduleInline');
+  if(root) render(root);
+})();
+</script>
+
+<script src="lightbox.js" defer></script>
 <script src="subscribe.js" defer></script>
 <script src="banner-aspect.js" defer></script>
 <script src="page-hero.js" defer></script>
