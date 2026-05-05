@@ -356,10 +356,18 @@ function firstError(resp) {
   return '';
 }
 
+const ALLOWED_ORIGINS = new Set([
+  'https://saltspringcentre.com',
+  'https://www.saltspringcentre.com',
+  'https://saltspringcentre.github.io'
+]);
+
 function corsHeaders(request) {
-  const origin = request.headers.get('Origin') || '*';
+  const origin = request.headers.get('Origin') || '';
+  const allowed = ALLOWED_ORIGINS.has(origin) ? origin : '';
   return {
-    'Access-Control-Allow-Origin': origin,
+    'Access-Control-Allow-Origin': allowed,
+    'Vary': 'Origin',
     'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
     'Access-Control-Max-Age': '86400'
