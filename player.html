@@ -95,6 +95,30 @@
     line-height: 1.5;
   }
   .hint strong { color: var(--teal-deep); font-weight: 600; }
+  .buy-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+  }
+  .buy-cta a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gold);
+    color: var(--teal-deep);
+    text-decoration: none;
+    padding: 9px 22px;
+    border-radius: 50px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: 0.2s;
+    box-shadow: 0 2px 10px rgba(244,215,107,0.2);
+  }
+  .buy-cta a:hover { transform: scale(1.04); background: #f9e089; box-shadow: 0 3px 14px rgba(244,215,107,0.45); }
+  .buy-cta svg { flex-shrink: 0; }
   @media (max-height: 520px) {
     body { padding: 10px; }
     .header { margin-bottom: 8px; }
@@ -123,6 +147,12 @@
     allow="autoplay"
     loading="lazy"
     seamless><a href="https://saltspringcentre.bandcamp.com/album/41-acyr-kirtan-album">41 ACYR Kirtan Album by Salt Spring Centre of Yoga</a></iframe>
+  <div class="buy-cta">
+    <a href="https://saltspringcentre.bandcamp.com/album/41-acyr-kirtan-album" target="_blank" rel="noopener">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 9.5 7.5 4 8l4 4-1 6 5-3 5 3-1-6 4-4-5.5-.5z"/></svg>
+      Buy on Bandcamp
+    </a>
+  </div>
   <p class="hint">Keep this window open to play music while you browse <strong>saltspringcentre.com</strong>.</p>
 </div>
 <script>
