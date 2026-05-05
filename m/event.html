@@ -141,7 +141,7 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 
 <main id="eventMain">
   <div class="not-found">
-    <h1>Loading...</h1>
+    <h2>Loading...</h2>
   </div>
 </main>
 
@@ -317,7 +317,7 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
   if (localId) {
     var item = OFFERINGS.find(function(e) { return e.id === localId; });
     if (!item) {
-      main.innerHTML = '<div class="not-found"><h1>Not Found</h1><p>That page does not exist or has been removed.</p><a href="offerings.html" class="btn">View Offerings</a></div>';
+      main.innerHTML = '<div class="not-found"><h2>Not Found</h2><p>That page does not exist or has been removed.</p><a href="offerings.html" class="btn">View Offerings</a></div>';
       return;
     }
     document.title = item.title + ' | Salt Spring Centre of Yoga';
@@ -341,7 +341,7 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
 
   // ===== RETREAT GURU PROGRAM =====
   if (rgId) {
-    main.innerHTML = '<div class="not-found"><h1>Loading...</h1></div>';
+    main.innerHTML = '<div class="not-found"><h2>Loading...</h2></div>';
     var apiUrl = 'https://sscy-retreat-guru.executive-2ef.workers.dev/programs/' + encodeURIComponent(rgId) + '?include=teachers';
     fetch(apiUrl)
       .then(function(r) { return r.json(); })
@@ -350,12 +350,12 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
         renderRG(p);
       })
       .catch(function() {
-        main.innerHTML = '<div class="not-found"><h1>Program Not Found</h1><p>This program may no longer be available.</p><a href="offerings.html" class="btn">Back to Offerings</a></div>';
+        main.innerHTML = '<div class="not-found"><h2>Program Not Found</h2><p>This program may no longer be available.</p><a href="offerings.html" class="btn">Back to Offerings</a></div>';
       });
     return;
   }
 
-  main.innerHTML = '<div class="not-found"><h1>No event specified</h1><a href="calendar.html" class="btn">View Calendar</a></div>';
+  main.innerHTML = '<div class="not-found"><h2>No event specified</h2><a href="calendar.html" class="btn">View Calendar</a></div>';
 
   // ===== RENDER: retreat / concert =====
   function renderEvent(item) {
@@ -413,7 +413,7 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
       '<div class="event-hero-overlay"></div>' +
       '<div class="event-hero-content">' +
         '<span class="type-badge" style="background:var(--teal-dark);">Weekly Class</span>' +
-        '<h1>' + escapeHtml(item.title) + '</h1>' +
+        '<h2>' + escapeHtml(item.title) + '</h2>' +
         '<div class="date-line">' + escapeHtml(item.schedule) + '</div>' +
       '</div>' +
     '</section>';
@@ -447,7 +447,7 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
       '<div class="event-hero-overlay"></div>' +
       '<div class="event-hero-content">' +
         '<span class="type-badge" style="background:var(--terracotta);">Community</span>' +
-        '<h1>' + escapeHtml(item.title) + '</h1>' +
+        '<h2>' + escapeHtml(item.title) + '</h2>' +
         '<div class="date-line">' + escapeHtml(item.schedule) + '</div>' +
       '</div>' +
     '</section>';
@@ -494,7 +494,7 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
       '<div class="event-hero-overlay"></div>' +
       '<div class="event-hero-content">' +
         '<span class="type-badge" style="background:var(--gold);color:var(--charcoal);">Wellness Treatment</span>' +
-        '<h1>' + escapeHtml(item.title) + '</h1>' +
+        '<h2>' + escapeHtml(item.title) + '</h2>' +
         (item.practitioner ? '<div class="date-line">With ' + escapeHtml(item.practitioner) + '</div>' : '') +
       '</div>' +
     '</section>';
@@ -624,7 +624,7 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
       '<div class="event-hero-overlay"></div>' +
       '<div class="event-hero-content">' +
         '<span class="type-badge ' + typeClass + '">' + typeLabel + '</span>' +
-        '<h1>' + escapeHtml(name) + '</h1>' +
+        '<h2>' + escapeHtml(name) + '</h2>' +
         '<div class="date-line">' + escapeHtml(dateStr) + '</div>' +
       '</div>' +
     '</section>';
