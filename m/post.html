@@ -61,6 +61,15 @@ hr { border: none; border-top: 1px solid rgba(0,0,0,0.08); margin: 1.6em 0; }
 .site-footer a { color: var(--white); opacity: 0.7; }
 .site-footer .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 16px; margin: 16px 0; }
 .site-footer .footer-links a { color: var(--white); font-size: 0.72rem; opacity: 0.4; text-decoration: none; }
+.newsletter { background: var(--cream-warm); padding: 40px 20px; text-align: center; }
+.newsletter h2 { font-family: 'Cinzel', serif; font-size: 1.3rem; color: var(--teal-deep); margin-bottom: 8px; }
+.newsletter p { font-size: 0.88rem; color: var(--text-light); text-align: center; margin-bottom: 18px; }
+.nl-form { display: flex; flex-direction: column; gap: 10px; max-width: 340px; margin: 0 auto; }
+.nl-form input { padding: 12px 18px; border: 1px solid rgba(0,0,0,0.1); background: var(--white); border-radius: 50px; color: var(--charcoal); font-family: 'Archivo Narrow', sans-serif; font-size: 0.9rem; }
+.nl-form input:focus { outline: none; border-color: var(--teal); }
+.nl-form button { padding: 12px 22px; background: var(--teal-dark); color: var(--white); border: none; border-radius: 50px; cursor: pointer; font-family: 'Archivo Narrow', sans-serif; font-size: 0.9rem; font-weight: 600; }
+.nl-form button:hover { background: var(--teal); }
+
 .skip-link { position: absolute; left: -9999px; top: 0; z-index: 9999; padding: 12px 18px; background: var(--teal-dark); color: var(--white); font-weight: 600; border-radius: 0 0 6px 0; text-decoration: none; }
 .skip-link:focus { left: 0; outline: 3px solid var(--gold); outline-offset: 2px; }
 </style>
@@ -77,6 +86,16 @@ hr { border: none; border-top: 1px solid rgba(0,0,0,0.08); margin: 1.6em 0; }
   <a href="blog.html" class="back-link">&larr; All posts</a>
   <div id="postContent"><div class="loading-msg">Loading post...</div></div>
 </article>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <h2>Join Our Community</h2>
+  <p>Stay connected with news, courses, and retreats.</p>
+  <form class="nl-form" onsubmit="return sscySubscribe(event, this);">
+    <input type="email" placeholder="Your email" required aria-label="Email">
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
 
 <footer class="site-footer">
   <p>Salt Spring Centre of Yoga &middot; Salt Spring Island, BC</p>
@@ -184,5 +203,6 @@ function loadPost() {
 }
 loadPost();
 </script>
+<script src="../subscribe.js" defer></script>
 </body>
 </html>

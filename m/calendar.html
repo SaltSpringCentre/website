@@ -85,6 +85,13 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 .event-price { font-size: 0.92rem; font-weight: 600; color: var(--teal-deep); }
 .event-cta { display: inline-block; padding: 8px 20px; background: var(--teal); color: var(--white); border-radius: 50px; font-size: 0.78rem; font-weight: 600; }
 
+/* PROGRAMS (Retreat Guru) — uses .event-card styles above; loading state only */
+.programs-loading { text-align: center; color: var(--text-light); font-size: 0.85rem; padding: 12px 0; }
+.event-card .event-cta-row { display: flex; align-items: center; justify-content: space-between; padding-top: 10px; border-top: 1px solid rgba(0,0,0,0.06); }
+
+/* COMMUNITY CALENDAR (Google Calendar iframe) */
+.community-cal-frame { border: none; width: 100%; height: 520px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); background: var(--white); display: block; }
+
 /* CLASS CARDS */
 .class-card { background: var(--cream); border-radius: 12px; padding: 16px; margin-bottom: 10px; border: 1px solid rgba(0,0,0,0.04); }
 .class-day { font-family: 'Cinzel', serif; font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--teal); margin-bottom: 4px; }
@@ -101,6 +108,16 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 /* BUTTONS */
 .btn { display: inline-block; padding: 12px 32px; border-radius: 50px; font-weight: 600; font-size: 0.9rem; text-decoration: none; }
 .btn-primary { background: var(--terracotta); color: var(--white); }
+
+/* NEWSLETTER */
+.newsletter { background: var(--cream-warm); padding: 40px 20px; text-align: center; }
+.newsletter h2 { font-size: 1.3rem; color: var(--teal-deep); margin-bottom: 8px; }
+.newsletter p { font-size: 0.88rem; color: var(--text-light); text-align: center; margin-bottom: 18px; }
+.nl-form { display: flex; flex-direction: column; gap: 10px; max-width: 340px; margin: 0 auto; }
+.nl-form input { padding: 12px 18px; border: 1px solid rgba(0,0,0,0.1); background: var(--white); border-radius: 50px; color: var(--charcoal); font-family: 'Archivo Narrow', sans-serif; font-size: 0.9rem; }
+.nl-form input:focus { outline: none; border-color: var(--teal); }
+.nl-form button { padding: 12px 22px; background: var(--teal-dark); color: var(--white); border: none; border-radius: 50px; cursor: pointer; font-family: 'Archivo Narrow', sans-serif; font-size: 0.9rem; font-weight: 600; }
+.nl-form button:hover { background: var(--teal); }
 
 /* FOOTER */
 .footer { background: var(--charcoal); color: var(--white); padding: 40px 20px 24px; }
@@ -157,18 +174,36 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
   <button class="key" data-filter="community">Community</button>
 </div>
 
+<!-- PROGRAMS & REGISTRATION (Retreat Guru API) -->
+<section class="sec" id="programsSection">
+  <h2>Programs &amp; Registration</h2>
+  <p class="sub">Book directly through Retreat Guru.</p>
+  <div id="retreatGuruCalGrid">
+    <p class="programs-loading">Loading programs...</p>
+  </div>
+</section>
+
+<!-- Book a Yoga Class section deferred — Acuity plan-blocked -->
+
 <!-- EVENTS -->
-<section class="sec" id="eventsSection">
+<section class="sec sec-alt" id="eventsSection">
   <h2>Upcoming Events</h2>
   <p class="sub">Multi-day immersions, concerts, and community gatherings</p>
   <div id="eventsGrid"></div>
 </section>
 
 <!-- WEEKLY SCHEDULE -->
-<section class="sec sec-alt" id="classesSection">
+<section class="sec" id="classesSection">
   <h2>Weekly Classes &amp; Gatherings</h2>
   <p class="sub">Drop in any time. All levels welcome.</p>
   <div id="classesGrid"></div>
+</section>
+
+<!-- COMMUNITY CALENDAR (Google Calendar embed) -->
+<section class="sec sec-alt" id="communitySection">
+  <h2>Community Calendar</h2>
+  <p class="sub">Classes, community events, and temple schedule</p>
+  <iframe class="community-cal-frame" src="https://calendar.google.com/calendar/embed?src=c_t567jg3h1u3hgj7fii50ie8k6k%40group.calendar.google.com&ctz=America/Vancouver&showTitle=0&showNav=1&showPrint=0&showTabs=1&showCalendars=0" loading="lazy" title="Community Calendar"></iframe>
 </section>
 
 <!-- NOTE -->
@@ -180,6 +215,16 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
   <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:12px;text-align:center;">Your generosity helps keep our programs accessible to all.</p>
   <a href="#" class="btn btn-primary" onclick="event.preventDefault();openDonate();">Donate Now</a>
 </div>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <h2>Join Our Community</h2>
+  <p>Stay connected with news, courses, and retreats.</p>
+  <form class="nl-form" onsubmit="return sscySubscribe(event, this);">
+    <input type="email" placeholder="Your email" required aria-label="Email">
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -296,5 +341,67 @@ function closeMenu() {
   document.getElementById('ham').classList.remove('open');
 }
 </script>
+
+<!-- RETREAT GURU API (Programs & Registration) -->
+<script>
+(function() {
+  var API = 'https://sscy-retreat-guru.executive-2ef.workers.dev/programs?public=1&min_date=' + new Date().toISOString().split('T')[0] + '&limit=0&include=teachers';
+  var grid = document.getElementById('retreatGuruCalGrid');
+  if (!grid) return;
+
+  fetch(API)
+    .then(function(r) { return r.json(); })
+    .then(function(programs) {
+      if (!programs.length) { grid.innerHTML = '<p class="programs-loading">No upcoming programs.</p>'; return; }
+      programs.sort(function(a, b) { return (a.start_date || '').localeCompare(b.start_date || ''); });
+      var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+      grid.innerHTML = programs.map(function(p) {
+        var start = p.start_date ? new Date(p.start_date + 'T12:00:00') : null;
+        var end = p.end_date ? new Date(p.end_date + 'T12:00:00') : null;
+        var dateLabel = '';
+        var badge = '';
+        if (start) {
+          badge = months[start.getMonth()] + ' ' + start.getDate();
+          dateLabel = months[start.getMonth()] + ' ' + start.getDate();
+          if (end && end.getTime() !== start.getTime()) {
+            dateLabel += ' – ' + (end.getMonth() === start.getMonth() ? end.getDate() : months[end.getMonth()] + ' ' + end.getDate());
+          }
+          dateLabel += ', ' + start.getFullYear();
+        }
+
+        var teachers = '';
+        if (p.teachers && p.teachers.length) {
+          var names = p.teachers.map(function(t) { return typeof t === 'object' ? t.name : t; }).filter(Boolean);
+          if (names.length) teachers = names.join(', ');
+        }
+
+        var name = p.name ? p.name.replace(/&amp;/g, '&').replace(/&#039;/g, "'").replace(/&quot;/g, '"') : '';
+        var link = p.program_link || '#';
+        var cats = (p.categories || []).join(', ');
+        var type = cats.indexOf('music') >= 0 ? 'concert' : 'retreat';
+        var typeLabel = type === 'concert' ? 'Music for Peace' : 'Retreat';
+
+        return '<a class="event-card" href="' + link + '" target="_blank" rel="noopener">' +
+          '<span class="event-badge' + (type === 'concert' ? ' concert' : '') + '">' + badge + '</span>' +
+          '<div class="event-type">' + typeLabel + '</div>' +
+          '<h3>' + name + '</h3>' +
+          '<div class="event-meta">' +
+            '<span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ' + dateLabel + '</span>' +
+            (teachers ? '<span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> ' + teachers + '</span>' : '') +
+          '</div>' +
+          '<div class="event-footer">' +
+            '<span class="event-price">View Details</span>' +
+            '<span class="event-cta">Register →</span>' +
+          '</div>' +
+        '</a>';
+      }).join('');
+    })
+    .catch(function() {
+      grid.innerHTML = '<p class="programs-loading"><a href="https://saltspringcentre.secure.retreat.guru/program/" target="_blank" rel="noopener" style="color:var(--teal-dark);">View programs on Retreat Guru</a></p>';
+    });
+})();
+</script>
+<script src="../subscribe.js" defer></script>
 </body>
 </html>

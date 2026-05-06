@@ -74,6 +74,16 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 .contact-line { font-size: 0.88rem; line-height: 1.7; color: var(--text); margin-bottom: 0.5em; text-align: center; }
 .contact-line a { font-weight: 500; }
 
+/* NEWSLETTER */
+.newsletter { background: var(--cream-warm); padding: 40px 20px; text-align: center; }
+.newsletter h2 { font-size: 1.3rem; color: var(--teal-deep); margin-bottom: 8px; }
+.newsletter p { font-size: 0.88rem; color: var(--text-light); text-align: center; margin-bottom: 18px; }
+.nl-form { display: flex; flex-direction: column; gap: 10px; max-width: 340px; margin: 0 auto; }
+.nl-form input { padding: 12px 18px; border: 1px solid rgba(0,0,0,0.1); background: var(--white); border-radius: 50px; color: var(--charcoal); font-family: 'Archivo Narrow', sans-serif; font-size: 0.9rem; }
+.nl-form input:focus { outline: none; border-color: var(--teal); }
+.nl-form button { padding: 12px 22px; background: var(--teal-dark); color: var(--white); border: none; border-radius: 50px; cursor: pointer; font-family: 'Archivo Narrow', sans-serif; font-size: 0.9rem; font-weight: 600; }
+.nl-form button:hover { background: var(--teal); }
+
 /* FOOTER */
 .footer { background: var(--charcoal); color: var(--white); padding: 40px 20px 24px; }
 .footer h3 { font-family: 'Archivo Narrow', sans-serif; font-size: 0.92rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
@@ -167,6 +177,16 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
   </div>
 </section>
 
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <h2>Join Our Community</h2>
+  <p>Stay connected with news, courses, and retreats.</p>
+  <form class="nl-form" onsubmit="return sscySubscribe(event, this);">
+    <input type="email" placeholder="Your email" required aria-label="Email">
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
 <!-- FOOTER -->
 <footer class="footer">
   <h3>Salt Spring Centre of Yoga</h3>
@@ -199,5 +219,6 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 function closeMenu() { document.getElementById('menu').classList.remove('open'); document.getElementById('ham').classList.remove('open'); }
 </script>
 
+<script src="../subscribe.js" defer></script>
 </body>
 </html>
