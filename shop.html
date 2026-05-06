@@ -958,13 +958,13 @@ p { text-align: justify; text-justify: inter-word; }
   <div class="sticky-nav-inner">
     <div class="sn-logo-wrap"><a href="index.html"><img src="logo-lotus-teal.svg" alt="Salt Spring Centre of Yoga" class="sn-logo"></a></div>
     <div class="sticky-nav-links">
-      <a href="index.html">Home</a>
-      <a href="calendar.html">Calendar</a>
-      <a href="shop.html">Shop</a>
       <a href="offerings.html">Offerings</a>
-      <a href="about.html">About</a>
+      <a href="calendar.html">Calendar</a>
       <a href="rentals.html">Rentals</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
       <button class="nav-cart-btn" type="button" onclick="toggleCart()" aria-label="View cart">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
         <span>Cart</span>
@@ -978,14 +978,14 @@ p { text-align: justify; text-justify: inter-word; }
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
   <a href="offerings.html">Offerings</a>
   <a href="calendar.html">Calendar</a>
+  <a href="rentals.html">Rentals</a>
   <a href="shop.html">Shop</a>
   <a href="about.html">About</a>
-  <a href="rentals.html">Rentals</a>
-  <a href="blog.html">Blog</a>
   <a href="contact.html">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="blog.html">Blog</a>
   <a href="shop.html#donate" class="mobile-donate">Donate</a>
 </div>
 
@@ -1070,15 +1070,15 @@ p { text-align: justify; text-justify: inter-word; }
     <nav class="footer-nav">
       <div class="footer-nav-links">
         <a href="offerings.html">Offerings</a>
-        <a href="about.html">About</a>
         <a href="calendar.html">Calendar</a>
-        <a href="shop.html">Shop</a>
         <a href="rentals.html">Rentals</a>
-        <a href="blog.html">Blog</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
         <a href="offerings.html#karma">Karma Yoga</a>
         <a href="offerings.html#ytt">Teacher Training</a>
-        <a href="offerings.html#wellness">Wellness</a>
+        <a href="offerings.html#wellness">Wellness Spa</a>
         <a href="offerings.html#satsang">Satsang</a>
         <a href="policies.html">Terms</a>
         <a href="policies.html#privacy">Privacy Policy</a>
@@ -1304,7 +1304,7 @@ function buildTreatmentProducts() {
       desc: t.desc,
       price: priceNum,
       priceLabel: priceLabel,
-      badge: 'Wellness',
+      badge: 'Wellness Spa',
       badgeClass: 'new',
       img: t.img,
       eventId: t.id,
@@ -1404,7 +1404,7 @@ function getCategoryLabel(cat) {
   const labels = {
     tickets: 'Music for Peace',
     retreats: 'Retreats',
-    wellness: 'Wellness',
+    wellness: 'Wellness Spa',
     classes: 'Classes',
     membership: 'Membership',
     books: 'Books',
