@@ -900,7 +900,7 @@ function renderEvents() {
   grid.innerHTML = filtered.map(e => `
     <div class="event-card" data-type="${e.type}">
       <div class="event-img">
-        <img src="${e.img}" alt="${e.title}" loading="lazy" onerror="this.parentElement.innerHTML='<div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;font-size:3rem;opacity:0.2;&quot;>&#x1F9D8;</div>'">
+        <img src="${e.img}" alt="${e.title}" loading="lazy" onerror="this.parentElement.innerHTML='<div style=&quot;display:flex;align-items:center;justify-content:center;height:100%;opacity:0.25;color:currentColor;&quot;><svg width=&quot;56&quot; height=&quot;56&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;1.5&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;><rect x=&quot;3&quot; y=&quot;5&quot; width=&quot;18&quot; height=&quot;14&quot; rx=&quot;2&quot;/><circle cx=&quot;8.5&quot; cy=&quot;11&quot; r=&quot;1.5&quot;/><polyline points=&quot;21 15 16 10 5 19&quot;/></svg></div>'">
         <div class="event-badge${e.type === 'concert' ? ' teal' : ''}">${e.badge}</div>
       </div>
       <div class="event-body">

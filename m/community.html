@@ -730,7 +730,7 @@ function showHelp() {
   ov.id = 'helpOverlay';
   ov.addEventListener('click', function(e) { if (e.target === ov) ov.remove(); });
   ov.innerHTML = '<div class="help-panel">' +
-    '<button class="help-close" onclick="document.getElementById(\'helpOverlay\').remove()">\u2715</button>' +
+    '<button class="help-close" aria-label="Close" onclick="document.getElementById(\'helpOverlay\').remove()"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"/><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"/></svg></button>' +
     '<h2>Dashboard Guide</h2>' +
     '<div class="help-section"><h3>What Is This?</h3><p>Your central hub for everything at the Salt Spring Centre of Yoga. Directory, forms, policies, meetings, safety info, and community resources.</p></div>' +
     '<div class="help-section"><h3>Getting Around</h3><p>Tap the <strong>colored keys</strong> below the nav to jump to any section:</p>' +
