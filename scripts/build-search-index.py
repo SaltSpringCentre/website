@@ -26,10 +26,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EXCLUDE_FILES = {
     # Utility / admin / non-content pages — keep them out of search results.
     "admin.html",
+    "admin-guide.html",
     "player.html",
     "schedule-editor.html",
     "52ACYR.html",
     "photos.html",
+    "School_Roof_Fundraiser.html",
     # Blog list / single-post template — the actual posts are pulled from posts/index.json.
     "post.html",
     # event.html is a per-event template loaded with ?slug — don't index the empty shell.
