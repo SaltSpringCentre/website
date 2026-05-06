@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="logo-lotus-teal.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>if(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))window.location.href='m/shop.html';</script>
 <title>Salt Spring Centre of Yoga - Shop</title>
@@ -1551,6 +1552,15 @@ function saveCart() {
 }
 
 function updateCartUI() {
+  // Self-heal: drop any cart item whose product is no longer in PRODUCTS
+  // (catalog changes, stale localStorage from a prior session, etc.).
+  // Only prune once PRODUCTS has been populated to avoid wiping the cart
+  // while async sources are still loading.
+  if (PRODUCTS && PRODUCTS.length) {
+    const before = cart.length;
+    cart = cart.filter(item => PRODUCTS.find(p => p.id === item.id));
+    if (cart.length !== before) saveCart();
+  }
   const count = cart.reduce((sum, item) => sum + item.qty, 0);
   const countEl = document.getElementById('cartCount');
   if (countEl) {

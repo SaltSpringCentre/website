@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="logo-lotus-teal.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>if(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))window.location.href='m/about.html';</script>
 <title>About Us | Salt Spring Centre of Yoga</title>
@@ -54,15 +55,17 @@ p { text-align: justify; text-justify: inter-word; }
 .hero-content h1 { font-size: clamp(2.6rem, 6vw, 4.2rem); color: var(--white); letter-spacing: 0.06em; text-shadow: 0 2px 20px rgba(0,0,0,0.3); margin-bottom: 16px; }
 .hero-content p { font-size: 1.1rem; color: rgba(255,255,255,0.9); text-align: center; line-height: 1.7; text-shadow: 0 1px 8px rgba(0,0,0,0.3); }
 
-/* FILTER KEYS (6 keys) */
-.filter-keys { display: grid; grid-template-columns: repeat(6, 1fr); overflow: hidden; position: sticky; top: 89px; z-index: 80; }
+/* FILTER KEYS (8 keys) */
+.filter-keys { display: grid; grid-template-columns: repeat(8, 1fr); overflow: hidden; position: sticky; top: 89px; z-index: 80; }
 .filter-key { display: flex; align-items: center; justify-content: center; padding: 28px 8px; font-size: 0.82rem; font-weight: 600; font-family: 'Cinzel', serif; color: var(--white); text-decoration: none; letter-spacing: 0.03em; position: relative; overflow: hidden; transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s ease; transform-origin: top center; text-align: center; }
 .filter-key:nth-child(1) { background: #1b6c5e; }
 .filter-key:nth-child(2) { background: #2e7e6f; }
 .filter-key:nth-child(3) { background: #4b9e8e; }
 .filter-key:nth-child(4) { background: #66b6a0; }
-.filter-key:nth-child(5) { background: #d3b84c; }
-.filter-key:nth-child(6) { background: #a78a30; }
+.filter-key:nth-child(5) { background: #d8c068; }
+.filter-key:nth-child(6) { background: #d3b84c; }
+.filter-key:nth-child(7) { background: #be9f31; }
+.filter-key:nth-child(8) { background: #a78a30; }
 .filter-key::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 0; background: rgba(255,255,255,0.15); transition: height 0.35s cubic-bezier(0.16, 1, 0.3, 1); }
 .filter-key:hover { transform: translateY(-8px) scaleY(1.1); z-index: 2; filter: brightness(1.1); color: var(--white); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
 .filter-key:hover::after { height: 100%; }
@@ -185,7 +188,7 @@ p { text-align: justify; text-justify: inter-word; }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .filter-keys { grid-template-columns: repeat(3, 1fr); }
+  .filter-keys { grid-template-columns: repeat(4, 1fr); }
   .filter-key { padding: 20px 6px; font-size: 0.72rem; }
   .offering-grid { grid-template-columns: 1fr; }
   .footer-top { grid-template-columns: 1fr; gap: 32px; }
@@ -209,7 +212,7 @@ p { text-align: justify; text-justify: inter-word; }
   .offering-header h2 { font-size: 1.4rem; }
   .offering-grid { grid-template-columns: 1fr; }
   .section-banner { max-height: 30vh; }
-  .filter-keys { grid-template-columns: repeat(3, 1fr); }
+  .filter-keys { grid-template-columns: repeat(4, 1fr); }
   .filter-key { padding: 6px 4px; font-size: 0.55rem; }
   .float-quote { padding: 40px 16px; }
   .float-quote blockquote { font-size: 1rem; }
@@ -263,7 +266,7 @@ p { text-align: justify; text-justify: inter-word; }
   </div>
 </section>
 
-<!-- FILTER KEYS (6) -->
+<!-- FILTER KEYS (8) -->
 <div class="filter-keys">
   <a href="#centre" class="filter-key">The Centre</a>
   <a href="#founder" class="filter-key">Our Founder</a>
@@ -271,6 +274,8 @@ p { text-align: justify; text-justify: inter-word; }
   <a href="#society" class="filter-key">Our Society</a>
   <a href="#island" class="filter-key">Salt Spring Island</a>
   <a href="#team" class="filter-key">Our Team</a>
+  <a href="offerings.html#karma" class="filter-key">Karma Yoga</a>
+  <a href="employment.html" class="filter-key">Careers</a>
 </div>
 
 <!-- ============================================ -->
