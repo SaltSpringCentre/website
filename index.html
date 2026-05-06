@@ -830,15 +830,17 @@ function checkSticky() {
   // Fade logo in (faster, starts earlier)
   if (navLogoWrap) navLogoWrap.style.opacity = Math.min(1, scrollPast * 3);
 }
-// Per-link scroll-driven entrance
+// Per-link scroll-driven entrance (current order: Offerings, Calendar, Rentals, Shop, About, Contact, Donate)
 var linkEntrances = [
-  { y: 40, x: -30, rot: -12, scale: 0.6 },  // Calendar: drops in from upper-left, spins
-  { y: 60, x: 0,   rot: 8,   scale: 0.5 },  // Shop: rises from below, tilts
-  { y: 30, x: 20,  rot: -6,  scale: 0.7 },  // Offerings: slides from right
-  { y: 35, x: -10, rot: 10,  scale: 0.65 },  // About: drifts in
+  { y: 30, x: 20,  rot: -6,  scale: 0.7 },   // Offerings: slides from right
+  { y: 40, x: -30, rot: -12, scale: 0.6 },   // Calendar: drops in from upper-left, spins
   { y: 50, x: -15, rot: 15,  scale: 0.55 },  // Rentals: tumbles in
-  { y: 45, x: 25,  rot: -10, scale: 0.65 }   // Contact: swings from right
+  { y: 60, x: 0,   rot: 8,   scale: 0.5 },   // Shop: rises from below, tilts
+  { y: 35, x: -10, rot: 10,  scale: 0.65 },  // About: drifts in
+  { y: 45, x: 25,  rot: -10, scale: 0.65 },  // Contact: swings from right
+  { y: 35, x: 30,  rot: -8,  scale: 0.6 }    // Donate: floats in from right
 ];
+var linkEntranceDefault = { y: 30, x: 0, rot: 0, scale: 0.7 };
 var navEntranceDone = false;
 
 function animateNavLinks() {
@@ -853,7 +855,7 @@ function animateNavLinks() {
 
   var allDone = true;
   navLinkEls.forEach(function(link, i) {
-    var e = linkEntrances[i];
+    var e = linkEntrances[i] || linkEntranceDefault;
     // Stagger: each link slightly delayed
     var stagger = Math.max(0, Math.min(1, (eased - i * 0.08) / 0.6));
     var linkEase = 1 - Math.pow(1 - stagger, 2.5);
