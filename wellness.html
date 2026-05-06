@@ -43,6 +43,8 @@ p { text-align: justify; text-justify: inter-word; }
 .sticky-nav-links { position: absolute; right: 32px; top: 50%; display: flex; gap: 4px; transform: translateY(-50%); }
 .sticky-nav-links a { padding: 10px 20px; font-family: 'Archivo Narrow', sans-serif; font-size: 0.92rem; font-weight: 500; color: var(--text-light); text-decoration: none; border-radius: 50px; letter-spacing: 0.03em; transition: color 0.2s ease, background 0.2s ease; }
 .sticky-nav-links a:hover { color: var(--teal-dark); background: var(--cream-warm); }
+.sticky-nav-links a.donate-cta { background: var(--terracotta); color: var(--white) !important; }
+.sticky-nav-links a.donate-cta:hover { background: var(--teal-dark); color: var(--white) !important; }
 
 /* HERO */
 .hero { height: 60vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
@@ -188,6 +190,7 @@ p { text-align: justify; text-justify: inter-word; }
       <a href="shop.html">Shop</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
+      <a href="#" class="donate-cta" onclick="event.preventDefault();openDonate();" style="background:var(--terracotta);color:var(--white);padding:9px 22px;border-radius:50px;font-weight:700;font-size:0.86rem;letter-spacing:0.06em;text-transform:uppercase;margin-left:8px;transition:0.2s;">Donate</a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Menu" onclick="document.getElementById('mobileMenu').classList.toggle('open');this.classList.toggle('open');">
       <span></span><span></span><span></span>
@@ -417,5 +420,6 @@ document.querySelectorAll('.mobile-menu a').forEach(function(a) {
 <script src="email-link.js" defer></script>
 <script src="search.js" defer></script>
 <script src="site-search-nav.js" defer></script>
+<script src="donate-form.js" defer></script>
 </body>
 </html>
