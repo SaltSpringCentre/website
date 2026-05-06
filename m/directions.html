@@ -35,6 +35,8 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 
 /* NAV */
 .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(250,248,244,0.97); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid rgba(0,0,0,0.06); display: flex; align-items: center; justify-content: space-between; padding: 0 16px; height: 52px; }
+.nav-donate { background: var(--terracotta); color: var(--white); padding: 7px 14px; border-radius: 50px; font-family: 'Cinzel', serif; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; transition: 0.2s; }
+.nav-donate:hover { background: var(--teal-dark); }
 .nav-logo img { height: 36px; }
 .hamburger { background: none; border: none; cursor: pointer; padding: 10px; display: flex; flex-direction: column; gap: 5px; }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--charcoal); border-radius: 2px; transition: 0.3s ease; }
@@ -104,9 +106,9 @@ p { text-align: justify; text-justify: inter-word; text-wrap: pretty; }
 <!-- NAV -->
 <nav class="nav">
   <a href="index.html" class="nav-logo"><img src="../logo-lotus-teal.svg" alt="SSCY"></a>
-  <button class="hamburger" id="ham" onclick="this.classList.toggle('open');document.getElementById('menu').classList.toggle('open');">
+  <div class="nav-right" style="display:flex;align-items:center;gap:10px;"><a href="#" class="nav-donate" onclick="event.preventDefault();openDonate();">Donate</a><button class="hamburger" id="ham" onclick="this.classList.toggle('open');document.getElementById('menu').classList.toggle('open');">
     <span></span><span></span><span></span>
-  </button>
+  </button></div>
 </nav>
 
 <!-- MENU -->
@@ -220,5 +222,6 @@ function closeMenu() { document.getElementById('menu').classList.remove('open');
 </script>
 
 <script src="../subscribe.js" defer></script>
+<script src="../donate-form.js" defer></script>
 </body>
 </html>
