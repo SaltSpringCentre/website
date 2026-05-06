@@ -1115,7 +1115,7 @@ p { text-align: justify; text-justify: inter-word; }
       <span class="total-amount" id="cartTotal">$0.00</span>
     </div>
     <button class="checkout-btn" onclick="openCheckout()">Checkout</button>
-    <p class="checkout-note" id="sandboxNote">Test mode: payments run through Square Sandbox. Use card 4111 1111 1111 1111, any future expiry, any CVV.</p>
+    <p class="checkout-note" id="sandboxNote" style="display:none;">Test mode: payments run through Square Sandbox. Use card 4111 1111 1111 1111, any future expiry, any CVV.</p>
   </div>
 </div>
 
@@ -1678,10 +1678,10 @@ async function initSquare() {
     squarePayments = window.Square.payments(squareConfig.applicationId, squareConfig.locationId);
     squareCard = await squarePayments.card();
     await squareCard.attach('#card-container');
-    // Hide sandbox hint if production
-    if (squareConfig.environment === 'production') {
+    // Show sandbox hint only if environment is sandbox (default hidden in markup).
+    if (squareConfig.environment === 'sandbox') {
       var n = document.getElementById('sandboxNote');
-      if (n) n.style.display = 'none';
+      if (n) n.style.display = '';
     }
   } catch (e) {
     showCheckoutError('Could not load payment form. ' + (e && e.message ? e.message : ''));
