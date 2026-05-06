@@ -86,8 +86,8 @@ p { text-align: justify; text-justify: inter-word; }
 .filter-key:nth-child(1) { background: #1b6c5e; }
 .filter-key:nth-child(2) { background: #2e7e6f; }
 .filter-key:nth-child(3) { background: #4b9e8e; }
-.filter-key:nth-child(4) { background: #7ecbb7; }
-.filter-key:nth-child(5) { background: #e6d798; }
+.filter-key:nth-child(4) { background: #66b6a0; }
+.filter-key:nth-child(5) { background: #d8c068; }
 .filter-key:nth-child(6) { background: #d3b84c; }
 .filter-key:nth-child(7) { background: #be9f31; }
 .filter-key:nth-child(8) { background: #a78a30; }
@@ -501,7 +501,7 @@ function renderGrid() {
     var bgStyle = '';
     if (!imgSrc) {
       // Stable per-slug color choice from the filter-key palette.
-      var palette = ['#1b6c5e','#2e7e6f','#4b9e8e','#7ecbb7','#e6d798','#d3b84c','#be9f31','#a78a30'];
+      var palette = ['#1b6c5e','#2e7e6f','#4b9e8e','#66b6a0','#d8c068','#d3b84c','#be9f31','#a78a30'];
       var hash = 0;
       for (var ci = 0; ci < p.slug.length; ci++) hash = (hash * 31 + p.slug.charCodeAt(ci)) >>> 0;
       bgStyle = ' style="background:' + palette[hash % palette.length] + ';"';
