@@ -806,6 +806,8 @@ function closeMobileMenu() {
 </script>
 
 <!-- DONATE MODAL: handled by donate-form.js -->
+<!-- CENTRE-RUN HELPER -->
+<script src="centre-run.js" defer></script>
 <!-- RETREAT GURU API -->
 <script>
 (function() {
@@ -818,8 +820,8 @@ function closeMobileMenu() {
     .then(function(programs) {
       if (!programs.length) { grid.innerHTML = '<p style="text-align:center;color:var(--text-light);grid-column:1/-1;">No upcoming programs. Check back soon.</p>'; return; }
 
-      // Sort by start date
-      programs.sort(function(a, b) { return (a.start_date || '').localeCompare(b.start_date || ''); });
+      // Sort: centre-run first, then by start date
+      programs.sort(window.SSCY_CentreRun ? window.SSCY_CentreRun.sortFn.bind(window.SSCY_CentreRun) : function(a, b) { return (a.start_date || '').localeCompare(b.start_date || ''); });
 
       var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
@@ -848,7 +850,10 @@ function closeMobileMenu() {
 
         var delay = 'd' + ((i % 4) + 1);
 
+        var badge = (window.SSCY_CentreRun ? window.SSCY_CentreRun.badgeHTML(name) : '');
+
         return '<a href="' + link + '" class="offering-card reveal ' + delay + '" style="text-decoration:none;color:inherit;display:block;">' +
+          badge +
           '<h3>' + name + '</h3>' +
           (teachers ? '<p class="meta" style="margin-bottom:6px;">' + teachers + '</p>' : '') +
           (dateStr ? '<p class="meta">' + dateStr + '</p>' : '') +

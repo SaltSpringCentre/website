@@ -1167,6 +1167,7 @@ p { text-align: justify; text-justify: inter-word; }
 <div class="toast" id="toast"></div>
 
 <script src="events-data.js"></script>
+<script src="centre-run.js"></script>
 <script>
 // ===== PRODUCT DATA (live, built at runtime from 5 sources) =====
 // Source A: Concerts from events-data.js (already loaded above as window.EVENTS)
@@ -1256,11 +1257,16 @@ async function fetchRetreatProducts() {
     if (!res.ok) return [];
     var programs = await res.json();
     if (!Array.isArray(programs)) return [];
+    // Sort: centre-run programs first, then by start_date
+    if (window.SSCY_CentreRun) {
+      programs.sort(window.SSCY_CentreRun.sortFn.bind(window.SSCY_CentreRun));
+    }
     return programs.filter(function(p) { return p && p.remote_registration_link; }).map(function(p) {
       var name = decodeHtml(p.name || '');
       var shortDesc = stripHtml(p.short_description || p.excerpt || p.content || '').slice(0, 200);
       var s = p.start_date ? new Date(p.start_date + 'T12:00:00') : null;
       var monthBadge = s && !isNaN(s) ? (MONTH_ABBR[s.getMonth()] + ' ' + s.getDate()) : '';
+      var isCentre = window.SSCY_CentreRun ? window.SSCY_CentreRun.isCentre(p.name) : false;
       return {
         id: 'retreat-' + p.id,
         category: 'retreats',
@@ -1270,6 +1276,7 @@ async function fetchRetreatProducts() {
         priceLabel: 'Book on Retreat Guru',
         badge: monthBadge,
         badgeClass: 'new',
+        centreRun: isCentre,
         event: {
           date: formatRGDateRange(p.start_date, p.end_date),
           time: rgDuration(p.start_date, p.end_date),
@@ -1373,9 +1380,20 @@ function renderProducts(category = 'all') {
     return;
   }
 
-  grid.innerHTML = filtered.map(p => {
+  // Within the retreats category, ensure centre-run programs render first.
+  // (Other categories pass through untouched.)
+  const sorted = filtered.slice().sort((a, b) => {
+    if (a.category === 'retreats' && b.category === 'retreats') {
+      const aC = !!a.centreRun, bC = !!b.centreRun;
+      if (aC !== bC) return aC ? -1 : 1;
+    }
+    return 0;
+  });
+
+  grid.innerHTML = sorted.map(p => {
     const idAttr = String(p.id).replace(/"/g, '&quot;');
     const titleAttr = String(p.title || '').replace(/"/g, '&quot;');
+    const centreBadge = (p.centreRun && window.SSCY_CentreRun) ? window.SSCY_CentreRun.badgeHTML(p.title) : '';
     return `
     <div class="product-card" data-id="${idAttr}" data-category="${p.category}" onclick="openProductModal(this.dataset.id)">
       ${p.badge ? `<span class="product-badge ${p.badgeClass || ''}">${p.badge}</span>` : ''}
@@ -1384,6 +1402,7 @@ function renderProducts(category = 'all') {
       </div>
       <div class="product-slim">
         <div class="product-slim-info">
+          ${centreBadge}
           <div class="product-slim-cat">${getCategoryLabel(p.category)}</div>
           <div class="product-slim-title">${p.title}</div>
         </div>

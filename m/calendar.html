@@ -342,6 +342,8 @@ function closeMenu() {
 }
 </script>
 
+<!-- CENTRE-RUN HELPER -->
+<script src="../centre-run.js" defer></script>
 <!-- RETREAT GURU API (Programs & Registration) -->
 <script>
 (function() {
@@ -353,7 +355,8 @@ function closeMenu() {
     .then(function(r) { return r.json(); })
     .then(function(programs) {
       if (!programs.length) { grid.innerHTML = '<p class="programs-loading">No upcoming programs.</p>'; return; }
-      programs.sort(function(a, b) { return (a.start_date || '').localeCompare(b.start_date || ''); });
+      // Sort: centre-run first, then by start date
+      programs.sort(window.SSCY_CentreRun ? window.SSCY_CentreRun.sortFn.bind(window.SSCY_CentreRun) : function(a, b) { return (a.start_date || '').localeCompare(b.start_date || ''); });
       var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
       grid.innerHTML = programs.map(function(p) {
@@ -382,9 +385,12 @@ function closeMenu() {
         var type = cats.indexOf('music') >= 0 ? 'concert' : 'retreat';
         var typeLabel = type === 'concert' ? 'Music for Peace' : 'Retreat';
 
+        var centreBadge = (window.SSCY_CentreRun ? window.SSCY_CentreRun.badgeHTML(name) : '');
+
         return '<a class="event-card" href="' + link + '" target="_blank" rel="noopener">' +
           '<span class="event-badge' + (type === 'concert' ? ' concert' : '') + '">' + badge + '</span>' +
           '<div class="event-type">' + typeLabel + '</div>' +
+          centreBadge +
           '<h3>' + name + '</h3>' +
           '<div class="event-meta">' +
             '<span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> ' + dateLabel + '</span>' +
