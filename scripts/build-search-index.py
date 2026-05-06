@@ -45,10 +45,17 @@ EXCLUDE_PREFIXES = ("wireframe", "test", "schedule-editor-baked-")
 # acronym. These attach as an `aliases` array on the page entry, and search.js
 # scores alias matches like strong title hits.
 PAGE_ALIASES = {
-    "ytt.html": ["YTT", "YTT 200"],
-    "acyr.html": ["ACYR"],
-    "yssi.html": ["YSSI"],
-    "music-for-peace.html": ["MFP"],
+    "ytt.html": ["YTT", "YTT 200", "200 hour", "teacher training"],
+    "acyr.html": ["ACYR", "annual community", "community retreat"],
+    "yssi.html": ["YSSI", "study service immersion"],
+    "music-for-peace.html": ["MFP", "kirtan", "concerts", "concert series"],
+    "wellness.html": ["wellness", "wellness spa", "ayurveda", "massage", "shirodhara", "abhyanga", "spa", "treatments"],
+    "temples.html": ["yajna", "puja", "pujas", "arati", "aarti", "ceremony", "ceremonies", "shivaratri"],
+    "karma-yoga.html": ["volunteer", "volunteering", "service", "selfless service"],
+    "about.html": ["baba hari dass", "babaji", "founder", "history"],
+    "yoga-intensive.html": ["intensive"],
+    "farm.html": ["garden", "regenerative", "ALR"],
+    "rentals.html": ["venue rental", "hosting"],
 }
 
 

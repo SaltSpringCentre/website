@@ -11,7 +11,7 @@
 
   // Bump INDEX_VERSION whenever search-index.json schema or scoring changes
   // so existing browser caches fetch the fresh file.
-  var INDEX_VERSION = '4';
+  var INDEX_VERSION = '5';
   var INDEX_URL = 'search-index.json?v=' + INDEX_VERSION;
   var MAX_RESULTS = 8;
   var indexPromise = null;
@@ -63,11 +63,14 @@
     if (qLower && excerpt.indexOf(qLower) >= 0) score += 15;
     if (qLower && body.indexOf(qLower) >= 0) score += 8;
 
-    // Alias whole-phrase boost: if the entire query equals an alias, treat
-    // it as a canonical hit (stronger than an in-title substring match).
+    // Alias whole-phrase boost: if the query equals or contains an alias
+    // exactly, treat the entry as the canonical page for that topic. This
+    // is intentionally large so aliased pages outrank TOC pages (e.g.
+    // offerings.html) that mention the term repeatedly in body/headings.
     if (qLower) {
       for (var a = 0; a < aliasesLower.length; a++) {
-        if (aliasesLower[a] === qLower) { score += 30; break; }
+        if (aliasesLower[a] === qLower) { score += 200; break; }
+        if (qLower.indexOf(aliasesLower[a]) >= 0 && aliasesLower[a].length >= 3) { score += 80; break; }
       }
     }
 
@@ -78,9 +81,10 @@
       var hit = false;
       if (title.indexOf(tk) >= 0) { score += 12; hit = true; }
       // Alias per-token: exact (case-insensitive) match to an alias token
-      // scores like a title hit. This is what makes "YTT" find ytt.html.
+      // scores stronger than a title hit so the canonical page wins.
       for (var ai = 0; ai < aliasesLower.length; ai++) {
-        if (aliasesLower[ai] === tk) { score += 12; hit = true; break; }
+        if (aliasesLower[ai] === tk) { score += 50; hit = true; break; }
+        if (aliasesLower[ai].indexOf(tk) >= 0 && tk.length >= 3) { score += 20; hit = true; break; }
       }
       for (var h = 0; h < headingTexts.length; h++) {
         if (headingTexts[h].indexOf(tk) >= 0) {
